@@ -63,7 +63,8 @@ sin instalación ni servidor, que guarda tu progreso en el navegador y lo export
 
 | Archivo | Qué es | Para qué sirve |
 |---|---|---|
-| [`portfolio.html`](portfolio.html) | Portfolio y seguimiento (single-file) | Calendario, temario con estados, entregables, evidencias, notas y exportación |
+| [`index.html`](index.html) | Entrada para GitHub Pages | Redirige a `portfolio.html` para que la raíz del proyecto abra el portfolio |
+| [`portfolio.html`](portfolio.html) | Portfolio y seguimiento (single-file) | Calendario, temario con estados, entregables, evidencias, notas y exportación MD/JSON/ICS |
 | [`guia_arranque_SSCE0110.html`](guia_arranque_SSCE0110.html) | Guía de arranque + bitácora | Checklist del día 1, planificador, microclase, glosario, test y bitácora |
 | [`modulo_MF1442_3.html`](modulo_MF1442_3.html) | Ficha del MF1442_3 | Capacidades, criterios, contenidos, constructor de programación y test |
 | [`diario_curso_SSCE0110.html`](diario_curso_SSCE0110.html) | Diario del curso | Registro cronológico de sesiones y avances |
@@ -158,19 +159,28 @@ Abre [`portfolio.html`](portfolio.html) en el navegador. No hay instalación, cu
 
 ### Datos y copias
 
-- Todo se guarda en **localStorage** con la clave `ssce0110_portfolio_v1`.
-- Los datos son **de este navegador y este perfil**: si cambias de equipo, de navegador o borras datos,
-  desaparecen. Exporta una copia con frecuencia.
+- Todo se guarda en **localStorage** con la clave `ssce0110_portfolio_v1`. Cada cambio (tema, entregable,
+  nota, evidencia, fecha real o calendario) se guarda al instante; los campos de texto se vuelcan también
+  al ocultar o cerrar la pestaña, para no perder el último carácter.
+- `index.html` **no tiene un almacén propio**: redirige a `portfolio.html` en el mismo origen, así que
+  comparte exactamente el mismo `localStorage`. Abrir la raíz o `portfolio.html` no crea datos distintos.
+- Los datos son **de este navegador, este perfil y esta URL**: `https://avstack.es/...` y
+  `https://systemavworks.github.io/...` son orígenes diferentes y no comparten progreso. Usa siempre la
+  misma URL. Si cambias de equipo, de navegador o borras los datos del sitio, desaparecen: exporta una
+  copia con frecuencia.
 - **Exportar informe .md**: resumen, tabla de módulos, temario con estados, entregables, evidencias y notas.
   Ideal para adjuntar al portfolio del MP0353 o subir al repositorio.
-- **Exportar JSON**: copia íntegra para restaurar con *Importar JSON*.
+- **Exportar JSON**: copia íntegra para restaurar con *Importar JSON*. Al importar se pide confirmación
+  porque la copia sustituye el progreso, las notas y las evidencias actuales.
+- **Calendario .ics**: descarga las ventanas de los módulos, el MP0353 orientativo, el colchón de cierre
+  y los festivos como eventos de día completo, listos para Google Calendar, Outlook o el móvil.
 - **Imprimir / PDF**: versión limpia para entregar o archivar.
 - **Ajustar calendario**: fechas, horas/día y festivos. *Restaurar por defecto* vuelve al calendario del
   centro.
 
 ### Primeros cinco minutos
 
-1. Abre `portfolio.html` y comprueba que el módulo activo es **MF1442_3** (24/11 → 07/12).
+1. Abre `portfolio.html` y comprueba que el módulo activo es **MF1442_3** (24/11 → 09/12).
 2. En **Temario**, marca el primer tema como *En curso*.
 3. En **Entregables**, abre la tarjeta de MF1442_3 y escribe la ruta donde guardarás la programación.
 4. Pulsa **Exportar JSON** y guarda la copia en tu carpeta del curso.
@@ -218,8 +228,9 @@ mp0353: añade diario de la primera observación
 **Hecho (24/11/2026)**
 
 - [x] README con ficha, módulos, calendario, método y estado.
-- [x] `portfolio.html` con timeline, temario, entregables, evidencias, notas y exportación.
+- [x] `portfolio.html` con timeline, temario, entregables, evidencias, notas y exportación MD/JSON/ICS.
 - [x] Calendario calculado: 69 días lectivos (57 de teoría + 7 de prácticas + 5 de cierre).
+- [x] Importación JSON con confirmación e `index.html` de entrada para GitHub Pages.
 - [x] Repositorio publicado en GitHub: `main` sincronizado con `origin/main`.
 
 **En curso**
@@ -248,6 +259,7 @@ El repositorio ya está preparado para servirse como web estática:
 2. En *Build and deployment*, elige **Deploy from a branch**.
 3. Selecciona la rama **main** y la carpeta **/ (root)**. Guarda.
 4. En uno o dos minutos estarán disponibles:
+   - `https://systemavworks.github.io/SSCE0110/` (abre el portfolio mediante `index.html`)
    - `https://systemavworks.github.io/SSCE0110/portfolio.html`
    - `https://systemavworks.github.io/SSCE0110/guia_arranque_SSCE0110.html`
 
@@ -274,5 +286,5 @@ Pages solo está disponible según el plan de GitHub.
 
 ---
 
-<sub>Última revisión: 24/11/2026 · v1.1 · Aj Fonts · Andalucía · Nov. 2026</sub>
+<sub>Última revisión: 24/11/2026 · v1.2 · Aj Fonts · Andalucía · Nov. 2026</sub>
 

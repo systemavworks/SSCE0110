@@ -469,7 +469,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);background:rgba(244,238,
       <aside class="panel" aria-label="Resumen de progreso">
         <div class="panel-top">
           <div class="ring">
-            <svg viewBox="0 0 112 112" role="img" aria-label="Progreso del temario">
+            <svg id="ringSvg" viewBox="0 0 112 112" role="img" aria-label="Progreso del temario: 0%">
               <defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B34C7"/><stop offset="1" stop-color="#00958C"/></linearGradient></defs>
               <circle class="bgc" cx="56" cy="56" r="48"/>
               <circle class="fgc" id="ringFg" cx="56" cy="56" r="48" stroke-dasharray="301.6" stroke-dashoffset="301.6"/>
@@ -482,9 +482,9 @@ footer{margin-top:56px;border-top:1px solid var(--line);background:rgba(244,238,
           </div>
         </div>
         <div class="panel-bars">
-          <div class="pbar"><span>Temario dominado</span><b id="barTemarioTxt">0%</b><div class="track"><div class="fill" id="barTemario" style="width:0"></div></div></div>
-          <div class="pbar"><span>Entregables cerrados</span><b id="barEntregablesTxt">0%</b><div class="track"><div class="fill teal" id="barEntregables" style="width:0"></div></div></div>
-          <div class="pbar"><span>Calendario del curso</span><b id="barCalendarioTxt">0%</b><div class="track"><div class="fill amber" id="barCalendario" style="width:0"></div></div></div>
+          <div class="pbar"><span>Temario dominado</span><b id="barTemarioTxt">0%</b><div class="track" id="trackTemario" role="progressbar" aria-label="Temario dominado" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="0%"><div class="fill" id="barTemario" style="width:0"></div></div></div>
+          <div class="pbar"><span>Entregables cerrados</span><b id="barEntregablesTxt">0%</b><div class="track" id="trackEntregables" role="progressbar" aria-label="Entregables cerrados" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="0%"><div class="fill teal" id="barEntregables" style="width:0"></div></div></div>
+          <div class="pbar"><span>Calendario del curso</span><b id="barCalendarioTxt">0%</b><div class="track" id="trackCalendario" role="progressbar" aria-label="Calendario del curso" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="0%"><div class="fill amber" id="barCalendario" style="width:0"></div></div></div>
         </div>
         <div class="panel-foot">
           <span id="panelDay">Día 0 de 0 sesiones</span>
@@ -635,6 +635,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);background:rgba(244,238,
         <h3 style="font-family:var(--ff-b);font-size:.98rem;margin-bottom:10px">Copia de seguridad</h3>
         <div class="data-actions">
           <button class="btn sm" type="button" id="btnExportJson">Exportar JSON</button>
+          <button class="btn ghost sm" type="button" id="btnExportIcs">Calendario .ics</button>
           <button class="btn ghost sm" type="button" id="btnImport">Importar JSON</button>
           <button class="btn ghost sm" type="button" id="btnPrint">Imprimir / PDF</button>
           <button class="btn danger sm" type="button" id="btnReset">Borrar datos</button>
@@ -1084,6 +1085,8 @@ function renderProgress() {
   if (ring) ring.style.strokeDashoffset = (RING * (1 - gs.temario / 100)).toFixed(1);
   const ringTxt = $('#ringTxt');
   if (ringTxt) ringTxt.innerHTML = gs.temario + '<small>temario</small>';
+  const ringSvg = $('#ringSvg');
+  if (ringSvg) ringSvg.setAttribute('aria-label', 'Progreso del temario: ' + gs.temario + '%');
   const sub = $('#panelSub');
   if (sub) sub.textContent = gs.doneTopics + ' de ' + gs.totalTopics + ' temas · ' + gs.doneDeliv + '/' + gs.totalDeliv + ' entregables';
 
@@ -1091,6 +1094,11 @@ function renderProgress() {
     const bar = $('#' + id), label = $('#' + id + 'Txt');
     if (bar) bar.style.width = pct + '%';
     if (label) label.textContent = pct + '%';
+    const track = document.getElementById('track' + id.slice(3));
+    if (track) {
+      track.setAttribute('aria-valuenow', pct);
+      track.setAttribute('aria-valuetext', pct + '%');
+    }
   };
   set('barTemario', gs.temario);
   set('barEntregables', gs.entregables);
@@ -1413,9 +1421,9 @@ function updateStorageInfo() {
   let bytes = 0;
   try { bytes = new Blob([localStorage.getItem(KEY) || '']).size; } catch (e) {}
   const upd = S.updated ? new Date(S.updated) : null;
-  el.innerHTML = 'Guardado local: <b>' + fmtBytes(bytes) + '</b>' +
+  el.innerHTML = 'Guardado automático en este navegador: <b>' + fmtBytes(bytes) + '</b>' +
     (upd ? ' · última actualización ' + upd.toLocaleString('es-ES') : '') +
-    '. <span style="color:var(--warn)">Exporta una copia si cambias de equipo.</span>';
+    '. <span style="color:var(--warn)">Misma URL = mismos datos; exporta una copia si cambias de equipo.</span>';
 }
 
 function renderAll() {
@@ -1501,9 +1509,99 @@ function exportMarkdown() {
 }
 
 function exportJson() {
-  const payload = { app: 'SSCE0110-portfolio', version: 1, exportedAt: new Date().toISOString(), data: S };
+  const payload = { app: 'SSCE0110-portfolio', version: DATA_VERSION, exportedAt: new Date().toISOString(), data: S };
   download('SSCE0110_portfolio_' + todayISO() + '.json', JSON.stringify(payload, null, 2), 'application/json');
   toast('Copia JSON exportada');
+}
+
+/* Calendario .ics: ventanas de módulos, prácticas, cierre y festivos */
+function icsEsc(value) {
+  return String(value == null ? '' : value)
+    .replace(/\\/g, '\\\\')
+    .replace(/;/g, '\\;')
+    .replace(/,/g, '\\,')
+    .replace(/\r?\n/g, '\\n');
+}
+function icsDate(iso) { return String(iso).replace(/-/g, ''); }
+function icsNext(iso) { return isoOf(addDays(parseISO(iso), 1)); }
+function icsStamp() {
+  return new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
+}
+function icsFold(line) {
+  const text = String(line);
+  if (!text) return '';
+  const enc = typeof TextEncoder !== 'undefined' ? new TextEncoder() : null;
+  const bytesOf = ch => enc ? enc.encode(ch).length : ch.length;
+  const parts = [];
+  let current = '', size = 0;
+  Array.from(text).forEach(ch => {
+    const n = bytesOf(ch);
+    if (size + n > 75 && current) {
+      parts.push(current);
+      current = ' ' + ch;
+      size = 1 + n;
+    } else {
+      current += ch;
+      size += n;
+    }
+  });
+  parts.push(current);
+  return parts.join('\r\n');
+}
+function icsEvent(uid, start, endExclusive, summary, description, opts) {
+  const o = opts || {};
+  return [
+    'BEGIN:VEVENT',
+    'UID:' + uid + '@ssce0110.local',
+    'DTSTAMP:' + icsStamp(),
+    'DTSTART;VALUE=DATE:' + icsDate(start),
+    'DTEND;VALUE=DATE:' + icsDate(endExclusive),
+    'SUMMARY:' + icsEsc(summary),
+    'DESCRIPTION:' + icsEsc(description),
+    'CATEGORIES:' + (o.categories || 'SSCE0110,Formación'),
+    'STATUS:CONFIRMED',
+    'TRANSP:' + (o.transparent ? 'TRANSPARENT' : 'OPAQUE'),
+    'END:VEVENT'
+  ];
+}
+function icsCalendar() {
+  const s = schedule();
+  const lines = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Aj Fonts//SSCE0110 Portfolio//ES',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+    'X-WR-CALNAME:SSCE0110 · Docencia para el empleo 2026–2027',
+    'X-WR-CALDESC:Ventanas de módulos, prácticas, cierre y días no lectivos del SSCE0110.',
+    'X-WR-TIMEZONE:Europe/Madrid'
+  ];
+  MODULES.forEach(m => {
+    const sp = s.spans[m.id];
+    if (!sp) return;
+    const desc = m.h + ' h · ' + sp.sessions + ' sesiones' +
+      (m.id === 'mp0353' ? ' · fechas orientativas, las asigna la entidad' : '') +
+      '. ' + m.name;
+    lines.push(...icsEvent(m.id + '-window', sp.start, icsNext(sp.end),
+      'SSCE0110 · ' + m.code + ' · ' + m.name, desc));
+  });
+  if (s.buffer.length) {
+    lines.push(...icsEvent('buffer', s.buffer[0], icsNext(s.buffer[s.buffer.length - 1]),
+      'SSCE0110 · Cierre y evaluación',
+      s.buffer.length + ' sesiones de colchón para recuperaciones, evaluación y defensa del portfolio.'));
+  }
+  S.cfg.holidays.slice().sort().forEach(h => {
+    lines.push(...icsEvent('holiday-' + h, h, icsNext(h),
+      'SSCE0110 · No lectivo · ' + (HOLIDAY_NAMES[h] || 'Festivo'),
+      'Día no lectivo del calendario del curso.',
+      { transparent: true, categories: 'SSCE0110,No lectivo' }));
+  });
+  lines.push('END:VCALENDAR');
+  return lines.map(icsFold).join('\r\n') + '\r\n';
+}
+function exportIcs() {
+  download('SSCE0110_calendario_' + todayISO() + '.ics', icsCalendar(), 'text/calendar;charset=utf-8');
+  toast('Calendario .ics exportado');
 }
 /* ============================================================
    ACCIONES
@@ -1548,6 +1646,17 @@ function goToTemario(id) {
 
 let qTimer = null, saveTimer = null;
 function queueSave() { clearTimeout(saveTimer); saveTimer = setTimeout(() => saveState(), 400); }
+function flushSave() {
+  if (!saveTimer) return;
+  clearTimeout(saveTimer);
+  saveTimer = null;
+  saveState();
+}
+/* Si se cierra o se oculta la pestaña, vuelca ya el guardado diferido. */
+window.addEventListener('pagehide', flushSave);
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden') flushSave();
+});
 
 document.addEventListener('click', e => {
   const btn = e.target.closest('[data-act]');
@@ -1639,6 +1748,13 @@ $('#importFile').addEventListener('change', e => {
       const raw = JSON.parse(reader.result);
       const data = raw && raw.data ? raw.data : raw;
       if (!data || typeof data !== 'object' || !data.cfg || !data.cfg.start) throw new Error('invalid');
+      const when = raw && raw.exportedAt ? new Date(raw.exportedAt) : null;
+      const stamp = when && !isNaN(when) ? when.toLocaleString('es-ES') : 'sin fecha';
+      const current = Object.keys(S.topics).length + Object.keys(S.deliv).length;
+      if (!window.confirm('La copia (' + stamp + ') sustituirá el progreso actual (' + current + ' marcas), las notas y las evidencias. ¿Continuar?')) {
+        e.target.value = '';
+        return;
+      }
       S = sanitize(data);
       invalidate();
       saveState('Datos importados');
@@ -1672,6 +1788,7 @@ $('#btnReset').addEventListener('click', () => {
   if (el) el.addEventListener('click', () => window.print());
 });
 $('#btnExportJson').addEventListener('click', exportJson);
+$('#btnExportIcs').addEventListener('click', exportIcs);
 
 /* ============================================================
    BÚSQUEDA, MENÚ, ANCLAS Y ARRANQUE
