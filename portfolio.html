@@ -426,7 +426,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);background:rgba(244,238,
       <a href="#entregables">Entregables</a>
       <a href="#datos">Datos</a>
       <a href="guia_arranque_SSCE0110.html">Guía ↗</a>
-      <a href="modulo_MF1442_3.html">MF1442 ↗</a>
+      <a href="modulos_SSCE0110.html">Fichas ↗</a>
     </nav>
     <div class="top-actions">
       <button class="iconbtn" id="btnExportTop" type="button" title="Exportar portfolio en Markdown" aria-label="Exportar portfolio en Markdown">
@@ -855,6 +855,14 @@ const MODULES = [
     tip: 'Las fechas y el centro los asigna la entidad. Pregunta en enero y ten tu disponibilidad por escrito.'
   }
 ];
+const MODULE_PAGES = {
+  mf1442: 'modulo_MF1442_3.html',
+  mf1443: 'modulo_MF1443_3.html',
+  mf1444: 'modulo_MF1444_3.html',
+  mf1445: 'modulo_MF1445_3.html',
+  mf1446: 'modulo_MF1446_3.html',
+  mp0353: 'modulo_MP0353.html'
+};
 /* ============================================================
    UTILIDADES
    ============================================================ */
@@ -1165,7 +1173,7 @@ function renderToday() {
   } else {
     if (nt) actions.push('<button class="btn sm" type="button" data-act="st" data-mod="' + m.id + '" data-i="' + nt.i + '" data-st="curso">Marcar en curso</button>');
     actions.push('<button class="btn ghost sm" type="button" data-act="gototemario" data-mod="' + m.id + '">Ver en el temario</button>');
-    if (m.id === 'mf1442') actions.push('<a class="btn ghost sm" href="modulo_MF1442_3.html">Ficha del módulo</a>');
+    if (MODULE_PAGES[m.id]) actions.push('<a class="btn ghost sm" href="' + MODULE_PAGES[m.id] + '">Ficha del módulo</a>');
   }
   box.innerHTML =
     '<div style="display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap">' +
@@ -1305,7 +1313,7 @@ function renderModules() {
           '<button class="btn ghost sm" type="button" data-act="gototemario" data-mod="' + m.id + '">Ver temario</button>' +
           '<button class="btn ghost sm" type="button" data-act="fillmod" data-mod="' + m.id + '">Completar temas</button>' +
           (st.pct > 0 || st.dd > 0 ? '<button class="btn ghost sm" type="button" data-act="resetmod" data-mod="' + m.id + '">Reiniciar</button>' : '') +
-          (m.id === 'mf1442' ? '<a class="btn ghost sm" href="modulo_MF1442_3.html">Ficha ↗</a>' : '') +
+          (MODULE_PAGES[m.id] ? '<a class="btn ghost sm" href="' + MODULE_PAGES[m.id] + '">Ficha ↗</a>' : '') +
         '</div>' +
       '</div>' +
     '</article>';

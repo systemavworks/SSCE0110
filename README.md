@@ -67,6 +67,12 @@ sin instalación ni servidor, que guarda tu progreso en el navegador y lo export
 | [`portfolio.html`](portfolio.html) | Portfolio y seguimiento (single-file) | Calendario, temario con estados, entregables, evidencias, notas y exportación MD/JSON/ICS |
 | [`guia_arranque_SSCE0110.html`](guia_arranque_SSCE0110.html) | Guía de arranque + bitácora | Checklist del día 1, planificador, microclase, glosario, test y bitácora |
 | [`modulo_MF1442_3.html`](modulo_MF1442_3.html) | Ficha del MF1442_3 | Capacidades, criterios, contenidos, constructor de programación y test |
+| [`modulos_SSCE0110.html`](modulos_SSCE0110.html) | Índice de fichas | Acceso a los resúmenes de los seis módulos y a sus ventanas de estudio |
+| [`modulo_MF1443_3.html`](modulo_MF1443_3.html) | Ficha del MF1443_3 | Materiales, medios, recursos, Moodle, accesibilidad y test |
+| [`modulo_MF1444_3.html`](modulo_MF1444_3.html) | Ficha del MF1444_3 | Impartición, tutorización, microclase y plan tutorial |
+| [`modulo_MF1445_3.html`](modulo_MF1445_3.html) | Ficha del MF1445_3 | Evaluación, pruebas, rúbricas, análisis y mejora |
+| [`modulo_MF1446_3.html`](modulo_MF1446_3.html) | Ficha del MF1446_3 | Orientación laboral, itinerarios, calidad e innovación |
+| [`modulo_MP0353.html`](modulo_MP0353.html) | Ficha del MP0353 | Prácticas, observación, diario, sesión e informe final |
 | [`diario_curso_SSCE0110.html`](diario_curso_SSCE0110.html) | Diario del curso | Registro cronológico de sesiones y avances |
 | [`TXT.txt`](TXT.txt) | Notas de logística | Ruta Sevilla → Almonte, horarios, calendario estimado y gasto de combustible |
 | `ssce0110_juntaAndalucia.pdf` | Documentación oficial | Programa y referencias del certificado (Junta de Andalucía) |
@@ -249,7 +255,7 @@ mp0353: añade diario de la primera observación
 - [ ] **MF1445_3** (02/02 → 16/02): instrumentos de evaluación y evidencias.
 - [ ] **MF1446_3** (16/02 → 23/02): itinerario de inserción y cuadro de calidad.
 - [ ] **MP0353** (24/02 → 05/03): confirmar centro, tutor y fechas en enero; diario desde el primer día.
-- [ ] Crear las fichas de los módulos MF1443_3 a MF1446_3 (solo existe la del MF1442_3).
+- [x] Crear las fichas de los módulos MF1443_3 a MF1446_3 y del MP0353 (índice + 5 resúmenes originales; sin copiar el manual comercial).
 - [ ] Preparar la carpeta de evidencias con la estructura de arriba.
 - [ ] Simulacro del test final y defensa del portfolio.
 - [x] GitHub Pages activado en **Settings → Pages** (rama `main`, carpeta `/`); build de `32db3ce` correcto.
@@ -294,6 +300,10 @@ sitio. **No uses `https://avstack.es/SSCE0110/` para trabajar**: ahora mismo no 
 
 - El contenido didáctico, el diseño y el código de `portfolio.html` son de **Aj Fonts** y se comparten
   con fines educativos. Para reutilización comercial o publicación derivada, pide permiso y cita la autoría.
+- Las fichas de los módulos (`modulo_*.html` y `modulos_SSCE0110.html`) son **resúmenes originales de
+  estudio**. No reproducen ni adaptan el manual comercial del curso, y no sustituyen la documentación
+  oficial ni las instrucciones del centro. Los códigos y la estructura del certificado se apoyan en el
+  Real Decreto 1697/2011 (BOE-A-2011-20102) y en la ficha del certificado SSCE0110.
 - Los documentos oficiales (`SS-CE0110.pdf` y `ssce0110_juntaAndalucia.pdf`) pertenecen a sus autores
   (Junta de Andalucía / Ministerio de Educación) y conservan sus condiciones de uso.
 - Las tipografías Fraunces, Inter y JetBrains Mono se distribuyen bajo SIL Open Font License.
@@ -303,5 +313,5 @@ sitio. **No uses `https://avstack.es/SSCE0110/` para trabajar**: ahora mismo no 
 
 ---
 
-<sub>Última revisión: 24/11/2026 · v1.4 · Aj Fonts · Andalucía · Nov. 2026</sub>
+<sub>Última revisión: 24/11/2026 · v1.5 · Aj Fonts · Andalucía · Nov. 2026</sub>
 

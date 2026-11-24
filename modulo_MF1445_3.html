@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MF1445_3 · Evaluación del aprendizaje · SSCE0110</title>
+<meta name="description" content="Resumen de estudio original del módulo MF1445_3 del certificado SSCE0110. Sin reproducir el manual comercial.">
+<style>
+  :root {
+    --bg: #fafbfc;
+    --surface: #ffffff;
+    --surface-2: #f4f6f8;
+    --border: #e4e8ec;
+    --text: #1a2332;
+    --text-soft: #5a6676;
+    --text-muted: #8a94a3;
+    --accent: #2563eb;
+    --accent-soft: #dbeafe;
+    --accent-hover: #1d4ed8;
+    --success: #059669;
+    --success-soft: #d1fae5;
+    --warning: #d97706;
+    --warning-soft: #fef3c7;
+    --danger: #dc2626;
+    --danger-soft: #fee2e2;
+    --radius: 10px;
+    --radius-sm: 6px;
+    --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+    --shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+    --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.08);
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: "SF Mono", Monaco, Consolas, "Courier New", monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- NAV LATERAL ---------- */
+  .nav {
+    position: fixed;
+    top: 0; left: 0;
+    width: 240px;
+    height: 100vh;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    padding: 24px 16px;
+    overflow-y: auto;
+    z-index: 100;
+  }
+
+  .nav-brand {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .nav-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 24px;
+    line-height: 1.3;
+  }
+
+  .nav-list { list-style: none; }
+
+  .nav-list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    color: var(--text-soft);
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: var(--radius-sm);
+    transition: all 0.15s ease;
+    margin-bottom: 2px;
+  }
+
+  .nav-list a:hover {
+    background: var(--surface-2);
+    color: var(--text);
+  }
+
+  .nav-list a .num {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    min-width: 20px;
+  }
+
+  .nav-list a.active {
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* ---------- MAIN ---------- */
+  .main {
+    margin-left: 240px;
+    padding: 48px 56px;
+    max-width: 1100px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    background: linear-gradient(135deg, #eff6ff 0%, #fafbfc 100%);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 40px;
+    margin-bottom: 48px;
+  }
+
+  .hero-tag {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+
+  .hero-sub {
+    font-size: 17px;
+    color: var(--text-soft);
+    margin-bottom: 24px;
+    max-width: 680px;
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 28px;
+  }
+
+  .stat {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+  }
+
+  .stat-num {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* ---------- SECCIONES ---------- */
+  section {
+    margin-bottom: 56px;
+    scroll-margin-top: 24px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+
+  .section-num {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 24px 0 12px;
+    color: var(--text);
+  }
+
+  p { margin-bottom: 12px; color: var(--text-soft); }
+  p.lead { font-size: 17px; color: var(--text); }
+
+  ul, ol { margin: 8px 0 16px 24px; color: var(--text-soft); }
+  li { margin-bottom: 6px; }
+
+  /* ---------- CARDS ---------- */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+  }
+
+  .card h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card p { font-size: 14px; margin-bottom: 0; }
+
+  .card-icon {
+    width: 28px; height: 28px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  /* ---------- FICHA TÉCNICA ---------- */
+  .ficha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+  .ficha-item {
+    background: var(--surface);
+    padding: 16px 20px;
+  }
+
+  .ficha-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  .ficha-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  /* ---------- CAPACIDADES ---------- */
+  .capacidad {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius-sm);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+
+  .capacidad-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+
+  .capacidad h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .capacidad .cap-desc {
+    font-size: 14px;
+    color: var(--text-soft);
+    font-style: italic;
+  }
+
+  .capacidad-badge {
+    background: var(--accent);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .criterios {
+    background: var(--surface-2);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin-top: 12px;
+  }
+
+  .criterios-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+
+  .criterios ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 13px;
+    color: var(--text-soft);
+  }
+
+  .criterios li { margin-bottom: 6px; line-height: 1.5; }
+
+  /* ---------- CONSTRUCTOR ---------- */
+  .constructor {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border: 2px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .constructor::before {
+    content: "★";
+    position: absolute;
+    top: 16px; right: 20px;
+    font-size: 24px;
+    color: var(--accent);
+    opacity: 0.3;
+  }
+
+  .constructor-tag {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .constructor h3 {
+    font-size: 20px;
+    margin: 0 0 8px;
+  }
+
+  .constructor > p {
+    color: var(--text-soft);
+    margin-bottom: 24px;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .form-field { display: flex; flex-direction: column; gap: 6px; }
+  .form-field.full { grid-column: 1 / -1; }
+
+  .form-field label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 14px;
+    background: var(--surface);
+    color: var(--text);
+    transition: border-color 0.15s;
+  }
+
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+
+  .form-field textarea { resize: vertical; min-height: 60px; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .btn:hover { background: var(--accent-hover); transform: translateY(-1px); }
+
+  .btn-secondary {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+
+  .btn-secondary:hover { background: var(--surface-2); }
+
+  .btn-group { display: flex; gap: 10px; flex-wrap: wrap; }
+
+  .output {
+    margin-top: 24px;
+    background: var(--text);
+    color: #e2e8f0;
+    border-radius: var(--radius-sm);
+    padding: 20px 24px;
+    font-family: var(--mono);
+    font-size: 13px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-height: 500px;
+    overflow-y: auto;
+    display: none;
+  }
+
+  .output.visible { display: block; }
+
+  /* ---------- ALINEACIÓN ---------- */
+  .alineacion {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin: 16px 0;
+  }
+
+  .alineacion-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .alineacion-item::after {
+    content: "→";
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .alineacion-item:last-child::after { display: none; }
+
+  .alineacion-item strong {
+    display: block;
+    color: var(--accent);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  /* ---------- ENTREGABLES ---------- */
+  .entregable {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .entregable:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+
+  .entregable input[type="checkbox"] {
+    width: 18px; height: 18px;
+    accent-color: var(--accent);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .entregable.checked {
+    background: var(--success-soft);
+    border-color: var(--success);
+  }
+
+  .entregable.checked .ent-text { text-decoration: line-through; color: var(--text-muted); }
+
+  .ent-text { flex: 1; font-size: 14px; }
+  .ent-tag {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: var(--surface-2);
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  /* ---------- ERRORES ---------- */
+  .error-item {
+    background: var(--danger-soft);
+    border-left: 4px solid var(--danger);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin-bottom: 12px;
+  }
+
+  .error-item strong {
+    color: var(--danger);
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+
+  .error-item p {
+    font-size: 13px;
+    color: var(--text-soft);
+    margin: 0;
+  }
+
+  /* ---------- BITÁCORA ---------- */
+  .bitacora-entry {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px 20px;
+    margin-bottom: 12px;
+  }
+
+  .bitacora-date {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  .bitacora-content {
+    font-size: 14px;
+    color: var(--text-soft);
+    line-height: 1.6;
+  }
+
+  .bitacora-content strong { color: var(--text); }
+
+  /* ---------- VOCABULARIO ---------- */
+  .vocab-search {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-family: var(--font);
+  }
+
+  .vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .vocab-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+  }
+
+  .vocab-term {
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .vocab-def {
+    font-size: 13px;
+    color: var(--text-soft);
+    line-height: 1.5;
+  }
+
+  /* ---------- TEST ---------- */
+  .test-question {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+
+  .test-q-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 14px;
+  }
+
+  .test-options { display: flex; flex-direction: column; gap: 8px; }
+
+  .test-option {
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.15s;
+    background: var(--surface);
+  }
+
+  .test-option:hover { border-color: var(--accent); background: var(--accent-soft); }
+
+  .test-option.correct {
+    background: var(--success-soft);
+    border-color: var(--success);
+    color: var(--success);
+    font-weight: 500;
+  }
+
+  .test-option.wrong {
+    background: var(--danger-soft);
+    border-color: var(--danger);
+    color: var(--danger);
+  }
+
+  .test-explanation {
+    margin-top: 10px;
+    padding: 10px 14px;
+    background: var(--surface-2);
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    color: var(--text-soft);
+    display: none;
+  }
+
+  .test-explanation.visible { display: block; }
+
+  .test-score {
+    text-align: center;
+    padding: 20px;
+    background: var(--accent-soft);
+    border-radius: var(--radius);
+    margin-top: 20px;
+    display: none;
+  }
+
+  .test-score.visible { display: block; }
+
+  .test-score-num {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  /* ---------- CALLOUT ---------- */
+  .callout {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin: 16px 0;
+  }
+
+  .callout.warning {
+    background: var(--warning-soft);
+    border-left-color: var(--warning);
+  }
+
+  .callout.success {
+    background: var(--success-soft);
+    border-left-color: var(--success);
+  }
+
+  .callout strong { color: var(--text); display: block; margin-bottom: 4px; }
+  .callout p { margin: 0; font-size: 14px; }
+
+  /* ---------- TABLA ---------- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    background: var(--surface);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  th, td {
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  th {
+    background: var(--surface-2);
+    font-weight: 600;
+    color: var(--text);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 900px) {
+    .nav { display: none; }
+    .main { margin-left: 0; padding: 24px; }
+    .hero { padding: 28px; }
+    .hero h1 { font-size: 24px; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+    .form-grid { grid-template-columns: 1fr; }
+    .alineacion { grid-template-columns: 1fr 1fr; }
+    .alineacion-item::after { display: none; }
+  }
+
+  /* ---------- SCROLLBAR ---------- */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: var(--surface-2); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+  /* ---------- AMPLIACIÓN: FICHAS DE MÓDULO ---------- */
+  .mobile-bar { display: none; }
+  .lead { font-size: 17px; color: var(--text); }
+  .map-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; margin: 18px 0; }
+  .map-card { background: var(--surface); border: 1px solid var(--border); border-top: 4px solid var(--accent); border-radius: var(--radius-sm); padding: 18px 20px; box-shadow: var(--shadow-sm); }
+  .map-card h4 { font-size: 15px; margin: 0 0 6px; color: var(--text); }
+  .map-card p { font-size: 13px; margin: 0 0 8px; }
+  .map-card ul { margin: 8px 0 0 18px; font-size: 13px; }
+  .map-card li { margin-bottom: 4px; }
+  .map-hours { display: inline-block; background: var(--accent-soft); color: var(--accent); border-radius: 20px; padding: 3px 9px; font: 600 11px var(--mono); margin-bottom: 10px; }
+  .concept-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .concept { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 18px 20px; }
+  .concept h4 { font-size: 15px; margin: 0 0 7px; color: var(--text); }
+  .concept p { font-size: 14px; margin: 0 0 10px; }
+  .concept-apply { background: var(--surface-2); border-left: 3px solid var(--success); border-radius: 4px; padding: 9px 11px; font-size: 13px; color: var(--text-soft); }
+  .concept-apply strong { color: var(--text); }
+  .table-wrap { overflow-x: auto; margin: 16px 0; }
+  .table-wrap table { margin: 0; min-width: 620px; }
+  .deliv-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
+  .deliv-head h3 { margin: 0 0 4px; }
+  .deliv-head p { margin: 0; font-size: 14px; }
+  .progress { height: 9px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 99px; overflow: hidden; margin: 14px 0 6px; }
+  .progress > i { display: block; height: 100%; width: 0; background: var(--success); transition: width .2s ease; }
+  .progress-label { font-size: 12px; color: var(--text-muted); margin: 0 0 14px; }
+  .module-footer { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-top: 1px solid var(--border); padding: 22px 0 8px; margin-top: 12px; font-size: 14px; }
+  .module-footer a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .module-footer a:hover { text-decoration: underline; }
+  .callout.info { background: var(--accent-soft); border-color: var(--accent); }
+  .callout.danger { background: var(--danger-soft); border-color: var(--danger); }
+  .small { font-size: 13px; color: var(--text-muted); }
+  .test-option { width: 100%; text-align: left; font-family: var(--font); }
+  .test-option:disabled { cursor: default; }
+  .toplinks { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+  .toplinks a { font-size: 13px; color: var(--accent); background: var(--surface); border: 1px solid var(--border); border-radius: 99px; padding: 6px 11px; text-decoration: none; }
+  .toplinks a:hover { border-color: var(--accent); background: var(--accent-soft); }
+  .index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; }
+  .index-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; }
+  .index-card .code { font: 700 12px var(--mono); color: var(--accent); letter-spacing: .5px; }
+  .index-card h3 { margin: 7px 0 6px; font-size: 18px; }
+  .index-card p { font-size: 14px; margin: 0 0 12px; }
+  .index-card .meta { display: flex; gap: 8px; flex-wrap: wrap; margin: auto 0 14px; }
+  .index-card .meta span { font-size: 11px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 99px; padding: 4px 8px; color: var(--text-soft); }
+  .index-card .btn { align-self: flex-start; }
+  .index-hero { background: linear-gradient(135deg, #eff6ff 0%, #fafbfc 100%); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px; margin-bottom: 42px; }
+  .index-hero h1 { font-size: 34px; line-height: 1.15; margin: 12px 0; }
+  .index-hero p { max-width: 760px; }
+  .step-list { counter-reset: step; list-style: none; margin-left: 0; }
+  .step-list li { counter-increment: step; position: relative; padding-left: 44px; margin-bottom: 16px; }
+  .step-list li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 13px; }
+  .step-list strong { display: block; color: var(--text); margin-bottom: 3px; }
+  @media (max-width: 900px) {
+    .mobile-bar { position: sticky; top: 0; z-index: 110; display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 16px; background: rgba(255,255,255,.96); border-bottom: 1px solid var(--border); font-size: 13px; }
+    .mobile-bar a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .mobile-bar span { color: var(--text-muted); font-family: var(--mono); font-size: 11px; }
+    body { padding-top: 0; }
+    .main { padding: 22px 18px; }
+    .hero { padding: 26px 22px; }
+    .hero h1 { font-size: 25px; }
+    .hero-stats { grid-template-columns: 1fr 1fr; }
+    .concept-grid { grid-template-columns: 1fr; }
+    .ficha { grid-template-columns: 1fr; }
+    .index-hero { padding: 28px 22px; }
+    .index-hero h1 { font-size: 27px; }
+  }
+</style>
+</head>
+<body>
+<div class="mobile-bar"><a href="modulos_SSCE0110.html">← Índice de módulos</a><span>MF1445_3</span></div>
+<nav class="nav" aria-label="Secciones del módulo">
+  <div class="nav-brand">SSCE0110 · MF1445_3</div>
+  <div class="nav-title">Evaluación del aprendizaje</div>
+  <ul class="nav-list">
+    <li><a href="#inicio" class="active"><span class="num">00</span>Inicio</a></li><li><a href="#ficha"><span class="num">01</span>Ficha del módulo</a></li><li><a href="#capacidades"><span class="num">02</span>Capacidades</a></li><li><a href="#mapa"><span class="num">03</span>Mapa del módulo</a></li><li><a href="#conceptos"><span class="num">04</span>Conceptos clave</a></li><li><a href="#criterios"><span class="num">05</span>Criterios y evidencias</a></li><li><a href="#entregables"><span class="num">06</span>Entregables</a></li><li><a href="#errores"><span class="num">07</span>Errores típicos</a></li><li><a href="#plan"><span class="num">08</span>Plan de estudio</a></li><li><a href="#test"><span class="num">09</span>Test</a></li><li><a href="#fuentes"><span class="num">10</span>Fuentes</a></li>
+    <li><a href="modulos_SSCE0110.html"><span class="num">↗</span>Índice de módulos</a></li>
+    <li><a href="portfolio.html"><span class="num">↗</span>Portfolio</a></li>
+  </ul>
+</nav>
+<main class="main">
+  <section id="inicio" class="hero">
+    <span class="hero-tag">Módulo 4 · 60 h · Nivel 3</span>
+    <h1>MF1445_3 · Evaluación del proceso de enseñanza-aprendizaje en formación profesional para el empleo</h1>
+    <p class="hero-sub">Aquí se aprende a recoger evidencia y a tomar decisiones con ella. No basta con poner una nota: hay que demostrar que la prueba mide el criterio, que es justa y que sirve para mejorar. Si diseñas primero la evaluación, la clase se vuelve mucho más clara.</p>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">60 h</div><div class="stat-label">Duración</div></div>
+      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Capacidades</div></div>
+      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Bloques de estudio</div></div>
+      <div class="stat"><div class="stat-num">02/02 → 16/02</div><div class="stat-label">Ventana del curso</div></div>
+    </div>
+    <div class="toplinks"><a href="#entregables">Ir a entregables</a><a href="#test">Hacer el test</a><a href="portfolio.html">Volver al portfolio</a></div>
+  </section>
+
+  <section id="ficha">
+    <div class="section-header"><span class="section-num">01</span><h2 class="section-title">Ficha técnica del módulo</h2></div>
+    <p class="lead">Los datos que conviene tener localizados antes de empezar. La ficha no sustituye al currículo oficial: sirve para orientarte y para nombrar bien las cosas en tus entregas.</p>
+    <div class="ficha">
+      <div class="ficha-item">
+        <div class="ficha-label">Código</div>
+        <div class="ficha-value">MF1445_3</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Denominación</div>
+        <div class="ficha-value">Evaluación del proceso de enseñanza-aprendizaje en formación profesional para el empleo</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Nivel</div>
+        <div class="ficha-value">3</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Duración</div>
+        <div class="ficha-value">60 horas</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Unidad de competencia</div>
+        <div class="ficha-value">UC1445_3 · Evaluar el proceso de enseñanza-aprendizaje en las acciones formativas para el empleo</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Ventana del curso</div>
+        <div class="ficha-value">02/02/2027 → 16/02/2027</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Unidades</div>
+        <div class="ficha-value">Módulo completo · 60 h</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Evaluación</div>
+        <div class="ficha-value">Prueba objetiva, prueba práctica, rúbricas, análisis de resultados e informe de mejora</div>
+      </div></div>
+    <div class="callout info"><strong>La idea en una frase</strong><p>Evaluar no es poner notas: es recoger evidencia suficiente para decidir si el alumno alcanzó el criterio y qué hacemos distinto si no. La nota es una consecuencia, no el punto de partida.</p></div>
+  </section>
+
+  <section id="capacidades">
+    <div class="section-header"><span class="section-num">02</span><h2 class="section-title">Capacidades y criterios</h2></div>
+    <p class="lead">Qué se espera de ti al terminar. Los criterios están resumidos en lenguaje de trabajo: no son una transcripción literal del currículo.</p>
+
+    <div class="capacidad">
+      <div class="capacidad-header">
+        <div>
+          <h4>C1 · Entender qué es evaluar y qué modalidades existen</h4>
+          <div class="cap-desc">Distinguir medición de evaluación y elegir la modalidad según finalidad, momento y agente.</div>
+        </div>
+        <span class="capacidad-badge">C1</span>
+      </div>
+      <div class="criterios">
+        <div class="criterios-title">Lo que debes demostrar</div>
+        <ol><li>Diferenciar medir de evaluar según el referente (norma o criterio).</li><li>Definir las condiciones de una evaluación válida, fiable y objetiva.</li><li>Reconocer la evaluación por competencias y sus implicaciones.</li><li>Identificar evaluación diagnóstica, formativa y sumativa.</li><li>Elegir instrumentos según el tipo de aprendizaje y de contenido.</li></ol>
+      </div>
+    </div>
+    <div class="capacidad">
+      <div class="capacidad-header">
+        <div>
+          <h4>C2 · Elaborar pruebas teóricas</h4>
+          <div class="cap-desc">Construir ítems y pruebas que midan lo que dicen medir, con instrucciones claras.</div>
+        </div>
+        <span class="capacidad-badge">C2</span>
+      </div>
+      <div class="criterios">
+        <div class="criterios-title">Lo que debes demostrar</div>
+        <ol><li>Seleccionar la prueba adecuada para aprendizajes simples o complejos.</li><li>Distinguir tipos de ítems y sus normas de elaboración.</li><li>Construir una tabla de especificaciones coherente con objetivos y contenidos.</li><li>Redactar ítems claros, con distractores plausibles y sin pistas involuntarias.</li><li>Definir instrucciones de aplicación, corrección y calificación.</li></ol>
+      </div>
+    </div>
+    <div class="capacidad">
+      <div class="capacidad-header">
+        <div>
+          <h4>C3 · Elaborar pruebas prácticas</h4>
+          <div class="cap-desc">Diseñar tareas observables y los instrumentos que permiten corregirlas con justicia.</div>
+        </div>
+        <span class="capacidad-badge">C3</span>
+      </div>
+      <div class="criterios">
+        <div class="criterios-title">Lo que debes demostrar</div>
+        <ol><li>Elegir el instrumento adecuado a cada práctica y modalidad.</li><li>Elaborar rúbricas, listas de cotejo o escalas con criterios observables.</li><li>Redactar instrucciones para el alumnado y para el docente.</li><li>Ajustar la prueba a presencial, en línea o mixto.</li><li>Prever evidencias y condiciones de aplicación.</li></ol>
+      </div>
+    </div>
+    <div class="capacidad">
+      <div class="capacidad-header">
+        <div>
+          <h4>C4 · Analizar la información del proceso formativo</h4>
+          <div class="cap-desc">Usar los datos para mejorar la acción, no solo para archivar resultados.</div>
+        </div>
+        <span class="capacidad-badge">C4</span>
+      </div>
+      <div class="criterios">
+        <div class="criterios-title">Lo que debes demostrar</div>
+        <ol><li>Identificar indicadores de eficacia y eficiencia.</li><li>Elaborar y aplicar instrumentos de recogida de datos.</li><li>Volcar, comparar e interpretar resultados.</li><li>Detectar desviaciones y proponer mejoras concretas.</li><li>Redactar conclusiones útiles para el equipo docente.</li></ol>
+      </div>
+    </div>
+    <div class="capacidad">
+      <div class="capacidad-header">
+        <div>
+          <h4>C5 · Evaluar tareas y elaborar informes</h4>
+          <div class="cap-desc">Corregir con criterios comunes, registrar evidencias y comunicar resultados.</div>
+        </div>
+        <span class="capacidad-badge">C5</span>
+      </div>
+      <div class="criterios">
+        <div class="criterios-title">Lo que debes demostrar</div>
+        <ol><li>Dominar los instrumentos de evaluación de tareas y actividades.</li><li>Elaborar informes de seguimiento y evaluación final.</li><li>Registrar evidencias de forma ordenada y trazable.</li><li>Dar feedback útil para la mejora.</li><li>Custodiar y tratar los datos con confidencialidad.</li></ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="mapa">
+    <div class="section-header"><span class="section-num">03</span><h2 class="section-title">Mapa del módulo</h2></div>
+    <p class="lead">Una forma de repartir el estudio. Las horas son orientativas: el total sí coincide con la duración oficial del módulo.</p>
+    <div class="map-grid">
+      <article class="map-card">
+        <span class="map-hours">10 h</span>
+        <h4>Fundamentos y modalidades</h4>
+        <p>Qué evaluamos, para qué, cuándo y quién evalúa.</p>
+        <ul><li>Medir vs evaluar</li><li>Diagnóstica, formativa y sumativa</li><li>Validez y fiabilidad</li></ul>
+      </article>
+      <article class="map-card">
+        <span class="map-hours">15 h</span>
+        <h4>Tabla de especificaciones e ítems</h4>
+        <p>Del criterio al ítem, con el nivel de complejidad adecuado.</p>
+        <ul><li>Bloom aplicado</li><li>Tipos de ítems</li><li>Distractores plausibles</li></ul>
+      </article>
+      <article class="map-card">
+        <span class="map-hours">15 h</span>
+        <h4>Pruebas prácticas e instrumentos</h4>
+        <p>Rúbricas, listas de cotejo, escalas y hojas de registro.</p>
+        <ul><li>Criterios observables</li><li>Niveles de desempeño</li><li>Instrucciones</li></ul>
+      </article>
+      <article class="map-card">
+        <span class="map-hours">10 h</span>
+        <h4>Evaluación del proceso y datos</h4>
+        <p>Indicadores, cuestionarios, seguimiento y análisis.</p>
+        <ul><li>Recogida de datos</li><li>Interpretación</li><li>Desviaciones</li></ul>
+      </article>
+      <article class="map-card">
+        <span class="map-hours">10 h</span>
+        <h4>Informes y mejora</h4>
+        <p>Comunicar resultados y proponer acciones concretas.</p>
+        <ul><li>Informe de seguimiento</li><li>Plan de mejora</li><li>Evidencias</li></ul>
+      </article></div>
+  </section>
+
+  <section id="conceptos">
+    <div class="section-header"><span class="section-num">04</span><h2 class="section-title">Conceptos clave</h2></div>
+    <p class="lead">Lo que hay que entender, no solo memorizar. Cada concepto incluye una pista para aplicarlo en una sesión o en una entrega.</p>
+    <div class="concept-grid">
+      <article class="concept">
+        <h4>Medir vs evaluar</h4>
+        <p>Medir es asignar un número a una observación. Evaluar es interpretar esa información con un criterio y tomar una decisión. Un test puede medir bien y, aun así, no evaluar lo que importa.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> Antes de corregir, escribe el criterio. Si el número no te ayuda a decidir si se alcanzó, sobra.</div>
+      </article>
+      <article class="concept">
+        <h4>Evaluación diagnóstica, formativa y sumativa</h4>
+        <p>La diagnóstica sitúa el punto de partida; la formativa acompaña y corrige durante el proceso; la sumativa valora el resultado al final. No son alternativas: se complementan.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> Incluye una prueba inicial breve, dos controles formativos y una evidencia final. Cada una debe tener una decisión asociada.</div>
+      </article>
+      <article class="concept">
+        <h4>Validez, fiabilidad y objetividad</h4>
+        <p>Validez: mide lo que dice medir. Fiabilidad: da resultados consistentes. Objetividad: el resultado depende del desempeño, no del corrector. Las tres necesitan criterios claros.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> Pide a otra persona que corrija una muestra con tu rúbrica. Si obtiene resultados muy distintos, la rúbrica no está suficientemente definida.</div>
+      </article>
+      <article class="concept">
+        <h4>Tabla de especificaciones</h4>
+        <p>Es el mapa que relaciona criterios, contenidos y niveles de complejidad con el número de ítems. Evita que la prueba cargue demasiado una parte y olvide otra.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> Haz una tabla de doble entrada: contenido × nivel cognitivo. Reparte los ítems y comprueba que cubres todos los criterios.</div>
+      </article>
+      <article class="concept">
+        <h4>Tipos de ítems y distractores</h4>
+        <p>Cada tipo de ítem tiene sus reglas: verdadero/falso, elección múltiple, emparejamiento, respuesta corta o ensayo. Un distractor plausible es una respuesta incorrecta que resulta creíble para quien no domina el contenido.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> Evita «todas las anteriores» y dobles negaciones. Revisa que la respuesta correcta no sea la más larga ni la única con detalle.</div>
+      </article>
+      <article class="concept">
+        <h4>Rúbrica, lista de cotejo y escala</h4>
+        <p>La lista de cotejo dice si un criterio está o no; la escala valora el grado; la rúbrica describe qué significa cada nivel de desempeño. No son intercambiables.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> Para una tarea compleja usa rúbrica con 3–4 niveles y descripciones observables. Para pasos obligatorios usa lista de cotejo.</div>
+      </article>
+      <article class="concept">
+        <h4>Evaluación auténtica</h4>
+        <p>Pide al alumnado una tarea parecida a la que hará en el trabajo, con contexto, restricciones y producto. Es más costosa de corregir, pero mide competencia real.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> Convierte un examen teórico en un caso con un entregable: informe, atención simulada, programa o material didáctico.</div>
+      </article>
+      <article class="concept">
+        <h4>Modelo Kirkpatrick</h4>
+        <p>Propone cuatro niveles: reacción, aprendizaje, comportamiento y resultados. Sirve para evaluar una acción formativa más allá de la satisfacción inmediata.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> No te quedes en la encuesta final. Añade una medida de aprendizaje y otra de transferencia al puesto.</div>
+      </article></div>
+  </section>
+
+  <section id="criterios">
+    <div class="section-header"><span class="section-num">05</span><h2 class="section-title">Criterios y evidencias</h2></div>
+    <p class="lead">La tabla traduce los criterios a algo que puedes enseñar. Si no puedes señalar la evidencia, todavía no está cerrado.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Bloque</th><th>Qué te piden, en claro</th><th>Evidencia que lo demuestra</th></tr></thead>
+      <tbody><tr><td><strong>C1 · Fundamentos</strong></td><td>Distinguir modalidades, condiciones técnicas y tipos de instrumento.</td><td>Cuadro comparativo + justificación de la evaluación elegida.</td></tr><tr><td><strong>C2 · Prueba teórica</strong></td><td>Construir tabla de especificaciones, banco de ítems e instrucciones.</td><td>Test de 15 ítems con tabla y análisis de distractores.</td></tr><tr><td><strong>C3 · Prueba práctica</strong></td><td>Diseñar tarea, rúbrica y hojas de instrucciones.</td><td>Prueba práctica observable con rúbrica de cuatro niveles.</td></tr><tr><td><strong>C4 · Análisis del proceso</strong></td><td>Recoger datos, interpretarlos y proponer mejoras.</td><td>Informe de resultados con tres acciones de mejora.</td></tr><tr><td><strong>C5 · Tareas e informes</strong></td><td>Corregir con criterios comunes y registrar evidencias.</td><td>Informe de seguimiento + evidencias del alumnado.</td></tr></tbody>
+    </table></div>
+  </section>
+
+  <section id="entregables">
+    <div class="section-header"><span class="section-num">06</span><h2 class="section-title">Entregables del módulo</h2></div>
+    <p class="lead">Marca lo que ya tengas. El estado se guarda en este navegador; si cambias de navegador o borras los datos, tendrás que volver a marcarlo.</p>
+    <div class="card">
+      <div class="deliv-head"><div><h3>Checklist de evidencias</h3><p>Objetivo: cerrar el módulo con evidencias, no con apuntes sueltos.</p></div><button class="btn btn-secondary" type="button" onclick="resetDeliverables()">Reiniciar</button></div>
+      <div class="progress" aria-hidden="true"><i id="delivBar"></i></div>
+      <p class="progress-label" id="delivStatus" aria-live="polite">0 de 6 entregables</p>
+      <div class="callout danger" id="storageWarning" style="display:none;margin:0 0 14px"><strong>Este navegador no permite guardar datos</strong><p>Puedes usar el checklist, pero al cerrar la página se perderá. Exporta tu portfolio en JSON desde la página principal para conservar el progreso.</p></div>
+      <div id="delivList"></div>
+      <noscript><ul><li>Prueba práctica observable con rúbrica de cuatro niveles <em>(C3)</em></li><li>Test de 15 ítems con tabla de especificaciones y análisis de distractores <em>(C2)</em></li><li>Lista de cotejo de una tarea técnica paso a paso <em>(C3)</em></li><li>Rúbrica analítica del proyecto final <em>(C3)</em></li><li>Instrumento de satisfacción del alumnado <em>(C4)</em></li><li>Informe de mejora con tres acciones concretas y medibles <em>(C4/C5)</em></li></ul></noscript>
+    </div>
+  </section>
+
+  <section id="errores">
+    <div class="section-header"><span class="section-num">07</span><h2 class="section-title">Errores típicos</h2></div>
+    <p class="lead">Fallos que se repiten en las entregas y en las clases. Detectarlos pronto te ahorra una corrección entera.</p>
+
+    <div class="error-item">
+      <strong>❌ Evaluar cosas que no están en los objetivos</strong>
+      <p>Si el objetivo no lo dice, la prueba no debería exigirlo. La evaluación tiene que poder rastrearse hasta el criterio.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ Ítems ambiguos o con doble negación</strong>
+      <p>El alumno puede fallar por no entender la pregunta, no por no saber. Redacta corto, claro y con una sola idea.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ Distractores absurdos</strong>
+      <p>Si las opciones incorrectas se descartan solas, la pregunta no discrimina. Los distractores deben ser plausibles para quien no domina.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ Rúbrica con niveles no observables</strong>
+      <p>«Bien», «regular» o «excelente» sin descripción no permiten corregir con justicia. Describe qué se ve en cada nivel.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ Ponderar sin criterio</strong>
+      <p>Dar el 80 % a un test de memoria cuando el objetivo es una habilidad práctica desalinea toda la evaluación.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ No guardar evidencias</strong>
+      <p>Sin evidencias no puedes justificar la calificación ni revisar una reclamación. Define dónde, cómo y cuánto tiempo se conservan.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ Usar solo una encuesta de satisfacción</strong>
+      <p>Que el alumnado esté contento no demuestra que haya aprendido ni que lo aplique en el trabajo.</p>
+    </div>
+  </section>
+
+  <section id="plan">
+    <div class="section-header"><span class="section-num">08</span><h2 class="section-title">Plan de estudio</h2></div>
+    <p class="lead">Una ruta realista para la ventana del curso. Ajusta las fechas si el centro cambia el calendario; lo importante es el orden y el resultado de cada bloque.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Cuándo</th><th>Foco</th><th>Resultado que deberías tener</th></tr></thead>
+      <tbody><tr><td><strong>02/02/2027</strong></td><td>Fundamentos y modalidades</td><td>Cuadro de evaluación con momentos, agentes e instrumentos.</td></tr><tr><td><strong>04/02/2027</strong></td><td>Tabla de especificaciones</td><td>Mapa de criterios, contenidos y niveles cognitivos.</td></tr><tr><td><strong>06/02/2027</strong></td><td>Ítems y prueba teórica</td><td>Test de 15 ítems con instrucciones y revisión de distractores.</td></tr><tr><td><strong>09/02/2027</strong></td><td>Prueba práctica y rúbrica</td><td>Tarea observable con cuatro niveles de desempeño.</td></tr><tr><td><strong>11/02/2027</strong></td><td>Datos y seguimiento</td><td>Instrumentos de recogida y análisis de resultados.</td></tr><tr><td><strong>16/02/2027</strong></td><td>Informe y mejora</td><td>Informe con tres acciones medibles y evidencias.</td></tr></tbody>
+    </table></div>
+    <div class="callout success"><strong>Regla de oro</strong><p>Escribe primero la prueba y la rúbrica, y después la clase. Si no sabes qué evidencia vas a pedir, todavía no sabes qué tienes que enseñar.</p></div>
+  </section>
+
+  <section id="test">
+    <div class="section-header"><span class="section-num">09</span><h2 class="section-title">Test de comprobación</h2></div>
+    <p class="lead">Ocho preguntas para detectar lagunas. No es una nota: es una forma rápida de decidir qué repasar.</p>
+    <div id="testContainer"></div>
+    <div class="test-score" id="testScore" aria-live="polite"></div>
+    <div class="btn-group" style="margin-top:16px"><button class="btn btn-secondary" type="button" onclick="resetTest()">Repetir test</button></div>
+  </section>
+
+  <section id="fuentes">
+    <div class="section-header"><span class="section-num">10</span><h2 class="section-title">Fuentes y límites</h2></div>
+    <div class="callout warning"><strong>Resumen original, no manual comercial</strong><p>Esta ficha es material de estudio elaborado para el portfolio. No reproduce ni sustituye el temario comercial del curso, los PDFs del centro ni la documentación oficial. Para evaluar o certificar, prevalece siempre la fuente oficial y lo que indique CEFI Formación.</p></div>
+    <p>La estructura del certificado y los códigos de módulos y unidades de competencia se pueden consultar en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2011-20102" target="_blank" rel="noopener">Real Decreto 1697/2011</a>, modificado por el Real Decreto 625/2013. La planificación de fechas y horas de esta ficha sigue el portfolio del curso y es orientativa.</p>
+    <p class="small">Última revisión: 24/11/2026 · SSCE0110 · Contenido de estudio propio. No se ha añadido ningún PDF ni fragmento del manual comercial al repositorio.</p>
+  </section>
+
+  <footer class="module-footer">
+    <a href="modulo_MF1444_3.html">← MF1444_3</a>
+    <a href="modulos_SSCE0110.html">Índice de módulos</a>
+    <a href="modulo_MF1446_3.html">MF1446_3 →</a>
+  </footer>
+</main>
+<script>
+const STORAGE_KEY = "modulo_mf1445_entregables_v1";
+const DELIVERABLES = [{"t": "Prueba práctica observable con rúbrica de cuatro niveles", "tag": "C3"}, {"t": "Test de 15 ítems con tabla de especificaciones y análisis de distractores", "tag": "C2"}, {"t": "Lista de cotejo de una tarea técnica paso a paso", "tag": "C3"}, {"t": "Rúbrica analítica del proyecto final", "tag": "C3"}, {"t": "Instrumento de satisfacción del alumnado", "tag": "C4"}, {"t": "Informe de mejora con tres acciones concretas y medibles", "tag": "C4/C5"}];
+const TEST = [{"q": "¿Cuál es la diferencia principal entre medir y evaluar?", "opts": ["Son sinónimos", "Medir asigna un valor; evaluar interpreta y decide", "Evaluar solo se hace con exámenes", "Medir es más importante"], "a": 1, "why": "La medición aporta datos; la evaluación los interpreta con un criterio y toma decisiones."}, {"q": "¿Para qué sirve la evaluación diagnóstica?", "opts": ["Para poner la nota final", "Para conocer el punto de partida", "Para sancionar errores", "Para sustituir la evaluación formativa"], "a": 1, "why": "La diagnóstica permite ajustar la enseñanza al nivel y las necesidades reales del grupo."}, {"q": "¿Qué hace una tabla de especificaciones?", "opts": ["Reparte los ítems entre criterios y niveles de complejidad", "Corrige automáticamente", "Sustituye la rúbrica", "Mide la satisfacción"], "a": 0, "why": "Es el mapa que garantiza que la prueba cubre lo que dice evaluar, con el peso adecuado."}, {"q": "Un buen distractor debe ser…", "opts": ["Absurdamente falso", "Plausible para quien no domina el contenido", "Siempre el más largo", "Una pista de la respuesta"], "a": 1, "why": "Los distractores plausibles discriminan; los absurdos regalan la respuesta."}, {"q": "¿Cuándo es más adecuada una lista de cotejo?", "opts": ["Para valorar un grado de calidad", "Para comprobar pasos obligatorios presentes o ausentes", "Para medir creatividad", "Para calcular la nota final"], "a": 1, "why": "La lista de cotejo verifica presencia/ausencia; la rúbrica describe niveles de calidad."}, {"q": "¿Qué mide el nivel de «aprendizaje» en Kirkpatrick?", "opts": ["La satisfacción", "Los conocimientos o habilidades adquiridos", "El impacto en la empresa", "El precio del curso"], "a": 1, "why": "Kirkpatrick distingue reacción, aprendizaje, comportamiento y resultados."}, {"q": "¿Qué hacer si dos correctores obtienen notas muy distintas con la misma rúbrica?", "opts": ["Elegir la nota media al azar", "Revisar y concretar los descriptores de la rúbrica", "Suspender a todos", "No evaluar"], "a": 1, "why": "La falta de acuerdo suele indicar descriptores ambiguos. Hay que calibrar el instrumento."}, {"q": "¿Cuál es una evidencia válida de una habilidad práctica?", "opts": ["Un test de memoria", "La ejecución observable de la tarea con criterios", "Una encuesta de satisfacción", "La asistencia"], "a": 1, "why": "La competencia práctica se demuestra ejecutando la tarea en condiciones definidas."}];
+
+function storageGet(key, fallback) {
+  try { const raw = localStorage.getItem(key); return raw ? JSON.parse(raw) : fallback; }
+  catch (err) { return fallback; }
+}
+function storageSet(key, value) {
+  try { localStorage.setItem(key, JSON.stringify(value)); return true; }
+  catch (err) { return false; }
+}
+function storageRemove(key) {
+  try { localStorage.removeItem(key); } catch (err) {}
+}
+function storageAvailable() {
+  try {
+    const probe = '__ssce_probe__';
+    localStorage.setItem(probe, '1');
+    localStorage.removeItem(probe);
+    return true;
+  } catch (err) { return false; }
+}
+
+let delivState = storageGet(STORAGE_KEY, {});
+if (!delivState || typeof delivState !== 'object' || Array.isArray(delivState)) delivState = {};
+
+function renderDeliverables() {
+  const list = document.getElementById('delivList');
+  if (!list) return;
+  list.innerHTML = DELIVERABLES.map((d, i) => {
+    const checked = !!delivState[i];
+    return '<label class="entregable ' + (checked ? 'checked' : '') + '">' +
+      '<input type="checkbox" ' + (checked ? 'checked ' : '') + 'onchange="toggleDeliverable(' + i + ', this.checked)">' +
+      '<span class="ent-text">' + d.t + '</span>' +
+      '<span class="ent-tag">' + d.tag + '</span>' +
+    '</label>';
+  }).join('');
+  updateDelivProgress();
+}
+function updateDelivProgress() {
+  const done = Object.values(delivState).filter(Boolean).length;
+  const total = DELIVERABLES.length;
+  const pct = total ? Math.round(done * 100 / total) : 0;
+  const bar = document.getElementById('delivBar');
+  const status = document.getElementById('delivStatus');
+  if (bar) bar.style.width = pct + '%';
+  if (status) status.textContent = done + ' de ' + total + ' entregables · ' + pct + '%';
+}
+function toggleDeliverable(i, checked) {
+  delivState[i] = !!checked;
+  storageSet(STORAGE_KEY, delivState);
+  renderDeliverables();
+}
+function resetDeliverables() {
+  if (!confirm('¿Reiniciar el checklist de este módulo?')) return;
+  delivState = {};
+  storageRemove(STORAGE_KEY);
+  renderDeliverables();
+}
+
+let testAnswered = new Set();
+let testScore = 0;
+function renderTest() {
+  const box = document.getElementById('testContainer');
+  if (!box) return;
+  box.innerHTML = TEST.map((q, qi) => {
+    return '<div class="test-question" data-qi="' + qi + '">' +
+      '<div class="test-q-text">' + (qi + 1) + '. ' + q.q + '</div>' +
+      '<div class="test-options">' + q.opts.map((o, oi) =>
+        '<button type="button" class="test-option" onclick="answerTest(' + qi + ',' + oi + ',this)">' + o + '</button>'
+      ).join('') + '</div>' +
+      '<div class="test-explanation" id="why-' + qi + '"></div>' +
+    '</div>';
+  }).join('');
+}
+function answerTest(qi, oi, btn) {
+  if (testAnswered.has(qi)) return;
+  testAnswered.add(qi);
+  const q = TEST[qi];
+  const question = document.querySelector('[data-qi="' + qi + '"]');
+  question.querySelectorAll('.test-option').forEach(b => { b.disabled = true; });
+  if (oi === q.a) { btn.classList.add('correct'); testScore++; }
+  else {
+    btn.classList.add('wrong');
+    const right = question.querySelectorAll('.test-option')[q.a];
+    if (right) right.classList.add('correct');
+  }
+  const why = document.getElementById('why-' + qi);
+  if (why) { why.textContent = q.why; why.classList.add('visible'); }
+  updateTestScore();
+}
+function updateTestScore() {
+  const box = document.getElementById('testScore');
+  if (!box) return;
+  box.classList.add('visible');
+  box.innerHTML = '<div class="test-score-num">' + testScore + '/' + TEST.length + '</div>' +
+    '<div>' + (testScore === TEST.length ? 'Todo correcto. Puedes pasar al siguiente módulo.' : 'Revisa las preguntas falladas antes de seguir.') + '</div>';
+}
+function resetTest() {
+  testAnswered = new Set();
+  testScore = 0;
+  const box = document.getElementById('testScore');
+  if (box) { box.classList.remove('visible'); box.innerHTML = ''; }
+  renderTest();
+}
+
+function updateNav() {
+  const sections = document.querySelectorAll('section[id]');
+  const links = document.querySelectorAll('.nav-list a');
+  let current = 'inicio';
+  sections.forEach(s => { if (scrollY >= s.offsetTop - 120) current = s.id; });
+  links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+}
+window.addEventListener('scroll', updateNav, { passive: true });
+if (!storageAvailable()) {
+  const warning = document.getElementById('storageWarning');
+  if (warning) warning.style.display = 'block';
+}
+renderDeliverables();
+renderTest();
+updateNav();
+</script>
+</body>
+</html>

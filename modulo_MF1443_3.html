@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MF1443_3 · Materiales y recursos · SSCE0110</title>
+<meta name="description" content="Resumen de estudio original del módulo MF1443_3 del certificado SSCE0110. Sin reproducir el manual comercial.">
+<style>
+  :root {
+    --bg: #fafbfc;
+    --surface: #ffffff;
+    --surface-2: #f4f6f8;
+    --border: #e4e8ec;
+    --text: #1a2332;
+    --text-soft: #5a6676;
+    --text-muted: #8a94a3;
+    --accent: #2563eb;
+    --accent-soft: #dbeafe;
+    --accent-hover: #1d4ed8;
+    --success: #059669;
+    --success-soft: #d1fae5;
+    --warning: #d97706;
+    --warning-soft: #fef3c7;
+    --danger: #dc2626;
+    --danger-soft: #fee2e2;
+    --radius: 10px;
+    --radius-sm: 6px;
+    --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+    --shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+    --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.08);
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: "SF Mono", Monaco, Consolas, "Courier New", monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- NAV LATERAL ---------- */
+  .nav {
+    position: fixed;
+    top: 0; left: 0;
+    width: 240px;
+    height: 100vh;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    padding: 24px 16px;
+    overflow-y: auto;
+    z-index: 100;
+  }
+
+  .nav-brand {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .nav-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 24px;
+    line-height: 1.3;
+  }
+
+  .nav-list { list-style: none; }
+
+  .nav-list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    color: var(--text-soft);
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: var(--radius-sm);
+    transition: all 0.15s ease;
+    margin-bottom: 2px;
+  }
+
+  .nav-list a:hover {
+    background: var(--surface-2);
+    color: var(--text);
+  }
+
+  .nav-list a .num {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    min-width: 20px;
+  }
+
+  .nav-list a.active {
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* ---------- MAIN ---------- */
+  .main {
+    margin-left: 240px;
+    padding: 48px 56px;
+    max-width: 1100px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    background: linear-gradient(135deg, #eff6ff 0%, #fafbfc 100%);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 40px;
+    margin-bottom: 48px;
+  }
+
+  .hero-tag {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+
+  .hero-sub {
+    font-size: 17px;
+    color: var(--text-soft);
+    margin-bottom: 24px;
+    max-width: 680px;
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 28px;
+  }
+
+  .stat {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+  }
+
+  .stat-num {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* ---------- SECCIONES ---------- */
+  section {
+    margin-bottom: 56px;
+    scroll-margin-top: 24px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+
+  .section-num {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 24px 0 12px;
+    color: var(--text);
+  }
+
+  p { margin-bottom: 12px; color: var(--text-soft); }
+  p.lead { font-size: 17px; color: var(--text); }
+
+  ul, ol { margin: 8px 0 16px 24px; color: var(--text-soft); }
+  li { margin-bottom: 6px; }
+
+  /* ---------- CARDS ---------- */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+  }
+
+  .card h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card p { font-size: 14px; margin-bottom: 0; }
+
+  .card-icon {
+    width: 28px; height: 28px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  /* ---------- FICHA TÉCNICA ---------- */
+  .ficha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+  .ficha-item {
+    background: var(--surface);
+    padding: 16px 20px;
+  }
+
+  .ficha-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  .ficha-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  /* ---------- CAPACIDADES ---------- */
+  .capacidad {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius-sm);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+
+  .capacidad-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+
+  .capacidad h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .capacidad .cap-desc {
+    font-size: 14px;
+    color: var(--text-soft);
+    font-style: italic;
+  }
+
+  .capacidad-badge {
+    background: var(--accent);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .criterios {
+    background: var(--surface-2);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin-top: 12px;
+  }
+
+  .criterios-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+
+  .criterios ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 13px;
+    color: var(--text-soft);
+  }
+
+  .criterios li { margin-bottom: 6px; line-height: 1.5; }
+
+  /* ---------- CONSTRUCTOR ---------- */
+  .constructor {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border: 2px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .constructor::before {
+    content: "★";
+    position: absolute;
+    top: 16px; right: 20px;
+    font-size: 24px;
+    color: var(--accent);
+    opacity: 0.3;
+  }
+
+  .constructor-tag {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .constructor h3 {
+    font-size: 20px;
+    margin: 0 0 8px;
+  }
+
+  .constructor > p {
+    color: var(--text-soft);
+    margin-bottom: 24px;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .form-field { display: flex; flex-direction: column; gap: 6px; }
+  .form-field.full { grid-column: 1 / -1; }
+
+  .form-field label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 14px;
+    background: var(--surface);
+    color: var(--text);
+    transition: border-color 0.15s;
+  }
+
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+
+  .form-field textarea { resize: vertical; min-height: 60px; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .btn:hover { background: var(--accent-hover); transform: translateY(-1px); }
+
+  .btn-secondary {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+
+  .btn-secondary:hover { background: var(--surface-2); }
+
+  .btn-group { display: flex; gap: 10px; flex-wrap: wrap; }
+
+  .output {
+    margin-top: 24px;
+    background: var(--text);
+    color: #e2e8f0;
+    border-radius: var(--radius-sm);
+    padding: 20px 24px;
+    font-family: var(--mono);
+    font-size: 13px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-height: 500px;
+    overflow-y: auto;
+    display: none;
+  }
+
+  .output.visible { display: block; }
+
+  /* ---------- ALINEACIÓN ---------- */
+  .alineacion {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin: 16px 0;
+  }
+
+  .alineacion-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .alineacion-item::after {
+    content: "→";
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .alineacion-item:last-child::after { display: none; }
+
+  .alineacion-item strong {
+    display: block;
+    color: var(--accent);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  /* ---------- ENTREGABLES ---------- */
+  .entregable {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .entregable:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+
+  .entregable input[type="checkbox"] {
+    width: 18px; height: 18px;
+    accent-color: var(--accent);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .entregable.checked {
+    background: var(--success-soft);
+    border-color: var(--success);
+  }
+
+  .entregable.checked .ent-text { text-decoration: line-through; color: var(--text-muted); }
+
+  .ent-text { flex: 1; font-size: 14px; }
+  .ent-tag {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: var(--surface-2);
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  /* ---------- ERRORES ---------- */
+  .error-item {
+    background: var(--danger-soft);
+    border-left: 4px solid var(--danger);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin-bottom: 12px;
+  }
+
+  .error-item strong {
+    color: var(--danger);
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+
+  .error-item p {
+    font-size: 13px;
+    color: var(--text-soft);
+    margin: 0;
+  }
+
+  /* ---------- BITÁCORA ---------- */
+  .bitacora-entry {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px 20px;
+    margin-bottom: 12px;
+  }
+
+  .bitacora-date {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  .bitacora-content {
+    font-size: 14px;
+    color: var(--text-soft);
+    line-height: 1.6;
+  }
+
+  .bitacora-content strong { color: var(--text); }
+
+  /* ---------- VOCABULARIO ---------- */
+  .vocab-search {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-family: var(--font);
+  }
+
+  .vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .vocab-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+  }
+
+  .vocab-term {
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .vocab-def {
+    font-size: 13px;
+    color: var(--text-soft);
+    line-height: 1.5;
+  }
+
+  /* ---------- TEST ---------- */
+  .test-question {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+
+  .test-q-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 14px;
+  }
+
+  .test-options { display: flex; flex-direction: column; gap: 8px; }
+
+  .test-option {
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.15s;
+    background: var(--surface);
+  }
+
+  .test-option:hover { border-color: var(--accent); background: var(--accent-soft); }
+
+  .test-option.correct {
+    background: var(--success-soft);
+    border-color: var(--success);
+    color: var(--success);
+    font-weight: 500;
+  }
+
+  .test-option.wrong {
+    background: var(--danger-soft);
+    border-color: var(--danger);
+    color: var(--danger);
+  }
+
+  .test-explanation {
+    margin-top: 10px;
+    padding: 10px 14px;
+    background: var(--surface-2);
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    color: var(--text-soft);
+    display: none;
+  }
+
+  .test-explanation.visible { display: block; }
+
+  .test-score {
+    text-align: center;
+    padding: 20px;
+    background: var(--accent-soft);
+    border-radius: var(--radius);
+    margin-top: 20px;
+    display: none;
+  }
+
+  .test-score.visible { display: block; }
+
+  .test-score-num {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  /* ---------- CALLOUT ---------- */
+  .callout {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin: 16px 0;
+  }
+
+  .callout.warning {
+    background: var(--warning-soft);
+    border-left-color: var(--warning);
+  }
+
+  .callout.success {
+    background: var(--success-soft);
+    border-left-color: var(--success);
+  }
+
+  .callout strong { color: var(--text); display: block; margin-bottom: 4px; }
+  .callout p { margin: 0; font-size: 14px; }
+
+  /* ---------- TABLA ---------- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    background: var(--surface);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  th, td {
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  th {
+    background: var(--surface-2);
+    font-weight: 600;
+    color: var(--text);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 900px) {
+    .nav { display: none; }
+    .main { margin-left: 0; padding: 24px; }
+    .hero { padding: 28px; }
+    .hero h1 { font-size: 24px; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+    .form-grid { grid-template-columns: 1fr; }
+    .alineacion { grid-template-columns: 1fr 1fr; }
+    .alineacion-item::after { display: none; }
+  }
+
+  /* ---------- SCROLLBAR ---------- */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: var(--surface-2); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+  /* ---------- AMPLIACIÓN: FICHAS DE MÓDULO ---------- */
+  .mobile-bar { display: none; }
+  .lead { font-size: 17px; color: var(--text); }
+  .map-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; margin: 18px 0; }
+  .map-card { background: var(--surface); border: 1px solid var(--border); border-top: 4px solid var(--accent); border-radius: var(--radius-sm); padding: 18px 20px; box-shadow: var(--shadow-sm); }
+  .map-card h4 { font-size: 15px; margin: 0 0 6px; color: var(--text); }
+  .map-card p { font-size: 13px; margin: 0 0 8px; }
+  .map-card ul { margin: 8px 0 0 18px; font-size: 13px; }
+  .map-card li { margin-bottom: 4px; }
+  .map-hours { display: inline-block; background: var(--accent-soft); color: var(--accent); border-radius: 20px; padding: 3px 9px; font: 600 11px var(--mono); margin-bottom: 10px; }
+  .concept-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .concept { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 18px 20px; }
+  .concept h4 { font-size: 15px; margin: 0 0 7px; color: var(--text); }
+  .concept p { font-size: 14px; margin: 0 0 10px; }
+  .concept-apply { background: var(--surface-2); border-left: 3px solid var(--success); border-radius: 4px; padding: 9px 11px; font-size: 13px; color: var(--text-soft); }
+  .concept-apply strong { color: var(--text); }
+  .table-wrap { overflow-x: auto; margin: 16px 0; }
+  .table-wrap table { margin: 0; min-width: 620px; }
+  .deliv-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
+  .deliv-head h3 { margin: 0 0 4px; }
+  .deliv-head p { margin: 0; font-size: 14px; }
+  .progress { height: 9px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 99px; overflow: hidden; margin: 14px 0 6px; }
+  .progress > i { display: block; height: 100%; width: 0; background: var(--success); transition: width .2s ease; }
+  .progress-label { font-size: 12px; color: var(--text-muted); margin: 0 0 14px; }
+  .module-footer { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-top: 1px solid var(--border); padding: 22px 0 8px; margin-top: 12px; font-size: 14px; }
+  .module-footer a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .module-footer a:hover { text-decoration: underline; }
+  .callout.info { background: var(--accent-soft); border-color: var(--accent); }
+  .callout.danger { background: var(--danger-soft); border-color: var(--danger); }
+  .small { font-size: 13px; color: var(--text-muted); }
+  .test-option { width: 100%; text-align: left; font-family: var(--font); }
+  .test-option:disabled { cursor: default; }
+  .toplinks { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+  .toplinks a { font-size: 13px; color: var(--accent); background: var(--surface); border: 1px solid var(--border); border-radius: 99px; padding: 6px 11px; text-decoration: none; }
+  .toplinks a:hover { border-color: var(--accent); background: var(--accent-soft); }
+  .index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; }
+  .index-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; }
+  .index-card .code { font: 700 12px var(--mono); color: var(--accent); letter-spacing: .5px; }
+  .index-card h3 { margin: 7px 0 6px; font-size: 18px; }
+  .index-card p { font-size: 14px; margin: 0 0 12px; }
+  .index-card .meta { display: flex; gap: 8px; flex-wrap: wrap; margin: auto 0 14px; }
+  .index-card .meta span { font-size: 11px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 99px; padding: 4px 8px; color: var(--text-soft); }
+  .index-card .btn { align-self: flex-start; }
+  .index-hero { background: linear-gradient(135deg, #eff6ff 0%, #fafbfc 100%); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px; margin-bottom: 42px; }
+  .index-hero h1 { font-size: 34px; line-height: 1.15; margin: 12px 0; }
+  .index-hero p { max-width: 760px; }
+  .step-list { counter-reset: step; list-style: none; margin-left: 0; }
+  .step-list li { counter-increment: step; position: relative; padding-left: 44px; margin-bottom: 16px; }
+  .step-list li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 13px; }
+  .step-list strong { display: block; color: var(--text); margin-bottom: 3px; }
+  @media (max-width: 900px) {
+    .mobile-bar { position: sticky; top: 0; z-index: 110; display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 16px; background: rgba(255,255,255,.96); border-bottom: 1px solid var(--border); font-size: 13px; }
+    .mobile-bar a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .mobile-bar span { color: var(--text-muted); font-family: var(--mono); font-size: 11px; }
+    body { padding-top: 0; }
+    .main { padding: 22px 18px; }
+    .hero { padding: 26px 22px; }
+    .hero h1 { font-size: 25px; }
+    .hero-stats { grid-template-columns: 1fr 1fr; }
+    .concept-grid { grid-template-columns: 1fr; }
+    .ficha { grid-template-columns: 1fr; }
+    .index-hero { padding: 28px 22px; }
+    .index-hero h1 { font-size: 27px; }
+  }
+</style>
+</head>
+<body>
+<div class="mobile-bar"><a href="modulos_SSCE0110.html">← Índice de módulos</a><span>MF1443_3</span></div>
+<nav class="nav" aria-label="Secciones del módulo">
+  <div class="nav-brand">SSCE0110 · MF1443_3</div>
+  <div class="nav-title">Materiales y recursos</div>
+  <ul class="nav-list">
+    <li><a href="#inicio" class="active"><span class="num">00</span>Inicio</a></li><li><a href="#ficha"><span class="num">01</span>Ficha del módulo</a></li><li><a href="#capacidades"><span class="num">02</span>Capacidades</a></li><li><a href="#mapa"><span class="num">03</span>Mapa del módulo</a></li><li><a href="#conceptos"><span class="num">04</span>Conceptos clave</a></li><li><a href="#criterios"><span class="num">05</span>Criterios y evidencias</a></li><li><a href="#entregables"><span class="num">06</span>Entregables</a></li><li><a href="#errores"><span class="num">07</span>Errores típicos</a></li><li><a href="#plan"><span class="num">08</span>Plan de estudio</a></li><li><a href="#test"><span class="num">09</span>Test</a></li><li><a href="#fuentes"><span class="num">10</span>Fuentes</a></li>
+    <li><a href="modulos_SSCE0110.html"><span class="num">↗</span>Índice de módulos</a></li>
+    <li><a href="portfolio.html"><span class="num">↗</span>Portfolio</a></li>
+  </ul>
+</nav>
+<main class="main">
+  <section id="inicio" class="hero">
+    <span class="hero-tag">Módulo 2 · 90 h · Nivel 3</span>
+    <h1>MF1443_3 · Selección, elaboración, adaptación y utilización de materiales, medios y recursos didácticos</h1>
+    <p class="hero-sub">Aquí aprendes a convertir un objetivo en un material que el alumnado pueda usar de verdad: una guía, una presentación, un vídeo, una actividad en Moodle o una pizarra digital. El criterio no es que quede bonito, sino que ayude a aprender, sea accesible, respete licencias y funcione también cuando falla la tecnología.</p>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">90 h</div><div class="stat-label">Duración</div></div>
+      <div class="stat"><div class="stat-num">4</div><div class="stat-label">Capacidades</div></div>
+      <div class="stat"><div class="stat-num">6</div><div class="stat-label">Bloques de estudio</div></div>
+      <div class="stat"><div class="stat-num">10/12 → 08/01</div><div class="stat-label">Ventana del curso</div></div>
+    </div>
+    <div class="toplinks"><a href="#entregables">Ir a entregables</a><a href="#test">Hacer el test</a><a href="portfolio.html">Volver al portfolio</a></div>
+  </section>
+
+  <section id="ficha">
+    <div class="section-header"><span class="section-num">01</span><h2 class="section-title">Ficha técnica del módulo</h2></div>
+    <p class="lead">Los datos que conviene tener localizados antes de empezar. La ficha no sustituye al currículo oficial: sirve para orientarte y para nombrar bien las cosas en tus entregas.</p>
+    <div class="ficha">
+      <div class="ficha-item">
+        <div class="ficha-label">Código</div>
+        <div class="ficha-value">MF1443_3</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Denominación</div>
+        <div class="ficha-value">Selección, elaboración, adaptación y utilización de materiales, medios y recursos didácticos</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Nivel</div>
+        <div class="ficha-value">3</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Duración</div>
+        <div class="ficha-value">90 horas</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Unidad de competencia</div>
+        <div class="ficha-value">UC1443_3 · Seleccionar, elaborar, adaptar y utilizar materiales, medios y recursos didácticos para el desarrollo de contenidos formativos</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Ventana del curso</div>
+        <div class="ficha-value">10/12/2026 → 08/01/2027</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Unidades</div>
+        <div class="ficha-value">Módulo completo · 90 h</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Evaluación</div>
+        <div class="ficha-value">Diseño y uso de materiales + guía, presentación, screencast, actividad en LMS y checklist de accesibilidad</div>
+      </div></div>
+    <div class="callout info"><strong>La idea en una frase</strong><p>Un material didáctico no es un adorno ni un resumen del docente: es una ayuda para que el alumno aprenda sin depender de ti. Si no es claro, accesible, legal y tiene plan B, todavía no está terminado.</p></div>
+  </section>
+
+  <section id="capacidades">
+    <div class="section-header"><span class="section-num">02</span><h2 class="section-title">Capacidades y criterios</h2></div>
+    <p class="lead">Qué se espera de ti al terminar. Los criterios están resumidos en lenguaje de trabajo: no son una transcripción literal del currículo.</p>
+
+    <div class="capacidad">
+      <div class="capacidad-header">
+        <div>
+          <h4>C1 · Seleccionar, adaptar o crear material gráfico</h4>
+          <div class="cap-desc">Elegir el soporte y el formato que mejor comunican el contenido, con criterios técnicos y didácticos, no por costumbre.</div>
+        </div>
+        <span class="capacidad-badge">C1</span>
+      </div>
+      <div class="criterios">
+        <div class="criterios-title">Lo que debes demostrar</div>
+        <ol><li>Identificar qué puede aportar cada medio gráfico al objetivo y al grupo concreto.</li><li>Elegir fuentes actualizadas, significativas y con licencia compatible.</li><li>Analizar la complejidad del contenido antes de decidir cuánto material hace falta.</li><li>Diseñar el guion gráfico y revisar legibilidad, ortografía y acabado antes de reproducir.</li><li>Justificar las decisiones de diseño con el objetivo, el grupo y la modalidad.</li></ol>
+      </div>
+    </div>
+    <div class="capacidad">
+      <div class="capacidad-header">
+        <div>
+          <h4>C2 · Usar medios y recursos gráficos con criterio</h4>
+          <div class="cap-desc">Que el medio esté al servicio de la sesión: ubicación, comprobación, seguridad y alternativa si falla.</div>
+        </div>
+        <span class="capacidad-badge">C2</span>
+      </div>
+      <div class="criterios">
+        <div class="criterios-title">Lo que debes demostrar</div>
+        <ol><li>Ubicar los medios para que todos los vean y puedan usarlos con comodidad.</li><li>Comprobar el estado y el funcionamiento antes de la sesión.</li><li>Resolver fallos con recursos alternativos sin romper la continuidad.</li><li>Aplicar medidas básicas de prevención de riesgos y de protección ambiental.</li><li>Explicar el uso del medio con instrucciones breves y visibles.</li></ol>
+      </div>
+    </div>
+    <div class="capacidad">
+      <div class="capacidad-header">
+        <div>
+          <h4>C3 · Seleccionar, adaptar o crear material audiovisual y multimedia</h4>
+          <div class="cap-desc">Guion, imagen, voz, ritmo y accesibilidad. Un vídeo educativo se diseña, no se improvisa.</div>
+        </div>
+        <span class="capacidad-badge">C3</span>
+      </div>
+      <div class="criterios">
+        <div class="criterios-title">Lo que debes demostrar</div>
+        <ol><li>Identificar las posibilidades didácticas del audio, el vídeo y la presentación multimedia.</li><li>Seleccionar o adaptar materiales según objetivo, grupo y modalidad.</li><li>Elaborar un guion con introducción, desarrollo y cierre.</li><li>Cuidar duración, calidad de sonido, subtítulos y legibilidad.</li><li>Revisar el material completo antes de publicarlo.</li></ol>
+      </div>
+    </div>
+    <div class="capacidad">
+      <div class="capacidad-header">
+        <div>
+          <h4>C4 · Usar medios audiovisuales y multimedia según el entorno</h4>
+          <div class="cap-desc">Presencial, en línea o mixto: cambia el canal, cambia el modo de acompañar y de comprobar que se aprende.</div>
+        </div>
+        <span class="capacidad-badge">C4</span>
+      </div>
+      <div class="criterios">
+        <div class="criterios-title">Lo que debes demostrar</div>
+        <ol><li>Ubicar los recursos en el espacio y comprobar que se ven y se oyen.</li><li>Usar el aula virtual con una estructura comprensible para el alumnado.</li><li>Comprobar sistemáticamente el funcionamiento de medios y archivos.</li><li>Prever alternativas si falla internet, el proyector o el audio.</li><li>Aplicar criterios de accesibilidad y de prevención de riesgos.</li></ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="mapa">
+    <div class="section-header"><span class="section-num">03</span><h2 class="section-title">Mapa del módulo</h2></div>
+    <p class="lead">Una forma de repartir el estudio. Las horas son orientativas: el total sí coincide con la duración oficial del módulo.</p>
+    <div class="map-grid">
+      <article class="map-card">
+        <span class="map-hours">15 h</span>
+        <h4>Del objetivo al material</h4>
+        <p>Analizar el grupo, el objetivo y la carga cognitiva antes de abrir una herramienta.</p>
+        <ul><li>Perfil y punto de partida</li><li>Qué debe hacer el alumno</li><li>Soporte y nivel de detalle</li></ul>
+      </article>
+      <article class="map-card">
+        <span class="map-hours">20 h</span>
+        <h4>Material gráfico impreso</h4>
+        <p>Guía didáctica, ficha, infografía y maquetación legible.</p>
+        <ul><li>Jerarquía visual</li><li>Tipografía y contraste</li><li>Revisión ortográfica y de acabado</li></ul>
+      </article>
+      <article class="map-card">
+        <span class="map-hours">15 h</span>
+        <h4>Presentaciones que se entienden</h4>
+        <p>Una idea por diapositiva, apoyo visual y guion para explicar, no para leer.</p>
+        <ul><li>Estructura en tres actos</li><li>Imágenes con intención</li><li>Ensayo y plan B</li></ul>
+      </article>
+      <article class="map-card">
+        <span class="map-hours">20 h</span>
+        <h4>Audio, vídeo y screencast</h4>
+        <p>Guion, grabación, voz, subtítulos y duración razonable.</p>
+        <ul><li>Guion por bloques</li><li>Calidad de sonido</li><li>Subtítulos y capítulos</li></ul>
+      </article>
+      <article class="map-card">
+        <span class="map-hours">10 h</span>
+        <h4>Web, PDI y recursos interactivos</h4>
+        <p>Seleccionar recursos de la web y usarlos con la pizarra digital o una actividad interactiva.</p>
+        <ul><li>Criterios de selección</li><li>Licencias y atribución</li><li>Interacción con propósito</li></ul>
+      </article>
+      <article class="map-card">
+        <span class="map-hours">10 h</span>
+        <h4>LMS y formación en línea</h4>
+        <p>Moodle, estructura del curso, tareas, calificador y seguimiento.</p>
+        <ul><li>Secciones y recursos</li><li>Actividad evaluable</li><li>SCORM, xAPI y registro</li></ul>
+      </article></div>
+  </section>
+
+  <section id="conceptos">
+    <div class="section-header"><span class="section-num">04</span><h2 class="section-title">Conceptos clave</h2></div>
+    <p class="lead">Lo que hay que entender, no solo memorizar. Cada concepto incluye una pista para aplicarlo en una sesión o en una entrega.</p>
+    <div class="concept-grid">
+      <article class="concept">
+        <h4>Alineación material-objetivo-actividad-evaluación</h4>
+        <p>El material no vive solo: tiene que responder a un objetivo, preparar una actividad y permitir una evidencia de aprendizaje. Si sobra o no encaja, distrae.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> Antes de crear una diapositiva o una ficha, escribe el objetivo y la evidencia que esperas. Si el material no ayuda a ninguno de los dos, elimínalo.</div>
+      </article>
+      <article class="concept">
+        <h4>Carga cognitiva</h4>
+        <p>La mente procesa una cantidad limitada de información a la vez. Un material saturado obliga a leer, escuchar y mirar al mismo tiempo, y el alumnado acaba sin quedarse con lo importante.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> Divide una pantalla en una idea principal y dos o tres apoyos. Si necesitas más, crea otra pantalla o una pausa de práctica.</div>
+      </article>
+      <article class="concept">
+        <h4>Guion gráfico o storyboard</h4>
+        <p>Es el plano del material antes de producirlo: qué se ve, qué se oye, qué hace el alumno y cuánto dura cada parte.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> Dibuja seis recuadros para un vídeo de cinco minutos. Si no cabe la idea en seis recuadros, probablemente estás intentando meter dos temas.</div>
+      </article>
+      <article class="concept">
+        <h4>Accesibilidad y DUA</h4>
+        <p>Diseñar para que el mayor número posible de personas pueda percibir, comprender y usar el material: contraste, subtítulos, texto alternativo, navegación clara y varias formas de representar la información.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> Pasa tus materiales por tres preguntas: ¿se lee sin color?, ¿se entiende sin audio?, ¿se puede usar solo con teclado?</div>
+      </article>
+      <article class="concept">
+        <h4>Propiedad intelectual y licencias</h4>
+        <p>Que algo esté en internet no significa que puedas usarlo. Una licencia Creative Commons permite ciertos usos si respetas condiciones como atribución, compartir igual o no uso comercial.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> Guarda la fuente, el autor, la licencia y la fecha de cada recurso. Si no puedes acreditarlo, no lo publiques.</div>
+      </article>
+      <article class="concept">
+        <h4>SCORM y xAPI</h4>
+        <p>Son formas de empaquetar y registrar experiencias de aprendizaje en un LMS. SCORM es el estándar clásico; xAPI permite registrar actividades fuera de la plataforma y con más detalle.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> Si tu curso se va a subir a Moodle, pregunta antes qué formato y qué seguimiento necesita el centro. No elijas por moda.</div>
+      </article>
+      <article class="concept">
+        <h4>Moodle: recurso, actividad y calificación</h4>
+        <p>Un curso no es una carpeta de PDFs. Los recursos presentan información; las actividades hacen que el alumno produzca algo; el calificador y la finalización permiten seguir el progreso.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> Diseña al menos una tarea con instrucciones, criterios y fecha. Comprueba que el alumno ve qué tiene que hacer y cómo se le va a evaluar.</div>
+      </article>
+      <article class="concept">
+        <h4>Plan B técnico</h4>
+        <p>Todo material que depende de electricidad, internet o un archivo puede fallar. El plan B no es pesimismo: es parte de la competencia docente.</p>
+        <div class="concept-apply"><strong>En la práctica:</strong> Ten el archivo en local, una versión imprimible y una actividad oral de reserva. Si falla el audio, no suspendas la sesión: cambia el canal.</div>
+      </article></div>
+  </section>
+
+  <section id="criterios">
+    <div class="section-header"><span class="section-num">05</span><h2 class="section-title">Criterios y evidencias</h2></div>
+    <p class="lead">La tabla traduce los criterios a algo que puedes enseñar. Si no puedes señalar la evidencia, todavía no está cerrado.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Bloque</th><th>Qué te piden, en claro</th><th>Evidencia que lo demuestra</th></tr></thead>
+      <tbody><tr><td><strong>C1 · Material gráfico</strong></td><td>Elegir el soporte, analizar el contenido, diseñar y revisar el acabado.</td><td>Guía o ficha didáctica con objetivo, destinatarios, instrucciones y revisión final.</td></tr><tr><td><strong>C2 · Uso de medios gráficos</strong></td><td>Ubicar, comprobar, usar y resolver fallos con alternativas.</td><td>Guion de uso en sesión + checklist de comprobación + plan B.</td></tr><tr><td><strong>C3 · Material audiovisual</strong></td><td>Guionizar, producir y revisar un recurso de audio o vídeo.</td><td>Screencast de 5–8 min con guion, subtítulos y cierre.</td></tr><tr><td><strong>C4 · Uso en entorno virtual</strong></td><td>Estructurar un curso, publicar actividades y comprobar el seguimiento.</td><td>Curso Moodle de prueba con tres actividades y una tarea evaluable.</td></tr></tbody>
+    </table></div>
+  </section>
+
+  <section id="entregables">
+    <div class="section-header"><span class="section-num">06</span><h2 class="section-title">Entregables del módulo</h2></div>
+    <p class="lead">Marca lo que ya tengas. El estado se guarda en este navegador; si cambias de navegador o borras los datos, tendrás que volver a marcarlo.</p>
+    <div class="card">
+      <div class="deliv-head"><div><h3>Checklist de evidencias</h3><p>Objetivo: cerrar el módulo con evidencias, no con apuntes sueltos.</p></div><button class="btn btn-secondary" type="button" onclick="resetDeliverables()">Reiniciar</button></div>
+      <div class="progress" aria-hidden="true"><i id="delivBar"></i></div>
+      <p class="progress-label" id="delivStatus" aria-live="polite">0 de 7 entregables</p>
+      <div class="callout danger" id="storageWarning" style="display:none;margin:0 0 14px"><strong>Este navegador no permite guardar datos</strong><p>Puedes usar el checklist, pero al cerrar la página se perderá. Exporta tu portfolio en JSON desde la página principal para conservar el progreso.</p></div>
+      <div id="delivList"></div>
+      <noscript><ul><li>Guía didáctica de una UF lista para entregar al alumnado <em>(C1)</em></li><li>Presentación de 10 diapositivas aplicando las reglas de diseño <em>(C3)</em></li><li>Screencast de 5–8 min con guion, subtítulos y plan B <em>(C3)</em></li><li>Actividad interactiva H5P exportada e insertada en un LMS <em>(C3/C4)</em></li><li>Curso Moodle de prueba con 3 actividades y una tarea evaluable <em>(C4)</em></li><li>Checklist de accesibilidad aplicado a tus propios materiales <em>(Transversal)</em></li><li>Ficha de licencias y atribuciones de todos los recursos usados <em>(Transversal)</em></li></ul></noscript>
+    </div>
+  </section>
+
+  <section id="errores">
+    <div class="section-header"><span class="section-num">07</span><h2 class="section-title">Errores típicos</h2></div>
+    <p class="lead">Fallos que se repiten en las entregas y en las clases. Detectarlos pronto te ahorra una corrección entera.</p>
+
+    <div class="error-item">
+      <strong>❌ Párrafos infinitos y letra diminuta</strong>
+      <p>Si hay que hacer zoom o leer durante más de un minuto seguido, el material no está ayudando: está sustituyendo la explicación.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ Diapositiva con ocho ideas y texto leído literal</strong>
+      <p>El alumnado lee a la vez que escucha y no retiene ninguna de las dos cosas. Una idea por diapositiva y palabras clave.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ Usar una imagen de Google sin licencia</strong>
+      <p>El uso educativo no convierte automáticamente en libre un recurso. Busca dominio público, CC o bancos con licencia clara y atribuye.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ Vídeo sin subtítulos ni guion</strong>
+      <p>Sin subtítulos pierdes a parte del alumnado y sin guion el vídeo se alarga. Escribe el guion y revisa el audio antes de grabar.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ Curso Moodle sin actividad evaluable</strong>
+      <p>Un curso lleno de PDFs no permite saber si el alumno aprende. Incluye una tarea, un cuestionario o una actividad con criterios.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ No probar proyector, audio o enlaces antes de la sesión</strong>
+      <p>El fallo técnico no es el problema; no tener alternativa sí. Comprueba todo y lleva una versión local o imprimible.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ Confundir material con apuntes del docente</strong>
+      <p>El material debe poder usarlo el alumno. Si solo tiene sentido con tu explicación delante, es una nota de clase, no un material didáctico.</p>
+    </div>
+  </section>
+
+  <section id="plan">
+    <div class="section-header"><span class="section-num">08</span><h2 class="section-title">Plan de estudio</h2></div>
+    <p class="lead">Una ruta realista para la ventana del curso. Ajusta las fechas si el centro cambia el calendario; lo importante es el orden y el resultado de cada bloque.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Cuándo</th><th>Foco</th><th>Resultado que deberías tener</th></tr></thead>
+      <tbody><tr><td><strong>10/12/2026</strong></td><td>Análisis y mapa de materiales</td><td>Objetivo, grupo, soportes y lista de recursos necesarios.</td></tr><tr><td><strong>15/12/2026</strong></td><td>Guía didáctica</td><td>Guía con estructura, instrucciones y criterios de revisión.</td></tr><tr><td><strong>17/12/2026</strong></td><td>Presentación</td><td>Diez diapositivas con una idea por pantalla y apoyos visuales.</td></tr><tr><td><strong>22/12/2026</strong></td><td>Screencast</td><td>Guion, grabación y subtítulos de un vídeo de 5–8 min.</td></tr><tr><td><strong>07/01/2027</strong></td><td>Moodle y H5P</td><td>Curso de prueba con tres actividades y una tarea evaluable.</td></tr><tr><td><strong>08/01/2027</strong></td><td>Accesibilidad y licencias</td><td>Checklist aplicado y ficha de atribuciones cerrada.</td></tr></tbody>
+    </table></div>
+    <div class="callout success"><strong>Regla de oro</strong><p>Antes de producir, escribe en una línea: «este material sirve para que el alumno haga ___ y lo demuestre con ___». Si no puedes completarlo, cambia el material, no el objetivo.</p></div>
+  </section>
+
+  <section id="test">
+    <div class="section-header"><span class="section-num">09</span><h2 class="section-title">Test de comprobación</h2></div>
+    <p class="lead">Ocho preguntas para detectar lagunas. No es una nota: es una forma rápida de decidir qué repasar.</p>
+    <div id="testContainer"></div>
+    <div class="test-score" id="testScore" aria-live="polite"></div>
+    <div class="btn-group" style="margin-top:16px"><button class="btn btn-secondary" type="button" onclick="resetTest()">Repetir test</button></div>
+  </section>
+
+  <section id="fuentes">
+    <div class="section-header"><span class="section-num">10</span><h2 class="section-title">Fuentes y límites</h2></div>
+    <div class="callout warning"><strong>Resumen original, no manual comercial</strong><p>Esta ficha es material de estudio elaborado para el portfolio. No reproduce ni sustituye el temario comercial del curso, los PDFs del centro ni la documentación oficial. Para evaluar o certificar, prevalece siempre la fuente oficial y lo que indique CEFI Formación.</p></div>
+    <p>La estructura del certificado y los códigos de módulos y unidades de competencia se pueden consultar en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2011-20102" target="_blank" rel="noopener">Real Decreto 1697/2011</a>, modificado por el Real Decreto 625/2013. La planificación de fechas y horas de esta ficha sigue el portfolio del curso y es orientativa.</p>
+    <p class="small">Última revisión: 24/11/2026 · SSCE0110 · Contenido de estudio propio. No se ha añadido ningún PDF ni fragmento del manual comercial al repositorio.</p>
+  </section>
+
+  <footer class="module-footer">
+    <a href="modulo_MF1442_3.html">← MF1442_3</a>
+    <a href="modulos_SSCE0110.html">Índice de módulos</a>
+    <a href="modulo_MF1444_3.html">MF1444_3 →</a>
+  </footer>
+</main>
+<script>
+const STORAGE_KEY = "modulo_mf1443_entregables_v1";
+const DELIVERABLES = [{"t": "Guía didáctica de una UF lista para entregar al alumnado", "tag": "C1"}, {"t": "Presentación de 10 diapositivas aplicando las reglas de diseño", "tag": "C3"}, {"t": "Screencast de 5–8 min con guion, subtítulos y plan B", "tag": "C3"}, {"t": "Actividad interactiva H5P exportada e insertada en un LMS", "tag": "C3/C4"}, {"t": "Curso Moodle de prueba con 3 actividades y una tarea evaluable", "tag": "C4"}, {"t": "Checklist de accesibilidad aplicado a tus propios materiales", "tag": "Transversal"}, {"t": "Ficha de licencias y atribuciones de todos los recursos usados", "tag": "Transversal"}];
+const TEST = [{"q": "¿Qué debe decidir primero el tipo de material que vas a usar?", "opts": ["La herramienta que más te gusta", "El objetivo y las características del grupo", "La cantidad de diapositivas", "El color corporativo"], "a": 1, "why": "El material es un medio para un objetivo y un grupo concreto. La herramienta se elige después."}, {"q": "¿Qué significa cuidar la carga cognitiva?", "opts": ["Poner todo el contenido en una pantalla", "Añadir animaciones para que no aburra", "Presentar la información en dosis que se puedan procesar", "Leer la diapositiva en voz alta"], "a": 2, "why": "La carga cognitiva se reduce cuando separas ideas, eliminas ruido y das tiempo para practicar."}, {"q": "Una imagen encontrada en internet para un curso se puede usar siempre que…", "opts": ["Se recorte y no se vea la marca", "Se use con fines educativos", "Se compruebe la licencia y se atribuya correctamente", "Se suba a Moodle, que es privado"], "a": 2, "why": "El fin educativo no elimina los derechos. Hay que comprobar la licencia y cumplir sus condiciones."}, {"q": "¿Para qué sirven los subtítulos en un vídeo didáctico?", "opts": ["Solo para alumnado con discapacidad auditiva", "Para accesibilidad, comprensión y uso sin sonido", "Para que el vídeo dure más", "Para sustituir el guion"], "a": 1, "why": "Los subtítulos benefician a muchas personas y permiten usar el vídeo en contextos con ruido o sin audio."}, {"q": "¿Qué describe mejor a SCORM?", "opts": ["Un editor de presentaciones", "Un estándar para empaquetar contenidos y registrar seguimiento en un LMS", "Una red social educativa", "Un tipo de licencia Creative Commons"], "a": 1, "why": "SCORM permite que un contenido se suba a un LMS y que la plataforma registre la actividad del alumno."}, {"q": "¿Cuál es un plan B razonable si falla internet en una sesión?", "opts": ["Suspender la sesión", "Improvisar sin material", "Tener archivos locales y una actividad alternativa", "Pedir al alumnado que use sus datos"], "a": 2, "why": "La alternativa debe estar preparada antes: archivo local, versión imprimible o actividad oral."}, {"q": "En Moodle, ¿qué convierte un curso en algo evaluable?", "opts": ["Tener muchos PDFs", "Una tarea o actividad con instrucciones y criterios", "Un foro sin moderación", "Un vídeo largo"], "a": 1, "why": "La evaluación necesita una producción del alumno y criterios claros, no solo materiales de lectura."}, {"q": "¿Qué revisión es imprescindible antes de publicar un material?", "opts": ["Solo la ortografía", "Solo que se vea bonito", "Contenido, legibilidad, licencias, accesibilidad y funcionamiento", "Que tenga muchas animaciones"], "a": 2, "why": "La revisión final es múltiple: didáctica, técnica, legal y de acceso."}];
+
+function storageGet(key, fallback) {
+  try { const raw = localStorage.getItem(key); return raw ? JSON.parse(raw) : fallback; }
+  catch (err) { return fallback; }
+}
+function storageSet(key, value) {
+  try { localStorage.setItem(key, JSON.stringify(value)); return true; }
+  catch (err) { return false; }
+}
+function storageRemove(key) {
+  try { localStorage.removeItem(key); } catch (err) {}
+}
+function storageAvailable() {
+  try {
+    const probe = '__ssce_probe__';
+    localStorage.setItem(probe, '1');
+    localStorage.removeItem(probe);
+    return true;
+  } catch (err) { return false; }
+}
+
+let delivState = storageGet(STORAGE_KEY, {});
+if (!delivState || typeof delivState !== 'object' || Array.isArray(delivState)) delivState = {};
+
+function renderDeliverables() {
+  const list = document.getElementById('delivList');
+  if (!list) return;
+  list.innerHTML = DELIVERABLES.map((d, i) => {
+    const checked = !!delivState[i];
+    return '<label class="entregable ' + (checked ? 'checked' : '') + '">' +
+      '<input type="checkbox" ' + (checked ? 'checked ' : '') + 'onchange="toggleDeliverable(' + i + ', this.checked)">' +
+      '<span class="ent-text">' + d.t + '</span>' +
+      '<span class="ent-tag">' + d.tag + '</span>' +
+    '</label>';
+  }).join('');
+  updateDelivProgress();
+}
+function updateDelivProgress() {
+  const done = Object.values(delivState).filter(Boolean).length;
+  const total = DELIVERABLES.length;
+  const pct = total ? Math.round(done * 100 / total) : 0;
+  const bar = document.getElementById('delivBar');
+  const status = document.getElementById('delivStatus');
+  if (bar) bar.style.width = pct + '%';
+  if (status) status.textContent = done + ' de ' + total + ' entregables · ' + pct + '%';
+}
+function toggleDeliverable(i, checked) {
+  delivState[i] = !!checked;
+  storageSet(STORAGE_KEY, delivState);
+  renderDeliverables();
+}
+function resetDeliverables() {
+  if (!confirm('¿Reiniciar el checklist de este módulo?')) return;
+  delivState = {};
+  storageRemove(STORAGE_KEY);
+  renderDeliverables();
+}
+
+let testAnswered = new Set();
+let testScore = 0;
+function renderTest() {
+  const box = document.getElementById('testContainer');
+  if (!box) return;
+  box.innerHTML = TEST.map((q, qi) => {
+    return '<div class="test-question" data-qi="' + qi + '">' +
+      '<div class="test-q-text">' + (qi + 1) + '. ' + q.q + '</div>' +
+      '<div class="test-options">' + q.opts.map((o, oi) =>
+        '<button type="button" class="test-option" onclick="answerTest(' + qi + ',' + oi + ',this)">' + o + '</button>'
+      ).join('') + '</div>' +
+      '<div class="test-explanation" id="why-' + qi + '"></div>' +
+    '</div>';
+  }).join('');
+}
+function answerTest(qi, oi, btn) {
+  if (testAnswered.has(qi)) return;
+  testAnswered.add(qi);
+  const q = TEST[qi];
+  const question = document.querySelector('[data-qi="' + qi + '"]');
+  question.querySelectorAll('.test-option').forEach(b => { b.disabled = true; });
+  if (oi === q.a) { btn.classList.add('correct'); testScore++; }
+  else {
+    btn.classList.add('wrong');
+    const right = question.querySelectorAll('.test-option')[q.a];
+    if (right) right.classList.add('correct');
+  }
+  const why = document.getElementById('why-' + qi);
+  if (why) { why.textContent = q.why; why.classList.add('visible'); }
+  updateTestScore();
+}
+function updateTestScore() {
+  const box = document.getElementById('testScore');
+  if (!box) return;
+  box.classList.add('visible');
+  box.innerHTML = '<div class="test-score-num">' + testScore + '/' + TEST.length + '</div>' +
+    '<div>' + (testScore === TEST.length ? 'Todo correcto. Puedes pasar al siguiente módulo.' : 'Revisa las preguntas falladas antes de seguir.') + '</div>';
+}
+function resetTest() {
+  testAnswered = new Set();
+  testScore = 0;
+  const box = document.getElementById('testScore');
+  if (box) { box.classList.remove('visible'); box.innerHTML = ''; }
+  renderTest();
+}
+
+function updateNav() {
+  const sections = document.querySelectorAll('section[id]');
+  const links = document.querySelectorAll('.nav-list a');
+  let current = 'inicio';
+  sections.forEach(s => { if (scrollY >= s.offsetTop - 120) current = s.id; });
+  links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+}
+window.addEventListener('scroll', updateNav, { passive: true });
+if (!storageAvailable()) {
+  const warning = document.getElementById('storageWarning');
+  if (warning) warning.style.display = 'block';
+}
+renderDeliverables();
+renderTest();
+updateNav();
+</script>
+</body>
+</html>
