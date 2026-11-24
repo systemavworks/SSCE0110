@@ -45,8 +45,8 @@ sin instalación ni servidor, que guarda tu progreso en el navegador y lo export
 | Centro | CEFI Formación S.L. · Pol. Ind. Los Taranjales II, 58 · Almonte (Huelva) |
 | Aula y horario | Lunes a viernes · 9:00–15:00 · 6 h/día |
 | Inicio | Martes 24 de noviembre de 2026 |
-| Fin de la teoría (340 h) | Viernes 19 de febrero de 2027 |
-| Prácticas MP0353 (40 h) | Del 22 de febrero al 3 de marzo de 2027 · **fechas orientativas** |
+| Fin de la teoría (340 h) | Martes 23 de febrero de 2027 |
+| Prácticas MP0353 (40 h) | Del 24 de febrero al 5 de marzo de 2027 · **fechas orientativas** |
 | Cierre oficial | Viernes 12 de marzo de 2027 |
 | Carga total | 380 h = 340 h teórico-prácticas + 40 h de prácticas no laborales |
 | Autoría | Aj Fonts · Andalucía · Nov. 2026 |
@@ -78,34 +78,35 @@ Solo las tipografías se cargan de Google Fonts (si no hay red, el navegador usa
 
 | Módulo | Horas | Unidades formativas | Ventana prevista | Entregable clave |
 |---|---:|---|---|---|
-| **MF1442_3** · Programación didáctica | 60 | Módulo completo | 24/11/2026 → 07/12/2026 | Programación didáctica de una UF + matriz de alineación |
-| **MF1443_3** · Materiales y recursos | 90 | Módulo completo | 08/12/2026 → 04/01/2027 | Guía didáctica, screencast y curso Moodle de prueba |
-| **MF1444_3** · Impartición y tutorización | 100 | UF1645 (70 h) + UF1646 (30 h) | 07/01/2027 → 29/01/2027 | Microclase grabada + plan de acción tutorial |
-| **MF1445_3** · Evaluación del aprendizaje | 60 | Módulo completo | 29/01/2027 → 12/02/2027 | Prueba práctica con rúbrica + informe de mejora |
-| **MF1446_3** · Orientación y calidad | 30 | Módulo completo | 12/02/2027 → 19/02/2027 | Itinerario de inserción + cuadro de mando de calidad |
-| **MP0353** · Prácticas no laborales | 40 | Módulo de prácticas | 22/02/2027 → 03/03/2027 *(orientativo)* | Diario de prácticas + sesión impartida + informe final |
-| **Cierre** | — | Evaluación y defensa | 04/03/2027 → 12/03/2027 | Portfolio completo y evidencias |
+| **MF1442_3** · Programación didáctica | 60 | Módulo completo | 24/11/2026 → 09/12/2026 | Programación didáctica de una UF + matriz de alineación |
+| **MF1443_3** · Materiales y recursos | 90 | Módulo completo | 10/12/2026 → 08/01/2027 | Guía didáctica, screencast y curso Moodle de prueba |
+| **MF1444_3** · Impartición y tutorización | 100 | UF1645 (70 h) + UF1646 (30 h) | 11/01/2027 → 02/02/2027 | Microclase grabada + plan de acción tutorial |
+| **MF1445_3** · Evaluación del aprendizaje | 60 | Módulo completo | 02/02/2027 → 16/02/2027 | Prueba práctica con rúbrica + informe de mejora |
+| **MF1446_3** · Orientación y calidad | 30 | Módulo completo | 16/02/2027 → 23/02/2027 | Itinerario de inserción + cuadro de mando de calidad |
+| **MP0353** · Prácticas no laborales | 40 | Módulo de prácticas | 24/02/2027 → 05/03/2027 *(orientativo)* | Diario de prácticas + sesión impartida + informe final |
+| **Cierre** | — | Evaluación y defensa | 08/03/2027 → 12/03/2027 | Portfolio completo y evidencias |
 
 **Cómo se leen estas fechas**
 
 - Se calculan con **6 h/día**, de lunes a viernes, descontando los días no lectivos de abajo.
-- Los cambios de módulo pueden caer **a mitad de jornada** (por ejemplo, MF1444_3 termina el 29/01 y
+- Los cambios de módulo pueden caer **a mitad de jornada** (por ejemplo, MF1444_3 termina el 02/02 y
   MF1445_3 empieza ese mismo día): la fecha indica el último día con horas de ese módulo.
-- Las 340 h de teoría ocupan **57 sesiones** y terminan el **19/02/2027**.
-- El MP0353 ocupa **7 sesiones orientativas** (22/02 → 03/03). Si el centro asigna otras fechas,
+- Las 340 h de teoría ocupan **57 sesiones** y terminan el **23/02/2027**.
+- El MP0353 ocupa **7 sesiones orientativas** (24/02 → 05/03). Si el centro asigna otras fechas,
   cámbialas en el portfolio con los campos **Inicio real** y **Fin real** de la tarjeta del módulo.
-- Quedan **7 sesiones de colchón** (04/03 → 12/03) para recuperaciones, evaluación y defensa.
-- Si el centro confirma el cierre del **7 y 8 de diciembre**, añádelos en *Ajustar calendario*:
-  con 6 h/día el contenido se desplaza por encima del 12/03, así que habría que subir a ~6,25 h/día
-  o habilitar sesiones extra.
+- Quedan **5 sesiones de colchón** (08/03 → 12/03) para recuperaciones, evaluación y defensa.
+- Los festivos del **7 y 8 de diciembre** ya están incluidos. Si el centro confirma otro cierre,
+  añádelo en *Ajustar calendario* y pulsa *Aplicar calendario*.
 ---
 
 ## Calendario y días no lectivos
 
-**Días no lectivos configurados** (8 en total):
+**Días no lectivos configurados** (10 en total):
 
 | Fecha | Día | Motivo |
 |---|---|---|
+| 07/12/2026 | lunes | Día de la Constitución (trasladado; el 06/12 cae en domingo) |
+| 08/12/2026 | martes | Inmaculada Concepción |
 | 24/12/2026 | jueves | Nochebuena |
 | 25/12/2026 | viernes | Navidad |
 | 30/12/2026 | miércoles | Cierre del centro |
@@ -115,20 +116,19 @@ Solo las tipografías se cargan de Google Fonts (si no hay red, el navegador usa
 | 06/01/2027 | miércoles | Reyes Magos |
 | 01/03/2027 | lunes | Día de Andalucía (trasladado; el 28/02 cae en domingo) |
 
-Con estos festivos quedan **71 días lectivos** en la ventana 24/11/2026 → 12/03/2027:
+Con estos festivos quedan **69 días lectivos** en la ventana 24/11/2026 → 12/03/2027:
 
-- **57 sesiones** para las 340 h de teoría (última: 19/02/2027, con 4 h).
-- **7 sesiones** para las 40 h del MP0353 (22/02 → 03/03, orientativas).
-- **7 sesiones de colchón** (04/03 → 12/03) para evaluación, recuperaciones y defensa del portfolio.
+- **57 sesiones** para las 340 h de teoría (última: 23/02/2027, con 4 h).
+- **7 sesiones** para las 40 h del MP0353 (24/02 → 05/03, orientativas).
+- **5 sesiones de colchón** (08/03 → 12/03) para evaluación, recuperaciones y defensa del portfolio.
 
 **Dos avisos importantes**
 
-1. **7 y 8 de diciembre** (Constitución e Inmaculada) son festivos autonómicos, pero no estaban en la
-   lista facilitada del centro. No se han incluido por defecto porque, con 6 h/día, añadirlos empuja el
-   contenido más allá del 12/03/2027. Si el centro cierra, añádelos en *Ajustar calendario* y ajusta
-   las horas/día (~6,25 h) o el cierre.
-2. **1 de enero** se ha incluido como festivo estatal aunque tampoco estaba en la lista: ningún centro
-   imparte ese día. El resto de fechas se respeta tal cual.
+1. **7 y 8 de diciembre** están incluidos como festivos en toda España (Constitución trasladada e
+   Inmaculada Concepción). Son los que desplazan el final del contenido al 05/03/2027 y dejan
+   5 sesiones de colchón hasta el cierre del 12/03/2027.
+2. **1 de enero** se ha incluido como festivo estatal aunque no estaba en la lista original: ningún
+   centro imparte ese día. El resto de fechas se respeta tal cual.
 
 El calendario es **editable** en el portfolio: fechas de inicio y cierre, horas/día y lista de festivos.
 Al pulsar *Aplicar calendario* se recalculan todas las ventanas de los módulos y los contadores.
@@ -219,25 +219,26 @@ mp0353: añade diario de la primera observación
 
 - [x] README con ficha, módulos, calendario, método y estado.
 - [x] `portfolio.html` con timeline, temario, entregables, evidencias, notas y exportación.
-- [x] Calendario calculado: 340 h de teoría + 40 h de prácticas + 7 sesiones de cierre.
-- [x] Repositorio git inicializado y conectado a `systemavworks/SSCE0110`.
+- [x] Calendario calculado: 69 días lectivos (57 de teoría + 7 de prácticas + 5 de cierre).
+- [x] Repositorio publicado en GitHub: `main` sincronizado con `origin/main`.
 
 **En curso**
 
-- [ ] **MF1442_3** (24/11 → 07/12): programación didáctica, matriz de alineación y ficha del grupo.
+- [ ] **MF1442_3** (24/11 → 09/12): programación didáctica, matriz de alineación y ficha del grupo.
 - [ ] Completar el temario del MF1442_3 en el portfolio (10 temas).
 - [ ] Cerrar los 5 entregables del MF1442_3 y enlazarlos en *Entregables*.
 
 **Pendiente**
 
-- [ ] **MF1443_3** (08/12 → 04/01): materiales, Moodle, screencast y SCORM.
-- [ ] **MF1444_3** (07/01 → 29/01): microclase y plan de acción tutorial.
-- [ ] **MF1445_3** (29/01 → 12/02): instrumentos de evaluación y evidencias.
-- [ ] **MF1446_3** (12/02 → 19/02): itinerario de inserción y cuadro de calidad.
-- [ ] **MP0353** (22/02 → 03/03): confirmar centro, tutor y fechas en enero; diario desde el primer día.
+- [ ] **MF1443_3** (10/12 → 08/01): materiales, Moodle, screencast y SCORM.
+- [ ] **MF1444_3** (11/01 → 02/02): microclase y plan de acción tutorial.
+- [ ] **MF1445_3** (02/02 → 16/02): instrumentos de evaluación y evidencias.
+- [ ] **MF1446_3** (16/02 → 23/02): itinerario de inserción y cuadro de calidad.
+- [ ] **MP0353** (24/02 → 05/03): confirmar centro, tutor y fechas en enero; diario desde el primer día.
 - [ ] Crear las fichas de los módulos MF1443_3 a MF1446_3 (solo existe la del MF1442_3).
 - [ ] Preparar la carpeta de evidencias con la estructura de arriba.
 - [ ] Simulacro del test final y defensa del portfolio.
+- [ ] Activar GitHub Pages en **Settings → Pages** (rama `main`, carpeta `/`).
 
 ## Publicar en GitHub Pages
 
@@ -252,6 +253,9 @@ El repositorio ya está preparado para servirse como web estática:
 
 No hace falta workflow de Actions ni build: todo es HTML estático. Si el repositorio es privado,
 Pages solo está disponible según el plan de GitHub.
+
+> El dominio `systemavworks.github.io` redirige a `avstack.es`. Si mantienes ese dominio personalizado,
+> la URL del proyecto será `https://avstack.es/SSCE0110/portfolio.html` una vez activado Pages.
 
 ## Autoría y licencia
 
@@ -270,5 +274,5 @@ Pages solo está disponible según el plan de GitHub.
 
 ---
 
-<sub>Última revisión: 24/11/2026 · v1.0 · Aj Fonts · Andalucía · Nov. 2026</sub>
+<sub>Última revisión: 24/11/2026 · v1.1 · Aj Fonts · Andalucía · Nov. 2026</sub>
 

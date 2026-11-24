@@ -503,9 +503,9 @@ footer{margin-top:56px;border-top:1px solid var(--line);background:rgba(244,238,
         <span class="kicker"><span class="dot"></span>01 · Calendario</span>
         <h2>De la primera sesión al cierre oficial</h2>
         <p>Las <b>340 h teóricas</b> se reparten en <b id="txtSessions">57</b> sesiones y terminan el
-          <b id="txtTheoryEnd">19/02/2027</b>. Las <b>40 h del MP0353</b> son prácticas con fechas orientativas
-          (<b id="txtPractice">22/02 → 03/03/2027</b>). El cierre oficial es el <b id="txtEnd">12/03/2027</b>,
-          con <b id="txtBuffer">7</b> sesiones de colchón para evaluación, recuperaciones y defensa del portfolio.</p>
+          <b id="txtTheoryEnd">23/02/2027</b>. Las <b>40 h del MP0353</b> son prácticas con fechas orientativas
+          (<b id="txtPractice">24/02 → 05/03/2027</b>). El cierre oficial es el <b id="txtEnd">12/03/2027</b>,
+          con <b id="txtBuffer">5</b> sesiones de colchón para evaluación, recuperaciones y defensa del portfolio.</p>
       </div>
       <button class="btn ghost sm" type="button" id="btnJumpToday">Ir al módulo de hoy</button>
     </div>
@@ -518,9 +518,10 @@ footer{margin-top:56px;border-top:1px solid var(--line);background:rgba(244,238,
           <h3 style="font-family:var(--ff-b);font-size:.95rem;margin-bottom:10px">Días no lectivos</h3>
           <ul class="hol-list" id="holList"></ul>
           <div class="note warn" style="margin-top:12px">
-            <b>Revisa el calendario del centro.</b> Están incluidos el 1 de enero (Año Nuevo) y el 1 de marzo.
-            El centro también suele cerrar el 7 y el 8 de diciembre: si los añades, pulsa <b>Aplicar calendario</b>
-            y comprueba si necesitas subir las horas/día o mover el cierre, porque el contenido se desplaza.
+            <b>Revisa el calendario del centro.</b> Están incluidos el 7 y el 8 de diciembre (Constitución
+            trasladada e Inmaculada), el 1 de enero (Año Nuevo) y el 1 de marzo. Si el centro confirma otro
+            cierre, añádelo en <b>Ajustar calendario</b> y pulsa <b>Aplicar calendario</b>: se recalculan
+            las horas y las ventanas de los módulos.
           </div>
         </div>
         <details class="card pad">
@@ -688,13 +689,16 @@ const AUTHOR = 'Aj Fonts · Andalucía · Nov. 2026';
 const STUDENT = 'Víctor';
 const TOTAL_HOURS = 380;
 const KEY = 'ssce0110_portfolio_v1';
+const DATA_VERSION = 2;
 const DEFAULT_CFG = {
   start: '2026-11-24',
   end: '2027-03-12',
   hpd: 6,
-  holidays: ['2026-12-24', '2026-12-25', '2026-12-30', '2026-12-31', '2027-01-01', '2027-01-05', '2027-01-06', '2027-03-01']
+  holidays: ['2026-12-07', '2026-12-08', '2026-12-24', '2026-12-25', '2026-12-30', '2026-12-31', '2027-01-01', '2027-01-05', '2027-01-06', '2027-03-01']
 };
 const HOLIDAY_NAMES = {
+  '2026-12-07': 'Constitución (trasladada)',
+  '2026-12-08': 'Inmaculada Concepción',
   '2026-12-24': 'Nochebuena',
   '2026-12-25': 'Navidad',
   '2026-12-30': 'Cierre del centro',
@@ -874,7 +878,7 @@ function clamp(n, a, b) { return Math.min(b, Math.max(a, n)); }
    ESTADO PERSISTENTE
    ============================================================ */
 function defaults() {
-  return { v: 1, cfg: JSON.parse(JSON.stringify(DEFAULT_CFG)), topics: {}, deliv: {}, evidence: {}, notes: {}, real: {}, updated: null };
+  return { v: DATA_VERSION, cfg: JSON.parse(JSON.stringify(DEFAULT_CFG)), topics: {}, deliv: {}, evidence: {}, notes: {}, real: {}, updated: null };
 }
 function sanitizeCfg(c) {
   const out = JSON.parse(JSON.stringify(DEFAULT_CFG));
@@ -891,6 +895,13 @@ function sanitize(raw) {
   const out = defaults();
   if (!raw || typeof raw !== 'object') return out;
   out.cfg = sanitizeCfg(raw.cfg);
+  const loadedVersion = Number.isFinite(+raw.v) ? +raw.v : 1;
+  if (loadedVersion < DATA_VERSION) {
+    ['2026-12-07', '2026-12-08'].forEach(d => {
+      if (!out.cfg.holidays.includes(d)) out.cfg.holidays.push(d);
+    });
+    out.cfg.holidays.sort();
+  }
   const ids = new Set(MODULES.map(m => m.id));
   Object.keys(raw.topics || {}).forEach(k => {
     const id = k.split(':')[0], v = raw.topics[k];
