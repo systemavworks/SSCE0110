@@ -164,6 +164,9 @@ Abre [`portfolio.html`](portfolio.html) en el navegador. No hay instalación, cu
   al ocultar o cerrar la pestaña, para no perder el último carácter.
 - `index.html` **no tiene un almacén propio**: redirige a `portfolio.html` en el mismo origen, así que
   comparte exactamente el mismo `localStorage`. Abrir la raíz o `portfolio.html` no crea datos distintos.
+- Si el navegador **bloquea `localStorage`** (modo privado estricto, políticas del equipo o cuota llena),
+  el portfolio lo detecta, muestra el aviso en *Datos* y recomienda exportar el JSON: en ese caso no puede
+  garantizar que el progreso se conserve al cerrar.
 - Los datos son **de este navegador, este perfil y esta URL**: `https://avstack.es/...` y
   `https://systemavworks.github.io/...` son orígenes diferentes y no comparten progreso. Usa siempre la
   misma URL. Si cambias de equipo, de navegador o borras los datos del sitio, desaparecen: exporta una
@@ -249,25 +252,39 @@ mp0353: añade diario de la primera observación
 - [ ] Crear las fichas de los módulos MF1443_3 a MF1446_3 (solo existe la del MF1442_3).
 - [ ] Preparar la carpeta de evidencias con la estructura de arriba.
 - [ ] Simulacro del test final y defensa del portfolio.
-- [ ] Activar GitHub Pages en **Settings → Pages** (rama `main`, carpeta `/`).
+- [x] GitHub Pages activado en **Settings → Pages** (rama `main`, carpeta `/`); build de `32db3ce` correcto.
+- [ ] Servir `/SSCE0110/` en `avstack.es` (Cloudflare Pages) o corregir el dominio personalizado.
 
 ## Publicar en GitHub Pages
 
-El repositorio ya está preparado para servirse como web estática:
+Pages está activado en **main / (root)** y el build de `32db3ce` terminó correctamente. No hace falta
+workflow de Actions ni build: todo es HTML estático.
 
-1. En GitHub, entra en **Settings → Pages**.
-2. En *Build and deployment*, elige **Deploy from a branch**.
-3. Selecciona la rama **main** y la carpeta **/ (root)**. Guarda.
-4. En uno o dos minutos estarán disponibles:
-   - `https://systemavworks.github.io/SSCE0110/` (abre el portfolio mediante `index.html`)
-   - `https://systemavworks.github.io/SSCE0110/portfolio.html`
-   - `https://systemavworks.github.io/SSCE0110/guia_arranque_SSCE0110.html`
+### Estado de la URL pública (24/11/2026)
 
-No hace falta workflow de Actions ni build: todo es HTML estático. Si el repositorio es privado,
-Pages solo está disponible según el plan de GitHub.
+- El origen de GitHub Pages sirve el proyecto correctamente:
+  `http://185.199.108.153/SSCE0110/` con `Host: avstack.es` devuelve `index.html`.
+- `https://avstack.es/SSCE0110/` devuelve **404**: `avstack.es` está servido por **Cloudflare Pages**
+  (repositorio `systemavworks.github.io`), cuyo `_redirects` comodín manda las rutas desconocidas a
+  `404.html`. Cloudflare no reenvía `/SSCE0110/` al origen de GitHub Pages.
+- `https://systemavworks.github.io/SSCE0110/` redirige al dominio personalizado `avstack.es` y acaba en
+  ese mismo 404. No es un fallo del portfolio ni del build.
 
-> El dominio `systemavworks.github.io` redirige a `avstack.es`. Si mantienes ese dominio personalizado,
-> la URL del proyecto será `https://avstack.es/SSCE0110/portfolio.html` una vez activado Pages.
+Para publicarlo en la URL prevista, elige **una** de estas salidas:
+
+1. **Cloudflare Pages (recomendada si `avstack.es` se despliega desde `systemavworks.github.io`)**:
+   copia `index.html` y `portfolio.html` en una carpeta `SSCE0110/` de ese repositorio y deja que
+   Cloudflare Pages la despliegue. La URL será `https://avstack.es/SSCE0110/`.
+2. **GitHub Pages directo**: desactiva el dominio personalizado `avstack.es` del sitio de usuario
+   `systemavworks.github.io`. Entonces `https://systemavworks.github.io/SSCE0110/` servirá el proyecto.
+   Afecta a todos los project pages de la organización.
+3. **Subdominio dedicado**: crea `ssce0110.avstack.es` con CNAME a `systemavworks.github.io` (DNS only),
+   configúralo como custom domain de este repositorio y usa
+   `https://ssce0110.avstack.es/portfolio.html`. Mantén siempre esa misma URL para no separar el
+   `localStorage`.
+
+Mientras no se resuelva, abre `portfolio.html` en local o usa la copia publicada en el repositorio del
+sitio. **No uses `https://avstack.es/SSCE0110/` para trabajar**: ahora mismo no carga la aplicación.
 
 ## Autoría y licencia
 
@@ -286,5 +303,5 @@ Pages solo está disponible según el plan de GitHub.
 
 ---
 
-<sub>Última revisión: 24/11/2026 · v1.2 · Aj Fonts · Andalucía · Nov. 2026</sub>
+<sub>Última revisión: 24/11/2026 · v1.4 · Aj Fonts · Andalucía · Nov. 2026</sub>
 

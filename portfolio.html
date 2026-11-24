@@ -1415,9 +1415,28 @@ function fmtBytes(n) {
   return (n / 1048576).toFixed(1) + ' MB';
 }
 
+let STORAGE_OK = null;
+function storageAvailable() {
+  if (STORAGE_OK !== null) return STORAGE_OK;
+  try {
+    const probe = '__ssce0110_probe__';
+    localStorage.setItem(probe, '1');
+    localStorage.removeItem(probe);
+    STORAGE_OK = true;
+  } catch (e) {
+    STORAGE_OK = false;
+  }
+  return STORAGE_OK;
+}
+
 function updateStorageInfo() {
   const el = $('#storageInfo');
   if (!el) return;
+  if (!storageAvailable()) {
+    el.innerHTML = '<span style="color:var(--warn)">Este navegador bloquea el almacenamiento local. ' +
+      'Exporta el JSON antes de cerrar; si no, el progreso no se conservará.</span>';
+    return;
+  }
   let bytes = 0;
   try { bytes = new Blob([localStorage.getItem(KEY) || '']).size; } catch (e) {}
   const upd = S.updated ? new Date(S.updated) : null;
@@ -1654,6 +1673,7 @@ function flushSave() {
 }
 /* Si se cierra o se oculta la pestaña, vuelca ya el guardado diferido. */
 window.addEventListener('pagehide', flushSave);
+window.addEventListener('beforeunload', flushSave);
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'hidden') flushSave();
 });
@@ -1839,6 +1859,9 @@ window.addEventListener('scroll', onScroll, { passive: true });
 fillCfg();
 renderAll();
 onScroll();
+if (!storageAvailable()) {
+  toast('Este navegador bloquea el almacenamiento local. Exporta el JSON antes de cerrar.', 'bad');
+}
 </script>
 
 </body>
