@@ -1,0 +1,1717 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SSCE0110 · Portfolio y seguimiento del temario · Aj Fonts</title>
+<meta name="description" content="Portfolio docente y seguimiento del temario del certificado SSCE0110 (Docencia de la Formación Profesional para el Empleo): módulos, calendario 24/11/2026–12/03/2027, estados de estudio, entregables y evidencias. Autor: Aj Fonts · Andalucía · Nov. 2026.">
+<meta name="author" content="Aj Fonts · Andalucía · Nov. 2026">
+<meta name="theme-color" content="#3B34C7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233B34C7'/%3E%3Cpath d='M7 12l9-4 9 4-9 4-9-4z' fill='%23fff'/%3E%3Cpath d='M11 15v5c0 1.7 2.2 3 5 3s5-1.3 5-3v-5' stroke='%23F2A20C' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+/* ============================================================
+   SSCE0110 · Portfolio y seguimiento — "Aula clara" v1
+   Misma paleta y tipografías que guia_arranque_SSCE0110.html
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --paper:#FBF7F0; --paper-2:#F4EEE3; --paper-3:#EFE7D9;
+  --card:#FFFFFF; --card-2:#FDFBF7;
+  --ink:#151C2B; --ink-2:#3F4A5E; --ink-3:#6E7789; --ink-4:#98A0B0;
+  --line:#E6DCCB; --line-2:#DCE3EE; --line-3:#F0EAE0;
+
+  --indigo:#3B34C7; --teal:#00958C; --magenta:#D6218C;
+  --amber:#F2A20C; --blue:#1D6BFF; --green:#3E9B4F; --red:#E23744;
+
+  --accent:#3B34C7; --accent-ink:#2B2596; --accent-soft:#EDECFB;
+  --ok:#2F8F4E; --ok-soft:#E7F5E9; --warn:#B87400; --warn-soft:#FDF1DC;
+  --danger:#C42B37; --danger-soft:#FCE9EA; --info:#1257C9; --info-soft:#E6EEFF;
+
+  --r-s:10px; --r-m:16px; --r-l:22px; --r-xl:30px;
+  --sh-1:0 1px 2px rgba(21,28,43,.05), 0 8px 24px -18px rgba(21,28,43,.45);
+  --sh-2:0 2px 6px rgba(21,28,43,.06), 0 26px 50px -30px rgba(21,28,43,.5);
+  --ff-d:'Fraunces','Iowan Old Style','Palatino Linotype',Georgia,serif;
+  --ff-b:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --ff-m:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --gap:22px;
+  --nav-h:66px;
+}
+[data-hue="indigo"]{--h:#3B34C7;--h-ink:#2B2596;--h-soft:#EDECFB;--h-on:#fff}
+[data-hue="teal"]{--h:#00958C;--h-ink:#00625C;--h-soft:#E1F4F2;--h-on:#fff}
+[data-hue="magenta"]{--h:#D6218C;--h-ink:#9C1364;--h-soft:#FCE9F4;--h-on:#fff}
+[data-hue="amber"]{--h:#F2A20C;--h-ink:#8A5A00;--h-soft:#FDF1DC;--h-on:#4A3200}
+[data-hue="blue"]{--h:#1D6BFF;--h-ink:#12419E;--h-soft:#E6EEFF;--h-on:#fff}
+[data-hue="green"]{--h:#3E9B4F;--h-ink:#266633;--h-soft:#E7F5E9;--h-on:#fff}
+[data-hue="red"]{--h:#E23744;--h-ink:#9E1F29;--h-soft:#FCE9EA;--h-on:#fff}
+[data-hue="slate"]{--h:#5B6779;--h-ink:#3F4A5E;--h-soft:#EDF0F4;--h-on:#fff}
+
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 18px)}
+body{
+  margin:0;font-family:var(--ff-b);font-size:16px;line-height:1.6;
+  color:var(--ink);background:
+    radial-gradient(1100px 620px at 88% -12%,#EDECFB 0%,transparent 62%),
+    radial-gradient(900px 520px at -8% 8%,#E1F4F2 0%,transparent 58%),
+    var(--paper);
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:radial-gradient(rgba(21,28,43,.055) 1px,transparent 1px);
+  background-size:22px 22px;
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.6),transparent 85%);
+}
+main,header.topbar,footer{position:relative;z-index:1}
+img,svg{display:block;max-width:100%}
+a{color:var(--accent-ink);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+h1,h2,h3,h4{font-family:var(--ff-d);font-weight:600;line-height:1.15;margin:0}
+p{margin:0}
+button{font:inherit;color:inherit}
+::selection{background:var(--accent-soft)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.skip{position:absolute;left:-9999px;top:8px;z-index:200;background:var(--ink);color:#fff;padding:10px 16px;border-radius:9px}
+.skip:focus{left:8px}
+.wrap{width:min(1180px,calc(100% - 38px));margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* ---------- TOPBAR ---------- */
+.topbar{
+  position:sticky;top:0;z-index:90;height:var(--nav-h);
+  background:rgba(251,247,240,.86);backdrop-filter:saturate(160%) blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.topbar .wrap{height:100%;display:flex;align-items:center;gap:18px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);min-width:0}
+.brand svg{width:34px;height:34px;flex:none}
+.brand b{font-size:.94rem;letter-spacing:.01em;display:block}
+.brand small{display:block;font-size:.7rem;color:var(--ink-3);letter-spacing:.02em}
+.topnav{display:flex;gap:2px;align-items:center;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.topnav::-webkit-scrollbar{display:none}
+.topnav a{
+  text-decoration:none;color:var(--ink-2);font-size:.82rem;font-weight:500;
+  padding:8px 11px;border-radius:9px;white-space:nowrap;transition:.15s;
+}
+.topnav a:hover{background:var(--paper-2);color:var(--ink)}
+.topnav a.on{background:var(--accent-soft);color:var(--accent-ink);font-weight:600}
+.top-actions{display:flex;gap:7px;align-items:center;flex:none}
+.iconbtn{
+  width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--line);
+  background:var(--card);border-radius:10px;cursor:pointer;color:var(--ink-2);transition:.15s;
+}
+.iconbtn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.iconbtn svg{width:17px;height:17px}
+.navprog{position:absolute;left:0;right:0;bottom:-1px;height:2px;background:transparent}
+.navprog i{display:block;height:100%;background:linear-gradient(90deg,var(--indigo),var(--teal));width:0;transition:width .3s}
+
+/* ---------- BOTONES / CHIPS ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  border:1px solid transparent;background:var(--accent);color:#fff;
+  font-size:.84rem;font-weight:600;padding:10px 15px;border-radius:11px;
+  cursor:pointer;transition:.16s;text-decoration:none;line-height:1.2;
+}
+.btn:hover{background:var(--accent-ink);color:#fff;transform:translateY(-1px)}
+.btn.ghost{background:var(--card);border-color:var(--line);color:var(--ink-2)}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.btn.sm{padding:7px 11px;font-size:.77rem;border-radius:9px}
+.btn.danger{background:var(--danger-soft);color:var(--danger);border-color:#F3C7CB}
+.btn.danger:hover{background:var(--danger);color:#fff}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.chip{
+  display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:999px;
+  border:1px solid var(--line);background:var(--card);color:var(--ink-2);
+  font-size:.76rem;font-weight:600;cursor:pointer;transition:.15s;white-space:nowrap;
+}
+.chip:hover{border-color:var(--ink-3)}
+.chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.chip .dot{width:7px;height:7px;border-radius:50%;background:currentColor;opacity:.55}
+.chip[aria-pressed="true"] .dot{opacity:1}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:4px 9px;border-radius:999px;font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.pill.ok{background:var(--ok-soft);color:var(--ok)}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+.pill.bad{background:var(--danger-soft);color:var(--danger)}
+.pill.info{background:var(--info-soft);color:var(--info)}
+.pill.mute{background:var(--paper-2);color:var(--ink-3)}
+/* ---------- HERO ---------- */
+.hero{padding:40px 0 10px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:start}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:.73rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);
+  background:var(--accent-soft);padding:6px 11px;border-radius:999px;margin-bottom:16px;
+}
+.kicker .dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.hero h1{font-size:clamp(2.1rem,4.6vw,3.35rem);letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--accent);position:relative;white-space:nowrap}
+.hero h1 em::after{
+  content:"";position:absolute;left:0;right:0;bottom:.02em;height:.18em;
+  background:var(--amber);opacity:.4;border-radius:3px;z-index:-1;
+}
+.hero .sub{margin-top:16px;font-size:1.02rem;color:var(--ink-2);max-width:60ch}
+.hero .sub b{color:var(--ink)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.meta span{
+  display:inline-flex;align-items:center;gap:7px;font-size:.78rem;color:var(--ink-2);
+  background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:999px;padding:6px 11px;
+}
+.meta svg{width:14px;height:14px;color:var(--accent)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+
+/* panel de progreso */
+.panel{
+  background:linear-gradient(160deg,#fff,#FDFBF7);border:1px solid var(--line);
+  border-radius:var(--r-xl);box-shadow:var(--sh-2);padding:22px;
+}
+.panel-top{display:flex;align-items:center;gap:18px}
+.ring{width:112px;height:112px;flex:none;position:relative}
+.ring svg{width:112px;height:112px;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:9}
+.ring .bgc{stroke:var(--paper-3)}
+.ring .fgc{stroke:url(#ringGrad);stroke-linecap:round;transition:stroke-dashoffset .5s}
+.ring b{
+  position:absolute;inset:0;display:grid;place-items:center;font-family:var(--ff-d);
+  font-size:1.45rem;line-height:1;color:var(--ink);text-align:center;
+}
+.ring b small{display:block;font-family:var(--ff-b);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);text-align:center;margin-top:3px}
+.panel-top h3{font-size:1.12rem;margin-bottom:4px}
+.panel-top p{font-size:.82rem;color:var(--ink-3)}
+.panel-bars{display:grid;gap:10px;margin-top:18px}
+.pbar{display:grid;grid-template-columns:1fr auto;gap:6px 10px;font-size:.75rem;color:var(--ink-2)}
+.pbar b{font-family:var(--ff-m);font-size:.72rem;color:var(--ink-2)}
+.pbar .track{grid-column:1/-1;height:7px;background:var(--paper-2);border-radius:999px;overflow:hidden}
+.pbar .fill{height:100%;border-radius:999px;background:var(--accent);transition:width .45s}
+.pbar .fill.teal{background:var(--teal)}
+.pbar .fill.amber{background:var(--amber)}
+.panel-foot{
+  display:flex;justify-content:space-between;gap:10px;margin-top:18px;padding-top:14px;
+  border-top:1px dashed var(--line);font-size:.76rem;color:var(--ink-3);
+}
+.panel-foot b{color:var(--ink-2)}
+
+/* ---------- KPI ---------- */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:26px 0 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:15px 16px;box-shadow:var(--sh-1)}
+.kpi b{display:block;font-family:var(--ff-d);font-size:1.5rem;line-height:1;color:var(--accent-ink)}
+.kpi span{display:block;font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);margin-top:6px;font-weight:600}
+.kpi small{display:block;font-size:.72rem;color:var(--ink-3);margin-top:5px}
+/* ---------- SECCIONES ---------- */
+.section{padding:44px 0 6px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:18px;flex-wrap:wrap}
+.sec-head .kicker{margin-bottom:9px}
+.sec-head h2{font-size:clamp(1.5rem,2.6vw,2rem);letter-spacing:-.01em}
+.sec-head p{color:var(--ink-2);font-size:.92rem;max-width:70ch;margin-top:7px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);box-shadow:var(--sh-1)}
+.pad{padding:22px}
+.note{background:var(--info-soft);border:1px solid #CFDDFB;border-radius:var(--r-m);padding:13px 15px;font-size:.82rem;color:#14417E}
+.note b{color:#0E3060}
+.note.warn{background:var(--warn-soft);border-color:#F1D9A6;color:#7A4C00}
+.note.warn b{color:#5E3A00}
+.two{display:grid;grid-template-columns:1.55fr .95fr;gap:18px;align-items:start}
+
+/* ---------- TIMELINE ---------- */
+.tl{position:relative;display:grid;gap:4px}
+.tl::before{content:"";position:absolute;left:15px;top:14px;bottom:14px;width:2px;background:linear-gradient(var(--indigo),var(--teal) 55%,var(--green));opacity:.28;border-radius:2px}
+.tl-row{display:grid;grid-template-columns:32px 1fr;gap:12px;position:relative}
+.tl-dot{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--card);border:2px solid var(--h);color:var(--h-ink);font-family:var(--ff-m);font-size:.64rem;font-weight:600;z-index:1;margin-top:15px}
+.tl-body{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);
+  padding:14px 16px;margin:4px 0;box-shadow:var(--sh-1);transition:.16s;
+}
+.tl-body:hover{border-color:var(--h);box-shadow:var(--sh-2)}
+.tl-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.tl-top h4{font-size:1rem;font-family:var(--ff-b);font-weight:700}
+.tl-code{font-family:var(--ff-m);font-size:.72rem;font-weight:600;color:var(--h-ink);background:var(--h-soft);padding:2px 7px;border-radius:6px}
+.tl-dates{margin-left:auto;font-family:var(--ff-m);font-size:.72rem;color:var(--ink-3);white-space:nowrap}
+.tl-name{font-size:.8rem;color:var(--ink-3);margin-top:3px}
+.tl-bot{display:flex;align-items:center;gap:10px;margin-top:9px;flex-wrap:wrap}
+.tl-bot .track{flex:1;min-width:120px;height:6px;background:var(--paper-2);border-radius:999px;overflow:hidden}
+.tl-bot .fill{height:100%;background:var(--h);border-radius:999px;transition:width .4s}
+.tl-bot .pct{font-family:var(--ff-m);font-size:.7rem;color:var(--ink-3)}
+.tl-close{border-style:dashed;background:var(--card-2)}
+
+/* ---------- HOLIDAYS / SETTINGS ---------- */
+.hol-list{display:grid;gap:7px;margin:0;padding:0;list-style:none}
+.hol-list li{display:flex;align-items:center;gap:9px;font-size:.82rem;color:var(--ink-2);padding:7px 10px;background:var(--paper-2);border-radius:9px}
+.hol-list li b{font-family:var(--ff-m);font-size:.72rem;color:var(--danger);font-weight:600}
+.hol-list li span{color:var(--ink-3);font-size:.76rem;margin-left:auto}
+.cfg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.field{display:grid;gap:5px}
+.field label{font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3)}
+.field input,.field select,.field textarea{
+  width:100%;font:inherit;font-size:.86rem;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);border-radius:9px;padding:8px 10px;min-height:38px;
+}
+.field textarea{min-height:112px;resize:vertical;font-family:var(--ff-m);font-size:.78rem;line-height:1.7}
+.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid var(--accent);outline-offset:0;border-color:var(--accent)}
+.field .hint{font-size:.7rem;color:var(--ink-3);line-height:1.45}
+.cfg-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+/* ---------- MÓDULOS ---------- */
+.mod-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.mod{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);
+  box-shadow:var(--sh-1);overflow:hidden;display:flex;flex-direction:column;
+}
+.mod-top{display:flex;align-items:flex-start;gap:12px;padding:17px 18px 12px;border-bottom:1px solid var(--line-3)}
+.mod-badge{
+  width:44px;height:44px;border-radius:13px;background:var(--h-soft);color:var(--h-ink);
+  display:grid;place-items:center;font-family:var(--ff-m);font-size:.65rem;font-weight:600;flex:none;
+}
+.mod-top h3{font-size:1.02rem;font-family:var(--ff-b);font-weight:700;line-height:1.3}
+.mod-top p{font-size:.77rem;color:var(--ink-3);margin-top:3px;line-height:1.4}
+.mod-top .pill{margin-left:auto;flex:none}
+.mod-meta{display:flex;flex-wrap:wrap;gap:6px;padding:11px 18px 0}
+.mod-meta span{font-size:.7rem;color:var(--ink-3);background:var(--paper-2);padding:3px 8px;border-radius:6px;font-family:var(--ff-m)}
+.mod-body{padding:13px 18px 16px;display:grid;gap:11px;flex:1}
+.mini{display:grid;grid-template-columns:1fr auto;gap:5px 10px;font-size:.73rem;color:var(--ink-3)}
+.mini b{font-family:var(--ff-m);font-size:.7rem;color:var(--ink-2)}
+.mini .track{grid-column:1/-1;height:6px;background:var(--paper-2);border-radius:999px;overflow:hidden}
+.mini .fill{height:100%;border-radius:999px;background:var(--h);transition:width .4s}
+.mod-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:2px}
+.mod-note{display:grid;gap:4px}
+.mod-note textarea{
+  width:100%;font:inherit;font-size:.8rem;border:1px solid var(--line);border-radius:9px;
+  padding:8px 10px;min-height:58px;resize:vertical;background:var(--card-2);color:var(--ink);
+}
+.mod-note textarea:focus{outline:2px solid var(--h);outline-offset:0}
+.mod-note label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-3)}
+.mod-fechas{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mod-fechas input{width:100%;font:inherit;font-size:.76rem;border:1px solid var(--line);border-radius:8px;padding:6px 8px;color:var(--ink)}
+
+/* ---------- TEMARIO ---------- */
+.tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}
+.topic-list{display:grid;gap:8px}
+.topic{
+  display:grid;grid-template-columns:28px 1fr auto;gap:10px;align-items:center;
+  border:1px solid var(--line);border-radius:12px;background:var(--card);padding:10px 12px;
+}
+.topic:hover{border-color:var(--line-2);box-shadow:var(--sh-1)}
+.topic .idx{font-family:var(--ff-m);font-size:.68rem;color:var(--ink-4);text-align:center}
+.topic .txt{font-size:.86rem;color:var(--ink);line-height:1.4}
+.topic.done .txt{color:var(--ink-3)}
+.topic.done .txt::after{content:" ✓";color:var(--ok);font-weight:700}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--paper-2);padding:2px;gap:2px}
+.seg button{
+  border:0;background:transparent;font-size:.68rem;font-weight:600;color:var(--ink-3);
+  padding:5px 8px;border-radius:7px;cursor:pointer;white-space:nowrap;transition:.13s;
+}
+.seg button:hover{color:var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:var(--sh-1)}
+.seg button[data-st="curso"][aria-pressed="true"]{background:var(--warn-soft);color:var(--warn)}
+.seg button[data-st="dominado"][aria-pressed="true"]{background:var(--ok-soft);color:var(--ok)}
+.topic-sec{margin-bottom:18px}
+.topic-sec h3{font-family:var(--ff-b);font-size:.82rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-3);display:flex;align-items:center;gap:8px;margin-bottom:9px}
+.topic-sec h3 .pill{text-transform:none;letter-spacing:0}
+.topic-sec h3 .btn{text-transform:none;letter-spacing:0;font-weight:600;font-size:.7rem;padding:5px 9px}
+.topic-sec h3>span:first-child{flex:none}
+.menu-btn{position:relative}
+.tl-top h4{min-width:0}
+@media (max-width:520px){
+  .tl-top{display:grid;grid-template-columns:1fr;gap:3px}
+  .tl-dates{margin-left:0}
+  .mod-top{flex-wrap:wrap}
+  .mod-top .pill{margin-left:0}
+}
+.search{position:relative;min-width:230px}
+.search input{
+  width:100%;font:inherit;font-size:.82rem;border:1px solid var(--line);border-radius:10px;
+  padding:9px 12px 9px 34px;background:var(--card);color:var(--ink);
+}
+.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--ink-3)}
+.empty{padding:26px;text-align:center;color:var(--ink-3);font-size:.85rem;border:1px dashed var(--line);border-radius:14px;background:var(--card-2)}
+/* ---------- ENTREGABLES ---------- */
+.del-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.del-mod{padding:16px 17px}
+.del-mod h3{display:flex;align-items:center;gap:8px;font-family:var(--ff-b);font-size:.9rem;font-weight:700;margin-bottom:4px}
+.del-mod h3 .tl-code{font-size:.66rem}
+.del-mod .sub{font-size:.72rem;color:var(--ink-3);margin-bottom:10px}
+.del-list{display:grid;gap:4px;list-style:none;padding:0;margin:0}
+.del-list li{display:grid;grid-template-columns:20px 1fr;gap:9px;align-items:start;padding:7px 0;border-bottom:1px solid var(--line-3)}
+.del-list li:last-child{border-bottom:0}
+.del-list input[type=checkbox]{width:17px;height:17px;margin-top:2px;accent-color:var(--h);cursor:pointer}
+.del-list label{font-size:.81rem;color:var(--ink-2);cursor:pointer;line-height:1.4}
+.del-list input:checked+label{color:var(--ink-3);text-decoration:line-through;text-decoration-color:var(--line-2)}
+.evidence{display:grid;gap:4px;margin-top:10px}
+.evidence label{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-3)}
+.evidence input{width:100%;font:inherit;font-size:.76rem;border:1px solid var(--line);border-radius:8px;padding:7px 9px;background:var(--card-2)}
+
+/* ---------- RESUMEN / DATOS ---------- */
+.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
+.summary .kpi{box-shadow:none;background:var(--card-2)}
+.data-actions{display:flex;gap:8px;flex-wrap:wrap}
+.data-actions .btn{flex:0 1 auto}
+.list-plain{margin:0;padding-left:18px;font-size:.84rem;color:var(--ink-2)}
+.list-plain li{margin:4px 0}
+.kbd{font-family:var(--ff-m);font-size:.74rem;background:var(--paper-2);border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:1px 5px}
+
+/* ---------- FOOTER ---------- */
+footer{margin-top:56px;border-top:1px solid var(--line);background:rgba(244,238,227,.6)}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px;padding:34px 0 22px}
+.foot h4{font-family:var(--ff-b);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);margin-bottom:9px}
+.foot p{font-size:.83rem;color:var(--ink-2);max-width:44ch}
+.foot a{display:block;font-size:.83rem;margin:4px 0;text-decoration:none;color:var(--ink-2)}
+.foot a:hover{color:var(--accent)}
+.foot-bottom{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;border-top:1px solid var(--line);padding:14px 0 26px;font-size:.74rem;color:var(--ink-3)}
+
+/* ---------- TOASTS ---------- */
+.toasts{position:fixed;right:18px;bottom:18px;z-index:200;display:grid;gap:8px;max-width:min(360px,calc(100vw - 36px))}
+.toast{
+  display:flex;align-items:center;gap:9px;background:var(--ink);color:#fff;
+  border-radius:12px;padding:11px 14px;font-size:.82rem;box-shadow:var(--sh-2);
+  animation:slideIn .22s ease-out;
+}
+.toast .ic{width:20px;height:20px;border-radius:50%;background:var(--ok);display:grid;place-items:center;font-size:.7rem;flex:none}
+.toast.warn .ic{background:var(--amber);color:#4A3200}
+.toast.bad .ic{background:var(--danger)}
+@keyframes slideIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:1000px){
+  .hero-grid{grid-template-columns:1fr;gap:22px}
+  .two{grid-template-columns:1fr}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .cfg{grid-template-columns:1fr 1fr}
+  .foot{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  :root{--nav-h:60px}
+  .wrap{width:min(1180px,calc(100% - 26px))}
+  .brand small{display:none}
+  .topnav{position:fixed;left:0;right:0;top:var(--nav-h);background:var(--paper);border-bottom:1px solid var(--line);padding:7px 13px;box-shadow:var(--sh-1);display:none}
+  .topnav.open{display:flex}
+  .menu-btn{display:grid}
+  .mod-grid,.del-grid,.kpis{grid-template-columns:1fr}
+  .summary{grid-template-columns:1fr}
+  .cfg{grid-template-columns:1fr}
+  .cfg .field:nth-child(4){grid-column:1/-1}
+  .topic{grid-template-columns:24px 1fr;gap:6px 10px}
+  .topic .seg{grid-column:1/-1;justify-self:start}
+  .foot{grid-template-columns:1fr}
+  .hero{padding-top:26px}
+  .section{padding-top:34px}
+  .sec-head .search{width:100%}
+  .search{width:100%}
+}
+@media (min-width:761px){.menu-btn{display:none}}
+/* ---------- PRINT ---------- */
+@media print{
+  body{background:#fff;font-size:11pt}
+  body::before,.topbar,.hero-cta,.iconbtn,.toasts,.seg,.mod-actions,.data-actions,.cfg-actions,.search,.tabs,.skip{display:none!important}
+  .wrap{width:100%;max-width:none}
+  .section{padding:14px 0;break-inside:avoid}
+  .card,.mod,.topic,.tl-body{box-shadow:none;border-color:#bbb;break-inside:avoid}
+  .hero-grid,.two,.mod-grid,.del-grid{grid-template-columns:1fr 1fr}
+  .kpis,.summary{grid-template-columns:repeat(4,1fr)}
+  .tabs{display:flex!important}
+  footer{margin-top:20px}
+  a[href]::after{content:""}
+}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="SSCE0110 · Portfolio, ir al inicio">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B34C7"/><stop offset="1" stop-color="#00958C"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#brandGrad)"/><path d="M6 12l10-4.4L26 12l-10 4.4L6 12z" fill="#fff"/><path d="M10.5 15.2v4.6c0 1.9 2.5 3.2 5.5 3.2s5.5-1.3 5.5-3.2v-4.6" stroke="#F2A20C" stroke-width="2.1" fill="none" stroke-linecap="round"/><circle cx="26" cy="12" r="1.5" fill="#F2A20C"/></svg>
+      <span><b>SSCE0110</b><small>Portfolio · Aj Fonts</small></span>
+    </a>
+    <nav class="topnav" id="topnav" aria-label="Secciones del portfolio">
+      <a href="#calendario">Calendario</a>
+      <a href="#modulos">Módulos</a>
+      <a href="#temario">Temario</a>
+      <a href="#entregables">Entregables</a>
+      <a href="#datos">Datos</a>
+      <a href="guia_arranque_SSCE0110.html">Guía ↗</a>
+      <a href="modulo_MF1442_3.html">MF1442 ↗</a>
+    </nav>
+    <div class="top-actions">
+      <button class="iconbtn" id="btnExportTop" type="button" title="Exportar portfolio en Markdown" aria-label="Exportar portfolio en Markdown">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+      </button>
+      <button class="iconbtn" id="btnPrintTop" type="button" title="Imprimir o guardar en PDF" aria-label="Imprimir portfolio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6"/><rect x="4" y="9" width="16" height="8" rx="2"/><path d="M7 17h10v4H7z"/></svg>
+      </button>
+      <button class="iconbtn menu-btn" id="btnMenu" type="button" aria-expanded="false" aria-controls="topnav" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="navprog" aria-hidden="true"><i id="navProgress"></i></div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="kicker"><span class="dot"></span>Certificado de profesionalidad · Nivel 3 · 380 h</span>
+        <h1>Portfolio y seguimiento del <em>temario</em></h1>
+        <p class="sub">Del <b>24 de noviembre de 2026</b> al <b>12 de marzo de 2027</b>, en CEFI Formación (Almonte).
+          Marca cada tema, cierra cada entregable y llega al cierre con todas las evidencias en su sitio.
+          <b>Todo se guarda en este navegador.</b></p>
+        <div class="meta">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>24/11/2026 → 12/03/2027</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>9:00–15:00 · 6 h/día</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>CEFI Formación · Almonte</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>Autor: Aj Fonts · Andalucía · Nov. 2026</span>
+        </div>
+        <div class="hero-cta">
+          <a class="btn" href="#temario">Seguir el temario</a>
+          <a class="btn ghost" href="#calendario">Ver calendario</a>
+          <a class="btn ghost" href="guia_arranque_SSCE0110.html">Abrir guía de arranque</a>
+          <a class="btn ghost" href="modulo_MF1442_3.html">Módulo MF1442_3</a>
+        </div>
+      </div>
+      <aside class="panel" aria-label="Resumen de progreso">
+        <div class="panel-top">
+          <div class="ring">
+            <svg viewBox="0 0 112 112" role="img" aria-label="Progreso del temario">
+              <defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B34C7"/><stop offset="1" stop-color="#00958C"/></linearGradient></defs>
+              <circle class="bgc" cx="56" cy="56" r="48"/>
+              <circle class="fgc" id="ringFg" cx="56" cy="56" r="48" stroke-dasharray="301.6" stroke-dashoffset="301.6"/>
+            </svg>
+            <b id="ringTxt">0<small>temario</small></b>
+          </div>
+          <div>
+            <h3>Estado del portfolio</h3>
+            <p id="panelSub">Aún no has marcado ningún tema.</p>
+          </div>
+        </div>
+        <div class="panel-bars">
+          <div class="pbar"><span>Temario dominado</span><b id="barTemarioTxt">0%</b><div class="track"><div class="fill" id="barTemario" style="width:0"></div></div></div>
+          <div class="pbar"><span>Entregables cerrados</span><b id="barEntregablesTxt">0%</b><div class="track"><div class="fill teal" id="barEntregables" style="width:0"></div></div></div>
+          <div class="pbar"><span>Calendario del curso</span><b id="barCalendarioTxt">0%</b><div class="track"><div class="fill amber" id="barCalendario" style="width:0"></div></div></div>
+        </div>
+        <div class="panel-foot">
+          <span id="panelDay">Día 0 de 0 sesiones</span>
+          <span id="panelCount">—</span>
+        </div>
+      </aside>
+    </div>
+    <div class="card pad" id="todayCard" style="margin-top:22px"></div>
+    <div class="kpis" id="kpis"></div>
+  </div>
+</section>
+<section class="section" id="calendario">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="kicker"><span class="dot"></span>01 · Calendario</span>
+        <h2>De la primera sesión al cierre oficial</h2>
+        <p>Las <b>340 h teóricas</b> se reparten en <b id="txtSessions">57</b> sesiones y terminan el
+          <b id="txtTheoryEnd">19/02/2027</b>. Las <b>40 h del MP0353</b> son prácticas con fechas orientativas
+          (<b id="txtPractice">22/02 → 03/03/2027</b>). El cierre oficial es el <b id="txtEnd">12/03/2027</b>,
+          con <b id="txtBuffer">7</b> sesiones de colchón para evaluación, recuperaciones y defensa del portfolio.</p>
+      </div>
+      <button class="btn ghost sm" type="button" id="btnJumpToday">Ir al módulo de hoy</button>
+    </div>
+    <div class="two">
+      <div class="card pad">
+        <div class="tl" id="timeline"></div>
+      </div>
+      <div style="display:grid;gap:14px">
+        <div class="card pad">
+          <h3 style="font-family:var(--ff-b);font-size:.95rem;margin-bottom:10px">Días no lectivos</h3>
+          <ul class="hol-list" id="holList"></ul>
+          <div class="note warn" style="margin-top:12px">
+            <b>Revisa el calendario del centro.</b> Están incluidos el 1 de enero (Año Nuevo) y el 1 de marzo.
+            El centro también suele cerrar el 7 y el 8 de diciembre: si los añades, pulsa <b>Aplicar calendario</b>
+            y comprueba si necesitas subir las horas/día o mover el cierre, porque el contenido se desplaza.
+          </div>
+        </div>
+        <details class="card pad">
+          <summary style="cursor:pointer;font-weight:700;font-size:.9rem">Ajustar calendario</summary>
+          <form id="cfgForm" style="margin-top:14px;display:grid;gap:12px">
+            <div class="cfg">
+              <div class="field">
+                <label for="cfgStart">Inicio</label>
+                <input type="date" id="cfgStart" required>
+              </div>
+              <div class="field">
+                <label for="cfgEnd">Cierre oficial</label>
+                <input type="date" id="cfgEnd" required>
+              </div>
+              <div class="field">
+                <label for="cfgHpd">Horas/día</label>
+                <input type="number" id="cfgHpd" min="1" max="10" step="0.5" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="cfgHolidays">Días no lectivos (YYYY-MM-DD, uno por línea)</label>
+              <textarea id="cfgHolidays" spellcheck="false"></textarea>
+              <span class="hint">Los fines de semana se excluyen siempre. Añade aquí los festivos locales o de centro que confirmes.</span>
+            </div>
+            <div class="cfg-actions">
+              <button class="btn sm" type="submit">Aplicar calendario</button>
+              <button class="btn ghost sm" type="button" id="btnResetCfg">Restaurar por defecto</button>
+            </div>
+            <p class="hint" id="cfgSummary" style="font-size:.72rem;color:var(--ink-3)"></p>
+          </form>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="modulos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="kicker"><span class="dot"></span>02 · Módulos a desarrollar</span>
+        <h2>Seis piezas, un portfolio</h2>
+        <p>Cada módulo tiene su ventana prevista, su temario y sus entregables. El estado se calcula con lo que marcas,
+          no con lo que crees que llevas.</p>
+      </div>
+      <div class="tabs" id="modFilters" role="group" aria-label="Filtrar módulos"></div>
+    </div>
+    <div class="mod-grid" id="modGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="temario">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="kicker"><span class="dot"></span>03 · Seguimiento del temario</span>
+        <h2>Qué has visto, qué estás viendo, qué dominas</h2>
+        <p>Tres estados por tema: <b>pendiente</b>, <b>en curso</b> y <b>dominado</b>. «En curso» cuenta medio punto;
+          «dominado» cuenta entero. Lo que no marques, no existe para el portfolio.</p>
+      </div>
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" id="topicSearch" placeholder="Buscar por tema, módulo o palabra clave…" aria-label="Buscar en el temario">
+      </div>
+    </div>
+    <div class="tabs" id="temarioTabs" aria-label="Módulos del temario"></div>
+    <div class="card pad">
+      <div id="temarioBody"></div>
+    </div>
+  </div>
+</section>
+<section class="section" id="entregables">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="kicker"><span class="dot"></span>04 · Entregables y evidencias</span>
+        <h2>El portfolio se demuestra con piezas cerradas</h2>
+        <p>Marca cada entregable cuando esté terminado y guarda su enlace o ruta. Un portfolio sin evidencias
+          es una lista de intenciones.</p>
+      </div>
+      <button class="btn ghost sm" type="button" id="btnExportMd2">Exportar informe .md</button>
+    </div>
+    <div class="summary" id="delSummary"></div>
+    <div class="del-grid" id="delGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="datos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="kicker"><span class="dot"></span>05 · Datos y método</span>
+        <h2>Tus datos, en tu navegador</h2>
+        <p>No hay servidor ni cuenta: progreso, notas, fechas reales y evidencias se guardan en <b>localStorage</b>.
+          Exporta una copia antes de cambiar de equipo o de borrar los datos del navegador.</p>
+      </div>
+    </div>
+    <div class="two">
+      <div class="card pad">
+        <h3 style="font-family:var(--ff-b);font-size:.98rem;margin-bottom:10px">Método semanal en tres pasos</h3>
+        <ol class="list-plain">
+          <li><b>Lunes:</b> abre el módulo activo y revisa la ventana prevista. Si vas corto, marca qué temas quedan en curso.</li>
+          <li><b>Miércoles:</b> cierra un entregable pequeño (guion, ficha, rúbrica) y añade su enlace de evidencia.</li>
+          <li><b>Viernes:</b> marca los temas dominados, escribe una nota de módulo y exporta el informe <span class="kbd">.md</span>.</li>
+        </ol>
+        <p style="font-size:.82rem;color:var(--ink-3);margin-top:12px">
+          Convención de evidencias: <span class="kbd">MF1442_3/U1_programacion.pdf</span>,
+          <span class="kbd">MF1443_3/screencast_git.mp4</span>. La carpeta se llama igual que el código del módulo.
+        </p>
+      </div>
+      <div class="card pad">
+        <h3 style="font-family:var(--ff-b);font-size:.98rem;margin-bottom:10px">Copia de seguridad</h3>
+        <div class="data-actions">
+          <button class="btn sm" type="button" id="btnExportJson">Exportar JSON</button>
+          <button class="btn ghost sm" type="button" id="btnImport">Importar JSON</button>
+          <button class="btn ghost sm" type="button" id="btnPrint">Imprimir / PDF</button>
+          <button class="btn danger sm" type="button" id="btnReset">Borrar datos</button>
+        </div>
+        <input type="file" id="importFile" accept="application/json,.json" hidden>
+        <p style="font-size:.78rem;color:var(--ink-3);margin-top:12px" id="storageInfo">—</p>
+        <p style="font-size:.78rem;color:var(--ink-3);margin-top:10px">
+          Repositorio: <a href="https://github.com/systemavworks/SSCE0110" target="_blank" rel="noopener">github.com/systemavworks/SSCE0110</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4>SSCE0110 · Portfolio y seguimiento</h4>
+        <p>Cuaderno de trabajo del certificado de Docencia de la Formación Profesional para el Empleo:
+          temario, ventanas de cada módulo, entregables y evidencias, del 24 de noviembre de 2026 al 12 de marzo de 2027.</p>
+        <p style="font-size:.78rem;color:var(--ink-3);margin-top:8px">Autor: <b>Aj Fonts · Andalucía · Nov. 2026</b></p>
+      </div>
+      <div>
+        <h4>Documentos</h4>
+        <a href="guia_arranque_SSCE0110.html">Guía de arranque + bitácora</a>
+        <a href="modulo_MF1442_3.html">Módulo MF1442_3</a>
+        <a href="https://github.com/systemavworks/SSCE0110#readme" target="_blank" rel="noopener">README del repositorio ↗</a>
+        <a href="https://github.com/systemavworks/SSCE0110" target="_blank" rel="noopener">github.com/systemavworks/SSCE0110 ↗</a>
+      </div>
+      <div>
+        <h4>Atajos</h4>
+        <a href="#calendario">Calendario y días no lectivos</a>
+        <a href="#modulos">Módulos a desarrollar</a>
+        <a href="#temario">Seguimiento del temario</a>
+        <a href="#entregables">Entregables y evidencias</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>380 h · 6 módulos · 24/11/2026 → 12/03/2027</span>
+      <span>Aj Fonts · Andalucía · Nov. 2026</span>
+    </div>
+  </div>
+</footer>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script>
+'use strict';
+/* ============================================================
+   DATOS DEL CURSO
+   ============================================================ */
+const AUTHOR = 'Aj Fonts · Andalucía · Nov. 2026';
+const STUDENT = 'Víctor';
+const TOTAL_HOURS = 380;
+const KEY = 'ssce0110_portfolio_v1';
+const DEFAULT_CFG = {
+  start: '2026-11-24',
+  end: '2027-03-12',
+  hpd: 6,
+  holidays: ['2026-12-24', '2026-12-25', '2026-12-30', '2026-12-31', '2027-01-01', '2027-01-05', '2027-01-06', '2027-03-01']
+};
+const HOLIDAY_NAMES = {
+  '2026-12-24': 'Nochebuena',
+  '2026-12-25': 'Navidad',
+  '2026-12-30': 'Cierre del centro',
+  '2026-12-31': 'Nochevieja',
+  '2027-01-01': 'Año Nuevo',
+  '2027-01-05': 'Víspera de Reyes',
+  '2027-01-06': 'Reyes Magos',
+  '2027-03-01': 'Día de Andalucía (trasladado)'
+};
+const MODULES = [
+  {
+    id: 'mf1442', code: 'MF1442_3', short: 'MF1442', h: 60, hue: 'indigo',
+    name: 'Programación didáctica de acciones formativas para el empleo',
+    ufs: [{ c: 'MF1442_3', n: 'Módulo completo', h: 60 }],
+    topics: [
+      'Análisis del contexto y detección de necesidades formativas del grupo.',
+      'Estructura del certificado: módulos, unidades formativas y criterios de evaluación.',
+      'Perfil del alumnado adulto, niveles de partida y estilos de aprendizaje.',
+      'Objetivos operativos y resultados de aprendizaje: taxonomía de Bloom aplicada.',
+      'Contenidos conceptuales, procedimentales y actitudinales; secuenciación.',
+      'Metodología, estrategias, recursos y espacios según el objetivo.',
+      'Diseño de la evaluación: qué instrumento mide qué criterio.',
+      'Temporalización y guion didáctico de la sesión.',
+      'Adaptaciones, DUA y accesibilidad en la programación.',
+      'Documentos: programación didáctica, guía del alumno y plan de sesión.'
+    ],
+    deliverables: [
+      'Programación didáctica completa de una UF (plantilla oficial del centro).',
+      'Matriz objetivos ↔ contenidos ↔ criterios ↔ instrumentos de evaluación.',
+      'Temporalización sesión a sesión con horas realistas.',
+      'Tres objetivos observables correctamente redactados.',
+      'Ficha de análisis del grupo destinatario.'
+    ],
+    tip: 'Antes de escribir una línea, responde: «al terminar, el alumno será capaz de ___ sin ayuda, en ___ minutos».'
+  },
+  {
+    id: 'mf1443', code: 'MF1443_3', short: 'MF1443', h: 90, hue: 'teal',
+    name: 'Selección, elaboración, adaptación y utilización de materiales, medios y recursos didácticos',
+    ufs: [{ c: 'MF1443_3', n: 'Módulo completo', h: 90 }],
+    topics: [
+      'Tipología de materiales y criterios de selección, adaptación y utilización.',
+      'Diseño de guías didácticas y material impreso legible.',
+      'Presentaciones eficaces: una idea por diapositiva y jerarquía visual.',
+      'Producción audiovisual: guion, screencast, audio, subtítulos y capítulos.',
+      'Recursos interactivos: H5P, Genially, cuestionarios y simulaciones.',
+      'LMS (Moodle): estructura del curso, actividades, calificador y seguimiento.',
+      'Empaquetado e interoperabilidad: SCORM y xAPI.',
+      'Accesibilidad y DUA aplicados a materiales reales.',
+      'Propiedad intelectual, licencias Creative Commons y bancos de recursos.',
+      'Diseño de actividades y rúbricas asociadas a cada material.'
+    ],
+    deliverables: [
+      'Guía didáctica de una UF lista para entregar al alumnado.',
+      'Presentación de 10 diapositivas aplicando las reglas de diseño.',
+      'Screencast de 5–8 min con guion, subtítulos y plan B.',
+      'Actividad interactiva H5P exportada e insertada en un LMS.',
+      'Curso Moodle de prueba con 3 actividades y una tarea evaluable.',
+      'Checklist de accesibilidad aplicado a tus propios materiales.',
+      'Ficha de licencias y atribuciones de todos los recursos usados.'
+    ],
+    tip: 'Si un material no lo puede usar el alumno sin ti delante, no es un material: es una nota de tu clase.'
+  },
+  {
+    id: 'mf1444', code: 'MF1444_3', short: 'MF1444', h: 100, hue: 'magenta',
+    name: 'Impartición y tutorización de acciones formativas para el empleo',
+    ufs: [{ c: 'UF1645', n: 'Impartición de acciones formativas', h: 70 }, { c: 'UF1646', n: 'Tutorización de acciones formativas', h: 30 }],
+    topics: [
+      'Comunicación en el aula: voz, ritmo, lenguaje no verbal y escucha activa.',
+      'Técnicas expositivas y demostrativas: la demostración en cuatro pasos.',
+      'Métodos activos: estudio de casos, ABP, simulación y role-playing.',
+      'Dinamización de grupos, roles, cohesión y gestión de conflictos.',
+      'Atención a la diversidad de ritmos y de puntos de partida.',
+      'Impartición en teleformación síncrona y uso del aula virtual.',
+      'Plan de acción tutorial: fases, entrevista, feedback y seguimiento.',
+      'Feedback formativo: situación–conducta–impacto.',
+      'Detección temprana del abandono y motivación del alumnado adulto.',
+      'Tutoría online: netiqueta, tiempos de respuesta y canales.'
+    ],
+    deliverables: [
+      'Microclase de 20–30 min grabada, con guion minuteado.',
+      'Plan de acción tutorial de una acción formativa completa.',
+      'Tres técnicas activas diseñadas para tu propio contenido.',
+      'Protocolo de feedback situación–conducta–impacto.',
+      'Guion de tutoría online con canales y tiempos de respuesta.',
+      'Rúbrica de observación de clase para co-evaluar a compañeros.'
+    ],
+    tip: 'Cada 12–15 minutos, cambia de actividad o de canal: la atención adulta cae por monotonía, no por desgana.'
+  },
+  {
+    id: 'mf1445', code: 'MF1445_3', short: 'MF1445', h: 60, hue: 'amber',
+    name: 'Evaluación del proceso de enseñanza-aprendizaje en formación profesional para el empleo',
+    ufs: [{ c: 'MF1445_3', n: 'Módulo completo', h: 60 }],
+    topics: [
+      'Evaluación diagnóstica, formativa y sumativa: para qué sirve cada una.',
+      'Evaluación por competencias: criterios de evaluación y resultados de aprendizaje.',
+      'Instrumentos: pruebas objetivas, pruebas prácticas, listas de cotejo y rúbricas.',
+      'Construcción de ítems: enunciado, distractores plausibles y errores frecuentes.',
+      'Validez, fiabilidad, ponderación y calificación.',
+      'Retroalimentación eficaz y registro de evidencias.',
+      'Evaluación de la acción formativa: modelo Kirkpatrick y encuestas.',
+      'Informes, actas y propuestas de mejora continua.'
+    ],
+    deliverables: [
+      'Prueba práctica observable con rúbrica de cuatro niveles.',
+      'Test de 15 ítems con análisis de los distractores.',
+      'Lista de cotejo de una tarea técnica paso a paso.',
+      'Rúbrica analítica del proyecto final.',
+      'Instrumento de satisfacción del alumnado.',
+      'Informe de mejora con tres acciones concretas y medibles.'
+    ],
+    tip: 'Escribe primero la prueba y después la clase: es la única forma de garantizar que enseñas lo que vas a exigir.'
+  },
+  {
+    id: 'mf1446', code: 'MF1446_3', short: 'MF1446', h: 30, hue: 'blue',
+    name: 'Orientación laboral y promoción de la calidad en la formación profesional para el empleo',
+    ufs: [{ c: 'MF1446_3', n: 'Módulo completo', h: 30 }],
+    topics: [
+      'Mercado laboral, perfiles profesionales y cualificaciones demandadas.',
+      'Itinerarios personalizados de inserción y recursos de empleo.',
+      'Herramientas de búsqueda: CV, carta, entrevista, LinkedIn y portfolio.',
+      'Autoempleo y emprendimiento: idea, plan y viabilidad.',
+      'Sistemas de calidad: ISO 9001, EFQM, indicadores y auditorías.',
+      'Acreditación e inscripción de centros y especialidades formativas.',
+      'Planes de mejora y evaluación de la calidad docente.'
+    ],
+    deliverables: [
+      'Itinerario de inserción para un perfil tipo de tu sector.',
+      'Taller de 45 min «CV y portfolio técnico» listo para impartir.',
+      'Cuadro de mando con seis indicadores de calidad.',
+      'Plan de mejora de un centro ficticio con evidencias.',
+      'Guía de recursos de empleo de tu comarca.'
+    ],
+    tip: 'Enseña a convertir un repositorio en portfolio: README, demo, vídeo de 90 s y «qué problema resuelve».'
+  },
+  {
+    id: 'mp0353', code: 'MP0353', short: 'MP0353', h: 40, hue: 'green',
+    name: 'Módulo de prácticas profesionales no laborales',
+    ufs: [{ c: 'MP0353', n: 'Prácticas en centro de trabajo o aula de empresa', h: 40 }],
+    topics: [
+      'Observación estructurada de sesiones reales con rúbrica.',
+      'Co-docencia y apoyo en el aula.',
+      'Impartición de al menos una sesión completa supervisada.',
+      'Diario de prácticas y análisis crítico de la propia intervención.',
+      'Coordinación con el tutor del centro y cultura del centro de formación.',
+      'Informe final, autoevaluación y compromisos de mejora.'
+    ],
+    deliverables: [
+      'Diario de prácticas con una entrada por día.',
+      'Dos observaciones de clase documentadas con rúbrica.',
+      'Una sesión completa impartida y su autoevaluación.',
+      'Informe final con tres compromisos de mejora.'
+    ],
+    tip: 'Las fechas y el centro los asigna la entidad. Pregunta en enero y ten tu disponibilidad por escrito.'
+  }
+];
+/* ============================================================
+   UTILIDADES
+   ============================================================ */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const pad2 = n => String(n).padStart(2, '0');
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const MONTHS = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+const WEEKDAYS = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+
+function parseISO(s) { const p = String(s).split('-').map(Number); return new Date(p[0], p[1] - 1, p[2]); }
+function isoOf(d) { return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate()); }
+function addDays(d, n) { const x = new Date(d); x.setDate(x.getDate() + n); return x; }
+function todayISO() { return isoOf(new Date()); }
+function fmt(iso) { if (!iso) return '—'; const p = iso.split('-'); return p[2] + '/' + p[1] + '/' + p[0]; }
+function fmtShort(iso) { if (!iso) return '—'; const d = parseISO(iso); return d.getDate() + ' ' + MONTHS[d.getMonth()]; }
+function fmtLong(iso) { if (!iso) return '—'; const d = parseISO(iso); return WEEKDAYS[d.getDay()] + ', ' + d.getDate() + ' de ' + ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'][d.getMonth()] + ' de ' + d.getFullYear(); }
+function dayDiff(a, b) { return Math.round((parseISO(b) - parseISO(a)) / 86400000); }
+function clamp(n, a, b) { return Math.min(b, Math.max(a, n)); }
+
+/* ============================================================
+   ESTADO PERSISTENTE
+   ============================================================ */
+function defaults() {
+  return { v: 1, cfg: JSON.parse(JSON.stringify(DEFAULT_CFG)), topics: {}, deliv: {}, evidence: {}, notes: {}, real: {}, updated: null };
+}
+function sanitizeCfg(c) {
+  const out = JSON.parse(JSON.stringify(DEFAULT_CFG));
+  if (!c || typeof c !== 'object') return out;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(c.start)) out.start = c.start;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(c.end)) out.end = c.end;
+  if (Number.isFinite(+c.hpd)) out.hpd = clamp(+c.hpd, 1, 10);
+  if (Array.isArray(c.holidays)) {
+    out.holidays = Array.from(new Set(c.holidays.filter(x => /^\d{4}-\d{2}-\d{2}$/.test(x)))).sort();
+  }
+  return out;
+}
+function sanitize(raw) {
+  const out = defaults();
+  if (!raw || typeof raw !== 'object') return out;
+  out.cfg = sanitizeCfg(raw.cfg);
+  const ids = new Set(MODULES.map(m => m.id));
+  Object.keys(raw.topics || {}).forEach(k => {
+    const id = k.split(':')[0], v = raw.topics[k];
+    if (ids.has(id) && ['curso', 'dominado'].includes(v)) out.topics[k] = v;
+  });
+  Object.keys(raw.deliv || {}).forEach(k => { if (raw.deliv[k] === true && ids.has(k.split(':')[0])) out.deliv[k] = true; });
+  Object.keys(raw.evidence || {}).forEach(k => { if (ids.has(k) && typeof raw.evidence[k] === 'string') out.evidence[k] = raw.evidence[k]; });
+  Object.keys(raw.notes || {}).forEach(k => { if (ids.has(k) && typeof raw.notes[k] === 'string') out.notes[k] = raw.notes[k]; });
+  Object.keys(raw.real || {}).forEach(k => {
+    if (!ids.has(k) || !raw.real[k]) return;
+    out.real[k] = {
+      start: typeof raw.real[k].start === 'string' ? raw.real[k].start : '',
+      end: typeof raw.real[k].end === 'string' ? raw.real[k].end : ''
+    };
+  });
+  out.updated = typeof raw.updated === 'string' ? raw.updated : null;
+  return out;
+}
+let S = loadState();
+function loadState() {
+  try { const raw = localStorage.getItem(KEY); return sanitize(raw ? JSON.parse(raw) : null); }
+  catch (e) { return defaults(); }
+}
+function saveState(msg) {
+  S.updated = new Date().toISOString();
+  try { localStorage.setItem(KEY, JSON.stringify(S)); }
+  catch (e) { toast('No se pudo guardar en este navegador', 'bad'); }
+  updateStorageInfo();
+  if (msg) toast(msg);
+}
+/* ============================================================
+   CALENDARIO
+   ============================================================ */
+let SCHED = null;
+function schedule() { return SCHED || (SCHED = calcSchedule()); }
+function invalidate() { SCHED = null; }
+
+function calcSchedule() {
+  const cfg = S.cfg, hol = new Set(cfg.holidays);
+  const start = parseISO(cfg.start), end = parseISO(cfg.end);
+  const days = [];
+  if (start <= end) {
+    for (let d = new Date(start); d <= end; d = addDays(d, 1)) {
+      const dow = d.getDay();
+      if (dow === 0 || dow === 6) continue;
+      const k = isoOf(d);
+      if (!hol.has(k)) days.push(k);
+    }
+  }
+  const total = MODULES.reduce((n, m) => n + m.h, 0);
+  const theory = MODULES.filter(m => m.id !== 'mp0353');
+  const practice = MODULES.find(m => m.id === 'mp0353');
+  const spans = {};
+  let remTheory = theory.reduce((n, m) => n + m.h, 0);
+  let mi = 0, left = theory[0].h, usedTheory = 0;
+  for (const day of days) {
+    if (remTheory <= 0) break;
+    const dayHours = Math.min(cfg.hpd, remTheory);
+    let rem = dayHours;
+    while (rem > 0 && mi < theory.length) {
+      const take = Math.min(rem, left);
+      const m = theory[mi];
+      const sp = spans[m.id] || (spans[m.id] = { start: day, end: day, h: 0, days: new Set() });
+      sp.end = day; sp.h += take; sp.days.add(day);
+      rem -= take; left -= take;
+      if (left <= 0) { mi++; if (mi < theory.length) left = theory[mi].h; }
+    }
+    remTheory -= dayHours; usedTheory++;
+  }
+  let remPractice = practice ? practice.h : 0, usedPractice = 0;
+  for (let k = usedTheory; k < days.length && remPractice > 0; k++) {
+    const day = days[k], h = Math.min(cfg.hpd, remPractice);
+    const sp = spans[practice.id] || (spans[practice.id] = { start: day, end: day, h: 0, days: new Set() });
+    sp.end = day; sp.h += h; sp.days.add(day);
+    remPractice -= h; usedPractice++;
+  }
+  Object.keys(spans).forEach(k => { spans[k].sessions = spans[k].days.size; delete spans[k].days; });
+  const used = usedTheory + usedPractice;
+  return {
+    days, used, usedTheory, usedPractice,
+    contentEnd: used ? days[used - 1] : null,
+    spans, buffer: days.slice(used), total,
+    remaining: remTheory + remPractice
+  };
+}
+
+/* ============================================================
+   PROGRESO
+   ============================================================ */
+function statusOf(id, i) { return S.topics[id + ':' + i] || 'pendiente'; }
+
+function modStats(m) {
+  let pts = 0, done = 0, curso = 0;
+  m.topics.forEach((t, i) => {
+    const s = statusOf(m.id, i);
+    if (s === 'dominado') { pts += 1; done++; }
+    else if (s === 'curso') { pts += 0.5; curso++; }
+  });
+  let dd = 0;
+  m.deliverables.forEach((d, i) => { if (S.deliv[m.id + ':' + i]) dd++; });
+  return {
+    total: m.topics.length, done, curso,
+    pct: Math.round((pts / m.topics.length) * 100),
+    dt: m.deliverables.length, dd,
+    dpct: m.deliverables.length ? Math.round((dd / m.deliverables.length) * 100) : 0
+  };
+}
+
+function globalStats() {
+  let w = 0, tp = 0, dp = 0, doneTopics = 0, totalTopics = 0, doneDeliv = 0, totalDeliv = 0;
+  MODULES.forEach(m => {
+    const s = modStats(m);
+    w += m.h; tp += s.pct * m.h; dp += s.dpct * m.h;
+    doneTopics += s.done + s.curso * 0.5; totalTopics += s.total;
+    doneDeliv += s.dd; totalDeliv += s.dt;
+  });
+  return {
+    temario: w ? Math.round(tp / w) : 0,
+    entregables: w ? Math.round(dp / w) : 0,
+    doneTopics, totalTopics, doneDeliv, totalDeliv
+  };
+}
+
+function modStatus(m) {
+  const sp = schedule().spans[m.id];
+  const s = modStats(m);
+  const today = todayISO();
+  if (s.pct === 100) return { k: 'ok', t: 'Completado' };
+  if (!sp) return { k: 'mute', t: 'Sin fechas' };
+  if (today < sp.start) return { k: 'mute', t: 'Próximo' };
+  if (today > sp.end) return { k: 'bad', t: 'Atrasado' };
+  if (s.pct > 0) return { k: 'warn', t: 'En curso' };
+  return { k: 'info', t: 'En plazo' };
+}
+
+function nextTopic(m) {
+  for (let i = 0; i < m.topics.length; i++) {
+    if (statusOf(m.id, i) === 'curso') return { i, s: 'curso', text: m.topics[i] };
+  }
+  for (let i = 0; i < m.topics.length; i++) {
+    if (statusOf(m.id, i) === 'pendiente') return { i, s: 'pendiente', text: m.topics[i] };
+  }
+  return null;
+}
+
+function activeModule() {
+  const s = schedule(), today = todayISO();
+  const order = MODULES.slice().sort((a, b) => {
+    const A = s.spans[a.id], B = s.spans[b.id];
+    return (A ? A.start : '9999').localeCompare(B ? B.start : '9999');
+  });
+  for (const m of order) {
+    const sp = s.spans[m.id];
+    if (sp && today >= sp.start && today <= sp.end) return { m, sp, phase: 'live' };
+  }
+  for (const m of order) {
+    const sp = s.spans[m.id];
+    if (sp && today < sp.start) return { m, sp, phase: 'next' };
+  }
+  const last = order[order.length - 1];
+  if (s.buffer.length && today >= s.buffer[0] && today <= S.cfg.end) {
+    return { m: last, sp: s.spans[last.id], phase: 'buffer' };
+  }
+  return { m: last, sp: s.spans[last.id], phase: 'done' };
+}
+/* ============================================================
+   RENDER: PROGRESO, KPIS, HOY
+   ============================================================ */
+const ui = { filter: 'todas', tab: 'all', q: '' };
+const RING = 301.6;
+
+function elapsedInfo() {
+  const s = schedule(), t = todayISO();
+  return { elapsed: s.days.filter(d => d <= t).length, total: s.days.length };
+}
+
+function renderProgress() {
+  const gs = globalStats(), s = schedule(), t = todayISO(), e = elapsedInfo();
+  const ring = $('#ringFg');
+  if (ring) ring.style.strokeDashoffset = (RING * (1 - gs.temario / 100)).toFixed(1);
+  const ringTxt = $('#ringTxt');
+  if (ringTxt) ringTxt.innerHTML = gs.temario + '<small>temario</small>';
+  const sub = $('#panelSub');
+  if (sub) sub.textContent = gs.doneTopics + ' de ' + gs.totalTopics + ' temas · ' + gs.doneDeliv + '/' + gs.totalDeliv + ' entregables';
+
+  const set = (id, pct) => {
+    const bar = $('#' + id), label = $('#' + id + 'Txt');
+    if (bar) bar.style.width = pct + '%';
+    if (label) label.textContent = pct + '%';
+  };
+  set('barTemario', gs.temario);
+  set('barEntregables', gs.entregables);
+  set('barCalendario', e.total ? Math.round((e.elapsed / e.total) * 100) : 0);
+
+  const day = $('#panelDay'), count = $('#panelCount');
+  if (day) {
+    if (t < S.cfg.start) day.textContent = 'Empieza en ' + dayDiff(t, S.cfg.start) + ' días';
+    else if (t > S.cfg.end) day.textContent = 'Curso finalizado';
+    else if (e.elapsed <= s.used) day.textContent = 'Día ' + e.elapsed + ' de ' + s.used + ' sesiones';
+    else day.textContent = 'Cierre · ' + s.buffer.filter(d => d <= t).length + ' de ' + s.buffer.length + ' sesiones';
+  }
+  if (count) {
+    if (t > S.cfg.end) count.textContent = 'Fin el ' + fmt(S.cfg.end);
+    else count.textContent = dayDiff(t, S.cfg.end) === 0 ? 'Último día' : 'Faltan ' + dayDiff(t, S.cfg.end) + ' días';
+  }
+}
+
+function renderKpis() {
+  const gs = globalStats(), s = schedule();
+  const box = $('#kpis');
+  if (!box) return;
+  box.innerHTML =
+    '<div class="kpi"><b>' + s.total + ' h</b><span>Oficiales</span><small>' + MODULES.length + ' módulos · ' + gs.totalTopics + ' temas</small></div>' +
+    '<div class="kpi"><b>' + s.used + '</b><span>Sesiones de contenido</span><small>' + s.usedTheory + ' teoría + ' + s.usedPractice + ' prácticas</small></div>' +
+    '<div class="kpi"><b>' + s.buffer.length + '</b><span>Sesiones de cierre</span><small>' + (s.buffer.length ? fmt(s.buffer[0]) + ' → ' + fmt(s.buffer[s.buffer.length - 1]) : 'Sin colchón') + '</small></div>' +
+    '<div class="kpi"><b>' + gs.temario + '%</b><span>Portfolio</span><small>' + gs.entregables + '% de entregables</small></div>';
+}
+
+function renderToday() {
+  const box = $('#todayCard');
+  if (!box) return;
+  const t = todayISO(), a = activeModule(), s = schedule();
+  if (!a || !a.m) { box.innerHTML = '<p class="empty">Configura un calendario válido para ver el módulo de hoy.</p>'; return; }
+  const m = a.m, sp = a.sp, st = modStats(m), nt = nextTopic(m);
+  const phase = a.phase === 'live' ? '<span class="pill info">Módulo activo</span>'
+    : a.phase === 'next' ? '<span class="pill mute">Próximo módulo</span>'
+    : a.phase === 'buffer' ? '<span class="pill warn">Cierre y evaluación</span>'
+    : '<span class="pill ok">Curso finalizado</span>';
+  const when = a.phase === 'live' ? 'Hoy, ' + fmtLong(t)
+    : a.phase === 'next' ? 'Empieza el ' + fmtLong(sp ? sp.start : S.cfg.start)
+    : a.phase === 'buffer' ? 'Periodo de cierre · ' + fmtLong(t)
+    : 'Último módulo cerrado';
+  const title = a.phase === 'buffer'
+    ? 'Cierre · evaluación, recuperaciones y defensa del portfolio'
+    : esc(m.code) + ' · ' + esc(m.name);
+  let extra;
+  if (a.phase === 'buffer') {
+    const left = s.buffer.filter(d => d >= t).length;
+    extra = '<p style="font-size:.84rem;color:var(--ink-2);margin-top:8px"><b>Quedan ' + left + ' sesiones de colchón</b> hasta el ' + fmt(S.cfg.end) + '. Revisa entregables, evidencias y notas antes de la defensa.</p>';
+  } else if (nt) {
+    extra = '<p style="font-size:.84rem;color:var(--ink-2);margin-top:8px"><b>Siguiente tema:</b> ' + esc(nt.text) + '</p>';
+  } else {
+    extra = '<p style="font-size:.84rem;color:var(--ok);margin-top:8px"><b>Temario completo.</b> Revisa los entregables y las evidencias.</p>';
+  }
+  const info = a.phase === 'buffer'
+    ? 'Colchón de cierre · ' + s.buffer.length + ' sesiones · sin horas oficiales asignadas'
+    : (sp ? 'Ventana prevista: ' + fmt(sp.start) + ' → ' + fmt(sp.end) + ' · ' : '') +
+      st.pct + '% del temario · ' + st.dd + '/' + st.dt + ' entregables · ' + m.h + ' h';
+  const actions = [];
+  if (a.phase === 'buffer') {
+    actions.push('<a class="btn sm" href="#entregables">Revisar entregables</a>');
+    actions.push('<a class="btn ghost sm" href="#datos">Exportar portfolio</a>');
+  } else {
+    if (nt) actions.push('<button class="btn sm" type="button" data-act="st" data-mod="' + m.id + '" data-i="' + nt.i + '" data-st="curso">Marcar en curso</button>');
+    actions.push('<button class="btn ghost sm" type="button" data-act="gototemario" data-mod="' + m.id + '">Ver en el temario</button>');
+    if (m.id === 'mf1442') actions.push('<a class="btn ghost sm" href="modulo_MF1442_3.html">Ficha del módulo</a>');
+  }
+  box.innerHTML =
+    '<div style="display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap">' +
+      '<div style="flex:1;min-width:260px">' +
+        phase + ' <span style="font-size:.76rem;color:var(--ink-3);margin-left:6px">' + when + '</span>' +
+        '<h3 style="font-size:1.18rem;margin:8px 0 3px">' + title + '</h3>' +
+        '<p style="font-size:.8rem;color:var(--ink-3)">' + info + '</p>' + extra +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap">' + actions.join('') + '</div>' +
+    '</div>';
+}
+function renderTimeline() {
+  const box = $('#timeline');
+  if (!box) return;
+  const s = schedule();
+  let html = '';
+  MODULES.forEach(m => {
+    const sp = s.spans[m.id], st = modStats(m), ms = modStatus(m);
+    html += '<div class="tl-row" data-hue="' + m.hue + '" id="tl-' + m.id + '">' +
+      '<div class="tl-dot" aria-hidden="true">' + m.short.replace(/^(MF|MP)/, '') + '</div>' +
+      '<div class="tl-body">' +
+        '<div class="tl-top">' +
+          '<span class="tl-code">' + esc(m.code) + '</span>' +
+          '<h4>' + esc(m.name) + '</h4>' +
+          '<span class="tl-dates">' + (sp ? fmt(sp.start) + ' → ' + fmt(sp.end) : 'sin fechas') + '</span>' +
+        '</div>' +
+        '<div class="tl-name">' + m.h + ' h · ' + m.ufs.map(u => esc(u.c) + (u.h ? ' (' + u.h + ' h)' : '')).join(' · ') + (m.id === 'mp0353' ? ' · fechas orientativas, las asigna la entidad' : '') + '</div>' +
+        '<div class="tl-bot">' +
+          '<span class="track"><span class="fill" style="width:' + st.pct + '%"></span></span>' +
+          '<span class="pct">' + st.pct + '%</span>' +
+          '<span class="pill ' + ms.k + '">' + ms.t + '</span>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  });
+  if (s.buffer.length) {
+    html += '<div class="tl-row" data-hue="slate">' +
+      '<div class="tl-dot" aria-hidden="true">★</div>' +
+      '<div class="tl-body tl-close">' +
+        '<div class="tl-top"><span class="tl-code">CIERRE</span><h4>Evaluación, recuperaciones y defensa del portfolio</h4>' +
+        '<span class="tl-dates">' + fmt(s.buffer[0]) + ' → ' + fmt(s.buffer[s.buffer.length - 1]) + '</span></div>' +
+        '<div class="tl-name">' + s.buffer.length + ' sesiones de colchón · sin horas oficiales asignadas</div>' +
+      '</div>' +
+    '</div>';
+  }
+  box.innerHTML = html || '<p class="empty">No hay días lectivos con esta configuración.</p>';
+}
+
+function renderHolidays() {
+  const list = $('#holList');
+  if (!list) return;
+  const hs = S.cfg.holidays.slice().sort();
+  list.innerHTML = hs.length
+    ? hs.map(h => '<li><b>' + fmt(h) + '</b> ' + esc(HOLIDAY_NAMES[h] || 'No lectivo') + '<span>' + parseISO(h).getFullYear() + '</span></li>').join('')
+    : '<li>Sin días no lectivos configurados.</li>';
+}
+
+function renderCfgSummary() {
+  const el = $('#cfgSummary');
+  const s = schedule();
+  const set = (id, v) => { const n = document.getElementById(id); if (n) n.textContent = v; };
+  if (s.days.length) {
+    const theory = MODULES.filter(m => m.id !== 'mp0353');
+    const lastTheory = s.spans[theory[theory.length - 1].id];
+    const ps = s.spans['mp0353'];
+    set('txtSessions', s.usedTheory);
+    set('txtTheoryEnd', lastTheory ? fmt(lastTheory.end) : '—');
+    set('txtPractice', ps ? fmt(ps.start) + ' → ' + fmt(ps.end) : 'sin fechas');
+    set('txtEnd', fmt(S.cfg.end));
+    set('txtBuffer', s.buffer.length);
+  }
+  if (!el) return;
+  el.innerHTML = s.days.length
+    ? '<b>' + s.days.length + '</b> días lectivos · <b>' + s.usedTheory + '</b> teoría + <b>' + s.usedPractice + '</b> prácticas · <b>' + s.buffer.length + '</b> de colchón · contenido hasta <b>' + fmt(s.contentEnd) + '</b>'
+    : 'La fecha de inicio debe ser anterior al cierre.';
+}
+
+function fillCfg() {
+  const st = $('#cfgStart'), en = $('#cfgEnd'), hp = $('#cfgHpd'), hl = $('#cfgHolidays');
+  if (st) st.value = S.cfg.start;
+  if (en) en.value = S.cfg.end;
+  if (hp) hp.value = S.cfg.hpd;
+  if (hl) hl.value = S.cfg.holidays.slice().sort().join('\n');
+}
+/* ============================================================
+   RENDER: MÓDULOS
+   ============================================================ */
+function renderModFilters() {
+  const box = $('#modFilters');
+  if (!box) return;
+  const counts = { todas: MODULES.length, curso: 0, pendientes: 0, completados: 0, atrasados: 0 };
+  MODULES.forEach(m => {
+    const st = modStats(m), ms = modStatus(m);
+    if (st.pct === 100) counts.completados++;
+    else if (st.pct === 0) counts.pendientes++;
+    else counts.curso++;
+    if (ms.k === 'bad') counts.atrasados++;
+  });
+  const defs = [['todas', 'Todas'], ['curso', 'En curso'], ['pendientes', 'Pendientes'], ['completados', 'Completados'], ['atrasados', 'Atrasados']];
+  box.innerHTML = defs.map(([k, t]) =>
+    '<button class="chip" type="button" data-act="filter" data-filter="' + k + '" aria-pressed="' + (ui.filter === k) + '"><span class="dot"></span>' + t + ' <b style="font-family:var(--ff-m);font-weight:600">' + counts[k] + '</b></button>'
+  ).join('');
+}
+
+function renderModules() {
+  const box = $('#modGrid');
+  if (!box) return;
+  const s = schedule();
+  const list = MODULES.filter(m => {
+    const st = modStats(m), ms = modStatus(m);
+    if (ui.filter === 'curso') return st.pct > 0 && st.pct < 100;
+    if (ui.filter === 'pendientes') return st.pct === 0;
+    if (ui.filter === 'completados') return st.pct === 100;
+    if (ui.filter === 'atrasados') return ms.k === 'bad';
+    return true;
+  });
+  if (!list.length) { box.innerHTML = '<p class="empty">No hay módulos en este filtro.</p>'; return; }
+  box.innerHTML = list.map(m => {
+    const sp = s.spans[m.id], st = modStats(m), ms = modStatus(m), real = S.real[m.id] || {};
+    const uf = m.ufs.map(u => esc(u.c) + ' · ' + u.h + ' h').join(' · ');
+    return '<article class="mod" data-hue="' + m.hue + '" id="mod-' + m.id + '">' +
+      '<div class="mod-top">' +
+        '<div class="mod-badge" aria-hidden="true">' + m.short.replace(/^(MF|MP)/, '') + '</div>' +
+        '<div style="min-width:0"><h3>' + esc(m.code) + ' · ' + m.h + ' h</h3><p>' + esc(m.name) + '</p></div>' +
+        '<span class="pill ' + ms.k + '">' + ms.t + '</span>' +
+      '</div>' +
+      '<div class="mod-meta"><span>' + (sp ? fmt(sp.start) + ' → ' + fmt(sp.end) : 'sin fechas') + '</span><span>' + uf + '</span></div>' +
+      '<div class="mod-body">' +
+        '<div class="mini"><span>Temario</span><b>' + st.done + '/' + st.total + ' · ' + st.pct + '%</b><div class="track"><div class="fill" style="width:' + st.pct + '%"></div></div></div>' +
+        '<div class="mini"><span>Entregables</span><b>' + st.dd + '/' + st.dt + ' · ' + st.dpct + '%</b><div class="track"><div class="fill" style="width:' + st.dpct + '%"></div></div></div>' +
+        '<div class="mod-fechas">' +
+          '<div class="field"><label for="rs-' + m.id + '">Inicio real</label><input type="date" id="rs-' + m.id + '" data-real-start="' + m.id + '" value="' + esc(real.start || '') + '"></div>' +
+          '<div class="field"><label for="re-' + m.id + '">Fin real</label><input type="date" id="re-' + m.id + '" data-real-end="' + m.id + '" value="' + esc(real.end || '') + '"></div>' +
+        '</div>' +
+        '<div class="mod-note"><label for="note-' + m.id + '">Notas del módulo</label><textarea id="note-' + m.id + '" data-note="' + m.id + '" placeholder="Dudas, feedback del tutor, entregas pendientes…">' + esc(S.notes[m.id] || '') + '</textarea></div>' +
+        '<div class="mod-actions">' +
+          '<button class="btn ghost sm" type="button" data-act="gototemario" data-mod="' + m.id + '">Ver temario</button>' +
+          '<button class="btn ghost sm" type="button" data-act="fillmod" data-mod="' + m.id + '">Completar temas</button>' +
+          (st.pct > 0 || st.dd > 0 ? '<button class="btn ghost sm" type="button" data-act="resetmod" data-mod="' + m.id + '">Reiniciar</button>' : '') +
+          (m.id === 'mf1442' ? '<a class="btn ghost sm" href="modulo_MF1442_3.html">Ficha ↗</a>' : '') +
+        '</div>' +
+      '</div>' +
+    '</article>';
+  }).join('');
+}
+/* ============================================================
+   RENDER: TEMARIO
+   ============================================================ */
+function renderTemarioTabs() {
+  const box = $('#temarioTabs');
+  if (!box) return;
+  const defs = [{ id: 'all', t: 'Todos' }].concat(MODULES.map(m => ({ id: m.id, t: m.short })));
+  box.innerHTML = defs.map(d =>
+    '<button class="chip" type="button" data-act="tab" data-tab="' + d.id + '" aria-pressed="' + (ui.tab === d.id) + '"><span class="dot"></span>' + d.t + '</button>'
+  ).join('');
+}
+
+function renderTemario() {
+  const box = $('#temarioBody');
+  if (!box) return;
+  const q = ui.q.trim().toLowerCase();
+  const mods = ui.tab === 'all' ? MODULES : MODULES.filter(m => m.id === ui.tab);
+  let html = '', shown = 0;
+  mods.forEach(m => {
+    const st = modStats(m);
+    const hits = [];
+    m.topics.forEach((t, i) => {
+      const okMod = q && (m.code.toLowerCase().includes(q) || m.name.toLowerCase().includes(q));
+      if (!q || okMod || t.toLowerCase().includes(q)) hits.push({ t, i });
+    });
+    if (!hits.length) return;
+    shown += hits.length;
+    html += '<section class="topic-sec" data-hue="' + m.hue + '">' +
+      '<h3><span class="tl-code">' + esc(m.code) + '</span>' + esc(m.short) +
+        '<span class="pill ' + (st.pct === 100 ? 'ok' : st.pct ? 'warn' : 'mute') + '">' + st.pct + '% · ' + st.done + '/' + st.total + '</span>' +
+        '<span style="margin-left:auto;display:flex;gap:6px;flex-wrap:wrap">' +
+          '<button class="btn ghost sm" type="button" data-act="bulk" data-mod="' + m.id + '" data-st="dominado">Todo dominado</button>' +
+          '<button class="btn ghost sm" type="button" data-act="bulk" data-mod="' + m.id + '" data-st="pendiente">Todo pendiente</button>' +
+        '</span>' +
+      '</h3><div class="topic-list">' +
+      hits.map(({ t, i }) => {
+        const s = statusOf(m.id, i);
+        const seg = [['pendiente', 'Pendiente'], ['curso', 'En curso'], ['dominado', 'Dominado']].map(([k, lbl]) =>
+          '<button type="button" data-act="st" data-mod="' + m.id + '" data-i="' + i + '" data-st="' + k + '" aria-pressed="' + (s === k) + '">' + lbl + '</button>'
+        ).join('');
+        return '<div class="topic ' + (s === 'dominado' ? 'done' : '') + '">' +
+          '<span class="idx">' + pad2(i + 1) + '</span>' +
+          '<span class="txt">' + esc(t) + '</span>' +
+          '<div class="seg" role="group" aria-label="Estado del tema ' + (i + 1) + ' de ' + esc(m.short) + '">' + seg + '</div>' +
+        '</div>';
+      }).join('') +
+      '</div></section>';
+  });
+  box.innerHTML = shown ? html : '<p class="empty">Sin resultados. Prueba con otra palabra o cambia de módulo.</p>';
+}
+
+/* ============================================================
+   RENDER: ENTREGABLES
+   ============================================================ */
+function renderDeliverables() {
+  const sum = $('#delSummary'), grid = $('#delGrid');
+  if (!sum || !grid) return;
+  const gs = globalStats();
+  const closedMods = MODULES.filter(m => modStats(m).pct === 100).length;
+  const evid = MODULES.filter(m => (S.evidence[m.id] || '').trim()).length;
+  sum.innerHTML =
+    '<div class="kpi"><b>' + gs.doneDeliv + '/' + gs.totalDeliv + '</b><span>Entregables</span><small>' + gs.entregables + '% ponderado por horas</small></div>' +
+    '<div class="kpi"><b>' + closedMods + '/' + MODULES.length + '</b><span>Módulos con temario cerrado</span><small>Dominado al 100 %</small></div>' +
+    '<div class="kpi"><b>' + evid + '/' + MODULES.length + '</b><span>Evidencias enlazadas</span><small>URL o ruta por módulo</small></div>';
+  grid.innerHTML = MODULES.map(m => {
+    const st = modStats(m);
+    return '<article class="card del-mod" data-hue="' + m.hue + '">' +
+      '<h3><span class="tl-code">' + esc(m.code) + '</span>' + esc(m.short) + ' <span class="pill ' + (st.dpct === 100 ? 'ok' : st.dpct ? 'warn' : 'mute') + '">' + st.dd + '/' + st.dt + '</span></h3>' +
+      '<p class="sub">' + esc(m.name) + '</p>' +
+      '<ul class="del-list">' +
+        m.deliverables.map((d, i) => {
+          const id = 'del-' + m.id + '-' + i;
+          return '<li><input type="checkbox" id="' + id + '" data-deliv="' + m.id + ':' + i + '"' + (S.deliv[m.id + ':' + i] ? ' checked' : '') + '>' +
+            '<label for="' + id + '">' + esc(d) + '</label></li>';
+        }).join('') +
+      '</ul>' +
+      '<div class="evidence"><label for="ev-' + m.id + '">Evidencia (URL o ruta)</label>' +
+        '<input type="text" id="ev-' + m.id + '" data-evidence="' + m.id + '" value="' + esc(S.evidence[m.id] || '') + '" placeholder="' + esc(m.code + '/entregable.pdf') + '">' +
+      '</div>' +
+    '</article>';
+  }).join('');
+}
+/* ============================================================
+   AVISOS, DATOS Y RENDER GLOBAL
+   ============================================================ */
+function toast(msg, kind) {
+  const box = $('#toasts');
+  if (!box) return;
+  const el = document.createElement('div');
+  el.className = 'toast' + (kind === 'bad' ? ' bad' : kind === 'warn' ? ' warn' : '');
+  el.innerHTML = '<span class="ic">' + (kind === 'bad' || kind === 'warn' ? '!' : '✓') + '</span><span>' + esc(msg) + '</span>';
+  box.appendChild(el);
+  setTimeout(() => {
+    el.style.opacity = '0'; el.style.transform = 'translateY(6px)'; el.style.transition = '.25s';
+    setTimeout(() => el.remove(), 260);
+  }, 2500);
+}
+
+function fmtBytes(n) {
+  if (n < 1024) return n + ' B';
+  if (n < 1048576) return (n / 1024).toFixed(1) + ' KB';
+  return (n / 1048576).toFixed(1) + ' MB';
+}
+
+function updateStorageInfo() {
+  const el = $('#storageInfo');
+  if (!el) return;
+  let bytes = 0;
+  try { bytes = new Blob([localStorage.getItem(KEY) || '']).size; } catch (e) {}
+  const upd = S.updated ? new Date(S.updated) : null;
+  el.innerHTML = 'Guardado local: <b>' + fmtBytes(bytes) + '</b>' +
+    (upd ? ' · última actualización ' + upd.toLocaleString('es-ES') : '') +
+    '. <span style="color:var(--warn)">Exporta una copia si cambias de equipo.</span>';
+}
+
+function renderAll() {
+  renderProgress();
+  renderKpis();
+  renderToday();
+  renderTimeline();
+  renderHolidays();
+  renderCfgSummary();
+  renderModFilters();
+  renderModules();
+  renderTemarioTabs();
+  renderTemario();
+  renderDeliverables();
+  updateStorageInfo();
+}
+
+/* ============================================================
+   EXPORTACIÓN
+   ============================================================ */
+function mdReport() {
+  const gs = globalStats(), s = schedule(), now = new Date();
+  const L = [];
+  L.push('# SSCE0110 · Portfolio y seguimiento del temario', '');
+  L.push('**Autor:** ' + AUTHOR, '**Alumno:** ' + STUDENT, '**Centro:** CEFI Formación (Almonte)',
+    '**Curso:** ' + fmt(S.cfg.start) + ' → ' + fmt(S.cfg.end) + ' · ' + s.total + ' h',
+    '**Generado:** ' + now.toLocaleString('es-ES'), '');
+  L.push('## Resumen', '');
+  L.push('- Temario dominado: **' + gs.temario + '%** (' + gs.doneTopics + '/' + gs.totalTopics + ' temas; «en curso» cuenta 0,5).');
+  L.push('- Entregables cerrados: **' + gs.entregables + '%** (' + gs.doneDeliv + '/' + gs.totalDeliv + ').');
+  L.push('- Contenido: ' + s.usedTheory + ' sesiones de teoría + ' + s.usedPractice + ' de prácticas, hasta ' + fmt(s.contentEnd) + '.');
+  L.push('- Cierre oficial: ' + fmt(S.cfg.end) + ' (' + s.buffer.length + ' sesiones de colchón).', '');
+  L.push('## Calendario por módulo', '');
+  L.push('| Módulo | Horas | Previsto | Temario | Entregables | Estado |');
+  L.push('|---|---:|---|---:|---:|---|');
+  MODULES.forEach(m => {
+    const sp = s.spans[m.id], st = modStats(m), ms = modStatus(m);
+    L.push('| ' + m.code + ' | ' + m.h + ' | ' + (sp ? fmt(sp.start) + ' → ' + fmt(sp.end) : '—') + ' | ' + st.pct + '% | ' + st.dpct + '% | ' + ms.t + ' |');
+  });
+  L.push('', '## Temario', '');
+  MODULES.forEach(m => {
+    L.push('### ' + m.code + ' · ' + m.name, '');
+    m.topics.forEach((t, i) => {
+      const st = statusOf(m.id, i);
+      L.push('- [' + (st === 'dominado' ? 'x' : st === 'curso' ? '~' : ' ') + '] ' + t + (st === 'curso' ? ' *(en curso)*' : ''));
+    });
+    L.push('');
+  });
+  L.push('## Entregables y evidencias', '');
+  MODULES.forEach(m => {
+    L.push('### ' + m.code, '');
+    m.deliverables.forEach((d, i) => L.push('- [' + (S.deliv[m.id + ':' + i] ? 'x' : ' ') + '] ' + d));
+    if ((S.evidence[m.id] || '').trim()) L.push('', '**Evidencia:** ' + S.evidence[m.id]);
+    if ((S.notes[m.id] || '').trim()) L.push('', '**Notas:** ' + S.notes[m.id].replace(/\n+/g, ' '));
+    L.push('');
+  });
+  L.push('## Días no lectivos', '');
+  S.cfg.holidays.slice().sort().forEach(h => L.push('- ' + fmt(h) + ' · ' + (HOLIDAY_NAMES[h] || 'No lectivo')));
+  const real = MODULES.filter(m => (S.real[m.id] || {}).start || (S.real[m.id] || {}).end);
+  if (real.length) {
+    L.push('', '## Fechas reales', '');
+    real.forEach(m => {
+      const r = S.real[m.id];
+      L.push('- ' + m.code + ': ' + (r.start ? fmt(r.start) : '—') + ' → ' + (r.end ? fmt(r.end) : '—'));
+    });
+  }
+  L.push('', '---', 'Generado con portfolio.html · ' + AUTHOR);
+  return L.join('\n');
+}
+
+function download(name, text, type) {
+  const blob = new Blob([text], { type: type || 'text/plain;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = name;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1500);
+}
+
+function exportMarkdown() {
+  download('SSCE0110_portfolio_' + todayISO() + '.md', mdReport(), 'text/markdown;charset=utf-8');
+  toast('Informe Markdown exportado');
+}
+
+function exportJson() {
+  const payload = { app: 'SSCE0110-portfolio', version: 1, exportedAt: new Date().toISOString(), data: S };
+  download('SSCE0110_portfolio_' + todayISO() + '.json', JSON.stringify(payload, null, 2), 'application/json');
+  toast('Copia JSON exportada');
+}
+/* ============================================================
+   ACCIONES
+   ============================================================ */
+function setTopic(id, i, st) {
+  const key = id + ':' + i;
+  if (st === 'pendiente' || S.topics[key] === st) delete S.topics[key];
+  else S.topics[key] = st;
+  saveState();
+  renderAll();
+}
+
+function bulkSet(id, st) {
+  const m = MODULES.find(x => x.id === id);
+  if (!m) return;
+  m.topics.forEach((t, i) => {
+    const key = id + ':' + i;
+    if (st === 'pendiente') delete S.topics[key];
+    else S.topics[key] = st;
+  });
+  saveState('Temario de ' + m.code + ' actualizado');
+  renderAll();
+}
+
+function resetModule(id) {
+  const m = MODULES.find(x => x.id === id);
+  if (!m) return;
+  Object.keys(S.topics).forEach(k => { if (k.startsWith(id + ':')) delete S.topics[k]; });
+  Object.keys(S.deliv).forEach(k => { if (k.startsWith(id + ':')) delete S.deliv[k]; });
+  saveState('Progreso de ' + m.code + ' reiniciado');
+  renderAll();
+}
+
+function goToTemario(id) {
+  ui.tab = id; ui.q = '';
+  const search = $('#topicSearch');
+  if (search) search.value = '';
+  renderTemarioTabs(); renderTemario();
+  const sec = $('#temario');
+  if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+let qTimer = null, saveTimer = null;
+function queueSave() { clearTimeout(saveTimer); saveTimer = setTimeout(() => saveState(), 400); }
+
+document.addEventListener('click', e => {
+  const btn = e.target.closest('[data-act]');
+  if (!btn) return;
+  const act = btn.dataset.act;
+  if (act === 'st') { setTopic(btn.dataset.mod, +btn.dataset.i, btn.dataset.st); return; }
+  if (act === 'bulk') { bulkSet(btn.dataset.mod, btn.dataset.st); return; }
+  if (act === 'fillmod') {
+    const m = MODULES.find(x => x.id === btn.dataset.mod);
+    if (m && window.confirm('¿Marcar los ' + m.topics.length + ' temas de ' + m.code + ' como dominados?')) bulkSet(m.id, 'dominado');
+    return;
+  }
+  if (act === 'resetmod') {
+    const m = MODULES.find(x => x.id === btn.dataset.mod);
+    if (m && window.confirm('¿Reiniciar el temario y los entregables de ' + m.code + '? Las notas y evidencias se conservan.')) resetModule(m.id);
+    return;
+  }
+  if (act === 'gototemario') { goToTemario(btn.dataset.mod); return; }
+  if (act === 'tab') {
+    ui.tab = btn.dataset.tab;
+    renderTemarioTabs(); renderTemario();
+    return;
+  }
+  if (act === 'filter') {
+    ui.filter = btn.dataset.filter;
+    renderModFilters(); renderModules();
+  }
+});
+
+document.addEventListener('change', e => {
+  const cb = e.target.closest('[data-deliv]');
+  if (!cb) return;
+  const k = cb.dataset.deliv;
+  if (cb.checked) S.deliv[k] = true; else delete S.deliv[k];
+  saveState();
+  renderProgress(); renderKpis(); renderDeliverables(); renderModules(); renderModFilters(); renderTemario();
+});
+
+document.addEventListener('input', e => {
+  const t = e.target;
+  if (t.matches('[data-note]')) {
+    S.notes[t.dataset.note] = t.value;
+    queueSave();
+  } else if (t.matches('[data-evidence]')) {
+    S.evidence[t.dataset.evidence] = t.value;
+    queueSave();
+  } else if (t.matches('[data-real-start]')) {
+    const id = t.dataset.realStart;
+    S.real[id] = Object.assign({ start: '', end: '' }, S.real[id] || {}, { start: t.value });
+    queueSave();
+  } else if (t.matches('[data-real-end]')) {
+    const id = t.dataset.realEnd;
+    S.real[id] = Object.assign({ start: '', end: '' }, S.real[id] || {}, { end: t.value });
+    queueSave();
+  }
+});
+/* ============================================================
+   CALENDARIO EDITABLE Y DATOS
+   ============================================================ */
+$('#cfgForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const start = $('#cfgStart').value, end = $('#cfgEnd').value;
+  const hpd = +$('#cfgHpd').value || 6;
+  const holidays = $('#cfgHolidays').value.split(/\s+/).filter(x => /^\d{4}-\d{2}-\d{2}$/.test(x));
+  if (!start || !end || start > end) { toast('Revisa las fechas: el inicio debe ser anterior al cierre', 'bad'); return; }
+  S.cfg = { start, end, hpd: clamp(hpd, 1, 10), holidays: Array.from(new Set(holidays)).sort() };
+  invalidate();
+  saveState('Calendario actualizado');
+  renderAll();
+  fillCfg();
+});
+
+$('#btnResetCfg').addEventListener('click', () => {
+  S.cfg = JSON.parse(JSON.stringify(DEFAULT_CFG));
+  invalidate();
+  saveState('Calendario restaurado');
+  fillCfg();
+  renderAll();
+});
+
+$('#btnImport').addEventListener('click', () => $('#importFile').click());
+
+$('#importFile').addEventListener('change', e => {
+  const f = e.target.files && e.target.files[0];
+  if (!f) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const raw = JSON.parse(reader.result);
+      const data = raw && raw.data ? raw.data : raw;
+      if (!data || typeof data !== 'object' || !data.cfg || !data.cfg.start) throw new Error('invalid');
+      S = sanitize(data);
+      invalidate();
+      saveState('Datos importados');
+      fillCfg();
+      renderAll();
+      toast('Copia importada correctamente');
+    } catch (err) {
+      toast('El archivo no es una copia válida del portfolio', 'bad');
+    }
+    e.target.value = '';
+  };
+  reader.readAsText(f);
+});
+
+$('#btnReset').addEventListener('click', () => {
+  if (!window.confirm('¿Borrar todo el progreso, notas y evidencias guardados en este navegador?')) return;
+  try { localStorage.removeItem(KEY); } catch (e) {}
+  S = defaults();
+  invalidate();
+  fillCfg();
+  renderAll();
+  toast('Datos borrados de este navegador', 'warn');
+});
+
+['btnExportTop', 'btnExportMd', 'btnExportMd2'].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener('click', exportMarkdown);
+});
+['btnPrint', 'btnPrintTop'].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener('click', () => window.print());
+});
+$('#btnExportJson').addEventListener('click', exportJson);
+
+/* ============================================================
+   BÚSQUEDA, MENÚ, ANCLAS Y ARRANQUE
+   ============================================================ */
+const searchInput = $('#topicSearch');
+searchInput.addEventListener('input', () => {
+  ui.q = searchInput.value;
+  clearTimeout(qTimer);
+  qTimer = setTimeout(renderTemario, 120);
+});
+
+const menuBtn = $('#btnMenu'), topnav = $('#topnav');
+menuBtn.addEventListener('click', () => {
+  const open = topnav.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', String(open));
+});
+$$('#topnav a').forEach(a => a.addEventListener('click', () => {
+  topnav.classList.remove('open');
+  menuBtn.setAttribute('aria-expanded', 'false');
+}));
+
+const jump = $('#btnJumpToday');
+if (jump) jump.addEventListener('click', () => {
+  const a = activeModule();
+  const el = a && a.m ? document.getElementById('tl-' + a.m.id) : null;
+  if (!el) return;
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  el.style.outline = '3px solid var(--accent)';
+  el.style.outlineOffset = '3px';
+  setTimeout(() => { el.style.outline = ''; el.style.outlineOffset = ''; }, 1800);
+});
+
+const sections = $$('main section[id]');
+function onScroll() {
+  const y = window.scrollY + 110;
+  let cur = null;
+  sections.forEach(s => { if (s.offsetTop <= y) cur = s; });
+  $$('.topnav a[href^="#"]').forEach(a => {
+    a.classList.toggle('on', !!cur && a.getAttribute('href') === '#' + cur.id);
+  });
+  const doc = document.documentElement;
+  const max = doc.scrollHeight - doc.clientHeight;
+  const bar = $('#navProgress');
+  if (bar) bar.style.width = (max > 0 ? (doc.scrollTop / max) * 100 : 0).toFixed(1) + '%';
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+
+fillCfg();
+renderAll();
+onScroll();
+</script>
+
+</body>
+</html>

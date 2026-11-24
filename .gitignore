@@ -1,0 +1,14 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporales
+*.tmp
+*.log
+*~
+
+# Entornos y dependencias (no se usan en este repo)
+node_modules/
+.venv/
+__pycache__/

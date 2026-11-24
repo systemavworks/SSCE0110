@@ -1,0 +1,2727 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SSCE0110 · Guía de arranque · Aj Fonts · 24 nov 2026</title>
+<meta name="description" content="Cuaderno de arranque del certificado SSCE0110 (Docencia de la Formación Profesional para el Empleo): estructura oficial, planificador semana a semana, checklist del día 1, laboratorio de microclase, glosario y test.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233B34C7'/%3E%3Cpath d='M7 12l9-4 9 4-9 4-9-4z' fill='%23fff'/%3E%3Cpath d='M11 15v5c0 1.7 2.2 3 5 3s5-1.3 5-3v-5' stroke='%23F2A20C' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+/* ============================================================
+   SSCE0110 · Guía de arranque — "Aula clara"
+   Paleta rotulador sobre papel: índigo, teal, magenta, ámbar,
+   azul eléctrico, verde. Neutros cálidos (papel) y fríos (tinta).
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --paper:#FBF7F0; --paper-2:#F4EEE3; --paper-3:#EFE7D9;
+  --card:#FFFFFF; --card-2:#FDFBF7;
+  --ink:#151C2B; --ink-2:#3F4A5E; --ink-3:#6E7789; --ink-4:#98A0B0;
+  --line:#E6DCCB; --line-2:#DCE3EE; --line-3:#F0EAE0;
+
+  --indigo:#3B34C7; --teal:#00958C; --magenta:#D6218C;
+  --amber:#F2A20C; --blue:#1D6BFF; --green:#3E9B4F; --red:#E23744;
+
+  --accent:#3B34C7; --accent-ink:#2B2596; --accent-soft:#EDECFB; --accent-2:#00958C;
+  --ok:#2F8F4E; --ok-soft:#E7F5E9; --warn:#B87400; --warn-soft:#FDF1DC;
+  --danger:#C42B37; --danger-soft:#FCE9EA; --info:#1257C9; --info-soft:#E6EEFF;
+
+  --nav-h:68px;
+  --r-s:10px; --r-m:16px; --r-l:22px; --r-xl:30px;
+  --sh-1:0 1px 2px rgba(21,28,43,.05), 0 8px 24px -18px rgba(21,28,43,.45);
+  --sh-2:0 2px 6px rgba(21,28,43,.06), 0 26px 50px -30px rgba(21,28,43,.5);
+  --sh-3:0 30px 80px -30px rgba(21,28,43,.45);
+  --ff-d:'Fraunces','Iowan Old Style','Palatino Linotype',Georgia,serif;
+  --ff-b:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --ff-m:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --gap:22px;
+}
+[data-density="compacta"]{--gap:14px;--nav-h:60px}
+[data-accent="teal"]{--accent:#00857E;--accent-ink:#00625C;--accent-soft:#E1F4F2;--accent-2:#3B34C7}
+[data-accent="magenta"]{--accent:#C81E82;--accent-ink:#9C1364;--accent-soft:#FCE9F4;--accent-2:#1D6BFF}
+[data-accent="azul"]{--accent:#1D57D6;--accent-ink:#12419E;--accent-soft:#E6EEFF;--accent-2:#D6218C}
+
+[data-hue="indigo"]{--h:#3B34C7;--h-ink:#2B2596;--h-soft:#EDECFB;--h-on:#fff}
+[data-hue="teal"]{--h:#00958C;--h-ink:#00625C;--h-soft:#E1F4F2;--h-on:#fff}
+[data-hue="magenta"]{--h:#D6218C;--h-ink:#9C1364;--h-soft:#FCE9F4;--h-on:#fff}
+[data-hue="amber"]{--h:#F2A20C;--h-ink:#8A5A00;--h-soft:#FDF1DC;--h-on:#4A3200}
+[data-hue="blue"]{--h:#1D6BFF;--h-ink:#12419E;--h-soft:#E6EEFF;--h-on:#fff}
+[data-hue="green"]{--h:#3E9B4F;--h-ink:#266633;--h-soft:#E7F5E9;--h-on:#fff}
+
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--ff-b);font-size:16px;line-height:1.62;
+  overflow-x:clip;-webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:linear-gradient(to right,rgba(59,52,199,.045) 1px,transparent 1px),
+                   linear-gradient(to bottom,rgba(59,52,199,.045) 1px,transparent 1px);
+  background-size:34px 34px;
+  mask-image:radial-gradient(ellipse 90% 60% at 50% 0%,#000 20%,transparent 78%);
+}
+.aurora{position:fixed;inset:-15% -10% auto -10%;height:120vh;z-index:0;pointer-events:none;filter:blur(70px);opacity:.55}
+.blob{position:absolute;border-radius:50%;mix-blend-mode:multiply;opacity:.42;will-change:transform}
+.b1{width:46vw;height:46vw;left:-6vw;top:-8vw;background:radial-gradient(circle at 35% 35%,#8E88F0,transparent 66%);animation:drift1 26s ease-in-out infinite}
+.b2{width:38vw;height:38vw;right:-4vw;top:2vw;background:radial-gradient(circle at 60% 40%,#7FD8D0,transparent 66%);animation:drift2 32s ease-in-out infinite}
+.b3{width:34vw;height:34vw;left:32vw;top:22vw;background:radial-gradient(circle at 50% 50%,#FFC46B,transparent 64%);animation:drift3 28s ease-in-out infinite}
+.b4{width:28vw;height:28vw;right:18vw;top:30vw;background:radial-gradient(circle at 50% 50%,#F79BD0,transparent 64%);animation:drift1 36s ease-in-out infinite reverse}
+@keyframes drift1{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(4vw,3vw,0) scale(1.12)}}
+@keyframes drift2{0%,100%{transform:translate3d(0,0,0) scale(1.05)}50%{transform:translate3d(-5vw,4vw,0) scale(.92)}}
+@keyframes drift3{0%,100%{transform:translate3d(0,0,0) scale(.95)}50%{transform:translate3d(3vw,-4vw,0) scale(1.1)}}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.055;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* scrollbars del propio lenguaje visual */
+*{scrollbar-width:thin;scrollbar-color:var(--accent) var(--paper-3)}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--paper-3);border-radius:20px}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--accent),var(--accent-2));border-radius:20px;border:3px solid var(--paper-3)}
+::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,var(--accent-ink),var(--accent))}
+::-webkit-scrollbar-corner{background:transparent}
+
+::selection{background:var(--amber);color:#3A2600}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+h1,h2,h3,h4{font-family:var(--ff-d);font-weight:600;line-height:1.1;letter-spacing:-.015em;margin:0}
+p{margin:0 0 .8em}
+a{color:var(--accent-ink);text-decoration-thickness:1.5px;text-underline-offset:3px}
+.mono{font-family:var(--ff-m);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase}
+.wrap{width:min(1260px,100%);margin-inline:auto;padding-inline:clamp(16px,3.4vw,32px);position:relative;z-index:2}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- NAV ---------- */
+.nav{position:fixed;inset:0 0 auto 0;height:var(--nav-h);z-index:60;display:flex;align-items:center;
+  background:rgba(251,247,240,.86);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);
+  border-bottom:1px solid var(--line);transition:box-shadow .3s,height .3s}
+.nav.scrolled{box-shadow:0 10px 30px -24px rgba(21,28,43,.8)}
+.nav .wrap{display:flex;align-items:center;gap:14px;width:min(1400px,100%)}
+.navbar-progress{position:absolute;left:0;bottom:-1px;height:2.5px;width:0;background:linear-gradient(90deg,var(--indigo),var(--magenta),var(--amber),var(--teal));transition:width .12s linear;z-index:2}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex:none}
+.brand svg{width:34px;height:34px;flex:none;border-radius:10px;box-shadow:0 6px 16px -8px var(--accent)}
+.brand b{font-family:var(--ff-m);font-size:.86rem;letter-spacing:.02em;display:block;line-height:1.15}
+.brand span{font-size:.68rem;color:var(--ink-3);letter-spacing:.05em;text-transform:uppercase;display:block}
+.navlinks{display:flex;gap:2px;margin-left:auto;align-items:center}
+.navlinks a{position:relative;font-size:.83rem;font-weight:500;color:var(--ink-2);text-decoration:none;padding:8px 10px;border-radius:9px;white-space:nowrap;transition:.18s}
+.navlinks a i{font-style:normal;font-family:var(--ff-m);font-size:.62rem;color:var(--ink-4);margin-right:4px}
+.navlinks a:hover{background:var(--paper-2);color:var(--ink)}
+.navlinks a.active{background:var(--accent-soft);color:var(--accent-ink);font-weight:600}
+.navlinks a.active i{color:var(--accent)}
+.nav-right{display:flex;align-items:center;gap:8px;margin-left:8px}
+.ringbtn{display:flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 11px 4px 4px;cursor:pointer;font:inherit;font-size:.76rem;font-weight:600;color:var(--ink-2);transition:.2s}
+.ringbtn:hover{border-color:var(--accent);color:var(--accent-ink);transform:translateY(-1px)}
+.ringbtn svg{width:26px;height:26px;flex:none}
+.menu-btn{display:none;background:var(--card);border:1px solid var(--line);border-radius:11px;width:42px;height:38px;cursor:pointer;align-items:center;justify-content:center}
+.menu-btn span{display:block;width:17px;height:2px;background:var(--ink);position:relative;transition:.25s}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0;width:17px;height:2px;background:var(--ink);transition:.25s}
+.menu-btn span::before{top:-5.5px}.menu-btn span::after{top:5.5px}
+.menu-btn[aria-expanded="true"] span{background:transparent}
+.menu-btn[aria-expanded="true"] span::before{transform:translateY(5.5px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span::after{transform:translateY(-5.5px) rotate(-45deg)}
+.mpanel{position:fixed;top:var(--nav-h);left:0;right:0;z-index:59;background:var(--card);border-bottom:1px solid var(--line);
+  box-shadow:var(--sh-2);padding:12px;display:none;grid-template-columns:1fr 1fr;gap:6px;max-height:calc(100vh - var(--nav-h));overflow:auto}
+.mpanel.open{display:grid;animation:slideDown .28s cubic-bezier(.2,.9,.3,1)}
+@keyframes slideDown{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:none}}
+.mpanel a{text-decoration:none;color:var(--ink-2);font-size:.88rem;font-weight:500;padding:11px 12px;border-radius:11px;background:var(--paper-2);display:flex;gap:8px;align-items:center}
+.mpanel a i{font-style:normal;font-family:var(--ff-m);font-size:.64rem;color:var(--accent)}
+.mpanel a.active{background:var(--accent-soft);color:var(--accent-ink);font-weight:600}
+
+/* ---------- BOTONES / CONTROLES ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:inherit;font-size:.86rem;font-weight:600;
+  padding:11px 18px;border-radius:12px;border:1px solid transparent;cursor:pointer;text-decoration:none;transition:.2s cubic-bezier(.2,.9,.3,1);white-space:nowrap}
+.btn svg{width:16px;height:16px;flex:none}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;box-shadow:0 12px 26px -14px var(--accent)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 34px -14px var(--accent)}
+.btn-primary:active{transform:translateY(0)}
+.btn-ghost{background:var(--card);border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent-ink);background:var(--accent-soft);transform:translateY(-2px)}
+.btn-soft{background:var(--accent-soft);color:var(--accent-ink);border-color:transparent}
+.btn-soft:hover{background:var(--accent);color:#fff}
+.btn-sm{padding:7px 12px;font-size:.78rem;border-radius:10px}
+.btn-danger{background:var(--danger-soft);color:var(--danger);border-color:#F3CDD0}
+.btn-danger:hover{background:var(--danger);color:#fff}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none!important}
+
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:.76rem;font-weight:600;padding:6px 12px;border-radius:999px;
+  background:var(--paper-2);border:1px solid var(--line);color:var(--ink-2);cursor:pointer;font-family:inherit;transition:.18s}
+.chip:hover{border-color:var(--accent);color:var(--accent-ink)}
+.chip[aria-pressed="true"],.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.tag{display:inline-block;font-family:var(--ff-m);font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 9px;border-radius:7px;background:var(--h-soft,var(--paper-2));color:var(--h-ink,var(--ink-2));font-weight:600}
+
+input[type=text],input[type=date],input[type=time],input[type=search],select,textarea{
+  font:inherit;font-size:.88rem;color:var(--ink);background:var(--card);border:1px solid var(--line);
+  border-radius:11px;padding:10px 12px;width:100%;transition:.18s}
+input:hover,select:hover,textarea:hover{border-color:var(--ink-4)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+textarea{resize:vertical;min-height:96px;line-height:1.55;font-size:.86rem}
+select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236E7789' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;padding-right:32px;cursor:pointer}
+label.lbl{display:block;font-size:.73rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;background:transparent;padding:0;border:0;height:26px;cursor:pointer}
+input[type=range]:focus{box-shadow:none}
+input[type=range]::-webkit-slider-runnable-track{height:7px;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--accent-2));box-shadow:inset 0 0 0 1px rgba(0,0,0,.05)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:21px;height:21px;border-radius:50%;background:#fff;border:3px solid var(--accent);
+  margin-top:-7px;box-shadow:0 4px 12px -3px rgba(21,28,43,.5);transition:transform .15s}
+input[type=range]:hover::-webkit-slider-thumb{transform:scale(1.14)}
+input[type=range]:active::-webkit-slider-thumb{transform:scale(.96);background:var(--accent-soft)}
+input[type=range]::-moz-range-track{height:7px;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--accent-2))}
+input[type=range]::-moz-range-thumb{width:19px;height:19px;border-radius:50%;background:#fff;border:3px solid var(--accent);box-shadow:0 4px 12px -3px rgba(21,28,43,.5)}
+
+.switch{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;padding:7px 0;font-size:.85rem;font-weight:500}
+.switch input{position:absolute;opacity:0;width:0;height:0}
+.switch .track{flex:none;width:44px;height:25px;border-radius:99px;background:var(--paper-3);border:1px solid var(--line);position:relative;transition:.22s}
+.switch .track::after{content:"";position:absolute;top:2px;left:2px;width:19px;height:19px;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(21,28,43,.28);transition:.22s cubic-bezier(.2,.9,.3,1)}
+.switch input:checked + .track{background:linear-gradient(135deg,var(--accent),var(--accent-2));border-color:transparent}
+.switch input:checked + .track::after{transform:translateX(19px)}
+.switch input:focus-visible + .track{box-shadow:0 0 0 4px var(--accent-soft)}
+
+.days{display:flex;gap:5px}
+.days button{flex:1;font:inherit;font-size:.78rem;font-weight:700;padding:9px 0;border-radius:10px;border:1px solid var(--line);
+  background:var(--card);color:var(--ink-3);cursor:pointer;transition:.16s}
+.days button:hover{border-color:var(--accent);color:var(--accent-ink)}
+.days button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 6px 14px -8px var(--accent)}
+
+.swatches{display:flex;gap:7px}
+.swatches button{width:30px;height:30px;border-radius:9px;border:2px solid transparent;cursor:pointer;transition:.18s;position:relative;box-shadow:0 4px 10px -6px rgba(0,0,0,.6)}
+.swatches button:hover{transform:translateY(-2px) scale(1.06)}
+.swatches button[aria-pressed="true"]{border-color:var(--ink);transform:translateY(-2px)}
+.swatches button[aria-pressed="true"]::after{content:"";position:absolute;inset:0;margin:auto;width:8px;height:8px;border-radius:50%;background:#fff}
+
+/* ---------- SECCIONES ---------- */
+main{position:relative;z-index:2}
+.section{padding:clamp(56px,7vw,96px) 0;position:relative;scroll-margin-top:calc(var(--nav-h) + 18px)}
+.section.tint{background:linear-gradient(180deg,transparent,var(--paper-2) 12%,var(--paper-2) 88%,transparent)}
+.section.white{background:linear-gradient(180deg,transparent,rgba(255,255,255,.75) 10%,rgba(255,255,255,.75) 90%,transparent)}
+.sec-head{max-width:760px;margin-bottom:36px}
+.kicker{display:inline-flex;align-items:center;gap:9px;font-family:var(--ff-m);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent-ink);background:var(--accent-soft);padding:6px 13px;border-radius:99px;margin-bottom:16px;font-weight:600}
+.kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 22%,transparent)}
+.sec-head h2{font-size:clamp(1.85rem,4vw,2.9rem)}
+.sec-head .lead{font-size:1.03rem;color:var(--ink-2);margin-top:14px;max-width:66ch}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);box-shadow:var(--sh-1);position:relative}
+.pad{padding:clamp(18px,2.4vw,26px)}
+.grid{display:grid;gap:var(--gap)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.between{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+
+.callout{border-radius:var(--r-m);padding:16px 18px;border:1px solid;font-size:.9rem;display:flex;gap:13px;align-items:flex-start;line-height:1.55}
+.callout svg{width:20px;height:20px;flex:none;margin-top:2px}
+.callout.warn{background:var(--warn-soft);border-color:#F0DDB4;color:#6E4A00}
+.callout.info{background:var(--info-soft);border-color:#CBDCFB;color:#123B84}
+.callout.ok{background:var(--ok-soft);border-color:#C7E5CD;color:#1F5E33}
+.callout.danger{background:var(--danger-soft);border-color:#F3CDD0;color:#8E2029}
+.callout b{color:inherit}
+
+/* ---------- HERO ---------- */
+.hero{padding-top:calc(var(--nav-h) + clamp(38px,6vw,74px));padding-bottom:clamp(48px,6vw,86px);position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.35fr .95fr;gap:clamp(24px,4vw,54px);align-items:start}
+.hero h1{font-size:clamp(2.4rem,6.1vw,4.5rem);line-height:1.02;letter-spacing:-.03em}
+.hero h1 .mark{position:relative;display:inline-block;color:var(--accent-ink)}
+.hero h1 .mark svg{position:absolute;left:-2%;bottom:-.16em;width:104%;height:.34em;overflow:visible}
+.hero h1 .mark path{stroke:var(--amber);stroke-width:9;fill:none;stroke-linecap:round;
+  stroke-dasharray:600;stroke-dashoffset:600;animation:draw 1.1s .75s cubic-bezier(.2,.9,.3,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.hero .lead{font-size:clamp(1rem,1.5vw,1.14rem);color:var(--ink-2);max-width:60ch;margin-top:22px}
+.hero-stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 15px;box-shadow:var(--sh-1)}
+.stat b{display:block;font-family:var(--ff-d);font-size:1.32rem;line-height:1.1;color:var(--accent-ink)}
+.stat span{font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3);font-weight:600}
+.hero-cta{display:flex;gap:11px;flex-wrap:wrap;margin-top:28px}
+
+.count-card{background:linear-gradient(150deg,#241F86 0%,#3B34C7 42%,#00756E 100%);color:#fff;border-radius:var(--r-xl);
+  padding:24px;box-shadow:0 34px 70px -34px rgba(36,31,134,.85);position:relative;overflow:hidden}
+.count-card::after{content:"";position:absolute;inset:0;background:
+  radial-gradient(600px 200px at 110% -10%,rgba(242,162,12,.55),transparent 60%),
+  radial-gradient(400px 240px at -10% 110%,rgba(214,33,140,.5),transparent 62%);pointer-events:none}
+.count-card > *{position:relative;z-index:1}
+.count-card .mono{color:#C9C5FF}
+.clock{display:flex;gap:8px;margin:14px 0 6px}
+.clock .unit{flex:1;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:10px 4px;text-align:center;backdrop-filter:blur(4px)}
+.clock .unit b{display:block;font-family:var(--ff-m);font-size:clamp(1.35rem,3.4vw,1.9rem);font-weight:600;line-height:1.1;font-variant-numeric:tabular-nums}
+.clock .unit span{font-size:.6rem;text-transform:uppercase;letter-spacing:.1em;color:#D8D5FF}
+.count-note{font-size:.78rem;color:#DAD7FF;margin:0}
+.ficha{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:var(--r-xl);box-shadow:var(--sh-2);overflow:hidden}
+.ficha h3{font-size:1.05rem;padding:16px 20px 0}
+.ficha dl{margin:12px 0 0;padding:0 20px 18px;display:grid;grid-template-columns:auto 1fr;gap:0}
+.ficha dt{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);font-weight:700;padding:8px 14px 8px 0;border-top:1px solid var(--line-3)}
+.ficha dd{margin:0;font-size:.86rem;font-weight:600;text-align:right;padding:8px 0;border-top:1px solid var(--line-3);color:var(--ink)}
+.ficha dd em{font-style:normal;color:var(--accent-ink)}
+
+.tldr{margin-top:clamp(30px,4vw,52px);background:var(--card);border:1px solid var(--line);border-radius:var(--r-xl);box-shadow:var(--sh-2);overflow:hidden}
+.tldr-head{padding:18px 24px;background:linear-gradient(100deg,var(--accent-soft),#FDF1DC 60%,#E1F4F2);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.tldr-head h3{font-size:1.18rem}
+.tldr ol{margin:0;padding:20px 24px 22px 24px;list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:18px 26px;counter-reset:t}
+.tldr li{counter-increment:t;position:relative;padding-left:38px;font-size:.89rem;color:var(--ink-2);line-height:1.5}
+.tldr li::before{content:counter(t);position:absolute;left:0;top:-2px;width:26px;height:26px;border-radius:9px;display:grid;place-items:center;
+  font-family:var(--ff-m);font-size:.76rem;font-weight:600;background:var(--accent);color:#fff}
+.tldr li b{color:var(--ink);display:block;font-size:.94rem;margin-bottom:2px}
+
+/* ---------- CHECKLIST ---------- */
+.check-layout{display:grid;grid-template-columns:1fr 320px;gap:var(--gap);align-items:start}
+.check-group{margin-bottom:18px}
+.check-group h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-3);font-family:var(--ff-b);font-weight:700;margin-bottom:9px;display:flex;align-items:center;gap:8px}
+.check-group h4::after{content:"";flex:1;height:1px;background:var(--line)}
+.check{display:flex;gap:12px;align-items:flex-start;padding:11px 13px;border-radius:13px;border:1px solid transparent;cursor:pointer;transition:.18s;background:var(--card-2)}
+.check + .check{margin-top:6px}
+.check:hover{border-color:var(--line);background:#fff;transform:translateX(3px)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.box{flex:none;width:22px;height:22px;border-radius:7px;border:2px solid var(--line-2);background:#fff;display:grid;place-items:center;margin-top:1px;transition:.2s}
+.box svg{width:13px;height:13px;stroke:#fff;stroke-width:3.4;fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:0;transform:scale(.4);transition:.2s}
+.check input:checked ~ .box{background:linear-gradient(135deg,var(--ok),#5FB86F);border-color:transparent}
+.check input:checked ~ .box svg{opacity:1;transform:none}
+.check input:focus-visible ~ .box{box-shadow:0 0 0 4px var(--accent-soft)}
+.check .txt{font-size:.9rem;font-weight:600;line-height:1.4}
+.check .why{display:block;font-weight:400;font-size:.79rem;color:var(--ink-3);margin-top:2px}
+.check input:checked ~ .txt{color:var(--ink-3);text-decoration:line-through;text-decoration-color:var(--ok);text-decoration-thickness:2px}
+.check input:checked ~ .txt .why{text-decoration:none;opacity:.7}
+
+.progress-card{position:sticky;top:calc(var(--nav-h) + 18px);text-align:center}
+.big-ring{width:150px;height:150px;margin:6px auto 10px;display:block}
+.big-ring circle{fill:none;stroke-width:13;stroke-linecap:round}
+.big-ring .bg{stroke:var(--paper-3)}
+.big-ring .fg{stroke:url(#ringGrad);transition:stroke-dashoffset .7s cubic-bezier(.2,.9,.3,1)}
+.ring-wrap{position:relative}
+.ring-num{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+.ring-num b{font-family:var(--ff-d);font-size:2.1rem;line-height:1;color:var(--accent-ink)}
+.ring-num span{font-size:.68rem;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-3);font-weight:700}
+
+/* ---------- ESTRUCTURA ---------- */
+.seg-toggle{display:inline-flex;background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:4px;gap:4px}
+.seg-toggle button{font:inherit;font-size:.8rem;font-weight:600;padding:8px 14px;border-radius:9px;border:0;background:transparent;color:var(--ink-3);cursor:pointer;transition:.18s}
+.seg-toggle button[aria-pressed="true"]{background:var(--card);color:var(--accent-ink);box-shadow:var(--sh-1)}
+.ribbon{display:flex;height:56px;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh-1);margin:6px 0 12px}
+.ribbon .seg{position:relative;display:grid;place-items:center;color:var(--h-on);font-size:.74rem;font-weight:700;background:var(--h);
+  transition:flex-grow .5s cubic-bezier(.2,.9,.3,1);overflow:hidden;min-width:0}
+.ribbon .seg::after{content:"";position:absolute;inset:0;opacity:.22;
+  background-image:repeating-linear-gradient(var(--pat,45deg),rgba(255,255,255,.55) 0 2px,transparent 2px 9px)}
+.ribbon .seg span{position:relative;z-index:1;padding:0 6px;text-align:center;line-height:1.15;text-shadow:0 1px 2px rgba(0,0,0,.18)}
+.ribbon .seg[data-hue="amber"] span{text-shadow:none}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.79rem;color:var(--ink-2)}
+.legend i{width:12px;height:12px;border-radius:4px;display:inline-block;margin-right:7px;vertical-align:-1px;background:var(--h)}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:var(--r-m);background:var(--card);max-height:520px}
+table.tbl{width:100%;border-collapse:collapse;font-size:.85rem;min-width:600px}
+table.tbl th{position:sticky;top:0;background:var(--paper-2);text-align:left;font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--ink-3);padding:11px 14px;border-bottom:1px solid var(--line);z-index:1}
+table.tbl td{padding:11px 14px;border-bottom:1px solid var(--line-3);vertical-align:top}
+table.tbl tr:last-child td{border-bottom:0}
+table.tbl tbody tr:hover{background:var(--card-2)}
+table.tbl td.num{font-family:var(--ff-m);font-weight:600;text-align:right;white-space:nowrap}
+
+.route{display:grid;gap:14px}
+.route-item{display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:start;background:var(--card);border:1px solid var(--line);
+  border-left:5px solid var(--h);border-radius:var(--r-m);padding:16px 18px;box-shadow:var(--sh-1)}
+.route-item .n{font-family:var(--ff-d);font-size:2rem;color:var(--h-ink);line-height:1;text-align:center}
+.route-item h4{font-size:1.05rem;margin-bottom:4px}
+.route-item p{font-size:.86rem;color:var(--ink-2);margin:0}
+
+/* ---------- MÓDULOS ---------- */
+.mod-toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:22px}
+.mod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+.mod{background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);box-shadow:var(--sh-1);overflow:hidden;
+  cursor:pointer;text-align:left;font:inherit;color:inherit;padding:0;display:flex;flex-direction:column;transition:.25s cubic-bezier(.2,.9,.3,1);position:relative}
+.mod::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:linear-gradient(90deg,var(--h),color-mix(in srgb,var(--h) 40%,#fff))}
+.mod:hover{transform:translateY(-5px);box-shadow:var(--sh-2);border-color:var(--h)}
+.mod-top{padding:20px 20px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.mod h3{font-size:1.12rem;margin:12px 20px 8px;line-height:1.22}
+.mod .claim{font-size:.86rem;color:var(--ink-2);margin:0 20px 14px;line-height:1.5}
+.mod-hours{font-family:var(--ff-d);font-size:1.7rem;color:var(--h-ink);line-height:1;white-space:nowrap}
+.mod-hours small{display:block;font-family:var(--ff-b);font-size:.62rem;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-3);font-weight:700;margin-top:3px}
+.mod-foot{margin-top:auto;padding:14px 20px;border-top:1px solid var(--line-3);background:var(--card-2);display:flex;align-items:center;justify-content:space-between;gap:10px}
+.mini-bar{height:7px;border-radius:99px;background:var(--paper-3);overflow:hidden;flex:1;max-width:120px}
+.mini-bar i{display:block;height:100%;border-radius:99px;background:var(--h);transition:width .5s cubic-bezier(.2,.9,.3,1)}
+.mod-foot .lbl2{font-size:.73rem;color:var(--ink-3);font-weight:600;white-space:nowrap}
+.mod-open{font-size:.76rem;font-weight:700;color:var(--h-ink);display:inline-flex;align-items:center;gap:5px}
+.mod:hover .mod-open{gap:9px}
+.uf-list{margin:0 20px 14px;padding:0;list-style:none;display:grid;gap:5px}
+.uf-list li{font-size:.76rem;color:var(--ink-2);display:flex;gap:8px;align-items:baseline}
+.uf-list code{font-family:var(--ff-m);font-size:.68rem;background:var(--h-soft);color:var(--h-ink);padding:2px 6px;border-radius:6px;font-weight:600}
+
+/* ---------- DRAWER ---------- */
+.scrim{position:fixed;inset:0;background:rgba(21,28,43,.42);backdrop-filter:blur(3px);z-index:70;opacity:0;pointer-events:none;transition:.3s}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(620px,100%);background:var(--paper);z-index:71;box-shadow:var(--sh-3);
+  transform:translateX(102%);transition:transform .38s cubic-bezier(.2,.9,.3,1);display:flex;flex-direction:column;border-left:1px solid var(--line)}
+.drawer.on{transform:none}
+.drawer-head{padding:20px 24px;border-bottom:1px solid var(--line);background:var(--h-soft);position:relative;flex:none}
+.drawer-head h3{font-size:1.35rem;margin:8px 40px 6px 0;color:var(--h-ink)}
+.drawer-head p{font-size:.85rem;color:var(--ink-2);margin:0}
+.drawer-close{position:absolute;top:16px;right:16px;width:36px;height:36px;border-radius:11px;border:1px solid var(--line);
+  background:var(--card);cursor:pointer;display:grid;place-items:center;transition:.2s}
+.drawer-close:hover{background:var(--danger);border-color:var(--danger);color:#fff;transform:rotate(90deg)}
+.drawer-body{overflow:auto;padding:22px 24px 40px;flex:1}
+.dblock{margin-bottom:24px}
+.dblock h4{font-size:.76rem;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-3);font-family:var(--ff-b);font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.dblock h4 svg{width:15px;height:15px;color:var(--h)}
+.dlist{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.dlist li{font-size:.88rem;color:var(--ink-2);padding-left:20px;position:relative;line-height:1.5}
+.dlist li::before{content:"";position:absolute;left:2px;top:.6em;width:7px;height:7px;border-radius:2px;background:var(--h);transform:rotate(45deg)}
+.dlist.bad li::before{background:var(--red);border-radius:50%;transform:none}
+.note-status{font-size:.72rem;color:var(--ok);font-weight:600;opacity:0;transition:.3s}
+.note-status.on{opacity:1}
+
+/* ---------- PLANIFICADOR ---------- */
+.plan-layout{display:grid;grid-template-columns:340px 1fr;gap:var(--gap);align-items:start}
+.controls{position:sticky;top:calc(var(--nav-h) + 16px);max-height:calc(100vh - var(--nav-h) - 34px);overflow:auto;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);box-shadow:var(--sh-2)}
+.controls-head{padding:15px 18px;border-bottom:1px solid var(--line);background:linear-gradient(120deg,var(--accent-soft),#fff);
+  position:sticky;top:0;z-index:3;display:flex;align-items:center;gap:9px}
+.controls-head h3{font-size:1rem}
+.controls-head .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px var(--ok-soft);animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 3px var(--ok-soft)}50%{box-shadow:0 0 0 7px transparent}}
+.ctrl{padding:14px 18px;border-bottom:1px solid var(--line-3)}
+.ctrl:last-child{border-bottom:0}
+.ctrl-row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:7px}
+.ctrl-row .val{font-family:var(--ff-m);font-size:.84rem;font-weight:600;color:var(--accent-ink);background:var(--accent-soft);padding:2px 9px;border-radius:7px}
+.ctrl .hint{font-size:.72rem;color:var(--ink-3);margin:6px 0 0;line-height:1.4}
+.ctrl-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.plan-out{display:grid;gap:var(--gap)}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:14px 16px;box-shadow:var(--sh-1);position:relative;overflow:hidden}
+.kpi::after{content:"";position:absolute;right:-16px;top:-16px;width:64px;height:64px;border-radius:50%;background:var(--accent-soft);opacity:.75}
+.kpi b{display:block;font-family:var(--ff-d);font-size:1.5rem;line-height:1.1;position:relative;color:var(--ink)}
+.kpi span{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:700;position:relative}
+.kpi.hero-k{background:linear-gradient(140deg,var(--accent),var(--accent-2));border-color:transparent}
+.kpi.hero-k b,.kpi.hero-k span{color:#fff}
+.kpi.hero-k::after{background:rgba(255,255,255,.16)}
+.timeline{background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);box-shadow:var(--sh-1);padding:18px 20px}
+.tl-months{display:flex;font-size:.68rem;color:var(--ink-3);font-family:var(--ff-m);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.tl-months span{border-left:1px dashed var(--line);padding-left:6px;overflow:hidden;white-space:nowrap}
+.tl-bars{display:grid;gap:7px}
+.tl-row{display:grid;grid-template-columns:104px 1fr;gap:10px;align-items:center}
+.tl-row .name{font-size:.72rem;font-weight:700;color:var(--h-ink);font-family:var(--ff-m);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tl-track{height:22px;background:var(--paper-2);border-radius:8px;position:relative;overflow:hidden;border:1px solid var(--line-3)}
+.tl-fill{position:absolute;top:0;bottom:0;background:var(--h);border-radius:7px;display:flex;align-items:center;padding:0 8px;
+  color:var(--h-on);font-size:.68rem;font-weight:700;white-space:nowrap;overflow:hidden;transition:left .5s cubic-bezier(.2,.9,.3,1),width .5s cubic-bezier(.2,.9,.3,1)}
+.tl-fill::after{content:"";position:absolute;inset:0;opacity:.2;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.6) 0 2px,transparent 2px 8px)}
+.tl-fill span{position:relative;z-index:1}
+.tl-pause{position:absolute;top:0;bottom:0;background:repeating-linear-gradient(45deg,#E8DFD0 0 5px,#F4EEE3 5px 10px);border-left:1px dashed var(--ink-4);border-right:1px dashed var(--ink-4)}
+.weeks{max-height:430px;overflow:auto;border:1px solid var(--line);border-radius:var(--r-m);background:var(--card)}
+.wk{display:grid;grid-template-columns:52px 128px 1fr 62px;gap:12px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line-3);font-size:.8rem}
+.wk:last-child{border-bottom:0}
+.wk:hover{background:var(--card-2)}
+.wk .n{font-family:var(--ff-m);font-weight:600;color:var(--ink-3);font-size:.74rem}
+.wk .d{font-weight:600;font-size:.79rem}
+.wk .h{font-family:var(--ff-m);text-align:right;color:var(--ink-2);font-size:.76rem}
+.wk .segs{display:flex;height:18px;border-radius:6px;overflow:hidden;background:var(--paper-2);gap:1px}
+.wk .segs i{background:var(--h);position:relative;display:grid;place-items:center;color:var(--h-on);font-size:.6rem;font-weight:700;font-style:normal;overflow:hidden;min-width:0}
+.wk.pause{background:repeating-linear-gradient(45deg,#F6F1E7 0 6px,#FBF7F0 6px 12px);color:var(--ink-3)}
+.wk.pause .d{color:var(--warn);font-weight:700}
+.wk.first{box-shadow:inset 4px 0 0 var(--accent)}
+
+/* ---------- DÍA 1 ---------- */
+.day-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--gap);align-items:start}
+.tline{position:relative;padding-left:30px}
+.tline::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--accent),var(--teal),var(--amber))}
+.tl-item{position:relative;padding:0 0 20px}
+.tl-item::before{content:"";position:absolute;left:-26px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--card);border:3px solid var(--accent);box-shadow:0 0 0 4px var(--paper)}
+.tl-item time{font-family:var(--ff-m);font-size:.74rem;font-weight:600;color:var(--accent-ink);background:var(--accent-soft);padding:2px 8px;border-radius:6px}
+.tl-item h4{font-size:1rem;margin:8px 0 4px}
+.tl-item p{font-size:.86rem;color:var(--ink-2);margin:0}
+.qa-list{margin:0;padding:0;list-style:none;counter-reset:q;display:grid;gap:9px}
+.qa-list li{counter-increment:q;font-size:.86rem;color:var(--ink-2);padding-left:30px;position:relative;line-height:1.45}
+.qa-list li::before{content:"?";position:absolute;left:0;top:1px;width:21px;height:21px;border-radius:7px;background:var(--warn-soft);color:var(--warn);
+  display:grid;place-items:center;font-weight:800;font-size:.75rem}
+.pitch-out{background:linear-gradient(140deg,#241F86,#3B34C7 55%,#00756E);color:#fff;border-radius:var(--r-m);padding:18px;font-size:.95rem;line-height:1.6;
+  box-shadow:0 22px 44px -26px rgba(36,31,134,.8);min-height:120px}
+.pitch-out b{color:#FFD98A}
+
+/* ---------- MICROCLASE ---------- */
+.micro-layout{display:grid;grid-template-columns:320px 1fr;gap:var(--gap);align-items:start}
+.guion{display:grid;gap:10px}
+.g-block{display:grid;grid-template-columns:74px 1fr;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);
+  padding:14px 16px;box-shadow:var(--sh-1);border-left:5px solid var(--h);animation:fadeUp .4s backwards}
+.g-block .t{font-family:var(--ff-m);font-size:.78rem;font-weight:600;color:var(--h-ink);line-height:1.3}
+.g-block .t small{display:block;font-family:var(--ff-b);font-size:.64rem;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
+.g-block h4{font-size:.98rem;margin-bottom:4px}
+.g-block p{font-size:.85rem;color:var(--ink-2);margin:0}
+.g-block .say{display:block;margin-top:7px;font-size:.82rem;color:var(--h-ink);background:var(--h-soft);border-radius:9px;padding:7px 10px;font-style:italic}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.obj-box{background:linear-gradient(120deg,var(--accent-soft),#E1F4F2);border:1px solid var(--line);border-radius:var(--r-m);padding:16px 18px;margin-bottom:16px}
+.obj-box .mono{color:var(--accent-ink);display:block;margin-bottom:6px}
+.obj-box p{margin:0;font-size:1rem;font-weight:600;line-height:1.45;color:var(--ink)}
+.rubric-layout{display:grid;grid-template-columns:1fr 340px;gap:var(--gap);align-items:center}
+.rub-slider{margin-bottom:12px}
+.rub-slider .ctrl-row{margin-bottom:2px}
+.rub-slider .tip{font-size:.74rem;color:var(--ink-3);min-height:1.1em}
+.radar-card{text-align:center}
+.radar-card svg{width:100%;max-width:330px;height:auto;display:block;margin-inline:auto}
+.verdict{font-size:.86rem;font-weight:600;padding:10px 14px;border-radius:12px;margin-top:10px}
+
+/* ---------- EVALUACIÓN ---------- */
+.kirk{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.kirk-step{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:16px;box-shadow:var(--sh-1);position:relative;overflow:hidden}
+.kirk-step .lvl{font-family:var(--ff-m);font-size:.66rem;letter-spacing:.1em;color:#fff;background:var(--h);padding:3px 9px;border-radius:99px;font-weight:600}
+.kirk-step h4{font-size:1.02rem;margin:10px 0 5px}
+.kirk-step p{font-size:.82rem;color:var(--ink-2);margin:0}
+.kirk-step .q{display:block;margin-top:9px;font-size:.78rem;color:var(--h-ink);font-weight:600}
+.eval-types{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+.eval-type{border-top:5px solid var(--h)}
+.eval-type h4{font-size:1.08rem;margin-bottom:6px}
+.eval-type .when{font-size:.72rem;font-family:var(--ff-m);text-transform:uppercase;letter-spacing:.07em;color:var(--h-ink);font-weight:600}
+.eval-type p{font-size:.86rem;color:var(--ink-2);margin:8px 0 0}
+
+/* ---------- GLOSARIO ---------- */
+.gl-toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+.search-wrap{position:relative;flex:1;min-width:240px;max-width:380px}
+.search-wrap svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--ink-3);pointer-events:none}
+.search-wrap input{padding-left:36px;padding-right:64px}
+.search-wrap kbd{position:absolute;right:10px;top:50%;transform:translateY(-50%);font-family:var(--ff-m);font-size:.66rem;color:var(--ink-3);
+  background:var(--paper-2);border:1px solid var(--line);border-bottom-width:2px;border-radius:6px;padding:2px 6px}
+.gl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gl-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:15px 16px;box-shadow:var(--sh-1);transition:.22s;position:relative}
+.gl-card:hover{transform:translateY(-3px);box-shadow:var(--sh-2);border-color:var(--accent)}
+.gl-card h4{font-size:.98rem;padding-right:28px;margin-bottom:5px}
+.gl-card .def{font-size:.83rem;color:var(--ink-2);margin:0 0 8px;line-height:1.5}
+.gl-card .use{font-size:.78rem;color:var(--accent-ink);background:var(--accent-soft);border-radius:9px;padding:7px 10px;margin:0;line-height:1.45}
+.star{position:absolute;top:12px;right:12px;width:26px;height:26px;border:0;background:transparent;cursor:pointer;color:var(--ink-4);display:grid;place-items:center;border-radius:8px;transition:.18s}
+.star:hover{background:var(--warn-soft);color:var(--amber);transform:scale(1.15)}
+.star[aria-pressed="true"]{color:var(--amber)}
+.star svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2}
+.star[aria-pressed="true"] svg{fill:currentColor}
+.empty{text-align:center;padding:44px 20px;color:var(--ink-3);border:2px dashed var(--line);border-radius:var(--r-l);background:var(--card-2)}
+.empty b{display:block;font-family:var(--ff-d);font-size:1.2rem;color:var(--ink);margin-bottom:6px}
+
+/* ---------- TEST ---------- */
+.quiz-shell{max-width:820px;margin-inline:auto;background:var(--card);border:1px solid var(--line);border-radius:var(--r-xl);box-shadow:var(--sh-2);overflow:hidden;position:relative}
+.quiz-head{padding:16px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:14px;background:linear-gradient(100deg,var(--accent-soft),#FDF1DC)}
+.dots{display:flex;gap:4px;flex-wrap:wrap}
+.dots i{width:9px;height:9px;border-radius:50%;background:var(--paper-3);transition:.3s}
+.dots i.done{background:var(--ok)}
+.dots i.miss{background:var(--red)}
+.dots i.now{background:var(--accent);transform:scale(1.5);box-shadow:0 0 0 3px var(--accent-soft)}
+.quiz-body{padding:24px 22px 26px;position:relative}
+.q-stem{font-family:var(--ff-d);font-size:clamp(1.15rem,2.4vw,1.5rem);line-height:1.28;margin-bottom:18px}
+.opts{display:grid;gap:9px}
+.opt{display:flex;gap:12px;align-items:flex-start;text-align:left;font:inherit;font-size:.9rem;padding:13px 15px;border-radius:13px;
+  border:1px solid var(--line);background:var(--card-2);cursor:pointer;transition:.18s;color:var(--ink);line-height:1.45}
+.opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);transform:translateX(4px)}
+.opt .k{flex:none;width:24px;height:24px;border-radius:8px;background:var(--paper-3);display:grid;place-items:center;font-family:var(--ff-m);font-size:.74rem;font-weight:600;color:var(--ink-2)}
+.opt.correct{background:var(--ok-soft);border-color:var(--ok);color:#1F5E33;font-weight:600}
+.opt.correct .k{background:var(--ok);color:#fff}
+.opt.wrong{background:var(--danger-soft);border-color:var(--danger);color:#8E2029}
+.opt.wrong .k{background:var(--danger);color:#fff}
+.opt:disabled{cursor:default}
+.explain{margin-top:14px;border-radius:13px;padding:13px 15px;font-size:.86rem;line-height:1.5;animation:fadeUp .3s}
+.explain.ok{background:var(--ok-soft);color:#1F5E33;border:1px solid #C7E5CD}
+.explain.no{background:var(--warn-soft);color:#6E4A00;border:1px solid #F0DDB4}
+.quiz-foot{padding:14px 22px;border-top:1px solid var(--line);background:var(--card-2);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.score-hero{text-align:center;padding:14px 0 6px}
+.score-hero .num{font-family:var(--ff-d);font-size:4rem;line-height:1;color:var(--accent-ink)}
+.score-hero .num small{font-size:1.5rem;color:var(--ink-3)}
+.review{display:grid;gap:8px;margin-top:16px;text-align:left}
+.review-item{background:var(--danger-soft);border:1px solid #F3CDD0;border-radius:12px;padding:11px 14px;font-size:.83rem;color:#7A1C24}
+.review-item b{display:block;color:#8E2029;margin-bottom:3px}
+.confetti{position:absolute;width:9px;height:14px;top:-20px;pointer-events:none;z-index:5;border-radius:2px;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(560px) rotate(720deg);opacity:0}}
+
+/* ---------- DESPUÉS / RECURSOS ---------- */
+.path-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap)}
+.path{background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);padding:18px;box-shadow:var(--sh-1);border-top:5px solid var(--h);transition:.24s}
+.path:hover{transform:translateY(-4px);box-shadow:var(--sh-2)}
+.path h4{font-size:1.05rem;margin-bottom:6px}
+.path p{font-size:.83rem;color:var(--ink-2);margin:0 0 10px}
+.path ul{margin:0;padding-left:17px;font-size:.79rem;color:var(--ink-3);display:grid;gap:4px}
+.path .status{display:inline-block;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:3px 9px;border-radius:99px;margin-bottom:9px}
+.res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.res{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:14px 16px;text-decoration:none;color:inherit;transition:.2s;box-shadow:var(--sh-1)}
+.res:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:var(--sh-2)}
+.res .ico{flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--h-soft);color:var(--h-ink);font-family:var(--ff-m);font-size:.72rem;font-weight:600}
+.res b{display:block;font-size:.9rem}
+.res span{font-size:.78rem;color:var(--ink-3);line-height:1.4}
+.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap);counter-reset:r}
+.rule{counter-increment:r;background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:18px;box-shadow:var(--sh-1);position:relative;padding-top:44px}
+.rule::before{content:counter(r,decimal-leading-zero);position:absolute;top:14px;left:18px;font-family:var(--ff-m);font-size:.8rem;font-weight:600;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent-2));width:28px;height:24px;border-radius:8px;display:grid;place-items:center}
+.rule h4{font-size:1rem;margin-bottom:5px}
+.rule p{font-size:.84rem;color:var(--ink-2);margin:0}
+
+/* ---------- FOOTER / UTIL ---------- */
+footer{background:linear-gradient(180deg,var(--paper-2),#EFE7D9);border-top:1px solid var(--line);padding:46px 0 34px;position:relative;z-index:2;margin-top:20px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:var(--gap);align-items:start}
+footer h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-3);font-family:var(--ff-b);font-weight:700;margin-bottom:10px}
+footer p{font-size:.85rem;color:var(--ink-2)}
+.foot-links{display:grid;gap:6px}
+.foot-links a,.foot-links button{font-size:.84rem;color:var(--ink-2);text-decoration:none;background:none;border:0;padding:0;text-align:left;cursor:pointer;font-family:inherit;transition:.16s}
+.foot-links a:hover,.foot-links button:hover{color:var(--accent-ink);transform:translateX(3px)}
+.foot-bottom{margin-top:30px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.76rem;color:var(--ink-3)}
+
+.toasts{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:90;display:grid;gap:9px;width:min(460px,calc(100% - 28px))}
+.toast{background:var(--ink);color:#fff;border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:12px;font-size:.86rem;
+  box-shadow:0 22px 44px -20px rgba(0,0,0,.7);animation:toastIn .32s cubic-bezier(.2,.9,.3,1)}
+.toast.out{animation:toastOut .28s forwards}
+.toast .ic{width:22px;height:22px;border-radius:7px;display:grid;place-items:center;flex:none;background:var(--ok);font-size:.8rem}
+.toast.warn .ic{background:var(--amber);color:#3A2600}
+.toast .msg{flex:1}
+.toast button{background:rgba(255,255,255,.16);border:0;color:#fff;font:inherit;font-size:.78rem;font-weight:700;padding:6px 11px;border-radius:9px;cursor:pointer;transition:.18s}
+.toast button:hover{background:#fff;color:var(--ink)}
+@keyframes toastIn{from{opacity:0;transform:translateY(18px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes toastOut{to{opacity:0;transform:translateY(12px) scale(.97)}}
+
+.modal{position:fixed;inset:0;z-index:80;display:none;place-items:center;padding:20px}
+.modal.on{display:grid}
+.modal-card{background:var(--card);border-radius:var(--r-l);box-shadow:var(--sh-3);max-width:440px;width:100%;padding:26px;position:relative;z-index:2;animation:fadeUp .3s}
+.modal-card h3{font-size:1.3rem;margin-bottom:8px}
+.modal-card p{font-size:.9rem;color:var(--ink-2)}
+
+.totop{position:fixed;right:18px;bottom:18px;z-index:55;width:46px;height:46px;border-radius:15px;border:1px solid var(--line);
+  background:var(--card);box-shadow:var(--sh-2);cursor:pointer;display:grid;place-items:center;opacity:0;pointer-events:none;transition:.3s;color:var(--accent-ink)}
+.totop.on{opacity:1;pointer-events:auto}
+.totop:hover{background:var(--accent);color:#fff;transform:translateY(-3px)}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.9,.3,1),transform .7s cubic-bezier(.2,.9,.3,1)}
+.reveal.in{opacity:1;transform:none}
+.stagger > *{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.2,.9,.3,1),transform .6s cubic-bezier(.2,.9,.3,1)}
+.stagger.in > *{opacity:1;transform:none}
+.hero .anim{opacity:0;animation:heroIn .85s cubic-bezier(.2,.9,.3,1) forwards}
+@keyframes heroIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:1180px){
+  .navlinks a{padding:8px 7px;font-size:.79rem}
+  .navlinks a i{display:none}
+}
+@media (max-width:1080px){
+  .navlinks{display:none}
+  .menu-btn{display:flex}
+  .hero-grid{grid-template-columns:1fr}
+  .mod-grid,.gl-grid,.res-grid,.rules,.eval-types{grid-template-columns:repeat(2,1fr)}
+  .path-grid,.kirk,.kpis{grid-template-columns:repeat(2,1fr)}
+  .plan-layout,.check-layout,.day-layout,.micro-layout,.rubric-layout{grid-template-columns:1fr}
+  .controls,.progress-card{position:static;max-height:none}
+  .tldr ol{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  :root{--nav-h:60px;--gap:14px}
+  .mod-grid,.gl-grid,.res-grid,.rules,.eval-types,.path-grid,.kirk,.kpis,.tldr ol,.g2,.g3,.g4{grid-template-columns:1fr}
+  .kpis{grid-template-columns:1fr 1fr}
+  .brand span{display:none}
+  .ringbtn .rl{display:none}
+  .hero h1{font-size:clamp(2rem,9vw,2.7rem)}
+  .wk{grid-template-columns:40px 1fr 54px;gap:8px}
+  .wk .segs{display:none}
+  .tl-row{grid-template-columns:78px 1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .g-block{grid-template-columns:60px 1fr;gap:10px}
+  .clock .unit b{font-size:1.3rem}
+  .ficha dl{grid-template-columns:1fr}
+  .ficha dd{text-align:left;padding-top:0;border-top:0;padding-bottom:9px}
+  .ficha dt{padding-bottom:2px}
+  .drawer{width:100%}
+  .totop{right:12px;bottom:12px;width:42px;height:42px}
+  .mpanel{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .reveal,.stagger>*{opacity:1!important;transform:none!important}
+  .hero .anim{opacity:1}
+}
+@media print{
+  .nav,.mpanel,.aurora,.grain,.totop,.toasts,.drawer,.scrim,.modal,.no-print,.hero-cta,.controls{display:none!important}
+  body{background:#fff;font-size:11pt}
+  body::before{display:none}
+  .section{padding:14px 0;break-inside:avoid}
+  .card,.mod,.gl-card{box-shadow:none;border-color:#ccc;break-inside:avoid}
+  .hero{padding-top:10px}
+  .plan-layout,.check-layout,.micro-layout,.rubric-layout,.day-layout{grid-template-columns:1fr}
+  a{color:#000;text-decoration:none}
+}
+</style>
+</head>
+<body data-accent="indigo" data-density="comoda">
+
+<div class="aurora" aria-hidden="true">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B34C7"/><stop offset="55%" stop-color="#D6218C"/><stop offset="100%" stop-color="#F2A20C"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B34C7"/><stop offset="100%" stop-color="#00958C"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#inicio">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="url(#brandGrad)"/><path d="M6 12l10-4.4L26 12l-10 4.4L6 12z" fill="#fff"/><path d="M10.5 15.2v4.6c0 1.9 2.5 3.2 5.5 3.2s5.5-1.3 5.5-3.2v-4.6" stroke="#F2A20C" stroke-width="2.1" fill="none" stroke-linecap="round"/><circle cx="26" cy="12" r="1.5" fill="#F2A20C"/></svg>
+      <span><b>SSCE0110</b><span>Guía de arranque · Aj Fonts</span></span>
+    </a>
+    <nav class="navlinks" id="navlinks" aria-label="Secciones">
+      <a href="#arranque"><i>01</i>Arranque</a>
+      <a href="#curso"><i>02</i>El curso</a>
+      <a href="#modulos"><i>03</i>Módulos</a>
+      <a href="#plan"><i>04</i>Plan</a>
+      <a href="#aula"><i>05</i>Día 1</a>
+      <a href="#microclase"><i>06</i>Microclase</a>
+      <a href="#evaluar"><i>07</i>Evaluar</a>
+      <a href="#glosario"><i>08</i>Glosario</a>
+      <a href="#test"><i>09</i>Test</a>
+      <a href="#despues"><i>10</i>Después</a>
+    </nav>
+    <div class="nav-right">
+      <button class="ringbtn" id="ringBtn" title="Tu portfolio docente — ir a evidencias">
+        <svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="15" fill="none" stroke="#EFE7D9" stroke-width="5"/>
+          <circle id="navRing" cx="18" cy="18" r="15" fill="none" stroke="url(#ringGrad)" stroke-width="5" stroke-linecap="round"
+                  stroke-dasharray="94.2" stroke-dashoffset="94.2" transform="rotate(-90 18 18)"/>
+        </svg>
+        <span class="rl" id="navRingTxt">0%</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mpanel" aria-label="Abrir menú"><span></span></button>
+    </div>
+  </div>
+  <div class="navbar-progress" id="navProgress"></div>
+</header>
+<div class="mpanel" id="mpanel"></div>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="section hero" id="inicio">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="kicker anim" style="animation-delay:.05s">Docencia de la Formación Profesional para el Empleo · Nivel 3</span>
+        <h1 class="anim" style="animation-delay:.14s">El 24 de noviembre empiezas a
+          <span class="mark">aprender a enseñar<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4 14C70 6 210 4 296 11"/></svg></span>.
+        </h1>
+        <p class="lead anim" style="animation-delay:.26s">380 horas para convertir lo que ya sabes hacer en algo que otra persona pueda repetir sola.
+          Este es tu cuaderno de arranque: estructura <b>oficial</b> del certificado, plan semana a semana hasta abril, checklist del día 1
+          y un laboratorio para ensayar tu primera microclase. <b>Sin especialización todavía</b>: aquí se aprende el oficio de formador;
+          el contenido técnico lo aportas tú y se acredita aparte.</p>
+        <div class="hero-stats anim" style="animation-delay:.36s">
+          <div class="stat"><b>5 + 1</b><span>Módulos MF + prácticas</span></div>
+          <div class="stat"><b>340 h</b><span>Lectivas</span></div>
+          <div class="stat"><b>40 h</b><span>Prácticas MP0353</span></div>
+          <div class="stat"><b id="statWeeks">22</b><span>Semanas de plan</span></div>
+        </div>
+        <div class="hero-cta anim" style="animation-delay:.46s">
+          <a class="btn btn-primary" href="#arranque">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            Preparar el día 1
+          </a>
+          <a class="btn btn-ghost" href="#plan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            Ajustar mi plan
+          </a>
+          <a class="btn btn-ghost" href="#test">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 2l2.9 6.3 6.9.8-5 4.7 1.3 6.8L12 17.3 5.9 20.6 7.2 13.8l-5-4.7 6.9-.8L12 2z"/></svg>
+            Test de 12 preguntas
+          </a>
+        </div>
+      </div>
+
+      <div class="anim" style="animation-delay:.3s">
+        <div class="count-card">
+          <span class="mono" id="cdLabel">Cuenta atrás para el aula</span>
+          <div class="clock" id="clock" role="timer" aria-live="off">
+            <div class="unit"><b id="cdD">--</b><span>días</span></div>
+            <div class="unit"><b id="cdH">--</b><span>horas</span></div>
+            <div class="unit"><b id="cdM">--</b><span>min</span></div>
+            <div class="unit"><b id="cdS">--</b><span>seg</span></div>
+          </div>
+          <p class="count-note" id="cdNote">Martes 24 de noviembre de 2026 · 09:00 (hora orientativa, ajústala en el planificador).</p>
+        </div>
+
+        <div class="ficha">
+          <h3>Ficha del certificado</h3>
+          <dl>
+            <dt>Código</dt><dd>SSCE0110</dd>
+            <dt>Familia</dt><dd>Servicios socioculturales y a la comunidad</dd>
+            <dt>Nivel</dt><dd>3 · Cualificación SSC448_3</dd>
+            <dt>Duración</dt><dd>380 h <em>(340 + 40)</em></dd>
+            <dt>Habilita</dt><dd>Grados <em>A, B y C</em> del sistema de FP</dd>
+            <dt>Modalidad</dt><dd>Presencial · teleformación con formación extra</dd>
+            <dt>Inicio</dt><dd id="fichaStart">24/11/2026</dd>
+            <dt>Fin estimado</dt><dd><em id="fichaEnd">—</em></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <div class="tldr reveal">
+      <div class="tldr-head">
+        <span class="tag" data-hue="amber">Resumen</span>
+        <h3>Lo esencial en 60 segundos</h3>
+        <span style="font-size:.8rem;color:var(--ink-3)">Si solo lees una cosa antes del día 1, que sea esta.</span>
+      </div>
+      <ol>
+        <li><b>No es un curso de ciberseguridad.</b>Es un curso de <i>cómo enseñar</i>. La especialidad llega después y se acredita por otra vía.</li>
+        <li><b>380 h = 340 + 40.</b>Cinco módulos formativos (MF1442–MF1446) más 40 h de prácticas reales (MP0353).</li>
+        <li><b>Todo se evalúa por separado.</b>Cada módulo y unidad formativa se supera con pruebas propias: no hay una nota media que salve nada.</li>
+        <li><b>La asistencia cuenta.</b>En FPE presencial las faltas injustificadas dan de baja. Confirma el porcentaje exacto con tu centro el día 1.</li>
+        <li><b>Vas a impartir una clase.</b>Microclase de 20–30 min ante el grupo. Es la prueba que más se prepara y la que más se agradece ensayar.</li>
+        <li><b>Cada entrega es material reutilizable.</b>Programación, guía didáctica, screencast, rúbrica: sales con un portfolio docente, no con apuntes.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 ARRANQUE ============ -->
+<section class="section tint" id="arranque">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">01 · Antes del día 1</span>
+      <h2>Ocho días para llegar sin sobresaltos</h2>
+      <p class="lead">Hoy es lunes 16 de noviembre. Empiezas el martes 24. Esta checklist es lo que separa un primer día tranquilo
+        de un primer día resolviendo papeleo. Se guarda en tu navegador: marca y sigue.</p>
+    </div>
+    <div class="check-layout">
+      <div class="card pad reveal" id="checklistBox"></div>
+      <div class="card pad progress-card reveal">
+        <span class="mono" style="color:var(--ink-3)">Preparación</span>
+        <div class="ring-wrap">
+          <svg class="big-ring" viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="bg" cx="60" cy="60" r="50"/>
+            <circle class="fg" id="checkRing" cx="60" cy="60" r="50" stroke-dasharray="314.16" stroke-dashoffset="314.16" transform="rotate(-90 60 60)"/>
+          </svg>
+          <div class="ring-num"><b id="checkPct">0%</b><span id="checkCount">0 / 12</span></div>
+        </div>
+        <p style="font-size:.85rem;color:var(--ink-2)" id="checkMsg">Empieza por la documentación: es lo único que no puedes resolver el mismo día.</p>
+        <div class="row no-print" style="justify-content:center;margin-top:12px">
+          <button class="btn btn-soft btn-sm" id="checkAll">Marcar todo</button>
+          <button class="btn btn-ghost btn-sm" id="checkReset">Reiniciar</button>
+        </div>
+        <div class="callout info" style="margin-top:16px;text-align:left;font-size:.82rem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01" stroke-linecap="round"/></svg>
+          <span>Tus marcas, notas y ajustes se guardan <b>solo en este navegador</b> (localStorage). Nada sale de tu equipo.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 EL CURSO ============ -->
+<section class="section" id="curso">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">02 · Estructura real</span>
+      <h2>El certificado, con los códigos que te van a pedir</h2>
+      <p class="lead">En FPE la nomenclatura no es decorativa: los documentos oficiales se identifican por MF, UF y CE.
+        Aprende la estructura correcta desde el primer día y tus entregas encajarán solas.</p>
+    </div>
+
+    <div class="grid g2 reveal" style="margin-bottom:22px">
+      <div class="callout warn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L14.7 3.9a2 2 0 00-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+        <span><b>Corrige la guía anterior.</b> Aquel «M1 · Contexto de la docencia (40 h)» no existe como módulo.
+          Esas 40 horas son el <b>MP0353 · prácticas profesionales no laborales</b>. Y el bloque de impartición y tutorización
+          es <b>un solo módulo (MF1444_3, 100 h)</b> con dos unidades formativas dentro.</span>
+      </div>
+      <div class="callout info">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l9 4.5v11L12 22l-9-4.5v-11L12 2z"/><path d="M12 22V12M21 6.5L12 12 3 6.5"/></svg>
+        <span><b>La especialización va aparte.</b> El SSCE0110 acredita <i>competencia docente</i>. Para impartir una especialidad concreta
+          necesitas además titulación o experiencia demostrable en ella. Tu perfil de desarrollo Android y web ya es contenido válido;
+          la ciberseguridad, cuando la estudies, se sumará después.</span>
+      </div>
+    </div>
+
+    <div class="card pad reveal">
+      <div class="between" style="margin-bottom:14px">
+        <h3 style="font-size:1.2rem">Reparto de las 380 horas</h3>
+        <div class="seg-toggle no-print" role="group" aria-label="Vista de la estructura">
+          <button id="viewOficial" aria-pressed="true">Vista oficial · MF/UF</button>
+          <button id="viewRuta" aria-pressed="false">Vista ruta de estudio</button>
+        </div>
+      </div>
+      <div class="ribbon" id="ribbon" role="img" aria-label="Distribución de horas por módulo"></div>
+      <div class="legend" id="legend"></div>
+      <div id="structView" style="margin-top:20px"></div>
+    </div>
+
+    <div class="grid g3 reveal" style="margin-top:22px">
+      <div class="card pad">
+        <span class="tag" data-hue="blue">Acceso</span>
+        <h4 style="font-size:1.05rem;margin:10px 0 6px">Cómo se entra al nivel 3</h4>
+        <p style="font-size:.85rem;color:var(--ink-2);margin:0">Titulación universitaria, FP de grado superior, otro certificado de nivel 3,
+          prueba de acceso a la universidad para mayores de 25/45 o competencias clave nivel 3. Si ya estás matriculado, esto está resuelto:
+          guarda copia de lo que presentaste.</p>
+      </div>
+      <div class="card pad">
+        <span class="tag" data-hue="magenta">Evaluación</span>
+        <h4 style="font-size:1.05rem;margin:10px 0 6px">Apto módulo a módulo</h4>
+        <p style="font-size:.85rem;color:var(--ink-2);margin:0">Cada MF y cada UF tiene su prueba teórica y práctica. Se supera por evidencias de desempeño,
+          no por media. Pregunta el día 1: instrumentos, fechas, recuperaciones y qué pasa si fallas una UF.</p>
+      </div>
+      <div class="card pad">
+        <span class="tag" data-hue="amber">Asistencia</span>
+        <h4 style="font-size:1.05rem;margin:10px 0 6px">El requisito silencioso</h4>
+        <p style="font-size:.85rem;color:var(--ink-2);margin:0">En formación de demanda la inasistencia injustificada provoca baja
+          (habitualmente se exige un mínimo del 75 %). Firma cada día, avisa de cualquier falta y guarda justificantes.
+          Confirma el porcentaje exacto con tu centro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 MÓDULOS ============ -->
+<section class="section white" id="modulos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">03 · Módulo a módulo</span>
+      <h2>Qué vas a aprender y qué te vas a llevar</h2>
+      <p class="lead">Cada tarjeta abre una ficha completa: contenidos, entregables reutilizables, errores típicos y un ejemplo
+        con <b>tu</b> stack real (Kotlin, Git, Docker, web, Linux), no con contenido que aún no dominas. Marca los entregables
+        que vayas cerrando: alimentan tu portfolio docente.</p>
+    </div>
+    <div class="mod-toolbar no-print reveal">
+      <div class="row" id="famChips" role="group" aria-label="Filtrar módulos por bloque"></div>
+      <div style="margin-left:auto;display:flex;gap:8px;align-items:center">
+        <label class="lbl" for="modSort" style="margin:0">Orden</label>
+        <select id="modSort" style="width:auto;min-width:180px">
+          <option value="oficial">Oficial del certificado</option>
+          <option value="horas">Más horas primero</option>
+          <option value="menos">Menos horas primero</option>
+          <option value="progreso">Mi progreso primero</option>
+        </select>
+      </div>
+    </div>
+    <div class="mod-grid stagger" id="modGrid"></div>
+  </div>
+</section>
+
+<!-- ============ 04 PLAN ============ -->
+<section class="section tint" id="plan">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">04 · Planificador vivo</span>
+      <h2>Tu calendario del 24 de noviembre a abril</h2>
+      <p class="lead">Mueve los controles y el plan se recalcula al instante: fechas por módulo, semanas de clase, pausas de Navidad
+        y Semana Santa, y fecha de fin. Cuando encaje con tu vida, expórtalo al calendario o imprímelo.</p>
+    </div>
+
+    <div class="plan-layout">
+      <!-- REGIÓN DE CONTROL PERMANENTE -->
+      <div class="controls no-print" id="controls">
+        <div class="controls-head"><span class="dot" aria-hidden="true"></span><h3>Controles del plan</h3></div>
+
+        <div class="ctrl">
+          <div class="ctrl-2">
+            <div><label class="lbl" for="pStart">Fecha de inicio</label><input type="date" id="pStart" value="2026-11-24"></div>
+            <div><label class="lbl" for="pTime">Hora</label><input type="time" id="pTime" value="09:00"></div>
+          </div>
+          <p class="hint">La hora alimenta también la cuenta atrás de la portada.</p>
+        </div>
+
+        <div class="ctrl">
+          <div class="ctrl-row"><label class="lbl" for="pHpd" style="margin:0">Horas de clase al día</label><span class="val" id="pHpdVal">4 h</span></div>
+          <input type="range" id="pHpd" min="2" max="6" step="0.5" value="4" aria-describedby="pHpdHint">
+          <p class="hint" id="pHpdHint">4 h/día × 5 días = 20 h/semana: el ritmo que acaba en abril.</p>
+        </div>
+
+        <div class="ctrl">
+          <label class="lbl">Días de clase</label>
+          <div class="days" id="pDays" role="group" aria-label="Días de la semana con clase"></div>
+          <p class="hint" id="pDaysHint">5 días seleccionados · 20 h/semana.</p>
+        </div>
+
+        <div class="ctrl">
+          <label class="switch"><span>Pausa de Navidad</span><input type="checkbox" id="pXmas" checked><span class="track"></span></label>
+          <label class="switch"><span>Pausa de Semana Santa</span><input type="checkbox" id="pEaster" checked><span class="track"></span></label>
+          <p class="hint">Navidad: 21 dic → 6 ene. Semana Santa calculada para 2027 (22–28 marzo).</p>
+        </div>
+
+        <div class="ctrl">
+          <label class="lbl" for="pOrder">Orden del itinerario</label>
+          <select id="pOrder">
+            <option value="oficial">Oficial · MF1442 → MP0353</option>
+            <option value="materiales">Materiales primero (MF1443)</option>
+            <option value="aula">Aula primero (MF1444)</option>
+            <option value="eval">Evaluación anticipada (MF1445)</option>
+          </select>
+          <p class="hint">El centro fija el orden real; esto es tu ruta de estudio y entrega.</p>
+        </div>
+
+        <div class="ctrl">
+          <label class="switch"><span>Incluir 40 h de prácticas</span><input type="checkbox" id="pMP" checked><span class="track"></span></label>
+          <p class="hint">Las fechas del MP0353 las asigna la entidad: aquí son orientativas.</p>
+        </div>
+
+        <div class="ctrl">
+          <label class="lbl">Color de acento</label>
+          <div class="swatches" id="pAccent" role="group" aria-label="Color de acento">
+            <button data-a="indigo" style="background:linear-gradient(135deg,#3B34C7,#00958C)" aria-pressed="true" title="Índigo" aria-label="Índigo"></button>
+            <button data-a="teal" style="background:linear-gradient(135deg,#00857E,#3B34C7)" aria-pressed="false" title="Teal" aria-label="Teal"></button>
+            <button data-a="magenta" style="background:linear-gradient(135deg,#C81E82,#1D6BFF)" aria-pressed="false" title="Magenta" aria-label="Magenta"></button>
+            <button data-a="azul" style="background:linear-gradient(135deg,#1D57D6,#D6218C)" aria-pressed="false" title="Azul" aria-label="Azul"></button>
+          </div>
+        </div>
+
+        <div class="ctrl">
+          <label class="lbl" for="pDensity">Densidad de la guía</label>
+          <select id="pDensity"><option value="comoda">Cómoda (leer)</option><option value="compacta">Compacta (repasar)</option></select>
+        </div>
+
+        <div class="ctrl">
+          <div class="row">
+            <button class="btn btn-soft btn-sm" id="pReset">Restablecer</button>
+            <button class="btn btn-ghost btn-sm" id="pRandom">Sorpréndeme</button>
+          </div>
+          <div class="row" style="margin-top:9px">
+            <button class="btn btn-primary btn-sm" id="pIcs">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M12 14v4M10 16h4"/></svg>
+              .ics
+            </button>
+            <button class="btn btn-ghost btn-sm" id="pMd">Plan .md</button>
+            <button class="btn btn-ghost btn-sm" id="pPrint">Imprimir</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SALIDA -->
+      <div class="plan-out">
+        <div class="kpis" id="kpis"></div>
+
+        <div class="timeline">
+          <div class="between" style="margin-bottom:12px">
+            <h3 style="font-size:1.1rem">Línea temporal</h3>
+            <span class="mono" style="color:var(--ink-3)" id="tlRange">—</span>
+          </div>
+          <div class="tl-months" id="tlMonths"></div>
+          <div class="tl-bars" id="tlBars"></div>
+        </div>
+
+        <div class="card pad">
+          <div class="between" style="margin-bottom:12px">
+            <h3 style="font-size:1.1rem">Semana a semana</h3>
+            <span style="font-size:.78rem;color:var(--ink-3)" id="wkSummary">—</span>
+          </div>
+          <div class="weeks" id="weeks"></div>
+        </div>
+
+        <div class="callout ok">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+          <span><b>Truco de planificación:</b> reserva las 2 últimas horas de cada semana para <i>cerrar entregables</i>, no para contenido nuevo.
+            En este certificado se entrega mucho y quien lo deja para el final acaba copiando plantillas sin entenderlas.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 DÍA 1 ============ -->
+<section class="section" id="aula">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">05 · Martes 24</span>
+      <h2>El primer día, minuto a minuto</h2>
+      <p class="lead">Vas a estar sentado donde luego te sentarás de pie. Observa al formador como material de estudio:
+        lo que hace bien y lo que no, todo va a tu bitácora.</p>
+    </div>
+    <div class="day-layout">
+      <div class="card pad reveal">
+        <div class="tline">
+          <div class="tl-item"><time>08:45</time><h4>Llega 15 minutos antes</h4><p>Siéntate donde veas la pizarra y la cara del formador. Saluda a los dos de al lado: son tu primera red de contactos docentes.</p></div>
+          <div class="tl-item"><time>09:00</time><h4>Preséntate en 30 segundos</h4><p>Nombre + de dónde vienes + qué quieres llegar a impartir. Nada más. Usa el generador de la derecha y ensáyalo en voz alta dos veces.</p></div>
+          <div class="tl-item"><time>09:30</time><h4>Caza el encuadre</h4><p>Apunta literalmente: calendario de evaluaciones, porcentaje de asistencia, plataforma y credenciales, criterios de apto, tutor y horario de tutoría, fecha prevista de prácticas.</p></div>
+          <div class="tl-item"><time>11:00</time><h4>Descanso con intención</h4><p>Pregunta a tres compañeros qué piensan impartir. Los centros de formación contratan mucho por recomendación entre formadores.</p></div>
+          <div class="tl-item"><time>13:30</time><h4>Cinco líneas de bitácora</h4><p>Qué he aprendido · qué me ha sorprendido · qué técnica he visto usar · qué aplico mañana · qué duda me llevo. Cinco líneas al día son un portfolio en abril.</p></div>
+        </div>
+        <div class="callout warn" style="margin-top:6px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span><b>Kit físico:</b> DNI, bolígrafo y cuaderno (sí, en papel), portátil cargado, adaptador HDMI/USB-C, agua, y el PDF de la programación del curso si el centro lo comparte.</span>
+        </div>
+      </div>
+
+      <div style="display:grid;gap:var(--gap)">
+        <div class="card pad reveal">
+          <h3 style="font-size:1.1rem;margin-bottom:12px">Tu presentación de 30 segundos</h3>
+          <div class="grid" style="gap:10px">
+            <div><label class="lbl" for="inName">Nombre</label><input type="text" id="inName" value="Víctor"></div>
+            <div><label class="lbl" for="inFrom">De dónde vienes</label><input type="text" id="inFrom" value="desarrollo de apps Android con Kotlin y desarrollo web"></div>
+            <div><label class="lbl" for="inGive">Qué puedes aportar</label><input type="text" id="inGive" value="proyectos reales publicados y trabajo con Linux, Git y Docker"></div>
+            <div><label class="lbl" for="inGet">Qué te quieres llevar</label><input type="text" id="inGet" value="aprender a estructurar lo que sé para enseñarlo a personas que empiezan de cero"></div>
+          </div>
+          <div class="pitch-out" id="pitchOut" style="margin-top:14px"></div>
+          <div class="row no-print" style="margin-top:12px">
+            <button class="btn btn-soft btn-sm" id="pitchCopy">Copiar texto</button>
+            <span style="font-size:.76rem;color:var(--ink-3)">≈ 30 s leído con calma.</span>
+          </div>
+        </div>
+
+        <div class="card pad reveal">
+          <h3 style="font-size:1.1rem;margin-bottom:12px">Diez preguntas que debes hacer el día 1</h3>
+          <ol class="qa-list">
+            <li>¿Qué especialidad formativa y qué módulos exactos vamos a cursar?</li>
+            <li>¿Cuál es el porcentaje mínimo de asistencia y cómo se justifican las faltas?</li>
+            <li>¿Cómo y cuándo se evalúa cada UF? ¿Hay recuperaciones?</li>
+            <li>¿Qué plataforma usamos y cuándo recibimos las credenciales?</li>
+            <li>¿La microclase se graba? ¿Cuánto dura y con qué rúbrica se corrige?</li>
+            <li>¿Hay plantillas oficiales del centro para programación y guías didácticas?</li>
+            <li>¿Cuándo y dónde se hacen las 40 h de prácticas? ¿Las busca el centro o el alumno?</li>
+            <li>¿Qué material puedo reutilizar después con licencia clara?</li>
+            <li>¿Quién es el tutor y en qué horario responde?</li>
+            <li>¿El certificado incluye la formación específica de teleformación o va aparte?</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 MICROCLASE ============ -->
+<section class="section white" id="microclase">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">06 · Laboratorio</span>
+      <h2>Generador de microclase y rúbrica de ensayo</h2>
+      <p class="lead">La prueba estrella del curso es impartir una sesión corta. Elige un tema que domines de verdad,
+        ajusta los controles y tendrás un guion minuteado con objetivo observable, práctica del alumnado y plan B.
+        Después puntúate con la rúbrica: es la misma lógica que usará tu formador.</p>
+    </div>
+
+    <div class="micro-layout">
+      <div class="card pad no-print reveal" style="position:sticky;top:calc(var(--nav-h) + 16px)">
+        <h3 style="font-size:1.05rem;margin-bottom:14px">Controles de la sesión</h3>
+        <div class="grid" style="gap:12px">
+          <div>
+            <label class="lbl" for="mTopic">Tema (algo que domines)</label>
+            <input type="text" id="mTopic" list="topicList" value="Crear un repositorio Git y hacer el primer commit">
+            <datalist id="topicList">
+              <option>Crear un repositorio Git y hacer el primer commit</option>
+              <option>Publicar una página web estática y comprobar que carga</option>
+              <option>Montar un entorno de desarrollo reproducible con Docker</option>
+              <option>Leer y filtrar logs de una app Android con logcat</option>
+              <option>Estructurar un proyecto Kotlin con Gradle</option>
+              <option>Automatizar una copia de seguridad en Linux</option>
+              <option>Diseñar un formulario web accesible</option>
+            </datalist>
+          </div>
+          <div class="ctrl-2">
+            <div><label class="lbl" for="mDur">Duración</label>
+              <select id="mDur"><option value="10">10 min</option><option value="15">15 min</option><option value="20" selected>20 min</option><option value="30">30 min</option></select></div>
+            <div><label class="lbl" for="mLevel">Nivel</label>
+              <select id="mLevel"><option value="inicial">Inicial</option><option value="medio" selected>Intermedio</option><option value="mixto">Grupo mixto</option></select></div>
+          </div>
+          <div><label class="lbl" for="mMode">Modalidad</label>
+            <select id="mMode"><option value="presencial">Presencial · aula con equipos</option><option value="tele">Teleformación · síncrona</option></select></div>
+          <div><label class="lbl" for="mVerb">Verbo del objetivo (Bloom)</label>
+            <select id="mVerb"><option value="configurar">Configurar · aplicar</option><option value="construir">Construir · crear</option><option value="diagnosticar">Diagnosticar · analizar</option><option value="documentar">Documentar · comprender</option><option value="evaluar">Evaluar · juzgar</option></select></div>
+          <div>
+            <div class="ctrl-row"><label class="lbl" for="mPractice" style="margin:0">Peso de la práctica</label><span class="val" id="mPracticeVal">35 %</span></div>
+            <input type="range" id="mPractice" min="20" max="55" step="5" value="35">
+            <p class="hint">Por debajo del 30 % tu microclase se convierte en charla. Sube si el grupo es inicial.</p>
+          </div>
+          <div class="row">
+            <button class="btn btn-primary btn-sm" id="mCopy">Copiar guion</button>
+            <button class="btn btn-ghost btn-sm" id="mDownload">Descargar .md</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="obj-box reveal" id="objBox"></div>
+        <div class="guion" id="guion"></div>
+        <div class="grid g2 reveal" style="margin-top:14px" id="microExtra"></div>
+      </div>
+    </div>
+
+    <div class="card pad reveal" style="margin-top:26px">
+      <div class="between" style="margin-bottom:16px">
+        <div>
+          <h3 style="font-size:1.2rem">Rúbrica de autoevaluación del ensayo</h3>
+          <p style="font-size:.86rem;color:var(--ink-2);margin:6px 0 0">Grábate, míralo entero y puntúa de 0 a 4. Repite el ensayo hasta pasar de 18/24.</p>
+        </div>
+        <button class="btn btn-ghost btn-sm no-print" id="rubReset">Reiniciar rúbrica</button>
+      </div>
+      <div class="rubric-layout">
+        <div id="rubSliders"></div>
+        <div class="radar-card">
+          <svg id="radar" viewBox="0 0 340 320" role="img" aria-label="Radar de la rúbrica de microclase"></svg>
+          <div class="verdict" id="rubVerdict"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 EVALUAR ============ -->
+<section class="section tint" id="evaluar">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">07 · Evaluación y evidencias</span>
+      <h2>Medir el aprendizaje (y demostrarte a ti mismo)</h2>
+      <p class="lead">En formación para el empleo no evalúas lo que el alumno recuerda: evalúas lo que es capaz de hacer.
+        Y de paso, cada instrumento que construyas es una pieza de tu portfolio.</p>
+    </div>
+
+    <div class="eval-types reveal" style="margin-bottom:22px">
+      <div class="card pad eval-type" data-hue="blue"><span class="when">Antes</span><h4>Diagnóstica</h4><p>Descubre de dónde parte el grupo. En adultos casi siempre saben más de lo que creen, pero desordenado. Tres tareas cortas y una encuesta bastan.</p></div>
+      <div class="card pad eval-type" data-hue="teal"><span class="when">Durante</span><h4>Formativa</h4><p>La que de verdad enseña: observación, tickets de salida, revisión de la práctica, feedback concreto en el momento. Sin nota, con información útil.</p></div>
+      <div class="card pad eval-type" data-hue="magenta"><span class="when">Al final</span><h4>Sumativa</h4><p>Acredita el logro frente a los criterios de evaluación del módulo. Prueba práctica observable + rúbrica, y prueba objetiva solo para lo conceptual.</p></div>
+    </div>
+
+    <h3 style="font-size:1.2rem;margin-bottom:12px" class="reveal">Evaluar también tu propio curso · Kirkpatrick</h3>
+    <div class="kirk reveal" style="margin-bottom:26px">
+      <div class="kirk-step" data-hue="indigo"><span class="lvl">Nivel 1</span><h4>Reacción</h4><p>¿Les ha parecido útil y claro?</p><span class="q">Encuesta de satisfacción al cierre.</span></div>
+      <div class="kirk-step" data-hue="teal"><span class="lvl">Nivel 2</span><h4>Aprendizaje</h4><p>¿Saben hacerlo al terminar?</p><span class="q">Prueba práctica con rúbrica.</span></div>
+      <div class="kirk-step" data-hue="amber"><span class="lvl">Nivel 3</span><h4>Transferencia</h4><p>¿Lo usan en su puesto?</p><span class="q">Seguimiento a las 6–8 semanas.</span></div>
+      <div class="kirk-step" data-hue="green"><span class="lvl">Nivel 4</span><h4>Resultados</h4><p>¿Mejora algo medible?</p><span class="q">Indicadores: incidencias, tiempos, inserción.</span></div>
+    </div>
+
+    <div class="check-layout">
+      <div class="card pad reveal">
+        <div class="between" style="margin-bottom:14px">
+          <h3 style="font-size:1.15rem">Evidencias para tu portfolio docente</h3>
+          <button class="btn btn-ghost btn-sm no-print" id="evReset">Reiniciar</button>
+        </div>
+        <p style="font-size:.86rem;color:var(--ink-2)">Cuando termines en abril, esto es lo que enseñarás a un centro de formación para que te contrate.
+          Constrúyelo <b>durante</b> el curso, no después.</p>
+        <div id="evidenceBox" style="margin-top:12px"></div>
+      </div>
+      <div class="card pad reveal">
+        <span class="mono" style="color:var(--ink-3)">Portfolio docente</span>
+        <div class="ring-wrap">
+          <svg class="big-ring" viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="bg" cx="60" cy="60" r="50"/>
+            <circle class="fg" id="evRing" cx="60" cy="60" r="50" stroke-dasharray="314.16" stroke-dashoffset="314.16" transform="rotate(-90 60 60)"/>
+          </svg>
+          <div class="ring-num"><b id="evPct">0%</b><span id="evCount">0 / 40</span></div>
+        </div>
+        <p style="font-size:.84rem;color:var(--ink-2);text-align:center" id="evMsg">Incluye los entregables de cada módulo más estas diez piezas.</p>
+        <div class="callout ok" style="font-size:.82rem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h11l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1z"/><path d="M14 4v6h6"/></svg>
+          <span>Monta un repositorio <b>ssce0110-ajfonts</b> con una carpeta por módulo y un README índice. Versionar tus materiales ya es una lección de método.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 GLOSARIO ============ -->
+<section class="section" id="glosario">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">08 · Vocabulario</span>
+      <h2>El idioma de la FPE, traducido</h2>
+      <p class="lead">Siglas que oirás desde el primer día y que conviene usar bien en tus entregas. Busca, filtra por bloque
+        y marca con estrella las que quieras repasar. Pulsa <kbd style="font-family:var(--ff-m);font-size:.72rem;background:var(--paper-2);border:1px solid var(--line);border-radius:5px;padding:1px 5px">/</kbd> para buscar desde cualquier parte.</p>
+    </div>
+    <div class="gl-toolbar no-print reveal">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" id="glSearch" placeholder="Buscar término o definición…" aria-label="Buscar en el glosario">
+        <kbd>/</kbd>
+      </div>
+      <div class="row" id="glChips" role="group" aria-label="Filtrar por categoría"></div>
+      <button class="chip" id="glFav" aria-pressed="false">★ Solo favoritos</button>
+      <span style="font-size:.8rem;color:var(--ink-3);margin-left:auto" id="glCount"></span>
+    </div>
+    <div class="gl-grid" id="glGrid"></div>
+    <div id="glEmpty"></div>
+  </div>
+</section>
+
+<!-- ============ 09 TEST ============ -->
+<section class="section white" id="test">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin-inline:auto">
+      <span class="kicker">09 · Compruébalo</span>
+      <h2>Doce preguntas antes de entrar al aula</h2>
+      <p class="lead" style="margin-inline:auto">Nada de nota: es un ticket de salida para ti. Cada respuesta explica el porqué, y al final puedes repasar solo las que falles.</p>
+    </div>
+    <div class="quiz-shell reveal" id="quiz">
+      <div class="quiz-head">
+        <div>
+          <span class="mono" style="color:var(--accent-ink)" id="qProgress">Pregunta 1 / 12</span>
+          <div class="dots" id="qDots" style="margin-top:7px" aria-hidden="true"></div>
+        </div>
+        <div style="text-align:right">
+          <span class="mono" style="color:var(--ink-3)">Mejor marca</span>
+          <div style="font-family:var(--ff-d);font-size:1.3rem;line-height:1.1" id="qBest">—</div>
+        </div>
+      </div>
+      <div class="quiz-body" id="qBody"></div>
+      <div class="quiz-foot" id="qFoot"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 DESPUÉS ============ -->
+<section class="section tint" id="despues">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">10 · Abril de 2027 en adelante</span>
+      <h2>Y después, ¿qué podrás impartir?</h2>
+      <p class="lead">El SSCE0110 te da la llave pedagógica. La puerta la abre tu especialidad: titulación o experiencia acreditada
+        en el área concreta. Estas son las rutas coherentes con tu perfil de hoy y con la que quieres construir.</p>
+    </div>
+
+    <div class="callout info reveal" style="margin-bottom:22px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      <span><b>Competencia docente ≠ competencia técnica.</b> Para impartir un certificado profesional se exige las dos.
+        La docente la obtienes aquí (o con Máster de Profesorado, Pedagogía, CAP…); la técnica se acredita con titulación y/o experiencia
+        en la especialidad. Verifica siempre los requisitos vigentes con el centro y el SEPE: el sistema está cambiando con la LO 3/2022 y el RD 659/2023.</span>
+    </div>
+
+    <div class="path-grid reveal" style="margin-bottom:26px">
+      <div class="path" data-hue="green">
+        <span class="status" style="background:var(--ok-soft);color:#1F5E33">Ya en tu mano</span>
+        <h4>Desarrollo web</h4>
+        <p>Tu trabajo fullstack y tus proyectos publicados son evidencia directa.</p>
+        <ul><li>Confección y publicación de páginas web</li><li>Desarrollo de aplicaciones con tecnologías web</li></ul>
+      </div>
+      <div class="path" data-hue="indigo">
+        <span class="status" style="background:var(--ok-soft);color:#1F5E33">Ya en tu mano</span>
+        <h4>Programación y apps</h4>
+        <p>Kotlin, Android y apps en producción: contenido difícil de encontrar en formadores.</p>
+        <ul><li>Programación de sistemas informáticos</li><li>Programación en lenguajes estructurados</li></ul>
+      </div>
+      <div class="path" data-hue="blue">
+        <span class="status" style="background:var(--info-soft);color:#123B84">Puente natural</span>
+        <h4>Sistemas y redes</h4>
+        <p>Linux, Docker y redes de laboratorio te acercan mucho a este bloque.</p>
+        <ul><li>Operación de sistemas informáticos</li><li>Administración de servicios de internet</li></ul>
+      </div>
+      <div class="path" data-hue="magenta">
+        <span class="status" style="background:var(--warn-soft);color:#6E4A00">Después de formarte</span>
+        <h4>Ciberseguridad</h4>
+        <p>Objetivo a medio plazo. Primero la formación técnica y la experiencia; luego el aula.</p>
+        <ul><li>Seguridad informática</li><li>Concienciación y buenas prácticas digitales</li></ul>
+      </div>
+    </div>
+
+    <div class="grid g2 reveal" style="margin-bottom:26px">
+      <div class="card pad">
+        <span class="tag" data-hue="teal">Siguiente paso</span>
+        <h4 style="font-size:1.08rem;margin:10px 0 6px">Teleformación</h4>
+        <p style="font-size:.86rem;color:var(--ink-2);margin:0">Para impartir en modalidad online se exige, además de la competencia docente,
+          formación específica en tutorización y herramientas de teleformación. Pregunta en tu centro si la ofertan al terminar:
+          es el complemento con más salida inmediata.</p>
+      </div>
+      <div class="card pad">
+        <span class="tag" data-hue="amber">Siguiente paso</span>
+        <h4 style="font-size:1.08rem;margin:10px 0 6px">Acreditar experiencia</h4>
+        <p style="font-size:.86rem;color:var(--ink-2);margin:0">Ve guardando desde ya: vida laboral, contratos, memoria de proyectos,
+          repositorios, capturas de tus apps publicadas y facturas si trabajas por tu cuenta. En abril querrás tener esa carpeta lista,
+          no reconstruirla con prisas.</p>
+      </div>
+    </div>
+
+    <h3 style="font-size:1.2rem;margin-bottom:12px" class="reveal">Recursos que sí vas a usar</h3>
+    <div class="res-grid reveal" style="margin-bottom:26px">
+      <a class="res" data-hue="indigo" href="https://www.sepe.es" target="_blank" rel="noopener"><span class="ico">SE</span><span><b>SEPE</b><span>Fichero de especialidades formativas, normativa y certificados.</span></span></a>
+      <a class="res" data-hue="blue" href="https://www.todofp.es" target="_blank" rel="noopener"><span class="ico">FP</span><span><b>TodoFP</b><span>Portal oficial de Formación Profesional: títulos, módulos y ofertas.</span></span></a>
+      <a class="res" data-hue="teal" href="https://www.fundae.es" target="_blank" rel="noopener"><span class="ico">FU</span><span><b>FUNDAE</b><span>Formación programada por las empresas y bonificaciones.</span></span></a>
+      <a class="res" data-hue="magenta" href="https://www.boe.es" target="_blank" rel="noopener"><span class="ico">BOE</span><span><b>BOE</b><span>RD 34/2008, LO 3/2022 y RD 659/2023: la letra pequeña que cambia las reglas.</span></span></a>
+      <a class="res" data-hue="green" href="https://moodle.org" target="_blank" rel="noopener"><span class="ico">MO</span><span><b>Moodle</b><span>El LMS más usado en FPE. Monta uno de prueba en enero.</span></span></a>
+      <a class="res" data-hue="amber" href="https://h5p.org" target="_blank" rel="noopener"><span class="ico">H5</span><span><b>H5P</b><span>Actividades interactivas gratuitas y empaquetables para tu LMS.</span></span></a>
+      <a class="res" data-hue="indigo" href="https://genially.com" target="_blank" rel="noopener"><span class="ico">GE</span><span><b>Genially</b><span>Presentaciones e infografías interactivas para el MF1443.</span></span></a>
+      <a class="res" data-hue="blue" href="https://creativecommons.org" target="_blank" rel="noopener"><span class="ico">CC</span><span><b>Creative Commons</b><span>Licencias: qué puedes usar, adaptar y compartir en clase.</span></span></a>
+      <a class="res" data-hue="teal" href="https://obsproject.com" target="_blank" rel="noopener"><span class="ico">OBS</span><span><b>OBS Studio</b><span>Graba tus screencasts y tus ensayos de microclase desde la semana 1.</span></span></a>
+    </div>
+
+    <h3 style="font-size:1.2rem;margin-bottom:12px" class="reveal">Seis reglas de oro para estos cinco meses</h3>
+    <div class="rules reveal">
+      <div class="rule"><h4>Cada entrega, reutilizable</h4><p>No hagas trabajos para aprobar: haz piezas que usarás en tu primer curso real. La diferencia se nota en abril.</p></div>
+      <div class="rule"><h4>Bitácora de cinco líneas</h4><p>Todos los días, sin excepción. Es el material más honesto que tendrás para tu informe de prácticas.</p></div>
+      <div class="rule"><h4>Grábate desde la semana 1</h4><p>Cada vez que expliques algo a alguien, aunque sea a un compañero. Verse en vídeo es incómodo y es el atajo más rápido.</p></div>
+      <div class="rule"><h4>Habla el idioma oficial</h4><p>MF, UF, CE, resultado de aprendizaje, criterio de evaluación. Usarlos bien te ahorra correcciones y te da credibilidad.</p></div>
+      <div class="rule"><h4>Tus compañeros son tu red</h4><p>Son futuros formadores de otros sectores. Muchos encargos de impartición llegan por recomendación entre ellos.</p></div>
+      <div class="rule"><h4>Ensaya tres veces, cronometrado</h4><p>La microclase se suspende casi siempre por tiempo, no por conocimiento. Cronómetro, plan B y una sola idea central.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Para Víctor</h4>
+        <p style="max-width:44ch">Versión clara y sin especialización de tu guía de arranque. Cinco meses por delante: del 24 de noviembre de 2026
+          a abril de 2027. Lo técnico ya lo tienes; esto es el contenedor didáctico que te falta para poder enseñarlo.</p>
+        <p style="font-size:.8rem;color:var(--ink-3)">Progreso, notas y ajustes guardados localmente en este navegador.</p>
+      </div>
+      <div>
+        <h4>Ir a</h4>
+        <div class="foot-links">
+          <a href="#arranque">Checklist del día 1</a>
+          <a href="#plan">Planificador y exportación</a>
+          <a href="#microclase">Generador de microclase</a>
+          <a href="#glosario">Glosario FPE</a>
+          <a href="#test">Test de comprobación</a>
+        </div>
+      </div>
+      <div>
+        <h4>Herramientas</h4>
+        <div class="foot-links">
+          <button id="footExport">Exportar todo mi progreso (.md)</button>
+          <button id="footPrint">Imprimir la guía</button>
+          <button id="footReset" style="color:var(--danger)">Borrar todos mis datos</button>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>SSCE0110 · Docencia de la Formación Profesional para el Empleo · 380 h · Grados A, B y C</span>
+      <span>Guía de arranque · noviembre 2026 · hecha para empezar con buen pie</span>
+    </div>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true">
+  <div class="drawer-head" id="drawerHead">
+    <button class="drawer-close" id="drawerClose" aria-label="Cerrar ficha">
+      <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <span class="tag" id="drawerTag">MF</span>
+    <h3 id="drawerTitle">—</h3>
+    <p id="drawerSub">—</p>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+</aside>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="scrim on" id="modalScrim" style="position:absolute"></div>
+  <div class="modal-card">
+    <h3 id="modalTitle">¿Borrar todos tus datos?</h3>
+    <p>Se eliminarán las checklist, los entregables marcados, las notas de cada módulo, la rúbrica y los ajustes del planificador.
+      Podrás deshacerlo durante unos segundos.</p>
+    <div class="row" style="justify-content:flex-end;margin-top:18px">
+      <button class="btn btn-ghost" id="modalCancel">Cancelar</button>
+      <button class="btn btn-danger" id="modalOk">Sí, borrar todo</button>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<button class="totop" id="totop" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+(function(){
+"use strict";
+
+/* ============================================================
+   DATOS
+   ============================================================ */
+const MODULES = [
+  {
+    id:'mf1442', code:'MF1442_3', short:'MF1442', h:60, hue:'indigo', fam:'diseno', famLabel:'Diseño',
+    name:'Programación didáctica de acciones formativas para el empleo',
+    claim:'El mapa completo de un curso: a quién enseñas, qué debe saber hacer, en qué orden y cómo lo vas a comprobar.',
+    ufs:[{c:'MF1442_3',n:'Módulo completo, sin unidades formativas',h:60}],
+    learn:[
+      'Análisis del contexto y detección de necesidades formativas del grupo.',
+      'Estructura del certificado profesional: módulos, unidades formativas y criterios de evaluación.',
+      'Objetivos operativos y resultados de aprendizaje: taxonomía de Bloom aplicada de verdad.',
+      'Contenidos conceptuales, procedimentales y actitudinales; secuenciación y temporalización.',
+      'Selección de metodología, estrategias, recursos y espacios según el objetivo.',
+      'Diseño de la evaluación: qué instrumento mide qué criterio.',
+      'Adaptaciones, accesibilidad y Diseño Universal para el Aprendizaje.',
+      'Documentos: programación didáctica, guía del alumno y plan de sesión.'
+    ],
+    deliver:[
+      'Programación didáctica completa de una UF (con plantilla oficial del centro).',
+      'Matriz objetivos ↔ contenidos ↔ criterios ↔ instrumentos de evaluación.',
+      'Temporalización sesión a sesión con horas realistas.',
+      'Tres objetivos observables correctamente redactados.',
+      'Ficha de análisis del grupo destinatario.'
+    ],
+    mistakes:[
+      'Escribir «conocer» o «comprender» como objetivo: no se pueden observar ni medir.',
+      'Meter 80 horas de contenido en una UF de 30.',
+      'Evaluar con un test lo que se enseñó como procedimiento.',
+      'Confundir el índice de un manual con una programación didáctica.'
+    ],
+    example:'Programa una UF de 30 h «Control de versiones con Git» para personas en reconversión. Punto de partida real: guardan carpetas llamadas proyecto_final_v3. Punto de llegada: clonar, ramificar y abrir una pull request. Todo lo demás se ordena entre esos dos extremos.',
+    terms:['Resultado de aprendizaje','Criterio de evaluación','Temporalización','Objetivo operativo'],
+    tip:'Antes de escribir una sola línea, responde: «al terminar, el alumno será capaz de ___ sin ayuda, en ___ minutos». Si no puedes rellenar los huecos, todavía no tienes objetivo.'
+  },
+  {
+    id:'mf1443', code:'MF1443_3', short:'MF1443', h:90, hue:'teal', fam:'recursos', famLabel:'Recursos',
+    name:'Selección, elaboración, adaptación y utilización de materiales, medios y recursos didácticos',
+    claim:'El módulo más largo y el más práctico: aquí fabricas las cosas que tus alumnos van a tocar.',
+    ufs:[{c:'MF1443_3',n:'Módulo completo, sin unidades formativas',h:90}],
+    learn:[
+      'Tipología de materiales y criterios de selección y adaptación.',
+      'Diseño de guías didácticas y material impreso legible.',
+      'Presentaciones eficaces: una idea por diapositiva, jerarquía visual, contraste.',
+      'Producción audiovisual: guion, screencast, audio, subtítulos y capítulos.',
+      'Recursos interactivos: H5P, Genially, cuestionarios y simulaciones.',
+      'LMS (Moodle): estructura del curso, actividades, calificador y seguimiento.',
+      'Empaquetado e interoperabilidad: SCORM y xAPI.',
+      'Accesibilidad y DUA aplicados a materiales reales.',
+      'Propiedad intelectual, licencias Creative Commons y bancos de recursos.'
+    ],
+    deliver:[
+      'Guía didáctica de una UF lista para entregar al alumnado.',
+      'Presentación de 10 diapositivas aplicando las reglas de diseño.',
+      'Screencast de 5–8 min con guion, subtítulos y plan B.',
+      'Actividad interactiva H5P exportada e insertada en un LMS.',
+      'Curso Moodle de prueba con 3 actividades y una tarea evaluable.',
+      'Checklist de accesibilidad aplicado a tus propios materiales.',
+      'Ficha de licencias y atribuciones de todos los recursos usados.'
+    ],
+    mistakes:[
+      'Diapositivas-muro de texto que el alumno lee mientras tú hablas.',
+      'Vídeo de 40 minutos sin capítulos ni pausa para practicar.',
+      'Usar imágenes sin licencia clara en material que vas a distribuir.',
+      'Depender de la wifi y de una demo en vivo sin tener grabación de respaldo.',
+      'Texto gris claro sobre fondo blanco: bonito en tu monitor, ilegible en el proyector.'
+    ],
+    example:'Monta un laboratorio reproducible con Docker para que todo el grupo tenga exactamente el mismo entorno de prácticas web y nadie pierda 40 minutos instalando. Graba con OBS un screencast «De cero a primer commit» y subtitúlalo: lo usarás como plan B el día que falle la demo.',
+    terms:['DUA','LMS','SCORM','Objeto de aprendizaje','Licencia CC'],
+    tip:'Regla de oro: si un material no lo puede usar el alumno sin ti delante, no es un material, es una nota de tu clase.'
+  },
+  {
+    id:'mf1444', code:'MF1444_3', short:'MF1444', h:100, hue:'magenta', fam:'aula', famLabel:'Aula',
+    name:'Impartición y tutorización de acciones formativas para el empleo',
+    claim:'El corazón del curso: estar delante de un grupo y conseguir que aprenda. Dos unidades formativas dentro.',
+    ufs:[{c:'UF1645',n:'Impartición de acciones formativas para el empleo',h:70},{c:'UF1646',n:'Tutorización de acciones formativas para el empleo',h:30}],
+    learn:[
+      'Comunicación en el aula: voz, ritmo, lenguaje no verbal y escucha activa.',
+      'Técnicas expositivas y demostrativas: la demostración en cuatro pasos.',
+      'Métodos activos: estudio de casos, aprendizaje basado en proyectos, simulación, role-playing.',
+      'Dinamización de grupos, roles, cohesión y gestión de conflictos.',
+      'Atención a la diversidad de ritmos y de puntos de partida.',
+      'Impartición en teleformación síncrona y uso del aula virtual.',
+      'Plan de acción tutorial: fases, entrevista, feedback y seguimiento.',
+      'Detección temprana del abandono y motivación del alumnado adulto.',
+      'Tutoría online: netiqueta, tiempos de respuesta y canales.'
+    ],
+    deliver:[
+      'Microclase de 20–30 min grabada, con guion minuteado.',
+      'Plan de acción tutorial de una acción formativa completa.',
+      'Tres técnicas activas diseñadas para tu propio contenido.',
+      'Protocolo de feedback situación–conducta–impacto.',
+      'Guion de tutoría online con canales y tiempos de respuesta.',
+      'Rúbrica de observación de clase para co-evaluar a compañeros.'
+    ],
+    mistakes:[
+      'Hablar 50 minutos seguidos y llamar a eso «clase participativa».',
+      'Demostrar sin que el alumno llegue a tocar el teclado.',
+      'Usar «¿alguna pregunta?» como única comprobación de aprendizaje.',
+      'Dejar 20 minutos solo al que se atasca mientras atiendes al que va rápido.',
+      'Responder con sarcasmo a una pregunta básica: pierdes al grupo entero.'
+    ],
+    example:'Demostración en cuatro pasos con Git: (1) yo lo hago y lo explico, (2) lo hacemos juntos y tú dictas, (3) tú lo haces y yo observo, (4) tú lo haces solo y se lo explicas al compañero. El paso 4 es el que fija el aprendizaje y el que casi siempre se recorta por falta de tiempo.',
+    terms:['Andragogía','Feedback formativo','ABP','Netiqueta','Contrato de aprendizaje'],
+    tip:'Cada 12–15 minutos, cambia de actividad o de canal. La atención adulta no cae por desgana: cae por monotonía.'
+  },
+  {
+    id:'mf1445', code:'MF1445_3', short:'MF1445', h:60, hue:'amber', fam:'evaluar', famLabel:'Evaluación',
+    name:'Evaluación del proceso de enseñanza-aprendizaje en formación profesional para el empleo',
+    claim:'Construir instrumentos que demuestren lo que el alumno sabe hacer, y usarlos para mejorar tu propio curso.',
+    ufs:[{c:'MF1445_3',n:'Módulo completo, sin unidades formativas',h:60}],
+    learn:[
+      'Evaluación diagnóstica, formativa y sumativa: para qué sirve cada una.',
+      'Evaluación por competencias: criterios de evaluación y resultados de aprendizaje.',
+      'Instrumentos: pruebas objetivas, pruebas prácticas, listas de cotejo, escalas y rúbricas.',
+      'Construcción de ítems: enunciado, distractores plausibles y errores frecuentes.',
+      'Validez, fiabilidad, ponderación y calificación.',
+      'Retroalimentación eficaz y registro de evidencias.',
+      'Evaluación de la acción formativa: modelo Kirkpatrick y encuestas.',
+      'Informes, actas y propuestas de mejora continua.'
+    ],
+    deliver:[
+      'Prueba práctica observable con rúbrica de cuatro niveles.',
+      'Test de 15 ítems con análisis de los distractores.',
+      'Lista de cotejo de una tarea técnica paso a paso.',
+      'Rúbrica analítica del proyecto final.',
+      'Instrumento de satisfacción del alumnado.',
+      'Informe de mejora con tres acciones concretas y medibles.'
+    ],
+    mistakes:[
+      'Preguntas ambiguas o con «todas las anteriores» como respuesta correcta.',
+      'Rúbricas cuyos niveles no se distinguen («bien», «muy bien», «excelente»).',
+      'Evaluar memoria cuando la competencia es ejecutar un procedimiento.',
+      'Devolver la corrección dos semanas después: ya no enseña nada.',
+      'Confundir calificar con evaluar.'
+    ],
+    example:'Para evaluar «clonar un repositorio, modificar un archivo y subir el cambio», diseña una práctica de 15 minutos con una lista de cotejo de 8 pasos observables. No un test preguntando qué significan las siglas DVCS.',
+    terms:['Rúbrica','Lista de cotejo','Ítem','Validez','Kirkpatrick'],
+    tip:'Escribe primero la prueba y después la clase. Suena raro, pero es la única forma de garantizar que enseñas lo que vas a exigir.'
+  },
+  {
+    id:'mf1446', code:'MF1446_3', short:'MF1446', h:30, hue:'blue', fam:'empleo', famLabel:'Empleo',
+    name:'Orientación laboral y promoción de la calidad en la formación profesional para el empleo',
+    claim:'Acompañar al alumno hasta el empleo y entender cómo se acredita y se mide la calidad de un centro.',
+    ufs:[{c:'MF1446_3',n:'Módulo completo, sin unidades formativas',h:30}],
+    learn:[
+      'Mercado laboral, perfiles profesionales y cualificaciones demandadas.',
+      'Itinerarios personalizados de inserción y recursos de empleo.',
+      'Herramientas de búsqueda: CV, carta, entrevista, LinkedIn y portfolio.',
+      'Autoempleo y emprendimiento: idea, plan y viabilidad.',
+      'Sistemas de calidad: ISO 9001, EFQM, indicadores y auditorías.',
+      'Acreditación e inscripción de centros y especialidades formativas.',
+      'Planes de mejora y evaluación de la calidad docente.'
+    ],
+    deliver:[
+      'Itinerario de inserción para un perfil tipo de tu sector.',
+      'Taller de 45 min «CV y portfolio técnico» listo para impartir.',
+      'Cuadro de mando con seis indicadores de calidad.',
+      'Plan de mejora de un centro ficticio con evidencias.',
+      'Guía de recursos de empleo de tu comarca.'
+    ],
+    mistakes:[
+      'Orientar con consejos genéricos que sirven para cualquiera y para nadie.',
+      'Confundir calidad con burocracia: sin evidencia no hay acreditación, pero sin mejora no hay calidad.',
+      'Olvidar que el alumnado adulto necesita resultados a corto plazo.'
+    ],
+    example:'Enseña a un junior a convertir un repositorio en portfolio: README con capturas, demo desplegada, vídeo de 90 segundos y una sección «qué problema resuelve». Eso vale más que diez líneas de «conocimientos de programación» en un CV.',
+    terms:['Itinerario','Perfil profesional','Indicador','EFQM','Acreditación'],
+    tip:'La orientación no es un módulo de relleno: es lo que el alumno recordará dentro de un año si le consigue una entrevista.'
+  },
+  {
+    id:'mp0353', code:'MP0353', short:'MP0353', h:40, hue:'green', fam:'practicas', famLabel:'Prácticas',
+    name:'Módulo de prácticas profesionales no laborales',
+    claim:'Aula real, alumnado real y un tutor que te observa. Aquí se juntan las 340 horas anteriores.',
+    ufs:[{c:'MP0353',n:'Prácticas en centro de trabajo o aula de empresa',h:40}],
+    learn:[
+      'Observación estructurada de sesiones reales con rúbrica.',
+      'Co-docencia y apoyo en el aula.',
+      'Impartición de al menos una sesión completa supervisada.',
+      'Diario de prácticas y análisis crítico de la propia intervención.',
+      'Coordinación con el tutor del centro y cultura del centro de formación.'
+    ],
+    deliver:[
+      'Diario de prácticas con una entrada por día.',
+      'Dos observaciones de clase documentadas con rúbrica.',
+      'Una sesión completa impartida y su autoevaluación.',
+      'Informe final con tres compromisos de mejora.'
+    ],
+    mistakes:[
+      'Llegar sin haber leído la programación del centro.',
+      'No pedir feedback explícito al tutor: «¿qué habría cambiado tú?».',
+      'Dejar el diario para la última semana.',
+      'Improvisar una sesión cuando te ofrecen impartirla.'
+    ],
+    example:'Lleva preparada desde enero una sesión comodín de 50 minutos sobre algo que domines (Git, publicación web, Docker). Si el tutor te ofrece impartir, dirás que sí en vez de «déjame pensarlo». Esa sesión suele ser tu primera toma de contacto profesional real.',
+    terms:['Convenio','Tutor de empresa','Diario de prácticas'],
+    tip:'Las fechas y el centro los asigna la entidad. Empieza a preguntar en enero y ten tu disponibilidad clara por escrito.'
+  }
+];
+
+const CHECKLIST = [
+  {g:'Documentación', t:'DNI/NIE en vigor y copia digital', w:'Te lo pedirán el primer día para el expediente.'},
+  {g:'Documentación', t:'Tarjeta de demanda de empleo (DARDE) renovada', w:'En formación de demanda, sin sellar no hay alta.'},
+  {g:'Documentación', t:'Titulación que acredita tu acceso al nivel 3', w:'Escaneada y en la nube, no solo en papel en casa.'},
+  {g:'Documentación', t:'Vida laboral actualizada', w:'Servirá después para acreditar experiencia en la especialidad.'},
+  {g:'Logística', t:'Confirmar aula, horario, tutor y teléfono del centro', w:'Un correo breve hoy evita un martes perdido.'},
+  {g:'Logística', t:'Alta y prueba de acceso en la plataforma del centro', w:'Entra antes del día 1: los problemas de credenciales son clásicos.'},
+  {g:'Logística', t:'Correo profesional con firma y carpeta de entregas', w:'Vas a enviar muchos documentos; que se vean ordenados.'},
+  {g:'Logística', t:'Portátil actualizado, ofimática, lector PDF y adaptador HDMI', w:'Si vas a proyectar algo, prueba el adaptador antes.'},
+  {g:'Método', t:'Repositorio o carpeta ssce0110-ajfonts con una carpeta por módulo', w:'Tu portfolio empieza el día 1, no en abril.'},
+  {g:'Método', t:'Cuaderno de bitácora para cinco líneas diarias', w:'Físico o digital, pero uno solo y siempre el mismo.'},
+  {g:'Método', t:'Leer 30 min qué es un certificado profesional y una UF', w:'Llegar entendiendo el vocabulario cambia tu primer día.'},
+  {g:'Método', t:'Preparar tu presentación de 30 segundos y 3 ejemplos técnicos', w:'Los ejemplos propios son tu mejor material didáctico.'}
+];
+
+const EVIDENCE = [
+  'Programación didáctica completa de una UF, con matriz de coherencia.',
+  'Guía didáctica del alumno maquetada y accesible.',
+  'Presentación de 10 diapositivas que cumple tus propias reglas de diseño.',
+  'Screencast de 5–8 min subtitulado, con guion.',
+  'Curso Moodle de muestra con actividades y calificador configurado.',
+  'Batería de evaluación: prueba práctica + rúbrica + test analizado.',
+  'Plan de acción tutorial y protocolo de feedback.',
+  'Vídeo de tu microclase + autoevaluación con rúbrica.',
+  'Diario de prácticas y informe final del MP0353.',
+  'README índice del portfolio, con licencias y atribuciones.'
+];
+
+const GLOSSARY = [
+  {t:'Acción formativa',c:'Normativa',d:'Conjunto de actividades formativas con objetivos, contenidos y duración definidos, dirigidas a un colectivo concreto.',u:'Es la unidad que programas en el MF1442: un curso concreto, no «la formación» en abstracto.'},
+  {t:'Andragogía',c:'Aula',d:'Disciplina sobre el aprendizaje de las personas adultas: experiencia previa, utilidad inmediata, autonomía y motivación interna.',u:'Tu alumnado no es un aula de ESO. Parte de lo que ya saben hacer, aunque esté desordenado.'},
+  {t:'MF · Módulo formativo',c:'Normativa',d:'Bloque de formación coherente asociado a una unidad de competencia. Se identifica con un código, p. ej. MF1442_3.',u:'El SSCE0110 tiene cinco MF. Usa siempre el código completo en tus entregas.'},
+  {t:'UF · Unidad formativa',c:'Normativa',d:'Parte acreditable de un módulo formativo, con entidad propia y horas asignadas.',u:'UF1645 (70 h) y UF1646 (30 h) están dentro del MF1444_3. Se evalúan por separado.'},
+  {t:'MP · Módulo de prácticas',c:'Normativa',d:'Módulo de prácticas profesionales no laborales en un centro de trabajo. En este certificado, MP0353 con 40 h.',u:'No es teoría: es aula real con tutor. Empieza a prepararlo desde enero.'},
+  {t:'CE · Criterio de evaluación',c:'Evaluación',d:'Enunciado que describe el nivel de desempeño esperado sobre un resultado de aprendizaje.',u:'Es el referente oficial de lo que debes medir. Tu rúbrica se construye a partir de él.'},
+  {t:'Resultado de aprendizaje',c:'Diseño',d:'Lo que se espera que el alumno sea capaz de hacer al finalizar, expresado de forma observable.',u:'Si no puedes verlo o medirlo, no es un resultado de aprendizaje: es un deseo.'},
+  {t:'Certificado profesional',c:'Normativa',d:'Acreditación oficial de una cualificación profesional. En el nuevo sistema de FP corresponde al grado C.',u:'Antes «certificado de profesionalidad». Es lo que podrás impartir al terminar.'},
+  {t:'Grados A y B',c:'Normativa',d:'Grado A: acreditación parcial de competencia. Grado B: certificado de competencia, formado por uno o varios módulos.',u:'La FP ya no va solo de títulos: hay formaciones más cortas y acumulables. Ahí hay mucho trabajo docente.'},
+  {t:'FPE',c:'Normativa',d:'Formación Profesional para el Empleo: subsistema dirigido a personas trabajadoras, ocupadas o desempleadas.',u:'Es tu contexto: alumnado adulto, cursos cortos, foco en empleabilidad.'},
+  {t:'SEPE',c:'Normativa',d:'Servicio Público de Empleo Estatal. Mantiene el fichero de especialidades formativas y la normativa de aplicación.',u:'Ahí se consulta qué especialidad existe, con qué código y cuántas horas.'},
+  {t:'FUNDAE',c:'Empleo',d:'Fundación Estatal para la Formación en el Empleo. Gestiona la formación programada por las empresas.',u:'Otro mercado docente distinto al de demanda: empresas que forman a sus plantillas.'},
+  {t:'Especialidad formativa',c:'Normativa',d:'Denominación oficial de una formación inscrita en el fichero, con código, horas, módulos y requisitos.',u:'SSCE0110 es una especialidad formativa. No la llames «curso de formadores» en un documento oficial.'},
+  {t:'Programación didáctica',c:'Diseño',d:'Documento que recoge objetivos, contenidos, metodología, temporalización, recursos y evaluación de una acción formativa.',u:'La entrega estrella del MF1442 y la primera pieza de tu portfolio.'},
+  {t:'Temporalización',c:'Diseño',d:'Distribución de contenidos y actividades en el tiempo disponible, sesión a sesión.',u:'El error número uno del principiante: programar como si no hubiera descansos ni incidencias.'},
+  {t:'Objetivo operativo',c:'Diseño',d:'Objetivo redactado con un verbo observable, una condición y un criterio de logro.',u:'«Configurar un firewall en 15 min sin documentación» sí. «Conocer los firewalls» no.'},
+  {t:'Taxonomía de Bloom',c:'Diseño',d:'Clasificación de procesos cognitivos: recordar, comprender, aplicar, analizar, evaluar, crear.',u:'Te da los verbos para redactar objetivos y para ajustar el nivel de exigencia.'},
+  {t:'DUA',c:'Diseño',d:'Diseño Universal para el Aprendizaje: múltiples formas de representación, de acción/expresión y de implicación.',u:'Subtítulos, texto alternativo, materiales descargables: no es accesibilidad «extra», es diseño correcto.'},
+  {t:'ABP',c:'Aula',d:'Aprendizaje basado en proyectos: el alumnado construye un producto real que integra los contenidos.',u:'Encaja perfecto con tu perfil: un proyecto desplegado vale más que diez ejercicios sueltos.'},
+  {t:'Feedback formativo',c:'Aula',d:'Información concreta y a tiempo sobre el desempeño, orientada a la mejora y no a la calificación.',u:'«El commit incluye archivos binarios; separa los assets» enseña. «Mal» no enseña.'},
+  {t:'Contrato de aprendizaje',c:'Aula',d:'Acuerdo inicial con el grupo sobre objetivos, normas, compromisos y forma de trabajar.',u:'Dedícale 15 minutos el día 1: te ahorrará la mitad de los conflictos posteriores.'},
+  {t:'Netiqueta',c:'Digital',d:'Normas de comportamiento y comunicación en entornos online: tono, tiempos, canales y respeto.',u:'En tutoría online, el tono escrito se malinterpreta con una facilidad asombrosa.'},
+  {t:'LMS',c:'Digital',d:'Learning Management System: plataforma que organiza contenidos, actividades, seguimiento y calificación.',u:'Moodle es el estándar de facto en FPE. Monta uno de prueba en el MF1443.'},
+  {t:'SCORM',c:'Digital',d:'Estándar de empaquetado de contenidos para que funcionen en distintos LMS y registren el seguimiento.',u:'Aparece en el MF1443. Saber exportar e importar un paquete te diferencia.'},
+  {t:'xAPI',c:'Digital',d:'Estándar que registra experiencias de aprendizaje dentro y fuera del LMS mediante sentencias «actor verbo objeto».',u:'La evolución de SCORM: permite registrar práctica real, no solo clics.'},
+  {t:'Objeto de aprendizaje',c:'Digital',d:'Recurso digital reutilizable e independiente con un objetivo didáctico propio.',u:'Un screencast de 6 minutos con su actividad es un objeto de aprendizaje. Un PDF de 90 páginas, no.'},
+  {t:'Licencia CC',c:'Digital',d:'Licencias Creative Commons que indican qué se puede copiar, adaptar y compartir, y con qué atribución.',u:'Documenta la licencia de cada imagen y recurso. Es contenido evaluable del MF1443.'},
+  {t:'Rúbrica',c:'Evaluación',d:'Instrumento con criterios y niveles de calidad descritos, que hace explícito qué se espera.',u:'Cuatro niveles distinguibles. Si no sabes explicar la diferencia entre 2 y 3, reescríbela.'},
+  {t:'Lista de cotejo',c:'Evaluación',d:'Listado de pasos o elementos observables que se marcan como presentes o ausentes.',u:'Ideal para procedimientos técnicos: ocho pasos, sí o no, sin ambigüedad.'},
+  {t:'Evaluación diagnóstica',c:'Evaluación',d:'Evaluación inicial para conocer el punto de partida del grupo antes de programar o impartir.',u:'Tres tareas cortas el día 1 te dicen más que una encuesta de conocimientos.'},
+  {t:'Ítem y distractor',c:'Evaluación',d:'Ítem: cada pregunta de una prueba objetiva. Distractor: cada opción incorrecta, que debe ser plausible.',u:'Si el distractor es absurdo, la pregunta no mide nada: se acierta por descarte.'},
+  {t:'Validez y fiabilidad',c:'Evaluación',d:'Validez: mide lo que dice medir. Fiabilidad: mide de forma estable y consistente.',u:'Un test sobre siglas puede ser fiable y completamente inválido para una competencia práctica.'},
+  {t:'Kirkpatrick',c:'Evaluación',d:'Modelo de evaluación de la formación en cuatro niveles: reacción, aprendizaje, transferencia y resultados.',u:'Casi nadie pasa del nivel 1. Llegar al 3 te convierte en un formador que las empresas repiten.'},
+  {t:'Itinerario de inserción',c:'Empleo',d:'Plan personalizado de pasos para que una persona acceda a empleo: diagnóstico, formación, búsqueda y seguimiento.',u:'Se diseña en el MF1446 y se aplica con alumnado real.'},
+  {t:'Acreditación de centros',c:'Empleo',d:'Procedimiento por el que un centro queda autorizado para impartir especialidades formativas oficiales.',u:'Determina dónde podrás trabajar: no todos los centros pueden impartir todo.'},
+  {t:'EFQM / ISO 9001',c:'Empleo',d:'Modelos de gestión de la calidad usados en centros de formación: procesos, evidencias y mejora continua.',u:'Te lo encontrarás en el MF1446 y en cuanto entres a trabajar en un centro acreditado.'},
+  {t:'Teleformación',c:'Digital',d:'Modalidad online con tutorización, plataforma y seguimiento. Exige formación específica adicional del formador.',u:'Pregunta al centro si la ofertan al acabar: es el complemento con más salida inmediata.'},
+  {t:'Portfolio docente',c:'Empleo',d:'Conjunto organizado de evidencias de tu trabajo como formador: programaciones, materiales, evaluaciones y vídeos.',u:'Es lo que enseñas para que te contraten. Constrúyelo durante el curso, no después.'}
+];
+
+const QUIZ = [
+  {q:'¿Cómo se reparten las 380 horas del SSCE0110?',
+   a:['340 h de módulos formativos + 40 h de prácticas (MP0353)','380 h lectivas, sin prácticas','300 h de teoría + 80 h de examen','340 h de prácticas + 40 h de teoría'],c:0,
+   e:'Cinco módulos formativos (MF1442 a MF1446) suman 340 h, y el MP0353 aporta 40 h de prácticas profesionales no laborales. Total: 380 h.'},
+  {q:'¿Cuál de estos objetivos está bien redactado para FPE?',
+   a:['Que el alumno conozca el sistema de control de versiones','Que el alumno comprenda la importancia de las copias de seguridad','Que el alumno sea capaz de crear un repositorio y hacer un commit en 10 minutos sin ayuda','Que el alumno se familiarice con la terminal'],c:2,
+   e:'Un objetivo operativo usa un verbo observable, una condición y un criterio de logro. «Conocer», «comprender» y «familiarizarse» no se pueden observar directamente.'},
+  {q:'¿Qué expresa un criterio de evaluación (CE)?',
+   a:['La nota media mínima para aprobar el módulo','El nivel de desempeño esperado sobre un resultado de aprendizaje','El número de horas dedicadas a un contenido','El porcentaje de asistencia exigido'],c:1,
+   e:'El CE es el referente oficial y observable de lo que el alumno debe demostrar. Tus instrumentos y rúbricas se construyen a partir de él.'},
+  {q:'La evaluación diagnóstica sirve principalmente para…',
+   a:['Poner la primera nota del expediente','Ajustar el punto de partida y la programación al grupo real','Sustituir a la evaluación final','Justificar la baja de un alumno'],c:1,
+   e:'Se hace antes o al inicio para saber de dónde parte el grupo. En adultos suele revelar experiencia previa valiosa pero desordenada.'},
+  {q:'Una rúbrica analítica se diferencia de una lista de cotejo en que…',
+   a:['Solo se usa en formación online','Describe niveles de calidad por criterio, no solo presencia/ausencia','No permite calificar','Es más rápida de aplicar siempre'],c:1,
+   e:'La lista de cotejo marca sí/no por paso. La rúbrica describe cómo de bien se hace, con niveles distinguibles. Para procedimientos cerrados, la lista de cotejo suele bastar.'},
+  {q:'DUA significa…',
+   a:['Diseño Universal para el Aprendizaje','Documento Único de Acreditación','Distribución Uniforme de Actividades','Diagnóstico de Unidades de Aprendizaje'],c:0,
+   e:'DUA: ofrecer múltiples formas de representación, de acción y expresión, y de implicación. Se aplica a tus materiales desde el MF1443.'},
+  {q:'En formación de demanda presencial, la inasistencia injustificada reiterada…',
+   a:['No tiene consecuencias si se aprueban los exámenes','Provoca la baja del alumno (suele exigirse un mínimo del 75 % de asistencia)','Se compensa con trabajos extra','Solo afecta a las prácticas'],c:1,
+   e:'La asistencia es un requisito administrativo, independiente de las notas. Confirma el porcentaje exacto y el procedimiento de justificación con tu centro el primer día.'},
+  {q:'Según la andragogía, el adulto aprende mejor cuando…',
+   a:['Se le explica todo desde cero sin referencias previas','Conecta lo nuevo con su experiencia y ve una utilidad inmediata','Se le evalúa con exámenes sorpresa','Se sigue el manual página a página'],c:1,
+   e:'Experiencia previa, orientación a objetivos y utilidad percibida son los tres motores del aprendizaje adulto. Tu papel es estructurar lo que ya saben y rellenar huecos.'},
+  {q:'En el modelo Kirkpatrick, el nivel 3 evalúa…',
+   a:['La satisfacción del alumnado','El aprendizaje adquirido','La transferencia al puesto de trabajo','El retorno económico'],c:2,
+   e:'Nivel 1 reacción, nivel 2 aprendizaje, nivel 3 transferencia (¿lo usa en su trabajo?), nivel 4 resultados. La mayoría de cursos solo mide el nivel 1.'},
+  {q:'¿Qué relación hay entre UF y MF?',
+   a:['Son sinónimos con distinto nombre comercial','La UF es una parte acreditable de un MF','El MF es una parte de la UF','La UF solo existe en teleformación'],c:1,
+   e:'Un módulo formativo puede dividirse en unidades formativas acreditables. En este certificado, MF1444_3 (100 h) contiene UF1645 (70 h) y UF1646 (30 h).'},
+  {q:'Con el SSCE0110 terminado, para impartir en teleformación…',
+   a:['Basta con tener el certificado','Se exige además formación específica en tutorización y teleformación','Hay que repetir el certificado entero','Solo se puede impartir presencial para siempre'],c:1,
+   e:'El SSCE0110 acredita la competencia docente general. La modalidad online requiere formación complementaria específica. Pregunta a tu centro si la oferta al finalizar.'},
+  {q:'¿Qué documento recoge objetivos, contenidos, metodología, temporalización, recursos y evaluación?',
+   a:['La guía del alumno','La programación didáctica','El acta de evaluación','El diario de prácticas'],c:1,
+   e:'Es la programación didáctica, entrega central del MF1442. La guía del alumno es un documento derivado y con otro destinatario.'}
+];
+
+const RUBRIC = [
+  {k:'Objetivo', tip:'Se entiende qué van a saber hacer y cómo se comprobará.'},
+  {k:'Demostración', tip:'Se ve el procedimiento completo, paso a paso, sin saltos.'},
+  {k:'Práctica', tip:'El alumnado hace algo por sí mismo, no solo mira.'},
+  {k:'Tiempo', tip:'Entra en la duración prevista con margen para imprevistos.'},
+  {k:'Feedback', tip:'Hay comprobación real y corrección concreta durante la sesión.'},
+  {k:'Comunicación', tip:'Voz, ritmo, miradas y lenguaje claro; sin muletillas ni jerga innecesaria.'}
+];
+
+/* ============================================================
+   ESTADO
+   ============================================================ */
+const KEY='ssce0110-guia-v1';
+const DEFAULTS={
+  check:{}, deliver:{}, evidence:{}, notes:{}, fav:{},
+  plan:{start:'2026-11-24',time:'09:00',hpd:4,days:[1,2,3,4,5],xmas:true,easter:true,order:'oficial',mp:true},
+  micro:{topic:'Crear un repositorio Git y hacer el primer commit',dur:20,level:'medio',mode:'presencial',verb:'configurar',practice:35},
+  rub:[3,3,3,3,3,3],
+  intro:{name:'Víctor',from:'desarrollo de apps Android con Kotlin y desarrollo web',give:'proyectos reales publicados y trabajo con Linux, Git y Docker',get:'aprender a estructurar lo que sé para enseñarlo a personas que empiezan de cero'},
+  prefs:{accent:'indigo',density:'comoda'},
+  best:null
+};
+let S = load();
+function load(){
+  try{
+    const raw=localStorage.getItem(KEY);
+    if(!raw) return structuredClone(DEFAULTS);
+    const p=JSON.parse(raw);
+    const out=structuredClone(DEFAULTS);
+    for(const k in out){
+      if(p[k]===undefined||p[k]===null) continue;
+      if(typeof out[k]==='object'&&!Array.isArray(out[k])) out[k]=Object.assign(out[k],p[k]);
+      else out[k]=p[k];
+    }
+    if(!Array.isArray(out.rub)||out.rub.length!==6) out.rub=[3,3,3,3,3,3];
+    if(!Array.isArray(out.plan.days)) out.plan.days=[1,2,3,4,5];
+    return out;
+  }catch(e){ return structuredClone(DEFAULTS); }
+}
+let saveT=null;
+function save(){
+  clearTimeout(saveT);
+  saveT=setTimeout(()=>{ try{ localStorage.setItem(KEY,JSON.stringify(S)); }catch(e){} },200);
+}
+const $=(s,r)=>(r||document).querySelector(s);
+const $$=(s,r)=>Array.from((r||document).querySelectorAll(s));
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm=s=>String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+const pad=n=>String(n).padStart(2,'0');
+const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ============================================================
+   TOASTS
+   ============================================================ */
+function toast(msg,opts){
+  opts=opts||{};
+  const el=document.createElement('div');
+  el.className='toast'+(opts.warn?' warn':'');
+  el.innerHTML='<span class="ic">'+(opts.warn?'!':'✓')+'</span><span class="msg">'+esc(msg)+'</span>';
+  if(opts.action){
+    const b=document.createElement('button'); b.textContent=opts.action;
+    b.addEventListener('click',()=>{ opts.onAction&&opts.onAction(); close(); });
+    el.appendChild(b);
+  }
+  $('#toasts').appendChild(el);
+  let t=setTimeout(close, opts.action?7000:3200);
+  function close(){ clearTimeout(t); el.classList.add('out'); setTimeout(()=>el.remove(),280); }
+  return close;
+}
+function download(name,content,type){
+  const blob=new Blob([content],{type:type||'text/plain;charset=utf-8'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a'); a.href=url; a.download=name; document.body.appendChild(a); a.click();
+  a.remove(); setTimeout(()=>URL.revokeObjectURL(url),1500);
+}
+function copyText(txt,okMsg){
+  const done=()=>toast(okMsg||'Copiado al portapapeles');
+  if(navigator.clipboard&&window.isSecureContext){
+    navigator.clipboard.writeText(txt).then(done).catch(()=>fallback());
+  } else fallback();
+  function fallback(){
+    const ta=document.createElement('textarea'); ta.value=txt; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); done(); }catch(e){ toast('No se pudo copiar. Selecciona el texto manualmente.',{warn:true}); }
+    ta.remove();
+  }
+}
+
+/* ============================================================
+   CHECKLIST
+   ============================================================ */
+function renderChecklist(){
+  const groups={};
+  CHECKLIST.forEach((it,i)=>{ (groups[it.g]=groups[it.g]||[]).push({it,i}); });
+  let html='';
+  for(const g in groups){
+    html+='<div class="check-group"><h4>'+esc(g)+'</h4>';
+    groups[g].forEach(({it,i})=>{
+      html+='<label class="check"><input type="checkbox" data-ck="'+i+'"'+(S.check[i]?' checked':'')+'>'+
+        '<span class="box"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>'+
+        '<span class="txt">'+esc(it.t)+'<span class="why">'+esc(it.w)+'</span></span></label>';
+    });
+    html+='</div>';
+  }
+  $('#checklistBox').innerHTML=html;
+  $$('#checklistBox input').forEach(inp=>inp.addEventListener('change',()=>{
+    S.check[inp.dataset.ck]=inp.checked; save(); updateCheckRing();
+  }));
+  updateCheckRing();
+}
+function updateCheckRing(){
+  const total=CHECKLIST.length;
+  const done=CHECKLIST.reduce((n,_,i)=>n+(S.check[i]?1:0),0);
+  const pct=Math.round(done/total*100);
+  $('#checkRing').style.strokeDashoffset=String(314.16*(1-done/total));
+  $('#checkPct').textContent=pct+'%';
+  $('#checkCount').textContent=done+' / '+total;
+  const msg = done===0?'Empieza por la documentación: es lo único que no puedes resolver el mismo día.'
+    : done<5?'Buen comienzo. La documentación primero, el método después.'
+    : done<9?'Vas bien. Deja cerrada la plataforma del centro antes del fin de semana.'
+    : done<total?'Casi listo. Solo falta lo que te separa de llegar tranquilo el martes.'
+    : 'Todo listo. El 24 solo tienes que aparecer, escuchar y tomar notas.';
+  $('#checkMsg').textContent=msg;
+}
+$('#checkAll').addEventListener('click',()=>{
+  const snap=Object.assign({},S.check);
+  CHECKLIST.forEach((_,i)=>S.check[i]=true); save(); renderChecklist();
+  toast('Checklist completada',{action:'Deshacer',onAction:()=>{S.check=snap;save();renderChecklist();}});
+});
+$('#checkReset').addEventListener('click',()=>{
+  const snap=Object.assign({},S.check);
+  S.check={}; save(); renderChecklist();
+  toast('Checklist reiniciada',{warn:true,action:'Deshacer',onAction:()=>{S.check=snap;save();renderChecklist();}});
+});
+
+/* ============================================================
+   ESTRUCTURA
+   ============================================================ */
+function renderRibbon(){
+  const total=MODULES.reduce((n,m)=>n+m.h,0);
+  $('#ribbon').innerHTML=MODULES.map((m,i)=>
+    '<div class="seg" data-hue="'+m.hue+'" style="flex:'+m.h+' 1 0;--pat:'+(35+i*22)+'deg" title="'+esc(m.short+' · '+m.h+' h')+'">'+
+    '<span>'+m.short+'<br>'+m.h+' h</span></div>').join('');
+  $('#legend').innerHTML=MODULES.map(m=>'<span data-hue="'+m.hue+'"><i></i>'+esc(m.short+' · '+m.name.split(' ').slice(0,3).join(' ')+'…')+'</span>').join('');
+}
+function renderStruct(view){
+  const box=$('#structView');
+  if(view==='oficial'){
+    let rows='';
+    MODULES.forEach(m=>{
+      m.ufs.forEach((u,j)=>{
+        rows+='<tr><td>'+(j===0?'<b>'+esc(m.short)+'</b><br><span style="color:var(--ink-3);font-size:.8rem">'+esc(m.name)+'</span>':'<span style="color:var(--ink-3)">↳ '+esc(u.n)+'</span>')+
+          '</td><td><code style="font-family:var(--ff-m);font-size:.76rem">'+esc(u.c)+'</code></td>'+
+          '<td class="num">'+u.h+' h</td><td style="font-size:.82rem;color:var(--ink-2)">'+esc(m.famLabel)+'</td></tr>';
+      });
+    });
+    box.innerHTML='<div class="table-wrap"><table class="tbl"><thead><tr><th>Módulo</th><th>Código</th><th style="text-align:right">Horas</th><th>Bloque</th></tr></thead><tbody>'+rows+
+      '<tr style="background:var(--paper-2)"><td><b>TOTAL</b></td><td></td><td class="num"><b>380 h</b></td><td></td></tr></tbody></table></div>';
+  } else {
+    const routes=[
+      {h:'indigo',n:'1',t:'Antes de entrar en el aula',d:'MF1442 (60 h) + MF1443 (90 h) = 150 h. Diseñas el curso y fabricas los materiales. Es la fase de mesa: la más larga y la que más portfolio genera.'},
+      {h:'magenta',n:'2',t:'Dentro del aula',d:'MF1444 (100 h: UF1645 70 h + UF1646 30 h). Impartir y tutorizar. Aquí llega la microclase y el trabajo en grupo. Es la fase que más se nota en el día a día.'},
+      {h:'amber',n:'3',t:'Medir y orientar',d:'MF1445 (60 h) + MF1446 (30 h) = 90 h. Instrumentos de evaluación, mejora continua, orientación laboral y calidad del centro.'},
+      {h:'green',n:'4',t:'Aula real',d:'MP0353 (40 h). Prácticas en centro de trabajo con tutor. Observas, co-docencias e impartes al menos una sesión completa.'}
+    ];
+    box.innerHTML='<div class="route">'+routes.map(r=>
+      '<div class="route-item" data-hue="'+r.h+'"><div class="n">'+r.n+'</div><div><h4>'+esc(r.t)+'</h4><p>'+esc(r.d)+'</p></div></div>').join('')+'</div>';
+  }
+}
+$('#viewOficial').addEventListener('click',()=>{
+  $('#viewOficial').setAttribute('aria-pressed','true'); $('#viewRuta').setAttribute('aria-pressed','false'); renderStruct('oficial');
+});
+$('#viewRuta').addEventListener('click',()=>{
+  $('#viewRuta').setAttribute('aria-pressed','true'); $('#viewOficial').setAttribute('aria-pressed','false'); renderStruct('ruta');
+});
+
+/* ============================================================
+   MÓDULOS + DRAWER
+   ============================================================ */
+let modFilter='todos', modSort='oficial';
+function modProgress(m){
+  const done=m.deliver.reduce((n,_,i)=>n+(S.deliver[m.id+':'+i]?1:0),0);
+  return {done,total:m.deliver.length,pct:Math.round(done/m.deliver.length*100)};
+}
+function renderFamChips(){
+  const fams=[{k:'todos',l:'Todos'}].concat(MODULES.map(m=>({k:m.fam,l:m.famLabel})));
+  $('#famChips').innerHTML=fams.map(f=>'<button class="chip" data-fam="'+f.k+'" aria-pressed="'+(modFilter===f.k)+'">'+esc(f.l)+'</button>').join('');
+  $$('#famChips .chip').forEach(b=>b.addEventListener('click',()=>{ modFilter=b.dataset.fam; renderFamChips(); renderModules(); }));
+}
+function renderModules(){
+  let list=MODULES.filter(m=>modFilter==='todos'||m.fam===modFilter);
+  if(modSort==='horas') list=list.slice().sort((a,b)=>b.h-a.h);
+  else if(modSort==='menos') list=list.slice().sort((a,b)=>a.h-b.h);
+  else if(modSort==='progreso') list=list.slice().sort((a,b)=>modProgress(b).pct-modProgress(a).pct);
+  $('#modGrid').innerHTML=list.map(m=>{
+    const p=modProgress(m);
+    return '<button class="mod" data-hue="'+m.hue+'" data-mod="'+m.id+'" aria-label="Abrir ficha de '+esc(m.short)+'">'+
+      '<div class="mod-top"><span class="tag">'+esc(m.code)+'</span><span class="mod-hours">'+m.h+'<small>horas</small></span></div>'+
+      '<h3>'+esc(m.name)+'</h3><p class="claim">'+esc(m.claim)+'</p>'+
+      '<ul class="uf-list">'+m.ufs.map(u=>'<li><code>'+esc(u.c)+'</code><span>'+esc(u.n)+' · '+u.h+' h</span></li>').join('')+'</ul>'+
+      '<div class="mod-foot"><span class="lbl2">'+p.done+'/'+p.total+' entregables</span>'+
+      '<span class="mini-bar"><i style="width:'+p.pct+'%"></i></span>'+
+      '<span class="mod-open">Abrir <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></button>';
+  }).join('');
+  $$('#modGrid .mod').forEach(b=>b.addEventListener('click',()=>openModule(b.dataset.mod)));
+  requestAnimationFrame(()=>$('#modGrid').classList.add('in'));
+}
+$('#modSort').addEventListener('change',e=>{ modSort=e.target.value; renderModules(); });
+
+let lastFocus=null;
+function openModule(id){
+  const m=MODULES.find(x=>x.id===id); if(!m) return;
+  lastFocus=document.activeElement;
+  const head=$('#drawerHead'); head.setAttribute('data-hue',m.hue);
+  $('#drawerTag').textContent=m.code+' · '+m.h+' h';
+  $('#drawerTag').setAttribute('data-hue',m.hue);
+  $('#drawerTitle').textContent=m.name;
+  $('#drawerSub').textContent=m.claim;
+  const p=modProgress(m);
+  const icoCheck='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>';
+  const icoBook='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>';
+  const icoWarn='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L14.7 3.9a2 2 0 00-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>';
+  const icoCode='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>';
+  let html='';
+  html+='<div class="dblock" data-hue="'+m.hue+'"><h4>'+icoBook+'Contenidos clave</h4><ul class="dlist">'+m.learn.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></div>';
+  html+='<div class="dblock" data-hue="'+m.hue+'"><h4>'+icoCheck+'Entregables reutilizables <span style="margin-left:auto;font-family:var(--ff-m);color:var(--h-ink)">'+p.done+'/'+p.total+'</span></h4><div>';
+  m.deliver.forEach((d,i)=>{
+    const k=m.id+':'+i;
+    html+='<label class="check"><input type="checkbox" data-dl="'+k+'"'+(S.deliver[k]?' checked':'')+'>'+
+      '<span class="box"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span class="txt" style="font-weight:500">'+esc(d)+'</span></label>';
+  });
+  html+='</div></div>';
+  html+='<div class="dblock" data-hue="'+m.hue+'"><h4>'+icoWarn+'Errores típicos</h4><ul class="dlist bad">'+m.mistakes.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></div>';
+  html+='<div class="dblock" data-hue="'+m.hue+'"><h4>'+icoCode+'Ejemplo con tu perfil</h4><div class="callout info" style="background:var(--h-soft);border-color:transparent;color:var(--ink-2)"><span>'+esc(m.example)+'</span></div></div>';
+  html+='<div class="dblock"><div class="callout warn"><span><b>Consejo:</b> '+esc(m.tip)+'</span></div></div>';
+  html+='<div class="dblock"><h4>Vocabulario de este módulo</h4><div class="row">'+m.terms.map(t=>'<span class="tag" data-hue="'+m.hue+'">'+esc(t)+'</span>').join('')+'</div></div>';
+  html+='<div class="dblock"><div class="between" style="margin-bottom:8px"><h4 style="margin:0">Tus notas de '+esc(m.short)+'</h4><span class="note-status" id="noteStatus">Guardado ✓</span></div>'+
+    '<textarea id="modNote" placeholder="Apuntes, dudas para el formador, ideas de materiales…" data-note="'+m.id+'">'+esc(S.notes[m.id]||'')+'</textarea>'+
+    '<p style="font-size:.74rem;color:var(--ink-3);margin:6px 0 0">Se guarda automáticamente en este navegador.</p></div>';
+  $('#drawerBody').innerHTML=html;
+  $('#drawerBody').setAttribute('data-hue',m.hue);
+  $('#drawerBody').scrollTop=0;
+  $$('#drawerBody input[data-dl]').forEach(inp=>inp.addEventListener('change',()=>{
+    S.deliver[inp.dataset.dl]=inp.checked; save();
+    const pr=modProgress(m);
+    $('#drawerBody h4 span[style]')&&null;
+    const counter=$$('#drawerBody .dblock h4')[1].querySelector('span');
+    if(counter) counter.textContent=pr.done+'/'+pr.total;
+    renderModules(); updateEvRing();
+  }));
+  const ta=$('#modNote');
+  ta.addEventListener('input',()=>{
+    S.notes[m.id]=ta.value; save();
+    const st=$('#noteStatus'); st.classList.add('on'); clearTimeout(ta._t); ta._t=setTimeout(()=>st.classList.remove('on'),1400);
+  });
+  $('#drawer').classList.add('on'); $('#drawer').setAttribute('aria-hidden','false');
+  $('#scrim').classList.add('on'); document.body.style.overflow='hidden';
+  setTimeout(()=>$('#drawerClose').focus(),120);
+}
+function closeDrawer(){
+  $('#drawer').classList.remove('on'); $('#drawer').setAttribute('aria-hidden','true');
+  $('#scrim').classList.remove('on'); document.body.style.overflow='';
+  if(lastFocus&&lastFocus.focus) lastFocus.focus();
+}
+$('#drawerClose').addEventListener('click',closeDrawer);
+$('#scrim').addEventListener('click',closeDrawer);
+
+/* ============================================================
+   PLANIFICADOR
+   ============================================================ */
+const DAY_LETTERS=[{d:1,l:'L'},{d:2,l:'M'},{d:3,l:'X'},{d:4,l:'J'},{d:5,l:'V'},{d:6,l:'S'}];
+function parseD(s){ const p=String(s).split('-').map(Number); return new Date(p[0],(p[1]||1)-1,p[2]||1); }
+function addD(d,n){ const x=new Date(d.getTime()); x.setDate(x.getDate()+n); return x; }
+function mondayOf(d){ const x=new Date(d.getTime()); const w=(x.getDay()+6)%7; x.setDate(x.getDate()-w); x.setHours(0,0,0,0); return x; }
+function sameD(a,b){ return a.getFullYear()===b.getFullYear()&&a.getMonth()===b.getMonth()&&a.getDate()===b.getDate(); }
+function fmtShort(d){ return d.toLocaleDateString('es-ES',{day:'numeric',month:'short'}).replace('.',''); }
+function fmtLong(d){ return d.toLocaleDateString('es-ES',{weekday:'long',day:'numeric',month:'long',year:'numeric'}); }
+function isoD(d){ return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate()); }
+function easter(y){
+  const a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),
+    h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),
+    mo=Math.floor((h+l-7*m+114)/31),da=((h+l-7*m+114)%31)+1;
+  return new Date(y,mo-1,da);
+}
+function orderedModules(order,withMP){
+  let base=MODULES.filter(m=>m.id!=='mp0353');
+  const first={materiales:'mf1443',aula:'mf1444',eval:'mf1445'}[order];
+  if(first){ const i=base.findIndex(m=>m.id===first); if(i>0) base.unshift(base.splice(i,1)[0]); }
+  if(withMP) base=base.concat(MODULES.filter(m=>m.id==='mp0353'));
+  return base;
+}
+function computePlan(cfg){
+  const start=parseD(cfg.start);
+  if(isNaN(start.getTime())) return null;
+  if(!cfg.days.length) return {empty:true};
+  const mods=orderedModules(cfg.order,cfg.mp);
+  const total=mods.reduce((n,m)=>n+m.h,0);
+  const y=start.getFullYear();
+  const pauses=[];
+  if(cfg.xmas) pauses.push({a:new Date(y,11,21),b:new Date(y+1,0,6),label:'Navidad'});
+  if(cfg.easter){ const e=easter(y+1); pauses.push({a:mondayOf(e),b:e,label:'Semana Santa'}); }
+  const inPause=d=>pauses.find(p=>d>=p.a&&d<=p.b);
+  const days=[]; let cur=mondayOf(start), left=total, guard=0;
+  while(left>0.001&&guard<420){
+    for(let i=0;i<7&&left>0.001;i++){
+      const d=addD(cur,i); d.setHours(0,0,0,0);
+      if(d<start) continue;
+      if(cfg.days.indexOf(d.getDay())===-1) continue;
+      if(inPause(d)) continue;
+      const h=Math.min(cfg.hpd,left);
+      days.push({date:d,h:h}); left-=h;
+    }
+    cur=addD(cur,7); guard++;
+  }
+  if(!days.length) return {empty:true};
+  // asignación por módulo
+  const spans={}; let mi=0, mleft=mods[0].h;
+  days.forEach(day=>{
+    let rem=day.h; day.segs=[];
+    while(rem>0.001&&mi<mods.length){
+      const take=Math.min(rem,mleft);
+      const m=mods[mi];
+      day.segs.push({id:m.id,h:take});
+      if(!spans[m.id]) spans[m.id]={mod:m,start:day.date,end:day.date,h:0};
+      spans[m.id].end=day.date; spans[m.id].h+=take;
+      rem-=take; mleft-=take;
+      if(mleft<=0.001){ mi++; if(mi<mods.length) mleft=mods[mi].h; }
+    }
+  });
+  // semanas (incluyendo pausas dentro del rango)
+  const firstM=mondayOf(days[0].date), lastM=mondayOf(days[days.length-1].date);
+  const weeks=[]; let w=mondayOf(firstM), n=0;
+  while(w<=lastM&&n<420){
+    const wDays=days.filter(d=>mondayOf(d.date).getTime()===w.getTime());
+    const p=inPause(w);
+    n++;
+    if(wDays.length){
+      const segs={};
+      wDays.forEach(d=>d.segs.forEach(s=>{ segs[s.id]=(segs[s.id]||0)+s.h; }));
+      weeks.push({n:n,mon:w,first:wDays[0].date,last:wDays[wDays.length-1].date,
+        h:wDays.reduce((a,b)=>a+b.h,0),segs:segs,partial:!!p});
+    } else {
+      weeks.push({n:n,mon:w,first:w,last:addD(w,6),h:0,segs:{},pause:p?p.label:'Sin clase'});
+    }
+    w=addD(w,7);
+  }
+  const classWeeks=weeks.filter(x=>x.h>0).length;
+  return {
+    empty:false, mods:mods, total:total, days:days, weeks:weeks, spans:mods.map(m=>spans[m.id]).filter(Boolean),
+    start:days[0].date, end:days[days.length-1].date, classWeeks:classWeeks,
+    weekly:cfg.hpd*cfg.days.length, pauses:pauses
+  };
+}
+let PLAN=null;
+function renderPlan(){
+  const cfg=S.plan;
+  PLAN=computePlan(cfg);
+  const empty=!PLAN||PLAN.empty;
+  $('#pDaysHint').textContent=cfg.days.length?cfg.days.length+' días seleccionados · '+(cfg.hpd*cfg.days.length)+' h/semana.':'Selecciona al menos un día de clase.';
+  $('#pHpdHint').textContent=cfg.hpd+' h/día × '+cfg.days.length+' días = '+(cfg.hpd*cfg.days.length)+' h/semana.';
+  if(empty){
+    $('#kpis').innerHTML='<div class="kpi" style="grid-column:1/-1"><b>Sin días de clase</b><span>Activa al menos un día en los controles</span></div>';
+    $('#tlBars').innerHTML=''; $('#tlMonths').innerHTML=''; $('#tlRange').textContent='—';
+    $('#weeks').innerHTML='<div class="empty" style="margin:14px"><b>El plan necesita días</b>Marca L, M, X, J, V o S para generar el calendario.</div>';
+    $('#wkSummary').textContent='—'; $('#fichaEnd').textContent='—'; $('#statWeeks').textContent='—';
+    return;
+  }
+  const weeks=PLAN.weeks.length;
+  $('#kpis').innerHTML=
+    '<div class="kpi hero-k"><b>'+fmtShort(PLAN.end)+'</b><span>Fin estimado '+PLAN.end.getFullYear()+'</span></div>'+
+    '<div class="kpi"><b>'+weeks+'</b><span>Semanas de calendario</span></div>'+
+    '<div class="kpi"><b>'+PLAN.weekly+' h</b><span>Ritmo semanal</span></div>'+
+    '<div class="kpi"><b>'+PLAN.total+' h</b><span>Horas planificadas</span></div>';
+  $('#fichaEnd').textContent=PLAN.end.toLocaleDateString('es-ES',{day:'2-digit',month:'2-digit',year:'numeric'});
+  $('#fichaStart').textContent=PLAN.start.toLocaleDateString('es-ES',{day:'2-digit',month:'2-digit',year:'numeric'});
+  $('#statWeeks').textContent=String(weeks);
+  $('#tlRange').textContent=fmtShort(PLAN.start)+' → '+fmtShort(PLAN.end);
+  // meses
+  const t0=mondayOf(PLAN.start).getTime(), t1=addD(mondayOf(PLAN.end),7).getTime(), span=t1-t0;
+  let months=[], cm=new Date(PLAN.start.getFullYear(),PLAN.start.getMonth(),1);
+  while(cm.getTime()<t1){
+    const nm=new Date(cm.getFullYear(),cm.getMonth()+1,1);
+    const a=Math.max(cm.getTime(),t0), b=Math.min(nm.getTime(),t1);
+    if(b>a) months.push({label:cm.toLocaleDateString('es-ES',{month:'short',year:'2-digit'}).replace('.',''),w:(b-a)/span*100});
+    cm=nm;
+  }
+  $('#tlMonths').innerHTML='<span style="width:104px;border:0"></span>'+months.map(m=>'<span style="width:calc('+m.w+'% - '+(104*m.w/100)+'px)">'+esc(m.label)+'</span>').join('');
+  $('#tlBars').innerHTML=PLAN.spans.map(sp=>{
+    const l=(mondayOf(sp.start).getTime()-t0)/span*100;
+    const w=(addD(mondayOf(sp.end),7).getTime()-mondayOf(sp.start).getTime())/span*100;
+    return '<div class="tl-row" data-hue="'+sp.mod.hue+'"><span class="name" title="'+esc(sp.mod.name)+'">'+esc(sp.mod.short)+'</span>'+
+      '<div class="tl-track">'+PLAN.pauses.map(p=>{
+        const pl=(mondayOf(p.a).getTime()-t0)/span*100, pw=(addD(mondayOf(p.b),7).getTime()-mondayOf(p.a).getTime())/span*100;
+        return '<span class="tl-pause" style="left:'+pl+'%;width:'+pw+'%" title="'+esc(p.label)+'"></span>';
+      }).join('')+
+      '<div class="tl-fill" style="left:'+l+'%;width:'+w+'%"><span>'+sp.mod.h+' h · '+fmtShort(sp.start)+'–'+fmtShort(sp.end)+'</span></div></div></div>';
+  }).join('');
+  // semanas
+  $('#weeks').innerHTML=PLAN.weeks.map((w,i)=>{
+    if(!w.h){
+      return '<div class="wk pause"><span class="n">S'+w.n+'</span><span class="d">'+fmtShort(w.first)+'–'+fmtShort(w.last)+'</span>'+
+        '<span style="font-size:.76rem">'+esc(w.pause||'Pausa')+'</span><span class="h">0 h</span></div>';
+    }
+    const segs=Object.keys(w.segs).map(id=>{
+      const m=MODULES.find(x=>x.id===id);
+      return '<i data-hue="'+m.hue+'" style="flex:'+w.segs[id]+'" title="'+esc(m.short+' · '+w.segs[id]+' h')+'">'+(w.segs[id]>=6?m.short.replace('MF',''):'')+'</i>';
+    }).join('');
+    return '<div class="wk'+(i===0?' first':'')+'"><span class="n">S'+w.n+'</span><span class="d">'+fmtShort(w.first)+'–'+fmtShort(w.last)+'</span>'+
+      '<span class="segs">'+segs+'</span><span class="h">'+w.h+' h</span></div>';
+  }).join('');
+  $('#wkSummary').textContent=PLAN.classWeeks+' semanas con clase · '+(PLAN.weeks.length-PLAN.classWeeks)+' de pausa';
+  updateCountdown();
+}
+function renderDayButtons(){
+  $('#pDays').innerHTML=DAY_LETTERS.map(d=>'<button data-day="'+d.d+'" aria-pressed="'+(S.plan.days.indexOf(d.d)>-1)+'" aria-label="'+
+    ['','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'][d.d]+'">'+d.l+'</button>').join('');
+  $$('#pDays button').forEach(b=>b.addEventListener('click',()=>{
+    const d=Number(b.dataset.day); const i=S.plan.days.indexOf(d);
+    if(i>-1) S.plan.days.splice(i,1); else S.plan.days.push(d);
+    S.plan.days.sort(); save(); renderDayButtons(); renderPlan();
+  }));
+}
+function bindPlanner(){
+  $('#pStart').value=S.plan.start; $('#pTime').value=S.plan.time;
+  $('#pHpd').value=S.plan.hpd; $('#pHpdVal').textContent=S.plan.hpd+' h';
+  $('#pXmas').checked=S.plan.xmas; $('#pEaster').checked=S.plan.easter;
+  $('#pOrder').value=S.plan.order; $('#pMP').checked=S.plan.mp;
+  $('#pDensity').value=S.prefs.density;
+  $$('#pAccent button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.a===S.prefs.accent)));
+  $('#pStart').addEventListener('change',e=>{ if(e.target.value){ S.plan.start=e.target.value; save(); renderPlan(); }});
+  $('#pTime').addEventListener('change',e=>{ if(e.target.value){ S.plan.time=e.target.value; save(); updateCountdown(); }});
+  $('#pHpd').addEventListener('input',e=>{
+    S.plan.hpd=Number(e.target.value); $('#pHpdVal').textContent=S.plan.hpd+' h'; save(); renderPlan();
+  });
+  $('#pXmas').addEventListener('change',e=>{ S.plan.xmas=e.target.checked; save(); renderPlan(); });
+  $('#pEaster').addEventListener('change',e=>{ S.plan.easter=e.target.checked; save(); renderPlan(); });
+  $('#pOrder').addEventListener('change',e=>{ S.plan.order=e.target.value; save(); renderPlan(); });
+  $('#pMP').addEventListener('change',e=>{ S.plan.mp=e.target.checked; save(); renderPlan(); });
+  $('#pDensity').addEventListener('change',e=>{ S.prefs.density=e.target.value; document.body.dataset.density=e.target.value; save(); });
+  $$('#pAccent button').forEach(b=>b.addEventListener('click',()=>{
+    S.prefs.accent=b.dataset.a; document.body.dataset.accent=b.dataset.a; save();
+    $$('#pAccent button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+    drawRadar();
+  }));
+  $('#pReset').addEventListener('click',()=>{
+    const snap=JSON.parse(JSON.stringify(S.plan));
+    S.plan=JSON.parse(JSON.stringify(DEFAULTS.plan)); save(); bindPlannerValues(); renderDayButtons(); renderPlan();
+    toast('Plan restablecido al 24/11 · 4 h/día',{action:'Deshacer',onAction:()=>{S.plan=snap;save();bindPlannerValues();renderDayButtons();renderPlan();}});
+  });
+  $('#pRandom').addEventListener('click',()=>{
+    const opts=[[3,5],[4,5],[5,4],[3.5,5],[6,3],[4,4],[2.5,6]];
+    const pick=opts[Math.floor(Math.random()*opts.length)];
+    const patterns=[[1,2,3,4,5],[1,2,3,4],[1,3,5,2,4].sort(),[2,3,4,5],[1,2,3,4,5,6],[1,2,4,5]];
+    S.plan.hpd=pick[0];
+    S.plan.days=patterns[Math.floor(Math.random()*patterns.length)].slice(0,pick[1]).sort();
+    S.plan.order=['oficial','materiales','aula','eval'][Math.floor(Math.random()*4)];
+    save(); bindPlannerValues(); renderDayButtons(); renderPlan();
+    toast('Ritmo alternativo: '+S.plan.hpd+' h/día × '+S.plan.days.length+' días');
+  });
+  $('#pIcs').addEventListener('click',exportICS);
+  $('#pMd').addEventListener('click',()=>{ download('plan-ssce0110.md',planMarkdown(),'text/markdown;charset=utf-8'); toast('Plan descargado en Markdown'); });
+  $('#pPrint').addEventListener('click',()=>window.print());
+}
+function bindPlannerValues(){
+  $('#pStart').value=S.plan.start; $('#pTime').value=S.plan.time;
+  $('#pHpd').value=S.plan.hpd; $('#pHpdVal').textContent=S.plan.hpd+' h';
+  $('#pXmas').checked=S.plan.xmas; $('#pEaster').checked=S.plan.easter;
+  $('#pOrder').value=S.plan.order; $('#pMP').checked=S.plan.mp;
+}
+function planMarkdown(){
+  if(!PLAN||PLAN.empty) return '# Plan SSCE0110\n\nSelecciona días de clase para generar el plan.';
+  let md='# Plan SSCE0110 · Víctor\n\n';
+  md+='- **Inicio:** '+fmtLong(PLAN.start)+' · '+S.plan.time+'\n';
+  md+='- **Fin estimado:** '+fmtLong(PLAN.end)+'\n';
+  md+='- **Ritmo:** '+S.plan.hpd+' h/día × '+S.plan.days.length+' días = '+PLAN.weekly+' h/semana\n';
+  md+='- **Total planificado:** '+PLAN.total+' h ('+PLAN.classWeeks+' semanas con clase, '+PLAN.weeks.length+' de calendario)\n';
+  md+='- **Pausas:** '+(PLAN.pauses.map(p=>p.label).join(', ')||'ninguna')+'\n\n## Módulos\n\n| Módulo | Código | Horas | Inicio | Fin |\n|---|---|---:|---|---|\n';
+  PLAN.spans.forEach(sp=>{ md+='| '+sp.mod.name+' | '+sp.mod.code+' | '+sp.mod.h+' | '+isoD(sp.start)+' | '+isoD(sp.end)+' |\n'; });
+  md+='\n## Semana a semana\n\n';
+  PLAN.weeks.forEach(w=>{
+    if(!w.h){ md+='- **S'+w.n+'** '+isoD(w.first)+' → '+isoD(w.last)+' · '+(w.pause||'pausa')+' · 0 h\n'; return; }
+    const segs=Object.keys(w.segs).map(id=>MODULES.find(x=>x.id===id).short+' ('+w.segs[id]+' h)').join(' + ');
+    md+='- **S'+w.n+'** '+isoD(w.first)+' → '+isoD(w.last)+' · '+w.h+' h · '+segs+'\n';
+  });
+  md+='\n> Generado desde la guía de arranque SSCE0110. Fechas orientativas: el calendario oficial lo fija el centro de formación.\n';
+  return md;
+}
+function exportICS(){
+  if(!PLAN||PLAN.empty){ toast('Activa algún día de clase antes de exportar',{warn:true}); return; }
+  const stamp=new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
+  const dt=d=>d.getFullYear()+pad(d.getMonth()+1)+pad(d.getDate());
+  const clean=s=>String(s).replace(/([,;\\])/g,'\\$1').replace(/\n/g,'\\n');
+  let ics='BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Guia SSCE0110//ES\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\n';
+  const h=S.plan.time.split(':').map(Number);
+  const s0=new Date(PLAN.start.getTime()); s0.setHours(h[0]||9,h[1]||0,0,0);
+  const s1=new Date(s0.getTime()+S.plan.hpd*3600000);
+  const local=d=>d.getFullYear()+pad(d.getMonth()+1)+pad(d.getDate())+'T'+pad(d.getHours())+pad(d.getMinutes())+'00';
+  ics+='BEGIN:VEVENT\r\nUID:ssce0110-first-'+stamp+'@guia\r\nDTSTAMP:'+stamp+'\r\nDTSTART:'+local(s0)+'\r\nDTEND:'+local(s1)+
+    '\r\nSUMMARY:'+clean('Primera clase · SSCE0110')+'\r\nDESCRIPTION:'+clean('Llega 15 min antes. Lleva DNI, DARDE, cuaderno y portátil. Pregunta por evaluación, asistencia y plataforma.')+'\r\nEND:VEVENT\r\n';
+  PLAN.spans.forEach(sp=>{
+    ics+='BEGIN:VEVENT\r\nUID:ssce0110-'+sp.mod.id+'-'+stamp+'@guia\r\nDTSTAMP:'+stamp+'\r\nDTSTART;VALUE=DATE:'+dt(sp.start)+
+      '\r\nDTEND;VALUE=DATE:'+dt(addD(sp.end,1))+'\r\nSUMMARY:'+clean(sp.mod.short+' · '+sp.mod.name.slice(0,70))+
+      '\r\nDESCRIPTION:'+clean(sp.mod.h+' h · '+sp.mod.claim)+'\r\nTRANSP:TRANSPARENT\r\nEND:VEVENT\r\n';
+  });
+  ics+='END:VCALENDAR\r\n';
+  download('ssce0110-plan.ics',ics,'text/calendar;charset=utf-8');
+  toast('Calendario .ics descargado · '+(PLAN.spans.length+1)+' eventos');
+}
+
+/* ============================================================
+   CUENTA ATRÁS
+   ============================================================ */
+function targetDate(){
+  const d=parseD(S.plan.start); const t=(S.plan.time||'09:00').split(':').map(Number);
+  d.setHours(t[0]||9,t[1]||0,0,0); return d;
+}
+function updateCountdown(){
+  const t=targetDate(), now=new Date(), diff=t-now;
+  const label=$('#cdLabel'), note=$('#cdNote');
+  const abs=Math.abs(diff);
+  const dd=Math.floor(abs/86400000), hh=Math.floor(abs%86400000/3600000), mm=Math.floor(abs%3600000/60000), ss=Math.floor(abs%60000/1000);
+  $('#cdD').textContent=pad(dd); $('#cdH').textContent=pad(hh); $('#cdM').textContent=pad(mm); $('#cdS').textContent=pad(ss);
+  if(diff>0){
+    label.textContent='Cuenta atrás para el aula';
+    note.textContent=fmtLong(t).charAt(0).toUpperCase()+fmtLong(t).slice(1)+' · '+S.plan.time+' (ajústalo en el planificador).';
+  } else {
+    label.textContent='Ya estás dentro · tiempo en el curso';
+    note.textContent='Empezaste el '+fmtLong(t)+'. Cada día, cinco líneas de bitácora.';
+  }
+}
+
+/* ============================================================
+   PRESENTACIÓN 30 s
+   ============================================================ */
+function renderPitch(){
+  const i=S.intro;
+  const txt='Hola, soy '+i.name+'. Vengo de '+i.from+', y puedo aportar '+i.give+
+    '. Estoy aquí porque quiero '+i.get+'. Nos vemos en el aula.';
+  $('#pitchOut').innerHTML='Hola, soy <b>'+esc(i.name)+'</b>. Vengo de <b>'+esc(i.from)+'</b>, y puedo aportar <b>'+esc(i.give)+
+    '</b>. Estoy aquí porque quiero <b>'+esc(i.get)+'</b>. Nos vemos en el aula.';
+  return txt;
+}
+['inName','inFrom','inGive','inGet'].forEach(id=>{
+  const map={inName:'name',inFrom:'from',inGive:'give',inGet:'get'};
+  const el=$('#'+id); el.value=S.intro[map[id]];
+  el.addEventListener('input',()=>{ S.intro[map[id]]=el.value||'…'; save(); renderPitch(); });
+});
+$('#pitchCopy').addEventListener('click',()=>copyText(renderPitch(),'Presentación copiada. Ensáyala en voz alta dos veces.'));
+
+/* ============================================================
+   MICROCLASE
+   ============================================================ */
+const VERB_TXT={
+  configurar:{inf:'configurar',noun:'la configuración',ev:'ejecuta la configuración completa'},
+  construir:{inf:'construir',noun:'la construcción',ev:'construye el resultado esperado'},
+  diagnosticar:{inf:'diagnosticar',noun:'el diagnóstico',ev:'identifica la causa y la documenta'},
+  documentar:{inf:'documentar',noun:'la documentación',ev:'produce la documentación exigida'},
+  evaluar:{inf:'evaluar',noun:'la evaluación',ev:'emite un juicio justificado con criterios'}
+};
+function microMinutes(total,practicePct){
+  const w=[8,7,25,practicePct,15,10];
+  const sum=w.reduce((a,b)=>a+b,0);
+  let mins=w.map(x=>Math.max(1,Math.round(total*x/sum)));
+  let diff=total-mins.reduce((a,b)=>a+b,0);
+  let idx=3;
+  while(diff!==0){
+    if(diff>0){ mins[idx]++; diff--; }
+    else { if(mins[idx]>1){ mins[idx]--; diff++; } else { idx=(idx+1)%6; } }
+    if(mins.every(m=>m<=1)&&diff<0) break;
+  }
+  return mins;
+}
+function buildMicro(){
+  const m=S.micro, v=VERB_TXT[m.verb]||VERB_TXT.configurar;
+  const mins=microMinutes(m.dur,m.practice);
+  const practiceMin=mins[3];
+  const online=m.mode==='tele';
+  const lvl=m.level;
+  const obj='Al terminar la sesión, el alumnado será capaz de '+v.inf+' «'+m.topic.toLowerCase()+'» de forma autónoma, sin apoyo del formador, en un máximo de '+Math.max(3,practiceMin)+' minutos.';
+  const blocks=[
+    {h:'indigo',t:'Gancho y conexión',
+     p:'Arranca con un problema real que ellos ya tengan. Nada de índice ni de historia de la herramienta: 30 segundos de situación reconocible.',
+     say:'«¿A quién le ha pasado que '+m.topic.toLowerCase()+' le costó más de lo previsto? Vamos a resolver exactamente eso.»'},
+    {h:'blue',t:'Objetivo y criterio de éxito',
+     p:'Escribe el objetivo en la pizarra o compártelo en pantalla y di cómo sabrán que lo han conseguido. Que sea visible durante toda la sesión.',
+     say:'«Al acabar, cada uno habrá hecho esto solo. Lo comprobamos con estos tres pasos.»'},
+    {h:'teal',t:'Demostración guiada',
+     p:(online?'Comparte pantalla completa, con la terminal o el editor ampliado.':'Proyecta y narra cada paso.')+' Hazlo una vez completo y despacio, diciendo en voz alta lo que decides y por qué. Sin atajos de teclado invisibles.',
+     say:lvl==='inicial'?'«Voy a hacerlo entero una vez. No copiéis todavía: mirad y preguntad.»':'«Fijaos en el punto donde suele fallar; ahí me detengo.»'},
+    {h:'magenta',t:'Práctica del alumnado',
+     p:(online?'Salas o pantalla compartida por turnos; tú circulas pidiendo que compartan.':'Levántate y circula por las mesas.')+' Cada persona repite el procedimiento con una variación mínima. No lo resuelvas tú: pregunta «¿qué esperabas que pasara?».',
+     say:'«Ahora vosotros. Yo no toco ningún teclado. Si te atascas, dime en qué paso estás.»'},
+    {h:'amber',t:'Comprobación y feedback',
+     p:'Revisa en voz alta dos casos: uno correcto y uno con el error típico. Feedback concreto sobre la conducta, no sobre la persona.',
+     say:'«Aquí falta este paso y por eso falla. Fíjate en el mensaje: te está diciendo exactamente qué ocurre.»'},
+    {h:'green',t:'Cierre y siguiente paso',
+     p:'Ticket de salida: cada uno escribe los pasos con sus palabras y qué haría distinto. Anuncia el siguiente paso y deja el material accesible.',
+     say:'«En una frase: ¿qué acabas de aprender a hacer? Eso es lo que te llevas hoy.»'}
+  ];
+  let acc=0;
+  const guion=blocks.map((b,i)=>{
+    const from=acc, to=acc+mins[i]; acc=to;
+    return {b:b,from:from,to:to,min:mins[i],i:i};
+  });
+  $('#objBox').innerHTML='<span class="mono">Objetivo observable · '+esc(m.dur)+' min · '+esc(online?'teleformación':'presencial')+'</span><p>'+esc(obj)+'</p>';
+  $('#guion').innerHTML=guion.map((g,i)=>
+    '<div class="g-block" data-hue="'+g.b.h+'" style="animation-delay:'+(i*0.045)+'s">'+
+    '<div class="t">'+g.from+'–'+g.to+'<small>'+g.min+' min</small></div>'+
+    '<div><h4>'+esc(g.b.t)+'</h4><p>'+esc(g.b.p)+'</p><span class="say">'+esc(g.b.say)+'</span></div></div>').join('');
+  const criterio=[
+    'Ejecuta los pasos completos sin consultar al formador.',
+    'Obtiene el resultado esperado y sabe verificarlo.',
+    'Explica con sus palabras por qué funciona.'
+  ];
+  const materials=online
+    ? ['Sala de videoconferencia con pantalla compartida y control remoto opcional.','Guion de pasos en PDF compartido antes de la sesión.','Grabación de respaldo de la demostración (plan B).','Documento colaborativo para el ticket de salida.']
+    : ['Un equipo por alumno con el entorno ya preparado.','Proyector comprobado y tamaño de letra ≥ 20 pt.','Guion de pasos impreso o en PDF.','Grabación de respaldo de la demostración (plan B).'];
+  $('#microExtra').innerHTML=
+    '<div class="card pad" data-hue="teal"><span class="tag">Criterio de éxito</span><ul class="dlist" style="margin-top:10px">'+criterio.map(c=>'<li>'+esc(c)+'</li>').join('')+'</ul>'+
+    '<p style="font-size:.8rem;color:var(--ink-3);margin:12px 0 0">Estos tres puntos son tu lista de cotejo. Si el alumno cumple los tres, la sesión funcionó.</p></div>'+
+    '<div class="card pad" data-hue="amber"><span class="tag">Materiales y plan B</span><ul class="dlist" style="margin-top:10px">'+materials.map(c=>'<li>'+esc(c)+'</li>').join('')+'</ul>'+
+    '<p style="font-size:.8rem;color:var(--ink-3);margin:12px 0 0"><b>Si falla la demo en vivo:</b> pasa al screencast grabado y sigue con la práctica. Nunca depures en directo delante del grupo.</p></div>';
+  return {obj:obj,guion:guion,criterio:criterio,materials:materials};
+}
+function microMarkdown(){
+  const d=buildMicro(), m=S.micro;
+  let md='# Microclase · '+m.topic+'\n\n';
+  md+='**Duración:** '+m.dur+' min · **Nivel:** '+m.level+' · **Modalidad:** '+(m.mode==='tele'?'teleformación síncrona':'presencial')+'\n\n';
+  md+='## Objetivo observable\n\n'+d.obj+'\n\n## Guion minuteado\n\n';
+  d.guion.forEach(g=>{ md+='### '+g.from+'–'+g.to+' min · '+g.b.t+'\n\n'+g.b.p+'\n\n> '+g.b.say+'\n\n'; });
+  md+='## Criterio de éxito\n\n'+d.criterio.map(c=>'- '+c).join('\n')+'\n\n## Materiales\n\n'+d.materials.map(c=>'- '+c).join('\n');
+  md+='\n\n**Plan B:** si falla la demostración en vivo, screencast grabado y práctica igualmente.\n';
+  return md;
+}
+function bindMicro(){
+  $('#mTopic').value=S.micro.topic; $('#mDur').value=S.micro.dur; $('#mLevel').value=S.micro.level;
+  $('#mMode').value=S.micro.mode; $('#mVerb').value=S.micro.verb; $('#mPractice').value=S.micro.practice;
+  $('#mPracticeVal').textContent=S.micro.practice+' %';
+  $('#mTopic').addEventListener('input',e=>{ S.micro.topic=e.target.value.trim()||'un procedimiento que domines'; save(); buildMicro(); });
+  $('#mDur').addEventListener('change',e=>{ S.micro.dur=Number(e.target.value); save(); buildMicro(); });
+  $('#mLevel').addEventListener('change',e=>{ S.micro.level=e.target.value; save(); buildMicro(); });
+  $('#mMode').addEventListener('change',e=>{ S.micro.mode=e.target.value; save(); buildMicro(); });
+  $('#mVerb').addEventListener('change',e=>{ S.micro.verb=e.target.value; save(); buildMicro(); });
+  $('#mPractice').addEventListener('input',e=>{ S.micro.practice=Number(e.target.value); $('#mPracticeVal').textContent=S.micro.practice+' %'; save(); buildMicro(); });
+  $('#mCopy').addEventListener('click',()=>copyText(microMarkdown(),'Guion copiado. Pégalo en tu carpeta del MF1444.'));
+  $('#mDownload').addEventListener('click',()=>{ download('microclase-ssce0110.md',microMarkdown(),'text/markdown;charset=utf-8'); toast('Guion descargado en Markdown'); });
+}
+
+/* ============================================================
+   RÚBRICA + RADAR
+   ============================================================ */
+function renderRubric(){
+  $('#rubSliders').innerHTML=RUBRIC.map((r,i)=>
+    '<div class="rub-slider"><div class="ctrl-row"><label class="lbl" for="rub'+i+'" style="margin:0">'+esc(r.k)+'</label>'+
+    '<span class="val" id="rubV'+i+'">'+S.rub[i]+'/4</span></div>'+
+    '<input type="range" id="rub'+i+'" min="0" max="4" step="1" value="'+S.rub[i]+'" data-rub="'+i+'">'+
+    '<div class="tip" id="rubT'+i+'">'+esc(S.rub[i]>=3?r.tip:'Necesita trabajo: '+r.tip.charAt(0).toLowerCase()+r.tip.slice(1))+'</div></div>').join('');
+  $$('#rubSliders input').forEach(inp=>inp.addEventListener('input',()=>{
+    const i=Number(inp.dataset.rub); S.rub[i]=Number(inp.value); save();
+    $('#rubV'+i).textContent=S.rub[i]+'/4';
+    $('#rubT'+i).textContent=S.rub[i]>=3?RUBRIC[i].tip:'Necesita trabajo: '+RUBRIC[i].tip.charAt(0).toLowerCase()+RUBRIC[i].tip.slice(1);
+    drawRadar();
+  }));
+  drawRadar();
+}
+function drawRadar(){
+  const svg=$('#radar'); if(!svg) return;
+  const cx=170, cy=155, R=104, n=6;
+  const accent=getComputedStyle(document.body).getPropertyValue('--accent').trim()||'#3B34C7';
+  const pt=(i,r)=>{ const a=-Math.PI/2+i*2*Math.PI/n; return [cx+Math.cos(a)*r, cy+Math.sin(a)*r]; };
+  let g='';
+  for(let ring=1;ring<=4;ring++){
+    const p=[]; for(let i=0;i<n;i++) p.push(pt(i,R*ring/4).map(v=>v.toFixed(1)).join(','));
+    g+='<polygon points="'+p.join(' ')+'" fill="'+(ring===4?'#FDFBF7':'none')+'" stroke="#E6DCCB" stroke-width="1"/>';
+  }
+  for(let i=0;i<n;i++){ const p=pt(i,R); g+='<line x1="'+cx+'" y1="'+cy+'" x2="'+p[0].toFixed(1)+'" y2="'+p[1].toFixed(1)+'" stroke="#E6DCCB" stroke-width="1"/>'; }
+  const dp=[]; for(let i=0;i<n;i++) dp.push(pt(i,R*Math.max(S.rub[i],0.12)/4).map(v=>v.toFixed(1)).join(','));
+  g+='<polygon points="'+dp.join(' ')+'" fill="'+accent+'" fill-opacity=".18" stroke="'+accent+'" stroke-width="2.5" stroke-linejoin="round"/>';
+  for(let i=0;i<n;i++){ const p=pt(i,R*Math.max(S.rub[i],0.12)/4); g+='<circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="4.5" fill="#fff" stroke="'+accent+'" stroke-width="2.5"/>'; }
+  for(let i=0;i<n;i++){
+    const p=pt(i,R+26);
+    const anchor=Math.abs(p[0]-cx)<6?'middle':(p[0]>cx?'start':'end');
+    g+='<text x="'+p[0].toFixed(1)+'" y="'+(p[1]+4).toFixed(1)+'" text-anchor="'+anchor+'" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600" fill="#3F4A5E">'+esc(RUBRIC[i].k)+'</text>';
+    g+='<text x="'+p[0].toFixed(1)+'" y="'+(p[1]+18).toFixed(1)+'" text-anchor="'+anchor+'" font-family="JetBrains Mono,monospace" font-size="11" fill="'+accent+'">'+S.rub[i]+'</text>';
+  }
+  const sum=S.rub.reduce((a,b)=>a+b,0);
+  g+='<text x="'+cx+'" y="'+(cy+R+58)+'" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="26" fill="#151C2B">'+sum+'<tspan font-size="15" fill="#6E7789">/24</tspan></text>';
+  svg.innerHTML=g;
+  const v=$('#rubVerdict');
+  let txt,bg,fg;
+  if(sum>=21){ txt='Nivel sólido: puedes impartirla. Grábala una vez más y guárdala en tu portfolio.'; bg='var(--ok-soft)'; fg='#1F5E33'; }
+  else if(sum>=18){ txt='Vas por buen camino. Pule el criterio más bajo y repite el ensayo cronometrado.'; bg='var(--info-soft)'; fg='#123B84'; }
+  else if(sum>=12){ txt='Todavía es una charla, no una clase. Sube práctica y feedback antes de volver a grabar.'; bg='var(--warn-soft)'; fg='#6E4A00'; }
+  else { txt='Reescribe el objetivo y el guion. Empieza por una sola idea y una sola tarea observable.'; bg='var(--danger-soft)'; fg='#8E2029'; }
+  v.textContent=txt; v.style.background=bg; v.style.color=fg;
+}
+$('#rubReset').addEventListener('click',()=>{
+  const snap=S.rub.slice(); S.rub=[3,3,3,3,3,3]; save(); renderRubric();
+  toast('Rúbrica reiniciada',{action:'Deshacer',onAction:()=>{S.rub=snap;save();renderRubric();}});
+});
+
+/* ============================================================
+   EVIDENCIAS
+   ============================================================ */
+function renderEvidence(){
+  $('#evidenceBox').innerHTML=EVIDENCE.map((t,i)=>
+    '<label class="check"><input type="checkbox" data-ev="'+i+'"'+(S.evidence[i]?' checked':'')+'>'+
+    '<span class="box"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span class="txt" style="font-weight:500">'+esc(t)+'</span></label>').join('');
+  $$('#evidenceBox input').forEach(inp=>inp.addEventListener('change',()=>{ S.evidence[inp.dataset.ev]=inp.checked; save(); updateEvRing(); }));
+  updateEvRing();
+}
+function updateEvRing(){
+  let total=EVIDENCE.length, done=EVIDENCE.reduce((n,_,i)=>n+(S.evidence[i]?1:0),0);
+  MODULES.forEach(m=>{ total+=m.deliver.length; done+=m.deliver.reduce((n,_,i)=>n+(S.deliver[m.id+':'+i]?1:0),0); });
+  const pct=Math.round(done/total*100);
+  $('#evRing').style.strokeDashoffset=String(314.16*(1-done/total));
+  $('#evPct').textContent=pct+'%'; $('#evCount').textContent=done+' / '+total;
+  $('#navRing').style.strokeDashoffset=String(94.2*(1-done/total));
+  $('#navRingTxt').textContent=pct+'%';
+  $('#evMsg').textContent = pct===0?'Incluye los entregables de cada módulo más estas diez piezas.'
+    : pct<30?'Primeras piezas dentro. Guarda cada entrega con fecha y versión.'
+    : pct<70?'Tu portfolio ya se puede enseñar. Falta lo audiovisual y la evaluación.'
+    : pct<100?'Recta final: cierra el vídeo de la microclase y el README índice.'
+    : 'Portfolio completo. En abril esto es tu carta de presentación.';
+}
+$('#evReset').addEventListener('click',()=>{
+  const snap=Object.assign({},S.evidence); S.evidence={}; save(); renderEvidence();
+  toast('Evidencias reiniciadas',{warn:true,action:'Deshacer',onAction:()=>{S.evidence=snap;save();renderEvidence();}});
+});
+$('#ringBtn').addEventListener('click',()=>{ document.getElementById('evaluar').scrollIntoView({behavior:reduced?'auto':'smooth'}); });
+
+/* ============================================================
+   GLOSARIO
+   ============================================================ */
+let glCat='Todas', glFavOnly=false, glQ='';
+function renderGlChips(){
+  const cats=['Todas'].concat(Array.from(new Set(GLOSSARY.map(g=>g.c))));
+  $('#glChips').innerHTML=cats.map(c=>'<button class="chip" data-cat="'+esc(c)+'" aria-pressed="'+(glCat===c)+'">'+esc(c)+'</button>').join('');
+  $$('#glChips .chip').forEach(b=>b.addEventListener('click',()=>{ glCat=b.dataset.cat; renderGlChips(); renderGlossary(); }));
+}
+function renderGlossary(){
+  const q=norm(glQ);
+  const list=GLOSSARY.filter(g=>{
+    if(glCat!=='Todas'&&g.c!==glCat) return false;
+    if(glFavOnly&&!S.fav[g.t]) return false;
+    if(q&&!(norm(g.t).includes(q)||norm(g.d).includes(q)||norm(g.u).includes(q))) return false;
+    return true;
+  });
+  $('#glCount').textContent=list.length+' de '+GLOSSARY.length+' términos';
+  $('#glGrid').innerHTML=list.map(g=>
+    '<article class="gl-card"><button class="star" data-fav="'+esc(g.t)+'" aria-pressed="'+(!!S.fav[g.t])+'" aria-label="Marcar '+esc(g.t)+' como favorito">'+
+    '<svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9 2.9-6z" stroke-linejoin="round"/></svg></button>'+
+    '<span class="tag" style="margin-bottom:8px;display:inline-block">'+esc(g.c)+'</span>'+
+    '<h4>'+esc(g.t)+'</h4><p class="def">'+esc(g.d)+'</p><p class="use">'+esc(g.u)+'</p></article>').join('');
+  $('#glEmpty').innerHTML=list.length?'':'<div class="empty"><b>Sin resultados para «'+esc(glQ)+'»</b>Prueba con UF, rúbrica, DUA, Kirkpatrick o quita los filtros.<div style="margin-top:14px"><button class="btn btn-soft btn-sm" id="glClear">Limpiar búsqueda y filtros</button></div></div>';
+  const cl=$('#glClear');
+  if(cl) cl.addEventListener('click',()=>{ glQ=''; glCat='Todas'; glFavOnly=false; $('#glSearch').value=''; $('#glFav').setAttribute('aria-pressed','false'); renderGlChips(); renderGlossary(); });
+  $$('#glGrid .star').forEach(b=>b.addEventListener('click',()=>{
+    const t=b.dataset.fav;
+    if(S.fav[t]) delete S.fav[t]; else S.fav[t]=true;
+    save(); b.setAttribute('aria-pressed',String(!!S.fav[t]));
+    if(glFavOnly) renderGlossary();
+  }));
+}
+$('#glSearch').addEventListener('input',e=>{ glQ=e.target.value; renderGlossary(); });
+$('#glFav').addEventListener('click',e=>{ glFavOnly=!glFavOnly; e.currentTarget.setAttribute('aria-pressed',String(glFavOnly)); renderGlossary(); });
+
+/* ============================================================
+   TEST
+   ============================================================ */
+let QZ={items:[],idx:0,answers:[],locked:false};
+function shuffle(a){ const x=a.slice(); for(let i=x.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); const t=x[i]; x[i]=x[j]; x[j]=t; } return x; }
+function startQuiz(subset){
+  const pool=(subset&&subset.length?subset:QUIZ).map(q=>{
+    const opts=shuffle(q.a.map((text,i)=>({text:text,ok:i===q.c})));
+    return {q:q.q,e:q.e,opts:opts};
+  });
+  QZ={items:shuffle(pool),idx:0,answers:[],locked:false};
+  renderQuiz();
+}
+function renderDots(){
+  $('#qDots').innerHTML=QZ.items.map((_,i)=>{
+    const a=QZ.answers[i];
+    const cls=a===undefined?(i===QZ.idx?'now':''):(a?'done':'miss');
+    return '<i class="'+cls+'"></i>';
+  }).join('');
+}
+function renderQuiz(){
+  const total=QZ.items.length;
+  if(QZ.idx>=total){ renderScore(); return; }
+  const it=QZ.items[QZ.idx];
+  QZ.locked=false;
+  $('#qProgress').textContent='Pregunta '+(QZ.idx+1)+' / '+total;
+  $('#qBest').textContent=S.best===null?'—':S.best+' / '+QUIZ.length;
+  renderDots();
+  $('#qBody').innerHTML='<div class="q-stem">'+esc(it.q)+'</div><div class="opts" id="opts">'+
+    it.opts.map((o,i)=>'<button class="opt" data-i="'+i+'"><span class="k">'+(i+1)+'</span><span>'+esc(o.text)+'</span></button>').join('')+
+    '</div><div id="explain"></div>';
+  $('#qFoot').innerHTML='<span style="font-size:.78rem;color:var(--ink-3)">Teclas <b>1–4</b> para responder · <b>Enter</b> para continuar</span>'+
+    '<button class="btn btn-ghost btn-sm" id="qSkip">Saltar y ver respuesta</button>';
+  $$('#opts .opt').forEach(b=>b.addEventListener('click',()=>answer(Number(b.dataset.i))));
+  $('#qSkip').addEventListener('click',()=>answer(-1));
+}
+function answer(i){
+  if(QZ.locked) return; QZ.locked=true;
+  const it=QZ.items[QZ.idx];
+  const correctIdx=it.opts.findIndex(o=>o.ok);
+  const ok=i===correctIdx;
+  QZ.answers[QZ.idx]=ok;
+  $$('#opts .opt').forEach((b,j)=>{
+    b.disabled=true;
+    if(j===correctIdx) b.classList.add('correct');
+    else if(j===i) b.classList.add('wrong');
+  });
+  $('#explain').innerHTML='<div class="explain '+(ok?'ok':'no')+'"><b>'+(ok?'Correcto. ':'Casi. ')+'</b>'+esc(it.e)+'</div>';
+  renderDots();
+  const last=QZ.idx===QZ.items.length-1;
+  $('#qFoot').innerHTML='<span style="font-size:.78rem;color:var(--ink-3)">'+(ok?'Sigue así.':'Anota esta: cae en el examen de concepto.')+'</span>'+
+    '<button class="btn btn-primary btn-sm" id="qNext">'+(last?'Ver resultado':'Siguiente pregunta')+'</button>';
+  $('#qNext').addEventListener('click',()=>{ QZ.idx++; renderQuiz(); });
+  $('#qNext').focus();
+}
+function renderScore(){
+  const total=QZ.items.length;
+  const good=QZ.answers.filter(Boolean).length;
+  const pct=Math.round(good/total*100);
+  if(total===QUIZ.length&&(S.best===null||good>S.best)){ S.best=good; save(); }
+  $('#qProgress').textContent='Resultado';
+  $('#qBest').textContent=S.best===null?'—':S.best+' / '+QUIZ.length;
+  renderDots();
+  const failed=QZ.items.filter((_,i)=>!QZ.answers[i]);
+  let verdict,vclass;
+  if(pct>=85){ verdict='Listo para el día 1. Dominas el marco: ahora céntrate en la microclase.'; vclass='ok'; }
+  else if(pct>=60){ verdict='Buen arranque. Repasa las falladas y vuelve a intentarlo mañana.'; vclass='no'; }
+  else { verdict='Vuelve al glosario y a la sección «El curso». Es vocabulario, no dificultad.'; vclass='no'; }
+  $('#qBody').innerHTML='<div class="score-hero"><div class="num">'+good+'<small>/'+total+'</small></div>'+
+    '<p style="font-size:.9rem;color:var(--ink-2);margin:8px 0 0">'+pct+'% de acierto</p></div>'+
+    '<div class="explain '+vclass+'">'+esc(verdict)+'</div>'+
+    (failed.length?'<div class="review"><span class="mono" style="color:var(--ink-3)">Para repasar</span>'+
+      failed.map(f=>'<div class="review-item"><b>'+esc(f.q)+'</b>'+esc(f.opts.find(o=>o.ok).text)+'</div>').join('')+'</div>':'');
+  $('#qFoot').innerHTML='<span style="font-size:.78rem;color:var(--ink-3)">Mejor marca guardada en este navegador</span><div class="row">'+
+    (failed.length?'<button class="btn btn-soft btn-sm" id="qFailed">Repasar '+failed.length+' fallada'+(failed.length>1?'s':'')+'</button>':'')+
+    '<button class="btn btn-primary btn-sm" id="qAgain">Repetir las 12</button></div>';
+  $('#qAgain').addEventListener('click',()=>startQuiz());
+  const bf=$('#qFailed');
+  if(bf) bf.addEventListener('click',()=>{
+    const originals=failed.map(f=>QUIZ.find(q=>q.q===f.q)).filter(Boolean);
+    startQuiz(originals);
+  });
+  if(pct>=85) confetti();
+}
+function confetti(){
+  if(reduced) return;
+  const shell=$('#quiz'); const colors=['#3B34C7','#00958C','#D6218C','#F2A20C','#1D6BFF','#3E9B4F'];
+  for(let i=0;i<28;i++){
+    const s=document.createElement('span');
+    s.className='confetti';
+    s.style.left=(Math.random()*100)+'%';
+    s.style.background=colors[i%colors.length];
+    s.style.animationDuration=(1.5+Math.random()*1.4)+'s';
+    s.style.animationDelay=(Math.random()*.4)+'s';
+    s.style.transform='rotate('+(Math.random()*360)+'deg)';
+    shell.appendChild(s);
+    s.addEventListener('animationend',()=>s.remove());
+    setTimeout(()=>s.remove(),4000);
+  }
+}
+
+/* ============================================================
+   EXPORT GLOBAL / RESET
+   ============================================================ */
+$('#footExport').addEventListener('click',()=>{
+  let md='# Progreso SSCE0110 · Ajfonts\n\nGenerado el '+new Date().toLocaleDateString('es-ES')+'\n\n';
+  md+='## Checklist del día 1\n\n'+CHECKLIST.map((c,i)=>'- ['+(S.check[i]?'x':' ')+'] '+c.t).join('\n')+'\n\n';
+  md+='## Entregables por módulo\n\n';
+  MODULES.forEach(m=>{ md+='### '+m.code+' · '+m.name+'\n\n'+m.deliver.map((d,i)=>'- ['+(S.deliver[m.id+':'+i]?'x':' ')+'] '+d).join('\n')+'\n\n'; });
+  md+='## Evidencias del portfolio\n\n'+EVIDENCE.map((e,i)=>'- ['+(S.evidence[i]?'x':' ')+'] '+e).join('\n')+'\n\n';
+  md+='## Notas\n\n';
+  MODULES.forEach(m=>{ if(S.notes[m.id]&&S.notes[m.id].trim()) md+='### '+m.short+'\n\n'+S.notes[m.id]+'\n\n'; });
+  md+='## Rúbrica de microclase\n\n'+RUBRIC.map((r,i)=>'- '+r.k+': '+S.rub[i]+'/4').join('\n')+'\n\n';
+  md+=planMarkdown()+'\n\n'+microMarkdown();
+  download('progreso-ssce0110.md',md,'text/markdown;charset=utf-8');
+  toast('Progreso completo exportado en Markdown');
+});
+$('#footPrint').addEventListener('click',()=>window.print());
+$('#footReset').addEventListener('click',()=>{ $('#modal').classList.add('on'); setTimeout(()=>$('#modalCancel').focus(),80); });
+$('#modalCancel').addEventListener('click',()=>$('#modal').classList.remove('on'));
+$('#modalScrim').addEventListener('click',()=>$('#modal').classList.remove('on'));
+$('#modalOk').addEventListener('click',()=>{
+  const snap=JSON.stringify(S);
+  S=structuredClone(DEFAULTS); save();
+  try{ localStorage.removeItem(KEY); }catch(e){}
+  $('#modal').classList.remove('on');
+  boot(true);
+  toast('Todos los datos borrados',{warn:true,action:'Deshacer',onAction:()=>{
+    try{ S=JSON.parse(snap); }catch(e){ S=structuredClone(DEFAULTS); }
+    save(); boot(true); toast('Datos restaurados');
+  }});
+});
+
+/* ============================================================
+   NAV / SCROLL / REVEAL
+   ============================================================ */
+const SECTIONS=['inicio','arranque','curso','modulos','plan','aula','microclase','evaluar','glosario','test','despues'];
+function buildMobilePanel(){
+  const labels={inicio:'Inicio',arranque:'Arranque',curso:'El curso',modulos:'Módulos',plan:'Plan',aula:'Día 1',microclase:'Microclase',evaluar:'Evaluar',glosario:'Glosario',test:'Test',despues:'Después'};
+  $('#mpanel').innerHTML=SECTIONS.map((id,i)=>'<a href="#'+id+'"><i>'+pad(i)+'</i>'+labels[id]+'</a>').join('');
+  $$('#mpanel a').forEach(a=>a.addEventListener('click',()=>{ $('#mpanel').classList.remove('open'); $('#menuBtn').setAttribute('aria-expanded','false'); }));
+}
+$('#menuBtn').addEventListener('click',()=>{
+  const open=$('#mpanel').classList.toggle('open');
+  $('#menuBtn').setAttribute('aria-expanded',String(open));
+});
+let ticking=false;
+function onScroll(){
+  if(ticking) return; ticking=true;
+  requestAnimationFrame(()=>{
+    const y=window.scrollY;
+    const h=document.documentElement.scrollHeight-window.innerHeight;
+    $('#navProgress').style.width=(h>0?(y/h*100):0)+'%';
+    $('#nav').classList.toggle('scrolled',y>12);
+    $('#totop').classList.toggle('on',y>620);
+    if(!reduced){ const a=$('.aurora'); if(a) a.style.transform='translateY('+(y*0.06)+'px)'; }
+    const navH=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'))||68;
+    let current=SECTIONS[0];
+    for(const id of SECTIONS){
+      const el=document.getElementById(id);
+      if(el&&el.getBoundingClientRect().top<=navH+70) current=id;
+    }
+    $$('#navlinks a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current));
+    $$('#mpanel a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current));
+    ticking=false;
+  });
+}
+window.addEventListener('scroll',onScroll,{passive:true});
+window.addEventListener('resize',onScroll,{passive:true});
+$('#totop').addEventListener('click',()=>window.scrollTo({top:0,behavior:reduced?'auto':'smooth'}));
+function initReveal(){
+  if(!('IntersectionObserver' in window)){ $$('.reveal,.stagger').forEach(e=>e.classList.add('in')); return; }
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(en=>{
+      if(en.isIntersecting){
+        en.target.classList.add('in');
+        if(en.target.classList.contains('stagger')){
+          Array.from(en.target.children).forEach((c,i)=>{ c.style.transitionDelay=(i*0.06)+'s'; });
+        }
+        io.unobserve(en.target);
+      }
+    });
+  },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  $$('.reveal,.stagger').forEach(e=>io.observe(e));
+}
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){
+    if($('#drawer').classList.contains('on')) closeDrawer();
+    else if($('#modal').classList.contains('on')) $('#modal').classList.remove('on');
+    else if($('#mpanel').classList.contains('open')){ $('#mpanel').classList.remove('open'); $('#menuBtn').setAttribute('aria-expanded','false'); }
+  }
+  if(e.key==='/'&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){
+    e.preventDefault();
+    document.getElementById('glosario').scrollIntoView({behavior:reduced?'auto':'smooth'});
+    setTimeout(()=>$('#glSearch').focus(),reduced?0:450);
+  }
+  if($('#drawer').classList.contains('on')&&e.key==='Tab'){
+    const f=$$('#drawer button, #drawer input, #drawer textarea, #drawer select, #drawer a[href]').filter(x=>!x.disabled&&x.offsetParent!==null);
+    if(!f.length) return;
+    const first=f[0], last=f[f.length-1];
+    if(e.shiftKey&&document.activeElement===first){ e.preventDefault(); last.focus(); }
+    else if(!e.shiftKey&&document.activeElement===last){ e.preventDefault(); first.focus(); }
+  }
+  const inQuiz=$('#test').getBoundingClientRect();
+  const quizVisible=inQuiz.top<window.innerHeight*0.8&&inQuiz.bottom>window.innerHeight*0.2;
+  if(quizVisible&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){
+    if(['1','2','3','4'].includes(e.key)&&!QZ.locked&&QZ.idx<QZ.items.length){
+      const b=$$('#opts .opt')[Number(e.key)-1]; if(b){ e.preventDefault(); b.click(); }
+    }
+    if(e.key==='Enter'){ const n=$('#qNext'); if(n){ e.preventDefault(); n.click(); } }
+  }
+});
+
+/* ============================================================
+   BOOT
+   ============================================================ */
+function boot(reboot){
+  document.body.dataset.accent=S.prefs.accent;
+  document.body.dataset.density=S.prefs.density;
+  renderChecklist();
+  renderRibbon(); renderStruct($('#viewRuta').getAttribute('aria-pressed')==='true'?'ruta':'oficial');
+  renderFamChips(); renderModules();
+  renderDayButtons(); bindPlannerValues(); renderPlan();
+  renderPitch(); buildMicro(); renderRubric();
+  renderEvidence();
+  renderGlChips(); renderGlossary();
+  $('#qBest').textContent=S.best===null?'—':S.best+' / '+QUIZ.length;
+  if(!reboot){ startQuiz(); } else { startQuiz(); }
+  updateCountdown();
+}
+$('#pStart').value=S.plan.start;
+bindPlanner(); bindMicro(); buildMobilePanel();
+boot(false);
+initReveal(); onScroll();
+setInterval(updateCountdown,1000);
+})();
+</script>
+</body>
+</html>

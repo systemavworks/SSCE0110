@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MF1442_3 · Programación Didáctica · SSCE0110</title>
+<style>
+  :root {
+    --bg: #fafbfc;
+    --surface: #ffffff;
+    --surface-2: #f4f6f8;
+    --border: #e4e8ec;
+    --text: #1a2332;
+    --text-soft: #5a6676;
+    --text-muted: #8a94a3;
+    --accent: #2563eb;
+    --accent-soft: #dbeafe;
+    --accent-hover: #1d4ed8;
+    --success: #059669;
+    --success-soft: #d1fae5;
+    --warning: #d97706;
+    --warning-soft: #fef3c7;
+    --danger: #dc2626;
+    --danger-soft: #fee2e2;
+    --radius: 10px;
+    --radius-sm: 6px;
+    --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+    --shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+    --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.08);
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: "SF Mono", Monaco, Consolas, "Courier New", monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- NAV LATERAL ---------- */
+  .nav {
+    position: fixed;
+    top: 0; left: 0;
+    width: 240px;
+    height: 100vh;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    padding: 24px 16px;
+    overflow-y: auto;
+    z-index: 100;
+  }
+
+  .nav-brand {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .nav-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 24px;
+    line-height: 1.3;
+  }
+
+  .nav-list { list-style: none; }
+
+  .nav-list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    color: var(--text-soft);
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: var(--radius-sm);
+    transition: all 0.15s ease;
+    margin-bottom: 2px;
+  }
+
+  .nav-list a:hover {
+    background: var(--surface-2);
+    color: var(--text);
+  }
+
+  .nav-list a .num {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    min-width: 20px;
+  }
+
+  .nav-list a.active {
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* ---------- MAIN ---------- */
+  .main {
+    margin-left: 240px;
+    padding: 48px 56px;
+    max-width: 1100px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    background: linear-gradient(135deg, #eff6ff 0%, #fafbfc 100%);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 40px;
+    margin-bottom: 48px;
+  }
+
+  .hero-tag {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+
+  .hero-sub {
+    font-size: 17px;
+    color: var(--text-soft);
+    margin-bottom: 24px;
+    max-width: 680px;
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 28px;
+  }
+
+  .stat {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+  }
+
+  .stat-num {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* ---------- SECCIONES ---------- */
+  section {
+    margin-bottom: 56px;
+    scroll-margin-top: 24px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+
+  .section-num {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 24px 0 12px;
+    color: var(--text);
+  }
+
+  p { margin-bottom: 12px; color: var(--text-soft); }
+  p.lead { font-size: 17px; color: var(--text); }
+
+  ul, ol { margin: 8px 0 16px 24px; color: var(--text-soft); }
+  li { margin-bottom: 6px; }
+
+  /* ---------- CARDS ---------- */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+  }
+
+  .card h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card p { font-size: 14px; margin-bottom: 0; }
+
+  .card-icon {
+    width: 28px; height: 28px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  /* ---------- FICHA TÉCNICA ---------- */
+  .ficha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+  .ficha-item {
+    background: var(--surface);
+    padding: 16px 20px;
+  }
+
+  .ficha-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  .ficha-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  /* ---------- CAPACIDADES ---------- */
+  .capacidad {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius-sm);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+
+  .capacidad-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+
+  .capacidad h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .capacidad .cap-desc {
+    font-size: 14px;
+    color: var(--text-soft);
+    font-style: italic;
+  }
+
+  .capacidad-badge {
+    background: var(--accent);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .criterios {
+    background: var(--surface-2);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin-top: 12px;
+  }
+
+  .criterios-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+
+  .criterios ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 13px;
+    color: var(--text-soft);
+  }
+
+  .criterios li { margin-bottom: 6px; line-height: 1.5; }
+
+  /* ---------- CONSTRUCTOR ---------- */
+  .constructor {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border: 2px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .constructor::before {
+    content: "★";
+    position: absolute;
+    top: 16px; right: 20px;
+    font-size: 24px;
+    color: var(--accent);
+    opacity: 0.3;
+  }
+
+  .constructor-tag {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .constructor h3 {
+    font-size: 20px;
+    margin: 0 0 8px;
+  }
+
+  .constructor > p {
+    color: var(--text-soft);
+    margin-bottom: 24px;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .form-field { display: flex; flex-direction: column; gap: 6px; }
+  .form-field.full { grid-column: 1 / -1; }
+
+  .form-field label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 14px;
+    background: var(--surface);
+    color: var(--text);
+    transition: border-color 0.15s;
+  }
+
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+
+  .form-field textarea { resize: vertical; min-height: 60px; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .btn:hover { background: var(--accent-hover); transform: translateY(-1px); }
+
+  .btn-secondary {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+
+  .btn-secondary:hover { background: var(--surface-2); }
+
+  .btn-group { display: flex; gap: 10px; flex-wrap: wrap; }
+
+  .output {
+    margin-top: 24px;
+    background: var(--text);
+    color: #e2e8f0;
+    border-radius: var(--radius-sm);
+    padding: 20px 24px;
+    font-family: var(--mono);
+    font-size: 13px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-height: 500px;
+    overflow-y: auto;
+    display: none;
+  }
+
+  .output.visible { display: block; }
+
+  /* ---------- ALINEACIÓN ---------- */
+  .alineacion {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin: 16px 0;
+  }
+
+  .alineacion-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .alineacion-item::after {
+    content: "→";
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .alineacion-item:last-child::after { display: none; }
+
+  .alineacion-item strong {
+    display: block;
+    color: var(--accent);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  /* ---------- ENTREGABLES ---------- */
+  .entregable {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .entregable:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+
+  .entregable input[type="checkbox"] {
+    width: 18px; height: 18px;
+    accent-color: var(--accent);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .entregable.checked {
+    background: var(--success-soft);
+    border-color: var(--success);
+  }
+
+  .entregable.checked .ent-text { text-decoration: line-through; color: var(--text-muted); }
+
+  .ent-text { flex: 1; font-size: 14px; }
+  .ent-tag {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: var(--surface-2);
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  /* ---------- ERRORES ---------- */
+  .error-item {
+    background: var(--danger-soft);
+    border-left: 4px solid var(--danger);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin-bottom: 12px;
+  }
+
+  .error-item strong {
+    color: var(--danger);
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+
+  .error-item p {
+    font-size: 13px;
+    color: var(--text-soft);
+    margin: 0;
+  }
+
+  /* ---------- BITÁCORA ---------- */
+  .bitacora-entry {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px 20px;
+    margin-bottom: 12px;
+  }
+
+  .bitacora-date {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  .bitacora-content {
+    font-size: 14px;
+    color: var(--text-soft);
+    line-height: 1.6;
+  }
+
+  .bitacora-content strong { color: var(--text); }
+
+  /* ---------- VOCABULARIO ---------- */
+  .vocab-search {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-family: var(--font);
+  }
+
+  .vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .vocab-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+  }
+
+  .vocab-term {
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .vocab-def {
+    font-size: 13px;
+    color: var(--text-soft);
+    line-height: 1.5;
+  }
+
+  /* ---------- TEST ---------- */
+  .test-question {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+
+  .test-q-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 14px;
+  }
+
+  .test-options { display: flex; flex-direction: column; gap: 8px; }
+
+  .test-option {
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.15s;
+    background: var(--surface);
+  }
+
+  .test-option:hover { border-color: var(--accent); background: var(--accent-soft); }
+
+  .test-option.correct {
+    background: var(--success-soft);
+    border-color: var(--success);
+    color: var(--success);
+    font-weight: 500;
+  }
+
+  .test-option.wrong {
+    background: var(--danger-soft);
+    border-color: var(--danger);
+    color: var(--danger);
+  }
+
+  .test-explanation {
+    margin-top: 10px;
+    padding: 10px 14px;
+    background: var(--surface-2);
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    color: var(--text-soft);
+    display: none;
+  }
+
+  .test-explanation.visible { display: block; }
+
+  .test-score {
+    text-align: center;
+    padding: 20px;
+    background: var(--accent-soft);
+    border-radius: var(--radius);
+    margin-top: 20px;
+    display: none;
+  }
+
+  .test-score.visible { display: block; }
+
+  .test-score-num {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  /* ---------- CALLOUT ---------- */
+  .callout {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin: 16px 0;
+  }
+
+  .callout.warning {
+    background: var(--warning-soft);
+    border-left-color: var(--warning);
+  }
+
+  .callout.success {
+    background: var(--success-soft);
+    border-left-color: var(--success);
+  }
+
+  .callout strong { color: var(--text); display: block; margin-bottom: 4px; }
+  .callout p { margin: 0; font-size: 14px; }
+
+  /* ---------- TABLA ---------- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    background: var(--surface);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  th, td {
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  th {
+    background: var(--surface-2);
+    font-weight: 600;
+    color: var(--text);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 900px) {
+    .nav { display: none; }
+    .main { margin-left: 0; padding: 24px; }
+    .hero { padding: 28px; }
+    .hero h1 { font-size: 24px; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+    .form-grid { grid-template-columns: 1fr; }
+    .alineacion { grid-template-columns: 1fr 1fr; }
+    .alineacion-item::after { display: none; }
+  }
+
+  /* ---------- SCROLLBAR ---------- */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: var(--surface-2); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="nav-brand">SSCE0110 · MF1442_3</div>
+  <div class="nav-title">Programación Didáctica</div>
+  <ul class="nav-list">
+    <li><a href="#inicio" class="active"><span class="num">00</span>Inicio</a></li>
+    <li><a href="#ficha"><span class="num">01</span>Ficha del módulo</a></li>
+    <li><a href="#capacidades"><span class="num">02</span>Capacidades y criterios</a></li>
+    <li><a href="#contenidos"><span class="num">03</span>Contenidos</a></li>
+    <li><a href="#alineacion"><span class="num">04</span>Alineación constructiva</a></li>
+    <li><a href="#entregables"><span class="num">05</span>Entregables</a></li>
+    <li><a href="#constructor"><span class="num">06</span>Constructor ★</a></li>
+    <li><a href="#errores"><span class="num">07</span>Errores típicos</a></li>
+    <li><a href="#bitacora"><span class="num">08</span>Bitácora</a></li>
+    <li><a href="#vocab"><span class="num">09</span>Vocabulario</a></li>
+    <li><a href="#test"><span class="num">10</span>Test</a></li>
+  </ul>
+</nav>
+
+<!-- ============ MAIN ============ -->
+<main class="main">
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <span class="hero-tag">Módulo Formativo · 60 h</span>
+    <h1>MF1442_3 · Programación didáctica de acciones formativas para el empleo</h1>
+    <p class="hero-sub">
+      El primer módulo del SSCE0110. Aquí aprendes a <strong>diseñar el plano completo de una acción formativa</strong>: 
+      desde el análisis de la normativa y del perfil del alumnado, hasta la temporalización minuto a minuto de cada sesión. 
+      Lo que construyas aquí será el cimiento de todo lo demás.
+    </p>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">60 h</div>
+        <div class="stat-label">Duración</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">UC1442_3</div>
+        <div class="stat-label">Unidad de competencia</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4</div>
+        <div class="stat-label">Capacidades</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">1º</div>
+        <div class="stat-label">Módulo del certificado</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FICHA -->
+  <section id="ficha">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Ficha técnica del módulo</h2>
+    </div>
+    <p class="lead">Los datos oficiales que te pedirán en cada entrega. Memoriza los códigos: MF, UF, UC y CE son el idioma de la FPE.</p>
+    
+    <div class="ficha">
+      <div class="ficha-item">
+        <div class="ficha-label">Código</div>
+        <div class="ficha-value">MF1442_3</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Denominación</div>
+        <div class="ficha-value">Programación didáctica de acciones formativas para el empleo</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Duración</div>
+        <div class="ficha-value">60 horas</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Familia profesional</div>
+        <div class="ficha-value">Servicios Socioculturales y a la Comunidad</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Nivel de cualificación</div>
+        <div class="ficha-value">3</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Unidad de competencia asociada</div>
+        <div class="ficha-value">UC1442_3</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Código certificado</div>
+        <div class="ficha-value">SSCE0110</div>
+      </div>
+      <div class="ficha-item">
+        <div class="ficha-label">Normativa de referencia</div>
+        <div class="ficha-value">RD 1697/2011 (BOE 24/12/2011)</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>🎯 ¿Para qué sirve este módulo?</strong>
+      <p>Te capacita para <strong>programar acciones formativas</strong> adecuándolas a las características de la formación, al perfil de los destinatarios y a la realidad laboral. Es decir: convertir una necesidad formativa en un plan ejecutable, coherente y evaluable.</p>
+    </div>
+  </section>
+
+  <!-- CAPACIDADES -->
+  <section id="capacidades">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Capacidades y criterios de evaluación</h2>
+    </div>
+    <p class="lead">Cuatro capacidades (C1 a C4) que debes demostrar. Cada una se evalúa por separado: no hay nota media que te salve.</p>
+
+    <div class="capacidad">
+      <div class="capacidad-header">
+        <div>
+          <h4>C1 · Analizar la normativa y el contexto de la acción formativa</h4>
+          <div class="cap-desc">Identificar el marco legal, las condiciones previas y el perfil del alumnado para orientar la programación.</div>
+        </div>
+        <span class="capacidad-badge">C1</span>
+      </div>
+      <div class="criterios">
+        <div class="criterios-title">Criterios de evaluación</div>
+        <ol>
+          <li><strong>CE1.1</strong> Identificar la normativa aplicable según el tipo de acción formativa (formación de demanda, ofertada por administraciones, certificados de profesionalidad, etc.).</li>
+          <li><strong>CE1.2</strong> Definir las condiciones previas: espacios, equipamiento, modalidad, duración, número de alumnos.</li>
+          <li><strong>CE1.3</strong> Analizar el perfil profesional y las necesidades formativas de los destinatarios para que queden reflejadas en la programación.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="capacidad">
+      <div class="capacidad-header">
+        <div>
+          <h4>C2 · Coordinar el equipo docente y la formación técnica</h4>
+          <div class="cap-desc">Distribuir funciones, fijar objetivos comunes y establecer estrategias de coordinación con el resto de profesionales implicados.</div>
+        </div>
+        <span class="capacidad-badge">C2</span>
+      </div>
+      <div class="criterios">
+        <div class="criterios-title">Criterios de evaluación</div>
+        <ol>
+          <li><strong>CE2.1</strong> Implicar a todos los profesionales del equipo en la consecución de los objetivos.</li>
+          <li><strong>CE2.2</strong> Distribuir funciones y fijar metodología de trabajo para definir la línea de actuación.</li>
+          <li><strong>CE2.3</strong> Fomentar la coordinación, el compromiso y la responsabilidad conjunta.</li>
+          <li><strong>CE2.4</strong> Especificar las características de los destinatarios atendiendo a los protocolos de selección.</li>
+          <li><strong>CE2.5</strong> Definir procedimientos de revisión para adaptar la programación durante el desarrollo.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="capacidad">
+      <div class="capacidad-header">
+        <div>
+          <h4>C3 · Elaborar programaciones didácticas completas</h4>
+          <div class="cap-desc">Definir objetivos, contenidos, actividades, metodología, recursos, temporalización y evaluación de la acción formativa.</div>
+        </div>
+        <span class="capacidad-badge">C3</span>
+      </div>
+      <div class="criterios">
+        <div class="criterios-title">Criterios de evaluación</div>
+        <ol>
+          <li><strong>CE3.1</strong> Identificar y definir todos los elementos de la programación, anticipando su revisión.</li>
+          <li><strong>CE3.2</strong> Redactar objetivos precisos en función de las competencias profesionales a adquirir.</li>
+          <li><strong>CE3.3</strong> Estructurar y secuencializar contenidos en unidades didácticas significativas, globales y flexibles.</li>
+          <li><strong>CE3.4</strong> Diseñar actividades de aprendizaje en función de objetivos, contenidos, tiempo y características del alumnado.</li>
+          <li><strong>CE3.5</strong> Seleccionar estrategias metodológicas y recursos adaptados a la modalidad y al alumnado.</li>
+          <li><strong>CE3.6</strong> Detallar el material necesario, especificando características y cantidades.</li>
+          <li><strong>CE3.7</strong> Establecer la temporalización de las unidades didácticas con criterios de eficacia.</li>
+          <li><strong>CE3.8</strong> Definir instrumentos y momentos de evaluación conforme a las normas técnicas y didácticas.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="capacidad">
+      <div class="capacidad-header">
+        <div>
+          <h4>C4 · Elaborar planificaciones temporalizadas de sesiones formativas</h4>
+          <div class="cap-desc">Secuenciar contenidos y actividades minuto a minuto, garantizando coherencia y realismo.</div>
+        </div>
+        <span class="capacidad-badge">C4</span>
+      </div>
+      <div class="criterios">
+        <div class="criterios-title">Criterios de evaluación</div>
+        <ol>
+          <li><strong>CE4.1</strong> Determinar las características y condiciones ambientales de las sesiones.</li>
+          <li><strong>CE4.2</strong> Secuencializar contenidos y actividades atendiendo a criterios pedagógicos.</li>
+          <li><strong>CE4.3</strong> Estructurar el guión didáctico de forma coherente con la metodología y los recursos.</li>
+          <li><strong>CE4.4</strong> Determinar el tiempo destinado a cada unidad con criterios realistas y flexibles.</li>
+          <li><strong>CE4.5</strong> Revisar la planificación de forma continua para permitir adecuaciones.</li>
+          <li><strong>CE4.6</strong> Detallar las fuentes bibliográficas según los estándares fijados.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENIDOS -->
+  <section id="contenidos">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Contenidos del módulo</h2>
+    </div>
+    <p class="lead">Los bloques temáticos que vas a estudiar. No son teoría abstracta: cada uno se traduce en una pieza de tu programación didáctica.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4><span class="card-icon">1</span>Análisis del contexto formativo</h4>
+        <p>Normativa de la FPE, tipos de acciones formativas (certificados de profesionalidad, formación de demanda, ofertada, en alternancia), condiciones previas, espacios y equipamiento requeridos.</p>
+      </div>
+      <div class="card">
+        <h4><span class="card-icon">2</span>Perfil del destinatario</h4>
+        <p>Identificación de necesidades formativas, características del alumnado adulto, niveles de partida, motivaciones, estilos de aprendizaje y criterios de selección.</p>
+      </div>
+      <div class="card">
+        <h4><span class="card-icon">3</span>Diseño de la programación didáctica</h4>
+        <p>Objetivos (generales y específicos), resultados de aprendizaje, criterios de evaluación, contenidos (teóricos, prácticos, actitudinales), unidades didácticas y de trabajo.</p>
+      </div>
+      <div class="card">
+        <h4><span class="card-icon">4</span>Actividades de aprendizaje</h4>
+        <p>Tipología (introductorias, de desarrollo, de consolidación, de evaluación), secuenciación, metodología (activa, participativa, centrada en competencias).</p>
+      </div>
+      <div class="card">
+        <h4><span class="card-icon">5</span>Estrategias metodológicas y recursos</h4>
+        <p>Métodos de enseñanza, principios metodológicos, selección de recursos didácticos, adaptación a la modalidad (presencial, teleformación, mixta).</p>
+      </div>
+      <div class="card">
+        <h4><span class="card-icon">6</span>Temporalización</h4>
+        <p>Planificación de sesiones, guión didáctico minuteado, distribución de tiempos, criterios de realismo y flexibilidad, revisión continua.</p>
+      </div>
+      <div class="card">
+        <h4><span class="card-icon">7</span>Evaluación de la acción formativa</h4>
+        <p>Instrumentos de evaluación (diagnóstica, formativa, sumativa), momentos de aplicación, criterios de corrección, adaptación a la modalidad.</p>
+      </div>
+      <div class="card">
+        <h4><span class="card-icon">8</span>Coordinación del equipo docente</h4>
+        <p>Roles, funciones, protocolos de comunicación, seguimiento, revisión de la programación, mecanismos de mejora continua.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALINEACIÓN CONSTRUCTIVA -->
+  <section id="alineacion">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Alineación constructiva (Biggs)</h2>
+    </div>
+    <p class="lead">El principio pedagógico más importante del módulo. Si estos cuatro elementos no están alineados, tu programación no funciona.</p>
+
+    <div class="alineacion">
+      <div class="alineacion-item">
+        <strong>Objetivos / RA</strong>
+        ¿Qué debe saber hacer?
+      </div>
+      <div class="alineacion-item">
+        <strong>Contenidos</strong>
+        ¿Qué necesita aprender?
+      </div>
+      <div class="alineacion-item">
+        <strong>Actividades</strong>
+        ¿Cómo lo va a practicar?
+      </div>
+      <div class="alineacion-item">
+        <strong>Evaluación</strong>
+        ¿Cómo verificamos que lo ha logrado?
+      </div>
+    </div>
+
+    <div class="callout warning">
+      <strong>⚠️ Error mortal</strong>
+      <p>Poner como objetivo "que el alumno <em>comprenda</em> la normativa", enseñar teoría, hacer un debate y evaluar con un test de memoria. No hay alineación: el verbo del objetivo (comprender) no coincide con la actividad (debatir) ni con la evaluación (memorizar). Usa siempre la <strong>Taxonomía de Bloom</strong> para elegir verbos observables.</p>
+    </div>
+
+    <h3>Taxonomía de Bloom (revisada)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Nivel</th>
+          <th>Verbos observables</th>
+          <th>Ejemplo de objetivo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Recordar</strong></td>
+          <td>identificar, listar, definir, nombrar</td>
+          <td>Identificar los tipos de contratos laborales</td>
+        </tr>
+        <tr>
+          <td><strong>Comprender</strong></td>
+          <td>explicar, resumir, clasificar, interpretar</td>
+          <td>Explicar las diferencias entre un contrato temporal e indefinido</td>
+        </tr>
+        <tr>
+          <td><strong>Aplicar</strong></td>
+          <td>ejecutar, calcular, resolver, utilizar</td>
+          <td>Calcular la indemnización de un despido improcedente</td>
+        </tr>
+        <tr>
+          <td><strong>Analizar</strong></td>
+          <td>comparar, diferenciar, examinar, contrastar</td>
+          <td>Comparar dos convenios colectivos del mismo sector</td>
+        </tr>
+        <tr>
+          <td><strong>Evaluar</strong></td>
+          <td>juzgar, criticar, argumentar, defender</td>
+          <td>Argumentar la idoneidad de un tipo de contrato para un caso dado</td>
+        </tr>
+        <tr>
+          <td><strong>Crear</strong></td>
+          <td>diseñar, construir, planificar, proponer</td>
+          <td>Diseñar un plan de formación adaptado a una empresa</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ENTREGABLES -->
+  <section id="entregables">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Entregables reutilizables</h2>
+    </div>
+    <p class="lead">Marca lo que vayas cerrando. Cada pieza alimenta tu portfolio docente y te sirve para tu primer curso real.</p>
+
+    <div id="entregables-list"></div>
+    <p style="font-size: 13px; color: var(--text-muted); margin-top: 12px;">
+      Progreso guardado en tu navegador. <button class="btn btn-secondary" style="padding: 4px 10px; font-size: 12px;" onclick="resetEntregables()">Reiniciar</button>
+    </p>
+  </section>
+
+  <!-- CONSTRUCTOR -->
+  <section id="constructor">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Constructor de Programación Didáctica</h2>
+    </div>
+
+    <div class="constructor">
+      <span class="constructor-tag">★ Herramienta especial</span>
+      <h3>Genera tu programación didáctica en segundos</h3>
+      <p>Rellena los datos básicos y obtén un esqueleto completo, alineado constructivamente y listo para exportar a Markdown. Incluye verificación de coherencia entre objetivos, contenidos, actividades y evaluación.</p>
+
+      <div class="form-grid">
+        <div class="form-field">
+          <label>Denominación de la acción formativa</label>
+          <input type="text" id="c-nombre" placeholder="Ej: Atención al cliente en comercio" value="Atención al cliente en comercio">
+        </div>
+        <div class="form-field">
+          <label>Duración total (horas)</label>
+          <input type="number" id="c-horas" value="60" min="10" max="500">
+        </div>
+        <div class="form-field">
+          <label>Modalidad</label>
+          <select id="c-modalidad">
+            <option value="Presencial">Presencial</option>
+            <option value="Teleformación">Teleformación</option>
+            <option value="Mixta">Mixta</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>Número de alumnos</label>
+          <input type="number" id="c-alumnos" value="15" min="1" max="30">
+        </div>
+        <div class="form-field">
+          <label>Perfil del destinatario</label>
+          <textarea id="c-perfil" placeholder="Ej: Trabajadores en activo del sector comercio, sin experiencia previa en atención al cliente">Trabajadores en activo del sector comercio, sin experiencia previa en atención al cliente</textarea>
+        </div>
+        <div class="form-field">
+          <label>Número de unidades didácticas</label>
+          <input type="number" id="c-uds" value="5" min="2" max="12">
+        </div>
+        <div class="form-field full">
+          <label>Objetivo general (verbo observable de Bloom)</label>
+          <textarea id="c-objetivo" placeholder="Ej: Aplicar técnicas de comunicación y gestión de reclamaciones para mejorar la atención al cliente">Aplicar técnicas de comunicación y gestión de reclamaciones para mejorar la atención al cliente</textarea>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn" onclick="generarProgramacion()">⚡ Generar programación</button>
+        <button class="btn btn-secondary" onclick="descargarMd()">⬇ Descargar .md</button>
+        <button class="btn btn-secondary" onclick="copiarMd()">📋 Copiar</button>
+      </div>
+
+      <div class="output" id="output"></div>
+    </div>
+  </section>
+
+  <!-- ERRORES -->
+  <section id="errores">
+    <div class="section-header">
+      <span class="section-num">07</span>
+      <h2 class="section-title">Errores típicos que te hacen suspender</h2>
+    </div>
+    <p class="lead">Los fallos más frecuentes en las entregas del MF1442_3. Evítalos desde el primer día.</p>
+
+    <div class="error-item">
+      <strong>❌ Objetivos no observables</strong>
+      <p>Usar verbos como "comprender", "conocer", "saber". No puedes evaluar si alguien "comprende". Usa "identificar", "aplicar", "diseñar", "calcular".</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ Desalineación entre evaluación y objetivos</strong>
+      <p>Objetivo: "Aplicar técnicas de venta". Evaluación: test tipo test de memoria. No hay coherencia. La evaluación debe medir exactamente lo que el objetivo dice.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ Temporalización irreal</strong>
+      <p>Asignar 2 horas a una unidad que requiere práctica guiada, simulaciones y feedback. Calcula siempre un 20% de margen para imprevistos.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ Metodología genérica</strong>
+      <p>Poner "metodología activa y participativa" sin concretar. Especifica: aprendizaje basado en problemas, role-playing, estudio de casos, simulaciones, etc.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ Olvidar la evaluación diagnóstica</strong>
+      <p>Empezar la acción formativa sin conocer el nivel real del alumnado. Siempre incluye una prueba inicial, aunque sea breve.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ Recursos sin especificar</strong>
+      <p>Poner "material audiovisual" sin detallar. Especifica: proyector, portátil, pizarra, rotuladores, fichas impresas, acceso a plataforma Moodle, etc.</p>
+    </div>
+    <div class="error-item">
+      <strong>❌ No prever el plan B</strong>
+      <p>Si falla el proyector, ¿qué haces? Toda programación debe incluir alternativas para fallos técnicos o ausencia de alumnado.</p>
+    </div>
+  </section>
+
+  <!-- BITÁCORA -->
+  <section id="bitacora">
+    <div class="section-header">
+      <span class="section-num">08</span>
+      <h2 class="section-title">Bitácora del módulo</h2>
+    </div>
+    <p class="lead">Cinco líneas al día. En abril, esto es tu informe de prácticas. Empieza hoy.</p>
+
+    <div id="bitacora-list"></div>
+
+    <div class="card" style="margin-top: 20px;">
+      <h4>Añadir entrada</h4>
+      <div class="form-grid">
+        <div class="form-field">
+          <label>Fecha</label>
+          <input type="date" id="b-fecha">
+        </div>
+        <div class="form-field">
+          <label>¿Cómo ha ido el día?</label>
+          <select id="b-animo">
+            <option value="🟢 Bien">🟢 Bien</option>
+            <option value="🟡 Normal">🟡 Normal</option>
+            <option value="🔠 Difícil">🔠 Difícil</option>
+          </select>
+        </div>
+        <div class="form-field full">
+          <label>1 · Qué he aprendido</label>
+          <textarea id="b-aprendido" placeholder="Obligatorio: es la línea que da sentido a la entrada"></textarea>
+        </div>
+        <div class="form-field full">
+          <label>2 · Qué me ha sorprendido</label>
+          <textarea id="b-sorpresa" placeholder="Opcional"></textarea>
+        </div>
+        <div class="form-field full">
+          <label>3 · Qué técnica he visto usar</label>
+          <textarea id="b-tecnica" placeholder="Opcional"></textarea>
+        </div>
+        <div class="form-field full">
+          <label>4 · Qué aplico mañana</label>
+          <textarea id="b-aplico" placeholder="Compromiso concreto"></textarea>
+        </div>
+        <div class="form-field full">
+          <label>5 · Qué duda me llevo</label>
+          <textarea id="b-duda" placeholder="Agenda de tutoría"></textarea>
+        </div>
+      </div>
+      <button class="btn" onclick="guardarBitacora()">💾 Guardar entrada</button>
+    </div>
+  </section>
+
+  <!-- VOCABULARIO -->
+  <section id="vocab">
+    <div class="section-header">
+      <span class="section-num">09</span>
+      <h2 class="section-title">Vocabulario del MF1442_3</h2>
+    </div>
+    <p class="lead">Términos que oirás cada día. Úsalos bien en tus entregas y ganarás credibilidad.</p>
+
+    <input type="text" class="vocab-search" id="vocab-search" placeholder="Buscar término...">
+    <div class="vocab-grid" id="vocab-grid"></div>
+  </section>
+
+  <!-- TEST -->
+  <section id="test">
+    <div class="section-header">
+      <span class="section-num">10</span>
+      <h2 class="section-title">Test de comprobación</h2>
+    </div>
+    <p class="lead">10 preguntas. Sin nota: es un ticket de salida para ti. Cada respuesta explica el porqué.</p>
+
+    <div id="test-container"></div>
+    <div class="test-score" id="test-score">
+      <div class="test-score-num" id="test-score-num">0 / 10</div>
+      <p>Respuestas correctas</p>
+    </div>
+  </section>
+
+</main>
+
+<script>
+  // ============ DATOS ============
+  const entregables = [
+    { t: "Análisis de la normativa aplicable a una acción formativa concreta", tag: "C1" },
+    { t: "Ficha del perfil del alumnado destinatario", tag: "C1" },
+    { t: "Documento de coordinación del equipo docente", tag: "C2" },
+    { t: "Programación didáctica completa (objetivos, contenidos, actividades, metodología, recursos, evaluación)", tag: "C3" },
+    { t: "Tabla de secuenciación de unidades didácticas", tag: "C3" },
+    { t: "Listado detallado de materiales y recursos", tag: "C3" },
+    { t: "Temporalización de la acción formativa (cronograma)", tag: "C3" },
+    { t: "Guion didáctico minuteado de al menos una sesión", tag: "C4" },
+    { t: "Instrumentos de evaluación (diagnóstica, formativa, sumativa)", tag: "C3" },
+    { t: "Rúbrica de evaluación de una actividad práctica", tag: "C3" },
+    { t: "Bibliografía y webgrafía normalizada (ISO 690 / APA)", tag: "C4" },
+    { t: "Plan B para fallos técnicos o imprevistos", tag: "C4" },
+  ];
+
+  const vocabulario = [
+    { t: "MF", d: "Módulo Formativo. Bloque temático del certificado de profesionalidad." },
+    { t: "UF", d: "Unidad Formativa. Subdivisión de un MF cuando supera las 60 horas." },
+    { t: "UC", d: "Unidad de Competencia. Agrupación de capacidades profesionales." },
+    { t: "CE", d: "Criterio de Evaluación. Indicador observable del logro de una capacidad." },
+    { t: "RA", d: "Resultado de Aprendizaje. Lo que el alumno debe ser capaz de hacer al finalizar." },
+    { t: "Programación didáctica", d: "Documento que recoge objetivos, contenidos, actividades, metodología, recursos, temporalización y evaluación." },
+    { t: "Unidad didáctica", d: "Unidad de trabajo significativa, global y flexible dentro de la programación." },
+    { t: "Temporalización", d: "Distribución del tiempo asignado a cada unidad y sesión." },
+    { t: "Guion didáctico", d: "Plan minuteado de una sesión formativa, con actividades, recursos y tiempos." },
+    { t: "Alineación constructiva", d: "Coherencia entre objetivos, contenidos, actividades y evaluación (Biggs)." },
+    { t: "Taxonomía de Bloom", d: "Clasificación de niveles cognitivos: recordar, comprender, aplicar, analizar, evaluar, crear." },
+    { t: "Metodología activa", d: "Enfoque centrado en el alumno, con aprendizaje mediante la práctica y la reflexión." },
+    { t: "Evaluación diagnóstica", d: "Evaluación inicial para conocer el nivel de partida del alumnado." },
+    { t: "Evaluación formativa", d: "Evaluación continua durante el proceso, para orientar y mejorar el aprendizaje." },
+    { t: "Evaluación sumativa", d: "Evaluación final que acredita el logro de los resultados de aprendizaje." },
+    { t: "Rúbrica", d: "Instrumento de evaluación con criterios y niveles de desempeño predefinidos." },
+    { t: "Competencia profesional", d: "Conjunto de conocimientos, habilidades y actitudes necesarios para el ejercicio profesional." },
+    { t: "FPE", d: "Formación Profesional para el Empleo. Subsistema dirigido a trabajadores en activo y desempleados." },
+    { t: "SEPE", d: "Servicio Público de Empleo Estatal. Organismo que regula la FPE en España." },
+    { t: "FUNDAE", d: "Fundación Estatal para la Formación en el Empleo. Gestiona la formación programada por empresas." },
+  ];
+
+  const testQuestions = [
+    {
+      q: "¿Cuál es la duración oficial del MF1442_3?",
+      opts: ["40 horas", "60 horas", "90 horas", "100 horas"],
+      correct: 1,
+      exp: "El MF1442_3 tiene una duración oficial de 60 horas, según el RD 1697/2011."
+    },
+    {
+      q: "¿Qué unidad de competencia está asociada al MF1442_3?",
+      opts: ["UC1441_3", "UC1442_3", "UC1443_3", "UC1444_3"],
+      correct: 1,
+      exp: "El MF1442_3 está asociado a la UC1442_3: Programar acciones formativas para el empleo."
+    },
+    {
+      q: "¿Cuál de estos verbos NO es observable según la Taxonomía de Bloom?",
+      opts: ["Identificar", "Comprender", "Calcular", "Diseñar"],
+      correct: 1,
+      exp: "'Comprender' es un proceso mental interno, no observable. Usa 'explicar', 'resumir' o 'clasificar'."
+    },
+    {
+      q: "¿Qué es la alineación constructiva?",
+      opts: [
+        "La coherencia entre objetivos, contenidos, actividades y evaluación",
+        "La construcción de un aula virtual",
+        "El diseño de materiales gráficos",
+        "La coordinación del equipo docente"
+      ],
+      correct: 0,
+      exp: "La alineación constructiva (Biggs) garantiza que los cuatro elementos del proceso formativo estén coherentes entre sí."
+    },
+    {
+      q: "¿Qué tipo de evaluación se realiza al inicio de la acción formativa?",
+      opts: ["Sumativa", "Formativa", "Diagnóstica", "Normativa"],
+      correct: 2,
+      exp: "La evaluación diagnóstica se realiza al inicio para conocer el nivel de partida del alumnado."
+    },
+    {
+      q: "¿Cuál es el error más grave en una programación didáctica?",
+      opts: [
+        "Usar tipografía sans-serif",
+        "Que los objetivos no estén alineados con la evaluación",
+        "No incluir bibliografía",
+        "Hacer sesiones de 2 horas"
+      ],
+      correct: 1,
+      exp: "La desalineación entre objetivos y evaluación invalida toda la programación. Es el error más grave."
+    },
+    {
+      q: "¿Qué documento recoge la planificación minuteada de una sesión?",
+      opts: ["Programación didáctica", "Guion didáctico", "Rúbrica", "Cronograma"],
+      correct: 1,
+      exp: "El guion didáctico es el documento que detalla minuto a minuto el desarrollo de una sesión formativa."
+    },
+    {
+      q: "¿Qué organismo regula la FPE en España?",
+      opts: ["FUNDAE", "SEPE", "MEC", "INSST"],
+      correct: 1,
+      exp: "El SEPE (Servicio Público de Empleo Estatal) es el organismo que regula la Formación Profesional para el Empleo."
+    },
+    {
+      q: "¿Qué capacidad del MF1442_3 se refiere a la elaboración de programaciones didácticas?",
+      opts: ["C1", "C2", "C3", "C4"],
+      correct: 2,
+      exp: "La C3 es la capacidad de elaborar programaciones didácticas completas (objetivos, contenidos, actividades, metodología, recursos, evaluación)."
+    },
+    {
+      q: "¿Qué porcentaje de margen se recomienda dejar en la temporalización?",
+      opts: ["5%", "10%", "20%", "No se recomienda margen"],
+      correct: 2,
+      exp: "Se recomienda un 20% de margen para imprevistos, preguntas, dudas y ajustes sobre la marcha."
+    }
+  ];
+
+  // ============ ENTREGABLES ============
+  function renderEntregables() {
+    const list = document.getElementById('entregables-list');
+    const saved = JSON.parse(localStorage.getItem('mf1442_entregables') || '{}');
+    list.innerHTML = entregables.map((e, i) => {
+      const checked = saved[i] ? 'checked' : '';
+      const cls = saved[i] ? 'checked' : '';
+      return `<label class="entregable ${cls}">
+        <input type="checkbox" ${checked} onchange="toggleEntregable(${i}, this)">
+        <span class="ent-text">${e.t}</span>
+        <span class="ent-tag">${e.tag}</span>
+      </label>`;
+    }).join('');
+  }
+
+  function toggleEntregable(i, el) {
+    const saved = JSON.parse(localStorage.getItem('mf1442_entregables') || '{}');
+    saved[i] = el.checked;
+    localStorage.setItem('mf1442_entregables', JSON.stringify(saved));
+    el.parentElement.classList.toggle('checked', el.checked);
+  }
+
+  function resetEntregables() {
+    if (confirm('¿Reiniciar todo el progreso de entregables?')) {
+      localStorage.removeItem('mf1442_entregables');
+      renderEntregables();
+    }
+  }
+
+  // ============ BITÁCORA ============
+  function renderBitacora() {
+    const list = document.getElementById('bitacora-list');
+    const entries = JSON.parse(localStorage.getItem('mf1442_bitacora') || '[]');
+    if (entries.length === 0) {
+      list.innerHTML = '<p style="color: var(--text-muted); font-size: 14px; font-style: italic;">Aún no hay entradas. Añade la primera arriba.</p>';
+      return;
+    }
+    list.innerHTML = entries.slice().reverse().map(e => `
+      <div class="bitacora-entry">
+        <div class="bitacora-date">${e.fecha} · ${e.animo}</div>
+        <div class="bitacora-content">
+          <strong>Aprendido:</strong> ${e.aprendido || '—'}<br>
+          ${e.sorpresa ? `<strong>Sorpresa:</strong> ${e.sorpresa}<br>` : ''}
+          ${e.tecnica ? `<strong>Técnica:</strong> ${e.tecnica}<br>` : ''}
+          ${e.aplico ? `<strong>Aplico mañana:</strong> ${e.aplico}<br>` : ''}
+          ${e.duda ? `<strong>Duda:</strong> ${e.duda}` : ''}
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function guardarBitacora() {
+    const fecha = document.getElementById('b-fecha').value;
+    const animo = document.getElementById('b-animo').value;
+    const aprendido = document.getElementById('b-aprendido').value.trim();
+    if (!fecha || !aprendido) {
+      alert('La fecha y "Qué he aprendido" son obligatorios.');
+      return;
+    }
+    const entry = {
+      fecha, animo, aprendido,
+      sorpresa: document.getElementById('b-sorpresa').value.trim(),
+      tecnica: document.getElementById('b-tecnica').value.trim(),
+      aplico: document.getElementById('b-aplico').value.trim(),
+      duda: document.getElementById('b-duda').value.trim()
+    };
+    const entries = JSON.parse(localStorage.getItem('mf1442_bitacora') || '[]');
+    entries.push(entry);
+    localStorage.setItem('mf1442_bitacora', JSON.stringify(entries));
+    ['b-fecha','b-aprendido','b-sorpresa','b-tecnica','b-aplico','b-duda'].forEach(id => document.getElementById(id).value = '');
+    renderBitacora();
+  }
+
+  // ============ VOCABULARIO ============
+  function renderVocab(filter = '') {
+    const grid = document.getElementById('vocab-grid');
+    const f = filter.toLowerCase();
+    const filtered = vocabulario.filter(v => 
+      v.t.toLowerCase().includes(f) || v.d.toLowerCase().includes(f)
+    );
+    grid.innerHTML = filtered.map(v => `
+      <div class="vocab-item">
+        <div class="vocab-term">${v.t}</div>
+        <div class="vocab-def">${v.d}</div>
+      </div>
+    `).join('');
+  }
+
+  // ============ TEST ============
+  function renderTest() {
+    const container = document.getElementById('test-container');
+    container.innerHTML = testQuestions.map((q, i) => `
+      <div class="test-question" data-qi="${i}">
+        <div class="test-q-text">${i+1}. ${q.q}</div>
+        <div class="test-options">
+          ${q.opts.map((o, j) => `
+            <div class="test-option" onclick="responderTest(${i}, ${j})">${o}</div>
+          `).join('')}
+        </div>
+        <div class="test-explanation" id="exp-${i}">${q.exp}</div>
+      </div>
+    `).join('');
+  }
+
+  let testScore = 0;
+  let testAnswered = new Set();
+
+  function responderTest(qi, oi) {
+    if (testAnswered.has(qi)) return;
+    testAnswered.add(qi);
+    const q = testQuestions[qi];
+    const question = document.querySelector(`[data-qi="${qi}"]`);
+    const options = question.querySelectorAll('.test-option');
+    options.forEach((opt, j) => {
+      if (j === q.correct) opt.classList.add('correct');
+      else if (j === oi) opt.classList.add('wrong');
+      opt.style.pointerEvents = 'none';
+    });
+    document.getElementById(`exp-${qi}`).classList.add('visible');
+    if (oi === q.correct) testScore++;
+    if (testAnswered.size === testQuestions.length) {
+      const score = document.getElementById('test-score');
+      document.getElementById('test-score-num').textContent = `${testScore} / ${testQuestions.length}`;
+      score.classList.add('visible');
+    }
+  }
+
+  // ============ CONSTRUCTOR ============
+  function generarProgramacion() {
+    const nombre = document.getElementById('c-nombre').value || 'Acción formativa';
+    const horas = parseInt(document.getElementById('c-horas').value) || 60;
+    const modalidad = document.getElementById('c-modalidad').value;
+    const alumnos = parseInt(document.getElementById('c-alumnos').value) || 15;
+    const perfil = document.getElementById('c-perfil').value || 'Alumnado adulto sin especificar';
+    const uds = parseInt(document.getElementById('c-uds').value) || 5;
+    const objetivo = document.getElementById('c-objetivo').value || 'Objetivo general por definir';
+
+    const horasPorUd = Math.floor(horas / uds);
+    const udNames = [];
+    for (let i = 1; i <= uds; i++) udNames.push(`Unidad Didáctica ${i}: [Tema específico ${i}]`);
+
+    const md = `# PROGRAMACIÓN DIDÁCTICA
+
+## 1. DATOS DE LA ACCIÓN FORMATIVA
+
+- **Denominación:** ${nombre}
+- **Duración total:** ${horas} horas
+- **Modalidad:** ${modalidad}
+- **Número de alumnos:** ${alumnos}
+- **Fecha de inicio:** [A completar]
+- **Fecha de fin:** [A completar]
+- **Formador/es:** [A completar]
+
+## 2. ANÁLISIS DEL CONTEXTO
+
+### 2.1 Normativa aplicable
+- [Identificar el tipo de acción: certificado de profesionalidad, formación de demanda, etc.]
+- [RD/Orden correspondiente]
+- [Requisitos de acceso del alumnado]
+
+### 2.2 Condiciones previas
+- **Espacios:** Aula con capacidad para ${alumnos} alumnos, [especificar equipamiento]
+- **Equipamiento:** [Listar: proyectores, ordenadores, pizarra, etc.]
+- **Material:** [Listar materiales fungibles]
+
+### 2.3 Perfil del destinatario
+${perfil}
+
+## 3. OBJETIVOS
+
+### 3.1 Objetivo general
+${objetivo}
+
+### 3.2 Resultados de aprendizaje (por unidad didáctica)
+${udNames.map((n, i) => `- **UD${i+1}:** Al finalizar la unidad, el alumno será capaz de [verbo observable + contenido]`).join('\n')}
+
+## 4. CONTENIDOS
+
+${udNames.map((n, i) => `### UD${i+1}: [Tema específico ${i+1}]
+- **Contenidos teóricos:** [Listar]
+- **Contenidos prácticos:** [Listar]
+- **Contenidos actitudinales:** [Listar]
+`).join('\n')}
+
+## 5. METODOLOGÍA
+
+- **Enfoque:** Metodología activa, participativa y centrada en competencias
+- **Técnicas:** [Aprendizaje basado en problemas, estudio de casos, role-playing, simulaciones, etc.]
+- **Adaptación a la modalidad:** ${modalidad === 'Teleformación' ? 'Sesiones síncronas + trabajo asíncrono en plataforma' : modalidad === 'Mixta' ? 'Combinación de sesiones presenciales y virtuales' : 'Sesiones presenciales con práctica guiada'}
+
+## 6. ACTIVIDADES DE APRENDIZAJE
+
+${udNames.map((n, i) => `### UD${i+1}
+- **Introductorias:** [Actividad para motivar y activar conocimientos previos]
+- **De desarrollo:** [Actividades prácticas guiadas]
+- **De consolidación:** [Ejercicios autónomos]
+- **De evaluación:** [Actividad para verificar el logro]
+`).join('\n')}
+
+## 7. RECURSOS DIDÁCTICOS
+
+### 7.1 Materiales
+- [Listar materiales impresos, audiovisuales, digitales]
+
+### 7.2 Equipamiento
+- [Listar equipos necesarios]
+
+### 7.3 Plataformas (si aplica)
+- [Moodle, herramientas colaborativas, etc.]
+
+## 8. TEMPORALIZACIÓN
+
+| Unidad Didáctica | Duración | Sesiones |
+|------------------|----------|----------|
+${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |`).join('\n')}
+| **TOTAL** | **${horas} h** | |
+
+*Margen recomendado: 20% para imprevistos*
+
+## 9. EVALUACIÓN
+
+### 9.1 Evaluación diagnóstica
+- **Momento:** Inicio de la acción formativa
+- **Instrumento:** [Cuestionario, prueba práctica breve, etc.]
+- **Finalidad:** Conocer el nivel de partida del alumnado
+
+### 9.2 Evaluación formativa
+- **Momento:** Continua durante todo el proceso
+- **Instrumentos:** Observación, revisión de actividades, feedback, tickets de salida
+- **Finalidad:** Orientar y mejorar el aprendizaje
+
+### 9.3 Evaluación sumativa
+- **Momento:** Final de cada unidad didáctica y al finalizar la acción
+- **Instrumentos:** Prueba práctica con rúbrica, prueba objetiva, proyecto final
+- **Criterios de apto:** [Definir criterios mínimos]
+
+## 10. BIBLIOGRAFÍA Y WEBGRAFÍA
+
+- [Referencias en formato APA o ISO 690]
+
+## 11. PLAN B
+
+- **Fallo técnico:** [Alternativa si falla el proyector, internet, etc.]
+- **Ausencia de alumnado:** [Actividad de refuerzo o avance]
+- **Ritmo desigual:** [Actividades de ampliación y refuerzo]
+
+---
+
+**VERIFICACIÓN DE ALINEACIÓN CONSTRUCTIVA**
+
+✅ Objetivos → Contenidos → Actividades → Evaluación
+[Revisar que cada resultado de aprendizaje tiene contenidos, actividades y evaluación coherentes]
+`;
+
+    const output = document.getElementById('output');
+    output.textContent = md;
+    output.classList.add('visible');
+    output.dataset.md = md;
+  }
+
+  function descargarMd() {
+    const output = document.getElementById('output');
+    if (!output.dataset.md) {
+      alert('Primero genera la programación.');
+      return;
+    }
+    const blob = new Blob([output.dataset.md], { type: 'text/markdown' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'programacion_didactica_MF1442.md';
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  function copiarMd() {
+    const output = document.getElementById('output');
+    if (!output.dataset.md) {
+      alert('Primero genera la programación.');
+      return;
+    }
+    navigator.clipboard.writeText(output.dataset.md).then(() => {
+      alert('Copiado al portapapeles.');
+    });
+  }
+
+  // ============ NAV ACTIVA ============
+  function updateNav() {
+    const sections = document.querySelectorAll('section[id]');
+    const links = document.querySelectorAll('.nav-list a');
+    let current = '';
+    sections.forEach(s => {
+      const top = s.offsetTop - 100;
+      if (scrollY >= top) current = s.id;
+    });
+    links.forEach(l => {
+      l.classList.toggle('active', l.getAttribute('href') === `#${current}`);
+    });
+  }
+
+  // ============ INIT ============
+  document.getElementById('b-fecha').valueAsDate = new Date();
+  renderEntregables();
+  renderBitacora();
+  renderVocab();
+  renderTest();
+  window.addEventListener('scroll', updateNav);
+  document.getElementById('vocab-search').addEventListener('input', e => renderVocab(e.target.value));
+</script>
+
+</body>
+</html>
