@@ -550,7 +550,7 @@
             <text:p text:style-name="TableCellP">Elaboración de la programación didáctica</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Formación por competencias; objetivos; contenidos; secuenciación; actividades; metodología; recursos; criterios de evaluación y ponderaciones</text:p>
+            <text:p text:style-name="TableCellP">Función, aspectos claves y ventajas; formación por competencias; objetivos; contenidos; secuenciación; actividades; metodología; recursos; criterios de evaluación y ponderaciones</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
             <text:p text:style-name="TableCellP">20</text:p>

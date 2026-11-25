@@ -614,7 +614,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="12.35cm" svg:width="13.350000000000001cm" svg:height="3.2499999999999996cm">
           <draw:text-box>
-            <text:p text:style-name="CardBody">[Formación por competencias; objetivos; contenidos; actividades; metodología; recursos; criterios de evaluación y ponderaciones.]</text:p>
+            <text:p text:style-name="CardBody">[Función y ventajas; formación por competencias; objetivos; contenidos; actividades; metodología; recursos; evaluación y ponderaciones.]</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CardW" draw:name="r" svg:x="17.5cm" svg:y="11.2cm" svg:width="14.3cm" svg:height="4.6cm"/>

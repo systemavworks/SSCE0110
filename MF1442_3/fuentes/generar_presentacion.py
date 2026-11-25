@@ -172,7 +172,7 @@ card(s, 2.0, 6.3, 14.3, 4.6, 'U1 · Estructura de la formación profesional',
 card(s, 17.5, 6.3, 14.3, 4.6, 'U2 · Certificados de profesionalidad',
      [{'s': 'CardBody', 'r': [('[Definición y vías de adquisición; perfil y referente formativo; prescripciones de formadores; espacios; presencial y en línea.]', None)]}], 'PillTeal')
 card(s, 2.0, 11.2, 14.3, 4.6, 'U3 · Programación didáctica',
-     [{'s': 'CardBody', 'r': [('[Formación por competencias; objetivos; contenidos; actividades; metodología; recursos; criterios de evaluación y ponderaciones.]', None)]}], 'PillMagenta')
+     [{'s': 'CardBody', 'r': [('[Función y ventajas; formación por competencias; objetivos; contenidos; actividades; metodología; recursos; evaluación y ponderaciones.]', None)]}], 'PillMagenta')
 card(s, 17.5, 11.2, 14.3, 4.6, 'U4 · Programación temporalizada',
      [{'s': 'CardBody', 'r': [('[Temporalización diaria; secuenciación de contenidos y actividades; guía del alumno en línea.]', None)]}], 'PillAmber')
 s.footer('MF1442_3 · Plantilla demo', '6')

@@ -79,7 +79,7 @@ d.table([
     ['Unidad', 'Título', 'Contenidos', 'Horas', 'Ses.'],
     ['U1', 'Estructura de la formación profesional', 'Sistema Nacional de Cualificaciones (CNCP, formación modular y niveles); FP reglada (FP Básica y ciclos); FPE (modalidades, destinatarios, demanda y oferta); programas y proyectos formativos', '12', '2'],
     ['U2', 'Certificados de profesionalidad', 'Definición y vías de adquisición; estructura (perfil profesional y referente formativo, prescripciones de formadores, espacios y equipamientos); presencial y en línea', '14', '2'],
-    ['U3', 'Elaboración de la programación didáctica', 'Formación por competencias; objetivos; contenidos; secuenciación; actividades; metodología; recursos; criterios de evaluación y ponderaciones', '20', '3'],
+    ['U3', 'Elaboración de la programación didáctica', 'Función, aspectos claves y ventajas; formación por competencias; objetivos; contenidos; secuenciación; actividades; metodología; recursos; criterios de evaluación y ponderaciones', '20', '3'],
     ['U4', 'Elaboración de la programación temporalizada', 'Temporalización diaria; secuenciación de contenidos y actividades; guía del alumno para la modalidad en línea', '14', '2'],
     ['Total', '', '', '60', '9'],
 ], [1.4, 5.2, 8.0, 1.2, 1.2])
