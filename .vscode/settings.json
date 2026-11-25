@@ -1,0 +1,10 @@
+{
+  "todo-tree.filtering.excludeGlobs": [
+    "**/*.pdf",
+    "**/*.docx",
+    "**/*.pptx",
+    "**/*.fodt",
+    "**/*.fodp",
+    "**/.git/**"
+  ]
+}

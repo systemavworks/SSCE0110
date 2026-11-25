@@ -85,7 +85,7 @@ sin instalación ni servidor, que guarda tu progreso en el navegador y lo export
 | [`modulo_MP0353.html`](modulo_MP0353.html) | Ficha del MP0353 | Prácticas, observación, diario, sesión e informe final |
 | [`MF1442_3/`](MF1442_3/) | Maquetación + presentación demo | Plantilla `.docx`/`.pdf` de la programación y deck `.pptx` de 14 diapositivas, para Google Slides, Canva o PowerPoint |
 | [`formador_RD659_2023.html`](formador_RD659_2023.html) | Requisitos del formador | Las tres vías del art. 168 del RD 659/2023, exenciones, reglas de centro y el nuevo certificado SSC_C_017_5B (RD 86/2026), equivalente al SSCE0110 |
-| `cspell.config.yaml` · `.markdownlint.json` · `.cspell/` | Configuración de linting | Diccionario español (252 KB) y reglas ajustadas al estilo del repo: el panel de Problemas de VS Code queda a cero |
+| `cspell.config.yaml` · `.markdownlint.json` · `.vscode/settings.json` · `.cspell/` | Configuración del editor | Diccionario español, reglas de markdown ajustadas y exclusiones de Todo Tree: el panel de Problemas de VS Code queda a cero |
 | [`diario_curso_SSCE0110.html`](diario_curso_SSCE0110.html) | Diario del curso | Registro cronológico de sesiones y avances |
 | `CRONOGRAMA CEFI SSCE0110.pdf` | Cronograma oficial del centro | Calendario real de los seis meses: ventanas de cada módulo, PRL, recuperación, prácticas y festivos |
 | [`TXT.txt`](TXT.txt) | Notas de logística | Ruta Sevilla → Almonte, horarios, calendario del centro y gasto de combustible |
