@@ -48,7 +48,8 @@ lugar de reducir el cuerpo de texto.
 
 Los apartados 1 a 6 coinciden con los entregables de la ficha del módulo en `portfolio.html`; el resto son
 los que suelen pedir los tribunales. Las tablas ya traen las **fechas reales del cronograma de CEFI**
-(24/11 → 04/12/2026) y los **12 entregables** de la checklist.
+(24/11 → 04/12/2026) y los **15 entregables** de la checklist, alineados con el temario oficial de las
+cuatro unidades (RD 1697/2011, Anexo IV) que desarrolla el manual del curso.
 
 ## Regenerar los archivos
 

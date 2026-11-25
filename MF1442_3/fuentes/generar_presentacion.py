@@ -168,13 +168,13 @@ s = Slide(d, 'Contenidos')
 head(s, '04 · CONTENIDOS', 'Las cuatro unidades del temario',
      'Cada unidad se mide con una actividad y una evidencia.')
 card(s, 2.0, 6.3, 14.3, 4.6, 'U1 · Estructura de la formación profesional',
-     [{'s': 'CardBody', 'r': [('[Sistema de FP y normativa; tipos de acciones formativas; entidades y requisitos previos de espacios y equipamiento.]', None)]}])
+     [{'s': 'CardBody', 'r': [('[Sistema Nacional de Cualificaciones; FP reglada y FPE (modalidades, destinatarios, demanda y oferta); programas y proyectos formativos.]', None)]}])
 card(s, 17.5, 6.3, 14.3, 4.6, 'U2 · Certificados de profesionalidad',
-     [{'s': 'CardBody', 'r': [('[Grados A, B y C; módulos, UF y UC; criterios de evaluación; acreditación de competencias e itinerarios.]', None)]}], 'PillTeal')
+     [{'s': 'CardBody', 'r': [('[Definición y vías de adquisición; perfil y referente formativo; prescripciones de formadores; espacios; presencial y en línea.]', None)]}], 'PillTeal')
 card(s, 2.0, 11.2, 14.3, 4.6, 'U3 · Programación didáctica',
-     [{'s': 'CardBody', 'r': [('[Contexto y perfil; objetivos operativos; contenidos; metodología, actividades y unidades didácticas.]', None)]}], 'PillMagenta')
+     [{'s': 'CardBody', 'r': [('[Formación por competencias; objetivos; contenidos; actividades; metodología; recursos; criterios de evaluación y ponderaciones.]', None)]}], 'PillMagenta')
 card(s, 17.5, 11.2, 14.3, 4.6, 'U4 · Programación temporalizada',
-     [{'s': 'CardBody', 'r': [('[Cronograma y guion minuteado; evaluación diagnóstica, formativa y sumativa; coordinación y mejora.]', None)]}], 'PillAmber')
+     [{'s': 'CardBody', 'r': [('[Temporalización diaria; secuenciación de contenidos y actividades; guía del alumno en línea.]', None)]}], 'PillAmber')
 s.footer('MF1442_3 · Plantilla demo', '6')
 
 # ---------- 7 · METODOLOGÍA ----------

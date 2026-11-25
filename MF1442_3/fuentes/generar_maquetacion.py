@@ -77,10 +77,10 @@ d.table([
 d.h2('4 · Contenidos y unidades didácticas')
 d.table([
     ['Unidad', 'Título', 'Contenidos', 'Horas', 'Ses.'],
-    ['U1', 'Estructura de la formación profesional', 'Sistema de FP y normativa (LO 3/2022, RD 659/2023); tipos de acciones formativas; entidades y requisitos previos', '12', '2'],
-    ['U2', 'Certificados de profesionalidad', 'Grados A, B y C; módulos, UF y UC; criterios de evaluación; acreditación e itinerarios', '14', '2'],
-    ['U3', 'Elaboración de la programación didáctica', 'Contexto y perfil; objetivos operativos; contenidos; metodología y actividades; unidades didácticas', '20', '3'],
-    ['U4', 'Elaboración de la programación temporalizada', 'Cronograma y guion minuteado; evaluación; coordinación docente y mejora', '14', '2'],
+    ['U1', 'Estructura de la formación profesional', 'Sistema Nacional de Cualificaciones (CNCP, formación modular y niveles); FP reglada (FP Básica y ciclos); FPE (modalidades, destinatarios, demanda y oferta); programas y proyectos formativos', '12', '2'],
+    ['U2', 'Certificados de profesionalidad', 'Definición y vías de adquisición; estructura (perfil profesional y referente formativo, prescripciones de formadores, espacios y equipamientos); presencial y en línea', '14', '2'],
+    ['U3', 'Elaboración de la programación didáctica', 'Formación por competencias; objetivos; contenidos; secuenciación; actividades; metodología; recursos; criterios de evaluación y ponderaciones', '20', '3'],
+    ['U4', 'Elaboración de la programación temporalizada', 'Temporalización diaria; secuenciación de contenidos y actividades; guía del alumno para la modalidad en línea', '14', '2'],
     ['Total', '', '', '60', '9'],
 ], [1.4, 5.2, 8.0, 1.2, 1.2])
 
@@ -194,6 +194,9 @@ d.table([
     ['☐', 'Rúbrica de una actividad práctica', '[archivo]'],
     ['☐', 'Bibliografía y webgrafía normalizada', '[archivo]'],
     ['☐', 'Plan B para fallos técnicos o imprevistos', '[archivo]'],
+    ['☐', 'Análisis de la estructura de un certificado real', '[archivo]'],
+    ['☐', 'Tabla de niveles de cualificación y vías de adquisición', '[archivo]'],
+    ['☐', 'Guía del alumno para la modalidad en línea', '[archivo]'],
 ], [1.0, 11.0, 5.0])
 d.p('Plantilla de maquetación · MF1442_3 · SSCE0110 · CEFI Formación (Almonte) · v1.0 · 25/11/2026', 'Small')
 d.p('Material de estudio propio del portfolio: no reproduce el manual comercial del curso y no sustituye la documentación oficial del centro.', 'Small')

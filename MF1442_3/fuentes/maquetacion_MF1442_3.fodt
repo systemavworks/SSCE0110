@@ -516,7 +516,7 @@
             <text:p text:style-name="TableCellP">Estructura de la formación profesional</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Sistema de FP y normativa (LO 3/2022, RD 659/2023); tipos de acciones formativas; entidades y requisitos previos</text:p>
+            <text:p text:style-name="TableCellP">Sistema Nacional de Cualificaciones (CNCP, formación modular y niveles); FP reglada (FP Básica y ciclos); FPE (modalidades, destinatarios, demanda y oferta); programas y proyectos formativos</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
             <text:p text:style-name="TableCellP">12</text:p>
@@ -533,7 +533,7 @@
             <text:p text:style-name="TableCellP">Certificados de profesionalidad</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Grados A, B y C; módulos, UF y UC; criterios de evaluación; acreditación e itinerarios</text:p>
+            <text:p text:style-name="TableCellP">Definición y vías de adquisición; estructura (perfil profesional y referente formativo, prescripciones de formadores, espacios y equipamientos); presencial y en línea</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
             <text:p text:style-name="TableCellP">14</text:p>
@@ -550,7 +550,7 @@
             <text:p text:style-name="TableCellP">Elaboración de la programación didáctica</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Contexto y perfil; objetivos operativos; contenidos; metodología y actividades; unidades didácticas</text:p>
+            <text:p text:style-name="TableCellP">Formación por competencias; objetivos; contenidos; secuenciación; actividades; metodología; recursos; criterios de evaluación y ponderaciones</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
             <text:p text:style-name="TableCellP">20</text:p>
@@ -567,7 +567,7 @@
             <text:p text:style-name="TableCellP">Elaboración de la programación temporalizada</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Cronograma y guion minuteado; evaluación; coordinación docente y mejora</text:p>
+            <text:p text:style-name="TableCellP">Temporalización diaria; secuenciación de contenidos y actividades; guía del alumno para la modalidad en línea</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
             <text:p text:style-name="TableCellP">14</text:p>
@@ -1542,6 +1542,45 @@
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
             <text:p text:style-name="TableCellP">Plan B para fallos técnicos o imprevistos</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[archivo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">☐</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Análisis de la estructura de un certificado real</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[archivo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">☐</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Tabla de niveles de cualificación y vías de adquisición</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[archivo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">☐</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Guía del alumno para la modalidad en línea</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
             <text:p text:style-name="TableCellP">

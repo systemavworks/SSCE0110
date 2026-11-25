@@ -590,7 +590,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="7.449999999999999cm" svg:width="13.350000000000001cm" svg:height="3.2499999999999996cm">
           <draw:text-box>
-            <text:p text:style-name="CardBody">[Sistema de FP y normativa; tipos de acciones formativas; entidades y requisitos previos de espacios y equipamiento.]</text:p>
+            <text:p text:style-name="CardBody">[Sistema Nacional de Cualificaciones; FP reglada y FPE (modalidades, destinatarios, demanda y oferta); programas y proyectos formativos.]</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CardW" draw:name="r" svg:x="17.5cm" svg:y="6.3cm" svg:width="14.3cm" svg:height="4.6cm"/>
@@ -602,7 +602,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="7.449999999999999cm" svg:width="13.350000000000001cm" svg:height="3.2499999999999996cm">
           <draw:text-box>
-            <text:p text:style-name="CardBody">[Grados A, B y C; módulos, UF y UC; criterios de evaluación; acreditación de competencias e itinerarios.]</text:p>
+            <text:p text:style-name="CardBody">[Definición y vías de adquisición; perfil y referente formativo; prescripciones de formadores; espacios; presencial y en línea.]</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CardW" draw:name="r" svg:x="2.0cm" svg:y="11.2cm" svg:width="14.3cm" svg:height="4.6cm"/>
@@ -614,7 +614,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="12.35cm" svg:width="13.350000000000001cm" svg:height="3.2499999999999996cm">
           <draw:text-box>
-            <text:p text:style-name="CardBody">[Contexto y perfil; objetivos operativos; contenidos; metodología, actividades y unidades didácticas.]</text:p>
+            <text:p text:style-name="CardBody">[Formación por competencias; objetivos; contenidos; actividades; metodología; recursos; criterios de evaluación y ponderaciones.]</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CardW" draw:name="r" svg:x="17.5cm" svg:y="11.2cm" svg:width="14.3cm" svg:height="4.6cm"/>
@@ -626,7 +626,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="12.35cm" svg:width="13.350000000000001cm" svg:height="3.2499999999999996cm">
           <draw:text-box>
-            <text:p text:style-name="CardBody">[Cronograma y guion minuteado; evaluación diagnóstica, formativa y sumativa; coordinación y mejora.]</text:p>
+            <text:p text:style-name="CardBody">[Temporalización diaria; secuenciación de contenidos y actividades; guía del alumno en línea.]</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
