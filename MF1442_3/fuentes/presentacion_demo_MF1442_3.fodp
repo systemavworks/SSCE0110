@@ -1,0 +1,1608 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.presentation">
+  <office:font-face-decls>
+    <style:font-face style:name="Liberation Sans" svg:font-family="'Liberation Sans'" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  </office:font-face-decls>
+  <office:styles>
+    <style:style style:name="frTop" style:family="graphic">
+      <style:graphic-properties draw:fill="none" draw:stroke="none" draw:textarea-vertical-align="top"/>
+    </style:style>
+    <style:style style:name="frMid" style:family="graphic">
+      <style:graphic-properties draw:fill="none" draw:stroke="none" draw:textarea-vertical-align="middle"/>
+    </style:style>
+    <style:style style:name="frBot" style:family="graphic">
+      <style:graphic-properties draw:fill="none" draw:stroke="none" draw:textarea-vertical-align="bottom"/>
+    </style:style>
+    <style:style style:name="Accent" style:family="graphic">
+      <style:graphic-properties draw:fill="solid" draw:fill-color="#3B34C7" draw:stroke="none" draw:stroke-color="#000000" draw:shadow="none"/>
+    </style:style>
+    <style:style style:name="Accent2" style:family="graphic">
+      <style:graphic-properties draw:fill="solid" draw:fill-color="#00958C" draw:stroke="none" draw:stroke-color="#000000" draw:shadow="none"/>
+    </style:style>
+    <style:style style:name="Dark" style:family="graphic">
+      <style:graphic-properties draw:fill="solid" draw:fill-color="#16152B" draw:stroke="none" draw:stroke-color="#000000" draw:shadow="none"/>
+    </style:style>
+    <style:style style:name="Paper" style:family="graphic">
+      <style:graphic-properties draw:fill="solid" draw:fill-color="#FBFAFF" draw:stroke="none" draw:stroke-color="#000000" draw:shadow="none"/>
+    </style:style>
+    <style:style style:name="CardBg" style:family="graphic">
+      <style:graphic-properties draw:fill="solid" draw:fill-color="#F6F5FB" draw:stroke="solid" draw:stroke-color="#E3E1F0" draw:shadow="none" draw:stroke-width="0.03cm"/>
+    </style:style>
+    <style:style style:name="CardW" style:family="graphic">
+      <style:graphic-properties draw:fill="solid" draw:fill-color="#FFFFFF" draw:stroke="solid" draw:stroke-color="#E3E1F0" draw:shadow="none" draw:stroke-width="0.03cm"/>
+    </style:style>
+    <style:style style:name="CellBgW" style:family="graphic">
+      <style:graphic-properties draw:fill="solid" draw:fill-color="#FFFFFF" draw:stroke="solid" draw:stroke-color="#E3E1F0" draw:shadow="none" draw:stroke-width="0.03cm"/>
+    </style:style>
+    <style:style style:name="CellBgAlt" style:family="graphic">
+      <style:graphic-properties draw:fill="solid" draw:fill-color="#F6F5FB" draw:stroke="solid" draw:stroke-color="#E3E1F0" draw:shadow="none" draw:stroke-width="0.03cm"/>
+    </style:style>
+    <style:style style:name="CellBgHead" style:family="graphic">
+      <style:graphic-properties draw:fill="solid" draw:fill-color="#16152B" draw:stroke="solid" draw:stroke-color="#16152B" draw:shadow="none" draw:stroke-width="0.03cm"/>
+    </style:style>
+    <style:style style:name="PillIndigo" style:family="graphic">
+      <style:graphic-properties draw:fill="solid" draw:fill-color="#3B34C7" draw:stroke="none" draw:stroke-color="#000000" draw:shadow="none"/>
+    </style:style>
+    <style:style style:name="PillTeal" style:family="graphic">
+      <style:graphic-properties draw:fill="solid" draw:fill-color="#00958C" draw:stroke="none" draw:stroke-color="#000000" draw:shadow="none"/>
+    </style:style>
+    <style:style style:name="PillMagenta" style:family="graphic">
+      <style:graphic-properties draw:fill="solid" draw:fill-color="#D6218C" draw:stroke="none" draw:stroke-color="#000000" draw:shadow="none"/>
+    </style:style>
+    <style:style style:name="PillAmber" style:family="graphic">
+      <style:graphic-properties draw:fill="solid" draw:fill-color="#F2A20C" draw:stroke="none" draw:stroke-color="#000000" draw:shadow="none"/>
+    </style:style>
+  </office:styles>
+  <office:automatic-styles>
+    <style:page-layout style:name="pm1">
+      <style:page-layout-properties fo:page-width="33.867cm" fo:page-height="19.05cm" style:print-orientation="landscape" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:margin-left="0cm" fo:margin-right="0cm"/>
+      <style:drawing-page-properties draw:fill="solid" draw:fill-color="#FFFFFF"/>
+    </style:page-layout>
+    <text:list-style style:name="LB">
+      <text:list-level-style-bullet text:level="1" text:bullet-char="•">
+        <style:list-level-properties text:space-before="0.55cm" text:min-label-width="0.5cm" fo:text-align="left"/>
+        <style:text-properties fo:font-size="13pt" fo:color="#3B34C7"/>
+      </text:list-level-style-bullet>
+      <text:list-level-style-bullet text:level="2" text:bullet-char="–">
+        <style:list-level-properties text:space-before="1.1cm" text:min-label-width="0.5cm" fo:text-align="left"/>
+        <style:text-properties fo:font-size="12pt" fo:color="#3B34C7"/>
+      </text:list-level-style-bullet>
+    </text:list-style>
+    <style:style style:name="Kicker" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.2cm" fo:line-height="120%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="9.5pt" fo:color="#00958C" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="Title" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.15cm" fo:line-height="105%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="26pt" fo:color="#16152B" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="TitleBig" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.2cm" fo:line-height="105%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="33pt" fo:color="#FFFFFF" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="Subtitle" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.1cm" fo:line-height="120%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="12.5pt" fo:color="#5A5872" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="SubLight" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.1cm" fo:line-height="120%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="12.5pt" fo:color="#C9C7DE" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="H2" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.12cm" fo:line-height="120%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="15pt" fo:color="#16152B" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="Body" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.14cm" fo:line-height="125%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="12pt" fo:color="#16152B" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="BodyS" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.12cm" fo:line-height="125%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="11pt" fo:color="#16152B" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="Small" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.1cm" fo:line-height="120%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="9.5pt" fo:color="#5A5872" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="Tiny" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.05cm" fo:line-height="120%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="8.5pt" fo:color="#5A5872" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="Footer" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="120%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="8pt" fo:color="#5A5872" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="CardTitle" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.05cm" fo:line-height="120%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="12pt" fo:color="#16152B" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="CardBody" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.1cm" fo:line-height="125%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="10.5pt" fo:color="#5A5872" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="BigNum" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="120%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="26pt" fo:color="#3B34C7" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="BigNumS" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="120%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="23pt" fo:color="#3B34C7" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="KpiLabel" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="120%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="9pt" fo:color="#5A5872" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="PillText" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="120%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="9pt" fo:color="#FFFFFF" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="CellText" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="110%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="9.5pt" fo:color="#16152B" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="CellTextB" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="110%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="9.5pt" fo:color="#16152B" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="CellHeadText" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="120%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="8.5pt" fo:color="#FFFFFF" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="CellSm" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="105%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="8.5pt" fo:color="#16152B" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="CellSmHead" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="120%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="8pt" fo:color="#FFFFFF" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="AccentSpan" style:family="text">
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="11pt" fo:color="#3B34C7" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="TealSpan" style:family="text">
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="11pt" fo:color="#00958C" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="WhiteSpan" style:family="text">
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="12pt" fo:color="#FFFFFF" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="BigWhite" style:family="text">
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="33pt" fo:color="#FFFFFF" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+  </office:automatic-styles>
+  <office:master-styles>
+    <style:master-page style:name="Default" style:page-layout-name="pm1"/>
+  </office:master-styles>
+  <office:body>
+    <office:presentation>
+      <draw:page draw:name="Portada" draw:master-page-name="Default">
+        <draw:rect draw:style-name="Dark" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="33.867cm" svg:height="19.05cm"/>
+        <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.55cm" svg:height="19.05cm"/>
+        <draw:rect draw:style-name="Accent2" draw:name="r" svg:x="0.55cm" svg:y="0cm" svg:width="0.18cm" svg:height="19.05cm"/>
+        <draw:rect draw:style-name="PillMagenta" draw:name="r" svg:x="25.8cm" svg:y="1.75cm" svg:width="5.9cm" svg:height="1.15cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.15cm" svg:y="1.97cm" svg:width="5.2cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="PillText">PLANTILLA DEMO</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.3cm" svg:y="3.2cm" svg:width="22.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Kicker">SSCE0110 · MÓDULO FORMATIVO · NIVEL 3</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.3cm" svg:y="3.85cm" svg:width="23.6cm" svg:height="6.2cm">
+          <draw:text-box>
+            <text:p text:style-name="TitleBig">Programación didáctica de acciones formativas para el empleo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.3cm" svg:y="10.5cm" svg:width="26.0cm" svg:height="1.8cm">
+          <draw:text-box>
+            <text:p text:style-name="SubLight">MF1442_3 · 60 horas · 9 sesiones · Unidad de competencia UC1442_3</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.3cm" svg:y="15.4cm" svg:width="27.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="SubLight">CEFI Formación (Almonte) · 24/11/2026 → 04/12/2026</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.3cm" svg:y="16.3cm" svg:width="27.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Small">Sustituye los textos entre [corchetes]. Una idea por diapositiva.</text:p>
+          </draw:text-box>
+        </draw:frame>
+      </draw:page>
+      <draw:page draw:name="Como usar" draw:master-page-name="Default">
+        <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Kicker">00 · ANTES DE EMPEZAR</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Title">Cómo usar esta plantilla</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="4.9cm" svg:width="28.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="Subtitle">Cuatro pasos y la presentación queda lista para la defensa del módulo.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="2.0cm" svg:y="6.2cm" svg:width="14.3cm" svg:height="4.5cm"/>
+        <draw:rect draw:style-name="PillIndigo" draw:name="r" svg:x="2.0cm" svg:y="6.2cm" svg:width="0.14cm" svg:height="4.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="6.5cm" svg:width="13.4cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">1 · Duplica el archivo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="7.35cm" svg:width="13.350000000000001cm" svg:height="3.15cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">Guarda una copia como <text:span text:style-name="AccentSpan">MF1442_3_presentacion_[tunombre].pptx</text:span>. También puedes subirlo a Google Slides (Archivo → Abrir → Subir) o a Canva (Importar archivo).</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="17.5cm" svg:y="6.2cm" svg:width="14.3cm" svg:height="4.5cm"/>
+        <draw:rect draw:style-name="PillTeal" draw:name="r" svg:x="17.5cm" svg:y="6.2cm" svg:width="0.14cm" svg:height="4.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="6.5cm" svg:width="13.4cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">2 · Rellena los corchetes</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="7.35cm" svg:width="13.350000000000001cm" svg:height="3.15cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">Todo lo que aparece entre [corchetes] es un hueco: datos del grupo, objetivos, contenidos, criterios y evidencias. Borra el corchete cuando lo escribas.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="2.0cm" svg:y="11.1cm" svg:width="14.3cm" svg:height="4.5cm"/>
+        <draw:rect draw:style-name="PillMagenta" draw:name="r" svg:x="2.0cm" svg:y="11.1cm" svg:width="0.14cm" svg:height="4.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="11.4cm" svg:width="13.4cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">3 · Una idea por diapositiva</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="12.25cm" svg:width="13.350000000000001cm" svg:height="3.15cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">Máximo 6 líneas y 2 niveles de lista. Si necesitas más, duplica la diapositiva: la plantilla está hecha para crecer.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="17.5cm" svg:y="11.1cm" svg:width="14.3cm" svg:height="4.5cm"/>
+        <draw:rect draw:style-name="PillAmber" draw:name="r" svg:x="17.5cm" svg:y="11.1cm" svg:width="0.14cm" svg:height="4.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="11.4cm" svg:width="13.4cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">4 · Exporta en dos formatos</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="12.25cm" svg:width="13.350000000000001cm" svg:height="3.15cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">PDF para entregar y PPTX para seguir editando. En Google Slides: Archivo → Descargar → Microsoft PowerPoint (.pptx).</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">MF1442_3 · Plantilla demo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">2</text:p>
+          </draw:text-box>
+        </draw:frame>
+      </draw:page>
+      <draw:page draw:name="Modulo" draw:master-page-name="Default">
+        <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Kicker">01 · EL MÓDULO</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Title">Situación, horas y ventana del curso</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="4.9cm" svg:width="28.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="Subtitle">Lo que el tribunal o el formador espera ver en la primera diapositiva.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="2.0cm" svg:y="6.3cm" svg:width="7.3cm" svg:height="2.9cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.4cm" svg:y="6.6499999999999995cm" svg:width="6.5cm" svg:height="1.4cm">
+          <draw:text-box>
+            <text:p text:style-name="BigNum">60 h</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.4cm" svg:y="8.15cm" svg:width="6.5cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="KpiLabel">Duración oficial</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="9.8cm" svg:y="6.3cm" svg:width="7.3cm" svg:height="2.9cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="10.200000000000001cm" svg:y="6.6499999999999995cm" svg:width="6.5cm" svg:height="1.4cm">
+          <draw:text-box>
+            <text:p text:style-name="BigNum">9</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="10.200000000000001cm" svg:y="8.15cm" svg:width="6.5cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="KpiLabel">Sesiones en el cronograma</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="17.6cm" svg:y="6.3cm" svg:width="7.3cm" svg:height="2.9cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="18.0cm" svg:y="6.6499999999999995cm" svg:width="6.5cm" svg:height="1.4cm">
+          <draw:text-box>
+            <text:p text:style-name="BigNum">Nivel 3</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="18.0cm" svg:y="8.15cm" svg:width="6.5cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="KpiLabel">Cualificación</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="25.400000000000002cm" svg:y="6.3cm" svg:width="7.3cm" svg:height="2.9cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="25.8cm" svg:y="6.6499999999999995cm" svg:width="6.5cm" svg:height="1.4cm">
+          <draw:text-box>
+            <text:p text:style-name="BigNum">4</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="25.8cm" svg:y="8.15cm" svg:width="6.5cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="KpiLabel">Bloques de contenido</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="10.0cm" svg:width="29.5cm" svg:height="6.4cm">
+          <draw:text-box>
+            <text:p text:style-name="Body"><text:span text:style-name="TealSpan">Ventana oficial: </text:span><text:span text:style-name="AccentSpan">24/11/2026 → 04/12/2026</text:span> (9 sesiones de 6 h, de lunes a viernes).</text:p>
+            <text:p text:style-name="Body"><text:span text:style-name="TealSpan">Centro: </text:span>CEFI Formación S.L. · Pol. Ind. Los Taranjales II, 58 · Almonte (Huelva).</text:p>
+            <text:p text:style-name="Body"><text:span text:style-name="TealSpan">Familia profesional: </text:span>Servicios Socioculturales y a la Comunidad · UC1442_3.</text:p>
+            <text:p text:style-name="Body"><text:span text:style-name="TealSpan">Marco: </text:span>RD 1697/2011, Anexo IV, actualizado por el RD 625/2013 (apartado IV, prescripción de formadores).</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">MF1442_3 · Plantilla demo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">3</text:p>
+          </draw:text-box>
+        </draw:frame>
+      </draw:page>
+      <draw:page draw:name="Objetivos" draw:master-page-name="Default">
+        <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Kicker">02 · OBJETIVOS</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Title">Qué tiene que ser capaz de hacer el alumnado</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="4.9cm" svg:width="28.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="Subtitle">Objetivo general, objetivos específicos y su criterio de evaluación.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="2.0cm" svg:y="6.4cm" svg:width="9.6cm" svg:height="9.0cm"/>
+        <draw:rect draw:style-name="PillIndigo" draw:name="r" svg:x="2.0cm" svg:y="6.4cm" svg:width="0.14cm" svg:height="9.0cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="6.7cm" svg:width="8.7cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">Objetivo general</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="7.550000000000001cm" svg:width="8.65cm" svg:height="7.65cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">[Elaborar la programación didáctica de una acción formativa para el empleo, integrando objetivos, contenidos, metodología, recursos y evaluación.]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="12.1cm" svg:y="6.4cm" svg:width="9.6cm" svg:height="9.0cm"/>
+        <draw:rect draw:style-name="PillTeal" draw:name="r" svg:x="12.1cm" svg:y="6.4cm" svg:width="0.14cm" svg:height="9.0cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="12.549999999999999cm" svg:y="6.7cm" svg:width="8.7cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">Objetivos específicos</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="12.549999999999999cm" svg:y="7.550000000000001cm" svg:width="8.65cm" svg:height="7.65cm">
+          <draw:text-box>
+            <text:list text:style-name="LB">
+              <text:list-item>
+                <text:p text:style-name="CardBody">[Analizar el contexto y detectar necesidades formativas.]</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="CardBody">[Secuenciar contenidos en unidades didácticas.]</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="CardBody">[Diseñar actividades y su evaluación.]</text:p>
+              </text:list-item>
+            </text:list>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="22.2cm" svg:y="6.4cm" svg:width="9.6cm" svg:height="9.0cm"/>
+        <draw:rect draw:style-name="PillMagenta" draw:name="r" svg:x="22.2cm" svg:y="6.4cm" svg:width="0.14cm" svg:height="9.0cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="22.65cm" svg:y="6.7cm" svg:width="8.7cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">Criterio de evaluación</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="22.65cm" svg:y="7.550000000000001cm" svg:width="8.65cm" svg:height="7.65cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">CE [n]: [enunciado literal del criterio del certificado].</text:p>
+            <text:p text:style-name="Small">Indicador observable: [qué se ve en el aula o en la entrega].</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">MF1442_3 · Plantilla demo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">4</text:p>
+          </draw:text-box>
+        </draw:frame>
+      </draw:page>
+      <draw:page draw:name="Perfil" draw:master-page-name="Default">
+        <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Kicker">03 · DESTINATARIOS</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Title">Perfil del alumnado y punto de partida</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="4.9cm" svg:width="28.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="Subtitle">Quién aprende, con qué nivel llega y qué necesita para seguir la acción formativa.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="2.0cm" svg:y="6.3cm" svg:width="15.2cm" svg:height="9.2cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.5cm" svg:y="6.6cm" svg:width="14.2cm" svg:height="8.6cm">
+          <draw:text-box>
+            <text:p text:style-name="H2">Lo que hay que describir</text:p>
+            <text:list text:style-name="LB">
+              <text:list-item>
+                <text:p text:style-name="BodyS">Nivel académico y experiencia previa del grupo.</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="BodyS">Competencia digital y acceso a equipos.</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="BodyS">Situación laboral y expectativas.</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="BodyS">Necesidades de accesibilidad o conciliación.</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="BodyS">Conocimientos previos detectados en la prueba inicial.</text:p>
+              </text:list-item>
+            </text:list>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="perfil-c0-0" svg:x="18.4cm" svg:y="6.3cm" svg:width="5.0cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="perfil-t0-0" svg:x="18.56cm" svg:y="6.43cm" svg:width="4.68cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellHeadText">Dato</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="perfil-c0-1" svg:x="23.4cm" svg:y="6.3cm" svg:width="9.4cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="perfil-t0-1" svg:x="23.56cm" svg:y="6.43cm" svg:width="9.08cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellHeadText">Valor</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="perfil-c1-0" svg:x="18.4cm" svg:y="7.35cm" svg:width="5.0cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="perfil-t1-0" svg:x="18.56cm" svg:y="7.4799999999999995cm" svg:width="4.68cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Colectivo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="perfil-c1-1" svg:x="23.4cm" svg:y="7.35cm" svg:width="9.4cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="perfil-t1-1" svg:x="23.56cm" svg:y="7.4799999999999995cm" svg:width="9.08cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Desempleados / ocupados / mixto]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="perfil-c2-0" svg:x="18.4cm" svg:y="8.85cm" svg:width="5.0cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="perfil-t2-0" svg:x="18.56cm" svg:y="8.98cm" svg:width="4.68cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Nº de alumnos</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="perfil-c2-1" svg:x="23.4cm" svg:y="8.85cm" svg:width="9.4cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="perfil-t2-1" svg:x="23.56cm" svg:y="8.98cm" svg:width="9.08cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[15]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="perfil-c3-0" svg:x="18.4cm" svg:y="10.35cm" svg:width="5.0cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="perfil-t3-0" svg:x="18.56cm" svg:y="10.48cm" svg:width="4.68cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Modalidad</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="perfil-c3-1" svg:x="23.4cm" svg:y="10.35cm" svg:width="9.4cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="perfil-t3-1" svg:x="23.56cm" svg:y="10.48cm" svg:width="9.08cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Presencial en aula]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="perfil-c4-0" svg:x="18.4cm" svg:y="11.85cm" svg:width="5.0cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="perfil-t4-0" svg:x="18.56cm" svg:y="11.98cm" svg:width="4.68cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Horario</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="perfil-c4-1" svg:x="23.4cm" svg:y="11.85cm" svg:width="9.4cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="perfil-t4-1" svg:x="23.56cm" svg:y="11.98cm" svg:width="9.08cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Lunes a viernes, 9:00–15:00]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="perfil-c5-0" svg:x="18.4cm" svg:y="13.35cm" svg:width="5.0cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="perfil-t5-0" svg:x="18.56cm" svg:y="13.48cm" svg:width="4.68cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Nivel de partida</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="perfil-c5-1" svg:x="23.4cm" svg:y="13.35cm" svg:width="9.4cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="perfil-t5-1" svg:x="23.56cm" svg:y="13.48cm" svg:width="9.08cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Medio: usan ofimática, no programan]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">MF1442_3 · Plantilla demo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">5</text:p>
+          </draw:text-box>
+        </draw:frame>
+      </draw:page>
+      <draw:page draw:name="Contenidos" draw:master-page-name="Default">
+        <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Kicker">04 · CONTENIDOS</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Title">Cuatro bloques que se convierten en unidades didácticas</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="4.9cm" svg:width="28.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="Subtitle">Cada bloque debe poder medirse con una actividad y una evidencia.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="2.0cm" svg:y="6.3cm" svg:width="14.3cm" svg:height="4.6cm"/>
+        <draw:rect draw:style-name="PillIndigo" draw:name="r" svg:x="2.0cm" svg:y="6.3cm" svg:width="0.14cm" svg:height="4.6cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="6.6cm" svg:width="13.4cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">B1 · Contexto y programación</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="7.449999999999999cm" svg:width="13.350000000000001cm" svg:height="3.2499999999999996cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">[Análisis del contexto, detección de necesidades, normativa aplicable, estructura del certificado, objetivos y criterios de evaluación.]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="17.5cm" svg:y="6.3cm" svg:width="14.3cm" svg:height="4.6cm"/>
+        <draw:rect draw:style-name="PillTeal" draw:name="r" svg:x="17.5cm" svg:y="6.3cm" svg:width="0.14cm" svg:height="4.6cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="6.6cm" svg:width="13.4cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">B2 · Diseño y secuenciación</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="7.449999999999999cm" svg:width="13.350000000000001cm" svg:height="3.2499999999999996cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">[Contenidos, unidades didácticas, temporalización, guion de sesión y coherencia entre objetivos, actividades y evaluación.]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="2.0cm" svg:y="11.2cm" svg:width="14.3cm" svg:height="4.6cm"/>
+        <draw:rect draw:style-name="PillMagenta" draw:name="r" svg:x="2.0cm" svg:y="11.2cm" svg:width="0.14cm" svg:height="4.6cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="11.5cm" svg:width="13.4cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">B3 · Metodología y recursos</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="12.35cm" svg:width="13.350000000000001cm" svg:height="3.2499999999999996cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">[Métodos activos, agrupamientos, materiales, medios y coordinación del equipo docente.]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="17.5cm" svg:y="11.2cm" svg:width="14.3cm" svg:height="4.6cm"/>
+        <draw:rect draw:style-name="PillAmber" draw:name="r" svg:x="17.5cm" svg:y="11.2cm" svg:width="0.14cm" svg:height="4.6cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="11.5cm" svg:width="13.4cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">B4 · Evaluación y mejora</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="12.35cm" svg:width="13.350000000000001cm" svg:height="3.2499999999999996cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">[Evaluación diagnóstica, formativa y sumativa; instrumentos, rúbricas, análisis de resultados y propuestas de mejora.]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">MF1442_3 · Plantilla demo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">6</text:p>
+          </draw:text-box>
+        </draw:frame>
+      </draw:page>
+      <draw:page draw:name="Metodologia" draw:master-page-name="Default">
+        <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Kicker">05 · METODOLOGÍA</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Title">Cómo se enseña y cómo se agrupa el aula</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="4.9cm" svg:width="28.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="Subtitle">Declara el enfoque y luego demuéstralo con la secuencia de actividades.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="6.2cm" svg:width="14.5cm" svg:height="9.4cm">
+          <draw:text-box>
+            <text:p text:style-name="H2">Principios</text:p>
+            <text:list text:style-name="LB">
+              <text:list-item>
+                <text:p text:style-name="BodyS">Aprendizaje basado en la práctica y en casos reales.</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="BodyS">Alineación constructiva: objetivo → actividad → evidencia.</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="BodyS">Atención a la diversidad (DUA): varias formas de acceso y de expresión.</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="BodyS">Feedback frecuente y evaluación formativa.</text:p>
+              </text:list-item>
+            </text:list>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="met-c0-0" svg:x="17.4cm" svg:y="6.3cm" svg:width="4.6cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t0-0" svg:x="17.56cm" svg:y="6.43cm" svg:width="4.279999999999999cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSmHead">Momento</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="met-c0-1" svg:x="22.0cm" svg:y="6.3cm" svg:width="7.4cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t0-1" svg:x="22.16cm" svg:y="6.43cm" svg:width="7.08cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSmHead">Técnica</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="met-c0-2" svg:x="29.4cm" svg:y="6.3cm" svg:width="4.7cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t0-2" svg:x="29.56cm" svg:y="6.43cm" svg:width="4.38cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSmHead">Agrupamiento</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="met-c0-3" svg:x="34.1cm" svg:y="6.3cm" svg:width="2.6cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t0-3" svg:x="34.26cm" svg:y="6.43cm" svg:width="2.2800000000000002cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSmHead">Tiempo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="met-c1-0" svg:x="17.4cm" svg:y="7.35cm" svg:width="4.6cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t1-0" svg:x="17.56cm" svg:y="7.4799999999999995cm" svg:width="4.279999999999999cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Inicio</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="met-c1-1" svg:x="22.0cm" svg:y="7.35cm" svg:width="7.4cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t1-1" svg:x="22.16cm" svg:y="7.4799999999999995cm" svg:width="7.08cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Pregunta inicial y mapa]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="met-c1-2" svg:x="29.4cm" svg:y="7.35cm" svg:width="4.7cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t1-2" svg:x="29.56cm" svg:y="7.4799999999999995cm" svg:width="4.38cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Grupo completo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="met-c1-3" svg:x="34.1cm" svg:y="7.35cm" svg:width="2.6cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t1-3" svg:x="34.26cm" svg:y="7.4799999999999995cm" svg:width="2.2800000000000002cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">15 min</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="met-c2-0" svg:x="17.4cm" svg:y="8.85cm" svg:width="4.6cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t2-0" svg:x="17.56cm" svg:y="8.98cm" svg:width="4.279999999999999cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Desarrollo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="met-c2-1" svg:x="22.0cm" svg:y="8.85cm" svg:width="7.4cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t2-1" svg:x="22.16cm" svg:y="8.98cm" svg:width="7.08cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Taller guiado]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="met-c2-2" svg:x="29.4cm" svg:y="8.85cm" svg:width="4.7cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t2-2" svg:x="29.56cm" svg:y="8.98cm" svg:width="4.38cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Parejas</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="met-c2-3" svg:x="34.1cm" svg:y="8.85cm" svg:width="2.6cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t2-3" svg:x="34.26cm" svg:y="8.98cm" svg:width="2.2800000000000002cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">60 min</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="met-c3-0" svg:x="17.4cm" svg:y="10.35cm" svg:width="4.6cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t3-0" svg:x="17.56cm" svg:y="10.48cm" svg:width="4.279999999999999cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Cierre</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="met-c3-1" svg:x="22.0cm" svg:y="10.35cm" svg:width="7.4cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t3-1" svg:x="22.16cm" svg:y="10.48cm" svg:width="7.08cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Puesta en común]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="met-c3-2" svg:x="29.4cm" svg:y="10.35cm" svg:width="4.7cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t3-2" svg:x="29.56cm" svg:y="10.48cm" svg:width="4.38cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Grupo completo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="met-c3-3" svg:x="34.1cm" svg:y="10.35cm" svg:width="2.6cm" svg:height="1.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="met-t3-3" svg:x="34.26cm" svg:y="10.48cm" svg:width="2.2800000000000002cm" svg:height="1.3cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">15 min</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">MF1442_3 · Plantilla demo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">7</text:p>
+          </draw:text-box>
+        </draw:frame>
+      </draw:page>
+      <draw:page draw:name="Temporalizacion" draw:master-page-name="Default">
+        <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Kicker">06 · TEMPORALIZACIÓN</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Title">Nueve sesiones, del 24/11 al 04/12 de 2026</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="4.9cm" svg:width="28.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="Subtitle">Cambia las fechas si el centro mueve el calendario: están en el README del repositorio.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="temp-c0-0" svg:x="2.0cm" svg:y="6.2cm" svg:width="3.6cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t0-0" svg:x="2.16cm" svg:y="6.33cm" svg:width="3.2800000000000002cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellHeadText">Sesión</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="temp-c0-1" svg:x="5.6cm" svg:y="6.2cm" svg:width="14.4cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t0-1" svg:x="5.76cm" svg:y="6.33cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellHeadText">Contenido de la sesión</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="temp-c0-2" svg:x="20.0cm" svg:y="6.2cm" svg:width="11.3cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t0-2" svg:x="20.16cm" svg:y="6.33cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellHeadText">Evidencia que se entrega</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="temp-c1-0" svg:x="2.0cm" svg:y="7.23cm" svg:width="3.6cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t1-0" svg:x="2.16cm" svg:y="7.36cm" svg:width="3.2800000000000002cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">1 · 24/11</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="temp-c1-1" svg:x="5.6cm" svg:y="7.23cm" svg:width="14.4cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t1-1" svg:x="5.76cm" svg:y="7.36cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Presentación del módulo y análisis del contexto</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="temp-c1-2" svg:x="20.0cm" svg:y="7.23cm" svg:width="11.3cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t1-2" svg:x="20.16cm" svg:y="7.36cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Ficha del grupo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c2-0" svg:x="2.0cm" svg:y="8.26cm" svg:width="3.6cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t2-0" svg:x="2.16cm" svg:y="8.39cm" svg:width="3.2800000000000002cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">2 · 25/11</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c2-1" svg:x="5.6cm" svg:y="8.26cm" svg:width="14.4cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t2-1" svg:x="5.76cm" svg:y="8.39cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Marco normativo del certificado y de la FPE</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c2-2" svg:x="20.0cm" svg:y="8.26cm" svg:width="11.3cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t2-2" svg:x="20.16cm" svg:y="8.39cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Análisis de normativa</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="temp-c3-0" svg:x="2.0cm" svg:y="9.29cm" svg:width="3.6cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t3-0" svg:x="2.16cm" svg:y="9.42cm" svg:width="3.2800000000000002cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">3 · 26/11</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="temp-c3-1" svg:x="5.6cm" svg:y="9.29cm" svg:width="14.4cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t3-1" svg:x="5.76cm" svg:y="9.42cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Detección de necesidades y perfil del alumnado</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="temp-c3-2" svg:x="20.0cm" svg:y="9.29cm" svg:width="11.3cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t3-2" svg:x="20.16cm" svg:y="9.42cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Ficha del perfil</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c4-0" svg:x="2.0cm" svg:y="10.319999999999999cm" svg:width="3.6cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t4-0" svg:x="2.16cm" svg:y="10.45cm" svg:width="3.2800000000000002cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">4 · 27/11</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c4-1" svg:x="5.6cm" svg:y="10.319999999999999cm" svg:width="14.4cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t4-1" svg:x="5.76cm" svg:y="10.45cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Objetivos y criterios de evaluación</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c4-2" svg:x="20.0cm" svg:y="10.319999999999999cm" svg:width="11.3cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t4-2" svg:x="20.16cm" svg:y="10.45cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Tabla de objetivos y CE</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="temp-c5-0" svg:x="2.0cm" svg:y="11.349999999999998cm" svg:width="3.6cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t5-0" svg:x="2.16cm" svg:y="11.479999999999999cm" svg:width="3.2800000000000002cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">5 · 30/11</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="temp-c5-1" svg:x="5.6cm" svg:y="11.349999999999998cm" svg:width="14.4cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t5-1" svg:x="5.76cm" svg:y="11.479999999999999cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Contenidos y unidades didácticas</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="temp-c5-2" svg:x="20.0cm" svg:y="11.349999999999998cm" svg:width="11.3cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t5-2" svg:x="20.16cm" svg:y="11.479999999999999cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Tabla de secuenciación</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c6-0" svg:x="2.0cm" svg:y="12.379999999999997cm" svg:width="3.6cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t6-0" svg:x="2.16cm" svg:y="12.509999999999998cm" svg:width="3.2800000000000002cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">6 · 01/12</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c6-1" svg:x="5.6cm" svg:y="12.379999999999997cm" svg:width="14.4cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t6-1" svg:x="5.76cm" svg:y="12.509999999999998cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Metodología y diseño de actividades</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c6-2" svg:x="20.0cm" svg:y="12.379999999999997cm" svg:width="11.3cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t6-2" svg:x="20.16cm" svg:y="12.509999999999998cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Programación (borrador)</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="temp-c7-0" svg:x="2.0cm" svg:y="13.409999999999997cm" svg:width="3.6cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t7-0" svg:x="2.16cm" svg:y="13.539999999999997cm" svg:width="3.2800000000000002cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">7 · 02/12</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="temp-c7-1" svg:x="5.6cm" svg:y="13.409999999999997cm" svg:width="14.4cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t7-1" svg:x="5.76cm" svg:y="13.539999999999997cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Recursos, materiales y coordinación docente</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="temp-c7-2" svg:x="20.0cm" svg:y="13.409999999999997cm" svg:width="11.3cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t7-2" svg:x="20.16cm" svg:y="13.539999999999997cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Listado de recursos</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c8-0" svg:x="2.0cm" svg:y="14.439999999999996cm" svg:width="3.6cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t8-0" svg:x="2.16cm" svg:y="14.569999999999997cm" svg:width="3.2800000000000002cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">8 · 03/12</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c8-1" svg:x="5.6cm" svg:y="14.439999999999996cm" svg:width="14.4cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t8-1" svg:x="5.76cm" svg:y="14.569999999999997cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Temporalización y guion minuteado</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c8-2" svg:x="20.0cm" svg:y="14.439999999999996cm" svg:width="11.3cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t8-2" svg:x="20.16cm" svg:y="14.569999999999997cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Cronograma y guion</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="temp-c9-0" svg:x="2.0cm" svg:y="15.469999999999995cm" svg:width="3.6cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t9-0" svg:x="2.16cm" svg:y="15.599999999999996cm" svg:width="3.2800000000000002cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">9 · 04/12</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="temp-c9-1" svg:x="5.6cm" svg:y="15.469999999999995cm" svg:width="14.4cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t9-1" svg:x="5.76cm" svg:y="15.599999999999996cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Evaluación, rúbrica y cierre</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="temp-c9-2" svg:x="20.0cm" svg:y="15.469999999999995cm" svg:width="11.3cm" svg:height="1.03cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="temp-t9-2" svg:x="20.16cm" svg:y="15.599999999999996cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Rúbrica y programación final</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">MF1442_3 · Plantilla demo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">8</text:p>
+          </draw:text-box>
+        </draw:frame>
+      </draw:page>
+      <draw:page draw:name="Recursos" draw:master-page-name="Default">
+        <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Kicker">07 · RECURSOS</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Title">Qué necesitas tener preparado</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="4.9cm" svg:width="28.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="Subtitle">Recursos del aula y recursos digitales; y un plan B para cada uno.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="2.0cm" svg:y="6.3cm" svg:width="14.3cm" svg:height="6.4cm"/>
+        <draw:rect draw:style-name="PillIndigo" draw:name="r" svg:x="2.0cm" svg:y="6.3cm" svg:width="0.14cm" svg:height="6.4cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="6.6cm" svg:width="13.4cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">Aula</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="7.449999999999999cm" svg:width="13.350000000000001cm" svg:height="5.050000000000001cm">
+          <draw:text-box>
+            <text:list text:style-name="LB">
+              <text:list-item>
+                <text:p text:style-name="CardBody">[Aula con proyector y pizarra.]</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="CardBody">[Ordenadores: uno por pareja.]</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="CardBody">[Plantillas impresas de la programación.]</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="CardBody">[Copia en papel de los criterios de evaluación.]</text:p>
+              </text:list-item>
+            </text:list>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="17.5cm" svg:y="6.3cm" svg:width="14.3cm" svg:height="6.4cm"/>
+        <draw:rect draw:style-name="PillTeal" draw:name="r" svg:x="17.5cm" svg:y="6.3cm" svg:width="0.14cm" svg:height="6.4cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="6.6cm" svg:width="13.4cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">Digital</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="7.449999999999999cm" svg:width="13.350000000000001cm" svg:height="5.050000000000001cm">
+          <draw:text-box>
+            <text:list text:style-name="LB">
+              <text:list-item>
+                <text:p text:style-name="CardBody">[Carpeta compartida del curso.]</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="CardBody">[Plantilla de programación en .docx y .pptx.]</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="CardBody">[Formulario de autoevaluación.]</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="CardBody">[Vídeos y ejemplos descargados, no en streaming.]</text:p>
+              </text:list-item>
+            </text:list>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardBg" draw:name="r" svg:x="2.0cm" svg:y="13.2cm" svg:width="29.8cm" svg:height="3.4cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.4cm" svg:y="13.5cm" svg:width="29.0cm" svg:height="2.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Small"><text:span text:style-name="AccentSpan">Plan B: </text:span>si falla el proyector o internet, la sesión sigue con la guía impresa y la pizarra. Ese plan también se escribe en la programación: no se improvisa.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">MF1442_3 · Plantilla demo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">9</text:p>
+          </draw:text-box>
+        </draw:frame>
+      </draw:page>
+      <draw:page draw:name="Evaluacion" draw:master-page-name="Default">
+        <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Kicker">08 · EVALUACIÓN</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Title">Tres momentos y un instrumento por momento</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="4.9cm" svg:width="28.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="Subtitle">Si no hay instrumento, no hay evidencia; y sin evidencia no hay nota.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="eval-c0-0" svg:x="2.0cm" svg:y="6.3cm" svg:width="5.0cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t0-0" svg:x="2.16cm" svg:y="6.43cm" svg:width="4.68cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSmHead">Tipo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="eval-c0-1" svg:x="7.0cm" svg:y="6.3cm" svg:width="7.4cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t0-1" svg:x="7.16cm" svg:y="6.43cm" svg:width="7.08cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSmHead">Momento</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="eval-c0-2" svg:x="14.4cm" svg:y="6.3cm" svg:width="12.0cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t0-2" svg:x="14.56cm" svg:y="6.43cm" svg:width="11.68cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSmHead">Instrumento y criterio</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="eval-c0-3" svg:x="26.4cm" svg:y="6.3cm" svg:width="4.9cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t0-3" svg:x="26.56cm" svg:y="6.43cm" svg:width="4.58cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSmHead">Peso</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="eval-c1-0" svg:x="2.0cm" svg:y="7.35cm" svg:width="5.0cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t1-0" svg:x="2.16cm" svg:y="7.4799999999999995cm" svg:width="4.68cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">Diagnóstica</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="eval-c1-1" svg:x="7.0cm" svg:y="7.35cm" svg:width="7.4cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t1-1" svg:x="7.16cm" svg:y="7.4799999999999995cm" svg:width="7.08cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Sesión 1</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="eval-c1-2" svg:x="14.4cm" svg:y="7.35cm" svg:width="12.0cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t1-2" svg:x="14.56cm" svg:y="7.4799999999999995cm" svg:width="11.68cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Cuestionario de ideas previas + ficha del grupo]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="eval-c1-3" svg:x="26.4cm" svg:y="7.35cm" svg:width="4.9cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t1-3" svg:x="26.56cm" svg:y="7.4799999999999995cm" svg:width="4.58cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">0 %</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="eval-c2-0" svg:x="2.0cm" svg:y="9.1cm" svg:width="5.0cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t2-0" svg:x="2.16cm" svg:y="9.23cm" svg:width="4.68cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">Formativa</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="eval-c2-1" svg:x="7.0cm" svg:y="9.1cm" svg:width="7.4cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t2-1" svg:x="7.16cm" svg:y="9.23cm" svg:width="7.08cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Sesiones 2–8</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="eval-c2-2" svg:x="14.4cm" svg:y="9.1cm" svg:width="12.0cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t2-2" svg:x="14.56cm" svg:y="9.23cm" svg:width="11.68cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Observación con lista de cotejo y entregas parciales]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="eval-c2-3" svg:x="26.4cm" svg:y="9.1cm" svg:width="4.9cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t2-3" svg:x="26.56cm" svg:y="9.23cm" svg:width="4.58cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">40 %</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="eval-c3-0" svg:x="2.0cm" svg:y="10.85cm" svg:width="5.0cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t3-0" svg:x="2.16cm" svg:y="10.98cm" svg:width="4.68cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">Sumativa</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="eval-c3-1" svg:x="7.0cm" svg:y="10.85cm" svg:width="7.4cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t3-1" svg:x="7.16cm" svg:y="10.98cm" svg:width="7.08cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">Sesión 9</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="eval-c3-2" svg:x="14.4cm" svg:y="10.85cm" svg:width="12.0cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t3-2" svg:x="14.56cm" svg:y="10.98cm" svg:width="11.68cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Programación didáctica + defensa con rúbrica]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="eval-c3-3" svg:x="26.4cm" svg:y="10.85cm" svg:width="4.9cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="eval-t3-3" svg:x="26.56cm" svg:y="10.98cm" svg:width="4.58cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">60 %</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="14.6cm" svg:width="29.5cm" svg:height="1.6cm">
+          <draw:text-box>
+            <text:p text:style-name="Small"><text:span text:style-name="AccentSpan">Recuerda: </text:span>cada criterio de evaluación debe aparecer en la rúbrica con un descriptor observable. Nada de «participa bien».</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">MF1442_3 · Plantilla demo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">10</text:p>
+          </draw:text-box>
+        </draw:frame>
+      </draw:page>
+      <draw:page draw:name="Rubrica" draw:master-page-name="Default">
+        <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Kicker">09 · RÚBRICA</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Title">Cuatro niveles por criterio</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="4.9cm" svg:width="28.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="Subtitle">Sustituye los descriptores por lo que se ve en la entrega, no por adjetivos.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="rub-c0-0" svg:x="2.0cm" svg:y="6.2cm" svg:width="6.2cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t0-0" svg:x="2.16cm" svg:y="6.33cm" svg:width="5.88cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSmHead">Criterio</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="rub-c0-1" svg:x="8.2cm" svg:y="6.2cm" svg:width="7.6cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t0-1" svg:x="8.36cm" svg:y="6.33cm" svg:width="7.279999999999999cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSmHead">Insuficiente (0–4)</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="rub-c0-2" svg:x="15.799999999999999cm" svg:y="6.2cm" svg:width="7.6cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t0-2" svg:x="15.959999999999999cm" svg:y="6.33cm" svg:width="7.279999999999999cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSmHead">Suficiente (5–6)</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="rub-c0-3" svg:x="23.4cm" svg:y="6.2cm" svg:width="8.4cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t0-3" svg:x="23.56cm" svg:y="6.33cm" svg:width="8.08cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSmHead">Notable / Excelente (7–10)</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="rub-c1-0" svg:x="2.0cm" svg:y="7.25cm" svg:width="6.2cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t1-0" svg:x="2.16cm" svg:y="7.38cm" svg:width="5.88cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">Contexto y necesidades</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="rub-c1-1" svg:x="8.2cm" svg:y="7.25cm" svg:width="7.6cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t1-1" svg:x="8.36cm" svg:y="7.38cm" svg:width="7.279999999999999cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[No identifica el grupo]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="rub-c1-2" svg:x="15.799999999999999cm" svg:y="7.25cm" svg:width="7.6cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t1-2" svg:x="15.959999999999999cm" svg:y="7.38cm" svg:width="7.279999999999999cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Describe el grupo]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="rub-c1-3" svg:x="23.4cm" svg:y="7.25cm" svg:width="8.4cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t1-3" svg:x="23.56cm" svg:y="7.38cm" svg:width="8.08cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Analiza y justifica decisiones]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="rub-c2-0" svg:x="2.0cm" svg:y="9.2cm" svg:width="6.2cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t2-0" svg:x="2.16cm" svg:y="9.33cm" svg:width="5.88cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">Objetivos y CE</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="rub-c2-1" svg:x="8.2cm" svg:y="9.2cm" svg:width="7.6cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t2-1" svg:x="8.36cm" svg:y="9.33cm" svg:width="7.279999999999999cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Genéricos]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="rub-c2-2" svg:x="15.799999999999999cm" svg:y="9.2cm" svg:width="7.6cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t2-2" svg:x="15.959999999999999cm" svg:y="9.33cm" svg:width="7.279999999999999cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Claros y medibles]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="rub-c2-3" svg:x="23.4cm" svg:y="9.2cm" svg:width="8.4cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t2-3" svg:x="23.56cm" svg:y="9.33cm" svg:width="8.08cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Alineados y verificables]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="rub-c3-0" svg:x="2.0cm" svg:y="11.149999999999999cm" svg:width="6.2cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t3-0" svg:x="2.16cm" svg:y="11.28cm" svg:width="5.88cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">Contenidos</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="rub-c3-1" svg:x="8.2cm" svg:y="11.149999999999999cm" svg:width="7.6cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t3-1" svg:x="8.36cm" svg:y="11.28cm" svg:width="7.279999999999999cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Lista sin secuencia]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="rub-c3-2" svg:x="15.799999999999999cm" svg:y="11.149999999999999cm" svg:width="7.6cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t3-2" svg:x="15.959999999999999cm" svg:y="11.28cm" svg:width="7.279999999999999cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Secuencia lógica]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="rub-c3-3" svg:x="23.4cm" svg:y="11.149999999999999cm" svg:width="8.4cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t3-3" svg:x="23.56cm" svg:y="11.28cm" svg:width="8.08cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Secuencia con tiempos y UD]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="rub-c4-0" svg:x="2.0cm" svg:y="13.099999999999998cm" svg:width="6.2cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t4-0" svg:x="2.16cm" svg:y="13.229999999999999cm" svg:width="5.88cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">Evaluación</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="rub-c4-1" svg:x="8.2cm" svg:y="13.099999999999998cm" svg:width="7.6cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t4-1" svg:x="8.36cm" svg:y="13.229999999999999cm" svg:width="7.279999999999999cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Solo prueba final]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="rub-c4-2" svg:x="15.799999999999999cm" svg:y="13.099999999999998cm" svg:width="7.6cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t4-2" svg:x="15.959999999999999cm" svg:y="13.229999999999999cm" svg:width="7.279999999999999cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Instrumentos básicos]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="rub-c4-3" svg:x="23.4cm" svg:y="13.099999999999998cm" svg:width="8.4cm" svg:height="1.95cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="rub-t4-3" svg:x="23.56cm" svg:y="13.229999999999999cm" svg:width="8.08cm" svg:height="1.75cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Rúbrica completa y coherente]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">MF1442_3 · Plantilla demo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">11</text:p>
+          </draw:text-box>
+        </draw:frame>
+      </draw:page>
+      <draw:page draw:name="Alineacion" draw:master-page-name="Default">
+        <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Kicker">10 · ALINEACIÓN CONSTRUCTIVA</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Title">Objetivo → actividad → evidencia</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="4.9cm" svg:width="28.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="Subtitle">La prueba de que la programación no es una lista: todo apunta al mismo criterio.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="alin-c0-0" svg:x="2.0cm" svg:y="6.3cm" svg:width="8.6cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="alin-t0-0" svg:x="2.16cm" svg:y="6.43cm" svg:width="8.28cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSmHead">Objetivo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="alin-c0-1" svg:x="10.6cm" svg:y="6.3cm" svg:width="10.4cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="alin-t0-1" svg:x="10.76cm" svg:y="6.43cm" svg:width="10.08cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSmHead">Actividad</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgHead" draw:name="alin-c0-2" svg:x="21.0cm" svg:y="6.3cm" svg:width="10.3cm" svg:height="1.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="alin-t0-2" svg:x="21.16cm" svg:y="6.43cm" svg:width="9.98cm" svg:height="0.8500000000000001cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSmHead">Evidencia y criterio</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="alin-c1-0" svg:x="2.0cm" svg:y="7.35cm" svg:width="8.6cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="alin-t1-0" svg:x="2.16cm" svg:y="7.4799999999999995cm" svg:width="8.28cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">[OG1 · Analizar el contexto]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="alin-c1-1" svg:x="10.6cm" svg:y="7.35cm" svg:width="10.4cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="alin-t1-1" svg:x="10.76cm" svg:y="7.4799999999999995cm" svg:width="10.08cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Estudio de caso + debate guiado]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="alin-c1-2" svg:x="21.0cm" svg:y="7.35cm" svg:width="10.3cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="alin-t1-2" svg:x="21.16cm" svg:y="7.4799999999999995cm" svg:width="9.98cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Ficha del grupo · CE1]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="alin-c2-0" svg:x="2.0cm" svg:y="9.1cm" svg:width="8.6cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="alin-t2-0" svg:x="2.16cm" svg:y="9.23cm" svg:width="8.28cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">[OE2 · Secuenciar contenidos]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="alin-c2-1" svg:x="10.6cm" svg:y="9.1cm" svg:width="10.4cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="alin-t2-1" svg:x="10.76cm" svg:y="9.23cm" svg:width="10.08cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Taller de unidades didácticas]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgAlt" draw:name="alin-c2-2" svg:x="21.0cm" svg:y="9.1cm" svg:width="10.3cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="alin-t2-2" svg:x="21.16cm" svg:y="9.23cm" svg:width="9.98cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Tabla de secuenciación · CE2]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="alin-c3-0" svg:x="2.0cm" svg:y="10.85cm" svg:width="8.6cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="alin-t3-0" svg:x="2.16cm" svg:y="10.98cm" svg:width="8.28cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellTextB">[OE3 · Diseñar la evaluación]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="alin-c3-1" svg:x="10.6cm" svg:y="10.85cm" svg:width="10.4cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="alin-t3-1" svg:x="10.76cm" svg:y="10.98cm" svg:width="10.08cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Prueba práctica + rúbrica]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CellBgW" draw:name="alin-c3-2" svg:x="21.0cm" svg:y="10.85cm" svg:width="10.3cm" svg:height="1.75cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="alin-t3-2" svg:x="21.16cm" svg:y="10.98cm" svg:width="9.98cm" svg:height="1.55cm">
+          <draw:text-box>
+            <text:p text:style-name="CellSm">[Rúbrica aplicada · CE3]</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">MF1442_3 · Plantilla demo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">12</text:p>
+          </draw:text-box>
+        </draw:frame>
+      </draw:page>
+      <draw:page draw:name="Riesgos" draw:master-page-name="Default">
+        <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Kicker">11 · RIESGOS Y PLAN B</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Title">Qué puede salir mal y qué harás entonces</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="4.9cm" svg:width="28.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="Subtitle">Anticipar los problemas es parte de la competencia docente.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="2.0cm" svg:y="6.3cm" svg:width="14.3cm" svg:height="4.4cm"/>
+        <draw:rect draw:style-name="PillAmber" draw:name="r" svg:x="2.0cm" svg:y="6.3cm" svg:width="0.14cm" svg:height="4.4cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="6.6cm" svg:width="13.4cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">En el aula</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="7.449999999999999cm" svg:width="13.350000000000001cm" svg:height="3.0500000000000003cm">
+          <draw:text-box>
+            <text:list text:style-name="LB">
+              <text:list-item>
+                <text:p text:style-name="CardBody">[Falta de tiempo: recorto una actividad, no la evaluación.]</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="CardBody">[Grupo muy heterogéneo: itinerario B y apoyo entre iguales.]</text:p>
+              </text:list-item>
+            </text:list>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="17.5cm" svg:y="6.3cm" svg:width="14.3cm" svg:height="4.4cm"/>
+        <draw:rect draw:style-name="PillAmber" draw:name="r" svg:x="17.5cm" svg:y="6.3cm" svg:width="0.14cm" svg:height="4.4cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="6.6cm" svg:width="13.4cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">Técnicos</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="7.449999999999999cm" svg:width="13.350000000000001cm" svg:height="3.0500000000000003cm">
+          <draw:text-box>
+            <text:list text:style-name="LB">
+              <text:list-item>
+                <text:p text:style-name="CardBody">[Sin proyector: guía impresa y pizarra.]</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="CardBody">[Sin internet: materiales descargados y actividad alternativa.]</text:p>
+              </text:list-item>
+            </text:list>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardBg" draw:name="r" svg:x="2.0cm" svg:y="11.2cm" svg:width="29.8cm" svg:height="4.4cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.4cm" svg:y="11.5cm" svg:width="29.0cm" svg:height="3.8cm">
+          <draw:text-box>
+            <text:p text:style-name="H2">Cómo se escribe en la programación</text:p>
+            <text:p text:style-name="Small">Cada riesgo lleva su medida: una línea con el problema, otra con la respuesta y quién la ejecuta. Así el plan B se evalúa como cualquier otro contenido.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">MF1442_3 · Plantilla demo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">13</text:p>
+          </draw:text-box>
+        </draw:frame>
+      </draw:page>
+      <draw:page draw:name="Cierre" draw:master-page-name="Default">
+        <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Kicker">12 · CIERRE</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Title">Qué entregas y cómo lo compruebas</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="4.9cm" svg:width="28.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="Subtitle">La diapositiva final sirve para que nadie se vaya sin saber qué falta.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="6.2cm" svg:width="15.4cm" svg:height="9.8cm">
+          <draw:text-box>
+            <text:p text:style-name="H2">Entregables del módulo</text:p>
+            <text:list text:style-name="LB">
+              <text:list-item>
+                <text:p text:style-name="BodyS">☐ Normativa aplicable analizada</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="BodyS">☐ Ficha del perfil del alumnado</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="BodyS">☐ Programación didáctica completa</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="BodyS">☐ Tabla de secuenciación de UD</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="BodyS">☐ Cronograma y guion minuteado</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="BodyS">☐ Instrumentos de evaluación y rúbrica</text:p>
+              </text:list-item>
+            </text:list>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="18.2cm" svg:y="6.3cm" svg:width="13.6cm" svg:height="9.0cm"/>
+        <draw:rect draw:style-name="PillMagenta" draw:name="r" svg:x="18.2cm" svg:y="6.3cm" svg:width="0.14cm" svg:height="9.0cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="18.65cm" svg:y="6.6cm" svg:width="12.7cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">Antes de entregar</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="18.65cm" svg:y="7.449999999999999cm" svg:width="12.65cm" svg:height="7.65cm">
+          <draw:text-box>
+            <text:list text:style-name="LB">
+              <text:list-item>
+                <text:p text:style-name="CardBody">Nombre y fecha en la portada.</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="CardBody">PDF con el mismo nombre que el archivo editable.</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="CardBody">Copia en la carpeta MF1442_3/ del repositorio.</text:p>
+              </text:list-item>
+              <text:list-item>
+                <text:p text:style-name="CardBody">Revisa que no queda ningún [corchete].</text:p>
+              </text:list-item>
+            </text:list>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">MF1442_3 · Plantilla demo · Aj Fonts</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">14</text:p>
+          </draw:text-box>
+        </draw:frame>
+      </draw:page>
+    </office:presentation>
+  </office:body>
+</office:document>

@@ -10,22 +10,29 @@ Aquí tienes el resumen completo y definitivo con todos los datos de tu ruta, ho
 	• Sin cortes totales de autovía: En horario laboral (7:30 – 16:30 h) la Guardia Civil no realiza macrocontroles con corte de calzada en Chucena o Huévar (estos son nocturnos o de fin de semana).
 	• Radares fijos señalizados en la A-49: Camas (km 0,5) y Villalba/Bollullos (km 46,3 sentido Huelva y km 50,8 sentido Sevilla).
 
-2. Calendario Estimado del Curso (SSCE0110)
+2. Calendario Confirmado del Curso (SSCE0110)
 
 • Inicio: Martes 24 de noviembre de 2026 | Horario: 9:00 a 15:00 h (6 horas/día).
-• Carga lectiva en Almonte: 340 horas teórico-prácticas = 57 días lectivos (56 días de 6 h + 1 día de 4 h). (Las 40 horas restantes corresponden al módulo de prácticas MP0353, que podrás solicitar cerca de tu domicilio en Sevilla o convalidar si tienes experiencia docente).
-• Fecha aproximada de fin de la teoría en Almonte:
-	• 17 de febrero de 2027: Si el centro solo cierra los festivos laborales oficiales (7 y 8 dic., 25 dic., 1 ene. y 6 ene.).
-	• 26 de febrero de 2027: Si el centro cierra por vacaciones de Navidad (del 24 de diciembre al 6 de enero).
-	• (Nota: Si el curso incluyera 40 h adicionales de módulos transversales hasta llegar a 420 h, se sumarían unos 7 días lectivos más, terminando a principios de marzo).
+• Calendario oficial del centro (CRONOGRAMA CEFI SSCE0110.pdf): 70 días lectivos del 24/11/2026 al 12/03/2027, con 9 festivos (7 y 8 de diciembre, 24 y 25 de diciembre, 31 de diciembre, 1, 5 y 6 de enero y 1 de marzo).
+• Aula: 57 sesiones hasta el 18 de febrero de 2027. Reparto por módulos:
+	• MF1442_3: 24/11 → 04/12 (9 sesiones).
+	• MF1443_3: 09/12 → 23/12 (11 sesiones).
+	• MF1444_3: 28/12 → 22/01 (16 sesiones).
+	• MF1445_3: 25/01 → 04/02 (9 sesiones).
+	• PRL (bloque del centro, no suma a las 380 h): 05/02 → 11/02 (5 sesiones).
+	• MF1446_3: 12/02 → 18/02 (5 sesiones).
+• Dos días sin módulo asignado: viernes 19 y lunes 22 de febrero de 2027.
+• Recuperación y evaluación: 23 y 24 de febrero de 2027 (2 sesiones).
+• Prácticas MP0353: del 25 de febrero al 12 de marzo de 2027 (11 sesiones, 40 h; el 1 de marzo es festivo). Si se hacen en Sevilla o se convalidan, no hay desplazamiento a Almonte esos días.
+• El 30 de diciembre es lectivo (MF1443), tal y como figura en el cronograma del centro.
 
 3. Cálculo de Consumo y Gasto de Gasóleo
 
 • Vehículo: VW Golf IV 1.9 TDI 90 CV (consumo real estimado a velocidades legales ≤ 120 km/h: 4,8 L/100 km).
 • Precio de referencia: 1,599 €/litro.
 
-Concepto	Cálculo (340 h teoría)	Total
-Días de desplazamiento a Almonte	340 h ÷ 6 h/día	57 días
+Concepto	Cálculo (57 sesiones de aula)	Total
+Días de desplazamiento a Almonte	57 sesiones de aula	57 días
 Kilómetros totales	57 días × 160 km (ida y vuelta)	9.120 km
 Gasóleo total consumido	9.120 km × 4,8 L/100 km	437,76 litros (~8 depósitos de 55 L)
 Gasto diario (ida y vuelta)	7,68 litros × 1,599 €/L	12,28 € / día

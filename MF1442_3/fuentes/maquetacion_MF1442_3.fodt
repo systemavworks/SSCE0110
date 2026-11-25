@@ -1,0 +1,1581 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
+  <office:font-face-decls>
+    <style:font-face style:name="Liberation Sans" svg:font-family="'Liberation Sans'" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  </office:font-face-decls>
+  <office:styles>
+    <style:style style:name="Table1" style:family="table">
+      <style:table-properties style:width="17cm" table:align="margins"/>
+    </style:style>
+    <text:list-style style:name="LB">
+      <text:list-level-style-bullet text:level="1" text:bullet-char="•">
+        <style:list-level-properties text:space-before="0.5cm" text:min-label-width="0.5cm"/>
+        <style:text-properties fo:font-size="10.5pt" fo:color="#3B34C7"/>
+      </text:list-level-style-bullet>
+    </text:list-style>
+    <style:style style:name="Kicker" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.35cm" fo:line-height="145%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="8.5pt" fo:color="#00958C" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="H1" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.2cm" fo:line-height="118%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="19pt" fo:color="#16152B" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="H2" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0.75cm" fo:margin-bottom="0.25cm" fo:line-height="145%" fo:border-bottom="0.05cm solid #3B34C7" fo:padding-bottom="0.1cm"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="12.5pt" fo:color="#3B34C7" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="Sub" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.35cm" fo:line-height="145%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="10.5pt" fo:color="#5A5872" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="Body" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.18cm" fo:line-height="145%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="10.5pt" fo:color="#16152B" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="Small" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.2cm" fo:line-height="130%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="8.5pt" fo:color="#5A5872" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="Note" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.5cm" fo:line-height="135%" fo:background-color="#F6F5FB" fo:border-left="0.12cm solid #3B34C7" fo:padding-left="0.35cm" fo:padding-top="0.15cm" fo:padding-bottom="0.15cm" fo:padding-right="0.3cm"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="9pt" fo:color="#4A4860" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="TableHeadP" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="115%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="8.5pt" fo:color="#FFFFFF" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="TableCellP" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="120%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="9pt" fo:color="#16152B" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="PB" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="145%" fo:break-before="page"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="10.5pt" fo:color="#16152B" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="PhSpan" style:family="text">
+      <style:text-properties style:font-name="Liberation Sans" fo:color="#7C7A96" fo:font-weight="normal"/>
+    </style:style>
+  </office:styles>
+  <office:automatic-styles>
+    <style:page-layout style:name="pm1">
+      <style:page-layout-properties fo:page-width="21cm" fo:page-height="29.7cm" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm"/>
+    </style:page-layout>
+    <style:style style:name="Cell" style:family="table-cell">
+      <style:table-cell-properties fo:padding="0.13cm" fo:background-color="#FFFFFF" fo:vertical-align="top" fo:border="0.5pt solid #D9D7E8"/>
+    </style:style>
+    <style:style style:name="CellHead" style:family="table-cell">
+      <style:table-cell-properties fo:padding="0.13cm" fo:background-color="#16152B" fo:vertical-align="top" fo:border="0.02cm solid #16152B"/>
+    </style:style>
+    <style:style style:name="co1_0" style:family="table-column">
+      <style:table-column-properties style:column-width="5.4cm"/>
+    </style:style>
+    <style:style style:name="co1_1" style:family="table-column">
+      <style:table-column-properties style:column-width="11.6cm"/>
+    </style:style>
+    <style:style style:name="co2_0" style:family="table-column">
+      <style:table-column-properties style:column-width="5.0cm"/>
+    </style:style>
+    <style:style style:name="co2_1" style:family="table-column">
+      <style:table-column-properties style:column-width="12.0cm"/>
+    </style:style>
+    <style:style style:name="co3_0" style:family="table-column">
+      <style:table-column-properties style:column-width="2.4cm"/>
+    </style:style>
+    <style:style style:name="co3_1" style:family="table-column">
+      <style:table-column-properties style:column-width="6.0cm"/>
+    </style:style>
+    <style:style style:name="co3_2" style:family="table-column">
+      <style:table-column-properties style:column-width="4.0cm"/>
+    </style:style>
+    <style:style style:name="co3_3" style:family="table-column">
+      <style:table-column-properties style:column-width="4.6cm"/>
+    </style:style>
+    <style:style style:name="co4_0" style:family="table-column">
+      <style:table-column-properties style:column-width="4.2cm"/>
+    </style:style>
+    <style:style style:name="co4_1" style:family="table-column">
+      <style:table-column-properties style:column-width="4.4cm"/>
+    </style:style>
+    <style:style style:name="co4_2" style:family="table-column">
+      <style:table-column-properties style:column-width="6.0cm"/>
+    </style:style>
+    <style:style style:name="co4_3" style:family="table-column">
+      <style:table-column-properties style:column-width="1.2cm"/>
+    </style:style>
+    <style:style style:name="co4_4" style:family="table-column">
+      <style:table-column-properties style:column-width="1.2cm"/>
+    </style:style>
+    <style:style style:name="co5_0" style:family="table-column">
+      <style:table-column-properties style:column-width="2.6cm"/>
+    </style:style>
+    <style:style style:name="co5_1" style:family="table-column">
+      <style:table-column-properties style:column-width="5.4cm"/>
+    </style:style>
+    <style:style style:name="co5_2" style:family="table-column">
+      <style:table-column-properties style:column-width="3.4cm"/>
+    </style:style>
+    <style:style style:name="co5_3" style:family="table-column">
+      <style:table-column-properties style:column-width="1.8cm"/>
+    </style:style>
+    <style:style style:name="co5_4" style:family="table-column">
+      <style:table-column-properties style:column-width="3.8cm"/>
+    </style:style>
+    <style:style style:name="co6_0" style:family="table-column">
+      <style:table-column-properties style:column-width="1.8cm"/>
+    </style:style>
+    <style:style style:name="co6_1" style:family="table-column">
+      <style:table-column-properties style:column-width="2.6cm"/>
+    </style:style>
+    <style:style style:name="co6_2" style:family="table-column">
+      <style:table-column-properties style:column-width="7.4cm"/>
+    </style:style>
+    <style:style style:name="co6_3" style:family="table-column">
+      <style:table-column-properties style:column-width="5.2cm"/>
+    </style:style>
+    <style:style style:name="co7_0" style:family="table-column">
+      <style:table-column-properties style:column-width="5.2cm"/>
+    </style:style>
+    <style:style style:name="co7_1" style:family="table-column">
+      <style:table-column-properties style:column-width="2.8cm"/>
+    </style:style>
+    <style:style style:name="co7_2" style:family="table-column">
+      <style:table-column-properties style:column-width="6.0cm"/>
+    </style:style>
+    <style:style style:name="co7_3" style:family="table-column">
+      <style:table-column-properties style:column-width="3.0cm"/>
+    </style:style>
+    <style:style style:name="co8_0" style:family="table-column">
+      <style:table-column-properties style:column-width="2.6cm"/>
+    </style:style>
+    <style:style style:name="co8_1" style:family="table-column">
+      <style:table-column-properties style:column-width="3.0cm"/>
+    </style:style>
+    <style:style style:name="co8_2" style:family="table-column">
+      <style:table-column-properties style:column-width="6.6cm"/>
+    </style:style>
+    <style:style style:name="co8_3" style:family="table-column">
+      <style:table-column-properties style:column-width="3.2cm"/>
+    </style:style>
+    <style:style style:name="co8_4" style:family="table-column">
+      <style:table-column-properties style:column-width="1.6cm"/>
+    </style:style>
+    <style:style style:name="co9_0" style:family="table-column">
+      <style:table-column-properties style:column-width="4.0cm"/>
+    </style:style>
+    <style:style style:name="co9_1" style:family="table-column">
+      <style:table-column-properties style:column-width="3.2cm"/>
+    </style:style>
+    <style:style style:name="co9_2" style:family="table-column">
+      <style:table-column-properties style:column-width="3.2cm"/>
+    </style:style>
+    <style:style style:name="co9_3" style:family="table-column">
+      <style:table-column-properties style:column-width="3.3cm"/>
+    </style:style>
+    <style:style style:name="co9_4" style:family="table-column">
+      <style:table-column-properties style:column-width="3.3cm"/>
+    </style:style>
+    <style:style style:name="co10_0" style:family="table-column">
+      <style:table-column-properties style:column-width="5.2cm"/>
+    </style:style>
+    <style:style style:name="co10_1" style:family="table-column">
+      <style:table-column-properties style:column-width="5.4cm"/>
+    </style:style>
+    <style:style style:name="co10_2" style:family="table-column">
+      <style:table-column-properties style:column-width="4.0cm"/>
+    </style:style>
+    <style:style style:name="co10_3" style:family="table-column">
+      <style:table-column-properties style:column-width="2.4cm"/>
+    </style:style>
+    <style:style style:name="co11_0" style:family="table-column">
+      <style:table-column-properties style:column-width="5.0cm"/>
+    </style:style>
+    <style:style style:name="co11_1" style:family="table-column">
+      <style:table-column-properties style:column-width="8.4cm"/>
+    </style:style>
+    <style:style style:name="co11_2" style:family="table-column">
+      <style:table-column-properties style:column-width="3.6cm"/>
+    </style:style>
+    <style:style style:name="co12_0" style:family="table-column">
+      <style:table-column-properties style:column-width="1.0cm"/>
+    </style:style>
+    <style:style style:name="co12_1" style:family="table-column">
+      <style:table-column-properties style:column-width="11.0cm"/>
+    </style:style>
+    <style:style style:name="co12_2" style:family="table-column">
+      <style:table-column-properties style:column-width="5.0cm"/>
+    </style:style>
+  </office:automatic-styles>
+  <office:master-styles>
+    <style:master-page style:name="Standard" style:page-layout-name="pm1"/>
+  </office:master-styles>
+  <office:body>
+    <office:text>
+      <text:p text:style-name="Kicker">SSCE0110 · MF1442_3 · PLANTILLA DE MAQUETACIÓN</text:p>
+      <text:h text:style-name="H1" text:outline-level="1">Programación didáctica de una acción formativa para el empleo</text:h>
+      <text:p text:style-name="Sub">Documento para rellenar · 60 h · 9 sesiones · 24/11/2026 → 04/12/2026 · CEFI Formación (Almonte)</text:p>
+      <text:p text:style-name="Body">Autor/a: <text:span text:style-name="PhSpan">[nombre y apellidos]</text:span> · Curso: SSCE0110 · Docencia de la Formación Profesional para el Empleo · Módulo: MF1442_3 (UC1442_3)</text:p>
+      <text:p text:style-name="Body">Versión: <text:span text:style-name="PhSpan">[v1]</text:span> · Fecha: <text:span text:style-name="PhSpan">[dd/mm/aaaa]</text:span> · Entrega: <text:span text:style-name="PhSpan">[nombre del archivo.pdf]</text:span></text:p>
+      <text:p text:style-name="Small">Todo lo que aparece entre <text:span text:style-name="PhSpan">[corchetes]</text:span> es un hueco: borra el corchete cuando escribas. Si queda uno, se nota.</text:p>
+      <text:h text:style-name="H2" text:outline-level="2">0 · Cómo usar esta plantilla</text:h>
+      <text:p text:style-name="Note">Cinco reglas. (1) No borres los títulos numerados: son los apartados que se evalúan. (2) Sustituye todos los corchetes. (3) Escribe en primera persona y en presente. (4) Cada afirmación debe poder demostrarse con una evidencia del aula o de la entrega. (5) Exporta a PDF con el mismo nombre que el archivo editable.</text:p>
+      <text:list text:style-name="LB">
+        <text:list-item>
+          <text:p text:style-name="Body">Extensión orientativa: 10–16 páginas sin anexos. Si te pasas de 20, recorta antes la teoría que las tablas.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">Formato: A4, márgenes de 2 cm, cuerpo 10,5 pt, interlineado 1,45. Títulos en el orden de esta plantilla.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">Nomenclatura del archivo: MF1442_3_programacion_apellido.pdf</text:p>
+        </text:list-item>
+      </text:list>
+      <text:h text:style-name="H2" text:outline-level="2">1 · Datos de la acción formativa</text:h>
+      <table:table table:name="T1" table:style-name="Table1">
+        <table:table-column table:style-name="co1_0"/>
+        <table:table-column table:style-name="co1_1"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Dato</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Contenido</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Denominación de la acción</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Programación didáctica de acciones formativas para el empleo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Certificado de profesionalidad</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">SSCE0110 · Docencia de la formación profesional para el empleo (nivel 3)</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Módulo formativo / UC</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">MF1442_3 · UC1442_3 · <text:span text:style-name="PhSpan">[60 h]</text:span></text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Familia profesional</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Servicios Socioculturales y a la Comunidad</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Centro / entidad</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">CEFI Formación S.L. · Pol. Ind. Los Taranjales II, 58 · Almonte (Huelva)</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Modalidad y horario</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP"><text:span text:style-name="PhSpan">[Presencial]</text:span> · <text:span text:style-name="PhSpan">[Lunes a viernes, 9:00–15:00]</text:span></text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Fechas</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Del <text:span text:style-name="PhSpan">[24/11/2026]</text:span> al <text:span text:style-name="PhSpan">[04/12/2026]</text:span> · 9 sesiones</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Destinatarios</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Colectivo, nº de alumnos, requisitos de acceso]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Formador/a y tutor/a</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP"><text:span text:style-name="PhSpan">[Nombre]</text:span> · <text:span text:style-name="PhSpan">[Correo y teléfono de contacto]</text:span></text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:p text:style-name="PB"/>
+      <text:h text:style-name="H2" text:outline-level="2">2 · Justificación y contexto</text:h>
+      <text:p text:style-name="Body">Explica en tres párrafos cortos por qué esta acción formativa tiene sentido para este grupo y este centro.</text:p>
+      <table:table table:name="T2" table:style-name="Table1">
+        <table:table-column table:style-name="co2_0"/>
+        <table:table-column table:style-name="co2_1"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Aspecto</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Qué escribir</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Necesidad detectada</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Necesidad formativa del sector, del centro o de la empresa; fuente del dato]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Contexto del centro</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Recursos, ubicación, experiencia, concertación con empresas]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Perfil del alumnado</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Nivel académico, experiencia, competencia digital, accesibilidad]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Normativa aplicable</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">LO 5/2002 · RD 34/2008 (modificado por RD 189/2011) · RD 1697/2011, Anexo IV, actualizado por RD 625/2013 · Orden ESS/1897/2013 · LO 3/2022 y RD 659/2023</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Resultado esperado</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Qué podrá hacer el alumnado al terminar, en una frase medible]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:h text:style-name="H2" text:outline-level="2">3 · Objetivos y criterios de evaluación</text:h>
+      <text:p text:style-name="Body">Cada objetivo se apoya en un criterio de evaluación del certificado y en un indicador que se pueda ver.</text:p>
+      <table:table table:name="T3" table:style-name="Table1">
+        <table:table-column table:style-name="co3_0"/>
+        <table:table-column table:style-name="co3_1"/>
+        <table:table-column table:style-name="co3_2"/>
+        <table:table-column table:style-name="co3_3"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Tipo</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Objetivo</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Criterio de evaluación</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Indicador observable</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">General</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Elaborar la programación didáctica de una acción formativa, integrando objetivos, contenidos, metodología, recursos y evaluación]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[CE n del certificado]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Entrega completa y coherente]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Específico 1</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Analizar el contexto y detectar necesidades formativas]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[CE n]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Ficha del grupo con datos y conclusiones]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Específico 2</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Secuenciar los contenidos en unidades didácticas]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[CE n]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Tabla de secuenciación con tiempos]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Específico 3</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Diseñar actividades y su evaluación]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[CE n]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Rúbrica aplicada a una actividad]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:h text:style-name="H2" text:outline-level="2">4 · Contenidos y unidades didácticas</text:h>
+      <table:table table:name="T4" table:style-name="Table1">
+        <table:table-column table:style-name="co4_0"/>
+        <table:table-column table:style-name="co4_1"/>
+        <table:table-column table:style-name="co4_2"/>
+        <table:table-column table:style-name="co4_3"/>
+        <table:table-column table:style-name="co4_4"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Bloque</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Unidad didáctica</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Contenidos</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Horas</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Ses.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">B1 · Contexto y programación</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">UD1 · <text:span text:style-name="PhSpan">[El contexto formativo]</text:span></text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Análisis del contexto, detección de necesidades, normativa, estructura del certificado]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[12]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[2]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">B2 · Diseño y secuenciación</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">UD2 · <text:span text:style-name="PhSpan">[Objetivos y contenidos]</text:span></text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Objetivos operativos, criterios de evaluación, secuenciación, temporalización]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[18]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[3]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">B3 · Metodología y recursos</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">UD3 · <text:span text:style-name="PhSpan">[Metodología y actividades]</text:span></text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Métodos activos, agrupamientos, materiales y medios, coordinación docente]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[18]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[3]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">B4 · Evaluación y mejora</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">UD4 · <text:span text:style-name="PhSpan">[Evaluación y mejora]</text:span></text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Evaluación diagnóstica, formativa y sumativa; instrumentos, rúbricas, análisis y mejora]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[12]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[1]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Total</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP"/>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP"/>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">9</text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:h text:style-name="H2" text:outline-level="2">5 · Metodología</text:h>
+      <text:list text:style-name="LB">
+        <text:list-item>
+          <text:p text:style-name="Body">Enfoque: <text:span text:style-name="PhSpan">[aprendizaje basado en la práctica y en casos reales del sector]</text:span>.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">Alineación constructiva: cada objetivo tiene una actividad y una evidencia; cada evidencia se corrige con un criterio declarado.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">Atención a la diversidad (DUA): <text:span text:style-name="PhSpan">[varias formas de acceso al contenido y de expresión del aprendizaje]</text:span>.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">Feedback: <text:span text:style-name="PhSpan">[cuándo y cómo se devuelve, en grupo y por escrito]</text:span>.</text:p>
+        </text:list-item>
+      </text:list>
+      <table:table table:name="T5" table:style-name="Table1">
+        <table:table-column table:style-name="co5_0"/>
+        <table:table-column table:style-name="co5_1"/>
+        <table:table-column table:style-name="co5_2"/>
+        <table:table-column table:style-name="co5_3"/>
+        <table:table-column table:style-name="co5_4"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Momento</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Técnica</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Agrupamiento</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Tiempo</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Recurso</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Inicio</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Pregunta inicial y mapa de ideas]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Grupo completo</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">15 min</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Pizarra y plantilla]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Desarrollo</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Taller guiado con caso]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Parejas</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">60 min</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Ordenador y guía]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Cierre</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Puesta en común y checklist]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Grupo completo</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">15 min</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Proyector]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:h text:style-name="H2" text:outline-level="2">6 · Temporalización</text:h>
+      <text:p text:style-name="Body">Nueve sesiones entre el 24/11/2026 y el 04/12/2026 (6 h por sesión). Si el centro mueve una fecha, actualízala aquí y en el portfolio del repositorio.</text:p>
+      <table:table table:name="T6" table:style-name="Table1">
+        <table:table-column table:style-name="co6_0"/>
+        <table:table-column table:style-name="co6_1"/>
+        <table:table-column table:style-name="co6_2"/>
+        <table:table-column table:style-name="co6_3"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Sesión</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Fecha</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Contenido</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Actividad y evidencia</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">1</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">24/11/2026</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Presentación del módulo y análisis del contexto</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Ficha del grupo</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">2</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">25/11/2026</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Marco normativo del certificado y de la FPE</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Análisis de normativa</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">3</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">26/11/2026</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Detección de necesidades y perfil del alumnado</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Ficha del perfil</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">4</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">27/11/2026</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Objetivos y criterios de evaluación</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Tabla de objetivos y CE</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">5</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">30/11/2026</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Contenidos y unidades didácticas</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Tabla de secuenciación</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">6</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">01/12/2026</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Metodología y diseño de actividades</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Programación (borrador)</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">7</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">02/12/2026</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Recursos, materiales y coordinación docente</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Listado de recursos</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">8</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">03/12/2026</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Temporalización y guion minuteado</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Cronograma y guion</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">9</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">04/12/2026</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Evaluación, rúbrica y cierre</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Rúbrica y programación final</text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:p text:style-name="Small">Los días 7 y 8 de diciembre, 24 y 25 de diciembre, 31 de diciembre y 1, 5 y 6 de enero son no lectivos en el cronograma del centro, fuera ya de esta ventana.</text:p>
+      <text:p text:style-name="PB"/>
+      <text:h text:style-name="H2" text:outline-level="2">7 · Recursos y materiales</text:h>
+      <table:table table:name="T7" table:style-name="Table1">
+        <table:table-column table:style-name="co7_0"/>
+        <table:table-column table:style-name="co7_1"/>
+        <table:table-column table:style-name="co7_2"/>
+        <table:table-column table:style-name="co7_3"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Recurso</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Tipo</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Uso didáctico</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Ubicación</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Guía de la programación]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Documento</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Soporte de trabajo de las sesiones 1–9]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Carpeta compartida]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Plantilla de programación]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Plantilla</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Producto que se rellena en clase]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Aula virtual]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Ordenadores y proyector]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Equipamiento</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Búsqueda de normativa y puestas en común]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Aula 2]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Ejemplos reales de programaciones]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Material</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Análisis crítico y comparación]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Carpeta del curso]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:h text:style-name="H2" text:outline-level="2">8 · Evaluación</text:h>
+      <table:table table:name="T8" table:style-name="Table1">
+        <table:table-column table:style-name="co8_0"/>
+        <table:table-column table:style-name="co8_1"/>
+        <table:table-column table:style-name="co8_2"/>
+        <table:table-column table:style-name="co8_3"/>
+        <table:table-column table:style-name="co8_4"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Tipo</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Momento</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Instrumento</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Criterio que mide</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Peso</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Diagnóstica</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Sesión 1</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Cuestionario de ideas previas + ficha del grupo]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[CE n]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">0 %</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Formativa</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Sesiones 2–8</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Observación con lista de cotejo y entregas parciales]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[CE n]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">40 %</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Sumativa</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Sesión 9</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Programación didáctica + defensa con rúbrica]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[CE n]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">60 %</text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:p text:style-name="Note">Regla de oro: si un criterio no aparece en la rúbrica con un descriptor observable, no se puede calificar. Nada de «participa bien» o «trabaja en equipo» sin indicador.</text:p>
+      <text:h text:style-name="H2" text:outline-level="2">9 · Rúbrica de la actividad práctica</text:h>
+      <table:table table:name="T9" table:style-name="Table1">
+        <table:table-column table:style-name="co9_0"/>
+        <table:table-column table:style-name="co9_1"/>
+        <table:table-column table:style-name="co9_2"/>
+        <table:table-column table:style-name="co9_3"/>
+        <table:table-column table:style-name="co9_4"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Criterio</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Insuficiente (0–4)</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Suficiente (5–6)</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Notable (7–8)</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Excelente (9–10)</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Contexto y necesidades</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[No identifica el grupo]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Describe el grupo]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Analiza y justifica]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Ajusta la propuesta al grupo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Objetivos y CE</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Genéricos]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Claros y medibles]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Alineados con actividades]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Verificables con evidencia]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Contenidos</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Lista sin secuencia]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Secuencia lógica]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Secuencia con tiempos]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[UD completa y flexible]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Metodología</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Solo clase magistral]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Alguna técnica activa]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Técnicas variadas]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Justifica la elección]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Evaluación</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Solo prueba final]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Instrumentos básicos]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Diagnóstica, formativa y sumativa]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Rúbrica completa y coherente]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:h text:style-name="H2" text:outline-level="2">10 · Alineación constructiva</text:h>
+      <table:table table:name="T10" table:style-name="Table1">
+        <table:table-column table:style-name="co10_0"/>
+        <table:table-column table:style-name="co10_1"/>
+        <table:table-column table:style-name="co10_2"/>
+        <table:table-column table:style-name="co10_3"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Objetivo</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Actividad</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Evidencia</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Criterio</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[OG1 · Analizar el contexto]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Estudio de caso + debate guiado]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Ficha del grupo]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[CE1]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[OE2 · Secuenciar contenidos]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Taller de unidades didácticas]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Tabla de secuenciación]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[CE2]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[OE3 · Diseñar la evaluación]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Prueba práctica + rúbrica]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Rúbrica aplicada]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[CE3]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:h text:style-name="H2" text:outline-level="2">11 · Seguimiento y tutorización</text:h>
+      <text:list text:style-name="LB">
+        <text:list-item>
+          <text:p text:style-name="Body">Canal: <text:span text:style-name="PhSpan">[aula, correo y aula virtual; horario de respuesta]</text:span>.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">Registro: <text:span text:style-name="PhSpan">[hoja de seguimiento con fecha, entrega, devolución y acuerdos]</text:span>.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">Alumnado con dificultades: <text:span text:style-name="PhSpan">[medida concreta y plazo]</text:span>.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">Evidencias: cada entrega se guarda en <text:span text:style-name="PhSpan">[carpeta del módulo]</text:span> con la nomenclatura acordada.</text:p>
+        </text:list-item>
+      </text:list>
+      <text:h text:style-name="H2" text:outline-level="2">12 · Riesgos y plan B</text:h>
+      <table:table table:name="T11" table:style-name="Table1">
+        <table:table-column table:style-name="co11_0"/>
+        <table:table-column table:style-name="co11_1"/>
+        <table:table-column table:style-name="co11_2"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Riesgo</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Medida prevista</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Responsable</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Falta de tiempo]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Recortar una actividad, nunca la evaluación]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Formador/a]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Grupo muy heterogéneo]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Itinerario B y apoyo entre iguales]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Formador/a]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Fallo técnico o sin internet]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Guía impresa, materiales descargados y pizarra]</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[Formador/a]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:h text:style-name="H2" text:outline-level="2">13 · Bibliografía y anexos</text:h>
+      <text:p text:style-name="Small">Cita en ISO 690 o APA 7. Incluye normativa, manuales y recursos digitales con fecha de consulta.</text:p>
+      <text:list text:style-name="LB">
+        <text:list-item>
+          <text:p text:style-name="Body">Real Decreto 1697/2011, de 18 de noviembre (BOE 24/12/2011). Anexo IV · Docencia de la formación profesional para el empleo.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">Real Decreto 625/2013, de 2 de agosto (BOE 18/09/2013). Actualización del Anexo IV: prescripción de los formadores.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">Orden ESS/1897/2013, de 10 de octubre. Modelo de programación didáctica de los certificados de profesionalidad.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body"><text:span text:style-name="PhSpan">[Ley Orgánica 3/2022 y Real Decreto 659/2023: ordenación del Sistema de Formación Profesional]</text:span>.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body"><text:span text:style-name="PhSpan">[Bibliografía específica del módulo, con autor, año, título y editorial]</text:span>.</text:p>
+        </text:list-item>
+      </text:list>
+      <text:p text:style-name="Body">Anexos: <text:span text:style-name="PhSpan">[Anexo I · Ficha del grupo]</text:span> · <text:span text:style-name="PhSpan">[Anexo II · Cronograma]</text:span> · <text:span text:style-name="PhSpan">[Anexo III · Rúbrica]</text:span> · <text:span text:style-name="PhSpan">[Anexo IV · Instrumentos]</text:span></text:p>
+      <text:h text:style-name="H2" text:outline-level="2">14 · Checklist de entrega</text:h>
+      <text:p text:style-name="Body">Marca cada casilla antes de exportar el PDF. Son los entregables que recoge la ficha del módulo en el portfolio.</text:p>
+      <table:table table:name="T12" table:style-name="Table1">
+        <table:table-column table:style-name="co12_0"/>
+        <table:table-column table:style-name="co12_1"/>
+        <table:table-column table:style-name="co12_2"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">✔</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Entregable</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Dónde está</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">☐</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Normativa aplicable analizada</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[archivo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">☐</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Ficha del perfil del alumnado</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[archivo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">☐</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Documento de coordinación del equipo docente</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[archivo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">☐</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Programación didáctica completa</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[archivo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">☐</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Tabla de secuenciación de unidades didácticas</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[archivo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">☐</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Listado detallado de materiales y recursos</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[archivo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">☐</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Temporalización (cronograma)</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[archivo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">☐</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Guion didáctico minuteado de una sesión</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[archivo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">☐</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Instrumentos de evaluación (diagnóstica, formativa, sumativa)</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[archivo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">☐</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Rúbrica de una actividad práctica</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[archivo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">☐</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Bibliografía y webgrafía normalizada</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[archivo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">☐</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Plan B para fallos técnicos o imprevistos</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">
+              <text:span text:style-name="PhSpan">[archivo]</text:span>
+            </text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:p text:style-name="Small">Plantilla de maquetación · MF1442_3 · SSCE0110 · CEFI Formación (Almonte) · v1.0 · 25/11/2026</text:p>
+      <text:p text:style-name="Small">Material de estudio propio del portfolio: no reproduce el manual comercial del curso y no sustituye la documentación oficial del centro.</text:p>
+    </office:text>
+  </office:body>
+</office:document>

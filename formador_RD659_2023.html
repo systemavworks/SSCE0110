@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Requisitos de formador/a · RD 659/2023 · SSCE0110</title>
+<meta name="description" content="Qué hace falta para ser formador o formadora del Sistema de Formación Profesional: art. 168 del RD 659/2023, exenciones, reglas de centro y el nuevo certificado SSC_C_017_5B (RD 86/2026), equivalente al SSCE0110.">
+<style>
+
+  :root {
+    --bg: #fafbfc;
+    --surface: #ffffff;
+    --surface-2: #f4f6f8;
+    --border: #e4e8ec;
+    --text: #1a2332;
+    --text-soft: #5a6676;
+    --text-muted: #8a94a3;
+    --accent: #2563eb;
+    --accent-soft: #dbeafe;
+    --accent-hover: #1d4ed8;
+    --success: #059669;
+    --success-soft: #d1fae5;
+    --warning: #d97706;
+    --warning-soft: #fef3c7;
+    --danger: #dc2626;
+    --danger-soft: #fee2e2;
+    --radius: 10px;
+    --radius-sm: 6px;
+    --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+    --shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+    --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.08);
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: "SF Mono", Monaco, Consolas, "Courier New", monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- NAV LATERAL ---------- */
+  .nav {
+    position: fixed;
+    top: 0; left: 0;
+    width: 240px;
+    height: 100vh;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    padding: 24px 16px;
+    overflow-y: auto;
+    z-index: 100;
+  }
+
+  .nav-brand {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .nav-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 24px;
+    line-height: 1.3;
+  }
+
+  .nav-list { list-style: none; }
+
+  .nav-list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    color: var(--text-soft);
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: var(--radius-sm);
+    transition: all 0.15s ease;
+    margin-bottom: 2px;
+  }
+
+  .nav-list a:hover {
+    background: var(--surface-2);
+    color: var(--text);
+  }
+
+  .nav-list a .num {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    min-width: 20px;
+  }
+
+  .nav-list a.active {
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* ---------- MAIN ---------- */
+  .main {
+    margin-left: 240px;
+    padding: 48px 56px;
+    max-width: 1100px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    background: linear-gradient(135deg, #eff6ff 0%, #fafbfc 100%);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 40px;
+    margin-bottom: 48px;
+  }
+
+  .hero-tag {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+
+  .hero-sub {
+    font-size: 17px;
+    color: var(--text-soft);
+    margin-bottom: 24px;
+    max-width: 680px;
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 28px;
+  }
+
+  .stat {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+  }
+
+  .stat-num {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* ---------- SECCIONES ---------- */
+  section {
+    margin-bottom: 56px;
+    scroll-margin-top: 24px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+
+  .section-num {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 24px 0 12px;
+    color: var(--text);
+  }
+
+  p { margin-bottom: 12px; color: var(--text-soft); }
+  p.lead { font-size: 17px; color: var(--text); }
+
+  ul, ol { margin: 8px 0 16px 24px; color: var(--text-soft); }
+  li { margin-bottom: 6px; }
+
+  /* ---------- CARDS ---------- */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+  }
+
+  .card h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card p { font-size: 14px; margin-bottom: 0; }
+
+  .card-icon {
+    width: 28px; height: 28px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  /* ---------- FICHA TÉCNICA ---------- */
+  .ficha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+  .ficha-item {
+    background: var(--surface);
+    padding: 16px 20px;
+  }
+
+  .ficha-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  .ficha-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  /* ---------- CAPACIDADES ---------- */
+  .capacidad {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius-sm);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+
+  .capacidad-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+
+  .capacidad h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .capacidad .cap-desc {
+    font-size: 14px;
+    color: var(--text-soft);
+    font-style: italic;
+  }
+
+  .capacidad-badge {
+    background: var(--accent);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .criterios {
+    background: var(--surface-2);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin-top: 12px;
+  }
+
+  .criterios-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+
+  .criterios ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 13px;
+    color: var(--text-soft);
+  }
+
+  .criterios li { margin-bottom: 6px; line-height: 1.5; }
+
+  /* ---------- CONSTRUCTOR ---------- */
+  .constructor {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border: 2px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .constructor::before {
+    content: "★";
+    position: absolute;
+    top: 16px; right: 20px;
+    font-size: 24px;
+    color: var(--accent);
+    opacity: 0.3;
+  }
+
+  .constructor-tag {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .constructor h3 {
+    font-size: 20px;
+    margin: 0 0 8px;
+  }
+
+  .constructor > p {
+    color: var(--text-soft);
+    margin-bottom: 24px;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .form-field { display: flex; flex-direction: column; gap: 6px; }
+  .form-field.full { grid-column: 1 / -1; }
+
+  .form-field label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 14px;
+    background: var(--surface);
+    color: var(--text);
+    transition: border-color 0.15s;
+  }
+
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+
+  .form-field textarea { resize: vertical; min-height: 60px; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .btn:hover { background: var(--accent-hover); transform: translateY(-1px); }
+
+  .btn-secondary {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+
+  .btn-secondary:hover { background: var(--surface-2); }
+
+  .btn-group { display: flex; gap: 10px; flex-wrap: wrap; }
+
+  .output {
+    margin-top: 24px;
+    background: var(--text);
+    color: #e2e8f0;
+    border-radius: var(--radius-sm);
+    padding: 20px 24px;
+    font-family: var(--mono);
+    font-size: 13px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-height: 500px;
+    overflow-y: auto;
+    display: none;
+  }
+
+  .output.visible { display: block; }
+
+  /* ---------- ALINEACIÓN ---------- */
+  .alineacion {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin: 16px 0;
+  }
+
+  .alineacion-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .alineacion-item::after {
+    content: "→";
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .alineacion-item:last-child::after { display: none; }
+
+  .alineacion-item strong {
+    display: block;
+    color: var(--accent);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  /* ---------- ENTREGABLES ---------- */
+  .entregable {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .entregable:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+
+  .entregable input[type="checkbox"] {
+    width: 18px; height: 18px;
+    accent-color: var(--accent);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .entregable.checked {
+    background: var(--success-soft);
+    border-color: var(--success);
+  }
+
+  .entregable.checked .ent-text { text-decoration: line-through; color: var(--text-muted); }
+
+  .ent-text { flex: 1; font-size: 14px; }
+  .ent-tag {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: var(--surface-2);
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  /* ---------- ERRORES ---------- */
+  .error-item {
+    background: var(--danger-soft);
+    border-left: 4px solid var(--danger);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin-bottom: 12px;
+  }
+
+  .error-item strong {
+    color: var(--danger);
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+
+  .error-item p {
+    font-size: 13px;
+    color: var(--text-soft);
+    margin: 0;
+  }
+
+  /* ---------- BITÁCORA ---------- */
+  .bitacora-entry {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px 20px;
+    margin-bottom: 12px;
+  }
+
+  .bitacora-date {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  .bitacora-content {
+    font-size: 14px;
+    color: var(--text-soft);
+    line-height: 1.6;
+  }
+
+  .bitacora-content strong { color: var(--text); }
+
+  /* ---------- VOCABULARIO ---------- */
+  .vocab-search {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-family: var(--font);
+  }
+
+  .vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+  }
+
+  .vocab-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+  }
+
+  .vocab-term {
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .vocab-def {
+    font-size: 13px;
+    color: var(--text-soft);
+    line-height: 1.5;
+  }
+
+  /* ---------- TEST ---------- */
+  .test-question {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+
+  .test-q-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 14px;
+  }
+
+  .test-options { display: flex; flex-direction: column; gap: 8px; }
+
+  .test-option {
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.15s;
+    background: var(--surface);
+  }
+
+  .test-option:hover { border-color: var(--accent); background: var(--accent-soft); }
+
+  .test-option.correct {
+    background: var(--success-soft);
+    border-color: var(--success);
+    color: var(--success);
+    font-weight: 500;
+  }
+
+  .test-option.wrong {
+    background: var(--danger-soft);
+    border-color: var(--danger);
+    color: var(--danger);
+  }
+
+  .test-explanation {
+    margin-top: 10px;
+    padding: 10px 14px;
+    background: var(--surface-2);
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    color: var(--text-soft);
+    display: none;
+  }
+
+  .test-explanation.visible { display: block; }
+
+  .test-score {
+    text-align: center;
+    padding: 20px;
+    background: var(--accent-soft);
+    border-radius: var(--radius);
+    margin-top: 20px;
+    display: none;
+  }
+
+  .test-score.visible { display: block; }
+
+  .test-score-num {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  /* ---------- CALLOUT ---------- */
+  .callout {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    margin: 16px 0;
+  }
+
+  .callout.warning {
+    background: var(--warning-soft);
+    border-left-color: var(--warning);
+  }
+
+  .callout.success {
+    background: var(--success-soft);
+    border-left-color: var(--success);
+  }
+
+  .callout strong { color: var(--text); display: block; margin-bottom: 4px; }
+  .callout p { margin: 0; font-size: 14px; }
+
+  /* ---------- TABLA ---------- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    background: var(--surface);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  th, td {
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  th {
+    background: var(--surface-2);
+    font-weight: 600;
+    color: var(--text);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 900px) {
+    .nav { display: none; }
+    .main { margin-left: 0; padding: 24px; }
+    .hero { padding: 28px; }
+    .hero h1 { font-size: 24px; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+    .form-grid { grid-template-columns: 1fr; }
+    .alineacion { grid-template-columns: 1fr 1fr; }
+    .alineacion-item::after { display: none; }
+  }
+
+  /* ---------- SCROLLBAR ---------- */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: var(--surface-2); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+  /* ---------- AMPLIACIÓN: FICHAS DE MÓDULO ---------- */
+  .mobile-bar { display: none; }
+  .lead { font-size: 17px; color: var(--text); }
+  .map-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; margin: 18px 0; }
+  .map-card { background: var(--surface); border: 1px solid var(--border); border-top: 4px solid var(--accent); border-radius: var(--radius-sm); padding: 18px 20px; box-shadow: var(--shadow-sm); }
+  .map-card h4 { font-size: 15px; margin: 0 0 6px; color: var(--text); }
+  .map-card p { font-size: 13px; margin: 0 0 8px; }
+  .map-card ul { margin: 8px 0 0 18px; font-size: 13px; }
+  .map-card li { margin-bottom: 4px; }
+  .map-hours { display: inline-block; background: var(--accent-soft); color: var(--accent); border-radius: 20px; padding: 3px 9px; font: 600 11px var(--mono); margin-bottom: 10px; }
+  .concept-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .concept { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 18px 20px; }
+  .concept h4 { font-size: 15px; margin: 0 0 7px; color: var(--text); }
+  .concept p { font-size: 14px; margin: 0 0 10px; }
+  .concept-apply { background: var(--surface-2); border-left: 3px solid var(--success); border-radius: 4px; padding: 9px 11px; font-size: 13px; color: var(--text-soft); }
+  .concept-apply strong { color: var(--text); }
+  .table-wrap { overflow-x: auto; margin: 16px 0; }
+  .table-wrap table { margin: 0; min-width: 620px; }
+  .deliv-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
+  .deliv-head h3 { margin: 0 0 4px; }
+  .deliv-head p { margin: 0; font-size: 14px; }
+  .progress { height: 9px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 99px; overflow: hidden; margin: 14px 0 6px; }
+  .progress > i { display: block; height: 100%; width: 0; background: var(--success); transition: width .2s ease; }
+  .progress-label { font-size: 12px; color: var(--text-muted); margin: 0 0 14px; }
+  .module-footer { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-top: 1px solid var(--border); padding: 22px 0 8px; margin-top: 12px; font-size: 14px; }
+  .module-footer a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .module-footer a:hover { text-decoration: underline; }
+  .callout.info { background: var(--accent-soft); border-color: var(--accent); }
+  .callout.danger { background: var(--danger-soft); border-color: var(--danger); }
+  .small { font-size: 13px; color: var(--text-muted); }
+  .test-option { width: 100%; text-align: left; font-family: var(--font); }
+  .test-option:disabled { cursor: default; }
+  .toplinks { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+  .toplinks a { font-size: 13px; color: var(--accent); background: var(--surface); border: 1px solid var(--border); border-radius: 99px; padding: 6px 11px; text-decoration: none; }
+  .toplinks a:hover { border-color: var(--accent); background: var(--accent-soft); }
+  .index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; }
+  .index-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; }
+  .index-card .code { font: 700 12px var(--mono); color: var(--accent); letter-spacing: .5px; }
+  .index-card h3 { margin: 7px 0 6px; font-size: 18px; }
+  .index-card p { font-size: 14px; margin: 0 0 12px; }
+  .index-card .meta { display: flex; gap: 8px; flex-wrap: wrap; margin: auto 0 14px; }
+  .index-card .meta span { font-size: 11px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 99px; padding: 4px 8px; color: var(--text-soft); }
+  .index-card .btn { align-self: flex-start; }
+  .index-hero { background: linear-gradient(135deg, #eff6ff 0%, #fafbfc 100%); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px; margin-bottom: 42px; }
+  .index-hero h1 { font-size: 34px; line-height: 1.15; margin: 12px 0; }
+  .index-hero p { max-width: 760px; }
+  .step-list { counter-reset: step; list-style: none; margin-left: 0; }
+  .step-list li { counter-increment: step; position: relative; padding-left: 44px; margin-bottom: 16px; }
+  .step-list li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 13px; }
+  .step-list strong { display: block; color: var(--text); margin-bottom: 3px; }
+  @media (max-width: 900px) {
+    .mobile-bar { position: sticky; top: 0; z-index: 110; display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 16px; background: rgba(255,255,255,.96); border-bottom: 1px solid var(--border); font-size: 13px; }
+    .mobile-bar a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .mobile-bar span { color: var(--text-muted); font-family: var(--mono); font-size: 11px; }
+    body { padding-top: 0; }
+    .main { padding: 22px 18px; }
+    .hero { padding: 26px 22px; }
+    .hero h1 { font-size: 25px; }
+    .hero-stats { grid-template-columns: 1fr 1fr; }
+    .concept-grid { grid-template-columns: 1fr; }
+    .ficha { grid-template-columns: 1fr; }
+    .index-hero { padding: 28px 22px; }
+    .index-hero h1 { font-size: 27px; }
+  }
+
+  .extra { font-size: 13px; color: var(--text-muted); margin-top: 6px; }
+  .legal { font-size: 12.5px; color: var(--text-muted); }
+  .num-col { font-family: var(--mono); font-size: 13px; color: var(--text-muted); }
+  .callout p strong, .callout li strong, .callout p em { display: inline; margin: 0; }
+  .card .card-icon { flex: 0 0 auto; }
+
+</style>
+</head>
+<body>
+<div class="mobile-bar"><a href="portfolio.html">← Portfolio</a><span>RD 659/2023</span></div>
+<main class="main" style="margin-left:0;max-width:1180px;margin:0 auto;padding:40px 24px">
+
+  <section class="index-hero">
+    <span class="hero-tag">Nuevo Sistema de FP · RD 659/2023 · RD 86/2026</span>
+    <h1>Qué necesitas para ser formador o formadora</h1>
+    <p class="lead">Resumen de la normativa vigente para impartir formación profesional en centros no incorporados
+      al sistema educativo (la formación para el empleo de toda la vida). La referencia es el <strong>artículo 168
+      del Real Decreto 659/2023</strong>, modificado por el RD 658/2024, y el nuevo <strong>certificado profesional
+      SSC_C_017_5B</strong> del RD 86/2026, que sustituye al SSCE0110 que estás cursando. Todo con enlaces al BOE.</p>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">4 años</div><div class="stat-label">Experiencia para ser persona experta</div></div>
+      <div class="stat"><div class="stat-num">600 h</div><div class="stat-label">Docencia que exime del certificado (10 años)</div></div>
+      <div class="stat"><div class="stat-num">60 %</div><div class="stat-label">Del equipo docente con titulación</div></div>
+      <div class="stat"><div class="stat-num">510 h</div><div class="stat-label">Nuevo certificado SSC_C_017_5B</div></div>
+    </div>
+    <div class="toplinks">
+      <a href="#vias">Las tres vías</a>
+      <a href="#exenciones">Exenciones</a>
+      <a href="#certificado">Certificado nuevo</a>
+      <a href="#equivalencia">Equivalencia con SSCE0110</a>
+    </div>
+  </section>
+
+
+  <section id="vias">
+    <div class="section-header"><span class="section-num">01</span><h2 class="section-title">Las tres vías del artículo 168</h2></div>
+    <p class="lead">Para impartir ofertas de formación profesional en centros del Sistema de FP <strong>no incorporados
+      al sistema educativo</strong> hay que cumplir <strong>uno</strong> de estos tres supuestos (art. 168.1).</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Vía</th><th>Qué tienes que acreditar</th><th>Para quién</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>a) Titulación</strong></td>
+          <td>Título de <strong>grado universitario, licenciatura, diplomatura, ingeniería, ingeniería técnica,
+            arquitectura o arquitectura técnica</strong>, o la titulación de FP que se determine, con contenidos
+            vinculados a los resultados de aprendizaje de lo que vas a impartir. <strong>Además, el Certificado
+            profesional de habilitación para la docencia en grados A, B y C.</strong><br>
+            <span class="extra">Para módulos de grados B y C (o bloques de grado A) también se considera autorizado
+            quien tenga título de Técnico o Técnico Superior, o un certificado profesional de nivel 2 o 3.</span></td>
+          <td>La vía ordinaria en un centro de formación para el empleo.</td>
+        </tr>
+        <tr>
+          <td><strong>b) Especialidad docente</strong></td>
+          <td>Pertenecer a las <strong>especialidades docentes habilitadas</strong> para impartir formación
+            profesional en el sistema educativo, sin perjuicio de la normativa de incompatibilidades.</td>
+          <td>Profesorado de secundaria o FP que además imparte FPE.</td>
+        </tr>
+        <tr>
+          <td><strong>c) Persona experta</strong></td>
+          <td><strong>4 años de experiencia profesional</strong> ajustada a los estándares de competencia del módulo
+            que vas a impartir, <strong>y</strong> el certificado de habilitación. Tienen prioridad quienes acrediten
+            tutoría dual de empresa o <strong>600 h de docencia en los últimos 5 años</strong>.</td>
+          <td>Perfiles técnicos sin titulación docente.</td>
+        </tr>
+      </tbody>
+    </table></div>
+    <div class="callout info"><strong>Dos flexibilidades</strong><p>Las administraciones competentes pueden
+      <strong>eximir</strong> del certificado durante la <em>primera</em> acción formativa en que participes (vía a) y
+      <strong>flexibilizar</strong> su exigencia durante el ejercicio como persona formadora (vía c). No es una
+      exención permanente: es margen de la administración, no un derecho automático.</p></div>
+  </section>
+
+  <section id="exenciones">
+    <div class="section-header"><span class="section-num">02</span><h2 class="section-title">Quién no necesita el certificado</h2></div>
+    <p class="lead">El art. 168.5 (añadido por el RD 658/2024) exime del certificado de habilitación en tres supuestos.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Supuesto</th><th>Detalle</th></tr></thead>
+      <tbody>
+        <tr><td><strong>a) Titulación pedagógica</strong></td><td>Grado en <strong>Pedagogía, Psicopedagogía o Maestro</strong>
+          en cualquiera de sus especialidades, o título universitario oficial de <strong>posgrado</strong> en esos ámbitos;
+          también las licenciaturas y diplomaturas equivalentes.</td></tr>
+        <tr><td><strong>b) Titulación + formación didáctica</strong></td><td>Cualquier otra titulación universitaria más el
+          <strong>CAP</strong>, o los títulos de <strong>Especialización Didáctica</strong> con el Certificado de
+          Cualificación Pedagógica, o el <strong>Máster habilitante</strong> de Secundaria, Bachillerato, FP y Escuelas
+          Oficiales de Idiomas, o el curso equivalente de la disposición adicional primera del RD 1834/2008.</td></tr>
+        <tr><td><strong>c) Experiencia docente</strong></td><td><strong>600 horas</strong> de docencia contrastada en los
+          <strong>últimos diez años</strong> en formación profesional para el empleo o en el sistema educativo.</td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout warning"><strong>Ojo al cambio</strong><p>En el sistema anterior (RD 625/2013) la exención por
+      experiencia eran <strong>600 h en los últimos siete años</strong>. El texto vigente habla de <strong>diez años</strong>.
+      Si tu caso estaba justo en el límite de los siete, revisa las fechas antes de invocar la exención.</p></div>
+  </section>
+
+  <section id="centro">
+    <div class="section-header"><span class="section-num">03</span><h2 class="section-title">Reglas que afectan al centro</h2></div>
+    <p class="lead">No basta con tu currículo: el centro tiene que cumplir estas condiciones (art. 168.2 a 168.4).</p>
+    <div class="card-grid">
+      <div class="card"><h4><span class="card-icon">1</span> 60 % del equipo</h4>
+        <p>Al menos el <strong>60 % del equipo docente</strong> debe reunir los requisitos académicos del apartado 1.a)
+          para poder desarrollar la oferta formativa.</p></div>
+      <div class="card"><h4><span class="card-icon">2</span> Dirección académica</h4>
+        <p>Quien ocupe la <strong>dirección académica</strong> del centro tiene que cumplir también el requisito 1.a).</p></div>
+      <div class="card"><h4><span class="card-icon">3</span> Registro autonómico</h4>
+        <p>Las administraciones competentes pueden crear un <strong>registro autonómico de formadores y formadoras</strong>
+          para comprobar el cumplimiento de los requisitos.</p></div>
+      <div class="card"><h4><span class="card-icon">4</span> Firma de expertos</h4>
+        <p>La firma de los documentos de evaluación de las <strong>personas expertas</strong> va avalada por la firma del
+          director o directora del centro.</p></div>
+    </div>
+  </section>
+
+  <section id="certificado">
+    <div class="section-header"><span class="section-num">04</span><h2 class="section-title">El certificado que habilita: SSC_C_017_5B</h2></div>
+    <p class="lead">Desde el <strong>4 de marzo de 2026</strong> (entrada en vigor del RD 86/2026) el certificado
+      profesional que exige el art. 168 es este. El <strong>SSCE0110 lo cumple por equivalencia</strong>, así que no
+      tienes que repetirlo: los detalles, abajo.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Dato</th><th>Valor</th></tr></thead>
+      <tbody>
+        <tr><td>Denominación</td><td><strong>Habilitación para la docencia en grados A, B y C del Sistema de Formación Profesional</strong></td></tr>
+        <tr><td>Código</td><td><span class="num-col">SSC_C_017_5B</span></td></tr>
+        <tr><td>Nivel y duración</td><td>Nivel <strong>3</strong> · <strong>510 horas</strong></td></tr>
+        <tr><td>Familia profesional</td><td>Servicios Socioculturales y a la Comunidad</td></tr>
+        <tr><td>Referencias</td><td>CINE <span class="num-col">P-4.5.3</span> · MECES <span class="num-col">5B</span></td></tr>
+        <tr><td>Norma</td><td>Real Decreto 86/2026, de 11 de febrero · BOE núm. 38, de 12/02/2026 · en vigor desde el 04/03/2026</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="section-header"><span class="section-num">05</span><h2 class="section-title">Temario del certificado nuevo (510 h)</h2></div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Código</th><th>Módulo profesional</th><th>Horas</th></tr></thead>
+      <tbody>
+        <tr><td class="num-col">1705</td><td>Programación didáctica de los grados A, B y C del Sistema de FP</td><td>90</td></tr>
+        <tr><td class="num-col">1706</td><td>Gestión de materiales, medios y recursos didácticos de los grados A, B y C</td><td>90</td></tr>
+        <tr><td class="num-col">1707</td><td>Orientación profesional en los grados A, B y C del Sistema de FP</td><td>60</td></tr>
+        <tr><td class="num-col">1783</td><td>Evaluación del proceso de enseñanza-aprendizaje de los grados A, B y C</td><td>60</td></tr>
+        <tr><td class="num-col">1784</td><td>Procesos para impartir acciones formativas de los grados A, B y C</td><td>90</td></tr>
+        <tr><td class="num-col">1785</td><td>Acción tutorial de los grados A, B y C del Sistema de FP</td><td>60</td></tr>
+        <tr><td class="num-col">1786</td><td>Competencia digital para la práctica docente</td><td>30</td></tr>
+        <tr><td class="num-col">1782</td><td>Prevención de riesgos laborales</td><td>30</td></tr>
+        <tr><td></td><td><strong>Total</strong></td><td><strong>510</strong></td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout info"><strong>Formación en empresa, no módulo de prácticas</strong><p>Las <strong>510 horas</strong>
+      son de los ocho módulos. Además, el certificado <strong>incorpora un periodo de formación en empresa</strong> conforme
+      al artículo 70 del RD 659/2023 (no es un módulo con horas propias como el MP0353 del SSCE0110). Para iniciar la
+      estancia hay que tener superado el módulo 1782 de prevención de riesgos laborales, y puede eximirse si acreditas
+      experiencia laboral correspondiente (art. 13).</p></div>
+    <p class="small">Acceso (art. 12): para un certificado de nivel 3 se exige título de Técnico o Técnico Superior,
+      Bachiller o equivalente, un certificado profesional de nivel 3, un certificado de competencia de la propia oferta,
+      o un certificado profesional de nivel 2 de la misma familia. Los grados A y B no tienen requisitos académicos de
+      acceso. Para impartirlo, el anexo V atribuye docencia a las especialidades de Intervención Sociocomunitaria,
+      Servicios a la Comunidad, Orientación Educativa y Formación y Orientación Laboral (esta última para el módulo 1707).</p>
+  </section>
+
+  <section id="equivalencia">
+    <div class="section-header"><span class="section-num">06</span><h2 class="section-title">Tu SSCE0110 sigue valiendo</h2></div>
+    <div class="callout success"><strong>Equivalencia a todos los efectos</strong><p>La disposición adicional cuarta
+      del RD 86/2026 declara que el certificado de profesionalidad <strong>«Docencia de la formación profesional para
+      el empleo» (SSCE0110)</strong> es <strong>equivalente, a todos los efectos profesionales y de acceso a empleos
+      públicos y privados</strong>, al certificado profesional <strong>SSC_C_017_5B</strong>. No tienes que repetir nada:
+      el título que estás cursando te habilita igual.</p></div>
+    <div class="table-wrap"><table>
+      <thead><tr><th></th><th>SSCE0110 (el que cursas)</th><th>SSC_C_017_5B (nuevo)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Norma</strong></td><td>RD 1697/2011, anexo IV, actualizado por el RD 625/2013</td><td>RD 86/2026</td></tr>
+        <tr><td><strong>Nivel</strong></td><td>3</td><td>3</td></tr>
+        <tr><td><strong>Duración</strong></td><td>380 h (340 de aula + 40 de prácticas)</td><td>510 h de módulos + periodo de formación en empresa</td></tr>
+        <tr><td><strong>Estructura</strong></td><td>5 módulos formativos + MP0353 de prácticas</td><td>8 módulos profesionales + estancia en empresa (art. 70 RD 659/2023)</td></tr>
+        <tr><td><strong>Prevención de riesgos</strong></td><td>No es módulo propio del certificado</td><td>Módulo 1782, 30 h</td></tr>
+        <tr><td><strong>Modalidades</strong></td><td>Presencial y teleformación (RD 34/2008)</td><td>Presencial, semipresencial y virtual</td></tr>
+        <tr><td><strong>Estado</strong></td><td>Se imparte hasta agotar la oferta ya autorizada</td><td>Vigente desde el 04/03/2026</td></tr>
+      </tbody>
+    </table></div>
+    <div class="card">
+      <h4><span class="card-icon">i</span> Tres consecuencias prácticas</h4>
+      <ol class="step-list">
+        <li><strong>Los centros no pierden autorización.</strong> Quien estaba autorizado para impartir SSCE0110 queda
+          automáticamente autorizado para el SSC_C_017_5B (DA 4ª.2).</li>
+        <li><strong>Mantienes la competencia general</strong> reconocida para la docencia en certificados profesionales
+          y en los grados A y B (DA 4ª.3).</li>
+        <li><strong>El RD 1697/2011 se deroga solo en lo que afecta al SSCE0110.</strong> El resto de certificados de la
+          familia siguen vigentes y, durante el periodo transitorio, se aplica su anexo IV (DT y DD únicas).</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="checklist">
+    <div class="section-header"><span class="section-num">07</span><h2 class="section-title">Qué necesitas tú, en orden</h2></div>
+    <p class="lead">Marca lo que ya cumples. Con el SSCE0110 terminado, la casilla del certificado queda resuelta.</p>
+    <div class="card-grid">
+      <div class="card"><h4><span class="card-icon">1</span> Titulación del ámbito</h4>
+        <p>Título universitario o de FP con contenidos vinculados a lo que vas a impartir. Si no lo tienes, puedes ir
+          por la vía de persona experta.</p></div>
+      <div class="card"><h4><span class="card-icon">2</span> Certificado de habilitación</h4>
+        <p>SSCE0110 (equivalente) o SSC_C_017_5B. Si estás exento por el art. 168.5, no hace falta.</p></div>
+      <div class="card"><h4><span class="card-icon">3</span> Experiencia, si vas como experto</h4>
+        <p>Cuatro años en el ámbito de la unidad de competencia del módulo, documentados y ajustados al estándar.</p></div>
+      <div class="card"><h4><span class="card-icon">4</span> Centro en regla</h4>
+        <p>Que el 60 % del equipo docente y la dirección académica cumplan el requisito 1.a).</p></div>
+    </div>
+    <div class="callout info"><strong>Tu caso</strong><p>Estás cursando el SSCE0110 en CEFI Formación del
+      <strong>24/11/2026 al 12/03/2027</strong>. Al terminarlo tendrás el certificado que exige el art. 168.1.a), porque
+      equivale al SSC_C_017_5B. Lo que te quedará por comprobar es la <strong>titulación del ámbito</strong> (o la vía de
+      experto con cuatro años) y que el centro cumpla el 60 %.</p></div>
+  </section>
+
+  <section id="fuentes">
+    <div class="section-header"><span class="section-num">08</span><h2 class="section-title">Fuentes y vigencia</h2></div>
+    <p class="lead">Todo lo anterior está contrastado con el texto consolidado del BOE a 25/11/2026.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Norma</th><th>Qué aporta</th><th>BOE</th></tr></thead>
+      <tbody>
+        <tr><td><strong>RD 659/2023</strong>, de 18 de julio</td><td>Ordenación del Sistema de FP. <strong>Art. 168</strong>:
+          condiciones del personal formador de centros no incorporados al sistema educativo.</td>
+          <td><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2023-16889" target="_blank" rel="noopener">BOE-A-2023-16889</a><br>
+          <span class="legal">BOE núm. 174, 22/07/2023 · art. 168 en vigor desde 11/07/2024</span></td></tr>
+        <tr><td><strong>RD 658/2024</strong>, de 9 de julio</td><td>Modifica el art. 168: nueva letra a) del apartado 1
+          y nuevo apartado 5 (exenciones).</td>
+          <td><a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2024-14079" target="_blank" rel="noopener">BOE-A-2024-14079</a></td></tr>
+        <tr><td><strong>RD 86/2026</strong>, de 11 de febrero</td><td>Crea el certificado <strong>SSC_C_017_5B</strong>,
+          su currículo y las ofertas de grados B y A. Incluye la equivalencia con el SSCE0110.</td>
+          <td><a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2026-3210" target="_blank" rel="noopener">BOE-A-2026-3210</a><br>
+          <span class="legal">BOE núm. 38, 12/02/2026 · en vigor 04/03/2026</span></td></tr>
+        <tr><td><strong>RD 1697/2011</strong> y <strong>RD 625/2013</strong></td><td>El certificado SSCE0110 y su tabla de
+          prescripción de formadores de 2013.</td>
+          <td><a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2011-20102" target="_blank" rel="noopener">BOE-A-2011-20102</a></td></tr>
+        <tr><td><strong>LO 3/2022</strong>, de 31 de marzo</td><td>Crea el Sistema de FP y los grados A, B, C, D y E.</td>
+          <td><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2022-5139" target="_blank" rel="noopener">BOE-A-2022-5139</a></td></tr>
+        <tr><td><strong>Orden ESS/1897/2013</strong></td><td>Modelo de programación didáctica de los certificados.</td>
+          <td><span class="legal">BOE núm. 247, 15/10/2013</span></td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout warning"><strong>Sobre la cita del centro</strong><p>El listado del centro cita el RD 659/2023 con
+      una referencia al «BOJA núm. 146, de 29 de julio de 2024». El texto estatal está en el <strong>BOE núm. 174, de
+      22/07/2023</strong>; la referencia al BOJA corresponde a normativa autonómica andaluza de desarrollo. Cuando tengas
+      que justificar algo por escrito, cita el BOE y, si procede, la norma andaluza que lo desarrolle.</p></div>
+    <p class="legal">Resumen de estudio, no asesoramiento jurídico. El texto consolidado puede cambiar: comprueba siempre
+      la última versión en el BOE y lo que exija la administración competente (en Andalucía, la Consejería con
+      competencias en formación profesional).</p>
+  </section>
+
+  <footer class="module-footer">
+    <a href="portfolio.html">← Volver al portfolio</a>
+    <a href="modulos_SSCE0110.html">Índice de módulos</a>
+    <a href="README.md">README</a>
+  </footer>
+</main>
+</body>
+</html>
