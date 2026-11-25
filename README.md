@@ -85,6 +85,7 @@ sin instalación ni servidor, que guarda tu progreso en el navegador y lo export
 | [`modulo_MP0353.html`](modulo_MP0353.html) | Ficha del MP0353 | Prácticas, observación, diario, sesión e informe final |
 | [`MF1442_3/`](MF1442_3/) | Maquetación + presentación demo | Plantilla `.docx`/`.pdf` de la programación y deck `.pptx` de 14 diapositivas, para Google Slides, Canva o PowerPoint |
 | [`formador_RD659_2023.html`](formador_RD659_2023.html) | Requisitos del formador | Las tres vías del art. 168 del RD 659/2023, exenciones, reglas de centro y el nuevo certificado SSC_C_017_5B (RD 86/2026), equivalente al SSCE0110 |
+| `cspell.config.yaml` · `.markdownlint.json` · `.cspell/` | Configuración de linting | Diccionario español (252 KB) y reglas ajustadas al estilo del repo: el panel de Problemas de VS Code queda a cero |
 | [`diario_curso_SSCE0110.html`](diario_curso_SSCE0110.html) | Diario del curso | Registro cronológico de sesiones y avances |
 | `CRONOGRAMA CEFI SSCE0110.pdf` | Cronograma oficial del centro | Calendario real de los seis meses: ventanas de cada módulo, PRL, recuperación, prácticas y festivos |
 | [`TXT.txt`](TXT.txt) | Notas de logística | Ruta Sevilla → Almonte, horarios, calendario del centro y gasto de combustible |
@@ -125,6 +126,7 @@ Solo las tipografías se cargan de Google Fonts (si no hay red, el navegador usa
 - Si CEFI mueve una fecha, actualízala aquí y en el portfolio (*Ajustar calendario* para festivos y
   extremos). Los campos **Inicio real** y **Fin real** de cada tarjeta sirven para anotar lo que pase
   de verdad en el aula.
+
 ---
 
 ## Calendario y días no lectivos
@@ -262,6 +264,7 @@ Abre [`portfolio.html`](portfolio.html) en el navegador. No hay instalación, cu
 3. En **Entregables**, abre la tarjeta de MF1442_3 y escribe la ruta donde guardarás la programación.
 4. Pulsa **Exportar JSON** y guarda la copia en tu carpeta del curso.
 5. Cada viernes, marca lo dominado, escribe una nota de módulo y exporta el `.md`.
+
 ---
 
 ## Método de trabajo semanal
@@ -380,4 +383,3 @@ archivos del repositorio desde el propio equipo (`file://`).
 ---
 
 <sub>Última revisión: 25/11/2026 · v1.7 · Aj Fonts · Andalucía · Nov. 2026</sub>
-
