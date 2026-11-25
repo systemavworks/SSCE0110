@@ -349,7 +349,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="10.0cm" svg:width="29.5cm" svg:height="6.4cm">
           <draw:text-box>
-            <text:p text:style-name="Body"><text:span text:style-name="TealSpan">Ventana oficial: </text:span><text:span text:style-name="AccentSpan">24/11/2026 → 04/12/2026</text:span> (9 sesiones de 6 h, de lunes a viernes).</text:p>
+            <text:p text:style-name="Body"><text:span text:style-name="TealSpan">Ventana oficial: </text:span><text:span text:style-name="AccentSpan">24/11/2026 → 04/12/2026</text:span> (9 sesiones; 60 h en total, 6 h 40 min al día).</text:p>
             <text:p text:style-name="Body"><text:span text:style-name="TealSpan">Centro: </text:span>CEFI Formación S.L. · Pol. Ind. Los Taranjales II, 58 · Almonte (Huelva).</text:p>
             <text:p text:style-name="Body"><text:span text:style-name="TealSpan">Familia profesional: </text:span>Servicios Socioculturales y a la Comunidad · UC1442_3.</text:p>
             <text:p text:style-name="Body"><text:span text:style-name="TealSpan">Marco: </text:span>RD 1697/2011, Anexo IV, actualizado por el RD 625/2013 (apartado IV, prescripción de formadores).</text:p>
@@ -578,31 +578,31 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="4.9cm" svg:width="28.0cm" svg:height="1.0cm">
           <draw:text-box>
-            <text:p text:style-name="Subtitle">Cada unidad se mide con una actividad y una evidencia.</text:p>
+            <text:p text:style-name="Subtitle">Cada unidad se mide con una actividad y una evidencia. El manual las desarrolla en 22 apartados (pp. 19–147).</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CardW" draw:name="r" svg:x="2.0cm" svg:y="6.3cm" svg:width="14.3cm" svg:height="4.6cm"/>
         <draw:rect draw:style-name="PillIndigo" draw:name="r" svg:x="2.0cm" svg:y="6.3cm" svg:width="0.14cm" svg:height="4.6cm"/>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="6.6cm" svg:width="13.4cm" svg:height="0.8cm">
           <draw:text-box>
-            <text:p text:style-name="CardTitle">U1 · Estructura de la formación profesional</text:p>
+            <text:p text:style-name="CardTitle">U1 · Estructura de la Formación Profesional</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="7.449999999999999cm" svg:width="13.350000000000001cm" svg:height="3.2499999999999996cm">
           <draw:text-box>
-            <text:p text:style-name="CardBody">[Sistema Nacional de Cualificaciones; FP reglada y FPE (modalidades, destinatarios, demanda y oferta); programas y proyectos formativos.]</text:p>
+            <text:p text:style-name="CardBody">[1.1–1.5 · Cualificaciones; FP reglada (PCPI y ciclos); FPE (demanda y oferta); programas y proyectos de alternancia.]</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CardW" draw:name="r" svg:x="17.5cm" svg:y="6.3cm" svg:width="14.3cm" svg:height="4.6cm"/>
         <draw:rect draw:style-name="PillTeal" draw:name="r" svg:x="17.5cm" svg:y="6.3cm" svg:width="0.14cm" svg:height="4.6cm"/>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="6.6cm" svg:width="13.4cm" svg:height="0.8cm">
           <draw:text-box>
-            <text:p text:style-name="CardTitle">U2 · Certificados de profesionalidad</text:p>
+            <text:p text:style-name="CardTitle">U2 · Certificados de Profesionalidad</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="7.449999999999999cm" svg:width="13.350000000000001cm" svg:height="3.2499999999999996cm">
           <draw:text-box>
-            <text:p text:style-name="CardBody">[Definición y vías de adquisición; perfil y referente formativo; prescripciones de formadores; espacios; presencial y en línea.]</text:p>
+            <text:p text:style-name="CardBody">[2.1–2.2 · Certificado: características, vías, perfil y referente formativo, prescripciones y espacios; programación vinculada.]</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CardW" draw:name="r" svg:x="2.0cm" svg:y="11.2cm" svg:width="14.3cm" svg:height="4.6cm"/>
@@ -614,7 +614,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="12.35cm" svg:width="13.350000000000001cm" svg:height="3.2499999999999996cm">
           <draw:text-box>
-            <text:p text:style-name="CardBody">[Función y ventajas; formación por competencias; objetivos; contenidos; actividades; metodología; recursos; evaluación y ponderaciones.]</text:p>
+            <text:p text:style-name="CardBody">[3.1–3.12 · Función y ventajas; competencias; objetivos; contenidos; actividades; metodología; recursos; evaluación y mejora.]</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CardW" draw:name="r" svg:x="17.5cm" svg:y="11.2cm" svg:width="14.3cm" svg:height="4.6cm"/>
@@ -626,7 +626,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="17.95cm" svg:y="12.35cm" svg:width="13.350000000000001cm" svg:height="3.2499999999999996cm">
           <draw:text-box>
-            <text:p text:style-name="CardBody">[Temporalización diaria; secuenciación de contenidos y actividades; guía del alumno en línea.]</text:p>
+            <text:p text:style-name="CardBody">[4.1–4.3 · Temporalización diaria; secuenciación de actividades; guía del alumno en línea.]</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
@@ -827,13 +827,13 @@
         <draw:rect draw:style-name="CellBgW" draw:name="temp-c1-1" svg:x="5.6cm" svg:y="7.23cm" svg:width="14.4cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t1-1" svg:x="5.76cm" svg:y="7.36cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">U1 · Estructura de la formación profesional</text:p>
+            <text:p text:style-name="CellSm">1.1–1.3 · Cualificaciones, FP reglada y FPE</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgW" draw:name="temp-c1-2" svg:x="20.0cm" svg:y="7.23cm" svg:width="11.3cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t1-2" svg:x="20.16cm" svg:y="7.36cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">Ficha del grupo</text:p>
+            <text:p text:style-name="CellSm">Ficha del grupo y mapa del sistema</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c2-0" svg:x="2.0cm" svg:y="8.26cm" svg:width="3.6cm" svg:height="1.03cm"/>
@@ -845,13 +845,13 @@
         <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c2-1" svg:x="5.6cm" svg:y="8.26cm" svg:width="14.4cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t2-1" svg:x="5.76cm" svg:y="8.39cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">U1 · Tipos de acciones formativas y requisitos</text:p>
+            <text:p text:style-name="CellSm">1.4–1.5 · Programas y proyectos en alternancia</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c2-2" svg:x="20.0cm" svg:y="8.26cm" svg:width="11.3cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t2-2" svg:x="20.16cm" svg:y="8.39cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">Análisis de normativa</text:p>
+            <text:p text:style-name="CellSm">Análisis de un programa formativo</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgW" draw:name="temp-c3-0" svg:x="2.0cm" svg:y="9.29cm" svg:width="3.6cm" svg:height="1.03cm"/>
@@ -863,13 +863,13 @@
         <draw:rect draw:style-name="CellBgW" draw:name="temp-c3-1" svg:x="5.6cm" svg:y="9.29cm" svg:width="14.4cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t3-1" svg:x="5.76cm" svg:y="9.42cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">U2 · Certificados: módulos, UF y UC</text:p>
+            <text:p text:style-name="CellSm">2.1 · Certificado: estructura y prescripciones</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgW" draw:name="temp-c3-2" svg:x="20.0cm" svg:y="9.29cm" svg:width="11.3cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t3-2" svg:x="20.16cm" svg:y="9.42cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">Mapa del certificado</text:p>
+            <text:p text:style-name="CellSm">Mapa del certificado SSCE0110</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c4-0" svg:x="2.0cm" svg:y="10.319999999999999cm" svg:width="3.6cm" svg:height="1.03cm"/>
@@ -881,13 +881,13 @@
         <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c4-1" svg:x="5.6cm" svg:y="10.319999999999999cm" svg:width="14.4cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t4-1" svg:x="5.76cm" svg:y="10.45cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">U2 · Criterios de evaluación y acreditación</text:p>
+            <text:p text:style-name="CellSm">2.2 · Programación vinculada a la certificación</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c4-2" svg:x="20.0cm" svg:y="10.319999999999999cm" svg:width="11.3cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t4-2" svg:x="20.16cm" svg:y="10.45cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">Tabla de objetivos y CE</text:p>
+            <text:p text:style-name="CellSm">Tabla apartados ↔ criterios</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgW" draw:name="temp-c5-0" svg:x="2.0cm" svg:y="11.349999999999998cm" svg:width="3.6cm" svg:height="1.03cm"/>
@@ -899,13 +899,13 @@
         <draw:rect draw:style-name="CellBgW" draw:name="temp-c5-1" svg:x="5.6cm" svg:y="11.349999999999998cm" svg:width="14.4cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t5-1" svg:x="5.76cm" svg:y="11.479999999999999cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">U3 · Contexto y perfil del alumnado</text:p>
+            <text:p text:style-name="CellSm">3.1–3.4 · Función, competencias y objetivos</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgW" draw:name="temp-c5-2" svg:x="20.0cm" svg:y="11.349999999999998cm" svg:width="11.3cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t5-2" svg:x="20.16cm" svg:y="11.479999999999999cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">Ficha del perfil</text:p>
+            <text:p text:style-name="CellSm">Tres objetivos observables</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c6-0" svg:x="2.0cm" svg:y="12.379999999999997cm" svg:width="3.6cm" svg:height="1.03cm"/>
@@ -917,13 +917,13 @@
         <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c6-1" svg:x="5.6cm" svg:y="12.379999999999997cm" svg:width="14.4cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t6-1" svg:x="5.76cm" svg:y="12.509999999999998cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">U3 · Objetivos y contenidos</text:p>
+            <text:p text:style-name="CellSm">3.5–3.7 · Contenidos, secuenciación y actividades</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c6-2" svg:x="20.0cm" svg:y="12.379999999999997cm" svg:width="11.3cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t6-2" svg:x="20.16cm" svg:y="12.509999999999998cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">Programación (borrador)</text:p>
+            <text:p text:style-name="CellSm">Tabla de contenidos y secuencia</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgW" draw:name="temp-c7-0" svg:x="2.0cm" svg:y="13.409999999999997cm" svg:width="3.6cm" svg:height="1.03cm"/>
@@ -935,13 +935,13 @@
         <draw:rect draw:style-name="CellBgW" draw:name="temp-c7-1" svg:x="5.6cm" svg:y="13.409999999999997cm" svg:width="14.4cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t7-1" svg:x="5.76cm" svg:y="13.539999999999997cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">U3 · Metodología, actividades y UD</text:p>
+            <text:p text:style-name="CellSm">3.8–3.12 · Metodología, recursos y evaluación</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgW" draw:name="temp-c7-2" svg:x="20.0cm" svg:y="13.409999999999997cm" svg:width="11.3cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t7-2" svg:x="20.16cm" svg:y="13.539999999999997cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">Tabla de secuenciación</text:p>
+            <text:p text:style-name="CellSm">Rúbrica y criterios ponderados</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c8-0" svg:x="2.0cm" svg:y="14.439999999999996cm" svg:width="3.6cm" svg:height="1.03cm"/>
@@ -953,13 +953,13 @@
         <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c8-1" svg:x="5.6cm" svg:y="14.439999999999996cm" svg:width="14.4cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t8-1" svg:x="5.76cm" svg:y="14.569999999999997cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">U4 · Temporalización y guion minuteado</text:p>
+            <text:p text:style-name="CellSm">4.1–4.2 · Temporalización y secuenciación</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgAlt" draw:name="temp-c8-2" svg:x="20.0cm" svg:y="14.439999999999996cm" svg:width="11.3cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t8-2" svg:x="20.16cm" svg:y="14.569999999999997cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">Cronograma y guion</text:p>
+            <text:p text:style-name="CellSm">Cronograma y guion minuteado</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgW" draw:name="temp-c9-0" svg:x="2.0cm" svg:y="15.469999999999995cm" svg:width="3.6cm" svg:height="1.03cm"/>
@@ -971,13 +971,13 @@
         <draw:rect draw:style-name="CellBgW" draw:name="temp-c9-1" svg:x="5.6cm" svg:y="15.469999999999995cm" svg:width="14.4cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t9-1" svg:x="5.76cm" svg:y="15.599999999999996cm" svg:width="14.08cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">U4 · Evaluación, rúbrica y cierre</text:p>
+            <text:p text:style-name="CellSm">4.3 · Guía del alumno en línea y cierre</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:rect draw:style-name="CellBgW" draw:name="temp-c9-2" svg:x="20.0cm" svg:y="15.469999999999995cm" svg:width="11.3cm" svg:height="1.03cm"/>
         <draw:frame draw:style-name="frTop" draw:name="temp-t9-2" svg:x="20.16cm" svg:y="15.599999999999996cm" svg:width="10.98cm" svg:height="0.8300000000000001cm">
           <draw:text-box>
-            <text:p text:style-name="CellSm">Rúbrica y programación final</text:p>
+            <text:p text:style-name="CellSm">Guía del alumno y programación final</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">

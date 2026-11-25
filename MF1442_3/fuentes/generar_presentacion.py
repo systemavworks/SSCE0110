@@ -114,7 +114,7 @@ for num, label, pill in (('60 h', 'Duración oficial', 'BigNum'),
     kpi(s, x, 6.3, 7.3, num, label, pill)
     x += 7.8
 s.text(2.0, 10.0, 29.5, 6.4, [
-    {'s': 'Body', 'r': [('Ventana oficial: ', 'TealSpan'), ('24/11/2026 → 04/12/2026', 'AccentSpan'), (' (9 sesiones de 6 h, de lunes a viernes).', None)]},
+    {'s': 'Body', 'r': [('Ventana oficial: ', 'TealSpan'), ('24/11/2026 → 04/12/2026', 'AccentSpan'), (' (9 sesiones; 60 h en total, 6 h 40 min al día).', None)]},
     {'s': 'Body', 'r': [('Centro: ', 'TealSpan'), ('CEFI Formación S.L. · Pol. Ind. Los Taranjales II, 58 · Almonte (Huelva).', None)]},
     {'s': 'Body', 'r': [('Familia profesional: ', 'TealSpan'), ('Servicios Socioculturales y a la Comunidad · UC1442_3.', None)]},
     {'s': 'Body', 'r': [('Marco: ', 'TealSpan'), ('RD 1697/2011, Anexo IV, actualizado por el RD 625/2013 (apartado IV, prescripción de formadores).', None)]},
@@ -166,15 +166,15 @@ s.footer('MF1442_3 · Plantilla demo', '5')
 # ---------- 6 · CONTENIDOS ----------
 s = Slide(d, 'Contenidos')
 head(s, '04 · CONTENIDOS', 'Las cuatro unidades del temario',
-     'Cada unidad se mide con una actividad y una evidencia.')
-card(s, 2.0, 6.3, 14.3, 4.6, 'U1 · Estructura de la formación profesional',
-     [{'s': 'CardBody', 'r': [('[Sistema Nacional de Cualificaciones; FP reglada y FPE (modalidades, destinatarios, demanda y oferta); programas y proyectos formativos.]', None)]}])
-card(s, 17.5, 6.3, 14.3, 4.6, 'U2 · Certificados de profesionalidad',
-     [{'s': 'CardBody', 'r': [('[Definición y vías de adquisición; perfil y referente formativo; prescripciones de formadores; espacios; presencial y en línea.]', None)]}], 'PillTeal')
+     'Cada unidad se mide con una actividad y una evidencia. El manual las desarrolla en 22 apartados (pp. 19–147).')
+card(s, 2.0, 6.3, 14.3, 4.6, 'U1 · Estructura de la Formación Profesional',
+     [{'s': 'CardBody', 'r': [('[1.1–1.5 · Cualificaciones; FP reglada (PCPI y ciclos); FPE (demanda y oferta); programas y proyectos de alternancia.]', None)]}])
+card(s, 17.5, 6.3, 14.3, 4.6, 'U2 · Certificados de Profesionalidad',
+     [{'s': 'CardBody', 'r': [('[2.1–2.2 · Certificado: características, vías, perfil y referente formativo, prescripciones y espacios; programación vinculada.]', None)]}], 'PillTeal')
 card(s, 2.0, 11.2, 14.3, 4.6, 'U3 · Programación didáctica',
-     [{'s': 'CardBody', 'r': [('[Función y ventajas; formación por competencias; objetivos; contenidos; actividades; metodología; recursos; evaluación y ponderaciones.]', None)]}], 'PillMagenta')
+     [{'s': 'CardBody', 'r': [('[3.1–3.12 · Función y ventajas; competencias; objetivos; contenidos; actividades; metodología; recursos; evaluación y mejora.]', None)]}], 'PillMagenta')
 card(s, 17.5, 11.2, 14.3, 4.6, 'U4 · Programación temporalizada',
-     [{'s': 'CardBody', 'r': [('[Temporalización diaria; secuenciación de contenidos y actividades; guía del alumno en línea.]', None)]}], 'PillAmber')
+     [{'s': 'CardBody', 'r': [('[4.1–4.3 · Temporalización diaria; secuenciación de actividades; guía del alumno en línea.]', None)]}], 'PillAmber')
 s.footer('MF1442_3 · Plantilla demo', '6')
 
 # ---------- 7 · METODOLOGÍA ----------
@@ -204,15 +204,15 @@ head(s, '06 · TEMPORALIZACIÓN', 'Nueve sesiones, del 24/11 al 04/12 de 2026',
      'Cambia las fechas si el centro mueve el calendario: están en el README del repositorio.')
 rows = [[('Sesión', 'CellHeadText'), ('Contenido de la sesión', 'CellHeadText'), ('Evidencia que se entrega', 'CellHeadText')]]
 plan = [
-    ('1 · 24/11', 'U1 · Estructura de la formación profesional', 'Ficha del grupo'),
-    ('2 · 25/11', 'U1 · Tipos de acciones formativas y requisitos', 'Análisis de normativa'),
-    ('3 · 26/11', 'U2 · Certificados: módulos, UF y UC', 'Mapa del certificado'),
-    ('4 · 27/11', 'U2 · Criterios de evaluación y acreditación', 'Tabla de objetivos y CE'),
-    ('5 · 30/11', 'U3 · Contexto y perfil del alumnado', 'Ficha del perfil'),
-    ('6 · 01/12', 'U3 · Objetivos y contenidos', 'Programación (borrador)'),
-    ('7 · 02/12', 'U3 · Metodología, actividades y UD', 'Tabla de secuenciación'),
-    ('8 · 03/12', 'U4 · Temporalización y guion minuteado', 'Cronograma y guion'),
-    ('9 · 04/12', 'U4 · Evaluación, rúbrica y cierre', 'Rúbrica y programación final'),
+    ('1 · 24/11', '1.1–1.3 · Cualificaciones, FP reglada y FPE', 'Ficha del grupo y mapa del sistema'),
+    ('2 · 25/11', '1.4–1.5 · Programas y proyectos en alternancia', 'Análisis de un programa formativo'),
+    ('3 · 26/11', '2.1 · Certificado: estructura y prescripciones', 'Mapa del certificado SSCE0110'),
+    ('4 · 27/11', '2.2 · Programación vinculada a la certificación', 'Tabla apartados ↔ criterios'),
+    ('5 · 30/11', '3.1–3.4 · Función, competencias y objetivos', 'Tres objetivos observables'),
+    ('6 · 01/12', '3.5–3.7 · Contenidos, secuenciación y actividades', 'Tabla de contenidos y secuencia'),
+    ('7 · 02/12', '3.8–3.12 · Metodología, recursos y evaluación', 'Rúbrica y criterios ponderados'),
+    ('8 · 03/12', '4.1–4.2 · Temporalización y secuenciación', 'Cronograma y guion minuteado'),
+    ('9 · 04/12', '4.3 · Guía del alumno en línea y cierre', 'Guía del alumno y programación final'),
 ]
 for a, b, c in plan:
     rows.append([(a, 'CellTextB'), (b, 'CellSm'), (c, 'CellSm')])

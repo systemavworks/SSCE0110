@@ -74,6 +74,7 @@ d.table([
     ['Específico 3', '[Diseñar actividades y su evaluación]', '[CE n]', '[Rúbrica aplicada a una actividad]'],
 ], [2.4, 6.0, 4.0, 4.6])
 
+d.pagebreak()
 d.h2('4 · Contenidos y unidades didácticas')
 d.table([
     ['Unidad', 'Título', 'Contenidos', 'Horas', 'Ses.'],
@@ -83,6 +84,18 @@ d.table([
     ['U4', 'Elaboración de la programación temporalizada', 'Temporalización diaria; secuenciación de contenidos y actividades; guía del alumno para la modalidad en línea', '14', '2'],
     ['Total', '', '', '60', '9'],
 ], [1.4, 5.2, 8.0, 1.2, 1.2])
+d.p('Horas orientativas: el certificado solo fija las 60 h del módulo; el reparto 12/14/20/14 y las 9 sesiones son la propuesta del centro.', 'Note')
+d.pagebreak()
+d.h2('4.1 · Reparto de los 22 apartados del manual')
+d.p('Cada apartado del manual cae en una sesión concreta. La numeración es la del índice del libro (pp. 19–147).', 'Body')
+d.table([
+    ['UD', 'Apartados', 'Qué se trabaja', 'Sesiones'],
+    ['U1', '1.1–1.5', '1.1 Sistema Nacional de Cualificaciones · 1.2 FP reglada (PCPI y ciclos) · 1.3 FPE (demanda y oferta) · 1.4 programas formativos · 1.5 proyectos en alternancia', 'S1 (1.1–1.3) · S2 (1.4–1.5)'],
+    ['U2', '2.1–2.2', '2.1 certificado: características, vías, perfil y referente formativo, prescripciones y espacios · 2.2 programación vinculada a la certificación', 'S3 (2.1) · S4 (2.2)'],
+    ['U3', '3.1–3.12', '3.1 función y ventajas · 3.2 competencias · 3.3 características · 3.4 objetivos · 3.5 contenidos · 3.6 secuenciación · 3.7 actividades · 3.8 metodología (3.8.1 y 3.8.2) · 3.9 modalidades · 3.10 recursos · 3.11 evaluación · 3.12 mejora', 'S5 (3.1–3.4) · S6 (3.5–3.7) · S7 (3.8–3.12)'],
+    ['U4', '4.1–4.3', '4.1 temporalización diaria (4.1.1 estructura) · 4.2 secuenciación y actividades · 4.3 guía del alumno en línea', 'S8 (4.1–4.2) · S9 (4.3 y cierre)'],
+], [1.2, 2.0, 10.6, 3.2])
+d.p('Cada unidad del manual cierra con introducción, resumen de la unidad y autoevaluación: son el mejor repaso antes de cada entrega.', 'Note')
 
 d.h2('5 · Metodología')
 d.bullets([
@@ -98,19 +111,20 @@ d.table([
     ['Cierre', '[Puesta en común y checklist]', 'Grupo completo', '15 min', '[Proyector]'],
 ], [2.6, 5.4, 3.4, 1.8, 3.8])
 
+d.pagebreak()
 d.h2('6 · Temporalización')
-d.p('Nueve sesiones entre el 24/11/2026 y el 04/12/2026 (6 h por sesión). Si el centro mueve una fecha, actualízala aquí y en el portfolio del repositorio.', 'Body')
+d.p('Nueve sesiones entre el 24/11/2026 y el 04/12/2026: 60 h en total, es decir 6 h 40 min por sesión (o 6 h diarias más 6 h de trabajo tutorizado si el centro fija jornada de 6 h). Si el centro mueve una fecha, actualízala aquí y en el portfolio del repositorio.', 'Body')
 d.table([
-    ['Sesión', 'Fecha', 'Contenido', 'Actividad y evidencia'],
-    ['1', '24/11/2026', 'U1 · Estructura de la formación profesional', 'Ficha del grupo'],
-    ['2', '25/11/2026', 'U1 · Tipos de acciones formativas y requisitos', 'Análisis de normativa'],
-    ['3', '26/11/2026', 'U2 · Certificados: módulos, UF y UC', 'Mapa del certificado'],
-    ['4', '27/11/2026', 'U2 · Criterios de evaluación y acreditación', 'Tabla de objetivos y CE'],
-    ['5', '30/11/2026', 'U3 · Contexto y perfil del alumnado', 'Ficha del perfil'],
-    ['6', '01/12/2026', 'U3 · Objetivos y contenidos', 'Programación (borrador)'],
-    ['7', '02/12/2026', 'U3 · Metodología, actividades y UD', 'Tabla de secuenciación'],
-    ['8', '03/12/2026', 'U4 · Temporalización y guion minuteado', 'Cronograma y guion'],
-    ['9', '04/12/2026', 'U4 · Evaluación, rúbrica y cierre', 'Rúbrica y programación final'],
+    ['Sesión', 'Fecha', 'Contenido (apartados del manual)', 'Actividad y evidencia'],
+    ['1', '24/11/2026', '1.1–1.3 · Sistema Nacional de Cualificaciones; FP reglada; FPE (demanda y oferta)', 'Ficha del grupo y mapa del sistema de FP'],
+    ['2', '25/11/2026', '1.4–1.5 · Programas formativos y proyectos en alternancia (repaso UD 1)', 'Análisis de un programa formativo real'],
+    ['3', '26/11/2026', '2.1 · Certificado: características, vías y estructura (perfil, referente formativo, formadores, espacios)', 'Mapa del certificado SSCE0110'],
+    ['4', '27/11/2026', '2.2 · Programación vinculada a la certificación (repaso UD 2)', 'Tabla apartados ↔ criterios del módulo'],
+    ['5', '30/11/2026', '3.1–3.4 · Función y ventajas; competencias; características; objetivos', 'Tres objetivos observables'],
+    ['6', '01/12/2026', '3.5–3.7 · Contenidos; secuenciación; actividades', 'Tabla de contenidos y secuencia'],
+    ['7', '02/12/2026', '3.8–3.12 · Metodología; modalidades; recursos; evaluación y mejora', 'Rúbrica y criterios ponderados'],
+    ['8', '03/12/2026', '4.1–4.2 · Temporalización diaria; secuenciación de actividades', 'Cronograma y guion minuteado'],
+    ['9', '04/12/2026', '4.3 · Guía del alumno en línea, repaso y entrega', 'Guía del alumno y programación final'],
 ], [1.8, 2.6, 7.4, 5.2])
 d.p('Los días 7 y 8 de diciembre, 24 y 25 de diciembre, 31 de diciembre y 1, 5 y 6 de enero son no lectivos en el cronograma del centro, fuera ya de esta ventana.', 'Small')
 

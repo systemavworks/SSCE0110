@@ -107,102 +107,114 @@
       <style:table-column-properties style:column-width="1.2cm"/>
     </style:style>
     <style:style style:name="co5_0" style:family="table-column">
-      <style:table-column-properties style:column-width="2.6cm"/>
+      <style:table-column-properties style:column-width="1.2cm"/>
     </style:style>
     <style:style style:name="co5_1" style:family="table-column">
-      <style:table-column-properties style:column-width="5.4cm"/>
+      <style:table-column-properties style:column-width="2.0cm"/>
     </style:style>
     <style:style style:name="co5_2" style:family="table-column">
-      <style:table-column-properties style:column-width="3.4cm"/>
+      <style:table-column-properties style:column-width="10.6cm"/>
     </style:style>
     <style:style style:name="co5_3" style:family="table-column">
-      <style:table-column-properties style:column-width="1.8cm"/>
-    </style:style>
-    <style:style style:name="co5_4" style:family="table-column">
-      <style:table-column-properties style:column-width="3.8cm"/>
+      <style:table-column-properties style:column-width="3.2cm"/>
     </style:style>
     <style:style style:name="co6_0" style:family="table-column">
-      <style:table-column-properties style:column-width="1.8cm"/>
+      <style:table-column-properties style:column-width="2.6cm"/>
     </style:style>
     <style:style style:name="co6_1" style:family="table-column">
-      <style:table-column-properties style:column-width="2.6cm"/>
-    </style:style>
-    <style:style style:name="co6_2" style:family="table-column">
-      <style:table-column-properties style:column-width="7.4cm"/>
-    </style:style>
-    <style:style style:name="co6_3" style:family="table-column">
-      <style:table-column-properties style:column-width="5.2cm"/>
-    </style:style>
-    <style:style style:name="co7_0" style:family="table-column">
-      <style:table-column-properties style:column-width="5.2cm"/>
-    </style:style>
-    <style:style style:name="co7_1" style:family="table-column">
-      <style:table-column-properties style:column-width="2.8cm"/>
-    </style:style>
-    <style:style style:name="co7_2" style:family="table-column">
-      <style:table-column-properties style:column-width="6.0cm"/>
-    </style:style>
-    <style:style style:name="co7_3" style:family="table-column">
-      <style:table-column-properties style:column-width="3.0cm"/>
-    </style:style>
-    <style:style style:name="co8_0" style:family="table-column">
-      <style:table-column-properties style:column-width="2.6cm"/>
-    </style:style>
-    <style:style style:name="co8_1" style:family="table-column">
-      <style:table-column-properties style:column-width="3.0cm"/>
-    </style:style>
-    <style:style style:name="co8_2" style:family="table-column">
-      <style:table-column-properties style:column-width="6.6cm"/>
-    </style:style>
-    <style:style style:name="co8_3" style:family="table-column">
-      <style:table-column-properties style:column-width="3.2cm"/>
-    </style:style>
-    <style:style style:name="co8_4" style:family="table-column">
-      <style:table-column-properties style:column-width="1.6cm"/>
-    </style:style>
-    <style:style style:name="co9_0" style:family="table-column">
-      <style:table-column-properties style:column-width="4.0cm"/>
-    </style:style>
-    <style:style style:name="co9_1" style:family="table-column">
-      <style:table-column-properties style:column-width="3.2cm"/>
-    </style:style>
-    <style:style style:name="co9_2" style:family="table-column">
-      <style:table-column-properties style:column-width="3.2cm"/>
-    </style:style>
-    <style:style style:name="co9_3" style:family="table-column">
-      <style:table-column-properties style:column-width="3.3cm"/>
-    </style:style>
-    <style:style style:name="co9_4" style:family="table-column">
-      <style:table-column-properties style:column-width="3.3cm"/>
-    </style:style>
-    <style:style style:name="co10_0" style:family="table-column">
-      <style:table-column-properties style:column-width="5.2cm"/>
-    </style:style>
-    <style:style style:name="co10_1" style:family="table-column">
       <style:table-column-properties style:column-width="5.4cm"/>
     </style:style>
-    <style:style style:name="co10_2" style:family="table-column">
+    <style:style style:name="co6_2" style:family="table-column">
+      <style:table-column-properties style:column-width="3.4cm"/>
+    </style:style>
+    <style:style style:name="co6_3" style:family="table-column">
+      <style:table-column-properties style:column-width="1.8cm"/>
+    </style:style>
+    <style:style style:name="co6_4" style:family="table-column">
+      <style:table-column-properties style:column-width="3.8cm"/>
+    </style:style>
+    <style:style style:name="co7_0" style:family="table-column">
+      <style:table-column-properties style:column-width="1.8cm"/>
+    </style:style>
+    <style:style style:name="co7_1" style:family="table-column">
+      <style:table-column-properties style:column-width="2.6cm"/>
+    </style:style>
+    <style:style style:name="co7_2" style:family="table-column">
+      <style:table-column-properties style:column-width="7.4cm"/>
+    </style:style>
+    <style:style style:name="co7_3" style:family="table-column">
+      <style:table-column-properties style:column-width="5.2cm"/>
+    </style:style>
+    <style:style style:name="co8_0" style:family="table-column">
+      <style:table-column-properties style:column-width="5.2cm"/>
+    </style:style>
+    <style:style style:name="co8_1" style:family="table-column">
+      <style:table-column-properties style:column-width="2.8cm"/>
+    </style:style>
+    <style:style style:name="co8_2" style:family="table-column">
+      <style:table-column-properties style:column-width="6.0cm"/>
+    </style:style>
+    <style:style style:name="co8_3" style:family="table-column">
+      <style:table-column-properties style:column-width="3.0cm"/>
+    </style:style>
+    <style:style style:name="co9_0" style:family="table-column">
+      <style:table-column-properties style:column-width="2.6cm"/>
+    </style:style>
+    <style:style style:name="co9_1" style:family="table-column">
+      <style:table-column-properties style:column-width="3.0cm"/>
+    </style:style>
+    <style:style style:name="co9_2" style:family="table-column">
+      <style:table-column-properties style:column-width="6.6cm"/>
+    </style:style>
+    <style:style style:name="co9_3" style:family="table-column">
+      <style:table-column-properties style:column-width="3.2cm"/>
+    </style:style>
+    <style:style style:name="co9_4" style:family="table-column">
+      <style:table-column-properties style:column-width="1.6cm"/>
+    </style:style>
+    <style:style style:name="co10_0" style:family="table-column">
       <style:table-column-properties style:column-width="4.0cm"/>
     </style:style>
+    <style:style style:name="co10_1" style:family="table-column">
+      <style:table-column-properties style:column-width="3.2cm"/>
+    </style:style>
+    <style:style style:name="co10_2" style:family="table-column">
+      <style:table-column-properties style:column-width="3.2cm"/>
+    </style:style>
     <style:style style:name="co10_3" style:family="table-column">
-      <style:table-column-properties style:column-width="2.4cm"/>
+      <style:table-column-properties style:column-width="3.3cm"/>
+    </style:style>
+    <style:style style:name="co10_4" style:family="table-column">
+      <style:table-column-properties style:column-width="3.3cm"/>
     </style:style>
     <style:style style:name="co11_0" style:family="table-column">
-      <style:table-column-properties style:column-width="5.0cm"/>
+      <style:table-column-properties style:column-width="5.2cm"/>
     </style:style>
     <style:style style:name="co11_1" style:family="table-column">
-      <style:table-column-properties style:column-width="8.4cm"/>
+      <style:table-column-properties style:column-width="5.4cm"/>
     </style:style>
     <style:style style:name="co11_2" style:family="table-column">
-      <style:table-column-properties style:column-width="3.6cm"/>
+      <style:table-column-properties style:column-width="4.0cm"/>
+    </style:style>
+    <style:style style:name="co11_3" style:family="table-column">
+      <style:table-column-properties style:column-width="2.4cm"/>
     </style:style>
     <style:style style:name="co12_0" style:family="table-column">
-      <style:table-column-properties style:column-width="1.0cm"/>
+      <style:table-column-properties style:column-width="5.0cm"/>
     </style:style>
     <style:style style:name="co12_1" style:family="table-column">
-      <style:table-column-properties style:column-width="11.0cm"/>
+      <style:table-column-properties style:column-width="8.4cm"/>
     </style:style>
     <style:style style:name="co12_2" style:family="table-column">
+      <style:table-column-properties style:column-width="3.6cm"/>
+    </style:style>
+    <style:style style:name="co13_0" style:family="table-column">
+      <style:table-column-properties style:column-width="1.0cm"/>
+    </style:style>
+    <style:style style:name="co13_1" style:family="table-column">
+      <style:table-column-properties style:column-width="11.0cm"/>
+    </style:style>
+    <style:style style:name="co13_2" style:family="table-column">
       <style:table-column-properties style:column-width="5.0cm"/>
     </style:style>
   </office:automatic-styles>
@@ -484,6 +496,7 @@
           </table:table-cell>
         </table:table-row>
       </table:table>
+      <text:p text:style-name="PB"/>
       <text:h text:style-name="H2" text:outline-level="2">4 · Contenidos y unidades didácticas</text:h>
       <table:table table:name="T4" table:style-name="Table1">
         <table:table-column table:style-name="co4_0"/>
@@ -594,6 +607,87 @@
           </table:table-cell>
         </table:table-row>
       </table:table>
+      <text:p text:style-name="Note">Horas orientativas: el certificado solo fija las 60 h del módulo; el reparto 12/14/20/14 y las 9 sesiones son la propuesta del centro.</text:p>
+      <text:p text:style-name="PB"/>
+      <text:h text:style-name="H2" text:outline-level="2">4.1 · Reparto de los 22 apartados del manual</text:h>
+      <text:p text:style-name="Body">Cada apartado del manual cae en una sesión concreta. La numeración es la del índice del libro (pp. 19–147).</text:p>
+      <table:table table:name="T5" table:style-name="Table1">
+        <table:table-column table:style-name="co5_0"/>
+        <table:table-column table:style-name="co5_1"/>
+        <table:table-column table:style-name="co5_2"/>
+        <table:table-column table:style-name="co5_3"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">UD</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Apartados</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Qué se trabaja</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Sesiones</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">U1</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">1.1–1.5</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">1.1 Sistema Nacional de Cualificaciones · 1.2 FP reglada (PCPI y ciclos) · 1.3 FPE (demanda y oferta) · 1.4 programas formativos · 1.5 proyectos en alternancia</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">S1 (1.1–1.3) · S2 (1.4–1.5)</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">U2</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">2.1–2.2</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">2.1 certificado: características, vías, perfil y referente formativo, prescripciones y espacios · 2.2 programación vinculada a la certificación</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">S3 (2.1) · S4 (2.2)</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">U3</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">3.1–3.12</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">3.1 función y ventajas · 3.2 competencias · 3.3 características · 3.4 objetivos · 3.5 contenidos · 3.6 secuenciación · 3.7 actividades · 3.8 metodología (3.8.1 y 3.8.2) · 3.9 modalidades · 3.10 recursos · 3.11 evaluación · 3.12 mejora</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">S5 (3.1–3.4) · S6 (3.5–3.7) · S7 (3.8–3.12)</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">U4</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">4.1–4.3</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">4.1 temporalización diaria (4.1.1 estructura) · 4.2 secuenciación y actividades · 4.3 guía del alumno en línea</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">S8 (4.1–4.2) · S9 (4.3 y cierre)</text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:p text:style-name="Note">Cada unidad del manual cierra con introducción, resumen de la unidad y autoevaluación: son el mejor repaso antes de cada entrega.</text:p>
       <text:h text:style-name="H2" text:outline-level="2">5 · Metodología</text:h>
       <text:list text:style-name="LB">
         <text:list-item>
@@ -609,12 +703,12 @@
           <text:p text:style-name="Body">Feedback: <text:span text:style-name="PhSpan">[cuándo y cómo se devuelve, en grupo y por escrito]</text:span>.</text:p>
         </text:list-item>
       </text:list>
-      <table:table table:name="T5" table:style-name="Table1">
-        <table:table-column table:style-name="co5_0"/>
-        <table:table-column table:style-name="co5_1"/>
-        <table:table-column table:style-name="co5_2"/>
-        <table:table-column table:style-name="co5_3"/>
-        <table:table-column table:style-name="co5_4"/>
+      <table:table table:name="T6" table:style-name="Table1">
+        <table:table-column table:style-name="co6_0"/>
+        <table:table-column table:style-name="co6_1"/>
+        <table:table-column table:style-name="co6_2"/>
+        <table:table-column table:style-name="co6_3"/>
+        <table:table-column table:style-name="co6_4"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Momento</text:p>
@@ -696,13 +790,14 @@
           </table:table-cell>
         </table:table-row>
       </table:table>
+      <text:p text:style-name="PB"/>
       <text:h text:style-name="H2" text:outline-level="2">6 · Temporalización</text:h>
-      <text:p text:style-name="Body">Nueve sesiones entre el 24/11/2026 y el 04/12/2026 (6 h por sesión). Si el centro mueve una fecha, actualízala aquí y en el portfolio del repositorio.</text:p>
-      <table:table table:name="T6" table:style-name="Table1">
-        <table:table-column table:style-name="co6_0"/>
-        <table:table-column table:style-name="co6_1"/>
-        <table:table-column table:style-name="co6_2"/>
-        <table:table-column table:style-name="co6_3"/>
+      <text:p text:style-name="Body">Nueve sesiones entre el 24/11/2026 y el 04/12/2026: 60 h en total, es decir 6 h 40 min por sesión (o 6 h diarias más 6 h de trabajo tutorizado si el centro fija jornada de 6 h). Si el centro mueve una fecha, actualízala aquí y en el portfolio del repositorio.</text:p>
+      <table:table table:name="T7" table:style-name="Table1">
+        <table:table-column table:style-name="co7_0"/>
+        <table:table-column table:style-name="co7_1"/>
+        <table:table-column table:style-name="co7_2"/>
+        <table:table-column table:style-name="co7_3"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Sesión</text:p>
@@ -711,7 +806,7 @@
             <text:p text:style-name="TableHeadP">Fecha</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
-            <text:p text:style-name="TableHeadP">Contenido</text:p>
+            <text:p text:style-name="TableHeadP">Contenido (apartados del manual)</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Actividad y evidencia</text:p>
@@ -725,10 +820,10 @@
             <text:p text:style-name="TableCellP">24/11/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">U1 · Estructura de la formación profesional</text:p>
+            <text:p text:style-name="TableCellP">1.1–1.3 · Sistema Nacional de Cualificaciones; FP reglada; FPE (demanda y oferta)</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Ficha del grupo</text:p>
+            <text:p text:style-name="TableCellP">Ficha del grupo y mapa del sistema de FP</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -739,10 +834,10 @@
             <text:p text:style-name="TableCellP">25/11/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">U1 · Tipos de acciones formativas y requisitos</text:p>
+            <text:p text:style-name="TableCellP">1.4–1.5 · Programas formativos y proyectos en alternancia (repaso UD 1)</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Análisis de normativa</text:p>
+            <text:p text:style-name="TableCellP">Análisis de un programa formativo real</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -753,10 +848,10 @@
             <text:p text:style-name="TableCellP">26/11/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">U2 · Certificados: módulos, UF y UC</text:p>
+            <text:p text:style-name="TableCellP">2.1 · Certificado: características, vías y estructura (perfil, referente formativo, formadores, espacios)</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Mapa del certificado</text:p>
+            <text:p text:style-name="TableCellP">Mapa del certificado SSCE0110</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -767,10 +862,10 @@
             <text:p text:style-name="TableCellP">27/11/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">U2 · Criterios de evaluación y acreditación</text:p>
+            <text:p text:style-name="TableCellP">2.2 · Programación vinculada a la certificación (repaso UD 2)</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Tabla de objetivos y CE</text:p>
+            <text:p text:style-name="TableCellP">Tabla apartados ↔ criterios del módulo</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -781,10 +876,10 @@
             <text:p text:style-name="TableCellP">30/11/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">U3 · Contexto y perfil del alumnado</text:p>
+            <text:p text:style-name="TableCellP">3.1–3.4 · Función y ventajas; competencias; características; objetivos</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Ficha del perfil</text:p>
+            <text:p text:style-name="TableCellP">Tres objetivos observables</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -795,10 +890,10 @@
             <text:p text:style-name="TableCellP">01/12/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">U3 · Objetivos y contenidos</text:p>
+            <text:p text:style-name="TableCellP">3.5–3.7 · Contenidos; secuenciación; actividades</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Programación (borrador)</text:p>
+            <text:p text:style-name="TableCellP">Tabla de contenidos y secuencia</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -809,10 +904,10 @@
             <text:p text:style-name="TableCellP">02/12/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">U3 · Metodología, actividades y UD</text:p>
+            <text:p text:style-name="TableCellP">3.8–3.12 · Metodología; modalidades; recursos; evaluación y mejora</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Tabla de secuenciación</text:p>
+            <text:p text:style-name="TableCellP">Rúbrica y criterios ponderados</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -823,10 +918,10 @@
             <text:p text:style-name="TableCellP">03/12/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">U4 · Temporalización y guion minuteado</text:p>
+            <text:p text:style-name="TableCellP">4.1–4.2 · Temporalización diaria; secuenciación de actividades</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Cronograma y guion</text:p>
+            <text:p text:style-name="TableCellP">Cronograma y guion minuteado</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -837,21 +932,21 @@
             <text:p text:style-name="TableCellP">04/12/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">U4 · Evaluación, rúbrica y cierre</text:p>
+            <text:p text:style-name="TableCellP">4.3 · Guía del alumno en línea, repaso y entrega</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Rúbrica y programación final</text:p>
+            <text:p text:style-name="TableCellP">Guía del alumno y programación final</text:p>
           </table:table-cell>
         </table:table-row>
       </table:table>
       <text:p text:style-name="Small">Los días 7 y 8 de diciembre, 24 y 25 de diciembre, 31 de diciembre y 1, 5 y 6 de enero son no lectivos en el cronograma del centro, fuera ya de esta ventana.</text:p>
       <text:p text:style-name="PB"/>
       <text:h text:style-name="H2" text:outline-level="2">7 · Recursos y materiales</text:h>
-      <table:table table:name="T7" table:style-name="Table1">
-        <table:table-column table:style-name="co7_0"/>
-        <table:table-column table:style-name="co7_1"/>
-        <table:table-column table:style-name="co7_2"/>
-        <table:table-column table:style-name="co7_3"/>
+      <table:table table:name="T8" table:style-name="Table1">
+        <table:table-column table:style-name="co8_0"/>
+        <table:table-column table:style-name="co8_1"/>
+        <table:table-column table:style-name="co8_2"/>
+        <table:table-column table:style-name="co8_3"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Recurso</text:p>
@@ -948,12 +1043,12 @@
         </table:table-row>
       </table:table>
       <text:h text:style-name="H2" text:outline-level="2">8 · Evaluación</text:h>
-      <table:table table:name="T8" table:style-name="Table1">
-        <table:table-column table:style-name="co8_0"/>
-        <table:table-column table:style-name="co8_1"/>
-        <table:table-column table:style-name="co8_2"/>
-        <table:table-column table:style-name="co8_3"/>
-        <table:table-column table:style-name="co8_4"/>
+      <table:table table:name="T9" table:style-name="Table1">
+        <table:table-column table:style-name="co9_0"/>
+        <table:table-column table:style-name="co9_1"/>
+        <table:table-column table:style-name="co9_2"/>
+        <table:table-column table:style-name="co9_3"/>
+        <table:table-column table:style-name="co9_4"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Tipo</text:p>
@@ -1037,12 +1132,12 @@
       </table:table>
       <text:p text:style-name="Note">Regla de oro: si un criterio no aparece en la rúbrica con un descriptor observable, no se puede calificar. Nada de «participa bien» o «trabaja en equipo» sin indicador.</text:p>
       <text:h text:style-name="H2" text:outline-level="2">9 · Rúbrica de la actividad práctica</text:h>
-      <table:table table:name="T9" table:style-name="Table1">
-        <table:table-column table:style-name="co9_0"/>
-        <table:table-column table:style-name="co9_1"/>
-        <table:table-column table:style-name="co9_2"/>
-        <table:table-column table:style-name="co9_3"/>
-        <table:table-column table:style-name="co9_4"/>
+      <table:table table:name="T10" table:style-name="Table1">
+        <table:table-column table:style-name="co10_0"/>
+        <table:table-column table:style-name="co10_1"/>
+        <table:table-column table:style-name="co10_2"/>
+        <table:table-column table:style-name="co10_3"/>
+        <table:table-column table:style-name="co10_4"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Criterio</text:p>
@@ -1187,11 +1282,11 @@
         </table:table-row>
       </table:table>
       <text:h text:style-name="H2" text:outline-level="2">10 · Alineación constructiva</text:h>
-      <table:table table:name="T10" table:style-name="Table1">
-        <table:table-column table:style-name="co10_0"/>
-        <table:table-column table:style-name="co10_1"/>
-        <table:table-column table:style-name="co10_2"/>
-        <table:table-column table:style-name="co10_3"/>
+      <table:table table:name="T11" table:style-name="Table1">
+        <table:table-column table:style-name="co11_0"/>
+        <table:table-column table:style-name="co11_1"/>
+        <table:table-column table:style-name="co11_2"/>
+        <table:table-column table:style-name="co11_3"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Objetivo</text:p>
@@ -1289,10 +1384,10 @@
         </text:list-item>
       </text:list>
       <text:h text:style-name="H2" text:outline-level="2">12 · Riesgos y plan B</text:h>
-      <table:table table:name="T11" table:style-name="Table1">
-        <table:table-column table:style-name="co11_0"/>
-        <table:table-column table:style-name="co11_1"/>
-        <table:table-column table:style-name="co11_2"/>
+      <table:table table:name="T12" table:style-name="Table1">
+        <table:table-column table:style-name="co12_0"/>
+        <table:table-column table:style-name="co12_1"/>
+        <table:table-column table:style-name="co12_2"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Riesgo</text:p>
@@ -1378,10 +1473,10 @@
       <text:p text:style-name="Body">Anexos: <text:span text:style-name="PhSpan">[Anexo I · Ficha del grupo]</text:span> · <text:span text:style-name="PhSpan">[Anexo II · Cronograma]</text:span> · <text:span text:style-name="PhSpan">[Anexo III · Rúbrica]</text:span> · <text:span text:style-name="PhSpan">[Anexo IV · Instrumentos]</text:span></text:p>
       <text:h text:style-name="H2" text:outline-level="2">14 · Checklist de entrega</text:h>
       <text:p text:style-name="Body">Marca cada casilla antes de exportar el PDF. Son los entregables que recoge la ficha del módulo en el portfolio.</text:p>
-      <table:table table:name="T12" table:style-name="Table1">
-        <table:table-column table:style-name="co12_0"/>
-        <table:table-column table:style-name="co12_1"/>
-        <table:table-column table:style-name="co12_2"/>
+      <table:table table:name="T13" table:style-name="Table1">
+        <table:table-column table:style-name="co13_0"/>
+        <table:table-column table:style-name="co13_1"/>
+        <table:table-column table:style-name="co13_2"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">✔</text:p>

@@ -32,7 +32,7 @@ una página editable).
 ## Estructura de la presentación (14 diapositivas)
 
 **1** Portada · **2** Cómo usar la plantilla · **3** El módulo (60 h, 9 sesiones, fechas) · **4** Objetivos ·
-**5** Perfil del alumnado · **6** Contenidos (4 unidades) · **7** Metodología · **8** Temporalización de las 9 sesiones ·
+**5** Perfil del alumnado · **6** Contenidos (4 unidades y 22 apartados) · **7** Metodología · **8** Temporalización de las 9 sesiones por apartados ·
 **9** Recursos · **10** Evaluación · **11** Rúbrica · **12** Alineación constructiva · **13** Riesgos y plan B · **14** Cierre.
 
 Todas las diapositivas siguen la misma rejilla: barra de color a la izquierda, antetítulo en verde azulado,
@@ -42,9 +42,10 @@ lugar de reducir el cuerpo de texto.
 ## Estructura del documento (14 apartados)
 
 **0** Cómo usar la plantilla · **1** Datos de la acción formativa · **2** Justificación y contexto ·
-**3** Objetivos y criterios de evaluación · **4** Contenidos y unidades didácticas · **5** Metodología ·
-**6** Temporalización · **7** Recursos y materiales · **8** Evaluación · **9** Rúbrica · **10** Alineación constructiva ·
-**11** Seguimiento y tutorización · **12** Riesgos y plan B · **13** Bibliografía y anexos · **14** Checklist de entrega.
+**3** Objetivos y criterios de evaluación · **4** Contenidos y unidades didácticas (con el reparto de los 22
+apartados del manual) · **5** Metodología · **6** Temporalización por apartados · **7** Recursos y materiales ·
+**8** Evaluación · **9** Rúbrica · **10** Alineación constructiva · **11** Seguimiento y tutorización ·
+**12** Riesgos y plan B · **13** Bibliografía y anexos · **14** Checklist de entrega.
 
 Los apartados 1 a 6 coinciden con los entregables de la ficha del módulo en `portfolio.html`; el resto son
 los que suelen pedir los tribunales. Las tablas ya traen las **fechas reales del cronograma de CEFI**
