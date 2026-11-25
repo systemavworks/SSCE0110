@@ -34,7 +34,7 @@ sin instalación ni servidor, que guarda tu progreso en el navegador y lo export
 6. [Cómo usar el portfolio](#cómo-usar-el-portfolio)
 7. [Método de trabajo semanal](#método-de-trabajo-semanal)
 8. [Estado actual y siguientes pasos](#estado-actual-y-siguientes-pasos)
-9. [Publicar en GitHub Pages](#publicar-en-github-pages)
+9. [Uso local](#uso-local)
 10. [Autoría y licencia](#autoría-y-licencia)
 
 ---
@@ -73,7 +73,7 @@ sin instalación ni servidor, que guarda tu progreso en el navegador y lo export
 
 | Archivo | Qué es | Para qué sirve |
 |---|---|---|
-| [`index.html`](index.html) | Entrada para GitHub Pages | Redirige a `portfolio.html` para que la raíz del proyecto abra el portfolio |
+| [`index.html`](index.html) | Entrada local | Redirige a `portfolio.html` para abrir el portfolio desde la raíz de la carpeta |
 | [`portfolio.html`](portfolio.html) | Portfolio y seguimiento (single-file) | Calendario, temario con estados, entregables, evidencias, notas y exportación MD/JSON/ICS |
 | [`guia_arranque_SSCE0110.html`](guia_arranque_SSCE0110.html) | Guía de arranque + bitácora | Checklist del día 1, planificador, microclase, glosario, test y bitácora |
 | [`modulo_MF1442_3.html`](modulo_MF1442_3.html) | Ficha del MF1442_3 | Capacidades, criterios, contenidos, constructor de programación y test |
@@ -242,10 +242,9 @@ Abre [`portfolio.html`](portfolio.html) en el navegador. No hay instalación, cu
 - Si el navegador **bloquea `localStorage`** (modo privado estricto, políticas del equipo o cuota llena),
   el portfolio lo detecta, muestra el aviso en *Datos* y recomienda exportar el JSON: en ese caso no puede
   garantizar que el progreso se conserve al cerrar.
-- Los datos son **de este navegador, este perfil y esta URL**: `https://avstack.es/...` y
-  `https://systemavworks.github.io/...` son orígenes diferentes y no comparten progreso. Usa siempre la
-  misma URL. Si cambias de equipo, de navegador o borras los datos del sitio, desaparecen: exporta una
-  copia con frecuencia.
+- Los datos son **de este navegador y este perfil**, asociados al archivo local que abras: si cambias de
+  navegador, de equipo o de perfil, no verás el mismo progreso, y según el navegador mover la carpeta
+  también puede dejarlo atrás. Exporta una copia con frecuencia y antes de mover nada.
 - **Exportar informe .md**: resumen, tabla de módulos, temario con estados, entregables, evidencias y notas.
   Ideal para adjuntar al portfolio del MP0353 o subir al repositorio.
 - **Exportar JSON**: copia íntegra para restaurar con *Importar JSON*. Al importar se pide confirmación
@@ -318,8 +317,9 @@ mp0353: añade diario de la primera observación
 - [x] **Requisitos del formador verificados** en [`formador_RD659_2023.html`](formador_RD659_2023.html):
   art. 168 del RD 659/2023 (tres vías, exenciones y reglas de centro) y el nuevo certificado
   SSC_C_017_5B del RD 86/2026, equivalente al SSCE0110.
-- [x] Importación JSON con confirmación e `index.html` de entrada para GitHub Pages.
-- [x] Repositorio publicado en GitHub: `main` sincronizado con `origin/main`.
+- [x] Importación JSON con confirmación e `index.html` de entrada local.
+- [x] Repositorio en GitHub como **control de versiones y copia**: `main` sincronizado con `origin/main`.
+  No se publica ninguna web, ni dominio, ni despliegue.
 
 **En curso**
 
@@ -339,39 +339,24 @@ mp0353: añade diario de la primera observación
 - [x] Crear las fichas de los módulos MF1443_3 a MF1446_3 y del MP0353 (índice + 5 resúmenes originales; sin copiar el manual comercial).
 - [ ] Preparar la carpeta de evidencias con la estructura de arriba.
 - [ ] Simulacro del test final y defensa del portfolio.
-- [x] GitHub Pages activado en **Settings → Pages** (rama `main`, carpeta `/`); build de `32db3ce` correcto.
-- [ ] Servir `/SSCE0110/` en `avstack.es` (Cloudflare Pages) o corregir el dominio personalizado.
 
-## Publicar en GitHub Pages
+## Uso local
 
-Pages está activado en **main / (root)** y el build de `32db3ce` terminó correctamente. No hace falta
-workflow de Actions ni build: todo es HTML estático.
+Este proyecto **se abre en local**: no hay servidor, ni build, ni dominio, ni despliegue. Se trabaja con los
+archivos del repositorio desde el propio equipo (`file://`).
 
-### Estado de la URL pública (24/11/2026)
+1. Descarga o clona el repositorio en tu equipo.
+2. Abre `index.html` o, directamente, `portfolio.html` con doble clic (Chrome, Firefox, Edge o Safari).
+3. Guarda un marcador al archivo `portfolio.html` para no perderte.
 
-- El origen de GitHub Pages sirve el proyecto correctamente:
-  `http://185.199.108.153/SSCE0110/` con `Host: avstack.es` devuelve `index.html`.
-- `https://avstack.es/SSCE0110/` devuelve **404**: `avstack.es` está servido por **Cloudflare Pages**
-  (repositorio `systemavworks.github.io`), cuyo `_redirects` comodín manda las rutas desconocidas a
-  `404.html`. Cloudflare no reenvía `/SSCE0110/` al origen de GitHub Pages.
-- `https://systemavworks.github.io/SSCE0110/` redirige al dominio personalizado `avstack.es` y acaba en
-  ese mismo 404. No es un fallo del portfolio ni del build.
-
-Para publicarlo en la URL prevista, elige **una** de estas salidas:
-
-1. **Cloudflare Pages (recomendada si `avstack.es` se despliega desde `systemavworks.github.io`)**:
-   copia `index.html` y `portfolio.html` en una carpeta `SSCE0110/` de ese repositorio y deja que
-   Cloudflare Pages la despliegue. La URL será `https://avstack.es/SSCE0110/`.
-2. **GitHub Pages directo**: desactiva el dominio personalizado `avstack.es` del sitio de usuario
-   `systemavworks.github.io`. Entonces `https://systemavworks.github.io/SSCE0110/` servirá el proyecto.
-   Afecta a todos los project pages de la organización.
-3. **Subdominio dedicado**: crea `ssce0110.avstack.es` con CNAME a `systemavworks.github.io` (DNS only),
-   configúralo como custom domain de este repositorio y usa
-   `https://ssce0110.avstack.es/portfolio.html`. Mantén siempre esa misma URL para no separar el
-   `localStorage`.
-
-Mientras no se resuelva, abre `portfolio.html` en local o usa la copia publicada en el repositorio del
-sitio. **No uses `https://avstack.es/SSCE0110/` para trabajar**: ahora mismo no carga la aplicación.
+- `index.html` **solo redirige** a `portfolio.html` de la misma carpeta: no tiene contenido propio ni se
+  sirve desde ningún sitio.
+- No hace falta conexión: las tipografías de Google Fonts son lo único externo y, sin red, el navegador
+  usa las de respaldo.
+- El repositorio de GitHub es **control de versiones y copia de seguridad**, no una web publicada. Si
+  algún día se publica en un dominio, habrá que decidirlo antes y documentarlo aquí.
+- Los datos del portfolio viven en el navegador (apartado *Datos*): exporta el JSON antes de mover la
+  carpeta o cambiar de equipo.
 
 ## Autoría y licencia
 
@@ -394,5 +379,5 @@ sitio. **No uses `https://avstack.es/SSCE0110/` para trabajar**: ahora mismo no 
 
 ---
 
-<sub>Última revisión: 25/11/2026 · v1.6 · Aj Fonts · Andalucía · Nov. 2026</sub>
+<sub>Última revisión: 25/11/2026 · v1.7 · Aj Fonts · Andalucía · Nov. 2026</sub>
 
