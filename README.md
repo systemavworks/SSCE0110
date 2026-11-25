@@ -221,7 +221,7 @@ Abre [`portfolio.html`](portfolio.html) en el navegador. No hay instalación, cu
 |---|---|
 | **Calendario** | Timeline de módulos con las fechas oficiales de CEFI, los bloques PRL y recuperación, los días sin módulo y los festivos. Botón *Ir al módulo de hoy* |
 | **Módulos** | Tarjetas con horas, UF, progreso, fechas reales, notas y acciones rápidas |
-| **Temario** | Los 51 temas con tres estados: pendiente, en curso y dominado. Buscador y filtros por módulo |
+| **Temario** | Los 53 temas con tres estados: pendiente, en curso y dominado. Buscador y filtros por módulo |
 | **Entregables** | Checklist de los 33 entregables y un campo de evidencia (URL o ruta) por módulo |
 | **Datos** | Exportar Markdown/JSON, importar copia, imprimir y borrar datos locales |
 
@@ -327,7 +327,7 @@ mp0353: añade diario de la primera observación
 **En curso**
 
 - [ ] **MF1442_3** (24/11 → 04/12): programación didáctica, matriz de alineación y ficha del grupo.
-- [ ] Completar el temario del MF1442_3 en el portfolio (10 temas).
+- [ ] Completar el temario del MF1442_3 en el portfolio (12 temas, 3 por unidad).
 - [ ] Cerrar los 5 entregables del MF1442_3 y enlazarlos en *Entregables*.
 
 **Pendiente**

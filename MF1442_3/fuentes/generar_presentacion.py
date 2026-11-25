@@ -110,7 +110,7 @@ x = 2.0
 for num, label, pill in (('60 h', 'Duración oficial', 'BigNum'),
                          ('9', 'Sesiones en el cronograma', 'BigNum'),
                          ('Nivel 3', 'Cualificación', 'BigNum'),
-                         ('4', 'Bloques de contenido', 'BigNum')):
+                         ('4', 'Unidades del temario', 'BigNum')):
     kpi(s, x, 6.3, 7.3, num, label, pill)
     x += 7.8
 s.text(2.0, 10.0, 29.5, 6.4, [
@@ -165,16 +165,16 @@ s.footer('MF1442_3 · Plantilla demo', '5')
 
 # ---------- 6 · CONTENIDOS ----------
 s = Slide(d, 'Contenidos')
-head(s, '04 · CONTENIDOS', 'Cuatro bloques que se convierten en unidades didácticas',
-     'Cada bloque debe poder medirse con una actividad y una evidencia.')
-card(s, 2.0, 6.3, 14.3, 4.6, 'B1 · Contexto y programación',
-     [{'s': 'CardBody', 'r': [('[Análisis del contexto, detección de necesidades, normativa aplicable, estructura del certificado, objetivos y criterios de evaluación.]', None)]}])
-card(s, 17.5, 6.3, 14.3, 4.6, 'B2 · Diseño y secuenciación',
-     [{'s': 'CardBody', 'r': [('[Contenidos, unidades didácticas, temporalización, guion de sesión y coherencia entre objetivos, actividades y evaluación.]', None)]}], 'PillTeal')
-card(s, 2.0, 11.2, 14.3, 4.6, 'B3 · Metodología y recursos',
-     [{'s': 'CardBody', 'r': [('[Métodos activos, agrupamientos, materiales, medios y coordinación del equipo docente.]', None)]}], 'PillMagenta')
-card(s, 17.5, 11.2, 14.3, 4.6, 'B4 · Evaluación y mejora',
-     [{'s': 'CardBody', 'r': [('[Evaluación diagnóstica, formativa y sumativa; instrumentos, rúbricas, análisis de resultados y propuestas de mejora.]', None)]}], 'PillAmber')
+head(s, '04 · CONTENIDOS', 'Las cuatro unidades del temario',
+     'Cada unidad se mide con una actividad y una evidencia.')
+card(s, 2.0, 6.3, 14.3, 4.6, 'U1 · Estructura de la formación profesional',
+     [{'s': 'CardBody', 'r': [('[Sistema de FP y normativa; tipos de acciones formativas; entidades y requisitos previos de espacios y equipamiento.]', None)]}])
+card(s, 17.5, 6.3, 14.3, 4.6, 'U2 · Certificados de profesionalidad',
+     [{'s': 'CardBody', 'r': [('[Grados A, B y C; módulos, UF y UC; criterios de evaluación; acreditación de competencias e itinerarios.]', None)]}], 'PillTeal')
+card(s, 2.0, 11.2, 14.3, 4.6, 'U3 · Programación didáctica',
+     [{'s': 'CardBody', 'r': [('[Contexto y perfil; objetivos operativos; contenidos; metodología, actividades y unidades didácticas.]', None)]}], 'PillMagenta')
+card(s, 17.5, 11.2, 14.3, 4.6, 'U4 · Programación temporalizada',
+     [{'s': 'CardBody', 'r': [('[Cronograma y guion minuteado; evaluación diagnóstica, formativa y sumativa; coordinación y mejora.]', None)]}], 'PillAmber')
 s.footer('MF1442_3 · Plantilla demo', '6')
 
 # ---------- 7 · METODOLOGÍA ----------
@@ -204,15 +204,15 @@ head(s, '06 · TEMPORALIZACIÓN', 'Nueve sesiones, del 24/11 al 04/12 de 2026',
      'Cambia las fechas si el centro mueve el calendario: están en el README del repositorio.')
 rows = [[('Sesión', 'CellHeadText'), ('Contenido de la sesión', 'CellHeadText'), ('Evidencia que se entrega', 'CellHeadText')]]
 plan = [
-    ('1 · 24/11', 'Presentación del módulo y análisis del contexto', 'Ficha del grupo'),
-    ('2 · 25/11', 'Marco normativo del certificado y de la FPE', 'Análisis de normativa'),
-    ('3 · 26/11', 'Detección de necesidades y perfil del alumnado', 'Ficha del perfil'),
-    ('4 · 27/11', 'Objetivos y criterios de evaluación', 'Tabla de objetivos y CE'),
-    ('5 · 30/11', 'Contenidos y unidades didácticas', 'Tabla de secuenciación'),
-    ('6 · 01/12', 'Metodología y diseño de actividades', 'Programación (borrador)'),
-    ('7 · 02/12', 'Recursos, materiales y coordinación docente', 'Listado de recursos'),
-    ('8 · 03/12', 'Temporalización y guion minuteado', 'Cronograma y guion'),
-    ('9 · 04/12', 'Evaluación, rúbrica y cierre', 'Rúbrica y programación final'),
+    ('1 · 24/11', 'U1 · Estructura de la formación profesional', 'Ficha del grupo'),
+    ('2 · 25/11', 'U1 · Tipos de acciones formativas y requisitos', 'Análisis de normativa'),
+    ('3 · 26/11', 'U2 · Certificados: módulos, UF y UC', 'Mapa del certificado'),
+    ('4 · 27/11', 'U2 · Criterios de evaluación y acreditación', 'Tabla de objetivos y CE'),
+    ('5 · 30/11', 'U3 · Contexto y perfil del alumnado', 'Ficha del perfil'),
+    ('6 · 01/12', 'U3 · Objetivos y contenidos', 'Programación (borrador)'),
+    ('7 · 02/12', 'U3 · Metodología, actividades y UD', 'Tabla de secuenciación'),
+    ('8 · 03/12', 'U4 · Temporalización y guion minuteado', 'Cronograma y guion'),
+    ('9 · 04/12', 'U4 · Evaluación, rúbrica y cierre', 'Rúbrica y programación final'),
 ]
 for a, b, c in plan:
     rows.append([(a, 'CellTextB'), (b, 'CellSm'), (c, 'CellSm')])

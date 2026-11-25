@@ -92,13 +92,13 @@
       <style:table-column-properties style:column-width="4.6cm"/>
     </style:style>
     <style:style style:name="co4_0" style:family="table-column">
-      <style:table-column-properties style:column-width="4.2cm"/>
+      <style:table-column-properties style:column-width="1.4cm"/>
     </style:style>
     <style:style style:name="co4_1" style:family="table-column">
-      <style:table-column-properties style:column-width="4.4cm"/>
+      <style:table-column-properties style:column-width="5.2cm"/>
     </style:style>
     <style:style style:name="co4_2" style:family="table-column">
-      <style:table-column-properties style:column-width="6.0cm"/>
+      <style:table-column-properties style:column-width="8.0cm"/>
     </style:style>
     <style:style style:name="co4_3" style:family="table-column">
       <style:table-column-properties style:column-width="1.2cm"/>
@@ -493,10 +493,10 @@
         <table:table-column table:style-name="co4_4"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
-            <text:p text:style-name="TableHeadP">Bloque</text:p>
+            <text:p text:style-name="TableHeadP">Unidad</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
-            <text:p text:style-name="TableHeadP">Unidad didáctica</text:p>
+            <text:p text:style-name="TableHeadP">Título</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Contenidos</text:p>
@@ -510,94 +510,70 @@
         </table:table-row>
         <table:table-row>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">B1 · Contexto y programación</text:p>
+            <text:p text:style-name="TableCellP">U1</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">UD1 · <text:span text:style-name="PhSpan">[El contexto formativo]</text:span></text:p>
+            <text:p text:style-name="TableCellP">Estructura de la formación profesional</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">
-              <text:span text:style-name="PhSpan">[Análisis del contexto, detección de necesidades, normativa, estructura del certificado]</text:span>
-            </text:p>
+            <text:p text:style-name="TableCellP">Sistema de FP y normativa (LO 3/2022, RD 659/2023); tipos de acciones formativas; entidades y requisitos previos</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">
-              <text:span text:style-name="PhSpan">[12]</text:span>
-            </text:p>
+            <text:p text:style-name="TableCellP">12</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">
-              <text:span text:style-name="PhSpan">[2]</text:span>
-            </text:p>
+            <text:p text:style-name="TableCellP">2</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">B2 · Diseño y secuenciación</text:p>
+            <text:p text:style-name="TableCellP">U2</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">UD2 · <text:span text:style-name="PhSpan">[Objetivos y contenidos]</text:span></text:p>
+            <text:p text:style-name="TableCellP">Certificados de profesionalidad</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">
-              <text:span text:style-name="PhSpan">[Objetivos operativos, criterios de evaluación, secuenciación, temporalización]</text:span>
-            </text:p>
+            <text:p text:style-name="TableCellP">Grados A, B y C; módulos, UF y UC; criterios de evaluación; acreditación e itinerarios</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">
-              <text:span text:style-name="PhSpan">[18]</text:span>
-            </text:p>
+            <text:p text:style-name="TableCellP">14</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">
-              <text:span text:style-name="PhSpan">[3]</text:span>
-            </text:p>
+            <text:p text:style-name="TableCellP">2</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">B3 · Metodología y recursos</text:p>
+            <text:p text:style-name="TableCellP">U3</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">UD3 · <text:span text:style-name="PhSpan">[Metodología y actividades]</text:span></text:p>
+            <text:p text:style-name="TableCellP">Elaboración de la programación didáctica</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">
-              <text:span text:style-name="PhSpan">[Métodos activos, agrupamientos, materiales y medios, coordinación docente]</text:span>
-            </text:p>
+            <text:p text:style-name="TableCellP">Contexto y perfil; objetivos operativos; contenidos; metodología y actividades; unidades didácticas</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">
-              <text:span text:style-name="PhSpan">[18]</text:span>
-            </text:p>
+            <text:p text:style-name="TableCellP">20</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">
-              <text:span text:style-name="PhSpan">[3]</text:span>
-            </text:p>
+            <text:p text:style-name="TableCellP">3</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">B4 · Evaluación y mejora</text:p>
+            <text:p text:style-name="TableCellP">U4</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">UD4 · <text:span text:style-name="PhSpan">[Evaluación y mejora]</text:span></text:p>
+            <text:p text:style-name="TableCellP">Elaboración de la programación temporalizada</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">
-              <text:span text:style-name="PhSpan">[Evaluación diagnóstica, formativa y sumativa; instrumentos, rúbricas, análisis y mejora]</text:span>
-            </text:p>
+            <text:p text:style-name="TableCellP">Cronograma y guion minuteado; evaluación; coordinación docente y mejora</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">
-              <text:span text:style-name="PhSpan">[12]</text:span>
-            </text:p>
+            <text:p text:style-name="TableCellP">14</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">
-              <text:span text:style-name="PhSpan">[1]</text:span>
-            </text:p>
+            <text:p text:style-name="TableCellP">2</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -749,7 +725,7 @@
             <text:p text:style-name="TableCellP">24/11/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Presentación del módulo y análisis del contexto</text:p>
+            <text:p text:style-name="TableCellP">U1 · Estructura de la formación profesional</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
             <text:p text:style-name="TableCellP">Ficha del grupo</text:p>
@@ -763,7 +739,7 @@
             <text:p text:style-name="TableCellP">25/11/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Marco normativo del certificado y de la FPE</text:p>
+            <text:p text:style-name="TableCellP">U1 · Tipos de acciones formativas y requisitos</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
             <text:p text:style-name="TableCellP">Análisis de normativa</text:p>
@@ -777,10 +753,10 @@
             <text:p text:style-name="TableCellP">26/11/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Detección de necesidades y perfil del alumnado</text:p>
+            <text:p text:style-name="TableCellP">U2 · Certificados: módulos, UF y UC</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Ficha del perfil</text:p>
+            <text:p text:style-name="TableCellP">Mapa del certificado</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -791,7 +767,7 @@
             <text:p text:style-name="TableCellP">27/11/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Objetivos y criterios de evaluación</text:p>
+            <text:p text:style-name="TableCellP">U2 · Criterios de evaluación y acreditación</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
             <text:p text:style-name="TableCellP">Tabla de objetivos y CE</text:p>
@@ -805,10 +781,10 @@
             <text:p text:style-name="TableCellP">30/11/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Contenidos y unidades didácticas</text:p>
+            <text:p text:style-name="TableCellP">U3 · Contexto y perfil del alumnado</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Tabla de secuenciación</text:p>
+            <text:p text:style-name="TableCellP">Ficha del perfil</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -819,7 +795,7 @@
             <text:p text:style-name="TableCellP">01/12/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Metodología y diseño de actividades</text:p>
+            <text:p text:style-name="TableCellP">U3 · Objetivos y contenidos</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
             <text:p text:style-name="TableCellP">Programación (borrador)</text:p>
@@ -833,10 +809,10 @@
             <text:p text:style-name="TableCellP">02/12/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Recursos, materiales y coordinación docente</text:p>
+            <text:p text:style-name="TableCellP">U3 · Metodología, actividades y UD</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Listado de recursos</text:p>
+            <text:p text:style-name="TableCellP">Tabla de secuenciación</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -847,7 +823,7 @@
             <text:p text:style-name="TableCellP">03/12/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Temporalización y guion minuteado</text:p>
+            <text:p text:style-name="TableCellP">U4 · Temporalización y guion minuteado</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
             <text:p text:style-name="TableCellP">Cronograma y guion</text:p>
@@ -861,7 +837,7 @@
             <text:p text:style-name="TableCellP">04/12/2026</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Evaluación, rúbrica y cierre</text:p>
+            <text:p text:style-name="TableCellP">U4 · Evaluación, rúbrica y cierre</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
             <text:p text:style-name="TableCellP">Rúbrica y programación final</text:p>

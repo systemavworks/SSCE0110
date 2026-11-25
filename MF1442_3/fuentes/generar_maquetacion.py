@@ -76,13 +76,13 @@ d.table([
 
 d.h2('4 · Contenidos y unidades didácticas')
 d.table([
-    ['Bloque', 'Unidad didáctica', 'Contenidos', 'Horas', 'Ses.'],
-    ['B1 · Contexto y programación', 'UD1 · [El contexto formativo]', '[Análisis del contexto, detección de necesidades, normativa, estructura del certificado]', '[12]', '[2]'],
-    ['B2 · Diseño y secuenciación', 'UD2 · [Objetivos y contenidos]', '[Objetivos operativos, criterios de evaluación, secuenciación, temporalización]', '[18]', '[3]'],
-    ['B3 · Metodología y recursos', 'UD3 · [Metodología y actividades]', '[Métodos activos, agrupamientos, materiales y medios, coordinación docente]', '[18]', '[3]'],
-    ['B4 · Evaluación y mejora', 'UD4 · [Evaluación y mejora]', '[Evaluación diagnóstica, formativa y sumativa; instrumentos, rúbricas, análisis y mejora]', '[12]', '[1]'],
+    ['Unidad', 'Título', 'Contenidos', 'Horas', 'Ses.'],
+    ['U1', 'Estructura de la formación profesional', 'Sistema de FP y normativa (LO 3/2022, RD 659/2023); tipos de acciones formativas; entidades y requisitos previos', '12', '2'],
+    ['U2', 'Certificados de profesionalidad', 'Grados A, B y C; módulos, UF y UC; criterios de evaluación; acreditación e itinerarios', '14', '2'],
+    ['U3', 'Elaboración de la programación didáctica', 'Contexto y perfil; objetivos operativos; contenidos; metodología y actividades; unidades didácticas', '20', '3'],
+    ['U4', 'Elaboración de la programación temporalizada', 'Cronograma y guion minuteado; evaluación; coordinación docente y mejora', '14', '2'],
     ['Total', '', '', '60', '9'],
-], [4.2, 4.4, 6.0, 1.2, 1.2])
+], [1.4, 5.2, 8.0, 1.2, 1.2])
 
 d.h2('5 · Metodología')
 d.bullets([
@@ -102,15 +102,15 @@ d.h2('6 · Temporalización')
 d.p('Nueve sesiones entre el 24/11/2026 y el 04/12/2026 (6 h por sesión). Si el centro mueve una fecha, actualízala aquí y en el portfolio del repositorio.', 'Body')
 d.table([
     ['Sesión', 'Fecha', 'Contenido', 'Actividad y evidencia'],
-    ['1', '24/11/2026', 'Presentación del módulo y análisis del contexto', 'Ficha del grupo'],
-    ['2', '25/11/2026', 'Marco normativo del certificado y de la FPE', 'Análisis de normativa'],
-    ['3', '26/11/2026', 'Detección de necesidades y perfil del alumnado', 'Ficha del perfil'],
-    ['4', '27/11/2026', 'Objetivos y criterios de evaluación', 'Tabla de objetivos y CE'],
-    ['5', '30/11/2026', 'Contenidos y unidades didácticas', 'Tabla de secuenciación'],
-    ['6', '01/12/2026', 'Metodología y diseño de actividades', 'Programación (borrador)'],
-    ['7', '02/12/2026', 'Recursos, materiales y coordinación docente', 'Listado de recursos'],
-    ['8', '03/12/2026', 'Temporalización y guion minuteado', 'Cronograma y guion'],
-    ['9', '04/12/2026', 'Evaluación, rúbrica y cierre', 'Rúbrica y programación final'],
+    ['1', '24/11/2026', 'U1 · Estructura de la formación profesional', 'Ficha del grupo'],
+    ['2', '25/11/2026', 'U1 · Tipos de acciones formativas y requisitos', 'Análisis de normativa'],
+    ['3', '26/11/2026', 'U2 · Certificados: módulos, UF y UC', 'Mapa del certificado'],
+    ['4', '27/11/2026', 'U2 · Criterios de evaluación y acreditación', 'Tabla de objetivos y CE'],
+    ['5', '30/11/2026', 'U3 · Contexto y perfil del alumnado', 'Ficha del perfil'],
+    ['6', '01/12/2026', 'U3 · Objetivos y contenidos', 'Programación (borrador)'],
+    ['7', '02/12/2026', 'U3 · Metodología, actividades y UD', 'Tabla de secuenciación'],
+    ['8', '03/12/2026', 'U4 · Temporalización y guion minuteado', 'Cronograma y guion'],
+    ['9', '04/12/2026', 'U4 · Evaluación, rúbrica y cierre', 'Rúbrica y programación final'],
 ], [1.8, 2.6, 7.4, 5.2])
 d.p('Los días 7 y 8 de diciembre, 24 y 25 de diciembre, 31 de diciembre y 1, 5 y 6 de enero son no lectivos en el cronograma del centro, fuera ya de esta ventana.', 'Small')
 

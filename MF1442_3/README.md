@@ -32,7 +32,7 @@ una página editable).
 ## Estructura de la presentación (14 diapositivas)
 
 **1** Portada · **2** Cómo usar la plantilla · **3** El módulo (60 h, 9 sesiones, fechas) · **4** Objetivos ·
-**5** Perfil del alumnado · **6** Contenidos (4 bloques) · **7** Metodología · **8** Temporalización de las 9 sesiones ·
+**5** Perfil del alumnado · **6** Contenidos (4 unidades) · **7** Metodología · **8** Temporalización de las 9 sesiones ·
 **9** Recursos · **10** Evaluación · **11** Rúbrica · **12** Alineación constructiva · **13** Riesgos y plan B · **14** Cierre.
 
 Todas las diapositivas siguen la misma rejilla: barra de color a la izquierda, antetítulo en verde azulado,
