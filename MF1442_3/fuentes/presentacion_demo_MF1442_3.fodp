@@ -168,6 +168,9 @@
     <style:style style:name="BigWhite" style:family="text">
       <style:text-properties style:font-name="Liberation Sans" fo:font-size="33pt" fo:color="#FFFFFF" fo:font-weight="bold" fo:font-style="normal"/>
     </style:style>
+    <style:style style:name="ArrowSpan" style:family="text">
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="18pt" fo:color="#3B34C7" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
   </office:automatic-styles>
   <office:master-styles>
     <style:master-page style:name="Default" style:page-layout-name="pm1"/>
@@ -640,11 +643,144 @@
           </draw:text-box>
         </draw:frame>
       </draw:page>
+      <draw:page draw:name="Mapa" draw:master-page-name="Default">
+        <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Kicker">05 · MAPA DEL SISTEMA</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Title">Del estándar de competencia a tu programación</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="4.9cm" svg:width="28.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="Subtitle">Los tres catálogos encadenan lo que exige el puesto de trabajo con el documento que entregas.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="2.0cm" svg:y="6.4cm" svg:width="6.9cm" svg:height="3.5cm"/>
+        <draw:rect draw:style-name="PillIndigo" draw:name="r" svg:x="2.0cm" svg:y="6.4cm" svg:width="0.14cm" svg:height="3.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="6.7cm" svg:width="6.0cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">Catálogo de Estándares</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="7.550000000000001cm" svg:width="5.95cm" svg:height="2.15cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">Competencias que exige el sistema productivo, por familia y nivel.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="8.9cm" svg:y="7.4cm" svg:width="1.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="ArrowSpan">→</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="9.9cm" svg:y="6.4cm" svg:width="6.9cm" svg:height="3.5cm"/>
+        <draw:rect draw:style-name="PillTeal" draw:name="r" svg:x="9.9cm" svg:y="6.4cm" svg:width="0.14cm" svg:height="3.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="10.35cm" svg:y="6.7cm" svg:width="6.0cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">Catálogo Modular</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="10.35cm" svg:y="7.550000000000001cm" svg:width="5.95cm" svg:height="2.15cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">Módulos formativos asociados a cada estándar de competencia.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="16.8cm" svg:y="7.4cm" svg:width="1.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="ArrowSpan">→</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="17.8cm" svg:y="6.4cm" svg:width="6.9cm" svg:height="3.5cm"/>
+        <draw:rect draw:style-name="PillMagenta" draw:name="r" svg:x="17.8cm" svg:y="6.4cm" svg:width="0.14cm" svg:height="3.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="18.25cm" svg:y="6.7cm" svg:width="6.0cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">Certificado</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="18.25cm" svg:y="7.550000000000001cm" svg:width="5.95cm" svg:height="2.15cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">Perfil profesional, formación y prescripciones de formadores y espacios.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="24.700000000000003cm" svg:y="7.4cm" svg:width="1.0cm" svg:height="1.0cm">
+          <draw:text-box>
+            <text:p text:style-name="ArrowSpan">→</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="25.7cm" svg:y="6.4cm" svg:width="6.9cm" svg:height="3.5cm"/>
+        <draw:rect draw:style-name="PillAmber" draw:name="r" svg:x="25.7cm" svg:y="6.4cm" svg:width="0.14cm" svg:height="3.5cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.15cm" svg:y="6.7cm" svg:width="6.0cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">Tu programación</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.15cm" svg:y="7.550000000000001cm" svg:width="5.95cm" svg:height="2.15cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">UC → RA → CE, con actividades, recursos y evaluación.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="2.0cm" svg:y="10.6cm" svg:width="9.6cm" svg:height="4.4cm"/>
+        <draw:rect draw:style-name="PillIndigo" draw:name="r" svg:x="2.0cm" svg:y="10.6cm" svg:width="0.14cm" svg:height="4.4cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="10.9cm" svg:width="8.7cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">5 grados de oferta (A–E)</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.45cm" svg:y="11.75cm" svg:width="8.65cm" svg:height="3.0500000000000003cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">A acreditación parcial, B certificado de competencia, C certificado profesional, D título de FP y E curso de especialización.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="12.1cm" svg:y="10.6cm" svg:width="9.6cm" svg:height="4.4cm"/>
+        <draw:rect draw:style-name="PillTeal" draw:name="r" svg:x="12.1cm" svg:y="10.6cm" svg:width="0.14cm" svg:height="4.4cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="12.549999999999999cm" svg:y="10.9cm" svg:width="8.7cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">3 niveles de competencia</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="12.549999999999999cm" svg:y="11.75cm" svg:width="8.65cm" svg:height="3.0500000000000003cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">Conocimientos, iniciativa, autonomía y complejidad: la escala 1–3 de la LO 3/2022, distinta de los cinco niveles del CNCP.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardW" draw:name="r" svg:x="22.2cm" svg:y="10.6cm" svg:width="9.6cm" svg:height="4.4cm"/>
+        <draw:rect draw:style-name="PillMagenta" draw:name="r" svg:x="22.2cm" svg:y="10.6cm" svg:width="0.14cm" svg:height="4.4cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="22.65cm" svg:y="10.9cm" svg:width="8.7cm" svg:height="0.8cm">
+          <draw:text-box>
+            <text:p text:style-name="CardTitle">Formación ≠ educación</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="22.65cm" svg:y="11.75cm" svg:width="8.65cm" svg:height="3.0500000000000003cm">
+          <draw:text-box>
+            <text:p text:style-name="CardBody">Práctica y a corto plazo, orientada a resolver problemas del puesto, frente a valores y desarrollo a largo plazo.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:rect draw:style-name="CardBg" draw:name="r" svg:x="2.0cm" svg:y="15.4cm" svg:width="29.8cm" svg:height="1.7cm"/>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.4cm" svg:y="15.55cm" svg:width="29.0cm" svg:height="1.4cm">
+          <draw:text-box>
+            <text:p text:style-name="Small"><text:span text:style-name="AccentSpan">Demanda: </text:span>empresa + bonificación en la Seguridad Social + PIF.   <text:span text:style-name="AccentSpan">Oferta: </text:span>comunidades autónomas, política activa de empleo.</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="17.55cm" svg:width="22.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">MF1442_3 · Plantilla demo</text:p>
+          </draw:text-box>
+        </draw:frame>
+        <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
+          <draw:text-box>
+            <text:p text:style-name="Footer">7</text:p>
+          </draw:text-box>
+        </draw:frame>
+      </draw:page>
       <draw:page draw:name="Metodologia" draw:master-page-name="Default">
         <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Kicker">05 · METODOLOGÍA</text:p>
+            <text:p text:style-name="Kicker">06 · METODOLOGÍA</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
@@ -779,7 +915,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Footer">7</text:p>
+            <text:p text:style-name="Footer">8</text:p>
           </draw:text-box>
         </draw:frame>
       </draw:page>
@@ -787,7 +923,7 @@
         <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Kicker">06 · TEMPORALIZACIÓN</text:p>
+            <text:p text:style-name="Kicker">07 · TEMPORALIZACIÓN</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
@@ -987,7 +1123,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Footer">8</text:p>
+            <text:p text:style-name="Footer">9</text:p>
           </draw:text-box>
         </draw:frame>
       </draw:page>
@@ -995,7 +1131,7 @@
         <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Kicker">07 · RECURSOS</text:p>
+            <text:p text:style-name="Kicker">08 · RECURSOS</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
@@ -1071,7 +1207,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Footer">9</text:p>
+            <text:p text:style-name="Footer">10</text:p>
           </draw:text-box>
         </draw:frame>
       </draw:page>
@@ -1079,7 +1215,7 @@
         <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Kicker">08 · EVALUACIÓN</text:p>
+            <text:p text:style-name="Kicker">09 · EVALUACIÓN</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
@@ -1200,7 +1336,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Footer">10</text:p>
+            <text:p text:style-name="Footer">11</text:p>
           </draw:text-box>
         </draw:frame>
       </draw:page>
@@ -1208,7 +1344,7 @@
         <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Kicker">09 · RÚBRICA</text:p>
+            <text:p text:style-name="Kicker">10 · RÚBRICA</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
@@ -1348,7 +1484,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Footer">11</text:p>
+            <text:p text:style-name="Footer">12</text:p>
           </draw:text-box>
         </draw:frame>
       </draw:page>
@@ -1356,7 +1492,7 @@
         <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Kicker">10 · ALINEACIÓN CONSTRUCTIVA</text:p>
+            <text:p text:style-name="Kicker">11 · ALINEACIÓN CONSTRUCTIVA</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
@@ -1448,7 +1584,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Footer">12</text:p>
+            <text:p text:style-name="Footer">13</text:p>
           </draw:text-box>
         </draw:frame>
       </draw:page>
@@ -1456,7 +1592,7 @@
         <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Kicker">11 · RIESGOS Y PLAN B</text:p>
+            <text:p text:style-name="Kicker">12 · RIESGOS Y PLAN B</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
@@ -1521,7 +1657,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Footer">13</text:p>
+            <text:p text:style-name="Footer">14</text:p>
           </draw:text-box>
         </draw:frame>
       </draw:page>
@@ -1529,7 +1665,7 @@
         <draw:rect draw:style-name="Accent" draw:name="r" svg:x="0cm" svg:y="0cm" svg:width="0.45cm" svg:height="19.05cm"/>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="1.7cm" svg:width="29.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Kicker">12 · CIERRE</text:p>
+            <text:p text:style-name="Kicker">13 · CIERRE</text:p>
           </draw:text-box>
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="2.0cm" svg:y="2.3cm" svg:width="29.6cm" svg:height="2.9cm">
@@ -1599,7 +1735,7 @@
         </draw:frame>
         <draw:frame draw:style-name="frTop" draw:name="tb" svg:x="26.0cm" svg:y="17.55cm" svg:width="6.0cm" svg:height="0.9cm">
           <draw:text-box>
-            <text:p text:style-name="Footer">14</text:p>
+            <text:p text:style-name="Footer">15</text:p>
           </draw:text-box>
         </draw:frame>
       </draw:page>

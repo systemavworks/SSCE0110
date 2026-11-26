@@ -38,6 +38,7 @@ d.tstyle('AccentSpan', 11, INDIGO, bold=True)
 d.tstyle('TealSpan', 11, TEAL, bold=True)
 d.tstyle('WhiteSpan', 12, '#FFFFFF', bold=True)
 d.tstyle('BigWhite', 33, '#FFFFFF', bold=True)
+d.tstyle('ArrowSpan', 18, INDIGO, bold=True)
 
 # --- formas ---
 d.graphic('Accent', fill=INDIGO)
@@ -177,9 +178,37 @@ card(s, 17.5, 11.2, 14.3, 4.6, 'U4 · Programación temporalizada',
      [{'s': 'CardBody', 'r': [('[4.1–4.3 · Temporalización diaria; secuenciación de actividades; guía del alumno en línea.]', None)]}], 'PillAmber')
 s.footer('MF1442_3 · Plantilla demo', '6')
 
-# ---------- 7 · METODOLOGÍA ----------
+# ---------- 7 · MAPA DEL SISTEMA ----------
+s = Slide(d, 'Mapa')
+head(s, '05 · MAPA DEL SISTEMA', 'Del estándar de competencia a tu programación',
+     'Los tres catálogos encadenan lo que exige el puesto de trabajo con el documento que entregas.')
+cadena = [
+    (2.0, 'Catálogo de Estándares', 'Competencias que exige el sistema productivo, por familia y nivel.', 'PillIndigo'),
+    (9.9, 'Catálogo Modular', 'Módulos formativos asociados a cada estándar de competencia.', 'PillTeal'),
+    (17.8, 'Certificado', 'Perfil profesional, formación y prescripciones de formadores y espacios.', 'PillMagenta'),
+    (25.7, 'Tu programación', 'UC → RA → CE, con actividades, recursos y evaluación.', 'PillAmber'),
+]
+for x, titulo, cuerpo, pill in cadena:
+    card(s, x, 6.4, 6.9, 3.5, titulo, [{'s': 'CardBody', 'r': [(cuerpo, None)]}], pill)
+    if x < 25:
+        s.text(x + 6.9, 7.4, 1.0, 1.0, [{'s': 'ArrowSpan', 'r': [('→', None)]}])
+
+card(s, 2.0, 10.6, 9.6, 4.4, '5 grados de oferta (A–E)',
+     [{'s': 'CardBody', 'r': [('A acreditación parcial, B certificado de competencia, C certificado profesional, D título de FP y E curso de especialización.', None)]}], 'PillIndigo')
+card(s, 12.1, 10.6, 9.6, 4.4, '3 niveles de competencia',
+     [{'s': 'CardBody', 'r': [('Conocimientos, iniciativa, autonomía y complejidad: la escala 1–3 de la LO 3/2022, distinta de los cinco niveles del CNCP.', None)]}], 'PillTeal')
+card(s, 22.2, 10.6, 9.6, 4.4, 'Formación ≠ educación',
+     [{'s': 'CardBody', 'r': [('Práctica y a corto plazo, orientada a resolver problemas del puesto, frente a valores y desarrollo a largo plazo.', None)]}], 'PillMagenta')
+s.rect('CardBg', 2.0, 15.4, 29.8, 1.7)
+s.text(2.4, 15.55, 29.0, 1.4, [{'s': 'Small', 'r': [
+    ('Demanda: ', 'AccentSpan'), ('empresa + bonificación en la Seguridad Social + PIF.   ', None),
+    ('Oferta: ', 'AccentSpan'), ('comunidades autónomas, política activa de empleo.', None),
+]}])
+s.footer('MF1442_3 · Plantilla demo', '7')
+
+# ---------- 8 · METODOLOGÍA ----------
 s = Slide(d, 'Metodologia')
-head(s, '05 · METODOLOGÍA', 'Cómo se enseña y cómo se agrupa el aula',
+head(s, '06 · METODOLOGÍA', 'Cómo se enseña y cómo se agrupa el aula',
      'Declara el enfoque y luego demuéstralo con la secuencia de actividades.')
 s.text(2.0, 6.2, 14.5, 9.4, [
     {'s': 'H2', 'r': [('Principios', None)]},
@@ -196,11 +225,11 @@ s.grid(17.4, 6.3, [4.6, 7.4, 4.7, 2.6], [
     [('Desarrollo', 'CellSm'), ('[Taller guiado]', 'CellSm'), ('Parejas', 'CellSm'), ('60 min', 'CellSm')],
     [('Cierre', 'CellSm'), ('[Puesta en común]', 'CellSm'), ('Grupo completo', 'CellSm'), ('15 min', 'CellSm')],
 ], row_h=1.5, head_h=1.05, name='met')
-s.footer('MF1442_3 · Plantilla demo', '7')
+s.footer('MF1442_3 · Plantilla demo', '8')
 
-# ---------- 8 · TEMPORALIZACIÓN ----------
+# ---------- 9 · TEMPORALIZACIÓN ----------
 s = Slide(d, 'Temporalizacion')
-head(s, '06 · TEMPORALIZACIÓN', 'Nueve sesiones, del 24/11 al 04/12 de 2026',
+head(s, '07 · TEMPORALIZACIÓN', 'Nueve sesiones, del 24/11 al 04/12 de 2026',
      'Cambia las fechas si el centro mueve el calendario: están en el README del repositorio.')
 rows = [[('Sesión', 'CellHeadText'), ('Contenido de la sesión', 'CellHeadText'), ('Evidencia que se entrega', 'CellHeadText')]]
 plan = [
@@ -217,11 +246,11 @@ plan = [
 for a, b, c in plan:
     rows.append([(a, 'CellTextB'), (b, 'CellSm'), (c, 'CellSm')])
 s.grid(2.0, 6.2, [3.6, 14.4, 11.3], rows, row_h=1.03, name='temp')
-s.footer('MF1442_3 · Plantilla demo', '8')
+s.footer('MF1442_3 · Plantilla demo', '9')
 
-# ---------- 9 · RECURSOS ----------
+# ---------- 10 · RECURSOS ----------
 s = Slide(d, 'Recursos')
-head(s, '07 · RECURSOS', 'Qué necesitas tener preparado',
+head(s, '08 · RECURSOS', 'Qué necesitas tener preparado',
      'Recursos del aula y recursos digitales; y un plan B para cada uno.')
 card(s, 2.0, 6.3, 14.3, 6.4, 'Aula',
      [{'t': 'ul', 'items': [
@@ -239,11 +268,11 @@ card(s, 17.5, 6.3, 14.3, 6.4, 'Digital',
      ]}], 'PillTeal')
 s.rect('CardBg', 2.0, 13.2, 29.8, 3.4)
 s.text(2.4, 13.5, 29.0, 2.9, [{'s': 'Small', 'r': [('Plan B: ', 'AccentSpan'), ('si falla el proyector o internet, la sesión sigue con la guía impresa y la pizarra. Ese plan también se escribe en la programación: no se improvisa.', None)]}])
-s.footer('MF1442_3 · Plantilla demo', '9')
+s.footer('MF1442_3 · Plantilla demo', '10')
 
-# ---------- 10 · EVALUACIÓN ----------
+# ---------- 11 · EVALUACIÓN ----------
 s = Slide(d, 'Evaluacion')
-head(s, '08 · EVALUACIÓN', 'Tres momentos y un instrumento por momento',
+head(s, '09 · EVALUACIÓN', 'Tres momentos y un instrumento por momento',
      'Si no hay instrumento, no hay evidencia; y sin evidencia no hay nota.')
 s.grid(2.0, 6.3, [5.0, 7.4, 12.0, 4.9], [
     [('Tipo', 'CellSmHead'), ('Momento', 'CellSmHead'), ('Instrumento y criterio', 'CellSmHead'), ('Peso', 'CellSmHead')],
@@ -252,11 +281,11 @@ s.grid(2.0, 6.3, [5.0, 7.4, 12.0, 4.9], [
     [('Sumativa', 'CellTextB'), ('Sesión 9', 'CellSm'), ('[Programación didáctica + defensa con rúbrica]', 'CellSm'), ('60 %', 'CellSm')],
 ], row_h=1.75, head_h=1.05, name='eval')
 s.text(2.0, 14.6, 29.5, 1.6, [{'s': 'Small', 'r': [('Recuerda: ', 'AccentSpan'), ('cada criterio de evaluación debe aparecer en la rúbrica con un descriptor observable. Nada de «participa bien».', None)]}])
-s.footer('MF1442_3 · Plantilla demo', '10')
+s.footer('MF1442_3 · Plantilla demo', '11')
 
-# ---------- 11 · RÚBRICA ----------
+# ---------- 12 · RÚBRICA ----------
 s = Slide(d, 'Rubrica')
-head(s, '09 · RÚBRICA', 'Cuatro niveles por criterio',
+head(s, '10 · RÚBRICA', 'Cuatro niveles por criterio',
      'Sustituye los descriptores por lo que se ve en la entrega, no por adjetivos.')
 s.grid(2.0, 6.2, [6.2, 7.6, 7.6, 8.4], [
     [('Criterio', 'CellSmHead'), ('Insuficiente (0–4)', 'CellSmHead'), ('Suficiente (5–6)', 'CellSmHead'), ('Notable / Excelente (7–10)', 'CellSmHead')],
@@ -265,11 +294,11 @@ s.grid(2.0, 6.2, [6.2, 7.6, 7.6, 8.4], [
     [('Contenidos', 'CellTextB'), ('[Lista sin secuencia]', 'CellSm'), ('[Secuencia lógica]', 'CellSm'), ('[Secuencia con tiempos y UD]', 'CellSm')],
     [('Evaluación', 'CellTextB'), ('[Solo prueba final]', 'CellSm'), ('[Instrumentos básicos]', 'CellSm'), ('[Rúbrica completa y coherente]', 'CellSm')],
 ], row_h=1.95, head_h=1.05, name='rub')
-s.footer('MF1442_3 · Plantilla demo', '11')
+s.footer('MF1442_3 · Plantilla demo', '12')
 
-# ---------- 12 · ALINEACIÓN ----------
+# ---------- 13 · ALINEACIÓN ----------
 s = Slide(d, 'Alineacion')
-head(s, '10 · ALINEACIÓN CONSTRUCTIVA', 'Objetivo → actividad → evidencia',
+head(s, '11 · ALINEACIÓN CONSTRUCTIVA', 'Objetivo → actividad → evidencia',
      'La prueba de que la programación no es una lista: todo apunta al mismo criterio.')
 s.grid(2.0, 6.3, [8.6, 10.4, 10.3], [
     [('Objetivo', 'CellSmHead'), ('Actividad', 'CellSmHead'), ('Evidencia y criterio', 'CellSmHead')],
@@ -277,11 +306,11 @@ s.grid(2.0, 6.3, [8.6, 10.4, 10.3], [
     [('[OE2 · Secuenciar contenidos]', 'CellTextB'), ('[Taller de unidades didácticas]', 'CellSm'), ('[Tabla de secuenciación · CE2]', 'CellSm')],
     [('[OE3 · Diseñar la evaluación]', 'CellTextB'), ('[Prueba práctica + rúbrica]', 'CellSm'), ('[Rúbrica aplicada · CE3]', 'CellSm')],
 ], row_h=1.75, head_h=1.05, name='alin')
-s.footer('MF1442_3 · Plantilla demo', '12')
+s.footer('MF1442_3 · Plantilla demo', '13')
 
-# ---------- 13 · RIESGOS ----------
+# ---------- 14 · RIESGOS ----------
 s = Slide(d, 'Riesgos')
-head(s, '11 · RIESGOS Y PLAN B', 'Qué puede salir mal y qué harás entonces',
+head(s, '12 · RIESGOS Y PLAN B', 'Qué puede salir mal y qué harás entonces',
      'Anticipar los problemas es parte de la competencia docente.')
 card(s, 2.0, 6.3, 14.3, 4.4, 'En el aula',
      [{'t': 'ul', 'items': [
@@ -298,11 +327,11 @@ s.text(2.4, 11.5, 29.0, 3.8, [
     {'s': 'H2', 'r': [('Cómo se escribe en la programación', None)]},
     {'s': 'Small', 'r': [('Cada riesgo lleva su medida: una línea con el problema, otra con la respuesta y quién la ejecuta. Así el plan B se evalúa como cualquier otro contenido.', None)]},
 ])
-s.footer('MF1442_3 · Plantilla demo', '13')
+s.footer('MF1442_3 · Plantilla demo', '14')
 
-# ---------- 14 · CIERRE ----------
+# ---------- 15 · CIERRE ----------
 s = Slide(d, 'Cierre')
-head(s, '12 · CIERRE', 'Qué entregas y cómo lo compruebas',
+head(s, '13 · CIERRE', 'Qué entregas y cómo lo compruebas',
      'La diapositiva final sirve para que nadie se vaya sin saber qué falta.')
 s.text(2.0, 6.2, 15.4, 9.8, [
     {'s': 'H2', 'r': [('Entregables del módulo', None)]},
@@ -322,7 +351,7 @@ card(s, 18.2, 6.3, 13.6, 9.0, 'Antes de entregar',
          {'s': 'CardBody', 'r': [('Copia en la carpeta MF1442_3/ del repositorio.', None)]},
          {'s': 'CardBody', 'r': [('Revisa que no queda ningún [corchete].', None)]},
      ]}], 'PillMagenta')
-s.footer('MF1442_3 · Plantilla demo · Aj Fonts', '14')
+s.footer('MF1442_3 · Plantilla demo · Aj Fonts', '15')
 
 d.save('presentacion_demo_MF1442_3.fodp')
 print('slides:', Slide.n)

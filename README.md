@@ -76,14 +76,14 @@ sin instalación ni servidor, que guarda tu progreso en el navegador y lo export
 | [`index.html`](index.html) | Entrada local | Redirige a `portfolio.html` para abrir el portfolio desde la raíz de la carpeta |
 | [`portfolio.html`](portfolio.html) | Portfolio y seguimiento (single-file) | Calendario, temario con estados, entregables, evidencias, notas y exportación MD/JSON/ICS |
 | [`guia_arranque_SSCE0110.html`](guia_arranque_SSCE0110.html) | Guía de arranque + bitácora | Checklist del día 1, planificador, microclase, glosario, test y bitácora |
-| [`modulo_MF1442_3.html`](modulo_MF1442_3.html) | Ficha del MF1442_3 | Capacidades, criterios, contenidos, constructor de programación y test |
+| [`modulo_MF1442_3.html`](modulo_MF1442_3.html) | Ficha del MF1442_3 | Capacidades, criterios, contenidos, ideas clave, autoevaluación de cada unidad, constructor de programación y test |
 | [`modulos_SSCE0110.html`](modulos_SSCE0110.html) | Índice de fichas | Acceso a los resúmenes de los seis módulos y a sus ventanas de estudio |
 | [`modulo_MF1443_3.html`](modulo_MF1443_3.html) | Ficha del MF1443_3 | Materiales, medios, recursos, Moodle, accesibilidad y test |
 | [`modulo_MF1444_3.html`](modulo_MF1444_3.html) | Ficha del MF1444_3 | Impartición, tutorización, microclase y plan tutorial |
 | [`modulo_MF1445_3.html`](modulo_MF1445_3.html) | Ficha del MF1445_3 | Evaluación, pruebas, rúbricas, análisis y mejora |
 | [`modulo_MF1446_3.html`](modulo_MF1446_3.html) | Ficha del MF1446_3 | Orientación laboral, itinerarios, calidad e innovación |
 | [`modulo_MP0353.html`](modulo_MP0353.html) | Ficha del MP0353 | Prácticas, observación, diario, sesión e informe final |
-| [`MF1442_3/`](MF1442_3/) | Maquetación + presentación demo | Plantilla `.docx`/`.pdf` de la programación y deck `.pptx` de 14 diapositivas, para Google Slides, Canva o PowerPoint |
+| [`MF1442_3/`](MF1442_3/) | Maquetación + presentación demo | Plantilla `.docx`/`.pdf` de la programación y deck `.pptx` de 15 diapositivas, para Google Slides, Canva o PowerPoint |
 | [`formador_RD659_2023.html`](formador_RD659_2023.html) | Requisitos del formador | Las tres vías del art. 168 del RD 659/2023, exenciones, reglas de centro y el nuevo certificado SSC_C_017_5B (RD 86/2026), equivalente al SSCE0110 |
 | `cspell.config.yaml` · `.markdownlint.json` · `.vscode/settings.json` · `.cspell/` | Configuración del editor | Diccionario español, reglas de markdown ajustadas y exclusiones de Todo Tree: el panel de Problemas de VS Code queda a cero |
 | [`diario_curso_SSCE0110.html`](diario_curso_SSCE0110.html) | Diario del curso | Registro cronológico de sesiones y avances |
@@ -315,7 +315,7 @@ mp0353: añade diario de la primera observación
 - [x] **Marco normativo revisado** con los PDF del BOE (`SS-CE0110_BOE.pdf`) y la lista de legislación del
   centro: requisitos de titulación y experiencia de los formadores, competencia docente y exenciones.
 - [x] **Plantilla de entrega del MF1442_3** en [`MF1442_3/`](MF1442_3/): maquetación de la programación
-  didáctica (`.docx`/`.pdf`, 14 apartados) y presentación demo (`.pptx`/`.pdf`, 14 diapositivas) con las
+  didáctica (`.docx`/`.pdf`, 14 apartados) y presentación demo (`.pptx`/`.pdf`, 15 diapositivas) con las
   fechas del cronograma y casillas para rellenar.
 - [x] **Requisitos del formador verificados** en [`formador_RD659_2023.html`](formador_RD659_2023.html):
   art. 168 del RD 659/2023 (tres vías, exenciones y reglas de centro) y el nuevo certificado

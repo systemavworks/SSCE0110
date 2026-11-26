@@ -4,7 +4,7 @@ Material de trabajo del módulo **MF1442_3 · Programación didáctica de accion
 (SSCE0110, CEFI Formación · 24/11/2026 → 04/12/2026).
 
 Dos piezas listas para rellenar: **una plantilla de documento** (la programación didáctica) y **una
-presentación demo** (14 diapositivas). Todo está en formato editable y también en PDF para entregar.
+presentación demo** (15 diapositivas). Todo está en formato editable y también en PDF para entregar.
 
 ## Qué hay en esta carpeta
 
@@ -12,7 +12,7 @@ presentación demo** (14 diapositivas). Todo está en formato editable y tambié
 |---|---|---|
 | `maquetacion_MF1442_3.docx` | Plantilla del documento | Rellenar la programación didáctica (Word, Google Docs, LibreOffice) |
 | `maquetacion_MF1442_3.pdf` | Vista previa del documento | Ver cómo queda antes de escribir; imprimir |
-| `presentacion_demo_MF1442_3.pptx` | Presentación de 14 diapositivas | Rellenar y exponer (PowerPoint, Google Slides, Canva) |
+| `presentacion_demo_MF1442_3.pptx` | Presentación de 15 diapositivas | Rellenar y exponer (PowerPoint, Google Slides, Canva) |
 | `presentacion_demo_MF1442_3.pdf` | Vista previa de la presentación | Ensayar y proyectar sin depender de fuentes |
 | `fuentes/` | Archivos origen (`.fodt`, `.fodp`) y generadores | Regenerar o personalizar la plantilla |
 
@@ -29,11 +29,12 @@ una página editable).
 > `MF1442_3_programacion_apellido.docx` y `MF1442_3_presentacion_apellido.pptx`.
 > La versión que se entrega es siempre el **PDF** con ese mismo nombre.
 
-## Estructura de la presentación (14 diapositivas)
+## Estructura de la presentación (15 diapositivas)
 
 **1** Portada · **2** Cómo usar la plantilla · **3** El módulo (60 h, 9 sesiones, fechas) · **4** Objetivos ·
-**5** Perfil del alumnado · **6** Contenidos (4 unidades y 22 apartados) · **7** Metodología · **8** Temporalización de las 9 sesiones por apartados ·
-**9** Recursos · **10** Evaluación · **11** Rúbrica · **12** Alineación constructiva · **13** Riesgos y plan B · **14** Cierre.
+**5** Perfil del alumnado · **6** Contenidos (4 unidades y 22 apartados) · **7** Mapa del sistema de FP
+(los tres catálogos, grados A–E y niveles 1–3) · **8** Metodología · **9** Temporalización de las 9 sesiones por apartados ·
+**10** Recursos · **11** Evaluación · **12** Rúbrica · **13** Alineación constructiva · **14** Riesgos y plan B · **15** Cierre.
 
 Todas las diapositivas siguen la misma rejilla: barra de color a la izquierda, antetítulo en verde azulado,
 título grande y contenido en tarjetas o tablas. Si necesitas más espacio, **duplica** una diapositiva en
@@ -42,8 +43,9 @@ lugar de reducir el cuerpo de texto.
 ## Estructura del documento (14 apartados)
 
 **0** Cómo usar la plantilla · **1** Datos de la acción formativa · **2** Justificación y contexto ·
-**3** Objetivos y criterios de evaluación · **4** Contenidos y unidades didácticas (con el reparto de los 22
-apartados del manual) · **5** Metodología · **6** Temporalización por apartados · **7** Recursos y materiales ·
+**3** Objetivos y criterios de evaluación · **4** Contenidos y unidades didácticas (reparto de los 22
+apartados del manual + ideas clave: catálogos, escalas y guía en línea + la autoevaluación de cada unidad
+con su clave comentada) · **5** Metodología · **6** Temporalización por apartados · **7** Recursos y materiales ·
 **8** Evaluación · **9** Rúbrica · **10** Alineación constructiva · **11** Seguimiento y tutorización ·
 **12** Riesgos y plan B · **13** Bibliografía y anexos · **14** Checklist de entrega.
 
@@ -58,9 +60,9 @@ Los originales están en `fuentes/` como documentos planos de LibreOffice:
 
 ```bash
 cd MF1442_3/fuentes
-soffice --headless --convert-to docx:"MS Word 2007 XML" maquetacion_MF1442_3.fodt
-soffice --headless --convert-to pptx presentacion_demo_MF1442_3.fodp
-soffice --headless --convert-to pdf maquetacion_MF1442_3.fodt presentacion_demo_MF1442_3.fodp
+soffice --headless --convert-to docx:"MS Word 2007 XML" --outdir .. maquetacion_MF1442_3.fodt
+soffice --headless --convert-to pptx --outdir .. presentacion_demo_MF1442_3.fodp
+soffice --headless --convert-to pdf --outdir .. maquetacion_MF1442_3.fodt presentacion_demo_MF1442_3.fodp
 ```
 
 Y si quieres cambiar textos y volver a construir todo desde cero:
@@ -73,6 +75,10 @@ python3 generar_presentacion.py  # escribe el .fodp
 
 Los generadores parten de `docgen.py` y `deck.py` y necesitan **LibreOffice** y **lxml** para producir los
 `.docx`/`.pptx`. No dependen de internet ni de plantillas externas.
+
+`generar_maquetacion.py` lee las 40 preguntas de autoevaluación directamente de `../modulo_MF1442_3.html`
+(apartado 4.3): si cambias una pregunta en la ficha, vuelve a lanzar el generador y el documento se
+actualiza solo. El generador comprueba que cada unidad tenga diez preguntas y falla si el HTML no cuadra.
 
 ## Antes de entregar
 

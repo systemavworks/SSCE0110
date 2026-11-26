@@ -37,6 +37,14 @@
       <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.2cm" fo:line-height="130%"/>
       <style:text-properties style:font-name="Liberation Sans" fo:font-size="8.5pt" fo:color="#5A5872" fo:font-weight="normal" fo:font-style="normal"/>
     </style:style>
+    <style:style style:name="SmallGap" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0.25cm" fo:margin-bottom="0.2cm" fo:line-height="130%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="8.5pt" fo:color="#5A5872" fo:font-weight="normal" fo:font-style="normal"/>
+    </style:style>
+    <style:style style:name="MiniHead" style:family="paragraph">
+      <style:paragraph-properties fo:text-align="start" fo:margin-top="0.4cm" fo:margin-bottom="0.15cm" fo:line-height="145%"/>
+      <style:text-properties style:font-name="Liberation Sans" fo:font-size="10.5pt" fo:color="#3B34C7" fo:font-weight="bold" fo:font-style="normal"/>
+    </style:style>
     <style:style style:name="Note" style:family="paragraph">
       <style:paragraph-properties fo:text-align="start" fo:margin-top="0cm" fo:margin-bottom="0.5cm" fo:line-height="135%" fo:background-color="#F6F5FB" fo:border-left="0.12cm solid #3B34C7" fo:padding-left="0.35cm" fo:padding-top="0.15cm" fo:padding-bottom="0.15cm" fo:padding-right="0.3cm"/>
       <style:text-properties style:font-name="Liberation Sans" fo:font-size="9pt" fo:color="#4A4860" fo:font-weight="normal" fo:font-style="normal"/>
@@ -119,102 +127,165 @@
       <style:table-column-properties style:column-width="3.2cm"/>
     </style:style>
     <style:style style:name="co6_0" style:family="table-column">
-      <style:table-column-properties style:column-width="2.6cm"/>
+      <style:table-column-properties style:column-width="5.4cm"/>
     </style:style>
     <style:style style:name="co6_1" style:family="table-column">
-      <style:table-column-properties style:column-width="5.4cm"/>
-    </style:style>
-    <style:style style:name="co6_2" style:family="table-column">
-      <style:table-column-properties style:column-width="3.4cm"/>
-    </style:style>
-    <style:style style:name="co6_3" style:family="table-column">
-      <style:table-column-properties style:column-width="1.8cm"/>
-    </style:style>
-    <style:style style:name="co6_4" style:family="table-column">
-      <style:table-column-properties style:column-width="3.8cm"/>
-    </style:style>
-    <style:style style:name="co7_0" style:family="table-column">
-      <style:table-column-properties style:column-width="1.8cm"/>
-    </style:style>
-    <style:style style:name="co7_1" style:family="table-column">
-      <style:table-column-properties style:column-width="2.6cm"/>
-    </style:style>
-    <style:style style:name="co7_2" style:family="table-column">
-      <style:table-column-properties style:column-width="7.4cm"/>
-    </style:style>
-    <style:style style:name="co7_3" style:family="table-column">
-      <style:table-column-properties style:column-width="5.2cm"/>
-    </style:style>
-    <style:style style:name="co8_0" style:family="table-column">
-      <style:table-column-properties style:column-width="5.2cm"/>
-    </style:style>
-    <style:style style:name="co8_1" style:family="table-column">
-      <style:table-column-properties style:column-width="2.8cm"/>
-    </style:style>
-    <style:style style:name="co8_2" style:family="table-column">
       <style:table-column-properties style:column-width="6.0cm"/>
     </style:style>
-    <style:style style:name="co8_3" style:family="table-column">
-      <style:table-column-properties style:column-width="3.0cm"/>
+    <style:style style:name="co6_2" style:family="table-column">
+      <style:table-column-properties style:column-width="5.6cm"/>
     </style:style>
-    <style:style style:name="co9_0" style:family="table-column">
-      <style:table-column-properties style:column-width="2.6cm"/>
+    <style:style style:name="co7_0" style:family="table-column">
+      <style:table-column-properties style:column-width="5.6cm"/>
     </style:style>
-    <style:style style:name="co9_1" style:family="table-column">
-      <style:table-column-properties style:column-width="3.0cm"/>
-    </style:style>
-    <style:style style:name="co9_2" style:family="table-column">
-      <style:table-column-properties style:column-width="6.6cm"/>
-    </style:style>
-    <style:style style:name="co9_3" style:family="table-column">
-      <style:table-column-properties style:column-width="3.2cm"/>
-    </style:style>
-    <style:style style:name="co9_4" style:family="table-column">
-      <style:table-column-properties style:column-width="1.6cm"/>
-    </style:style>
-    <style:style style:name="co10_0" style:family="table-column">
-      <style:table-column-properties style:column-width="4.0cm"/>
-    </style:style>
-    <style:style style:name="co10_1" style:family="table-column">
-      <style:table-column-properties style:column-width="3.2cm"/>
-    </style:style>
-    <style:style style:name="co10_2" style:family="table-column">
-      <style:table-column-properties style:column-width="3.2cm"/>
-    </style:style>
-    <style:style style:name="co10_3" style:family="table-column">
-      <style:table-column-properties style:column-width="3.3cm"/>
-    </style:style>
-    <style:style style:name="co10_4" style:family="table-column">
-      <style:table-column-properties style:column-width="3.3cm"/>
-    </style:style>
-    <style:style style:name="co11_0" style:family="table-column">
-      <style:table-column-properties style:column-width="5.2cm"/>
-    </style:style>
-    <style:style style:name="co11_1" style:family="table-column">
-      <style:table-column-properties style:column-width="5.4cm"/>
-    </style:style>
-    <style:style style:name="co11_2" style:family="table-column">
-      <style:table-column-properties style:column-width="4.0cm"/>
-    </style:style>
-    <style:style style:name="co11_3" style:family="table-column">
+    <style:style style:name="co7_1" style:family="table-column">
       <style:table-column-properties style:column-width="2.4cm"/>
     </style:style>
+    <style:style style:name="co7_2" style:family="table-column">
+      <style:table-column-properties style:column-width="5.6cm"/>
+    </style:style>
+    <style:style style:name="co7_3" style:family="table-column">
+      <style:table-column-properties style:column-width="3.4cm"/>
+    </style:style>
+    <style:style style:name="co8_0" style:family="table-column">
+      <style:table-column-properties style:column-width="4.6cm"/>
+    </style:style>
+    <style:style style:name="co8_1" style:family="table-column">
+      <style:table-column-properties style:column-width="12.4cm"/>
+    </style:style>
+    <style:style style:name="co9_0" style:family="table-column">
+      <style:table-column-properties style:column-width="0.8cm"/>
+    </style:style>
+    <style:style style:name="co9_1" style:family="table-column">
+      <style:table-column-properties style:column-width="8.4cm"/>
+    </style:style>
+    <style:style style:name="co9_2" style:family="table-column">
+      <style:table-column-properties style:column-width="7.8cm"/>
+    </style:style>
+    <style:style style:name="co10_0" style:family="table-column">
+      <style:table-column-properties style:column-width="0.8cm"/>
+    </style:style>
+    <style:style style:name="co10_1" style:family="table-column">
+      <style:table-column-properties style:column-width="8.4cm"/>
+    </style:style>
+    <style:style style:name="co10_2" style:family="table-column">
+      <style:table-column-properties style:column-width="7.8cm"/>
+    </style:style>
+    <style:style style:name="co11_0" style:family="table-column">
+      <style:table-column-properties style:column-width="0.8cm"/>
+    </style:style>
+    <style:style style:name="co11_1" style:family="table-column">
+      <style:table-column-properties style:column-width="8.4cm"/>
+    </style:style>
+    <style:style style:name="co11_2" style:family="table-column">
+      <style:table-column-properties style:column-width="7.8cm"/>
+    </style:style>
     <style:style style:name="co12_0" style:family="table-column">
-      <style:table-column-properties style:column-width="5.0cm"/>
+      <style:table-column-properties style:column-width="0.8cm"/>
     </style:style>
     <style:style style:name="co12_1" style:family="table-column">
       <style:table-column-properties style:column-width="8.4cm"/>
     </style:style>
     <style:style style:name="co12_2" style:family="table-column">
-      <style:table-column-properties style:column-width="3.6cm"/>
+      <style:table-column-properties style:column-width="7.8cm"/>
     </style:style>
     <style:style style:name="co13_0" style:family="table-column">
-      <style:table-column-properties style:column-width="1.0cm"/>
+      <style:table-column-properties style:column-width="2.6cm"/>
     </style:style>
     <style:style style:name="co13_1" style:family="table-column">
-      <style:table-column-properties style:column-width="11.0cm"/>
+      <style:table-column-properties style:column-width="5.4cm"/>
     </style:style>
     <style:style style:name="co13_2" style:family="table-column">
+      <style:table-column-properties style:column-width="3.4cm"/>
+    </style:style>
+    <style:style style:name="co13_3" style:family="table-column">
+      <style:table-column-properties style:column-width="1.8cm"/>
+    </style:style>
+    <style:style style:name="co13_4" style:family="table-column">
+      <style:table-column-properties style:column-width="3.8cm"/>
+    </style:style>
+    <style:style style:name="co14_0" style:family="table-column">
+      <style:table-column-properties style:column-width="1.8cm"/>
+    </style:style>
+    <style:style style:name="co14_1" style:family="table-column">
+      <style:table-column-properties style:column-width="2.6cm"/>
+    </style:style>
+    <style:style style:name="co14_2" style:family="table-column">
+      <style:table-column-properties style:column-width="7.4cm"/>
+    </style:style>
+    <style:style style:name="co14_3" style:family="table-column">
+      <style:table-column-properties style:column-width="5.2cm"/>
+    </style:style>
+    <style:style style:name="co15_0" style:family="table-column">
+      <style:table-column-properties style:column-width="5.2cm"/>
+    </style:style>
+    <style:style style:name="co15_1" style:family="table-column">
+      <style:table-column-properties style:column-width="2.8cm"/>
+    </style:style>
+    <style:style style:name="co15_2" style:family="table-column">
+      <style:table-column-properties style:column-width="6.0cm"/>
+    </style:style>
+    <style:style style:name="co15_3" style:family="table-column">
+      <style:table-column-properties style:column-width="3.0cm"/>
+    </style:style>
+    <style:style style:name="co16_0" style:family="table-column">
+      <style:table-column-properties style:column-width="2.6cm"/>
+    </style:style>
+    <style:style style:name="co16_1" style:family="table-column">
+      <style:table-column-properties style:column-width="3.0cm"/>
+    </style:style>
+    <style:style style:name="co16_2" style:family="table-column">
+      <style:table-column-properties style:column-width="6.6cm"/>
+    </style:style>
+    <style:style style:name="co16_3" style:family="table-column">
+      <style:table-column-properties style:column-width="3.2cm"/>
+    </style:style>
+    <style:style style:name="co16_4" style:family="table-column">
+      <style:table-column-properties style:column-width="1.6cm"/>
+    </style:style>
+    <style:style style:name="co17_0" style:family="table-column">
+      <style:table-column-properties style:column-width="4.0cm"/>
+    </style:style>
+    <style:style style:name="co17_1" style:family="table-column">
+      <style:table-column-properties style:column-width="3.2cm"/>
+    </style:style>
+    <style:style style:name="co17_2" style:family="table-column">
+      <style:table-column-properties style:column-width="3.2cm"/>
+    </style:style>
+    <style:style style:name="co17_3" style:family="table-column">
+      <style:table-column-properties style:column-width="3.3cm"/>
+    </style:style>
+    <style:style style:name="co17_4" style:family="table-column">
+      <style:table-column-properties style:column-width="3.3cm"/>
+    </style:style>
+    <style:style style:name="co18_0" style:family="table-column">
+      <style:table-column-properties style:column-width="5.2cm"/>
+    </style:style>
+    <style:style style:name="co18_1" style:family="table-column">
+      <style:table-column-properties style:column-width="5.4cm"/>
+    </style:style>
+    <style:style style:name="co18_2" style:family="table-column">
+      <style:table-column-properties style:column-width="4.0cm"/>
+    </style:style>
+    <style:style style:name="co18_3" style:family="table-column">
+      <style:table-column-properties style:column-width="2.4cm"/>
+    </style:style>
+    <style:style style:name="co19_0" style:family="table-column">
+      <style:table-column-properties style:column-width="5.0cm"/>
+    </style:style>
+    <style:style style:name="co19_1" style:family="table-column">
+      <style:table-column-properties style:column-width="8.4cm"/>
+    </style:style>
+    <style:style style:name="co19_2" style:family="table-column">
+      <style:table-column-properties style:column-width="3.6cm"/>
+    </style:style>
+    <style:style style:name="co20_0" style:family="table-column">
+      <style:table-column-properties style:column-width="1.0cm"/>
+    </style:style>
+    <style:style style:name="co20_1" style:family="table-column">
+      <style:table-column-properties style:column-width="11.0cm"/>
+    </style:style>
+    <style:style style:name="co20_2" style:family="table-column">
       <style:table-column-properties style:column-width="5.0cm"/>
     </style:style>
   </office:automatic-styles>
@@ -688,6 +759,715 @@
         </table:table-row>
       </table:table>
       <text:p text:style-name="Note">Cada unidad del manual cierra con introducción, resumen de la unidad y autoevaluación: son el mejor repaso antes de cada entrega.</text:p>
+      <text:h text:style-name="H2" text:outline-level="2">4.2 · Ideas clave de las cuatro unidades</text:h>
+      <text:p text:style-name="Body">Estas ocho ideas son las que más se preguntan y las que más se olvidan al redactar. Van antes que el detalle: si no están claras, el resto del documento se cae.</text:p>
+      <text:list text:style-name="LB">
+        <text:list-item>
+          <text:p text:style-name="Body">Formación ≠ educación: la formación es práctica, a corto plazo y orientada a resolver problemas del puesto; la educación busca valores y desarrollo a largo plazo.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">LO 3/2022, doble escala: cinco grados ascendentes de oferta (A, B, C, D y E) y tres niveles de competencia (1, 2 y 3), medidos por conocimientos, iniciativa, autonomía y complejidad.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">FP reglada: PCPI (mayores de 16 sin ESO, nivel 1; hoy FP Básica), Grado Medio (Técnico, nivel 2) y Grado Superior (Técnico Superior, nivel 3).</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">FPE de demanda: la empresa la organiza, la bonifica en la Seguridad Social y el trabajador puede usar el Permiso Individual de Formación (PIF). FPE de oferta: la programan las comunidades autónomas como política activa de empleo.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">Certificado de profesionalidad: acredita una cualificación con validez en todo el territorio nacional. Se estructura en perfil profesional, formación (módulos y prácticas no laborales) y prescripciones (formadores, espacios y equipamiento).</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">Cadena de concreción: UC → RA → CE. Cada unidad de competencia se desglosa en resultados de aprendizaje y cada resultado, en criterios de evaluación.</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">Contenidos: conceptuales (saber), procedimentales (saber hacer) y actitudinales (saber ser y estar).</text:p>
+        </text:list-item>
+        <text:list-item>
+          <text:p text:style-name="Body">Evaluación: criterios + tipo (inicial, continua y final) + instrumento (rúbrica, prueba, observación) + ponderación; y un apartado de revisión y mejora.</text:p>
+        </text:list-item>
+      </text:list>
+      <text:p text:style-name="Body">Los tres catálogos: de la competencia del puesto a tu programación</text:p>
+      <table:table table:name="T6" table:style-name="Table1">
+        <table:table-column table:style-name="co6_0"/>
+        <table:table-column table:style-name="co6_1"/>
+        <table:table-column table:style-name="co6_2"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Catálogo</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Qué ordena</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Qué aporta a tu programación</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Estándares de Competencias Profesionales</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Las competencias que exige el sistema productivo, por familia y nivel.</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">El referente de lo que el alumnado debe saber hacer.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Modular de Formación Profesional</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Los módulos formativos asociados a cada estándar de competencia.</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">La base del módulo: duración, capacidades y criterios.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Ofertas de Formación Profesional</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Todas las ofertas reconocidas y acreditables del sistema.</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Dónde encaja tu acción: certificado, curso o acreditación parcial.</text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:p text:style-name="Note">El manual conserva la redacción de 2011 (CNCP y catálogo modular); la LO 3/2022 renombra los catálogos y añade el de Ofertas. Cita la norma vigente y, si el tribunal pide el manual, explica la equivalencia.</text:p>
+      <text:p text:style-name="Body">Tres escalas que no hay que confundir</text:p>
+      <table:table table:name="T7" table:style-name="Table1">
+        <table:table-column table:style-name="co7_0"/>
+        <table:table-column table:style-name="co7_1"/>
+        <table:table-column table:style-name="co7_2"/>
+        <table:table-column table:style-name="co7_3"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Escala</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Cuántos</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Qué mide</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Dónde se usa</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Niveles del CNCP</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">5 (1–5)</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Complejidad de la cualificación profesional</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Clasificar cualificaciones y certificados</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Niveles de competencia (LO 3/2022)</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">3 (1–3)</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Conocimientos, iniciativa, autonomía y complejidad</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Situar cada oferta y su acceso</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Grados de oferta (LO 3/2022)</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">5 (A–E)</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Tipo de oferta: de la acreditación parcial al curso de especialización</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Saber qué se obtiene al terminar</text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:p text:style-name="SmallGap">El SSCE0110 es de nivel 3 del CNCP y se corresponde con el grado C (certificado profesional) de la LO 3/2022.</text:p>
+      <text:p text:style-name="Body">Si la acción es en línea, la guía del alumno (apartado 4.3) debe detallar como mínimo:</text:p>
+      <table:table table:name="T8" table:style-name="Table1">
+        <table:table-column table:style-name="co8_0"/>
+        <table:table-column table:style-name="co8_1"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Elemento</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Qué debe quedar escrito</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Plataforma</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Nombre, acceso, navegación y requisitos técnicos.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Tiempos de respuesta</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Plazo máximo del tutor en foros y mensajes.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Foros</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Cuáles hay, para qué sirven y normas de participación.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Síncrono y asíncrono</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Sesiones en directo, grabaciones y actividades a ritmo del alumno.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Soporte técnico</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Canal, horario y responsable de las incidencias.</text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:p text:style-name="PB"/>
+      <text:h text:style-name="H2" text:outline-level="2">4.3 · Autoevaluaciones de las cuatro unidades</text:h>
+      <text:p text:style-name="Body">El manual cierra cada unidad con una autoevaluación. Aquí tienes las cuarenta preguntas con su clave comentada: contesta sin mirar y comprueba después. La versión interactiva (corrige al instante y explica el porqué) está en la ficha del módulo, dentro del temario.</text:p>
+      <text:p text:style-name="Note">Criterio de uso: menos de tres fallos, adelante; entre tres y cinco, repasa las ideas clave de la unidad; más de cinco, vuelve al apartado del manual antes de seguir.</text:p>
+      <text:p text:style-name="MiniHead">UD 1 · Estructura de la Formación Profesional</text:p>
+      <table:table table:name="T9" table:style-name="Table1">
+        <table:table-column table:style-name="co9_0"/>
+        <table:table-column table:style-name="co9_1"/>
+        <table:table-column table:style-name="co9_2"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Nº</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Pregunta y opciones</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Clave y porqué</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">1</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Según la LO 3/2022, ¿cuál de estas funciones corresponde al sistema de Formación Profesional?<text:line-break/>a) Ordenar las enseñanzas universitarias y el acceso a la universidad<text:line-break/>b) Cualificar, acreditar y reconocer las competencias profesionales para el empleo<text:line-break/>c) Regular la formación permanente del profesorado no universitario</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) La LO 3/2022 configura la FP como un sistema integrado cuya función es cualificar a las personas, acreditar y reconocer sus competencias y orientarlas al empleo y a la promoción profesional. No ordena la universidad ni la formación del profesorado.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">2</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">¿Qué nivel de cualificación corresponde a los Programas de Cualificación Profesional Inicial (PCPI)?<text:line-break/>a) Nivel 1<text:line-break/>b) Nivel 2<text:line-break/>c) Nivel 3</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) El PCPI (LO 2/2006, hoy sustituido por la FP Básica) se vinculaba al nivel 1 del CNCP: tareas sencillas, competencia limitada y supervisión. El SSCE0110, en cambio, es de nivel 3.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">3</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">¿Qué característica distingue a la formación de demanda frente a la formación de oferta?<text:line-break/>a) En la de demanda la iniciativa y la financiación son de la empresa, con bonificación en cuotas; la de oferta la programan las administraciones para desempleados y colectivos prioritarios<text:line-break/>b) La de demanda la programan las comunidades autónomas para desempleados; la de oferta la empresa para sus trabajadores<text:line-break/>c) Son sinónimos: solo cambia el nombre según la comunidad autónoma</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) Demanda = la empresa decide y financia (bonificación + PIF). Oferta = la administración programa para desempleados y colectivos prioritarios, dentro de la política activa de empleo.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">4</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">¿Qué son los proyectos formativos en el contexto de la formación en alternancia con el empleo?<text:line-break/>a) Acciones que combinan formación y actividad productiva real (escuelas taller, talleres de empleo, casas de oficios)<text:line-break/>b) Programas de FP reglada que sustituyen a los ciclos formativos<text:line-break/>c) Cursos de teleformación bonificados por las empresas para sus plantillas</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) Los proyectos formativos de la formación en alternancia unen aprendizaje y trabajo productivo: se aprende haciendo en un entorno real, con tutoría y con beca o contrato para la formación.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">5</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">¿Cuál es el principal objetivo de la Formación Profesional para el Empleo (FPE)?<text:line-break/>a) Sustituir a la FP del sistema educativo en la formación inicial<text:line-break/>b) Favorecer la inserción, la reinserción y la promoción profesional de trabajadores ocupados y desempleados mejorando su cualificación<text:line-break/>c) Certificar la experiencia docente del profesorado de FP</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) La FPE es política activa de empleo: mejora la cualificación de quien trabaja o busca trabajo para aumentar su empleabilidad y su promoción profesional.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">6</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">¿Qué grados de Formación Profesional tienen formación en empresa con carácter obligatorio?<text:line-break/>a) Todos los grados, de A a E, sin excepciones<text:line-break/>b) Los grados C y D; en el E es potestativo y en A y B lo determina la administración<text:line-break/>c) Solo el grado D (ciclos formativos)</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) Art. 151 RD 659/2023: la oferta de los grados C (certificado profesional) y D (ciclos) incorpora formación en empresa como parte del currículo; los cursos de especialización (E) podrán contemplarla y en A y B lo decide la administración.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">7</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">¿Cuál es la duración mínima de la fase de formación en la empresa en las ofertas duales (excepto en el nivel 1)?<text:line-break/>a) El 15 % de la duración total<text:line-break/>b) El 25 % de la duración total<text:line-break/>c) El 50 % de la duración total</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) Art. 159 RD 659/2023: en régimen general, entre el 25 % y el 35 % de la duración total. Las ofertas de nivel 1 (grado C de certificado de nivel 1 y grado D básico) pueden diseñarse desde el 20 %. El régimen intensivo va del 35 % al 50 %.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">8</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">¿Cuál es la principal diferencia entre formación y educación?<text:line-break/>a) La formación es práctica, a corto plazo y orientada a resolver problemas del puesto; la educación busca el desarrollo integral y los valores a largo plazo<text:line-break/>b) La formación se dirige solo a adultos y la educación solo a menores de edad<text:line-break/>c) No hay diferencia: son términos sinónimos en la normativa</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) La formación responde a necesidades concretas del desempeño profesional; la educación persigue el desarrollo global de la persona. En el aula de FPE se trabaja con ambas, pero el contrato de aprendizaje es formativo y aplicado.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">9</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">¿Qué porcentaje mínimo de formación debe impartirse en línea para que un programa se considere teleformación?<text:line-break/>a) El 50 %<text:line-break/>b) El 80 %<text:line-break/>c) El 100 %</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) La teleformación exige que la presencialidad quede por debajo del 20 %, es decir, al menos el 80 % en línea. Además hace falta plataforma virtual, seguimiento del alumnado y tutoría (como máximo un tutor por cada 80 participantes).</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">10</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">En modalidad mixta, ¿qué requisito es obligatorio?<text:line-break/>a) Que la formación presencial supere el 20 % del total, sin llegar a ser íntegramente presencial<text:line-break/>b) Que toda la formación se imparta de forma asíncrona<text:line-break/>c) Que el grupo tenga al menos 25 participantes</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) Mixta = presencial + teleformación, con presencialidad superior al 20 % (si es inferior, la acción se considera teleformación). El tamaño del grupo no define la modalidad.</text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:p text:style-name="MiniHead">UD 2 · Certificados de profesionalidad</text:p>
+      <table:table table:name="T10" table:style-name="Table1">
+        <table:table-column table:style-name="co10_0"/>
+        <table:table-column table:style-name="co10_1"/>
+        <table:table-column table:style-name="co10_2"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Nº</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Pregunta y opciones</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Clave y porqué</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">1</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">¿Qué acredita un certificado de profesionalidad?<text:line-break/>a) Una titulación académica de grado medio<text:line-break/>b) Una cualificación profesional del CNCP, con validez en todo el territorio nacional<text:line-break/>c) Un curso de especialización del grado E</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) Acredita la competencia para el desempeño de una actividad productiva. Tiene validez en todo el Estado y efectos en la negociación colectiva y en la función pública.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">2</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">¿Cuántos bloques componen la estructura de un certificado de profesionalidad?<text:line-break/>a) Dos: perfil profesional y formación<text:line-break/>b) Tres: perfil profesional, formación y prescripciones<text:line-break/>c) Cuatro: perfil, formación, evaluación y empleo</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) Tres bloques: perfil profesional (referente ocupacional), formación del certificado (referente formativo) y prescripciones de formadores y de espacios, instalaciones y equipamiento.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">3</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">El perfil profesional de un certificado incluye…<text:line-break/>a) La competencia general, las unidades de competencia, el entorno profesional y las ocupaciones<text:line-break/>b) Los módulos formativos y las unidades formativas<text:line-break/>c) Las titulaciones exigidas a los formadores</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) El perfil profesional es el referente ocupacional: competencia general, unidades de competencia con sus realizaciones profesionales y criterios de realización, entorno profesional y ocupaciones o puestos de trabajo.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">4</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">El referente formativo del certificado está formado por…<text:line-break/>a) Las unidades de competencia y sus realizaciones profesionales<text:line-break/>b) Los requisitos de espacios e instalaciones<text:line-break/>c) Los módulos formativos, sus unidades formativas y el módulo de prácticas no laborales</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">c) El referente formativo traduce el perfil profesional en formación: módulos formativos (MF), unidades formativas (UF) y el módulo de prácticas profesionales no laborales.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">5</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">¿Cuáles son las vías de adquisición de un certificado de profesionalidad?<text:line-break/>a) Solo la formación del certificado<text:line-break/>b) La formación, la experiencia laboral acreditada y las vías mixtas<text:line-break/>c) La formación y la titulación universitaria</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) Se obtiene por la vía formativa, por el procedimiento de acreditación de competencias adquiridas por experiencia laboral o vías no formales, y por la vía mixta que combina ambas.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">6</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">La relación entre unidades de competencia (UC) y módulos formativos (MF) es…<text:line-break/>a) Rígida: a cada UC le corresponde un único MF<text:line-break/>b) Inexistente: son catálogos independientes<text:line-break/>c) Flexible: una UC puede asociarse a varios MF y un MF puede cubrir varias UC</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">c) El catálogo modular asocia MF y UF a las UC; la relación no es biunívoca, y por eso un mismo módulo puede acreditar competencias de más de una unidad.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">7</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">¿Quién expide y registra un certificado de profesionalidad?<text:line-break/>a) La administración laboral competente (SEPE o comunidad autónoma)<text:line-break/>b) El centro que imparte la formación<text:line-break/>c) La empresa que bonifica la formación</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) El centro imparte y evalúa, pero el certificado lo expide la administración laboral competente y queda registrado; no lo emite la empresa ni el centro por sí mismos.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">8</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Las prescripciones de un certificado de profesionalidad afectan a…<text:line-break/>a) Solo al alumnado destinatario<text:line-break/>b) Los formadores (titulación y experiencia) y los espacios, instalaciones y equipamiento<text:line-break/>c) Únicamente a la duración de la formación</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) Cada módulo fija las prescripciones de sus formadores (titulación y experiencia profesional o docente) y los requisitos mínimos de espacio, instalaciones y equipamiento.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">9</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Las prácticas no laborales asociadas al certificado son…<text:line-break/>a) Un contrato de trabajo en prácticas<text:line-break/>b) Un módulo de formación en centro de trabajo, sin relación laboral y con tutor<text:line-break/>c) Una sustitución de puestos de trabajo en la empresa</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) El módulo de prácticas profesionales no laborales se desarrolla en un centro de trabajo, sin relación laboral, con un tutor designado y con evaluación; no sustituye a ningún trabajador.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">10</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Al programar una acción formativa vinculada a un certificado, la programación debe…<text:line-break/>a) Crear sus propios módulos y criterios de evaluación<text:line-break/>b) Adaptarse solo al estilo del formador<text:line-break/>c) Respetar el referente formativo: módulos, duraciones, criterios de evaluación y prescripciones</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">c) El certificado es norma: la programación didáctica concreta y temporaliza su referente formativo, sin alterar módulos, duraciones ni criterios de evaluación.</text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:p text:style-name="MiniHead">UD 3 · Elaboración de la programación didáctica</text:p>
+      <table:table table:name="T11" table:style-name="Table1">
+        <table:table-column table:style-name="co11_0"/>
+        <table:table-column table:style-name="co11_1"/>
+        <table:table-column table:style-name="co11_2"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Nº</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Pregunta y opciones</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Clave y porqué</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">1</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">¿Qué elementos debe contener toda programación didáctica?<text:line-break/>a) Objetivos, contenidos, metodología, recursos, evaluación y temporalización<text:line-break/>b) Solo objetivos y contenidos<text:line-break/>c) Únicamente la temporalización y el listado de alumnado</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) La programación es un documento integrado: objetivos, contenidos, actividades, metodología, recursos, evaluación y temporalización, además de la atención a la diversidad y las observaciones de mejora.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">2</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">¿Cuál de estos objetivos está mejor formulado?<text:line-break/>a) Conocer la normativa de certificados de profesionalidad<text:line-break/>b) Identificar los bloques de un certificado de profesionalidad en un supuesto práctico dado<text:line-break/>c) Valorar la importancia de la formación continua</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) Un objetivo se redacta con verbo observable en infinitivo, contenido y condición de ejecución. Conocer y valorar no son observables directamente.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">3</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Los contenidos conceptuales, procedimentales y actitudinales responden a…<text:line-break/>a) Saber, saber hacer y saber ser y estar<text:line-break/>b) Teoría, práctica y evaluación<text:line-break/>c) Objetivos, criterios y estándares</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) Conceptuales = saber (hechos y conceptos); procedimentales = saber hacer (procedimientos y destrezas); actitudinales = saber ser y estar (valores y actitudes).</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">4</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Un criterio de evaluación es…<text:line-break/>a) El enunciado que describe una ejecución observable y evaluable<text:line-break/>b) La nota final del módulo<text:line-break/>c) El instrumento con el que se califica</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) El criterio describe qué debe hacer el alumnado y con qué nivel de logro; el instrumento (rúbrica, lista de control, prueba) es el medio para recoger esa evidencia.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">5</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">La evaluación inicial, continua y final corresponde a…<text:line-break/>a) Los tres momentos: diagnóstica, formativa y sumativa<text:line-break/>b) Tres tipos de alumnado<text:line-break/>c) Tres instrumentos distintos de calificación</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) Inicial o diagnóstica (punto de partida), continua o formativa (seguimiento y retroalimentación) y final o sumativa (acreditación del logro).</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">6</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">La rúbrica es…<text:line-break/>a) Una técnica de observación<text:line-break/>b) Un instrumento de evaluación con niveles de desempeño<text:line-break/>c) Un criterio de evaluación</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) La rúbrica es un instrumento: describe niveles de desempeño para cada criterio. La observación es la técnica; el criterio, el referente de logro.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">7</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">¿Qué metodología es más coherente con la formación por competencias?<text:line-break/>a) La clase magistral exclusiva<text:line-break/>b) El aprendizaje basado en proyectos o retos, con práctica y transferencia al puesto<text:line-break/>c) La memorización del temario para el examen</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) La competencia se demuestra haciendo: metodologías activas (proyectos, retos, simulación, role-playing) con actividades cercanas al desempeño real del puesto.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">8</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Las modalidades de impartición de una acción formativa son…<text:line-break/>a) Presencial, teleformación y mixta<text:line-break/>b) Individual y grupal<text:line-break/>c) Teórica y práctica</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) Presencial, teleformación (al menos el 80 % en línea) y mixta (presencialidad superior al 20 %). Individual/grupal y teórica/práctica no son modalidades de impartición.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">9</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">En la programación, los recursos didácticos incluyen…<text:line-break/>a) Solo los medios audiovisuales<text:line-break/>b) Relación de medios, instalaciones, bibliografía y anexos<text:line-break/>c) El presupuesto económico del centro</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) El apartado de recursos recoge la relación de medios y materiales, las instalaciones necesarias, la bibliografía y webgrafía y los anexos (plantillas, fichas, rúbricas).</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">10</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">La revisión y mejora de la programación se apoya en…<text:line-break/>a) La opinión del formador exclusivamente<text:line-break/>b) Los resultados de la evaluación, la retroalimentación del alumnado y los cambios normativos<text:line-break/>c) El número de alumnos matriculados</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) La programación es un documento vivo: se revisa con los resultados de aprendizaje, la satisfacción y las sugerencias del grupo y las actualizaciones normativas del certificado.</text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:p text:style-name="MiniHead">UD 4 · Programación temporalizada y guía en línea</text:p>
+      <table:table table:name="T12" table:style-name="Table1">
+        <table:table-column table:style-name="co12_0"/>
+        <table:table-column table:style-name="co12_1"/>
+        <table:table-column table:style-name="co12_2"/>
+        <table:table-row>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Nº</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Pregunta y opciones</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="CellHead" office:value-type="string">
+            <text:p text:style-name="TableHeadP">Clave y porqué</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">1</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">La temporalización diaria consiste en…<text:line-break/>a) Distribuir hora a hora los contenidos y actividades de la jornada, con descansos y transiciones<text:line-break/>b) Asignar horas a cada unidad a lo largo del curso<text:line-break/>c) Fijar la fecha de los exámenes</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) Es el nivel más fino de concreción: qué se hace en cada tramo horario del día, con qué actividad y con qué descansos. El reparto por unidades es la programación, no la temporalización diaria.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">2</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Secuenciar contenidos y concretar actividades significa…<text:line-break/>a) Enumerar los contenidos del certificado sin orden<text:line-break/>b) Ordenarlos de forma lógica y progresiva y decidir qué actividad acompaña a cada uno<text:line-break/>c) Repetir el índice del manual</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) La secuenciación va de lo simple a lo complejo, asegura prerequisitos y asigna a cada contenido una actividad y un tiempo; el índice del manual es solo el punto de partida.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">3</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">La guía del alumno de una acción formativa en línea debe incluir…<text:line-break/>a) Itinerario, calendario, sistema de tutoría y tiempos de respuesta, criterios de evaluación y soporte técnico<text:line-break/>b) Solo el listado de contenidos<text:line-break/>c) El currículum del formador</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) La guía orienta al alumnado antes de empezar: qué se espera de él, cuándo, cómo se comunica, cuánto tarda el tutor en responder, cómo se evalúa y a quién acudir si falla la plataforma.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">4</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">El compromiso de respuesta del tutor debe figurar…<text:line-break/>a) No hace falta: se acuerda por mensaje privado<text:line-break/>b) En el contrato con la empresa<text:line-break/>c) En la guía del alumno, para que el alumnado lo conozca de antemano</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">c) Los tiempos de respuesta forman parte del contrato didáctico de la modalidad en línea: se publican en la guía y se cumplen (por ejemplo, respuesta a consultas en 24-48 horas laborables).</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">5</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Una actividad síncrona se diferencia de una asíncrona en que…<text:line-break/>a) Se realiza en tiempo real y con coincidencia de horario<text:line-break/>b) No requiere conexión a internet<text:line-break/>c) Solo se puede usar en formación presencial</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) Síncrona = en tiempo real (videoclase, chat, tutoría en directo). Asíncrona = sin coincidencia horaria (foro, tarea, correo). Un curso en línea combina ambas.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">6</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">El plan B de una acción formativa sirve para…<text:line-break/>a) Sustituir al formador por el alumnado<text:line-break/>b) Eliminar la evaluación cuando hay problemas<text:line-break/>c) Prever alternativas ante fallos técnicos o imprevistos (material descargable, grabación, canal alternativo)</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">c) Todo diseño en línea necesita un plan de contingencia: materiales descargables, grabación de sesiones, canal de comunicación alternativo y aviso al alumnado.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">7</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">El módulo MF1442_3 tiene una carga de…<text:line-break/>a) 60 horas, repartidas en cuatro unidades; el reparto por horas es orientativo<text:line-break/>b) 120 horas, sin unidades didácticas<text:line-break/>c) 20 horas, todas presenciales</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) El certificado fija 60 horas para el módulo. El reparto 12/14/20/14 entre las cuatro unidades es una propuesta de estudio, no una prescripción normativa.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">8</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">El cronograma de la acción formativa recoge…<text:line-break/>a) Solo el horario de clase<text:line-break/>b) Hitos, entregas y fechas de evaluación<text:line-break/>c) Los datos personales del alumnado</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">b) El cronograma sitúa en el calendario los hitos del curso: inicio y fin de unidades, entregas, pruebas y sesiones de evaluación.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">9</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Los foros de un curso en línea son…<text:line-break/>a) Herramientas asíncronas de participación y tutoría que necesitan normas y moderación<text:line-break/>b) Videoclases en directo<text:line-break/>c) Un tipo de examen final</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">a) El foro es la herramienta asíncrona por excelencia: requiere hilos claros, normas de participación, moderación y un tiempo de respuesta comprometido por parte de la tutoría.</text:p>
+          </table:table-cell>
+        </table:table-row>
+        <table:table-row>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">10</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">Para evaluar una actividad práctica en línea, el instrumento más completo es…<text:line-break/>a) Un test de 30 preguntas de memoria<text:line-break/>b) La asistencia a las videoclases<text:line-break/>c) Una rúbrica con niveles de desempeño y retroalimentación</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="Cell" office:value-type="string">
+            <text:p text:style-name="TableCellP">c) La rúbrica permite valorar el desempeño con criterios públicos y devolver retroalimentación útil. El test memorístico y la asistencia no evidencian competencia práctica.</text:p>
+          </table:table-cell>
+        </table:table-row>
+      </table:table>
+      <text:p text:style-name="Small">Las preguntas 1 a 7 de la UD 1 y las que citan porcentajes remiten a la LO 3/2022 y al RD 659/2023: si el manual que estudias conserva la redacción de 2011, comprueba la cifra con la norma vigente antes de llevarla a tu programación.</text:p>
       <text:h text:style-name="H2" text:outline-level="2">5 · Metodología</text:h>
       <text:list text:style-name="LB">
         <text:list-item>
@@ -703,12 +1483,12 @@
           <text:p text:style-name="Body">Feedback: <text:span text:style-name="PhSpan">[cuándo y cómo se devuelve, en grupo y por escrito]</text:span>.</text:p>
         </text:list-item>
       </text:list>
-      <table:table table:name="T6" table:style-name="Table1">
-        <table:table-column table:style-name="co6_0"/>
-        <table:table-column table:style-name="co6_1"/>
-        <table:table-column table:style-name="co6_2"/>
-        <table:table-column table:style-name="co6_3"/>
-        <table:table-column table:style-name="co6_4"/>
+      <table:table table:name="T13" table:style-name="Table1">
+        <table:table-column table:style-name="co13_0"/>
+        <table:table-column table:style-name="co13_1"/>
+        <table:table-column table:style-name="co13_2"/>
+        <table:table-column table:style-name="co13_3"/>
+        <table:table-column table:style-name="co13_4"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Momento</text:p>
@@ -793,11 +1573,11 @@
       <text:p text:style-name="PB"/>
       <text:h text:style-name="H2" text:outline-level="2">6 · Temporalización</text:h>
       <text:p text:style-name="Body">Nueve sesiones entre el 24/11/2026 y el 04/12/2026: 60 h en total, es decir 6 h 40 min por sesión (o 6 h diarias más 6 h de trabajo tutorizado si el centro fija jornada de 6 h). Si el centro mueve una fecha, actualízala aquí y en el portfolio del repositorio.</text:p>
-      <table:table table:name="T7" table:style-name="Table1">
-        <table:table-column table:style-name="co7_0"/>
-        <table:table-column table:style-name="co7_1"/>
-        <table:table-column table:style-name="co7_2"/>
-        <table:table-column table:style-name="co7_3"/>
+      <table:table table:name="T14" table:style-name="Table1">
+        <table:table-column table:style-name="co14_0"/>
+        <table:table-column table:style-name="co14_1"/>
+        <table:table-column table:style-name="co14_2"/>
+        <table:table-column table:style-name="co14_3"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Sesión</text:p>
@@ -942,11 +1722,11 @@
       <text:p text:style-name="Small">Los días 7 y 8 de diciembre, 24 y 25 de diciembre, 31 de diciembre y 1, 5 y 6 de enero son no lectivos en el cronograma del centro, fuera ya de esta ventana.</text:p>
       <text:p text:style-name="PB"/>
       <text:h text:style-name="H2" text:outline-level="2">7 · Recursos y materiales</text:h>
-      <table:table table:name="T8" table:style-name="Table1">
-        <table:table-column table:style-name="co8_0"/>
-        <table:table-column table:style-name="co8_1"/>
-        <table:table-column table:style-name="co8_2"/>
-        <table:table-column table:style-name="co8_3"/>
+      <table:table table:name="T15" table:style-name="Table1">
+        <table:table-column table:style-name="co15_0"/>
+        <table:table-column table:style-name="co15_1"/>
+        <table:table-column table:style-name="co15_2"/>
+        <table:table-column table:style-name="co15_3"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Recurso</text:p>
@@ -1043,12 +1823,12 @@
         </table:table-row>
       </table:table>
       <text:h text:style-name="H2" text:outline-level="2">8 · Evaluación</text:h>
-      <table:table table:name="T9" table:style-name="Table1">
-        <table:table-column table:style-name="co9_0"/>
-        <table:table-column table:style-name="co9_1"/>
-        <table:table-column table:style-name="co9_2"/>
-        <table:table-column table:style-name="co9_3"/>
-        <table:table-column table:style-name="co9_4"/>
+      <table:table table:name="T16" table:style-name="Table1">
+        <table:table-column table:style-name="co16_0"/>
+        <table:table-column table:style-name="co16_1"/>
+        <table:table-column table:style-name="co16_2"/>
+        <table:table-column table:style-name="co16_3"/>
+        <table:table-column table:style-name="co16_4"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Tipo</text:p>
@@ -1132,12 +1912,12 @@
       </table:table>
       <text:p text:style-name="Note">Regla de oro: si un criterio no aparece en la rúbrica con un descriptor observable, no se puede calificar. Nada de «participa bien» o «trabaja en equipo» sin indicador.</text:p>
       <text:h text:style-name="H2" text:outline-level="2">9 · Rúbrica de la actividad práctica</text:h>
-      <table:table table:name="T10" table:style-name="Table1">
-        <table:table-column table:style-name="co10_0"/>
-        <table:table-column table:style-name="co10_1"/>
-        <table:table-column table:style-name="co10_2"/>
-        <table:table-column table:style-name="co10_3"/>
-        <table:table-column table:style-name="co10_4"/>
+      <table:table table:name="T17" table:style-name="Table1">
+        <table:table-column table:style-name="co17_0"/>
+        <table:table-column table:style-name="co17_1"/>
+        <table:table-column table:style-name="co17_2"/>
+        <table:table-column table:style-name="co17_3"/>
+        <table:table-column table:style-name="co17_4"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Criterio</text:p>
@@ -1282,11 +2062,11 @@
         </table:table-row>
       </table:table>
       <text:h text:style-name="H2" text:outline-level="2">10 · Alineación constructiva</text:h>
-      <table:table table:name="T11" table:style-name="Table1">
-        <table:table-column table:style-name="co11_0"/>
-        <table:table-column table:style-name="co11_1"/>
-        <table:table-column table:style-name="co11_2"/>
-        <table:table-column table:style-name="co11_3"/>
+      <table:table table:name="T18" table:style-name="Table1">
+        <table:table-column table:style-name="co18_0"/>
+        <table:table-column table:style-name="co18_1"/>
+        <table:table-column table:style-name="co18_2"/>
+        <table:table-column table:style-name="co18_3"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Objetivo</text:p>
@@ -1384,10 +2164,10 @@
         </text:list-item>
       </text:list>
       <text:h text:style-name="H2" text:outline-level="2">12 · Riesgos y plan B</text:h>
-      <table:table table:name="T12" table:style-name="Table1">
-        <table:table-column table:style-name="co12_0"/>
-        <table:table-column table:style-name="co12_1"/>
-        <table:table-column table:style-name="co12_2"/>
+      <table:table table:name="T19" table:style-name="Table1">
+        <table:table-column table:style-name="co19_0"/>
+        <table:table-column table:style-name="co19_1"/>
+        <table:table-column table:style-name="co19_2"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">Riesgo</text:p>
@@ -1473,10 +2253,10 @@
       <text:p text:style-name="Body">Anexos: <text:span text:style-name="PhSpan">[Anexo I · Ficha del grupo]</text:span> · <text:span text:style-name="PhSpan">[Anexo II · Cronograma]</text:span> · <text:span text:style-name="PhSpan">[Anexo III · Rúbrica]</text:span> · <text:span text:style-name="PhSpan">[Anexo IV · Instrumentos]</text:span></text:p>
       <text:h text:style-name="H2" text:outline-level="2">14 · Checklist de entrega</text:h>
       <text:p text:style-name="Body">Marca cada casilla antes de exportar el PDF. Son los entregables que recoge la ficha del módulo en el portfolio.</text:p>
-      <table:table table:name="T13" table:style-name="Table1">
-        <table:table-column table:style-name="co13_0"/>
-        <table:table-column table:style-name="co13_1"/>
-        <table:table-column table:style-name="co13_2"/>
+      <table:table table:name="T20" table:style-name="Table1">
+        <table:table-column table:style-name="co20_0"/>
+        <table:table-column table:style-name="co20_1"/>
+        <table:table-column table:style-name="co20_2"/>
         <table:table-row>
           <table:table-cell table:style-name="CellHead" office:value-type="string">
             <text:p text:style-name="TableHeadP">✔</text:p>

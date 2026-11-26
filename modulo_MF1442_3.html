@@ -336,6 +336,77 @@
     margin-right: 8px;
   }
 
+  /* ---------- IDEAS CLAVE POR UNIDAD ---------- */
+  .ideas {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--border);
+  }
+
+  .ideas-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+
+  .ideas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ideas li {
+    position: relative;
+    padding: 4px 0 4px 18px;
+    font-size: 13.5px;
+    color: var(--text-soft);
+  }
+
+  .ideas li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .ideas b { color: var(--text); }
+
+  /* ---------- MAPA DEL SISTEMA DE FP ---------- */
+  .flujo {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+    align-items: stretch;
+    gap: 8px;
+    margin: 18px 0;
+  }
+
+  .flujo-paso {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--accent);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+  }
+
+  .flujo-paso strong {
+    display: block;
+    font-size: 13.5px;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .flujo-paso span { font-size: 12.5px; color: var(--text-soft); }
+  .flujo-flecha { align-self: center; color: var(--accent); font-weight: 700; }
+
+  @media (max-width: 760px) {
+    .flujo { grid-template-columns: 1fr; }
+    .flujo-flecha { transform: rotate(90deg); text-align: center; }
+  }
+
   .criterios ol ul {
     margin: 6px 0 0 6px;
     padding-left: 16px;
@@ -809,6 +880,114 @@
     color: var(--accent);
   }
 
+  /* ---------- AUTOEVALUACIÓN POR UNIDAD ---------- */
+  .auto {
+    margin-top: 18px;
+    padding: 16px 18px;
+    background: var(--surface-2);
+    border: 1px dashed var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-sm);
+  }
+
+  .auto-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px 12px;
+    margin-bottom: 6px;
+  }
+
+  .auto-title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .auto-progress {
+    font-size: 12px;
+    color: var(--text-soft);
+  }
+
+  .auto-reset {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--accent);
+    font-family: inherit;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .auto-q {
+    padding: 12px 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .auto-q:first-child { border-top: 0; padding-top: 6px; }
+
+  .auto-q-text {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.45;
+  }
+
+  .auto-options { display: flex; flex-direction: column; gap: 6px; }
+
+  .auto-opt {
+    padding: 8px 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 13.5px;
+    line-height: 1.4;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .auto-opt:hover { border-color: var(--accent); background: var(--accent-soft); }
+
+  .auto-opt.correct {
+    background: var(--success-soft);
+    border-color: var(--success);
+    color: var(--success);
+    font-weight: 500;
+  }
+
+  .auto-opt.wrong {
+    background: var(--danger-soft);
+    border-color: var(--danger);
+    color: var(--danger);
+  }
+
+  .auto-exp {
+    display: none;
+    margin-top: 8px;
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--text-soft);
+  }
+
+  .auto-exp.visible { display: block; }
+
+  .auto-footer {
+    display: none;
+    margin-top: 12px;
+    padding: 10px 14px;
+    background: var(--accent-soft);
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .auto-footer.visible { display: block; }
+
   /* ---------- CALLOUT ---------- */
   .callout {
     background: var(--accent-soft);
@@ -1134,6 +1313,24 @@
         <li><span class="ep">1.4</span>Programas formativos: estructura del programa</li>
         <li><span class="ep">1.5</span>Proyectos formativos en la formación en alternancia con el empleo: estructura y características</li>
       </ul>
+      <div class="ideas">
+        <div class="ideas-title">Ideas clave</div>
+        <ul>
+          <li><b>Formación ≠ educación.</b> La formación es práctica, a corto plazo y orientada a resolver problemas del puesto; la educación busca valores y desarrollo a largo plazo.</li>
+          <li><b>LO 3/2022: doble escala.</b> Cinco <b>grados</b> de oferta (A, B, C, D y E) y tres <b>niveles de competencia</b> (1, 2 y 3), medidos por conocimientos, iniciativa, autonomía y complejidad.</li>
+          <li><b>Los tres catálogos.</b> Estándares de Competencias Profesionales (qué exige el trabajo) → Modular (qué módulos lo forman) → Ofertas de FP (qué es acreditable).</li>
+          <li><b>FP reglada.</b> PCPI (mayores de 16 sin ESO, nivel 1; hoy FP Básica), Grado Medio (Técnico, nivel 2) y Grado Superior (Técnico Superior, nivel 3).</li>
+          <li><b>Demanda vs. oferta.</b> Demanda: empresa, bonificación en la Seguridad Social y Permiso Individual de Formación (PIF). Oferta: comunidades autónomas, política activa de empleo.</li>
+        </ul>
+      </div>
+      <div class="auto" id="auto-ud1" data-ud="1">
+        <div class="auto-head">
+          <span class="auto-title">Autoevaluación · UD 1</span>
+          <span class="auto-progress" id="auto-ud1-progress">0 / 10 respondidas</span>
+        </div>
+        <div id="auto-ud1-body"></div>
+        <div class="auto-footer" id="auto-ud1-score"></div>
+      </div>
     </div>
 
     <div class="unidad">
@@ -1146,6 +1343,22 @@
         <li><span class="ep">2.1</span>Certificados de profesionalidad: características y vías de adquisición. Estructura: perfil profesional / referente ocupacional, formación del certificado / referente formativo, prescripciones de los formadores y requisitos mínimos de espacio, instalaciones y equipamiento</li>
         <li><span class="ep">2.2</span>Programación didáctica vinculada a Certificación Profesional</li>
       </ul>
+      <div class="ideas">
+        <div class="ideas-title">Ideas clave</div>
+        <ul>
+          <li><b>Qué acredita.</b> Una cualificación profesional con validez en todo el territorio nacional.</li>
+          <li><b>Tres bloques.</b> Perfil profesional (competencia general, cualificación, entorno y ocupaciones), formación (módulos + prácticas no laborales) y prescripciones (formadores, espacios y equipamiento).</li>
+          <li><b>Cadena de concreción.</b> UC → RA → CE: cada unidad de competencia se desglosa en resultados de aprendizaje y cada resultado, en criterios de evaluación.</li>
+        </ul>
+      </div>
+      <div class="auto" id="auto-ud2" data-ud="2">
+        <div class="auto-head">
+          <span class="auto-title">Autoevaluación · UD 2</span>
+          <span class="auto-progress" id="auto-ud2-progress">0 / 10 respondidas</span>
+        </div>
+        <div id="auto-ud2-body"></div>
+        <div class="auto-footer" id="auto-ud2-score"></div>
+      </div>
     </div>
 
     <div class="unidad">
@@ -1173,6 +1386,24 @@
         <li><span class="ep">3.11</span>Criterios de evaluación: tipos, momento, instrumentos, ponderaciones</li>
         <li><span class="ep">3.12</span>Observaciones para la revisión, actualización y mejora de la programación</li>
       </ul>
+      <div class="ideas">
+        <div class="ideas-title">Ideas clave</div>
+        <ul>
+          <li><b>Formación por competencias.</b> Importa el saber hacer demostrable, no solo el saber.</li>
+          <li><b>Objetivos.</b> Verbo en infinitivo observable + contenido + condición de ejecución.</li>
+          <li><b>Contenidos C/P/A.</b> Conceptuales (saber), procedimentales (saber hacer) y actitudinales (saber ser y estar).</li>
+          <li><b>Evaluación.</b> Criterios + tipo (inicial, continua y final) + instrumento (rúbrica, prueba, observación) + ponderación.</li>
+          <li><b>Revisión y mejora.</b> La programación se actualiza con la retroalimentación y los cambios normativos.</li>
+        </ul>
+      </div>
+      <div class="auto" id="auto-ud3" data-ud="3">
+        <div class="auto-head">
+          <span class="auto-title">Autoevaluación · UD 3</span>
+          <span class="auto-progress" id="auto-ud3-progress">0 / 10 respondidas</span>
+        </div>
+        <div id="auto-ud3-body"></div>
+        <div class="auto-footer" id="auto-ud3-score"></div>
+      </div>
     </div>
 
     <div class="unidad">
@@ -1190,6 +1421,22 @@
         <li><span class="ep">4.2</span>Secuenciación de contenidos y concreción de actividades</li>
         <li><span class="ep">4.3</span>Elaboración de la Guía para las acciones formativas, para la modalidad de impartición formación en línea</li>
       </ul>
+      <div class="ideas">
+        <div class="ideas-title">Ideas clave</div>
+        <ul>
+          <li><b>Temporalización diaria.</b> Horas de cada sesión, descansos y transiciones.</li>
+          <li><b>Secuenciación.</b> Guion de la sesión: orden lógico de contenidos y actividades, día a día.</li>
+          <li><b>Guía en línea.</b> Plataforma, tiempos de respuesta del tutor, foros, actividades síncronas y asíncronas y soporte técnico.</li>
+        </ul>
+      </div>
+      <div class="auto" id="auto-ud4" data-ud="4">
+        <div class="auto-head">
+          <span class="auto-title">Autoevaluación · UD 4</span>
+          <span class="auto-progress" id="auto-ud4-progress">0 / 10 respondidas</span>
+        </div>
+        <div id="auto-ud4-body"></div>
+        <div class="auto-footer" id="auto-ud4-score"></div>
+      </div>
     </div>
 
     <div class="callout warning">
@@ -1201,6 +1448,66 @@
         <a href="formador_RD659_2023.html">guía del formador</a>, que es lo que se te va a exigir en el aula.
       </p>
     </div>
+
+    <h3>Del estándar de competencia a tu programación</h3>
+    <p class="lead">Los tres catálogos son eslabones de una misma cadena: el sistema productivo define la competencia, el catálogo modular la convierte en formación y el certificado la acredita. Tu programación es el último eslabón.</p>
+    <div class="flujo">
+      <div class="flujo-paso">
+        <strong>Catálogo de Estándares</strong>
+        <span>Competencias que exige el sistema productivo, por familia y nivel.</span>
+      </div>
+      <div class="flujo-flecha" aria-hidden="true">→</div>
+      <div class="flujo-paso">
+        <strong>Catálogo Modular</strong>
+        <span>Módulos formativos asociados a cada estándar de competencia.</span>
+      </div>
+      <div class="flujo-flecha" aria-hidden="true">→</div>
+      <div class="flujo-paso">
+        <strong>Certificado de profesionalidad</strong>
+        <span>Perfil profesional, formación y prescripciones de formadores y espacios.</span>
+      </div>
+      <div class="flujo-flecha" aria-hidden="true">→</div>
+      <div class="flujo-paso">
+        <strong>Tu programación</strong>
+        <span>UC → RA → CE, con actividades, metodología, recursos y evaluación.</span>
+      </div>
+    </div>
+
+    <h3>Tres escalas que no hay que confundir</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Escala</th>
+          <th>Cuántos</th>
+          <th>Qué mide</th>
+          <th>Dónde se usa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Niveles del CNCP</strong></td>
+          <td>5 (1–5)</td>
+          <td>Complejidad de la cualificación profesional</td>
+          <td>Clasificar cualificaciones y certificados</td>
+        </tr>
+        <tr>
+          <td><strong>Niveles de competencia (LO 3/2022)</strong></td>
+          <td>3 (1–3)</td>
+          <td>Conocimientos, iniciativa, autonomía y complejidad</td>
+          <td>Situar cada oferta y su acceso</td>
+        </tr>
+        <tr>
+          <td><strong>Grados de oferta (LO 3/2022)</strong></td>
+          <td>5 (A–E)</td>
+          <td>Tipo de oferta: de la acreditación parcial al curso de especialización</td>
+          <td>Saber qué se obtiene al terminar</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+      El SSCE0110 es de <strong>nivel 3 del CNCP</strong> y se corresponde con el <strong>grado C</strong> (certificado profesional) de la LO 3/2022.
+      Los cinco niveles del CNCP no son los tres niveles de competencia: son escalas distintas.
+    </p>
   </section>
 
   <!-- ALINEACIÓN CONSTRUCTIVA -->
@@ -1456,11 +1763,11 @@
       <span class="section-num">10</span>
       <h2 class="section-title">Test de comprobación</h2>
     </div>
-    <p class="lead">10 preguntas. Sin nota: es un ticket de salida para ti. Cada respuesta explica el porqué.</p>
+    <p class="lead">12 preguntas de repaso global. Sin nota: es un ticket de salida para ti. Cada respuesta explica el porqué.</p>
 
     <div id="test-container"></div>
     <div class="test-score" id="test-score">
-      <div class="test-score-num" id="test-score-num">0 / 10</div>
+      <div class="test-score-num" id="test-score-num">0 / 12</div>
       <p>Respuestas correctas</p>
     </div>
   </section>
@@ -1510,7 +1817,7 @@
     { t: "FUNDAE", d: "Fundación Estatal para la Formación en el Empleo. Gestiona la formación programada por empresas." },
     { t: "CNCP", d: "Catálogo Nacional de Cualificaciones Profesionales. Repertorio de cualificaciones ordenadas por familia y nivel." },
     { t: "INCUAL", d: "Instituto Nacional de las Cualificaciones. Define y actualiza el CNCP y el catálogo de módulos formativos." },
-    { t: "Nivel de cualificación", d: "Grado de 1 a 5 del CNCP, según la complejidad de la competencia. El SSCE0110 es de nivel 3." },
+    { t: "Nivel de cualificación", d: "Nivel del CNCP, de 1 a 5, según la complejidad de la competencia. El SSCE0110 es de nivel 3; no confundir con los tres niveles de competencia de la LO 3/2022." },
     { t: "Formación modular", d: "Organización de la formación en módulos (MF) y unidades formativas (UF) acumulables y acreditables." },
     { t: "Formación de oferta", d: "Formación programada por las administraciones para desempleados y colectivos prioritarios." },
     { t: "Formación de demanda", d: "Formación que la empresa organiza para sus trabajadores y bonifica en las cuotas de la Seguridad Social." },
@@ -1523,6 +1830,14 @@
     { t: "Dinámica de grupo", d: "Técnica participativa (Phillips 66, role-playing, puzzle) para trabajar un contenido con el grupo." },
     { t: "Guía del alumno", d: "Documento de la modalidad en línea: itinerario, calendario, tutorías y criterios de evaluación." },
     { t: "Temporalización diaria", d: "Distribución hora a hora de contenidos y actividades de una jornada formativa." },
+    { t: "LO 3/2022", d: "Ley Orgánica 3/2022, de ordenación e integración de la Formación Profesional. Ordena las ofertas en cinco grados (A–E) y tres niveles de competencia." },
+    { t: "Grados A–E", d: "Los cinco grados ascendentes de oferta de la LO 3/2022: A acreditación parcial de competencia, B certificado de competencia, C certificado profesional, D título de FP y E curso de especialización." },
+    { t: "Niveles de competencia (1–3)", d: "Escala de la LO 3/2022 según conocimientos, iniciativa, autonomía y complejidad. No es la misma escala que los cinco niveles del CNCP." },
+    { t: "Catálogo de Estándares", d: "Repertorio de las competencias que exige el sistema productivo. Es el origen de los módulos formativos y de los certificados." },
+    { t: "Catálogo Modular", d: "Asocia módulos formativos (MF) y unidades formativas (UF) a cada estándar de competencia." },
+    { t: "Catálogo de Ofertas", d: "Reúne todas las ofertas de FP reconocidas y acreditables: títulos, certificados, cursos y acreditaciones parciales." },
+    { t: "PIF", d: "Permiso Individual de Formación: permiso del trabajador para formarse dentro de la formación de demanda, con bonificación para la empresa." },
+    { t: "UC · RA · CE", d: "Cadena de concreción: unidad de competencia → resultado de aprendizaje → criterio de evaluación." },
   ];
 
   const testQuestions = [
@@ -1582,7 +1897,7 @@
       q: "¿Cuántos niveles de cualificación establece el Catálogo Nacional de Cualificaciones Profesionales?",
       opts: ["Tres", "Cuatro", "Cinco", "Seis"],
       correct: 2,
-      exp: "El CNCP ordena las cualificaciones en cinco niveles (1 a 5), de menor a mayor complejidad de la competencia. El SSCE0110 se sitúa en el nivel 3."
+      exp: "El CNCP ordena las cualificaciones en cinco niveles (1 a 5), de menor a mayor complejidad de la competencia. El SSCE0110 se sitúa en el nivel 3. No confundir con los tres niveles de competencia de la LO 3/2022."
     },
     {
       q: "¿Qué capacidad del MF1442_3 se refiere a la elaboración de programaciones didácticas?",
@@ -1595,8 +1910,425 @@
       opts: ["Formación de oferta", "Formación de demanda", "Formación reglada", "Formación en alternancia"],
       correct: 1,
       exp: "Es formación de demanda: la empresa la contrata y se la bonifica. La de oferta la programan las administraciones para desempleados y colectivos prioritarios."
+    },
+    {
+      q: "Según la LO 3/2022, las ofertas de Formación Profesional se ordenan en…",
+      opts: ["Tres grados (A–C)", "Cuatro niveles", "Cinco grados (A–E)", "Seis niveles"],
+      correct: 2,
+      exp: "La LO 3/2022 establece cinco grados ascendentes de oferta (A, B, C, D y E) y tres niveles de competencia (1, 2 y 3). Son dos escalas distintas."
+    },
+    {
+      q: "El Permiso Individual de Formación (PIF) se enmarca en…",
+      opts: [
+        "La formación de oferta de las comunidades autónomas",
+        "La formación de demanda bonificada por la empresa",
+        "La Formación Profesional reglada",
+        "Los proyectos formativos en alternancia"
+      ],
+      correct: 1,
+      exp: "El PIF permite al trabajador formarse dentro de la formación de demanda; la empresa bonifica el coste en la Seguridad Social."
     }
   ];
+
+  // ============ AUTOEVALUACIONES POR UNIDAD ============
+  const autoevaluaciones = {
+    ud1: [
+      {
+        q: "Según la LO 3/2022, ¿cuál de estas funciones corresponde al sistema de Formación Profesional?",
+        opts: [
+          "Ordenar las enseñanzas universitarias y el acceso a la universidad",
+          "Cualificar, acreditar y reconocer las competencias profesionales para el empleo",
+          "Regular la formación permanente del profesorado no universitario"
+        ],
+        correct: 1,
+        exp: "La LO 3/2022 configura la FP como un sistema integrado cuya función es cualificar a las personas, acreditar y reconocer sus competencias y orientarlas al empleo y a la promoción profesional. No ordena la universidad ni la formación del profesorado."
+      },
+      {
+        q: "¿Qué nivel de cualificación corresponde a los Programas de Cualificación Profesional Inicial (PCPI)?",
+        opts: ["Nivel 1", "Nivel 2", "Nivel 3"],
+        correct: 0,
+        exp: "El PCPI (LO 2/2006, hoy sustituido por la FP Básica) se vinculaba al nivel 1 del CNCP: tareas sencillas, competencia limitada y supervisión. El SSCE0110, en cambio, es de nivel 3."
+      },
+      {
+        q: "¿Qué característica distingue a la formación de demanda frente a la formación de oferta?",
+        opts: [
+          "En la de demanda la iniciativa y la financiación son de la empresa, con bonificación en cuotas; la de oferta la programan las administraciones para desempleados y colectivos prioritarios",
+          "La de demanda la programan las comunidades autónomas para desempleados; la de oferta la empresa para sus trabajadores",
+          "Son sinónimos: solo cambia el nombre según la comunidad autónoma"
+        ],
+        correct: 0,
+        exp: "Demanda = la empresa decide y financia (bonificación + PIF). Oferta = la administración programa para desempleados y colectivos prioritarios, dentro de la política activa de empleo."
+      },
+      {
+        q: "¿Qué son los proyectos formativos en el contexto de la formación en alternancia con el empleo?",
+        opts: [
+          "Acciones que combinan formación y actividad productiva real (escuelas taller, talleres de empleo, casas de oficios)",
+          "Programas de FP reglada que sustituyen a los ciclos formativos",
+          "Cursos de teleformación bonificados por las empresas para sus plantillas"
+        ],
+        correct: 0,
+        exp: "Los proyectos formativos de la formación en alternancia unen aprendizaje y trabajo productivo: se aprende haciendo en un entorno real, con tutoría y con beca o contrato para la formación."
+      },
+      {
+        q: "¿Cuál es el principal objetivo de la Formación Profesional para el Empleo (FPE)?",
+        opts: [
+          "Sustituir a la FP del sistema educativo en la formación inicial",
+          "Favorecer la inserción, la reinserción y la promoción profesional de trabajadores ocupados y desempleados mejorando su cualificación",
+          "Certificar la experiencia docente del profesorado de FP"
+        ],
+        correct: 1,
+        exp: "La FPE es política activa de empleo: mejora la cualificación de quien trabaja o busca trabajo para aumentar su empleabilidad y su promoción profesional."
+      },
+      {
+        q: "¿Qué grados de Formación Profesional tienen formación en empresa con carácter obligatorio?",
+        opts: [
+          "Todos los grados, de A a E, sin excepciones",
+          "Los grados C y D; en el E es potestativo y en A y B lo determina la administración",
+          "Solo el grado D (ciclos formativos)"
+        ],
+        correct: 1,
+        exp: "Art. 151 RD 659/2023: la oferta de los grados C (certificado profesional) y D (ciclos) incorpora formación en empresa como parte del currículo; los cursos de especialización (E) podrán contemplarla y en A y B lo decide la administración."
+      },
+      {
+        q: "¿Cuál es la duración mínima de la fase de formación en la empresa en las ofertas duales (excepto en el nivel 1)?",
+        opts: ["El 15 % de la duración total", "El 25 % de la duración total", "El 50 % de la duración total"],
+        correct: 1,
+        exp: "Art. 159 RD 659/2023: en régimen general, entre el 25 % y el 35 % de la duración total. Las ofertas de nivel 1 (grado C de certificado de nivel 1 y grado D básico) pueden diseñarse desde el 20 %. El régimen intensivo va del 35 % al 50 %."
+      },
+      {
+        q: "¿Cuál es la principal diferencia entre formación y educación?",
+        opts: [
+          "La formación es práctica, a corto plazo y orientada a resolver problemas del puesto; la educación busca el desarrollo integral y los valores a largo plazo",
+          "La formación se dirige solo a adultos y la educación solo a menores de edad",
+          "No hay diferencia: son términos sinónimos en la normativa"
+        ],
+        correct: 0,
+        exp: "La formación responde a necesidades concretas del desempeño profesional; la educación persigue el desarrollo global de la persona. En el aula de FPE se trabaja con ambas, pero el contrato de aprendizaje es formativo y aplicado."
+      },
+      {
+        q: "¿Qué porcentaje mínimo de formación debe impartirse en línea para que un programa se considere teleformación?",
+        opts: ["El 50 %", "El 80 %", "El 100 %"],
+        correct: 1,
+        exp: "La teleformación exige que la presencialidad quede por debajo del 20 %, es decir, al menos el 80 % en línea. Además hace falta plataforma virtual, seguimiento del alumnado y tutoría (como máximo un tutor por cada 80 participantes)."
+      },
+      {
+        q: "En modalidad mixta, ¿qué requisito es obligatorio?",
+        opts: [
+          "Que la formación presencial supere el 20 % del total, sin llegar a ser íntegramente presencial",
+          "Que toda la formación se imparta de forma asíncrona",
+          "Que el grupo tenga al menos 25 participantes"
+        ],
+        correct: 0,
+        exp: "Mixta = presencial + teleformación, con presencialidad superior al 20 % (si es inferior, la acción se considera teleformación). El tamaño del grupo no define la modalidad."
+      }
+    ],
+    ud2: [
+      {
+        q: "¿Qué acredita un certificado de profesionalidad?",
+        opts: [
+          "Una titulación académica de grado medio",
+          "Una cualificación profesional del CNCP, con validez en todo el territorio nacional",
+          "Un curso de especialización del grado E"
+        ],
+        correct: 1,
+        exp: "Acredita la competencia para el desempeño de una actividad productiva. Tiene validez en todo el Estado y efectos en la negociación colectiva y en la función pública."
+      },
+      {
+        q: "¿Cuántos bloques componen la estructura de un certificado de profesionalidad?",
+        opts: [
+          "Dos: perfil profesional y formación",
+          "Tres: perfil profesional, formación y prescripciones",
+          "Cuatro: perfil, formación, evaluación y empleo"
+        ],
+        correct: 1,
+        exp: "Tres bloques: perfil profesional (referente ocupacional), formación del certificado (referente formativo) y prescripciones de formadores y de espacios, instalaciones y equipamiento."
+      },
+      {
+        q: "El perfil profesional de un certificado incluye…",
+        opts: [
+          "La competencia general, las unidades de competencia, el entorno profesional y las ocupaciones",
+          "Los módulos formativos y las unidades formativas",
+          "Las titulaciones exigidas a los formadores"
+        ],
+        correct: 0,
+        exp: "El perfil profesional es el referente ocupacional: competencia general, unidades de competencia con sus realizaciones profesionales y criterios de realización, entorno profesional y ocupaciones o puestos de trabajo."
+      },
+      {
+        q: "El referente formativo del certificado está formado por…",
+        opts: [
+          "Las unidades de competencia y sus realizaciones profesionales",
+          "Los requisitos de espacios e instalaciones",
+          "Los módulos formativos, sus unidades formativas y el módulo de prácticas no laborales"
+        ],
+        correct: 2,
+        exp: "El referente formativo traduce el perfil profesional en formación: módulos formativos (MF), unidades formativas (UF) y el módulo de prácticas profesionales no laborales."
+      },
+      {
+        q: "¿Cuáles son las vías de adquisición de un certificado de profesionalidad?",
+        opts: [
+          "Solo la formación del certificado",
+          "La formación, la experiencia laboral acreditada y las vías mixtas",
+          "La formación y la titulación universitaria"
+        ],
+        correct: 1,
+        exp: "Se obtiene por la vía formativa, por el procedimiento de acreditación de competencias adquiridas por experiencia laboral o vías no formales, y por la vía mixta que combina ambas."
+      },
+      {
+        q: "La relación entre unidades de competencia (UC) y módulos formativos (MF) es…",
+        opts: [
+          "Rígida: a cada UC le corresponde un único MF",
+          "Inexistente: son catálogos independientes",
+          "Flexible: una UC puede asociarse a varios MF y un MF puede cubrir varias UC"
+        ],
+        correct: 2,
+        exp: "El catálogo modular asocia MF y UF a las UC; la relación no es biunívoca, y por eso un mismo módulo puede acreditar competencias de más de una unidad."
+      },
+      {
+        q: "¿Quién expide y registra un certificado de profesionalidad?",
+        opts: [
+          "La administración laboral competente (SEPE o comunidad autónoma)",
+          "El centro que imparte la formación",
+          "La empresa que bonifica la formación"
+        ],
+        correct: 0,
+        exp: "El centro imparte y evalúa, pero el certificado lo expide la administración laboral competente y queda registrado; no lo emite la empresa ni el centro por sí mismos."
+      },
+      {
+        q: "Las prescripciones de un certificado de profesionalidad afectan a…",
+        opts: [
+          "Solo al alumnado destinatario",
+          "Los formadores (titulación y experiencia) y los espacios, instalaciones y equipamiento",
+          "Únicamente a la duración de la formación"
+        ],
+        correct: 1,
+        exp: "Cada módulo fija las prescripciones de sus formadores (titulación y experiencia profesional o docente) y los requisitos mínimos de espacio, instalaciones y equipamiento."
+      },
+      {
+        q: "Las prácticas no laborales asociadas al certificado son…",
+        opts: [
+          "Un contrato de trabajo en prácticas",
+          "Un módulo de formación en centro de trabajo, sin relación laboral y con tutor",
+          "Una sustitución de puestos de trabajo en la empresa"
+        ],
+        correct: 1,
+        exp: "El módulo de prácticas profesionales no laborales se desarrolla en un centro de trabajo, sin relación laboral, con un tutor designado y con evaluación; no sustituye a ningún trabajador."
+      },
+      {
+        q: "Al programar una acción formativa vinculada a un certificado, la programación debe…",
+        opts: [
+          "Crear sus propios módulos y criterios de evaluación",
+          "Adaptarse solo al estilo del formador",
+          "Respetar el referente formativo: módulos, duraciones, criterios de evaluación y prescripciones"
+        ],
+        correct: 2,
+        exp: "El certificado es norma: la programación didáctica concreta y temporaliza su referente formativo, sin alterar módulos, duraciones ni criterios de evaluación."
+      }
+    ],
+    ud3: [
+      {
+        q: "¿Qué elementos debe contener toda programación didáctica?",
+        opts: [
+          "Objetivos, contenidos, metodología, recursos, evaluación y temporalización",
+          "Solo objetivos y contenidos",
+          "Únicamente la temporalización y el listado de alumnado"
+        ],
+        correct: 0,
+        exp: "La programación es un documento integrado: objetivos, contenidos, actividades, metodología, recursos, evaluación y temporalización, además de la atención a la diversidad y las observaciones de mejora."
+      },
+      {
+        q: "¿Cuál de estos objetivos está mejor formulado?",
+        opts: [
+          "Conocer la normativa de certificados de profesionalidad",
+          "Identificar los bloques de un certificado de profesionalidad en un supuesto práctico dado",
+          "Valorar la importancia de la formación continua"
+        ],
+        correct: 1,
+        exp: "Un objetivo se redacta con verbo observable en infinitivo, contenido y condición de ejecución. Conocer y valorar no son observables directamente."
+      },
+      {
+        q: "Los contenidos conceptuales, procedimentales y actitudinales responden a…",
+        opts: [
+          "Saber, saber hacer y saber ser y estar",
+          "Teoría, práctica y evaluación",
+          "Objetivos, criterios y estándares"
+        ],
+        correct: 0,
+        exp: "Conceptuales = saber (hechos y conceptos); procedimentales = saber hacer (procedimientos y destrezas); actitudinales = saber ser y estar (valores y actitudes)."
+      },
+      {
+        q: "Un criterio de evaluación es…",
+        opts: [
+          "El enunciado que describe una ejecución observable y evaluable",
+          "La nota final del módulo",
+          "El instrumento con el que se califica"
+        ],
+        correct: 0,
+        exp: "El criterio describe qué debe hacer el alumnado y con qué nivel de logro; el instrumento (rúbrica, lista de control, prueba) es el medio para recoger esa evidencia."
+      },
+      {
+        q: "La evaluación inicial, continua y final corresponde a…",
+        opts: [
+          "Los tres momentos: diagnóstica, formativa y sumativa",
+          "Tres tipos de alumnado",
+          "Tres instrumentos distintos de calificación"
+        ],
+        correct: 0,
+        exp: "Inicial o diagnóstica (punto de partida), continua o formativa (seguimiento y retroalimentación) y final o sumativa (acreditación del logro)."
+      },
+      {
+        q: "La rúbrica es…",
+        opts: [
+          "Una técnica de observación",
+          "Un instrumento de evaluación con niveles de desempeño",
+          "Un criterio de evaluación"
+        ],
+        correct: 1,
+        exp: "La rúbrica es un instrumento: describe niveles de desempeño para cada criterio. La observación es la técnica; el criterio, el referente de logro."
+      },
+      {
+        q: "¿Qué metodología es más coherente con la formación por competencias?",
+        opts: [
+          "La clase magistral exclusiva",
+          "El aprendizaje basado en proyectos o retos, con práctica y transferencia al puesto",
+          "La memorización del temario para el examen"
+        ],
+        correct: 1,
+        exp: "La competencia se demuestra haciendo: metodologías activas (proyectos, retos, simulación, role-playing) con actividades cercanas al desempeño real del puesto."
+      },
+      {
+        q: "Las modalidades de impartición de una acción formativa son…",
+        opts: [
+          "Presencial, teleformación y mixta",
+          "Individual y grupal",
+          "Teórica y práctica"
+        ],
+        correct: 0,
+        exp: "Presencial, teleformación (al menos el 80 % en línea) y mixta (presencialidad superior al 20 %). Individual/grupal y teórica/práctica no son modalidades de impartición."
+      },
+      {
+        q: "En la programación, los recursos didácticos incluyen…",
+        opts: [
+          "Solo los medios audiovisuales",
+          "Relación de medios, instalaciones, bibliografía y anexos",
+          "El presupuesto económico del centro"
+        ],
+        correct: 1,
+        exp: "El apartado de recursos recoge la relación de medios y materiales, las instalaciones necesarias, la bibliografía y webgrafía y los anexos (plantillas, fichas, rúbricas)."
+      },
+      {
+        q: "La revisión y mejora de la programación se apoya en…",
+        opts: [
+          "La opinión del formador exclusivamente",
+          "Los resultados de la evaluación, la retroalimentación del alumnado y los cambios normativos",
+          "El número de alumnos matriculados"
+        ],
+        correct: 1,
+        exp: "La programación es un documento vivo: se revisa con los resultados de aprendizaje, la satisfacción y las sugerencias del grupo y las actualizaciones normativas del certificado."
+      }
+    ],
+    ud4: [
+      {
+        q: "La temporalización diaria consiste en…",
+        opts: [
+          "Distribuir hora a hora los contenidos y actividades de la jornada, con descansos y transiciones",
+          "Asignar horas a cada unidad a lo largo del curso",
+          "Fijar la fecha de los exámenes"
+        ],
+        correct: 0,
+        exp: "Es el nivel más fino de concreción: qué se hace en cada tramo horario del día, con qué actividad y con qué descansos. El reparto por unidades es la programación, no la temporalización diaria."
+      },
+      {
+        q: "Secuenciar contenidos y concretar actividades significa…",
+        opts: [
+          "Enumerar los contenidos del certificado sin orden",
+          "Ordenarlos de forma lógica y progresiva y decidir qué actividad acompaña a cada uno",
+          "Repetir el índice del manual"
+        ],
+        correct: 1,
+        exp: "La secuenciación va de lo simple a lo complejo, asegura prerequisitos y asigna a cada contenido una actividad y un tiempo; el índice del manual es solo el punto de partida."
+      },
+      {
+        q: "La guía del alumno de una acción formativa en línea debe incluir…",
+        opts: [
+          "Itinerario, calendario, sistema de tutoría y tiempos de respuesta, criterios de evaluación y soporte técnico",
+          "Solo el listado de contenidos",
+          "El currículum del formador"
+        ],
+        correct: 0,
+        exp: "La guía orienta al alumnado antes de empezar: qué se espera de él, cuándo, cómo se comunica, cuánto tarda el tutor en responder, cómo se evalúa y a quién acudir si falla la plataforma."
+      },
+      {
+        q: "El compromiso de respuesta del tutor debe figurar…",
+        opts: [
+          "No hace falta: se acuerda por mensaje privado",
+          "En el contrato con la empresa",
+          "En la guía del alumno, para que el alumnado lo conozca de antemano"
+        ],
+        correct: 2,
+        exp: "Los tiempos de respuesta forman parte del contrato didáctico de la modalidad en línea: se publican en la guía y se cumplen (por ejemplo, respuesta a consultas en 24-48 horas laborables)."
+      },
+      {
+        q: "Una actividad síncrona se diferencia de una asíncrona en que…",
+        opts: [
+          "Se realiza en tiempo real y con coincidencia de horario",
+          "No requiere conexión a internet",
+          "Solo se puede usar en formación presencial"
+        ],
+        correct: 0,
+        exp: "Síncrona = en tiempo real (videoclase, chat, tutoría en directo). Asíncrona = sin coincidencia horaria (foro, tarea, correo). Un curso en línea combina ambas."
+      },
+      {
+        q: "El plan B de una acción formativa sirve para…",
+        opts: [
+          "Sustituir al formador por el alumnado",
+          "Eliminar la evaluación cuando hay problemas",
+          "Prever alternativas ante fallos técnicos o imprevistos (material descargable, grabación, canal alternativo)"
+        ],
+        correct: 2,
+        exp: "Todo diseño en línea necesita un plan de contingencia: materiales descargables, grabación de sesiones, canal de comunicación alternativo y aviso al alumnado."
+      },
+      {
+        q: "El módulo MF1442_3 tiene una carga de…",
+        opts: [
+          "60 horas, repartidas en cuatro unidades; el reparto por horas es orientativo",
+          "120 horas, sin unidades didácticas",
+          "20 horas, todas presenciales"
+        ],
+        correct: 0,
+        exp: "El certificado fija 60 horas para el módulo. El reparto 12/14/20/14 entre las cuatro unidades es una propuesta de estudio, no una prescripción normativa."
+      },
+      {
+        q: "El cronograma de la acción formativa recoge…",
+        opts: [
+          "Solo el horario de clase",
+          "Hitos, entregas y fechas de evaluación",
+          "Los datos personales del alumnado"
+        ],
+        correct: 1,
+        exp: "El cronograma sitúa en el calendario los hitos del curso: inicio y fin de unidades, entregas, pruebas y sesiones de evaluación."
+      },
+      {
+        q: "Los foros de un curso en línea son…",
+        opts: [
+          "Herramientas asíncronas de participación y tutoría que necesitan normas y moderación",
+          "Videoclases en directo",
+          "Un tipo de examen final"
+        ],
+        correct: 0,
+        exp: "El foro es la herramienta asíncrona por excelencia: requiere hilos claros, normas de participación, moderación y un tiempo de respuesta comprometido por parte de la tutoría."
+      },
+      {
+        q: "Para evaluar una actividad práctica en línea, el instrumento más completo es…",
+        opts: [
+          "Un test de 30 preguntas de memoria",
+          "La asistencia a las videoclases",
+          "Una rúbrica con niveles de desempeño y retroalimentación"
+        ],
+        correct: 2,
+        exp: "La rúbrica permite valorar el desempeño con criterios públicos y devolver retroalimentación útil. El test memorístico y la asistencia no evidencian competencia práctica."
+      }
+    ]
+  };
 
   // ============ ENTREGABLES ============
   function renderEntregables() {
@@ -1723,6 +2455,68 @@
       document.getElementById('test-score-num').textContent = `${testScore} / ${testQuestions.length}`;
       score.classList.add('visible');
     }
+  }
+
+  // ============ AUTOEVALUACIÓN POR UNIDAD ============
+  const autoEstado = {};
+
+  function pintarAuto(ud) {
+    const preguntas = autoevaluaciones[ud];
+    autoEstado[ud] = { answered: new Set(), score: 0 };
+    document.getElementById(`auto-${ud}-body`).innerHTML = preguntas.map((q, i) => `
+      <div class="auto-q" data-aud="${ud}" data-aqi="${i}">
+        <div class="auto-q-text">${i + 1}. ${q.q}</div>
+        <div class="auto-options">
+          ${q.opts.map((o, j) => `<div class="auto-opt" onclick="responderAuto('${ud}', ${i}, ${j})">${o}</div>`).join('')}
+        </div>
+        <div class="auto-exp" id="aexp-${ud}-${i}">${q.exp}</div>
+      </div>
+    `).join('');
+    actualizarProgresoAuto(ud);
+  }
+
+  function renderAuto() {
+    Object.keys(autoevaluaciones).forEach(pintarAuto);
+  }
+
+  function responderAuto(ud, qi, oi) {
+    const estado = autoEstado[ud];
+    if (estado.answered.has(qi)) return;
+    estado.answered.add(qi);
+    const q = autoevaluaciones[ud][qi];
+    const bloque = document.querySelector(`[data-aud="${ud}"][data-aqi="${qi}"]`);
+    bloque.querySelectorAll('.auto-opt').forEach((opt, j) => {
+      if (j === q.correct) opt.classList.add('correct');
+      else if (j === oi) opt.classList.add('wrong');
+      opt.style.pointerEvents = 'none';
+    });
+    document.getElementById(`aexp-${ud}-${qi}`).classList.add('visible');
+    if (oi === q.correct) estado.score++;
+    actualizarProgresoAuto(ud);
+  }
+
+  function actualizarProgresoAuto(ud) {
+    const total = autoevaluaciones[ud].length;
+    const estado = autoEstado[ud];
+    document.getElementById(`auto-${ud}-progress`).textContent =
+      `${estado.answered.size} / ${total} respondidas · ${estado.score} correctas`;
+    const footer = document.getElementById(`auto-${ud}-score`);
+    if (estado.answered.size === total) {
+      const pct = Math.round((estado.score / total) * 100);
+      const juicio = pct >= 90
+        ? 'Dominado: pasa a la siguiente unidad.'
+        : pct >= 70
+          ? 'Buen nivel: repasa las preguntas falladas.'
+          : 'Vuelve al apartado y a las ideas clave antes de seguir.';
+      footer.innerHTML = `Resultado: <strong>${estado.score} / ${total}</strong> (${pct} %) · ${juicio} <button class="auto-reset" onclick="reiniciarAuto('${ud}')">Reiniciar</button>`;
+      footer.classList.add('visible');
+    } else {
+      footer.classList.remove('visible');
+    }
+  }
+
+  function reiniciarAuto(ud) {
+    pintarAuto(ud);
   }
 
   // ============ CONSTRUCTOR ============
@@ -1904,6 +2698,7 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
   renderBitacora();
   renderVocab();
   renderTest();
+  renderAuto();
   window.addEventListener('scroll', updateNav);
   document.getElementById('vocab-search').addEventListener('input', e => renderVocab(e.target.value));
 </script>

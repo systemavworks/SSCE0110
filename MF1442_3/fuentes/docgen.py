@@ -108,19 +108,22 @@ class Doc:
 
     def _runs(self, p, text):
         import re
-        for part in re.split(r'(\[[^\]]*\])', text):
-            if not part:
-                continue
-            if part.startswith('[') and part.endswith(']'):
-                sp = el(p, 'text', 'span', text__style_name='PhSpan')
-                sp.text = part
-            elif len(p) == 0 and p.text is None:
-                p.text = part
-            else:
-                if len(p):
-                    p[-1].tail = (p[-1].tail or '') + part
+        for li, linea in enumerate(text.split('\n')):
+            if li:
+                el(p, 'text', 'line-break')
+            for part in re.split(r'(\[[^\]]*\])', linea):
+                if not part:
+                    continue
+                if part.startswith('[') and part.endswith(']'):
+                    sp = el(p, 'text', 'span', text__style_name='PhSpan')
+                    sp.text = part
+                elif len(p) == 0 and p.text is None:
+                    p.text = part
                 else:
-                    p.text = (p.text or '') + part
+                    if len(p):
+                        p[-1].tail = (p[-1].tail or '') + part
+                    else:
+                        p.text = (p.text or '') + part
 
     def h1(self, text):
         h = el(self.text_el, 'text', 'h', text__style_name='H1', text__outline_level='1')

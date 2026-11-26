@@ -1,7 +1,34 @@
 import sys
 import os
+import re
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from docgen import Doc, INK, GREY, INDIGO, TEAL, CARDBG, PH
+
+HTML_FICHA = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'modulo_MF1442_3.html')
+
+
+def cargar_autoevaluaciones(ruta):
+    """Extrae las autoevaluaciones de la ficha HTML: una sola fuente de verdad."""
+    html = open(ruta, encoding='utf-8').read()
+    bloque = re.search(r'const autoevaluaciones = \{(.*?)\n  \};', html, re.S).group(1)
+    datos = {}
+    for ud in ('ud1', 'ud2', 'ud3', 'ud4'):
+        m = re.search(r'%s: \[(.*?)\n    \]' % ud, bloque, re.S)
+        preguntas = []
+        for bm in re.finditer(r'q: "(.*?)",\s*opts: \[(.*?)\],\s*correct: (\d+),\s*exp: "(.*?)"',
+                              m.group(1), re.S):
+            preguntas.append({
+                'q': bm.group(1),
+                'opts': re.findall(r'"([^"]*)"', bm.group(2)),
+                'correct': int(bm.group(3)),
+                'exp': bm.group(4),
+            })
+        datos[ud] = preguntas
+    return datos
+
+
+AUTOS = cargar_autoevaluaciones(HTML_FICHA)
+assert all(len(AUTOS[ud]) == 10 for ud in AUTOS), 'Cada unidad debe tener 10 preguntas'
 
 d = Doc()
 d.setup()
@@ -12,6 +39,8 @@ d.para('H2', 12.5, INDIGO, bold=True, before=0.75, after=0.25,
 d.para('Sub', 10.5, GREY, after=0.35)
 d.para('Body', 10.5, INK, after=0.18, line=145)
 d.para('Small', 8.5, GREY, after=0.2, line=130)
+d.para('SmallGap', 8.5, GREY, before=0.25, after=0.2, line=130)
+d.para('MiniHead', 10.5, INDIGO, bold=True, before=0.4, after=0.15)
 d.para('Note', 9, '#4A4860', after=0.5, line=135, bg=CARDBG,
        border_left='0.12cm solid #3B34C7')
 d.para('TableHeadP', 8.5, '#FFFFFF', bold=True, after=0, line=115)
@@ -96,6 +125,69 @@ d.table([
     ['U4', '4.1–4.3', '4.1 temporalización diaria (4.1.1 estructura) · 4.2 secuenciación y actividades · 4.3 guía del alumno en línea', 'S8 (4.1–4.2) · S9 (4.3 y cierre)'],
 ], [1.2, 2.0, 10.6, 3.2])
 d.p('Cada unidad del manual cierra con introducción, resumen de la unidad y autoevaluación: son el mejor repaso antes de cada entrega.', 'Note')
+
+d.h2('4.2 · Ideas clave de las cuatro unidades')
+d.p('Estas ocho ideas son las que más se preguntan y las que más se olvidan al redactar. Van antes que el detalle: si no están claras, el resto del documento se cae.', 'Body')
+d.bullets([
+    'Formación ≠ educación: la formación es práctica, a corto plazo y orientada a resolver problemas del puesto; la educación busca valores y desarrollo a largo plazo.',
+    'LO 3/2022, doble escala: cinco grados ascendentes de oferta (A, B, C, D y E) y tres niveles de competencia (1, 2 y 3), medidos por conocimientos, iniciativa, autonomía y complejidad.',
+    'FP reglada: PCPI (mayores de 16 sin ESO, nivel 1; hoy FP Básica), Grado Medio (Técnico, nivel 2) y Grado Superior (Técnico Superior, nivel 3).',
+    'FPE de demanda: la empresa la organiza, la bonifica en la Seguridad Social y el trabajador puede usar el Permiso Individual de Formación (PIF). FPE de oferta: la programan las comunidades autónomas como política activa de empleo.',
+    'Certificado de profesionalidad: acredita una cualificación con validez en todo el territorio nacional. Se estructura en perfil profesional, formación (módulos y prácticas no laborales) y prescripciones (formadores, espacios y equipamiento).',
+    'Cadena de concreción: UC → RA → CE. Cada unidad de competencia se desglosa en resultados de aprendizaje y cada resultado, en criterios de evaluación.',
+    'Contenidos: conceptuales (saber), procedimentales (saber hacer) y actitudinales (saber ser y estar).',
+    'Evaluación: criterios + tipo (inicial, continua y final) + instrumento (rúbrica, prueba, observación) + ponderación; y un apartado de revisión y mejora.',
+])
+
+d.p('Los tres catálogos: de la competencia del puesto a tu programación', 'Body')
+d.table([
+    ['Catálogo', 'Qué ordena', 'Qué aporta a tu programación'],
+    ['Estándares de Competencias Profesionales', 'Las competencias que exige el sistema productivo, por familia y nivel.', 'El referente de lo que el alumnado debe saber hacer.'],
+    ['Modular de Formación Profesional', 'Los módulos formativos asociados a cada estándar de competencia.', 'La base del módulo: duración, capacidades y criterios.'],
+    ['Ofertas de Formación Profesional', 'Todas las ofertas reconocidas y acreditables del sistema.', 'Dónde encaja tu acción: certificado, curso o acreditación parcial.'],
+], [5.4, 6.0, 5.6])
+d.p('El manual conserva la redacción de 2011 (CNCP y catálogo modular); la LO 3/2022 renombra los catálogos y añade el de Ofertas. Cita la norma vigente y, si el tribunal pide el manual, explica la equivalencia.', 'Note')
+
+d.p('Tres escalas que no hay que confundir', 'Body')
+d.table([
+    ['Escala', 'Cuántos', 'Qué mide', 'Dónde se usa'],
+    ['Niveles del CNCP', '5 (1–5)', 'Complejidad de la cualificación profesional', 'Clasificar cualificaciones y certificados'],
+    ['Niveles de competencia (LO 3/2022)', '3 (1–3)', 'Conocimientos, iniciativa, autonomía y complejidad', 'Situar cada oferta y su acceso'],
+    ['Grados de oferta (LO 3/2022)', '5 (A–E)', 'Tipo de oferta: de la acreditación parcial al curso de especialización', 'Saber qué se obtiene al terminar'],
+], [5.6, 2.4, 5.6, 3.4])
+d.p('El SSCE0110 es de nivel 3 del CNCP y se corresponde con el grado C (certificado profesional) de la LO 3/2022.', 'SmallGap')
+
+d.p('Si la acción es en línea, la guía del alumno (apartado 4.3) debe detallar como mínimo:', 'Body')
+d.table([
+    ['Elemento', 'Qué debe quedar escrito'],
+    ['Plataforma', 'Nombre, acceso, navegación y requisitos técnicos.'],
+    ['Tiempos de respuesta', 'Plazo máximo del tutor en foros y mensajes.'],
+    ['Foros', 'Cuáles hay, para qué sirven y normas de participación.'],
+    ['Síncrono y asíncrono', 'Sesiones en directo, grabaciones y actividades a ritmo del alumno.'],
+    ['Soporte técnico', 'Canal, horario y responsable de las incidencias.'],
+], [4.6, 12.4])
+
+d.pagebreak()
+d.h2('4.3 · Autoevaluaciones de las cuatro unidades')
+d.p('El manual cierra cada unidad con una autoevaluación. Aquí tienes las cuarenta preguntas con su clave comentada: contesta sin mirar y comprueba después. La versión interactiva (corrige al instante y explica el porqué) está en la ficha del módulo, dentro del temario.', 'Body')
+d.p('Criterio de uso: menos de tres fallos, adelante; entre tres y cinco, repasa las ideas clave de la unidad; más de cinco, vuelve al apartado del manual antes de seguir.', 'Note')
+
+UDS = [
+    ('ud1', 'UD 1 · Estructura de la Formación Profesional'),
+    ('ud2', 'UD 2 · Certificados de profesionalidad'),
+    ('ud3', 'UD 3 · Elaboración de la programación didáctica'),
+    ('ud4', 'UD 4 · Programación temporalizada y guía en línea'),
+]
+LETRAS = 'abcdef'
+for ud, titulo in UDS:
+    d.p(titulo, 'MiniHead')
+    filas = [['Nº', 'Pregunta y opciones', 'Clave y porqué']]
+    for i, q in enumerate(AUTOS[ud], 1):
+        opciones = '\n'.join('%s) %s' % (LETRAS[j], o) for j, o in enumerate(q['opts']))
+        filas.append([str(i), '%s\n%s' % (q['q'], opciones),
+                      '%s) %s' % (LETRAS[q['correct']], q['exp'])])
+    d.table(filas, [0.8, 8.4, 7.8])
+d.p('Las preguntas 1 a 7 de la UD 1 y las que citan porcentajes remiten a la LO 3/2022 y al RD 659/2023: si el manual que estudias conserva la redacción de 2011, comprueba la cifra con la norma vigente antes de llevarla a tu programación.', 'Small')
 
 d.h2('5 · Metodología')
 d.bullets([
