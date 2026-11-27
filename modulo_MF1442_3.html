@@ -1267,6 +1267,7 @@
     <li><a href="#vocab"><span class="num">09</span>Vocabulario</a></li>
     <li><a href="#examen-final"><span class="num">10</span>Examen final</a></li>
     <li><a href="#resultados"><span class="num">11</span>Resultados y PDF</a></li>
+    <li><a href="#compartir"><span class="num">12</span>Compartir</a></li>
     <li><a href="modulos_SSCE0110.html"><span class="num">↗</span>Índice de fichas</a></li>
     <li><a href="modulo_MF1443_3.html"><span class="num">↗</span>Siguiente: MF1443</a></li>
   </ul>
@@ -2053,11 +2054,68 @@
     </div>
   </section>
 
+  <!-- COMPARTIR Y COPIA DE SEGURIDAD -->
+  <section id="compartir">
+    <div class="section-header">
+      <span class="section-num">12</span>
+      <h2 class="section-title">Compartir y copia de seguridad</h2>
+    </div>
+    <p class="lead">
+      Esta ficha es <strong>un solo archivo</strong> de unos 140 KB, sin fuentes externas ni conexión: se puede enviar
+      por correo, abrir desde una carpeta o servir en cualquier hosting. Tus respuestas se guardan <strong>solo en tu
+      navegador</strong>; para cambiar de equipo, exporta e importa tus datos.
+    </p>
+
+    <div class="panel">
+      <div class="panel-card">
+        <div class="panel-bar">
+          <span>Versión de la ficha · <strong class="progreso-total">2026-11-27</strong></span>
+          <span>Datos guardados · <strong class="progreso-total" id="compartir-peso">0 KB</strong></span>
+          <span class="storage-state" id="compartir-estado">Listo para compartir.</span>
+        </div>
+        <p class="storage-state" id="compartir-origen" style="margin-top: 10px;"></p>
+      </div>
+
+      <div class="panel-card">
+        <div class="panel-field">
+          <label for="compartir-archivo">Archivo para enviar</label>
+        </div>
+        <div class="btn-group">
+          <button class="btn" onclick="exportarCopia(false)">⬇ Copia limpia (.html)</button>
+          <button class="btn btn-secondary" onclick="exportarCopia(true)">⬇ Copia con mis respuestas (.html)</button>
+        </div>
+        <p class="storage-state" style="margin-top: 10px;">
+          La copia limpia no lleva datos: quien la abra empieza de cero y guarda su propio progreso. La copia con
+          respuestas incluye una instantánea que solo se aplica si esa persona no tiene progreso previo.
+          Algunos correos (Gmail) bloquean los adjuntos <code>.html</code>: envíala comprimida en <code>.zip</code> o
+          compártela por Drive.
+        </p>
+
+        <div class="panel-field" style="margin-top: 20px;">
+          <label for="compartir-archivo-json">Copia de seguridad de tus datos</label>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-secondary" onclick="exportarDatos()">⬇ Exportar mis datos (.json)</button>
+          <button class="btn btn-secondary" onclick="document.getElementById('compartir-archivo-json').click()">⬆ Importar datos (.json)</button>
+          <input type="file" id="compartir-archivo-json" accept=".json,application/json" style="display:none" onchange="importarDatos(this)">
+        </div>
+        <p class="storage-state" style="margin-top: 10px;">
+          El respaldo incluye autoevaluación, examen, ajustes del informe, entregables y bitácora. Al importar se
+          sustituyen tus datos actuales y la ficha se recarga.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <div id="informe"></div>
 
 </main>
 
 <script>
+  // Fotografía del HTML tal cual se sirve (antes de que el script pinte nada):
+  // es la base de las copias autónomas que se descargan desde «Compartir».
+  const PLANTILLA_HTML = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
   // ============ DATOS ============
   const entregables = [
     { t: "Análisis de la normativa aplicable a una acción formativa concreta", tag: "C1" },
@@ -2634,6 +2692,10 @@
     testObsoleto: 'mf1442_test_v1'
   };
 
+  const VERSION_FICHA = '2026-11-27';
+  const REPO_WEB = 'https://github.com/systemavworks/SSCE0110/blob/main/';
+  const CLAVES_RESPALDO = [CLAVES.auto, CLAVES.examen, CLAVES.informe, 'mf1442_entregables', 'mf1442_bitacora'];
+
   const almacen = {
     disponible: (() => {
       try {
@@ -2967,11 +3029,13 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
 
     almacen.borrar(CLAVES.auto);
     almacen.borrar(CLAVES.examen);
+    almacen.escribir('mf1442_semilla_aplicada', true);
     examenEstado = null;
 
     Object.keys(autoevaluaciones).forEach(ud => pintarAuto(ud));
     pintarExamen();
     actualizarPanel('Progreso borrado: respuestas y examen vuelven a cero.');
+    actualizarPanelCompartir('Datos borrados de este navegador.');
   }
 
   function actualizarPanel(mensaje) {
@@ -3397,16 +3461,7 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
 
   function descargarInformePDF() {
     const datos = datosInforme();
-    const bytes = construirPdf(datos);
-    const blob = new Blob([bytes], { type: 'application/pdf' });
-    const url = URL.createObjectURL(blob);
-    const enlace = document.createElement('a');
-    enlace.href = url;
-    enlace.download = nombreArchivo(datos) + '.pdf';
-    document.body.appendChild(enlace);
-    enlace.click();
-    document.body.removeChild(enlace);
-    setTimeout(() => URL.revokeObjectURL(url), 4000);
+    descargarArchivo(construirPdf(datos), nombreArchivo(datos) + '.pdf', 'application/pdf');
     actualizarPanel('PDF generado: ' + datos.correctas + ' aciertos de ' + datos.total + ' (' + datos.nota + '/10).');
   }
 
@@ -3636,16 +3691,7 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
   function descargarExamenPDF() {
     if (!examenEstado || !preguntasExamen().length) return;
     const datos = datosExamen();
-    const bytes = construirPdf(datos);
-    const blob = new Blob([bytes], { type: 'application/pdf' });
-    const url = URL.createObjectURL(blob);
-    const enlace = document.createElement('a');
-    enlace.href = url;
-    enlace.download = nombreArchivo(datos) + '.pdf';
-    document.body.appendChild(enlace);
-    enlace.click();
-    document.body.removeChild(enlace);
-    setTimeout(() => URL.revokeObjectURL(url), 4000);
+    descargarArchivo(construirPdf(datos), nombreArchivo(datos) + '.pdf', 'application/pdf');
   }
 
   function restaurarExamen() {
@@ -3675,6 +3721,166 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
     pintarExamen();
   }
 
+  // ============ COMPARTIR: COPIA AUTÓNOMA Y RESPALDO ============
+  function descargarArchivo(contenido, nombre, tipo) {
+    const blob = new Blob([contenido], { type: tipo });
+    const url = URL.createObjectURL(blob);
+    const enlace = document.createElement('a');
+    enlace.href = url;
+    enlace.download = nombre;
+    document.body.appendChild(enlace);
+    enlace.click();
+    document.body.removeChild(enlace);
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+  }
+
+  function estadoActual() {
+    const datos = {};
+    CLAVES_RESPALDO.forEach(clave => {
+      const valor = almacen.leer(clave, undefined);
+      if (valor !== undefined) datos[clave] = valor;
+    });
+    return {
+      ficha: 'MF1442_3',
+      modulo: 'Programación didáctica de acciones formativas para el empleo',
+      version: VERSION_FICHA,
+      exportado: new Date().toISOString(),
+      datos
+    };
+  }
+
+  function pesoDatos() {
+    let total = 0;
+    CLAVES_RESPALDO.forEach(clave => {
+      const valor = almacen.leer(clave, undefined);
+      if (valor !== undefined) total += JSON.stringify(valor).length;
+    });
+    return total;
+  }
+
+  function fechaArchivo() {
+    return new Date().toISOString().slice(0, 10);
+  }
+
+  function nombrePropio() {
+    return slug(document.getElementById('informe-nombre').value);
+  }
+
+  function construirCopia(conRespuestas) {
+    let html = PLANTILLA_HTML;
+
+    // Los enlaces a otras fichas apuntan al repositorio: así funcionan fuera de la carpeta
+    ['modulos_SSCE0110.html', 'modulo_MF1443_3.html', 'formador_RD659_2023.html'].forEach(archivo => {
+      html = html.split('href="' + archivo + '"')
+        .join('href="' + REPO_WEB + archivo + '" target="_blank" rel="noopener"');
+    });
+
+    const aviso = '<div class="no-print" style="background:#eef2ff;border-bottom:1px solid #c7d2fe;'
+      + 'padding:8px 14px;font:13px/1.45 system-ui,sans-serif;color:#1e293b;">'
+      + '<strong>Copia autónoma de la ficha MF1442_3</strong> · versión ' + VERSION_FICHA
+      + (conRespuestas ? ' · incluye una instantánea de respuestas' : ' · sin datos')
+      + ' · el progreso se guarda en el navegador de quien la abre.'
+      + '<button type="button" onclick="this.parentNode.remove()" aria-label="Cerrar aviso" '
+      + 'style="float:right;border:0;background:none;font-size:16px;line-height:1;cursor:pointer;color:#3730a3;">×</button>'
+      + '</div>';
+    html = html.replace('<body>', '<body>\n' + aviso);
+
+    if (conRespuestas) {
+      const datos = JSON.stringify(estadoActual().datos).replace(/<\//g, '<\\/');
+      const semilla = '<script id="mf1442-semilla" type="application/json">' + datos + '</' + 'script>';
+      // Se coloca al final de <main>, justo antes del script que restaura el progreso
+      html = html.replace('<div id="informe"></div>', '<div id="informe"></div>\n' + semilla);
+    }
+
+    return html;
+  }
+
+  function exportarCopia(conRespuestas) {
+    const sufijo = (conRespuestas && nombrePropio()) ? '_' + nombrePropio() : '';
+    const nombre = 'modulo_MF1442_3' + sufijo + '_' + fechaArchivo() + '.html';
+    descargarArchivo(construirCopia(conRespuestas), nombre, 'text/html;charset=utf-8');
+    actualizarPanelCompartir('Copia ' + (conRespuestas ? 'con tus respuestas' : 'limpia') + ' descargada: ' + nombre);
+  }
+
+  function exportarDatos() {
+    const sufijo = nombrePropio() ? '_' + nombrePropio() : '';
+    const nombre = 'datos_MF1442_3' + sufijo + '_' + fechaArchivo() + '.json';
+    descargarArchivo(JSON.stringify(estadoActual(), null, 2), nombre, 'application/json');
+    actualizarPanelCompartir('Respaldo descargado: ' + nombre);
+  }
+
+  function validarRespaldo(texto) {
+    const estado = JSON.parse(texto);
+    if (!estado || estado.ficha !== 'MF1442_3' || typeof estado.datos !== 'object' || estado.datos === null) {
+      throw new Error('formato');
+    }
+    const claves = Object.keys(estado.datos).filter(clave => /^mf1442_/.test(clave));
+    if (!claves.length) throw new Error('sin datos');
+    return { estado, claves };
+  }
+
+  function importarDatos(entrada) {
+    const archivo = entrada.files && entrada.files[0];
+    if (!archivo) return;
+    const lector = new FileReader();
+    lector.onload = function () {
+      try {
+        const { estado, claves } = validarRespaldo(lector.result);
+        if (!confirm('Se sustituirán tus datos actuales por los de ' + archivo.name + ' (' + claves.length + ' bloques). ¿Continuar?')) return;
+        claves.forEach(clave => { almacen.escribir(clave, estado.datos[clave]); });
+        almacen.escribir('mf1442_semilla_aplicada', true);
+        location.reload();
+      } catch (e) {
+        actualizarPanelCompartir('No se ha podido importar: el archivo no es un respaldo válido de esta ficha.');
+      } finally {
+        entrada.value = '';
+      }
+    };
+    lector.onerror = function () {
+      actualizarPanelCompartir('No se ha podido leer el archivo.');
+      entrada.value = '';
+    };
+    lector.readAsText(archivo);
+  }
+
+  // La copia con respuestas lleva una instantánea: se aplica una sola vez y solo si
+  // esa persona no tiene datos propios en este navegador.
+  function aplicarSemilla() {
+    const semilla = document.getElementById('mf1442-semilla');
+    if (!semilla || !almacen.disponible) return;
+    if (almacen.leer('mf1442_semilla_aplicada', null) !== null) return;
+    let datos;
+    try {
+      datos = JSON.parse(semilla.textContent);
+    } catch (e) {
+      return;
+    }
+    if (!datos || typeof datos !== 'object') return;
+    Object.keys(datos).forEach(clave => {
+      if (!/^mf1442_/.test(clave)) return;
+      if (almacen.leer(clave, null) === null) almacen.escribir(clave, datos[clave]);
+    });
+    almacen.escribir('mf1442_semilla_aplicada', true);
+  }
+
+  function formatearPeso(bytes) {
+    if (bytes < 1024) return bytes + ' B';
+    return (bytes / 1024).toFixed(1).replace('.', ',') + ' KB';
+  }
+
+  function actualizarPanelCompartir(mensaje) {
+    const peso = document.getElementById('compartir-peso');
+    const origen = document.getElementById('compartir-origen');
+    const estado = document.getElementById('compartir-estado');
+    if (peso) peso.textContent = formatearPeso(pesoDatos());
+    if (origen) {
+      origen.textContent = almacen.disponible
+        ? 'Guardando en: ' + location.href.split('#')[0]
+        : 'Este navegador bloquea el almacenamiento local: la ficha funciona, pero no recuerda el progreso al cerrar.';
+    }
+    if (estado && mensaje) estado.textContent = mensaje;
+  }
+
   // ============ NAV ACTIVA ============
   function updateNav() {
     const sections = document.querySelectorAll('section[id]');
@@ -3697,10 +3903,12 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
   renderAuto();
   // Limpieza: el test global se retiró de la ficha; sus respuestas guardadas ya no se usan.
   almacen.borrar(CLAVES.testObsoleto);
+  aplicarSemilla();
   restaurarProgreso();
   cargarAjustesInforme();
   restaurarExamen();
   actualizarPanel();
+  actualizarPanelCompartir();
 
   document.getElementById('informe-nombre').addEventListener('input', guardarAjustesInforme);
   document.getElementById('informe-clave').addEventListener('change', guardarAjustesInforme);
