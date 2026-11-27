@@ -603,7 +603,12 @@ footer p{font-size:.85rem;color:var(--ink-2)}
 @media (max-width:720px){
   :root{--nav-h:60px;--gap:14px}
   .mod-grid,.gl-grid,.res-grid,.rules,.eval-types,.path-grid,.kirk,.kpis,.tldr ol,.g2,.g3,.g4{grid-template-columns:1fr}
-  .kpis{grid-template-columns:1fr 1fr}
+  .kpis{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+  .kpi{min-width:0}
+  /* La pista del plan debe poder bajar de su min-content y la línea de tiempo desplazarse */
+  .plan-layout{grid-template-columns:minmax(0,1fr)}
+  .plan-out{min-width:0}
+  .timeline{overflow-x:auto}
   .brand span{display:none}
   .ringbtn .rl{display:none}
   .hero h1{font-size:clamp(2rem,9vw,2.7rem)}
@@ -619,6 +624,10 @@ footer p{font-size:.85rem;color:var(--ink-2)}
   .drawer{width:100%}
   .totop{right:12px;bottom:12px;width:42px;height:42px}
   .mpanel{grid-template-columns:1fr}
+  /* Móvil: los adornos de fondo no deben provocar scroll horizontal */
+  html{overflow-x:hidden}
+  .aurora{inset:-15% 0 auto 0}
+  .blob{display:none}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}

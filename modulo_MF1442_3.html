@@ -946,6 +946,14 @@
   .callout p { margin: 0; font-size: 14px; }
 
   /* ---------- TABLA ---------- */
+  .tabla-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 16px 0;
+  }
+
+  .tabla-scroll > table { margin: 0; }
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -984,6 +992,13 @@
     .form-grid { grid-template-columns: 1fr; }
     .alineacion { grid-template-columns: 1fr 1fr; }
     .alineacion-item::after { display: none; }
+  }
+
+  @media (max-width: 600px) {
+    .main { padding: 20px 16px; }
+    th, td { padding: 8px 10px; font-size: 13px; }
+    .hero-stats { grid-template-columns: 1fr; }
+    .btn-group .btn { width: 100%; }
   }
 
   /* ---------- PANEL DE RESULTADOS ---------- */
@@ -1076,7 +1091,7 @@
   /* ---------- INFORME (vista de impresión / PDF) ---------- */
   #informe { display: none; }
 
-  body.informe-mode #informe { display: block; }
+  body.informe-mode #informe { display: block; overflow-x: auto; }
 
   body.informe-mode .nav,
   body.informe-mode .main > :not(#informe) { display: none !important; }
@@ -1673,7 +1688,7 @@
     </div>
 
     <h3>Tres escalas que no hay que confundir</h3>
-    <table>
+    <div class="tabla-scroll"><table>
       <thead>
         <tr>
           <th>Escala</th>
@@ -1702,7 +1717,7 @@
           <td>Saber qué se obtiene al terminar</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
       El SSCE0110 es de <strong>nivel 3 del CNCP</strong> y se corresponde con el <strong>grado C</strong> (certificado profesional) de la LO 3/2022.
       Los cinco niveles del CNCP no son los tres niveles de competencia: son escalas distintas.
@@ -1742,7 +1757,7 @@
     </div>
 
     <h3>Taxonomía de Bloom (revisada)</h3>
-    <table>
+    <div class="tabla-scroll"><table>
       <thead>
         <tr>
           <th>Nivel</th>
@@ -1782,7 +1797,7 @@
           <td>Diseñar un plan de formación adaptado a una empresa</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
   </section>
 
   <!-- ENTREGABLES -->
