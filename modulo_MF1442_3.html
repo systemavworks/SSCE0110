@@ -808,78 +808,6 @@
     line-height: 1.5;
   }
 
-  /* ---------- TEST ---------- */
-  .test-question {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 20px 24px;
-    margin-bottom: 16px;
-  }
-
-  .test-q-text {
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--text);
-    margin-bottom: 14px;
-  }
-
-  .test-options { display: flex; flex-direction: column; gap: 8px; }
-
-  .test-option {
-    padding: 10px 14px;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    cursor: pointer;
-    font-size: 14px;
-    transition: all 0.15s;
-    background: var(--surface);
-  }
-
-  .test-option:hover { border-color: var(--accent); background: var(--accent-soft); }
-
-  .test-option.correct {
-    background: var(--success-soft);
-    border-color: var(--success);
-    color: var(--success);
-    font-weight: 500;
-  }
-
-  .test-option.wrong {
-    background: var(--danger-soft);
-    border-color: var(--danger);
-    color: var(--danger);
-  }
-
-  .test-explanation {
-    margin-top: 10px;
-    padding: 10px 14px;
-    background: var(--surface-2);
-    border-radius: var(--radius-sm);
-    font-size: 13px;
-    color: var(--text-soft);
-    display: none;
-  }
-
-  .test-explanation.visible { display: block; }
-
-  .test-score {
-    text-align: center;
-    padding: 20px;
-    background: var(--accent-soft);
-    border-radius: var(--radius);
-    margin-top: 20px;
-    display: none;
-  }
-
-  .test-score.visible { display: block; }
-
-  .test-score-num {
-    font-size: 36px;
-    font-weight: 700;
-    color: var(--accent);
-  }
-
   /* ---------- AUTOEVALUACIÓN POR UNIDAD ---------- */
   .auto {
     margin-top: 18px;
@@ -1240,11 +1168,11 @@
     .main { margin: 0; padding: 0; max-width: none; }
     section { margin-bottom: 22px; }
     .hero { padding: 18px 0; border: 0; background: none; }
-    .unidad, .callout, .auto-q, .test-question, .capacidad, .informe-table tr {
+    .unidad, .callout, .auto-q, .capacidad, .informe-table tr {
       break-inside: avoid;
       page-break-inside: avoid;
     }
-    .auto, .test-container { border-color: #d5d9de; }
+    .auto { border-color: #d5d9de; }
     a { color: inherit; text-decoration: none; }
     .informe-table { font-size: 9.5pt; }
     .informe-table th { font-size: 8.5pt; }
@@ -1275,8 +1203,7 @@
     <li><a href="#errores"><span class="num">07</span>Errores típicos</a></li>
     <li><a href="#bitacora"><span class="num">08</span>Bitácora</a></li>
     <li><a href="#vocab"><span class="num">09</span>Vocabulario</a></li>
-    <li><a href="#test"><span class="num">10</span>Test</a></li>
-    <li><a href="#resultados"><span class="num">11</span>Resultados y PDF</a></li>
+    <li><a href="#resultados"><span class="num">10</span>Resultados y PDF</a></li>
     <li><a href="modulos_SSCE0110.html"><span class="num">↗</span>Índice de fichas</a></li>
     <li><a href="modulo_MF1443_3.html"><span class="num">↗</span>Siguiente: MF1443</a></li>
   </ul>
@@ -1965,25 +1892,10 @@
     <div class="vocab-grid" id="vocab-grid"></div>
   </section>
 
-  <!-- TEST -->
-  <section id="test">
-    <div class="section-header">
-      <span class="section-num">10</span>
-      <h2 class="section-title">Test de comprobación</h2>
-    </div>
-    <p class="lead">12 preguntas de repaso global. Sin nota: es un ticket de salida para ti. Cada respuesta explica el porqué.</p>
-
-    <div id="test-container"></div>
-    <div class="test-score" id="test-score">
-      <div class="test-score-num" id="test-score-num">0 / 12</div>
-      <p>Respuestas correctas</p>
-    </div>
-  </section>
-
   <!-- RESULTADOS, IMPRESIÓN Y PDF -->
   <section id="resultados">
     <div class="section-header">
-      <span class="section-num">11</span>
+      <span class="section-num">10</span>
       <h2 class="section-title">Resultados, impresión y PDF</h2>
     </div>
     <p class="lead">
@@ -1995,7 +1907,7 @@
     <div class="panel">
       <div class="panel-card">
         <div class="panel-bar">
-          <span>Progreso del test · <strong class="progreso-total" id="progreso-total">0 / 40</strong></span>
+          <span>Progreso de la autoevaluación · <strong class="progreso-total" id="progreso-total">0 / 40</strong></span>
           <span class="storage-state" id="storage-state">Cargando estado del almacenamiento…</span>
         </div>
         <div class="panel-grid" id="panel-metricas"></div>
@@ -2093,96 +2005,6 @@
     { t: "Catálogo de Ofertas", d: "Reúne todas las ofertas de FP reconocidas y acreditables: títulos, certificados, cursos y acreditaciones parciales." },
     { t: "PIF", d: "Permiso Individual de Formación: permiso del trabajador para formarse dentro de la formación de demanda, con bonificación para la empresa." },
     { t: "UC · RA · CE", d: "Cadena de concreción: unidad de competencia → resultado de aprendizaje → criterio de evaluación." },
-  ];
-
-  const testQuestions = [
-    {
-      q: "¿Cuál es la duración oficial del MF1442_3?",
-      opts: ["40 horas", "60 horas", "90 horas", "100 horas"],
-      correct: 1,
-      exp: "El MF1442_3 tiene una duración oficial de 60 horas, según el RD 1697/2011."
-    },
-    {
-      q: "¿Qué unidad de competencia está asociada al MF1442_3?",
-      opts: ["UC1441_3", "UC1442_3", "UC1443_3", "UC1444_3"],
-      correct: 1,
-      exp: "El MF1442_3 está asociado a la UC1442_3: Programar acciones formativas para el empleo."
-    },
-    {
-      q: "¿Cuál de estos verbos NO es observable según la Taxonomía de Bloom?",
-      opts: ["Identificar", "Comprender", "Calcular", "Diseñar"],
-      correct: 1,
-      exp: "'Comprender' es un proceso mental interno, no observable. Usa 'explicar', 'resumir' o 'clasificar'."
-    },
-    {
-      q: "¿Qué es la alineación constructiva?",
-      opts: [
-        "La coherencia entre objetivos, contenidos, actividades y evaluación",
-        "La construcción de un aula virtual",
-        "El diseño de materiales gráficos",
-        "La coordinación del equipo docente"
-      ],
-      correct: 0,
-      exp: "La alineación constructiva (Biggs) garantiza que los cuatro elementos del proceso formativo estén coherentes entre sí."
-    },
-    {
-      q: "¿Qué tipo de evaluación se realiza al inicio de la acción formativa?",
-      opts: ["Sumativa", "Formativa", "Diagnóstica", "Normativa"],
-      correct: 2,
-      exp: "La evaluación diagnóstica se realiza al inicio para conocer el nivel de partida del alumnado."
-    },
-    {
-      q: "¿Cuál es el error más grave en una programación didáctica?",
-      opts: [
-        "Usar tipografía sans-serif",
-        "Que los objetivos no estén alineados con la evaluación",
-        "No incluir bibliografía",
-        "Hacer sesiones de 2 horas"
-      ],
-      correct: 1,
-      exp: "La desalineación entre objetivos y evaluación invalida toda la programación. Es el error más grave."
-    },
-    {
-      q: "¿Qué documento recoge la planificación minuteada de una sesión?",
-      opts: ["Programación didáctica", "Guion didáctico", "Rúbrica", "Cronograma"],
-      correct: 1,
-      exp: "El guion didáctico es el documento que detalla minuto a minuto el desarrollo de una sesión formativa."
-    },
-    {
-      q: "¿Cuántos niveles de cualificación establece el Catálogo Nacional de Cualificaciones Profesionales?",
-      opts: ["Tres", "Cuatro", "Cinco", "Seis"],
-      correct: 2,
-      exp: "El CNCP ordena las cualificaciones en cinco niveles (1 a 5), de menor a mayor complejidad de la competencia. El SSCE0110 se sitúa en el nivel 3. No confundir con los tres niveles de competencia de la LO 3/2022."
-    },
-    {
-      q: "¿Qué capacidad del MF1442_3 se refiere a la elaboración de programaciones didácticas?",
-      opts: ["C1", "C2", "C3", "C4"],
-      correct: 2,
-      exp: "La C3 es la capacidad de elaborar programaciones didácticas completas (objetivos, contenidos, actividades, metodología, recursos, evaluación)."
-    },
-    {
-      q: "La formación que una empresa organiza para sus propios trabajadores y bonifica en las cuotas es…",
-      opts: ["Formación de oferta", "Formación de demanda", "Formación reglada", "Formación en alternancia"],
-      correct: 1,
-      exp: "Es formación de demanda: la empresa la contrata y se la bonifica. La de oferta la programan las administraciones para desempleados y colectivos prioritarios."
-    },
-    {
-      q: "Según la LO 3/2022, las ofertas de Formación Profesional se ordenan en…",
-      opts: ["Tres grados (A–C)", "Cuatro niveles", "Cinco grados (A–E)", "Seis niveles"],
-      correct: 2,
-      exp: "La LO 3/2022 establece cinco grados ascendentes de oferta (A, B, C, D y E) y tres niveles de competencia (1, 2 y 3). Son dos escalas distintas."
-    },
-    {
-      q: "El Permiso Individual de Formación (PIF) se enmarca en…",
-      opts: [
-        "La formación de oferta de las comunidades autónomas",
-        "La formación de demanda bonificada por la empresa",
-        "La Formación Profesional reglada",
-        "Los proyectos formativos en alternancia"
-      ],
-      correct: 1,
-      exp: "El PIF permite al trabajador formarse dentro de la formación de demanda; la empresa bonifica el coste en la Seguridad Social."
-    }
   ];
 
   // ============ AUTOEVALUACIONES POR UNIDAD ============
@@ -2691,8 +2513,8 @@
   // ============ PERSISTENCIA EN EL NAVEGADOR ============
   const CLAVES = {
     auto: 'mf1442_autoeval_v1',
-    test: 'mf1442_test_v1',
-    informe: 'mf1442_informe_v1'
+    informe: 'mf1442_informe_v1',
+    testObsoleto: 'mf1442_test_v1'
   };
 
   const almacen = {
@@ -2752,48 +2574,6 @@
       .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
       .replace(/[^A-Za-z0-9]+/g, '_')
       .replace(/^_+|_+$/g, '');
-  }
-
-  // ============ TEST ============
-  function renderTest() {
-    const container = document.getElementById('test-container');
-    container.innerHTML = testQuestions.map((q, i) => `
-      <div class="test-question" data-qi="${i}">
-        <div class="test-q-text">${i+1}. ${q.q}</div>
-        <div class="test-options">
-          ${q.opts.map((o, j) => `
-            <div class="test-option" onclick="responderTest(${i}, ${j})">${o}</div>
-          `).join('')}
-        </div>
-        <div class="test-explanation" id="exp-${i}">${q.exp}</div>
-      </div>
-    `).join('');
-  }
-
-  let testScore = 0;
-  let testAnswered = new Set();
-  let respuestasTest = almacen.leer(CLAVES.test, {});
-
-  function responderTest(qi, oi, silencioso) {
-    if (testAnswered.has(qi)) return;
-    testAnswered.add(qi);
-    const q = testQuestions[qi];
-    const question = document.querySelector(`[data-qi="${qi}"]`);
-    const options = question.querySelectorAll('.test-option');
-    options.forEach((opt, j) => {
-      if (j === q.correct) opt.classList.add('correct');
-      else if (j === oi) opt.classList.add('wrong');
-      opt.style.pointerEvents = 'none';
-    });
-    document.getElementById(`exp-${qi}`).classList.add('visible');
-    if (oi === q.correct) testScore++;
-    respuestasTest[qi] = oi;
-    if (!silencioso) guardarTest();
-    if (testAnswered.size === testQuestions.length) {
-      const score = document.getElementById('test-score');
-      document.getElementById('test-score-num').textContent = `${testScore} / ${testQuestions.length}`;
-      score.classList.add('visible');
-    }
   }
 
   // ============ AUTOEVALUACIÓN POR UNIDAD ============
@@ -3038,11 +2818,6 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
     actualizarPanel(ok ? null : 'No se ha podido guardar: el navegador bloquea el almacenamiento local.');
   }
 
-  function guardarTest() {
-    const ok = almacen.escribir(CLAVES.test, respuestasTest);
-    actualizarPanel(ok ? null : 'No se ha podido guardar: el navegador bloquea el almacenamiento local.');
-  }
-
   function restaurarProgreso() {
     const guardadoAuto = almacen.leer(CLAVES.auto, {});
     Object.keys(guardadoAuto).forEach(ud => {
@@ -3056,24 +2831,12 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
         }
       });
     });
-
-    const guardadoTest = almacen.leer(CLAVES.test, {});
-    respuestasTest = guardadoTest;
-    Object.keys(guardadoTest).forEach(indice => {
-      const qi = parseInt(indice, 10);
-      const oi = parseInt(guardadoTest[indice], 10);
-      const pregunta = testQuestions[qi];
-      if (pregunta && oi >= 0 && oi < pregunta.opts.length) {
-        responderTest(qi, oi, true);
-      }
-    });
   }
 
   function guardarProgreso(manual) {
-    const okAuto = almacen.escribir(CLAVES.auto, respuestasAutoPorUnidad());
-    const okTest = almacen.escribir(CLAVES.test, respuestasTest);
+    const ok = almacen.escribir(CLAVES.auto, respuestasAutoPorUnidad());
     if (manual) {
-      actualizarPanel(okAuto && okTest
+      actualizarPanel(ok
         ? 'Progreso guardado a las ' + horaCorta() + '.'
         : 'No se ha podido guardar: el navegador bloquea el almacenamiento local.');
     } else {
@@ -3082,18 +2845,10 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
   }
 
   function borrarProgreso() {
-    const seguro = confirm('Se borrarán tus respuestas de las 40 preguntas y del test de comprobación en este navegador. ¿Continuar?');
+    const seguro = confirm('Se borrarán tus respuestas de las 40 preguntas en este navegador. ¿Continuar?');
     if (!seguro) return;
 
     almacen.borrar(CLAVES.auto);
-    almacen.borrar(CLAVES.test);
-
-    respuestasTest = {};
-    testScore = 0;
-    testAnswered = new Set();
-    renderTest();
-    document.getElementById('test-score').classList.remove('visible');
-    document.getElementById('test-score-num').textContent = '0 / ' + testQuestions.length;
 
     Object.keys(autoevaluaciones).forEach(ud => pintarAuto(ud));
     actualizarPanel('Progreso borrado: todas las preguntas vuelven a estar sin responder.');
@@ -3552,8 +3307,9 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
   renderEntregables();
   renderBitacora();
   renderVocab();
-  renderTest();
   renderAuto();
+  // Limpieza: el test global se retiró de la ficha; sus respuestas guardadas ya no se usan.
+  almacen.borrar(CLAVES.testObsoleto);
   restaurarProgreso();
   cargarAjustesInforme();
   actualizarPanel();
