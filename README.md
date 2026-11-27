@@ -77,7 +77,7 @@ sin instalación ni servidor, que guarda tu progreso en el navegador y lo export
 | [`index.html`](index.html) | Entrada local | Redirige a `portfolio.html` para abrir el portfolio desde la raíz de la carpeta |
 | [`portfolio.html`](portfolio.html) | Portfolio y seguimiento (single-file) | Calendario, temario con estados, entregables, evidencias, notas y exportación MD/JSON/ICS |
 | [`guia_arranque_SSCE0110.html`](guia_arranque_SSCE0110.html) | Guía de arranque + bitácora | Checklist del día 1, planificador, microclase, glosario, test y bitácora |
-| [`modulo_MF1442_3.html`](modulo_MF1442_3.html) | Ficha del MF1442_3 | Capacidades, criterios, contenidos, ideas clave, autoevaluación oficial de cada unidad con guardado en el navegador, constructor de programación, impresión e informe PDF con las 40 respuestas y la nota |
+| [`modulo_MF1442_3.html`](modulo_MF1442_3.html) | Ficha del MF1442_3 | Capacidades, criterios, contenidos, ideas clave, autoevaluación oficial de cada unidad con guardado en el navegador, constructor de programación, examen final simulado con preguntas al azar, impresión e informe PDF con las 40 respuestas y la nota |
 | [`modulos_SSCE0110.html`](modulos_SSCE0110.html) | Índice de fichas | Acceso a los resúmenes de los seis módulos y a sus ventanas de estudio |
 | [`modulo_MF1443_3.html`](modulo_MF1443_3.html) | Ficha del MF1443_3 | Materiales, medios, recursos, Moodle, accesibilidad y test |
 | [`modulo_MF1444_3.html`](modulo_MF1444_3.html) | Ficha del MF1444_3 | Impartición, tutorización, microclase y plan tutorial |

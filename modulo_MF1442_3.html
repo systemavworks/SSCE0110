@@ -1155,6 +1155,68 @@
     color: var(--text-soft);
   }
 
+  /* ---------- EXAMEN FINAL SIMULADO ---------- */
+  .examen-config {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  .examen-campo { display: flex; flex-direction: column; gap: 6px; }
+
+  .examen-campo label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .examen-campo select {
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    font: inherit;
+    font-size: 14px;
+  }
+
+  .examen-campo select:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+
+  .auto-opt.sel {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    font-weight: 500;
+  }
+
+  .examen-resultado {
+    display: none;
+    margin-top: 14px;
+    padding: 14px 16px;
+    background: var(--accent-soft);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+  }
+
+  .examen-resultado.visible { display: block; }
+  .examen-resultado strong { font-size: 18px; }
+
+  .examen-vacio {
+    padding: 16px;
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--surface-2);
+    color: var(--text-muted);
+    font-size: 13.5px;
+  }
+
+  .btn[disabled] {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+  }
+
   /* ---------- IMPRESIÓN ---------- */
   @media print {
     html { scroll-behavior: auto; scroll-padding-top: 0; }
@@ -1203,7 +1265,8 @@
     <li><a href="#errores"><span class="num">07</span>Errores típicos</a></li>
     <li><a href="#bitacora"><span class="num">08</span>Bitácora</a></li>
     <li><a href="#vocab"><span class="num">09</span>Vocabulario</a></li>
-    <li><a href="#resultados"><span class="num">10</span>Resultados y PDF</a></li>
+    <li><a href="#examen-final"><span class="num">10</span>Examen final</a></li>
+    <li><a href="#resultados"><span class="num">11</span>Resultados y PDF</a></li>
     <li><a href="modulos_SSCE0110.html"><span class="num">↗</span>Índice de fichas</a></li>
     <li><a href="modulo_MF1443_3.html"><span class="num">↗</span>Siguiente: MF1443</a></li>
   </ul>
@@ -1892,10 +1955,63 @@
     <div class="vocab-grid" id="vocab-grid"></div>
   </section>
 
+  <!-- EXAMEN FINAL SIMULADO -->
+  <section id="examen-final">
+    <div class="section-header">
+      <span class="section-num">10</span>
+      <h2 class="section-title">Examen final simulado</h2>
+    </div>
+    <p class="lead">
+      La evaluación del módulo se hace con las preguntas del manual: de las <strong>40 preguntas</strong> de las
+      unidades se extrae al azar el examen final. Aquí puedes simularlo: sin pistas hasta que corrijas,
+      con la nota y, si quieres, en PDF.
+    </p>
+
+    <div class="panel">
+      <div class="panel-card">
+        <div class="examen-config">
+          <div class="examen-campo">
+            <label for="examen-cantidad">Preguntas del examen</label>
+            <select id="examen-cantidad">
+              <option value="5">5 preguntas</option>
+              <option value="10" selected>10 preguntas</option>
+              <option value="15">15 preguntas</option>
+              <option value="20">20 preguntas</option>
+              <option value="40">40 preguntas (todas)</option>
+            </select>
+          </div>
+          <div class="examen-campo">
+            <label>Estado del intento</label>
+            <span class="storage-state" id="examen-progreso">Sin examen generado</span>
+          </div>
+        </div>
+        <label class="panel-check">
+          <input type="checkbox" id="examen-clave">
+          Incluir la clave comentada en el PDF del examen
+        </label>
+        <div class="btn-group" style="margin-top: 16px;">
+          <button class="btn" onclick="generarExamen()">🎲 Generar examen al azar</button>
+          <button class="btn btn-secondary" id="examen-corregir" onclick="corregirExamen()" disabled>✅ Corregir examen</button>
+          <button class="btn btn-secondary" id="examen-repetir" onclick="reiniciarExamen()" disabled>↺ Repetir estas preguntas</button>
+          <button class="btn btn-secondary" id="examen-pdf" onclick="descargarExamenPDF()" disabled>⬇ PDF del examen</button>
+        </div>
+        <p class="storage-state" style="margin-top: 12px;">
+          Las preguntas se sortean de las 40 oficiales y se garantiza al menos una de cada unidad. El intento
+          se guarda en este navegador: si cierras la ficha, lo encuentras tal y como lo dejaste.
+        </p>
+      </div>
+
+      <div class="panel-card">
+        <div id="examen"></div>
+        <div class="examen-resultado" id="examen-resultado"></div>
+      </div>
+    </div>
+  </section>
+
   <!-- RESULTADOS, IMPRESIÓN Y PDF -->
   <section id="resultados">
     <div class="section-header">
-      <span class="section-num">10</span>
+      <span class="section-num">11</span>
       <h2 class="section-title">Resultados, impresión y PDF</h2>
     </div>
     <p class="lead">
@@ -2514,6 +2630,7 @@
   const CLAVES = {
     auto: 'mf1442_autoeval_v1',
     informe: 'mf1442_informe_v1',
+    examen: 'mf1442_examen_v1',
     testObsoleto: 'mf1442_test_v1'
   };
 
@@ -2845,13 +2962,16 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
   }
 
   function borrarProgreso() {
-    const seguro = confirm('Se borrarán tus respuestas de las 40 preguntas en este navegador. ¿Continuar?');
+    const seguro = confirm('Se borrarán tus respuestas de las 40 preguntas y el examen en curso en este navegador. ¿Continuar?');
     if (!seguro) return;
 
     almacen.borrar(CLAVES.auto);
+    almacen.borrar(CLAVES.examen);
+    examenEstado = null;
 
     Object.keys(autoevaluaciones).forEach(ud => pintarAuto(ud));
-    actualizarPanel('Progreso borrado: todas las preguntas vuelven a estar sin responder.');
+    pintarExamen();
+    actualizarPanel('Progreso borrado: respuestas y examen vuelven a cero.');
   }
 
   function actualizarPanel(mensaje) {
@@ -2911,12 +3031,14 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
     const ajustes = almacen.leer(CLAVES.informe, {});
     document.getElementById('informe-nombre').value = ajustes.nombre || '';
     document.getElementById('informe-clave').checked = !!ajustes.clave;
+    document.getElementById('examen-clave').checked = !!ajustes.claveExamen;
   }
 
   function guardarAjustesInforme() {
     almacen.escribir(CLAVES.informe, {
       nombre: document.getElementById('informe-nombre').value.trim(),
-      clave: document.getElementById('informe-clave').checked
+      clave: document.getElementById('informe-clave').checked,
+      claveExamen: document.getElementById('examen-clave').checked
     });
   }
 
@@ -3084,7 +3206,7 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
 
   function nombreArchivo(datos) {
     const limpio = slug(datos.nombre);
-    return 'informe_MF1442_3' + (limpio ? '_' + limpio : '') + '_' + new Date().toISOString().slice(0, 10);
+    return (datos.prefijo || 'informe_MF1442_3') + (limpio ? '_' + limpio : '') + '_' + new Date().toISOString().slice(0, 10);
   }
 
   function abrirInforme() {
@@ -3183,10 +3305,10 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
 
     nuevaPagina();
 
-    escribir('MF1442_3 · Programación didáctica de acciones formativas para el empleo', { tam: 14, negrita: true, interlineado: 18 });
-    escribir('Informe de autoevaluación · SSCE0110 · CEFI Formación', { tam: 9.5, interlineado: 13 });
+    escribir(datos.titulo || 'MF1442_3 · Programación didáctica de acciones formativas para el empleo', { tam: 14, negrita: true, interlineado: 18 });
+    escribir(datos.contexto || 'Informe de autoevaluación · SSCE0110 · CEFI Formación', { tam: 9.5, interlineado: 13 });
     escribir((datos.nombre ? datos.nombre + ' · ' : '') + 'Emitido el ' + datos.fecha, { tam: 9.5, interlineado: 13 });
-    escribir('40 preguntas (10 por unidad didáctica) · Claves del solucionario del manual', { tam: 9, interlineado: 15, color: [0.35, 0.4, 0.47] });
+    escribir(datos.subtitulo || '40 preguntas (10 por unidad didáctica) · Claves del solucionario del manual', { tam: 9, interlineado: 15, color: [0.35, 0.4, 0.47] });
 
     escribir('Calificación', { tam: 11.5, negrita: true, antes: 6, interlineado: 16 });
     escribir('Aciertos: ' + datos.correctas + ' de ' + datos.total + ' · Nota: ' + datos.nota + ' / 10 · ' + datos.pct + ' % · ' + datos.juicio, { tam: 11, negrita: true, interlineado: 16 });
@@ -3196,7 +3318,7 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
       escribir(u.titulo + ': ' + u.correctas + '/' + u.total + ' aciertos (' + Math.round((u.correctas / u.total) * 100) + ' %) · ' + u.respondidas + ' respondidas', { tam: 9, interlineado: 12.5, sangria: 8 });
     });
 
-    escribir('Detalle de las 40 respuestas', { tam: 11.5, negrita: true, antes: 10, interlineado: 17 });
+    escribir(datos.detalleTitulo || 'Detalle de las 40 respuestas', { tam: 11.5, negrita: true, antes: 10, interlineado: 17 });
     let udActual = '';
     datos.detalle.forEach(d => {
       if (y - 72 < PDF_MARGEN + 26) nuevaPagina();
@@ -3222,7 +3344,7 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
     const totalPaginas = paginas.length;
     paginas.forEach((ops, indice) => {
       ops.push({
-        texto: pdfNormalizar('MF1442_3 · Informe de autoevaluación · Página ' + (indice + 1) + ' de ' + totalPaginas),
+        texto: pdfNormalizar((datos.pie || 'MF1442_3 · Informe de autoevaluación') + ' · Página ' + (indice + 1) + ' de ' + totalPaginas),
         fuente: 'F1',
         tam: 8,
         x: PDF_MARGEN,
@@ -3288,6 +3410,271 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
     actualizarPanel('PDF generado: ' + datos.correctas + ' aciertos de ' + datos.total + ' (' + datos.nota + '/10).');
   }
 
+  // ============ EXAMEN FINAL SIMULADO ============
+  let examenEstado = null;
+
+  function bancoPreguntas() {
+    const lista = [];
+    Object.keys(autoevaluaciones).forEach(ud => {
+      autoevaluaciones[ud].forEach((q, i) => lista.push({ ud, i }));
+    });
+    return lista;
+  }
+
+  function barajar(lista) {
+    for (let i = lista.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const cambio = lista[i];
+      lista[i] = lista[j];
+      lista[j] = cambio;
+    }
+    return lista;
+  }
+
+  // Sortea preguntas de las 40 y garantiza al menos una de cada unidad
+  function seleccionarAlAzar(cantidad) {
+    const pool = barajar(bancoPreguntas());
+    const total = Math.min(cantidad, pool.length);
+    const elegidas = pool.slice(0, total);
+    const unidades = Object.keys(autoevaluaciones);
+
+    if (total >= unidades.length) {
+      unidades.forEach(ud => {
+        if (elegidas.some(e => e.ud === ud)) return;
+        const candidata = pool.find(p => p.ud === ud && elegidas.indexOf(p) === -1);
+        const sobrante = elegidas
+          .map((e, idx) => ({ e, idx }))
+          .filter(x => elegidas.filter(y => y.ud === x.e.ud).length > 1)
+          .pop();
+        if (candidata && sobrante) elegidas[sobrante.idx] = candidata;
+      });
+    }
+    return elegidas;
+  }
+
+  function generarExamen(preguntas, respuestas, corregido) {
+    const campo = document.getElementById('examen-cantidad');
+    const cantidad = parseInt(campo.value, 10) || 10;
+    const refs = (preguntas && preguntas.length) ? preguntas : seleccionarAlAzar(cantidad);
+    examenEstado = {
+      fecha: new Date().toISOString(),
+      preguntas: refs.map(r => ({ ud: r.ud, i: r.i })),
+      respuestas: respuestas || {},
+      corregido: !!corregido
+    };
+    guardarExamen();
+    pintarExamen();
+  }
+
+  function guardarExamen() {
+    if (examenEstado) almacen.escribir(CLAVES.examen, examenEstado);
+    else almacen.borrar(CLAVES.examen);
+  }
+
+  function preguntasExamen() {
+    if (!examenEstado) return [];
+    return examenEstado.preguntas
+      .map(r => ({ ud: r.ud, i: r.i, q: (autoevaluaciones[r.ud] || [])[r.i] }))
+      .filter(item => item.q);
+  }
+
+  function pintarExamen() {
+    const contenedor = document.getElementById('examen');
+    const items = preguntasExamen();
+
+    if (!items.length) {
+      contenedor.innerHTML = '<p class="examen-vacio">Todavía no has generado ningún examen. Elige cuántas preguntas quieres y pulsa «Generar examen al azar».</p>';
+      actualizarEstadoExamen();
+      return;
+    }
+
+    contenedor.innerHTML = items.map((item, idx) => {
+      const elegida = examenEstado.respuestas[idx];
+      const opciones = item.q.opts.map((texto, j) => {
+        const clases = ['auto-opt'];
+        if (examenEstado.corregido) {
+          if (j === item.q.correct) clases.push('correct');
+          else if (j === elegida) clases.push('wrong');
+        } else if (j === elegida) {
+          clases.push('sel');
+        }
+        const clic = examenEstado.corregido ? '' : ' onclick="responderExamen(' + idx + ', ' + j + ')"';
+        return '<div class="' + clases.join(' ') + '"' + clic + '>' + texto + '</div>';
+      }).join('');
+
+      return '<div class="auto-q" data-exi="' + idx + '">'
+        + '<div class="auto-q-text">' + (idx + 1) + '. ' + item.q.q
+        + ' <span class="auto-src">· UD ' + item.ud.replace('ud', '') + '</span></div>'
+        + '<div class="auto-options">' + opciones + '</div>'
+        + '<div class="auto-exp' + (examenEstado.corregido ? ' visible' : '') + '">' + item.q.exp + '</div>'
+        + '</div>';
+    }).join('');
+
+    actualizarEstadoExamen();
+  }
+
+  function responderExamen(idx, oi) {
+    if (!examenEstado || examenEstado.corregido) return;
+    examenEstado.respuestas[idx] = oi;
+    guardarExamen();
+    pintarExamen();
+  }
+
+  function resumenExamen() {
+    const items = preguntasExamen();
+    let respondidas = 0;
+    let correctas = 0;
+    items.forEach((item, idx) => {
+      const elegida = examenEstado.respuestas[idx];
+      if (typeof elegida === 'number') respondidas++;
+      if (elegida === item.q.correct) correctas++;
+    });
+    const total = items.length;
+    const pct = total ? Math.round((correctas / total) * 100) : 0;
+    return { total, respondidas, correctas, pct, nota: total ? (correctas / total) * 10 : 0 };
+  }
+
+  function actualizarEstadoExamen() {
+    const progreso = document.getElementById('examen-progreso');
+    const resultado = document.getElementById('examen-resultado');
+    const botones = ['examen-corregir', 'examen-repetir', 'examen-pdf'].map(id => document.getElementById(id));
+    const items = preguntasExamen();
+
+    if (!examenEstado || !items.length) {
+      progreso.textContent = 'Sin examen generado';
+      resultado.classList.remove('visible');
+      botones.forEach(boton => { boton.disabled = true; });
+      return;
+    }
+
+    const r = resumenExamen();
+    botones.forEach(boton => { boton.disabled = false; });
+    document.getElementById('examen-corregir').disabled = examenEstado.corregido;
+    progreso.textContent = r.respondidas + ' / ' + r.total + ' respondidas'
+      + (examenEstado.corregido ? ' · corregido' : '');
+
+    if (examenEstado.corregido) {
+      resultado.innerHTML = 'Resultado: <strong>' + r.correctas + ' / ' + r.total + '</strong> · Nota: <strong>'
+        + r.nota.toFixed(1).replace('.', ',') + ' / 10</strong> · ' + r.pct + ' % · ' + juicio(r.pct);
+      resultado.classList.add('visible');
+    } else {
+      resultado.classList.remove('visible');
+    }
+  }
+
+  function corregirExamen() {
+    if (!examenEstado) return;
+    const r = resumenExamen();
+    const pendientes = r.total - r.respondidas;
+    if (pendientes > 0 && !confirm('Quedan ' + pendientes + ' preguntas sin responder y contarán como falladas. ¿Corregir igualmente?')) return;
+    examenEstado.corregido = true;
+    guardarExamen();
+    pintarExamen();
+  }
+
+  function reiniciarExamen() {
+    if (!examenEstado) return;
+    examenEstado.respuestas = {};
+    examenEstado.corregido = false;
+    examenEstado.fecha = new Date().toISOString();
+    guardarExamen();
+    pintarExamen();
+  }
+
+  function datosExamen() {
+    const items = preguntasExamen();
+    const r = resumenExamen();
+    const porUnidad = {};
+    const incluirClave = document.getElementById('examen-clave').checked;
+
+    const detalle = items.map((item, idx) => {
+      const elegida = examenEstado.respuestas[idx];
+      const contestada = typeof elegida === 'number';
+      const acierto = contestada && elegida === item.q.correct;
+
+      if (!porUnidad[item.ud]) {
+        porUnidad[item.ud] = { ud: item.ud, titulo: TITULOS_UD[item.ud], total: 0, respondidas: 0, correctas: 0 };
+      }
+      const unidad = porUnidad[item.ud];
+      unidad.total++;
+      if (contestada) unidad.respondidas++;
+      if (acierto) unidad.correctas++;
+
+      return {
+        ud: item.ud,
+        num: idx + 1,
+        q: item.q.q,
+        contestada,
+        acierto,
+        elegida: contestada ? letra(elegida) + ') ' + item.q.opts[elegida] : '',
+        correcta: letra(item.q.correct) + ') ' + item.q.opts[item.q.correct],
+        exp: incluirClave ? item.q.exp : ''
+      };
+    });
+
+    return {
+      titulo: 'MF1442_3 · Examen final simulado',
+      contexto: 'Examen final simulado · SSCE0110 · CEFI Formación',
+      subtitulo: r.total + ' preguntas seleccionadas al azar de las 40 del manual · Claves del solucionario',
+      detalleTitulo: 'Detalle de las preguntas del examen',
+      pie: 'MF1442_3 · Examen final simulado',
+      prefijo: 'examen_MF1442_3',
+      nombre: document.getElementById('informe-nombre').value.trim(),
+      fecha: fechaLarga(new Date(examenEstado.fecha)),
+      incluirClave,
+      unidades: Object.keys(autoevaluaciones).map(ud => porUnidad[ud]).filter(u => u),
+      detalle,
+      total: r.total,
+      respondidas: r.respondidas,
+      correctas: r.correctas,
+      nota: r.nota.toFixed(1).replace('.', ','),
+      pct: r.pct,
+      juicio: juicio(r.pct)
+    };
+  }
+
+  function descargarExamenPDF() {
+    if (!examenEstado || !preguntasExamen().length) return;
+    const datos = datosExamen();
+    const bytes = construirPdf(datos);
+    const blob = new Blob([bytes], { type: 'application/pdf' });
+    const url = URL.createObjectURL(blob);
+    const enlace = document.createElement('a');
+    enlace.href = url;
+    enlace.download = nombreArchivo(datos) + '.pdf';
+    document.body.appendChild(enlace);
+    enlace.click();
+    document.body.removeChild(enlace);
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+  }
+
+  function restaurarExamen() {
+    const guardado = almacen.leer(CLAVES.examen, null);
+    if (guardado && Array.isArray(guardado.preguntas) && guardado.preguntas.length) {
+      const refs = [];
+      const respuestas = {};
+      guardado.preguntas.forEach((ref, idx) => {
+        const pregunta = (autoevaluaciones[ref.ud] || [])[ref.i];
+        if (!pregunta) return;
+        if (guardado.respuestas && typeof guardado.respuestas[idx] === 'number') {
+          respuestas[refs.length] = guardado.respuestas[idx];
+        }
+        refs.push({ ud: ref.ud, i: ref.i });
+      });
+      if (refs.length) {
+        examenEstado = {
+          fecha: guardado.fecha || new Date().toISOString(),
+          preguntas: refs,
+          respuestas,
+          corregido: !!guardado.corregido
+        };
+        const cantidad = document.getElementById('examen-cantidad');
+        if (cantidad) cantidad.value = String(Math.min(refs.length, 40));
+      }
+    }
+    pintarExamen();
+  }
+
   // ============ NAV ACTIVA ============
   function updateNav() {
     const sections = document.querySelectorAll('section[id]');
@@ -3312,10 +3699,12 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
   almacen.borrar(CLAVES.testObsoleto);
   restaurarProgreso();
   cargarAjustesInforme();
+  restaurarExamen();
   actualizarPanel();
 
   document.getElementById('informe-nombre').addEventListener('input', guardarAjustesInforme);
   document.getElementById('informe-clave').addEventListener('change', guardarAjustesInforme);
+  document.getElementById('examen-clave').addEventListener('change', guardarAjustesInforme);
   window.addEventListener('scroll', updateNav);
   document.getElementById('vocab-search').addEventListener('input', e => renderVocab(e.target.value));
   updateNav();
