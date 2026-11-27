@@ -502,8 +502,9 @@ footer{margin-top:56px;border-top:1px solid var(--line);background:rgba(244,238,
       <div>
         <span class="kicker"><span class="dot"></span>01 · Calendario</span>
         <h2>De la primera sesión al cierre oficial</h2>
-        <p>El cronograma de CEFI reparte las <b>340 h teórico-prácticas</b> en <b id="txtSessions">57</b> sesiones
-          de aula, que terminan el <b id="txtTheoryEnd">18/02/2027</b> e incluyen el bloque de PRL y la recuperación.
+        <p>El cronograma de CEFI reparte las <b>340 h teórico-prácticas</b> en <b id="txtSessions">50</b> sesiones
+          de módulo, que terminan el <b id="txtTheoryEnd">18/02/2027</b>. El bloque de PRL (5 sesiones) y la
+          recuperación (2) son del centro y <b>no suman</b> a esas horas.
           Las <b>40 h del MP0353</b> son prácticas del <b id="txtPractice">25/02 → 12/03/2027</b>, con fechas ya
           confirmadas. El cierre oficial es el <b id="txtEnd">12/03/2027</b>; quedan
           <b id="txtBuffer">2</b> días sin módulo asignado (19 y 22 de febrero).</p>
@@ -663,6 +664,8 @@ footer{margin-top:56px;border-top:1px solid var(--line);background:rgba(244,238,
       <div>
         <h4>Documentos</h4>
         <a href="guia_arranque_SSCE0110.html">Guía de arranque + bitácora</a>
+        <a href="diario_curso_SSCE0110.html">Diario del curso</a>
+        <a href="modulos_SSCE0110.html">Fichas de los 6 módulos</a>
         <a href="modulo_MF1442_3.html">Módulo MF1442_3</a>
         <a href="https://github.com/systemavworks/SSCE0110#readme" target="_blank" rel="noopener">README del repositorio ↗</a>
         <a href="https://github.com/systemavworks/SSCE0110" target="_blank" rel="noopener">github.com/systemavworks/SSCE0110 ↗</a>
@@ -689,7 +692,6 @@ footer{margin-top:56px;border-top:1px solid var(--line);background:rgba(244,238,
    ============================================================ */
 const AUTHOR = 'Aj Fonts · Andalucía · Nov. 2026';
 const STUDENT = 'Víctor';
-const TOTAL_HOURS = 380;
 const KEY = 'ssce0110_portfolio_v1';
 const DATA_VERSION = 4;
 const DEFAULT_CFG = {
@@ -714,7 +716,7 @@ const HOLIDAY_NAMES = {
    días lectivos, para que sigan cuadrando si cambias festivos o extremos. */
 const CENTER_BLOCKS = [
   { code: 'PRL', name: 'Prevención de riesgos laborales · bloque complementario del centro', from: 45, to: 49, note: 'bloque complementario: no suma a las 380 h del certificado' },
-  { code: 'REC', name: 'Recuperación y evaluación', from: 57, to: 58, note: 'recuperación y evaluación antes de empezar las prácticas' }
+  { code: 'REC', name: 'Recuperación y evaluación', from: 57, to: 58, note: 'recuperación y evaluación antes de empezar las prácticas: tampoco suma a las 380 h' }
 ];
 const MODULES = [
   {
@@ -923,8 +925,10 @@ function sanitize(raw) {
     out.cfg.holidays.sort();
   }
   if (loadedVersion < 4) {
-    /* v4: el 01/03/2027 es festivo (Día de Andalucía trasladado) y MP0353 pasa a 11 sesiones. */
-    out.cfg = JSON.parse(JSON.stringify(DEFAULT_CFG));
+    /* v4: el 01/03/2027 es festivo (Día de Andalucía trasladado) y MP0353 pasa a 11 sesiones.
+       Se respeta el calendario del usuario: solo se añade el festivo que faltaba en v3. */
+    if (!out.cfg.holidays.includes('2027-03-01')) out.cfg.holidays.push('2027-03-01');
+    out.cfg.holidays.sort();
   }
   const ids = new Set(MODULES.map(m => m.id));
   Object.keys(raw.topics || {}).forEach(k => {
@@ -993,16 +997,24 @@ function calcSchedule() {
     return { code: b.code, name: b.name, note: b.note, start: slice[0], end: slice[slice.length - 1], sessions: slice.length };
   }).filter(Boolean);
   const theory = MODULES.filter(m => m.id !== 'mp0353');
-  const usedTheory = theory.reduce((n, m) => n + (spans[m.id] ? spans[m.id].sessions : 0), 0)
-    + extra.reduce((n, b) => n + b.sessions, 0);
+  /* Sesiones de módulo (las que cuentan para las 340 h) y sesiones de los bloques del
+     centro (PRL y recuperación), que no suman a las 380 h del certificado. */
+  const moduleSessions = theory.reduce((n, m) => n + (spans[m.id] ? spans[m.id].sessions : 0), 0);
+  const centerSessions = extra.reduce((n, b) => n + b.sessions, 0);
+  const usedTheory = moduleSessions + centerSessions;
   const usedPractice = spans['mp0353'] ? spans['mp0353'].sessions : 0;
   const used = usedTheory + usedPractice;
   const buffer = days.filter(d => !assigned.has(d));
   const lastTheory = theory.length ? spans[theory[theory.length - 1].id] : null;
+  /* Horas presenciales que salen con la jornada configurada frente a las 340 h de módulo. */
+  const theoryHours = theory.reduce((n, m) => n + m.h, 0);
+  const presencial = Math.round(moduleSessions * S.cfg.hpd * 10) / 10;
   return {
-    days, used, usedTheory, usedPractice, assigned, extra,
+    days, used, usedTheory, usedPractice, moduleSessions, centerSessions,
+    theoryHours, presencial, gap: Math.round((theoryHours - presencial) * 10) / 10,
+    assigned, extra,
     contentEnd: lastTheory ? lastTheory.end : (days.length ? days[0] : null),
-    spans, buffer, total, remaining: 0
+    spans, buffer, total
   };
 }
 
@@ -1143,7 +1155,7 @@ function renderKpis() {
   if (!box) return;
   box.innerHTML =
     '<div class="kpi"><b>' + s.total + ' h</b><span>Oficiales</span><small>' + MODULES.length + ' módulos · ' + gs.totalTopics + ' temas</small></div>' +
-    '<div class="kpi"><b>' + s.used + '</b><span>Sesiones con módulo</span><small>' + s.usedTheory + ' de teoría (PRL y recuperación incluidas) + ' + s.usedPractice + ' de prácticas</small></div>' +
+    '<div class="kpi"><b>' + s.used + '</b><span>Sesiones con bloque</span><small>' + s.moduleSessions + ' de módulo (' + s.theoryHours + ' h) + ' + s.centerSessions + ' del centro (PRL y recuperación) + ' + s.usedPractice + ' de prácticas</small></div>' +
     '<div class="kpi"><b>' + s.buffer.length + '</b><span>Días sin módulo</span><small>' + (s.buffer.length ? fmt(s.buffer[0]) + ' → ' + fmt(s.buffer[s.buffer.length - 1]) : 'Todo asignado') + '</small></div>' +
     '<div class="kpi"><b>' + gs.temario + '%</b><span>Portfolio</span><small>' + gs.entregables + '% de entregables</small></div>';
 }
@@ -1274,15 +1286,24 @@ function renderCfgSummary() {
     const theory = MODULES.filter(m => m.id !== 'mp0353');
     const lastTheory = s.spans[theory[theory.length - 1].id];
     const ps = s.spans['mp0353'];
-    set('txtSessions', s.usedTheory);
+    set('txtSessions', s.moduleSessions);
     set('txtTheoryEnd', lastTheory ? fmt(lastTheory.end) : '—');
     set('txtPractice', ps ? fmt(ps.start) + ' → ' + fmt(ps.end) : 'sin fechas');
     set('txtEnd', fmt(S.cfg.end));
     set('txtBuffer', s.buffer.length);
   }
   if (!el) return;
+  const dec = n => String(n).replace('.', ',');
+  const gap = s.gap > 0
+    ? ' · <b style="color:var(--warn)">faltan ' + dec(s.gap) + ' h</b> para las ' + dec(s.theoryHours) + ' h (trabajo autónomo o jornada ampliada)'
+    : s.gap < 0
+      ? ' · <b style="color:var(--ok)">sobran ' + dec(-s.gap) + ' h</b> sobre las ' + dec(s.theoryHours) + ' h'
+      : ' · cuadra con las ' + dec(s.theoryHours) + ' h';
   el.innerHTML = s.days.length
-    ? '<b>' + s.days.length + '</b> días lectivos · <b>' + s.usedTheory + '</b> de teoría (incluye PRL y recuperación) + <b>' + s.usedPractice + '</b> de prácticas · <b>' + s.buffer.length + '</b> sin módulo · contenido hasta <b>' + fmt(s.contentEnd) + '</b>'
+    ? '<b>' + s.days.length + '</b> días lectivos · <b>' + s.moduleSessions + '</b> sesiones de módulo (' + dec(s.theoryHours) + ' h) + <b>'
+      + s.centerSessions + '</b> del centro, PRL y recuperación (no suman) + <b>' + s.usedPractice + '</b> de prácticas · <b>'
+      + s.buffer.length + '</b> sin módulo · <b>' + dec(S.cfg.hpd) + ' h/día</b> × ' + s.moduleSessions + ' = <b>'
+      + dec(s.presencial) + ' h</b> presenciales' + gap + ' · contenido hasta <b>' + fmt(s.contentEnd) + '</b>'
     : 'La fecha de inicio debe ser anterior al cierre.';
 }
 
@@ -1516,7 +1537,11 @@ function mdReport() {
   L.push('## Resumen', '');
   L.push('- Temario dominado: **' + gs.temario + '%** (' + gs.doneTopics + '/' + gs.totalTopics + ' temas; «en curso» cuenta 0,5).');
   L.push('- Entregables cerrados: **' + gs.entregables + '%** (' + gs.doneDeliv + '/' + gs.totalDeliv + ').');
-  L.push('- Contenido: ' + s.usedTheory + ' sesiones de teoría (incluye PRL y recuperación) + ' + s.usedPractice + ' de prácticas, hasta ' + fmt(s.contentEnd) + '.');
+  L.push('- Contenido: ' + s.moduleSessions + ' sesiones de módulo (' + s.theoryHours + ' h) + ' + s.centerSessions +
+    ' del centro, PRL y recuperación (no suman) + ' + s.usedPractice + ' de prácticas, hasta ' + fmt(s.contentEnd) + '.');
+  L.push('- Horas presenciales con la jornada configurada: ' + s.moduleSessions + ' × ' + S.cfg.hpd + ' h = ' +
+    s.presencial + ' h' + (s.gap > 0 ? ' (faltan ' + s.gap + ' h de las ' + s.theoryHours + ' h de módulo)'
+      : s.gap < 0 ? ' (sobran ' + (-s.gap) + ' h sobre las ' + s.theoryHours + ' h de módulo)' : ' (cuadra)') + '.');
   s.extra.forEach(b => {
     L.push('- ' + b.code + ': ' + fmt(b.start) + ' → ' + fmt(b.end) + ' (' + b.sessions + ' sesiones · ' + b.note + ').');
   });

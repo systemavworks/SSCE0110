@@ -12,3 +12,9 @@ desktop.ini
 node_modules/
 .venv/
 __pycache__/
+
+# Manual comercial del curso (material de terceros: no se versiona)
+/MF1442_3 muestra.pdf - sample-9002-ocr.pdf
+
+# Solucionario del manual (material de terceros: no se versiona)
+/book-attachment-9222_MF1442_3.pdf

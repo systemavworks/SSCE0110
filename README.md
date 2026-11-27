@@ -48,9 +48,9 @@ sin instalación ni servidor, que guarda tu progreso en el navegador y lo export
 | Centro | CEFI Formación S.L. · Pol. Ind. Los Taranjales II, 58 · Almonte (Huelva) |
 | Aula y horario | Lunes a viernes · 9:00–15:00 · 6 h/día |
 | Inicio | Martes 24 de noviembre de 2026 |
-| Fin de la teoría (340 h) | Jueves 18 de febrero de 2027 · 57 sesiones de aula |
-| Bloque PRL del centro | Del 5 al 11 de febrero de 2027 · 5 sesiones · no suma a las 380 h |
-| Recuperación y evaluación | 23 y 24 de febrero de 2027 · 2 sesiones |
+| Fin de la teoría (340 h) | Jueves 18 de febrero de 2027 · 50 sesiones de módulo (57 de aula con PRL y recuperación) |
+| Bloque PRL del centro | Del 5 al 11 de febrero de 2027 · 5 sesiones · 30 h **fuera** de las 380 h |
+| Recuperación y evaluación | 23 y 24 de febrero de 2027 · 2 sesiones · no suman a las 380 h |
 | Prácticas MP0353 (40 h) | Del 25 de febrero al 12 de marzo de 2027 · 11 sesiones |
 | Cierre oficial | Viernes 12 de marzo de 2027 |
 | Días lectivos | 70 · 68 con módulo asignado + 2 sin asignar (19 y 22 de febrero) |
@@ -65,8 +65,9 @@ sin instalación ni servidor, que guarda tu progreso en el navegador y lo export
 > las sitúa del **25/02 al 12/03/2027**; el lugar y el reparto diario los confirma el centro, y pueden
 > convalidarse si se acredita experiencia docente. En el portfolio aparecen como bloque propio.
 >
-> El bloque **PRL** (5 sesiones, 5–11 de febrero) es una formación complementaria del centro: no forma
-> parte de los módulos del certificado ni de las 380 h. El portfolio lo muestra como bloque separado.
+> El bloque **PRL** (5 sesiones, 5–11 de febrero) es una formación complementaria del centro: **no forma
+> parte de los módulos del certificado ni de las 380 h**. Sus 30 h (5 × 6 h) quedan fuera del cómputo y el
+> portfolio lo muestra como bloque separado. Lo mismo vale para las 2 sesiones de recuperación y evaluación.
 ---
 
 ## Contenido del repositorio
@@ -76,7 +77,7 @@ sin instalación ni servidor, que guarda tu progreso en el navegador y lo export
 | [`index.html`](index.html) | Entrada local | Redirige a `portfolio.html` para abrir el portfolio desde la raíz de la carpeta |
 | [`portfolio.html`](portfolio.html) | Portfolio y seguimiento (single-file) | Calendario, temario con estados, entregables, evidencias, notas y exportación MD/JSON/ICS |
 | [`guia_arranque_SSCE0110.html`](guia_arranque_SSCE0110.html) | Guía de arranque + bitácora | Checklist del día 1, planificador, microclase, glosario, test y bitácora |
-| [`modulo_MF1442_3.html`](modulo_MF1442_3.html) | Ficha del MF1442_3 | Capacidades, criterios, contenidos, ideas clave, autoevaluación de cada unidad, constructor de programación y test |
+| [`modulo_MF1442_3.html`](modulo_MF1442_3.html) | Ficha del MF1442_3 | Capacidades, criterios, contenidos, ideas clave, autoevaluación oficial de cada unidad con guardado en el navegador, constructor de programación, test, impresión e informe PDF con las 40 respuestas y la nota |
 | [`modulos_SSCE0110.html`](modulos_SSCE0110.html) | Índice de fichas | Acceso a los resúmenes de los seis módulos y a sus ventanas de estudio |
 | [`modulo_MF1443_3.html`](modulo_MF1443_3.html) | Ficha del MF1443_3 | Materiales, medios, recursos, Moodle, accesibilidad y test |
 | [`modulo_MF1444_3.html`](modulo_MF1444_3.html) | Ficha del MF1444_3 | Impartición, tutorización, microclase y plan tutorial |
@@ -117,11 +118,15 @@ Solo las tipografías se cargan de Google Fonts (si no hay red, el navegador usa
   pintados por módulo. El README y el portfolio reproducen ese calendario, no una estimación.
 - Son **70 días lectivos** de lunes a viernes entre el 24/11/2026 y el 12/03/2027, ya descontados los
   **9 festivos** de la tabla siguiente.
-- **68 sesiones tienen módulo asignado** (57 de aula + 11 de prácticas) y **2 quedan sin asignar**
-  (viernes 19 y lunes 22 de febrero).
-- Las **340 h teórico-prácticas** caben en las **57 sesiones de aula** (≈6 h por sesión) e incluyen el
-  bloque PRL y las dos sesiones de recuperación. Las **40 h del MP0353** se reparten en 11 sesiones
-  (≈3,6 h por sesión) porque son prácticas, no aula.
+- **68 sesiones tienen bloque asignado**: **50 de módulo** (las 340 h), **5 de PRL**, **2 de recuperación**
+  y **11 de prácticas**; **2 quedan sin asignar** (viernes 19 y lunes 22 de febrero).
+- Las **340 h de los cinco módulos** se reparten en **50 sesiones** (24/11/2026 → 18/02/2027), que son
+  **6,8 h por sesión**. Con la jornada del centro (9:00–15:00, **6 h/día**) salen **300 h presenciales**:
+  las **40 h que faltan** hay que cubrirlas con trabajo autónomo o tutorizado, o ampliando jornada, y es
+  lo primero que conviene confirmar con CEFI. El desajuste es mayor en **MF1443_3** (90 h en 11 sesiones =
+  8,2 h/día). Las **40 h del MP0353** se reparten en 11 sesiones (≈3,6 h por sesión) porque son prácticas.
+- **PRL y recuperación no suman**: son bloques del centro (5 y 2 sesiones, 30 h de PRL) y quedan fuera de
+  las 340 + 40 h del certificado.
 - Los módulos **no se solapan**: cada ventana empieza el día lectivo siguiente al cierre de la anterior.
 - Si CEFI mueve una fecha, actualízala aquí y en el portfolio (*Ajustar calendario* para festivos y
   extremos). Los campos **Inicio real** y **Fin real** de cada tarjeta sirven para anotar lo que pase
@@ -147,8 +152,9 @@ Solo las tipografías se cargan de Google Fonts (si no hay red, el navegador usa
 
 Con estos 9 festivos quedan **70 días lectivos** en la ventana 24/11/2026 → 12/03/2027:
 
-- **57 sesiones de aula** para las 340 h teórico-prácticas (la última: 18/02/2027). Incluyen las 5 de
-  PRL y las 2 de recuperación.
+- **50 sesiones de módulo** para las 340 h (de la primera a la última: 24/11/2026 → 18/02/2027).
+- **5 sesiones de PRL** (05/02 → 11/02, 30 h) y **2 de recuperación** (23 y 24/02): bloques del centro que
+  **no suman** a las 380 h.
 - **11 sesiones** para las 40 h del MP0353 (25/02 → 12/03/2027, sin el 1 de marzo).
 - **2 días sin módulo** (19 y 22 de febrero de 2027), tal y como aparecen en el cronograma.
 
@@ -164,8 +170,9 @@ Con estos 9 festivos quedan **70 días lectivos** en la ventana 24/11/2026 → 1
    *días sin módulo* en el portfolio.
 
 El calendario es **editable** en el portfolio: fechas de inicio y cierre, horas/día y lista de festivos.
-Al pulsar *Aplicar calendario* se recalculan los días lectivos, las ventanas de los módulos y los
-contadores. Las ventanas están ancladas al cronograma de CEFI por número de sesión, así que si añades
+Al pulsar *Aplicar calendario* se recalculan los días lectivos, las ventanas de los módulos, los contadores
+y el **cómputo de horas presenciales** (sesiones de módulo × horas/día) frente a las 340 h del certificado.
+Las ventanas están ancladas al cronograma de CEFI por número de sesión, así que si añades
 un festivo los módulos se desplazan en bloque sin perder el orden.
 
 ## Marco normativo y requisitos del formador
@@ -222,7 +229,7 @@ Abre [`portfolio.html`](portfolio.html) en el navegador. No hay instalación, cu
 | **Calendario** | Timeline de módulos con las fechas oficiales de CEFI, los bloques PRL y recuperación, los días sin módulo y los festivos. Botón *Ir al módulo de hoy* |
 | **Módulos** | Tarjetas con horas, UF, progreso, fechas reales, notas y acciones rápidas |
 | **Temario** | Los 53 temas con tres estados: pendiente, en curso y dominado. Buscador y filtros por módulo |
-| **Entregables** | Checklist de los 33 entregables y un campo de evidencia (URL o ruta) por módulo |
+| **Entregables** | Checklist de los 35 entregables y un campo de evidencia (URL o ruta) por módulo |
 | **Datos** | Exportar Markdown/JSON, importar copia, imprimir y borrar datos locales |
 
 ### Reglas de progreso
@@ -315,7 +322,7 @@ mp0353: añade diario de la primera observación
 - [x] **Marco normativo revisado** con los PDF del BOE (`SS-CE0110_BOE.pdf`) y la lista de legislación del
   centro: requisitos de titulación y experiencia de los formadores, competencia docente y exenciones.
 - [x] **Plantilla de entrega del MF1442_3** en [`MF1442_3/`](MF1442_3/): maquetación de la programación
-  didáctica (`.docx`/`.pdf`, 14 apartados) y presentación demo (`.pptx`/`.pdf`, 15 diapositivas) con las
+  didáctica (`.docx`/`.pdf`, 15 apartados: del 0 al 14) y presentación demo (`.pptx`/`.pdf`, 15 diapositivas) con las
   fechas del cronograma y casillas para rellenar.
 - [x] **Requisitos del formador verificados** en [`formador_RD659_2023.html`](formador_RD659_2023.html):
   art. 168 del RD 659/2023 (tres vías, exenciones y reglas de centro) y el nuevo certificado
@@ -328,7 +335,7 @@ mp0353: añade diario de la primera observación
 
 - [ ] **MF1442_3** (24/11 → 04/12): programación didáctica, matriz de alineación y ficha del grupo.
 - [ ] Completar el temario del MF1442_3 en el portfolio (12 temas, 3 por unidad).
-- [ ] Cerrar los 5 entregables del MF1442_3 y enlazarlos en *Entregables*.
+- [ ] Cerrar los 7 entregables del MF1442_3 y enlazarlos en *Entregables*.
 
 **Pendiente**
 
@@ -339,6 +346,8 @@ mp0353: añade diario de la primera observación
 - [ ] **MF1446_3** (12/02 → 18/02): itinerario de inserción y cuadro de calidad.
 - [ ] **Recuperación** (23 y 24/02): pruebas pendientes y revisión de entregables.
 - [ ] **MP0353** (25/02 → 12/03): confirmar lugar, tutor y reparto diario en enero; diario desde el primer día.
+- [ ] **Confirmar con CEFI** cómo se cubren las **40 h** que no caben en 50 sesiones × 6 h/día (trabajo
+  autónomo, jornada ampliada o parte en línea): afecta sobre todo a MF1443_3 (90 h en 11 sesiones).
 - [x] Crear las fichas de los módulos MF1443_3 a MF1446_3 y del MP0353 (índice + 5 resúmenes originales; sin copiar el manual comercial).
 - [ ] Preparar la carpeta de evidencias con la estructura de arriba.
 - [ ] Simulacro del test final y defensa del portfolio.

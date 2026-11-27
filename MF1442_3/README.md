@@ -40,7 +40,7 @@ Todas las diapositivas siguen la misma rejilla: barra de color a la izquierda, a
 título grande y contenido en tarjetas o tablas. Si necesitas más espacio, **duplica** una diapositiva en
 lugar de reducir el cuerpo de texto.
 
-## Estructura del documento (14 apartados)
+## Estructura del documento (0 a 14)
 
 **0** Cómo usar la plantilla · **1** Datos de la acción formativa · **2** Justificación y contexto ·
 **3** Objetivos y criterios de evaluación · **4** Contenidos y unidades didácticas (reparto de los 22
