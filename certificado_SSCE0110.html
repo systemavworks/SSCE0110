@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSCE0110 · Certificado de profesionalidad · Resumen del BOE</title>
+<meta name="description" content="Resumen amplio del certificado de profesionalidad SSCE0110 Docencia de la formación profesional para el empleo (nivel 3): perfil profesional, módulos formativos, prescripciones de formadores y espacios, y vías de obtención según el BOE.">
+<style>
+  :root {
+    --bg: #fafbfc;
+    --surface: #ffffff;
+    --surface-2: #f4f6f8;
+    --border: #e4e8ec;
+    --text: #1a2332;
+    --text-soft: #5a6676;
+    --text-muted: #8a94a3;
+    --accent: #2563eb;
+    --accent-soft: #dbeafe;
+    --success: #059669;
+    --success-soft: #d1fae5;
+    --warning: #d97706;
+    --warning-soft: #fef3c7;
+    --radius: 10px;
+    --radius-sm: 6px;
+    --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: "SF Mono", Monaco, Consolas, "Courier New", monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- BARRA SUPERIOR ---------- */
+  .top {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(6px);
+  }
+
+  .top-in {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 14px;
+  }
+
+  .brand {
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .top nav { display: flex; gap: 2px; overflow-x: auto; flex: 1 1 260px; scrollbar-width: none; }
+  .top nav::-webkit-scrollbar { display: none; }
+
+  .top nav a {
+    padding: 5px 9px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    color: var(--text-soft);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .top nav a:hover { background: var(--accent-soft); color: var(--accent); }
+
+  /* ---------- CONTENIDO ---------- */
+  main { max-width: 1000px; margin: 0 auto; padding: 32px 20px 56px; }
+
+  .hero {
+    background: linear-gradient(135deg, #eff6ff 0%, #fafbfc 100%);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    margin-bottom: 32px;
+  }
+
+  .tag {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .hero h1 { font-size: clamp(24px, 4.4vw, 32px); line-height: 1.2; margin-bottom: 10px; }
+  .hero p { color: var(--text-soft); max-width: 720px; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-top: 20px; }
+
+  .stat {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+  }
+
+  .stat b { display: block; font-size: 20px; line-height: 1.1; color: var(--accent); }
+  .stat span { font-size: 11.5px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.4px; }
+
+  section { margin-bottom: 36px; scroll-margin-top: 20px; }
+
+  .head {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--border);
+  }
+
+  .num { font-family: var(--mono); font-size: 12px; color: var(--accent); font-weight: 700; }
+
+  h2 { font-size: 20px; line-height: 1.3; }
+  h3 { font-size: 15.5px; margin: 20px 0 8px; }
+  p + p { margin-top: 10px; }
+
+  .lead { color: var(--text-soft); margin-bottom: 14px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card + .card { margin-top: 12px; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+
+  .kv { display: grid; grid-template-columns: minmax(120px, 38%) 1fr; gap: 6px 14px; font-size: 14px; }
+  .kv dt { color: var(--text-muted); font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.4px; padding-top: 2px; }
+  .kv dd { color: var(--text); }
+
+  ul, ol { padding-left: 20px; }
+  li + li { margin-top: 5px; }
+  li { font-size: 14.5px; }
+
+  .tabla { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 12px 0; }
+
+  table { width: 100%; border-collapse: collapse; background: var(--surface); font-size: 14px; }
+  caption { text-align: left; font-size: 12.5px; color: var(--text-muted); padding-bottom: 6px; }
+  th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--surface-2); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.4px; color: var(--text-soft); }
+  td.num-cell { font-family: var(--mono); font-size: 12.5px; white-space: nowrap; }
+  tr.total td { background: var(--surface-2); font-weight: 600; }
+
+  .pill {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 1px 7px;
+    border-radius: 20px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    white-space: nowrap;
+  }
+
+  .pill.ok { background: var(--success-soft); color: var(--success); }
+
+  .callout {
+    border-left: 3px solid var(--accent);
+    background: var(--surface-2);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    font-size: 14px;
+    color: var(--text-soft);
+    margin: 14px 0;
+  }
+
+  .callout.warn { border-left-color: var(--warning); background: var(--warning-soft); color: #6b4b06; }
+  .callout strong { color: var(--text); }
+
+  .uc {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    padding: 14px 16px;
+    margin-bottom: 10px;
+  }
+
+  .uc-head { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; margin-bottom: 6px; }
+  .uc-head b { font-size: 14.5px; }
+  .uc-head .pill { font-size: 11px; }
+  .uc p { font-size: 13.5px; color: var(--text-soft); }
+  .uc ul { margin-top: 8px; }
+  .uc li { font-size: 13.5px; }
+
+  .foot {
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+    padding: 20px;
+    font-size: 13px;
+    color: var(--text-soft);
+  }
+
+  .foot-in { max-width: 1000px; margin: 0 auto; }
+  .foot a { color: var(--accent); }
+
+  code { font-family: var(--mono); font-size: 12.5px; background: var(--surface-2); padding: 1px 5px; border-radius: 4px; }
+
+  @media (max-width: 620px) {
+    main { padding: 20px 14px 44px; }
+    .hero { padding: 20px; }
+    .kv { grid-template-columns: 1fr; gap: 2px; }
+    .kv dd { margin-bottom: 8px; }
+    th, td { padding: 7px 8px; font-size: 13px; }
+    h2 { font-size: 18px; }
+  }
+
+  @media print {
+    .top { display: none; }
+    main { max-width: none; padding: 0; }
+    .hero { background: none; border: 0; padding: 0 0 12px; }
+    .card, .uc { box-shadow: none; break-inside: avoid; page-break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="modulos_SSCE0110.html">SSCE0110 · Certificado</a>
+    <nav aria-label="Secciones del resumen">
+      <a href="#ficha">Ficha</a>
+      <a href="#norma">Norma</a>
+      <a href="#competencia">Competencia</a>
+      <a href="#entorno">Entorno</a>
+      <a href="#estructura">Estructura</a>
+      <a href="#unidades">Unidades</a>
+      <a href="#modulos">Módulos</a>
+      <a href="#formadores">Formadores</a>
+      <a href="#espacios">Espacios</a>
+      <a href="#obtencion">Obtención</a>
+      <a href="#marco">Marco actual</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <span class="tag">Certificado de profesionalidad · Nivel 3</span>
+    <h1>SSCE0110 · Docencia de la formación profesional para el empleo</h1>
+    <p>
+      Resumen amplio del BOE donde se regula el certificado: identificación, competencia general, perfil
+      profesional con sus cinco unidades de competencia, los cinco módulos formativos y el de prácticas,
+      las prescripciones de formadores y espacios, y las vías para obtenerlo.
+    </p>
+    <div class="stats">
+      <div class="stat"><b>380 h</b><span>Formación asociada</span></div>
+      <div class="stat"><b>5 UC</b><span>Unidades de competencia</span></div>
+      <div class="stat"><b>5 MF + MP</b><span>Módulos formativos</span></div>
+      <div class="stat"><b>Nivel 3</b><span>CNCP</span></div>
+    </div>
+  </div>
+
+  <section id="ficha">
+    <div class="head"><span class="num">01</span><h2>Ficha del certificado</h2></div>
+    <div class="card">
+      <dl class="kv">
+        <dt>Denominación</dt><dd>Docencia de la formación profesional para el empleo</dd>
+        <dt>Código</dt><dd><strong>SSCE0110</strong></dd>
+        <dt>Familia profesional</dt><dd>Servicios Socioculturales y a la Comunidad</dd>
+        <dt>Área profesional</dt><dd>Formación y Educación</dd>
+        <dt>Nivel de cualificación</dt><dd>3 (CNCP)</dd>
+        <dt>Cualificación de referencia</dt><dd>SSC448_3 <em>Docencia de la formación para el empleo</em> (RD 1096/2011)</dd>
+        <dt>Duración</dt><dd><strong>380 horas</strong></dd>
+        <dt>Norma que lo regula</dt><dd>
+          Real Decreto 625/2013, de 2 de agosto (BOE núm. 224, 18/09/2013), que actualiza el
+          certificado establecido como <strong>anexo IV del RD 1697/2011</strong> (BOE núm. 309, 24/12/2011),
+          donde se publicó su texto completo.
+        </dd>
+        <dt>Efectos</dt><dd>
+          Carácter oficial y validez en todo el territorio nacional. No constituye una regulación
+          del ejercicio profesional (art. 1 del RD 625/2013).
+        </dd>
+        <dt>Estructura</dt><dd>
+          I. Identificación · II. Perfil profesional · III. Formación · IV. Prescripciones de los
+          formadores · V. Requisitos mínimos de espacios, instalaciones y equipamiento (art. 3).
+        </dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="norma">
+    <div class="head"><span class="num">02</span><h2>Qué regula el BOE del PDF</h2></div>
+    <p class="lead">
+      El archivo <code>SS-CE0110_BOE.pdf</code> contiene dos normas encadenadas: el real decreto que
+      <strong>crea</strong> certificados de la familia y <strong>actualiza</strong> el del SSCE0110, y el
+      anexo con el texto completo del certificado.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3 style="margin-top: 0;">Real Decreto 625/2013 (18/09/2013)</h3>
+        <ul>
+          <li>Establece <strong>cuatro certificados</strong> de Servicios Socioculturales y a la Comunidad
+            (anexos I a IV): promoción e intervención socioeducativa con personas con discapacidad;
+            mediación entre la persona sordociega y la comunidad; atención al alumnado con necesidades
+            educativas especiales (ACNEE); promoción y participación de la comunidad sorda.</li>
+          <li><strong>Actualiza</strong> certificados de tres reales decretos anteriores, entre ellos el
+            <strong>anexo IV del RD 1697/2011: SSCE0110</strong>.</li>
+          <li>Fija la estructura común de los certificados (identificación, perfil, formación,
+            prescripciones de formadores y espacios).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="margin-top: 0;">Anexo del certificado (texto de 2011)</h3>
+        <ul>
+          <li>El PDF reproduce el <strong>anexo IV del RD 1697/2011</strong> (páginas del BOE de 24/12/2011):
+            perfil profesional, formación y prescripciones del SSCE0110.</li>
+          <li>La <strong>disposición final segunda</strong> del RD 625/2013 sustituye la tabla del apartado IV
+            («Prescripción de los formadores») por la nueva de 2013.</li>
+          <li>Por eso conviven dos tablas de formadores en el documento: la del anexo (2011) y la vigente (2013).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout warn">
+      <strong>Ojo al citar la norma.</strong> El contenido del certificado (perfil, módulos, duraciones) es el
+      del anexo de 2011; las <strong>prescripciones de formadores</strong> que están en vigor son las de la tabla
+      de 2013 (1 año de experiencia, frente a los 3 y 2 años de la tabla original).
+    </div>
+  </section>
+
+  <section id="competencia">
+    <div class="head"><span class="num">03</span><h2>Competencia general</h2></div>
+    <div class="card">
+      <p>
+        Programar, impartir, tutorizar y evaluar acciones formativas del subsistema de formación profesional
+        para el empleo, elaborando y utilizando materiales, medios y recursos didácticos, orientando sobre los
+        itinerarios formativos y salidas profesionales que ofrece el mercado laboral en su especialidad,
+        promoviendo de forma permanente la calidad de la formación y la actualización didáctica.
+      </p>
+    </div>
+  </section>
+
+  <section id="entorno">
+    <div class="head"><span class="num">04</span><h2>Entorno profesional</h2></div>
+
+    <div class="grid">
+      <div class="card">
+        <h3 style="margin-top: 0;">Ámbito profesional</h3>
+        <p>
+          Actividad en el ámbito público y privado, en centros o entidades que impartan formación
+          profesional para el empleo a trabajadores en activo, personas desempleadas y colectivos
+          especiales. El desempeño se desarrolla en empresas y entidades públicas o privadas que
+          impartan formación por cuenta propia o ajena, aplicando los principios de
+          <strong>accesibilidad universal</strong>.
+        </p>
+      </div>
+      <div class="card">
+        <h3 style="margin-top: 0;">Sectores productivos</h3>
+        <p>
+          Presente en <strong>todos los sectores productivos</strong>, en las áreas de formación
+          profesional para el empleo: formación de oferta programada por las administraciones,
+          formación de demanda y formación en alternancia con el empleo, además de acciones de
+          acompañamiento y apoyo a la formación y de las enseñanzas no formales.
+        </p>
+      </div>
+    </div>
+
+    <h3>Ocupaciones y puestos de trabajo relacionados</h3>
+    <div class="tabla">
+      <table>
+        <thead>
+          <tr><th>Código</th><th>Ocupación</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="num-cell">2329.1010</td><td>Formador de formación no reglada</td></tr>
+          <tr><td class="num-cell">2329.1029</td><td>Formador de formación ocupacional no reglada</td></tr>
+          <tr><td class="num-cell">2329.1029</td><td>Formador ocupacional</td></tr>
+          <tr><td class="num-cell">2329.1029</td><td>Formador para el empleo</td></tr>
+          <tr><td class="num-cell">2321.1034</td><td>Formador de formadores</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="estructura">
+    <div class="head"><span class="num">05</span><h2>Estructura formativa: de la competencia al módulo</h2></div>
+    <p class="lead">
+      Cada unidad de competencia tiene un módulo formativo asociado; el módulo de prácticas cierra la
+      formación. Las unidades formativas (UF) son divisiones internas de un módulo y no suman horas aparte.
+    </p>
+
+    <div class="tabla">
+      <table>
+        <caption>Relación entre unidades de competencia, módulos y duración (380 h)</caption>
+        <thead>
+          <tr><th>Unidad de competencia</th><th>Módulo formativo</th><th>Horas</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="pill">UC1442_3</span> Programar acciones formativas</td>
+            <td>MF1442_3 · Programación didáctica de acciones formativas para el empleo</td>
+            <td class="num-cell">60</td>
+          </tr>
+          <tr>
+            <td><span class="pill">UC1443_3</span> Seleccionar, elaborar, adaptar y utilizar materiales, medios y recursos didácticos</td>
+            <td>MF1443_3 · Selección, elaboración, adaptación y utilización de materiales, medios y recursos didácticos en formación profesional para el empleo</td>
+            <td class="num-cell">90</td>
+          </tr>
+          <tr>
+            <td><span class="pill">UC1444_3</span> Impartir y tutorizar acciones formativas</td>
+            <td>
+              MF1444_3 · Impartición y tutorización de acciones formativas para el empleo
+              <div style="font-size: 12.5px; color: var(--text-muted); margin-top: 4px;">
+                UF1645 Impartición (70 h) + UF1646 Tutorización (30 h)
+              </div>
+            </td>
+            <td class="num-cell">100</td>
+          </tr>
+          <tr>
+            <td><span class="pill">UC1445_3</span> Evaluar el proceso de enseñanza-aprendizaje</td>
+            <td>MF1445_3 · Evaluación del proceso de enseñanza-aprendizaje en formación profesional para el empleo</td>
+            <td class="num-cell">60</td>
+          </tr>
+          <tr>
+            <td><span class="pill">UC1446_3</span> Facilitar información y orientación laboral y promover la calidad</td>
+            <td>MF1446_3 · Orientación laboral y promoción de la calidad en la formación profesional para el empleo</td>
+            <td class="num-cell">30</td>
+          </tr>
+          <tr>
+            <td>— (módulo de prácticas)</td>
+            <td>MP0353 · Prácticas profesionales no laborales de Docencia en la formación para el empleo</td>
+            <td class="num-cell">40</td>
+          </tr>
+          <tr class="total">
+            <td colspan="2">Total de la formación asociada</td>
+            <td class="num-cell">380</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <strong>Lectura rápida:</strong> 5 unidades de competencia → 5 módulos formativos (uno por UC) +
+      1 módulo de prácticas no laborales. El peso mayor está en la impartición y tutorización (100 h) y en
+      los materiales didácticos (90 h).
+    </div>
+  </section>
+
+  <section id="unidades">
+    <div class="head"><span class="num">06</span><h2>Perfil profesional: las cinco unidades de competencia</h2></div>
+    <p class="lead">
+      Cada unidad de competencia se desglosa en <strong>realizaciones profesionales</strong> (RP) y, dentro
+      de cada una, en criterios de realización. Estas son las 18 realizaciones del certificado.
+    </p>
+
+    <div class="uc">
+      <div class="uc-head">
+        <span class="pill">UC1442_3</span>
+        <b>Programar acciones formativas para el empleo</b>
+      </div>
+      <p>Adecuándolas a las características y condiciones de la formación, al perfil de los destinatarios y a la realidad laboral.</p>
+      <ul>
+        <li><strong>RP1.</strong> Analizar la normativa de formación profesional para el empleo que determina el tipo de acción formativa.</li>
+        <li><strong>RP2.</strong> Coordinar con el resto del equipo la formación técnica y profesional de la acción.</li>
+        <li><strong>RP3.</strong> Elaborar programaciones didácticas con todos sus elementos (objetivos, contenidos, actividades, metodología, recursos, temporalización y evaluación).</li>
+        <li><strong>RP4.</strong> Elaborar planificaciones temporalizadas de las sesiones, secuenciando contenidos y actividades.</li>
+      </ul>
+    </div>
+
+    <div class="uc">
+      <div class="uc-head">
+        <span class="pill">UC1443_3</span>
+        <b>Seleccionar, elaborar, adaptar y utilizar materiales, medios y recursos didácticos</b>
+      </div>
+      <p>Para el desarrollo de contenidos formativos, en cualquier modalidad de impartición.</p>
+      <ul>
+        <li><strong>RP1.</strong> Seleccionar materiales y recursos en función de los objetivos de aprendizaje y de la modalidad formativa.</li>
+        <li><strong>RP2.</strong> Elaborar y adaptar materiales con criterios técnicos y metodológicos que favorezcan la impartición.</li>
+        <li><strong>RP3.</strong> Utilizar los materiales y recursos adecuándolos al contexto y a las características del alumnado.</li>
+      </ul>
+    </div>
+
+    <div class="uc">
+      <div class="uc-head">
+        <span class="pill">UC1444_3</span>
+        <b>Impartir y tutorizar acciones formativas para el empleo</b>
+      </div>
+      <p>Utilizando técnicas, estrategias y recursos didácticos; es la unidad de mayor peso horario (100 h).</p>
+      <ul>
+        <li><strong>RP1.</strong> Establecer condiciones que favorezcan el desarrollo del proceso de aprendizaje.</li>
+        <li><strong>RP2.</strong> Impartir contenidos combinando técnicas, estrategias didácticas, recursos y materiales.</li>
+        <li><strong>RP3.</strong> Proponer, dinamizar y supervisar actividades con metodologías activas que desarrollen competencias profesionales.</li>
+        <li><strong>RP4.</strong> Asesorar al alumnado en estrategias de aprendizaje y uso de fuentes de información.</li>
+      </ul>
+    </div>
+
+    <div class="uc">
+      <div class="uc-head">
+        <span class="pill">UC1445_3</span>
+        <b>Evaluar el proceso de enseñanza-aprendizaje</b>
+      </div>
+      <p>En las acciones formativas para el empleo, en los tres momentos del proceso.</p>
+      <ul>
+        <li><strong>RP1.</strong> Realizar un diagnóstico inicial elaborando y aplicando instrumentos de evaluación.</li>
+        <li><strong>RP2.</strong> Comprobar durante el desarrollo y al final el nivel de adquisición de competencias.</li>
+        <li><strong>RP3.</strong> Realizar una evaluación final que permita modificar lo que sea necesario en la programación.</li>
+      </ul>
+    </div>
+
+    <div class="uc">
+      <div class="uc-head">
+        <span class="pill">UC1446_3</span>
+        <b>Facilitar información y orientación laboral y promover la calidad</b>
+      </div>
+      <p>De la formación profesional para el empleo, vinculando la acción formativa con el mercado de trabajo.</p>
+      <ul>
+        <li><strong>RP1.</strong> Recabar información sobre la realidad laboral y el contexto profesional para transmitir oportunidades reales de empleo.</li>
+        <li><strong>RP2.</strong> Potenciar el protagonismo activo y la responsabilidad del alumnado según sus competencias personales y técnicas.</li>
+        <li><strong>RP3.</strong> Informar y asesorar sobre itinerarios formativos y salidas profesionales de la especialidad.</li>
+        <li><strong>RP4.</strong> Identificar estrategias de mejora de la calidad de los procesos formativos.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="modulos">
+    <div class="head"><span class="num">07</span><h2>Formación del certificado: módulos y capacidades</h2></div>
+    <p class="lead">
+      Cada módulo define sus <strong>capacidades</strong> (C) con sus criterios de evaluación (CE), sus
+      contenidos y sus orientaciones metodológicas. Estas son las capacidades que fija el BOE.
+    </p>
+
+    <div class="card">
+      <div class="uc-head">
+        <span class="pill">MF1442_3</span><span class="pill ok">60 h</span>
+        <b>Programación didáctica de acciones formativas para el empleo</b>
+      </div>
+      <p class="lead" style="font-size: 13.5px;">Asociado a UC1442_3. Planificación del curso completo y de cada sesión.</p>
+      <ul>
+        <li><strong>C1.</strong> Analizar la normativa sobre formación profesional para el empleo en sus modalidades de impartición.</li>
+        <li><strong>C2.</strong> Establecer pautas de coordinación metodológica adaptadas a la modalidad formativa.</li>
+        <li><strong>C3.</strong> Elaborar la programación didáctica de una acción formativa según modalidad y destinatarios.</li>
+        <li><strong>C4.</strong> Elaborar la programación temporalizada de las unidades didácticas, secuenciando contenidos y actividades.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="uc-head">
+        <span class="pill">MF1443_3</span><span class="pill ok">90 h</span>
+        <b>Selección, elaboración, adaptación y utilización de materiales, medios y recursos didácticos</b>
+      </div>
+      <p class="lead" style="font-size: 13.5px;">Asociado a UC1443_3. Material gráfico, audiovisual y multimedia.</p>
+      <ul>
+        <li><strong>C1.</strong> Seleccionar, adaptar y elaborar materiales gráficos en distintos tipos de soporte.</li>
+        <li><strong>C2.</strong> Utilizar medios y recursos gráficos atendiendo a criterios metodológicos y de accesibilidad.</li>
+        <li><strong>C3.</strong> Seleccionar, adaptar y elaborar material audiovisual y multimedia.</li>
+        <li><strong>C4.</strong> Utilizar medios y recursos audiovisuales y multimedia según la modalidad formativa.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="uc-head">
+        <span class="pill">MF1444_3</span><span class="pill ok">100 h</span>
+        <b>Impartición y tutorización de acciones formativas para el empleo</b>
+      </div>
+      <p class="lead" style="font-size: 13.5px;">Asociado a UC1444_3. Se divide en dos unidades formativas.</p>
+      <p style="font-size: 13.5px;"><strong>UF1645 · Impartición (70 h)</strong></p>
+      <ul>
+        <li><strong>C1.</strong> Definir estrategias que faciliten el aprendizaje de personas adultas.</li>
+        <li><strong>C2.</strong> Promover la motivación y la participación activa del alumnado.</li>
+        <li><strong>C3.</strong> Usar técnicas de comunicación aplicables y adaptadas a la acción formativa.</li>
+        <li><strong>C4.</strong> Aplicar las habilidades docentes necesarias para desarrollar la impartición.</li>
+      </ul>
+      <p style="font-size: 13.5px; margin-top: 10px;"><strong>UF1646 · Tutorización (30 h)</strong></p>
+      <ul>
+        <li><strong>C1.</strong> Proporcionar habilidades y estrategias personalizadas de mejora al alumnado.</li>
+        <li><strong>C2.</strong> Proporcionar estrategias y habilidades para favorecer el aprendizaje en la tutorización.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="uc-head">
+        <span class="pill">MF1445_3</span><span class="pill ok">60 h</span>
+        <b>Evaluación del proceso de enseñanza-aprendizaje</b>
+      </div>
+      <p class="lead" style="font-size: 13.5px;">Asociado a UC1445_3. Evaluación inicial, continua y final.</p>
+      <ul>
+        <li><strong>C1.</strong> Analizar los principios fundamentales de la evaluación y sus formas según finalidad y medios.</li>
+        <li><strong>C2.</strong> Elaborar pruebas de evaluación teórica con orientaciones para su aplicación.</li>
+        <li><strong>C3.</strong> Elaborar pruebas prácticas para ambas modalidades de impartición.</li>
+        <li><strong>C4.</strong> Analizar la información del proceso formativo para modificar la programación.</li>
+        <li><strong>C5.</strong> Efectuar la evaluación de las tareas y actividades presentadas por el alumnado.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="uc-head">
+        <span class="pill">MF1446_3</span><span class="pill ok">30 h</span>
+        <b>Orientación laboral y promoción de la calidad</b>
+      </div>
+      <p class="lead" style="font-size: 13.5px;">Asociado a UC1446_3. Mercado de trabajo, itinerarios y mejora continua.</p>
+      <ul>
+        <li><strong>C1.</strong> Orientar en la identificación de la realidad laboral del alumnado.</li>
+        <li><strong>C2.</strong> Fomentar procedimientos y estrategias de búsqueda y actualización de la información.</li>
+        <li><strong>C3.</strong> Aplicar estrategias y herramientas de búsqueda de empleo.</li>
+        <li><strong>C4.</strong> Analizar mecanismos que garanticen la calidad de las acciones formativas.</li>
+        <li><strong>C5.</strong> Diseñar procedimientos y estrategias de innovación y actualización profesional.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="uc-head">
+        <span class="pill">MP0353</span><span class="pill ok">40 h</span>
+        <b>Prácticas profesionales no laborales</b>
+      </div>
+      <p class="lead" style="font-size: 13.5px;">
+        Cierra la formación, sin relación laboral; se desarrolla en un centro de trabajo con tutor y evaluación.
+      </p>
+      <ul>
+        <li><strong>C1.</strong> Elaborar y/o adaptar la programación didáctica e instrumentos de evaluación de una acción formativa.</li>
+        <li><strong>C2.</strong> Impartir sesiones formativas aportando estrategias de mejora del aprendizaje.</li>
+        <li><strong>C3.</strong> Participar en los procesos de trabajo de la empresa siguiendo sus normas y criterios de calidad.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="formadores">
+    <div class="head"><span class="num">08</span><h2>Prescripciones de los formadores</h2></div>
+
+    <p class="lead">
+      Se exigen tanto en la modalidad presencial como en teleformación (art. 5.1). Son dos cosas distintas:
+      la <strong>competencia docente</strong> (art. 5.3) y la <strong>acreditación y experiencia</strong> de cada
+      módulo (apartado IV del certificado).
+    </p>
+
+    <h3>1. Competencia docente</h3>
+    <div class="card">
+      <p>
+        Para acreditar la competencia docente hay que estar en posesión del certificado de
+        <strong>Formador ocupacional</strong> o del de <strong>Docencia de la formación profesional para el
+        empleo</strong> (SSCE0110). La formación en metodología didáctica de formación profesional para adultos
+        obtenida hasta el 31/12/2013 se considera equivalente.
+      </p>
+      <p style="margin-top: 10px;">Están exentos:</p>
+      <ul>
+        <li><strong>a)</strong> Licenciatura en Pedagogía, Psicopedagogía o Maestro en cualquiera de sus
+          especialidades; grado en el ámbito de la Psicología o de la Pedagogía; o posgrado oficial en esos ámbitos.</li>
+        <li><strong>b)</strong> Otra titulación universitaria oficial más el Certificado de Aptitud Pedagógica
+          (CAP), los títulos de Especialización Didáctica y Certificado de Cualificación Pedagógica, el Máster
+          habilitante para ESO, bachillerato y FP, o un curso equivalente de formación pedagógica y didáctica.</li>
+        <li><strong>c)</strong> Experiencia docente contrastada de al menos <strong>600 horas</strong> en los
+          últimos <strong>siete años</strong> en formación profesional para el empleo o del sistema educativo.</li>
+      </ul>
+    </div>
+
+    <h3>2. Acreditación y experiencia por módulo</h3>
+    <div class="callout warn">
+      <strong>Hay dos tablas en el documento.</strong> La del anexo (2011) y la que la sustituye en 2013
+      (disposición final segunda del RD 625/2013). La vigente es la de 2013.
+    </div>
+    <div class="tabla">
+      <table>
+        <caption>Tabla vigente (2013): acreditación y experiencia por módulo</caption>
+        <thead>
+          <tr><th>Módulo</th><th>Acreditación requerida</th><th>Experiencia</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MF1442_3</td><td rowspan="5">
+            Licenciatura o grado correspondiente u otros títulos equivalentes,
+            <em>o</em> máster universitario de Formación de Formadores superior a 600 horas
+          </td><td>1 año</td></tr>
+          <tr><td>MF1443_3</td><td>1 año</td></tr>
+          <tr><td>MF1444_3</td><td>1 año</td></tr>
+          <tr><td>MF1445_3</td><td>1 año</td></tr>
+          <tr><td>MF1446_3</td><td>1 año</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size: 13px; color: var(--text-muted);">
+      La tabla del anexo de 2011 pedía las licenciaturas de Psicología, Pedagogía o Psicopedagogía (o el máster
+      de Formación de Formadores de más de 600 h) y <strong>3 años</strong> de experiencia profesional en el
+      ámbito de la unidad de competencia —<strong>2 años</strong> en MF1443_3 y MF1446_3—. Esa exigencia quedó
+      sustituida por la de 2013.
+    </p>
+
+    <h3>3. Otras reglas</h3>
+    <ul>
+      <li><strong>Expertos (art. 5.2):</strong> pueden contratarse profesionales cualificados con experiencia
+        profesional en el ámbito de la unidad de competencia para módulos concretos, conforme al art. 13.3 del
+        RD 34/2008.</li>
+      <li><strong>Teleformación (art. 5.4):</strong> los tutores-formadores deben cumplir además el art. 13.4
+        del RD 34/2008.</li>
+      <li><strong>Centros (art. 8):</strong> los centros y entidades que impartan la formación deben cumplir lo
+        establecido en el RD 34/2008.</li>
+    </ul>
+  </section>
+
+  <section id="espacios">
+    <div class="head"><span class="num">09</span><h2>Espacios, instalaciones y equipamiento</h2></div>
+
+    <div class="tabla">
+      <table>
+        <caption>Requisitos mínimos (apartado V del certificado)</caption>
+        <thead>
+          <tr><th>Espacio formativo</th><th>15 alumnos</th><th>25 alumnos</th><th>Módulos</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Aula técnica</td><td class="num-cell">45 m²</td><td class="num-cell">60 m²</td><td>M1 a M5</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top: 0;">Equipamiento del aula técnica</h3>
+      <ul>
+        <li>Ordenadores instalados en red con conexión a Internet.</li>
+        <li>Software ofimático, herramientas de Internet y software específico de la especialidad.</li>
+        <li>Equipos audiovisuales, cámara de vídeo con conexiones y trípode, y cañón de proyección.</li>
+        <li>Rotafolios, pizarra y material de aula.</li>
+        <li>Mesa y silla para el formador y para el alumnado.</li>
+      </ul>
+    </div>
+
+    <div class="callout">
+      <strong>Notas del BOE:</strong> los espacios no tienen que estar separados por cerramientos; las
+      instalaciones deben cumplir la normativa industrial e higiénico-sanitaria y las medidas de accesibilidad
+      universal y seguridad. El equipamiento se dimensiona para un mínimo de 15 alumnos y se amplía si hay más.
+      Si la formación se dirige a personas con discapacidad, se harán las adaptaciones y ajustes razonables.
+    </div>
+  </section>
+
+  <section id="obtencion">
+    <div class="head"><span class="num">10</span><h2>Cómo se obtiene el certificado</h2></div>
+
+    <p class="lead">
+      El BOE fija el <strong>contenido</strong> del certificado y su carácter oficial; el
+      <strong>procedimiento</strong> de acceso, expedición y acreditación se rige por el
+      <strong>RD 34/2008</strong>, al que el propio real decreto remite (arts. 4, 5, 7 y 8).
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3 style="margin-top: 0;">Vía formativa</h3>
+        <p>
+          Superar la formación asociada: <strong>380 h</strong> repartidas en los cinco módulos formativos y
+          el módulo de prácticas profesionales no laborales (40 h), con evaluación positiva en todos ellos.
+        </p>
+      </div>
+      <div class="card">
+        <h3 style="margin-top: 0;">Acreditación de competencias</h3>
+        <p>
+          Acreditar las unidades de competencia por experiencia laboral o por vías no formales, mediante el
+          procedimiento de reconocimiento y acreditación previsto en el RD 34/2008.
+        </p>
+      </div>
+      <div class="card">
+        <h3 style="margin-top: 0;">Vía mixta</h3>
+        <p>
+          Combinar unidades acreditadas por experiencia con la formación de los módulos que falten, hasta
+          completar las cinco unidades de competencia.
+        </p>
+      </div>
+    </div>
+
+    <h3>Reglas que sí fija este BOE</h3>
+    <ul>
+      <li><strong>Requisitos de acceso a la formación:</strong> los del RD 34/2008, artículos 5.5.c) y 20
+        (art. 4). Para el nivel 3 se exige titulación de bachillerato o equivalente, o superar la prueba de
+        acceso, en los términos de esa norma.</li>
+      <li><strong>Expedición:</strong> corresponde a la administración laboral competente (SEPE o comunidad
+        autónoma) y el certificado tiene carácter oficial y validez en todo el territorio nacional (art. 1).</li>
+      <li><strong>Correspondencia con títulos de FP (art. 9):</strong> las unidades de competencia acreditadas
+        al superar módulos profesionales de un título de FP eximen del módulo formativo asociado del
+        certificado.</li>
+      <li><strong>Teleformación (art. 7):</strong> los módulos pueden ofertarse en su totalidad o en parte en
+        línea, combinados con formación presencial, en los términos del RD 34/2008.</li>
+      <li><strong>Módulo de prácticas:</strong> se puede solicitar exención conforme al RD 34/2008; el módulo
+        no supone relación laboral.</li>
+    </ul>
+  </section>
+
+  <section id="marco">
+    <div class="head"><span class="num">11</span><h2>Marco actual y avisos de vigencia</h2></div>
+
+    <div class="callout warn">
+      <strong>El BOE del PDF es de 2011 y 2013.</strong> El contenido del certificado sigue siendo la
+      referencia, pero la ordenación de la formación profesional cambió con la <strong>LO 3/2022</strong> y el
+      <strong>RD 659/2023</strong>: los certificados de profesionalidad se integran como
+      <strong>certificados profesionales (grado C)</strong>, con cinco grados de oferta (A–E) y tres niveles de
+      competencia, y con formación en empresa obligatoria en los grados C y D.
+    </div>
+
+    <ul>
+      <li>Al preparar la programación de una acción formativa, contrasta duraciones, modalidades y requisitos
+        con la convocatoria concreta: la norma de 2011 no incorpora los cambios de la LO 3/2022.</li>
+      <li>La <strong>competencia docente</strong> y las prescripciones de formadores se comprueban en la
+        convocatoria y en el registro de especialidades del centro.</li>
+      <li>El detalle del marco vigente está en la guía
+        <a href="formador_RD659_2023.html">Formador · RD 659/2023</a> de este portfolio.</li>
+    </ul>
+
+    <div class="card">
+      <h3 style="margin-top: 0;">Para seguir estudiando</h3>
+      <ul>
+        <li><a href="modulo_MF1442_3.html">MF1442_3 · Programación didáctica</a> (con las 40 preguntas del solucionario, examen y PDF).</li>
+        <li><a href="modulo_MF1443_3.html">MF1443_3 · Materiales, medios y recursos</a>.</li>
+        <li><a href="modulo_MF1444_3.html">MF1444_3 · Impartición y tutorización</a>.</li>
+        <li><a href="modulo_MF1445_3.html">MF1445_3 · Evaluación del aprendizaje</a>.</li>
+        <li><a href="modulo_MF1446_3.html">MF1446_3 · Orientación laboral y calidad</a>.</li>
+        <li><a href="modulo_MP0353.html">MP0353 · Prácticas profesionales no laborales</a>.</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <p>
+      Resumen elaborado a partir de <code>SS-CE0110_BOE.pdf</code>: Real Decreto 625/2013 (BOE núm. 224, de
+      18/09/2013), que actualiza el certificado publicado como anexo IV del Real Decreto 1697/2011
+      (BOE núm. 309, de 24/12/2011). Documento de estudio: no sustituye el texto oficial del BOE.
+    </p>
+    <p style="margin-top: 8px;">
+      <a href="modulos_SSCE0110.html">Índice de fichas</a> ·
+      <a href="modulo_MF1442_3.html">MF1442_3</a> ·
+      <a href="modulo_MF1443_3.html">MF1443_3</a> ·
+      <a href="modulo_MF1444_3.html">MF1444_3</a> ·
+      <a href="modulo_MF1445_3.html">MF1445_3</a> ·
+      <a href="modulo_MF1446_3.html">MF1446_3</a> ·
+      <a href="modulo_MP0353.html">MP0353</a> ·
+      <a href="portfolio.html">Portfolio</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

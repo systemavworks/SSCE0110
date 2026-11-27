@@ -79,6 +79,7 @@ sin instalación ni servidor, que guarda tu progreso en el navegador y lo export
 | [`guia_arranque_SSCE0110.html`](guia_arranque_SSCE0110.html) | Guía de arranque + bitácora | Checklist del día 1, planificador, microclase, glosario, test y bitácora |
 | [`modulo_MF1442_3.html`](modulo_MF1442_3.html) | Ficha del MF1442_3 | Capacidades, criterios, contenidos, ideas clave, autoevaluación oficial de cada unidad con guardado en el navegador, constructor de programación, examen final simulado con preguntas al azar, impresión e informe PDF con las 40 respuestas y la nota, y exportación de copia autónoma y respaldo de datos |
 | [`modulos_SSCE0110.html`](modulos_SSCE0110.html) | Índice de fichas | Acceso a los resúmenes de los seis módulos y a sus ventanas de estudio |
+| [`certificado_SSCE0110.html`](certificado_SSCE0110.html) | Resumen del certificado | BOE (RD 625/2013 y anexo del RD 1697/2011): competencia general, 5 unidades de competencia, módulos y 380 h, prescripciones de formadores y espacios, y vías de obtención |
 | [`modulo_MF1443_3.html`](modulo_MF1443_3.html) | Ficha del MF1443_3 | Materiales, medios, recursos, Moodle, accesibilidad y test |
 | [`modulo_MF1444_3.html`](modulo_MF1444_3.html) | Ficha del MF1444_3 | Impartición, tutorización, microclase y plan tutorial |
 | [`modulo_MF1445_3.html`](modulo_MF1445_3.html) | Ficha del MF1445_3 | Evaluación, pruebas, rúbricas, análisis y mejora |
