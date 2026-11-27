@@ -907,6 +907,13 @@
     color: var(--accent);
   }
 
+  .auto-src {
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--text-muted);
+  }
+
   .auto-progress {
     font-size: 12px;
     color: var(--text-soft);
@@ -1051,6 +1058,199 @@
     .alineacion-item::after { display: none; }
   }
 
+  /* ---------- PANEL DE RESULTADOS ---------- */
+  .panel { display: grid; gap: 16px; }
+
+  .panel-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .panel-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px 14px;
+    padding: 10px 14px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+  }
+
+  .progreso-total { font-family: var(--mono); font-size: 13px; color: var(--accent); }
+
+  .panel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+  }
+
+  .panel-metric {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+  }
+
+  .panel-metric-value {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1.1;
+  }
+
+  .panel-metric-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    margin-top: 3px;
+  }
+
+  .panel-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+
+  .panel-field label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .panel-field input[type="text"] {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    font: inherit;
+    font-size: 14px;
+  }
+
+  .panel-field input[type="text"]:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+
+  .panel-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13.5px;
+    color: var(--text-soft);
+  }
+
+  .storage-state { font-size: 12.5px; color: var(--text-muted); }
+  .storage-state.off { color: var(--warning); font-weight: 500; }
+
+  /* ---------- INFORME (vista de impresión / PDF) ---------- */
+  #informe { display: none; }
+
+  body.informe-mode #informe { display: block; }
+
+  body.informe-mode .nav,
+  body.informe-mode .main > :not(#informe) { display: none !important; }
+
+  .informe-head {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+  }
+
+  .informe-title { font-size: 22px; font-weight: 700; line-height: 1.25; }
+  .informe-sub { font-size: 12.5px; color: var(--text-soft); margin-top: 4px; }
+
+  .informe-resumen {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 14px 0 18px;
+  }
+
+  .informe-box {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 8px 10px;
+    background: var(--surface-2);
+  }
+
+  .informe-box-value { font-size: 18px; font-weight: 700; color: var(--accent); line-height: 1.1; }
+  .informe-box-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.4px; color: var(--text-muted); }
+
+  .informe-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    margin-bottom: 14px;
+  }
+
+  .informe-table th,
+  .informe-table td {
+    border: 1px solid var(--border);
+    padding: 5px 7px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .informe-table th {
+    background: var(--surface-2);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+
+  .informe-table td.num { width: 44px; font-family: var(--mono); font-size: 10px; }
+  .informe-table td.ok { color: var(--success); font-weight: 700; text-align: center; }
+  .informe-table td.ko { color: var(--danger); font-weight: 700; text-align: center; }
+  .informe-table td.na { color: var(--text-muted); text-align: center; }
+
+  .informe-clave {
+    margin-top: 3px;
+    font-size: 10px;
+    color: var(--text-soft);
+  }
+
+  .informe-ud-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 16px 0 6px;
+  }
+
+  .informe-pie {
+    margin-top: 16px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    font-size: 10.5px;
+    color: var(--text-soft);
+  }
+
+  /* ---------- IMPRESIÓN ---------- */
+  @media print {
+    html { scroll-behavior: auto; scroll-padding-top: 0; }
+    body {
+      background: #fff;
+      font-size: 11pt;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .nav, .no-print, .btn-group, .vocab-search, .auto-head .auto-progress { display: none !important; }
+    .main { margin: 0; padding: 0; max-width: none; }
+    section { margin-bottom: 22px; }
+    .hero { padding: 18px 0; border: 0; background: none; }
+    .unidad, .callout, .auto-q, .test-question, .capacidad, .informe-table tr {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .auto, .test-container { border-color: #d5d9de; }
+    a { color: inherit; text-decoration: none; }
+    .informe-table { font-size: 9.5pt; }
+    .informe-table th { font-size: 8.5pt; }
+    .informe-resumen { grid-template-columns: repeat(4, 1fr); }
+  }
+
   /* ---------- SCROLLBAR ---------- */
   ::-webkit-scrollbar { width: 8px; height: 8px; }
   ::-webkit-scrollbar-track { background: var(--surface-2); }
@@ -1076,6 +1276,7 @@
     <li><a href="#bitacora"><span class="num">08</span>Bitácora</a></li>
     <li><a href="#vocab"><span class="num">09</span>Vocabulario</a></li>
     <li><a href="#test"><span class="num">10</span>Test</a></li>
+    <li><a href="#resultados"><span class="num">11</span>Resultados y PDF</a></li>
     <li><a href="modulos_SSCE0110.html"><span class="num">↗</span>Índice de fichas</a></li>
     <li><a href="modulo_MF1443_3.html"><span class="num">↗</span>Siguiente: MF1443</a></li>
   </ul>
@@ -1297,7 +1498,8 @@
     </div>
     <p class="lead">
       Los 22 apartados del manual del módulo, con su numeración y sus títulos literales. Cada uno se convierte
-      en una pieza de tu programación didáctica (y cada unidad cierra con resumen y autoevaluación: úsalos de repaso).
+      en una pieza de tu programación didáctica. Cada unidad cierra con la <strong>autoevaluación oficial del manual</strong>
+      (diez preguntas) que se corrige al instante con la clave comentada del solucionario.
     </p>
 
     <div class="unidad">
@@ -1325,7 +1527,7 @@
       </div>
       <div class="auto" id="auto-ud1" data-ud="1">
         <div class="auto-head">
-          <span class="auto-title">Autoevaluación · UD 1</span>
+          <span class="auto-title">Autoevaluación · UD 1 <span class="auto-src">Manual p. 39 · 10 preguntas</span></span>
           <span class="auto-progress" id="auto-ud1-progress">0 / 10 respondidas</span>
         </div>
         <div id="auto-ud1-body"></div>
@@ -1353,7 +1555,7 @@
       </div>
       <div class="auto" id="auto-ud2" data-ud="2">
         <div class="auto-head">
-          <span class="auto-title">Autoevaluación · UD 2</span>
+          <span class="auto-title">Autoevaluación · UD 2 <span class="auto-src">Manual p. 59 · 10 preguntas</span></span>
           <span class="auto-progress" id="auto-ud2-progress">0 / 10 respondidas</span>
         </div>
         <div id="auto-ud2-body"></div>
@@ -1398,7 +1600,7 @@
       </div>
       <div class="auto" id="auto-ud3" data-ud="3">
         <div class="auto-head">
-          <span class="auto-title">Autoevaluación · UD 3</span>
+          <span class="auto-title">Autoevaluación · UD 3 <span class="auto-src">Manual p. 126 · 10 preguntas</span></span>
           <span class="auto-progress" id="auto-ud3-progress">0 / 10 respondidas</span>
         </div>
         <div id="auto-ud3-body"></div>
@@ -1431,7 +1633,7 @@
       </div>
       <div class="auto" id="auto-ud4" data-ud="4">
         <div class="auto-head">
-          <span class="auto-title">Autoevaluación · UD 4</span>
+          <span class="auto-title">Autoevaluación · UD 4 <span class="auto-src">Manual p. 147 · 10 preguntas</span></span>
           <span class="auto-progress" id="auto-ud4-progress">0 / 10 respondidas</span>
         </div>
         <div id="auto-ud4-body"></div>
@@ -1440,12 +1642,18 @@
     </div>
 
     <div class="callout warning">
-      <strong>⚠️ Dos avisos al estudiar el temario</strong>
+      <strong>⚠️ Tres avisos al estudiar el temario</strong>
       <p>
         <strong>Horas:</strong> el certificado solo fija las 60 h del módulo; el reparto 12/14/20/14 es una propuesta de estudio,
         no una prescripción. <strong>Normativa:</strong> el manual conserva la redacción de 2011 (PCPI, LO 2/2006);
         contrasta cada epígrafe con la LO 3/2022 y el RD 659/2023 en la
         <a href="formador_RD659_2023.html">guía del formador</a>, que es lo que se te va a exigir en el aula.
+      </p>
+      <p>
+        <strong>Autoevaluaciones:</strong> las cuarenta preguntas de las cuatro unidades son las del manual, con la clave del
+        <em>Solucionario de ejercicios de autoevaluación</em> (UD 1 p. 39, UD 2 p. 59, UD 3 p. 126 y UD 4 p. 147).
+        Cuando una clave choca con la norma vigente (niveles, porcentajes de formación en empresa, exenciones), la explicación
+        lo advierte: en el aula manda la LO 3/2022 y su desarrollo.
       </p>
     </div>
 
@@ -1772,6 +1980,53 @@
     </div>
   </section>
 
+  <!-- RESULTADOS, IMPRESIÓN Y PDF -->
+  <section id="resultados">
+    <div class="section-header">
+      <span class="section-num">11</span>
+      <h2 class="section-title">Resultados, impresión y PDF</h2>
+    </div>
+    <p class="lead">
+      Tus respuestas de las cuatro unidades se guardan solas en este navegador: cierra la ficha y al volver
+      seguirás donde lo dejaste. Desde aquí imprimes la ficha completa o descargas un PDF con las
+      <strong>40 preguntas</strong>, tus respuestas y la <strong>calificación</strong>.
+    </p>
+
+    <div class="panel">
+      <div class="panel-card">
+        <div class="panel-bar">
+          <span>Progreso del test · <strong class="progreso-total" id="progreso-total">0 / 40</strong></span>
+          <span class="storage-state" id="storage-state">Cargando estado del almacenamiento…</span>
+        </div>
+        <div class="panel-grid" id="panel-metricas"></div>
+      </div>
+
+      <div class="panel-card">
+        <div class="panel-field">
+          <label for="informe-nombre">Nombre para el informe (opcional)</label>
+          <input type="text" id="informe-nombre" placeholder="Ej: Nombre Apellido Apellido" autocomplete="name">
+        </div>
+        <label class="panel-check">
+          <input type="checkbox" id="informe-clave">
+          Incluir la clave comentada de cada pregunta en el PDF
+        </label>
+        <div class="btn-group" style="margin-top: 16px;">
+          <button class="btn" onclick="descargarInformePDF()">⬇ Descargar PDF con respuestas y nota</button>
+          <button class="btn btn-secondary" onclick="abrirInforme()">🖨️ Imprimir informe (Guardar como PDF)</button>
+          <button class="btn btn-secondary" onclick="imprimirFicha()">🖨️ Imprimir la ficha completa</button>
+          <button class="btn btn-secondary" onclick="guardarProgreso(true)">💾 Guardar progreso</button>
+          <button class="btn btn-secondary" onclick="borrarProgreso()">🗑️ Borrar todo el progreso</button>
+        </div>
+        <p class="storage-state" style="margin-top: 12px;">
+          El PDF se descarga directamente, sin conexión y sin librerías externas. Si prefieres el formato del
+          navegador, usa «Imprimir informe» y elige <em>Guardar como PDF</em> como destino.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div id="informe"></div>
+
 </main>
 
 <script>
@@ -1931,403 +2186,418 @@
   ];
 
   // ============ AUTOEVALUACIONES POR UNIDAD ============
+  // Fuente: Solucionario de ejercicios de autoevaluación del manual MF1442_3
+  // (UD 1, p. 39; UD 2, p. 59; UD 3, p. 126; UD 4, p. 147). La opción marcada
+  // como correcta es la que el solucionario destaca en negrita.
   const autoevaluaciones = {
     ud1: [
       {
-        q: "Según la LO 3/2022, ¿cuál de estas funciones corresponde al sistema de Formación Profesional?",
+        q: "Según la Ley Orgánica 3/2022, ¿cuál de estas funciones corresponde al Sistema de Formación Profesional?",
         opts: [
-          "Ordenar las enseñanzas universitarias y el acceso a la universidad",
-          "Cualificar, acreditar y reconocer las competencias profesionales para el empleo",
-          "Regular la formación permanente del profesorado no universitario"
+          "Garantizar exclusivamente la inserción laboral de jóvenes.",
+          "Desarrollar itinerarios formativos individuales y colectivos.",
+          "Ofrecer formación gratuita únicamente a empresas grandes."
         ],
         correct: 1,
-        exp: "La LO 3/2022 configura la FP como un sistema integrado cuya función es cualificar a las personas, acreditar y reconocer sus competencias y orientarlas al empleo y a la promoción profesional. No ordena la universidad ni la formación del profesorado."
+        exp: "El Sistema de FP cualifica, acredita y orienta a lo largo de la vida; los itinerarios formativos individuales y colectivos son su instrumento. No es un programa de inserción exclusivo de jóvenes ni un subsidio formativo para grandes empresas."
       },
       {
-        q: "¿Qué nivel de cualificación corresponde a los Programas de Cualificación Profesional Inicial (PCPI)?",
-        opts: ["Nivel 1", "Nivel 2", "Nivel 3"],
+        q: "¿Qué nivel de cualificación de la UE corresponde a los Programas de Cualificación Profesional Inicial (PCPI)?",
+        opts: [
+          "Nivel 1.",
+          "Nivel 2.",
+          "Nivel 3."
+        ],
         correct: 0,
-        exp: "El PCPI (LO 2/2006, hoy sustituido por la FP Básica) se vinculaba al nivel 1 del CNCP: tareas sencillas, competencia limitada y supervisión. El SSCE0110, en cambio, es de nivel 3."
+        exp: "El PCPI se sitúa en el nivel 1 (tareas sencillas, con supervisión), igual que el certificado de nivel 1. El SSCE0110, en cambio, es de nivel 3 del CNCP."
       },
       {
         q: "¿Qué característica distingue a la formación de demanda frente a la formación de oferta?",
         opts: [
-          "En la de demanda la iniciativa y la financiación son de la empresa, con bonificación en cuotas; la de oferta la programan las administraciones para desempleados y colectivos prioritarios",
-          "La de demanda la programan las comunidades autónomas para desempleados; la de oferta la empresa para sus trabajadores",
-          "Son sinónimos: solo cambia el nombre según la comunidad autónoma"
+          "La formación de demanda está liderada por las administraciones públicas.",
+          "La formación de demanda permite a las empresas gestionar créditos formativos a través de bonificaciones.",
+          "La formación de demanda está dirigida exclusivamente a trabajadores desocupados."
         ],
-        correct: 0,
-        exp: "Demanda = la empresa decide y financia (bonificación + PIF). Oferta = la administración programa para desempleados y colectivos prioritarios, dentro de la política activa de empleo."
+        correct: 1,
+        exp: "En la formación de demanda la empresa decide y financia, y se bonifica en las cuotas de la Seguridad Social (con el PIF como permiso individual). La de oferta la programan las administraciones para desempleados y colectivos prioritarios."
       },
       {
         q: "¿Qué son los proyectos formativos en el contexto de la formación en alternancia con el empleo?",
         opts: [
-          "Acciones que combinan formación y actividad productiva real (escuelas taller, talleres de empleo, casas de oficios)",
-          "Programas de FP reglada que sustituyen a los ciclos formativos",
-          "Cursos de teleformación bonificados por las empresas para sus plantillas"
+          "Contratos exclusivamente laborales sin formación.",
+          "Actividades recreativas para fomentar la convivencia en el entorno laboral.",
+          "Unidades de formación que componen un programa educativo."
         ],
-        correct: 0,
-        exp: "Los proyectos formativos de la formación en alternancia unen aprendizaje y trabajo productivo: se aprende haciendo en un entorno real, con tutoría y con beca o contrato para la formación."
+        correct: 2,
+        exp: "El proyecto formativo estructura la formación de los programas de alternancia (escuelas taller, talleres de empleo, casas de oficios): objetivos, contenidos, actividades y evaluación unidos a práctica productiva real."
       },
       {
         q: "¿Cuál es el principal objetivo de la Formación Profesional para el Empleo (FPE)?",
         opts: [
-          "Sustituir a la FP del sistema educativo en la formación inicial",
-          "Favorecer la inserción, la reinserción y la promoción profesional de trabajadores ocupados y desempleados mejorando su cualificación",
-          "Certificar la experiencia docente del profesorado de FP"
+          "Proveer formación exclusivamente teórica en centros educativos.",
+          "Facilitar la adquisición de competencias profesionales mediante un enfoque mixto de formación y empleo.",
+          "Ofrecer empleo permanente sin necesidad de formación adicional."
         ],
         correct: 1,
-        exp: "La FPE es política activa de empleo: mejora la cualificación de quien trabaja o busca trabajo para aumentar su empleabilidad y su promoción profesional."
+        exp: "La FPE es política activa de empleo: mejora la cualificación de ocupados y desempleados para aumentar su empleabilidad combinando formación y empleo. No garantiza un puesto de trabajo ni sustituye a la FP reglada."
       },
       {
-        q: "¿Qué grados de Formación Profesional tienen formación en empresa con carácter obligatorio?",
+        q: "¿Qué grados de formación profesional tienen carácter dual de forma obligatoria?",
         opts: [
-          "Todos los grados, de A a E, sin excepciones",
-          "Los grados C y D; en el E es potestativo y en A y B lo determina la administración",
-          "Solo el grado D (ciclos formativos)"
+          "Grados A y B.",
+          "Grados C y D.",
+          "Todos los grados."
         ],
         correct: 1,
-        exp: "Art. 151 RD 659/2023: la oferta de los grados C (certificado profesional) y D (ciclos) incorpora formación en empresa como parte del currículo; los cursos de especialización (E) podrán contemplarla y en A y B lo decide la administración."
+        exp: "Art. 151 del RD 659/2023: la oferta de los grados C (certificado profesional) y D (ciclos formativos) incorpora formación en empresa como parte del currículo; en los grados E es potestativa y en A y B la decide la administración."
       },
       {
-        q: "¿Cuál es la duración mínima de la fase de formación en la empresa en las ofertas duales (excepto en el nivel 1)?",
-        opts: ["El 15 % de la duración total", "El 25 % de la duración total", "El 50 % de la duración total"],
-        correct: 1,
-        exp: "Art. 159 RD 659/2023: en régimen general, entre el 25 % y el 35 % de la duración total. Las ofertas de nivel 1 (grado C de certificado de nivel 1 y grado D básico) pueden diseñarse desde el 20 %. El régimen intensivo va del 35 % al 50 %."
+        q: "¿Cuál es la duración mínima de la fase de formación en la empresa para las ofertas duales (excepto nivel 1)?",
+        opts: [
+          "25 % de la duración total de la formación.",
+          "15 % de la duración total de la formación.",
+          "50 % de la duración total de la formación."
+        ],
+        correct: 0,
+        exp: "En régimen general la estancia en empresa va del 25 % al 35 % de la duración total (art. 159 del RD 659/2023); las ofertas de nivel 1 pueden diseñarse desde el 20 % y el régimen intensivo llega al 35-50 %."
       },
       {
         q: "¿Cuál es la principal diferencia entre formación y educación?",
         opts: [
-          "La formación es práctica, a corto plazo y orientada a resolver problemas del puesto; la educación busca el desarrollo integral y los valores a largo plazo",
-          "La formación se dirige solo a adultos y la educación solo a menores de edad",
-          "No hay diferencia: son términos sinónimos en la normativa"
+          "La formación se centra en la enseñanza teórica, mientras que la educación se enfoca en habilidades prácticas.",
+          "La formación tiene un carácter práctico y de corto plazo, mientras que la educación implica valores y efectos a largo plazo.",
+          "La educación está orientada al ámbito laboral y la formación al desarrollo personal."
         ],
-        correct: 0,
-        exp: "La formación responde a necesidades concretas del desempeño profesional; la educación persigue el desarrollo global de la persona. En el aula de FPE se trabaja con ambas, pero el contrato de aprendizaje es formativo y aplicado."
-      },
-      {
-        q: "¿Qué porcentaje mínimo de formación debe impartirse en línea para que un programa se considere teleformación?",
-        opts: ["El 50 %", "El 80 %", "El 100 %"],
         correct: 1,
-        exp: "La teleformación exige que la presencialidad quede por debajo del 20 %, es decir, al menos el 80 % en línea. Además hace falta plataforma virtual, seguimiento del alumnado y tutoría (como máximo un tutor por cada 80 participantes)."
+        exp: "La formación responde a necesidades concretas del desempeño profesional (práctica, corto plazo); la educación persigue el desarrollo integral de la persona (valores, largo plazo). En el aula de FPE se trabaja con ambas."
       },
       {
-        q: "En modalidad mixta, ¿qué requisito es obligatorio?",
+        q: "¿Qué porcentaje mínimo de formación debe ser en línea para que un programa se considere de teleformación?",
         opts: [
-          "Que la formación presencial supere el 20 % del total, sin llegar a ser íntegramente presencial",
-          "Que toda la formación se imparta de forma asíncrona",
-          "Que el grupo tenga al menos 25 participantes"
+          "50%.",
+          "80%.",
+          "100%."
         ],
-        correct: 0,
-        exp: "Mixta = presencial + teleformación, con presencialidad superior al 20 % (si es inferior, la acción se considera teleformación). El tamaño del grupo no define la modalidad."
-      }
+        correct: 1,
+        exp: "La teleformación exige al menos el 80 % en línea (presencialidad por debajo del 20 %), con plataforma virtual, seguimiento del alumnado y tutoría: como máximo un tutor por cada 80 participantes."
+      },
+      {
+        q: "En la modalidad mixta, ¿qué requisito es obligatorio?",
+        opts: [
+          "Toda la formación debe ser presencial.",
+          "Debe haber tutorías presenciales obligatoriamente.",
+          "Debe incluir una parte de formación presencial a lo largo de los módulos."
+        ],
+        correct: 2,
+        exp: "La modalidad mixta combina presencial y teleformación con una presencialidad superior al 20 % (si baja de ese umbral, la acción se considera teleformación). No exige tutorías presenciales ni que todo sea presencial."
+      },
     ],
     ud2: [
       {
-        q: "¿Qué acredita un certificado de profesionalidad?",
+        q: "¿Qué organismo regula los certificados de profesionalidad en España?",
         opts: [
-          "Una titulación académica de grado medio",
-          "Una cualificación profesional del CNCP, con validez en todo el territorio nacional",
-          "Un curso de especialización del grado E"
+          "El Ministerio de Trabajo.",
+          "El Servicio Público de Empleo Estatal (SEPE).",
+          "La Unión Europea."
         ],
         correct: 1,
-        exp: "Acredita la competencia para el desempeño de una actividad productiva. Tiene validez en todo el Estado y efectos en la negociación colectiva y en la función pública."
+        exp: "El SEPE, junto con los servicios autonómicos de empleo, es el organismo que regula y expide los certificados de profesionalidad (RD 34/2008 y su desarrollo). La Unión Europea no los regula."
       },
       {
-        q: "¿Cuántos bloques componen la estructura de un certificado de profesionalidad?",
+        q: "¿Qué niveles de cualificación profesional tienen los certificados de profesionalidad?",
         opts: [
-          "Dos: perfil profesional y formación",
-          "Tres: perfil profesional, formación y prescripciones",
-          "Cuatro: perfil, formación, evaluación y empleo"
-        ],
-        correct: 1,
-        exp: "Tres bloques: perfil profesional (referente ocupacional), formación del certificado (referente formativo) y prescripciones de formadores y de espacios, instalaciones y equipamiento."
-      },
-      {
-        q: "El perfil profesional de un certificado incluye…",
-        opts: [
-          "La competencia general, las unidades de competencia, el entorno profesional y las ocupaciones",
-          "Los módulos formativos y las unidades formativas",
-          "Las titulaciones exigidas a los formadores"
+          "1, 2 y 3.",
+          "2, 3 y 4.",
+          "1, 3 y 4."
         ],
         correct: 0,
-        exp: "El perfil profesional es el referente ocupacional: competencia general, unidades de competencia con sus realizaciones profesionales y criterios de realización, entorno profesional y ocupaciones o puestos de trabajo."
+        exp: "Los certificados se corresponden con los niveles 1, 2 y 3 del CNCP (el SSCE0110 es de nivel 3). Los niveles 4 y 5 del catálogo se reservan a otras cualificaciones."
       },
       {
-        q: "El referente formativo del certificado está formado por…",
+        q: "¿Cuál de las siguientes no es una vía de obtención de un certificado de profesionalidad?",
         opts: [
-          "Las unidades de competencia y sus realizaciones profesionales",
-          "Los requisitos de espacios e instalaciones",
-          "Los módulos formativos, sus unidades formativas y el módulo de prácticas no laborales"
-        ],
-        correct: 2,
-        exp: "El referente formativo traduce el perfil profesional en formación: módulos formativos (MF), unidades formativas (UF) y el módulo de prácticas profesionales no laborales."
-      },
-      {
-        q: "¿Cuáles son las vías de adquisición de un certificado de profesionalidad?",
-        opts: [
-          "Solo la formación del certificado",
-          "La formación, la experiencia laboral acreditada y las vías mixtas",
-          "La formación y la titulación universitaria"
+          "Formación oficial.",
+          "Examen nacional único.",
+          "Acreditación de competencias."
         ],
         correct: 1,
-        exp: "Se obtiene por la vía formativa, por el procedimiento de acreditación de competencias adquiridas por experiencia laboral o vías no formales, y por la vía mixta que combina ambas."
+        exp: "Las vías son la formación del certificado, la acreditación de competencias adquiridas por experiencia laboral o vías no formales y la vía mixta. No existe ningún examen nacional único."
       },
       {
-        q: "La relación entre unidades de competencia (UC) y módulos formativos (MF) es…",
+        q: "¿Qué se incluye en la estructura de un certificado de profesionalidad?",
         opts: [
-          "Rígida: a cada UC le corresponde un único MF",
-          "Inexistente: son catálogos independientes",
-          "Flexible: una UC puede asociarse a varios MF y un MF puede cubrir varias UC"
-        ],
-        correct: 2,
-        exp: "El catálogo modular asocia MF y UF a las UC; la relación no es biunívoca, y por eso un mismo módulo puede acreditar competencias de más de una unidad."
-      },
-      {
-        q: "¿Quién expide y registra un certificado de profesionalidad?",
-        opts: [
-          "La administración laboral competente (SEPE o comunidad autónoma)",
-          "El centro que imparte la formación",
-          "La empresa que bonifica la formación"
+          "Relación de módulos formativos.",
+          "Listado de empresas asociadas.",
+          "Salario estimado del puesto relacionado."
         ],
         correct: 0,
-        exp: "El centro imparte y evalúa, pero el certificado lo expide la administración laboral competente y queda registrado; no lo emite la empresa ni el centro por sí mismos."
+        exp: "La estructura tiene tres bloques: perfil profesional (referente ocupacional), formación del certificado con sus módulos y unidades formativas (referente formativo) y prescripciones de formadores, espacios e instalaciones. El salario y el listado de empresas no forman parte."
       },
       {
-        q: "Las prescripciones de un certificado de profesionalidad afectan a…",
+        q: "¿Qué se exige para acceder a la formación de certificados de nivel 1?",
         opts: [
-          "Solo al alumnado destinatario",
-          "Los formadores (titulación y experiencia) y los espacios, instalaciones y equipamiento",
-          "Únicamente a la duración de la formación"
+          "Un título universitario.",
+          "No se exigen requisitos académicos ni profesionales.",
+          "Experiencia laboral mínima."
         ],
         correct: 1,
-        exp: "Cada módulo fija las prescripciones de sus formadores (titulación y experiencia profesional o docente) y los requisitos mínimos de espacio, instalaciones y equipamiento."
+        exp: "Los certificados de nivel 1 no tienen requisitos académicos ni profesionales de acceso; los de nivel 2 exigen ESO o equivalente y los de nivel 3, bachillerato o equivalente, además de los requisitos específicos de cada convocatoria."
       },
       {
-        q: "Las prácticas no laborales asociadas al certificado son…",
+        q: "¿Qué caracteriza a los módulos formativos de un certificado?",
         opts: [
-          "Un contrato de trabajo en prácticas",
-          "Un módulo de formación en centro de trabajo, sin relación laboral y con tutor",
-          "Una sustitución de puestos de trabajo en la empresa"
+          "Solo pueden impartirse en centros universitarios.",
+          "Incluyen evaluación de capacidades y contenidos específicos.",
+          "No tienen duración establecida."
         ],
         correct: 1,
-        exp: "El módulo de prácticas profesionales no laborales se desarrolla en un centro de trabajo, sin relación laboral, con un tutor designado y con evaluación; no sustituye a ningún trabajador."
+        exp: "Cada módulo tiene duración fijada, objetivos, contenidos y criterios de evaluación que verifican capacidades y contenidos del perfil. No son exclusivos de la universidad ni pueden tener duración libre."
       },
       {
-        q: "Al programar una acción formativa vinculada a un certificado, la programación debe…",
+        q: "¿Qué documento acredita la superación de todas las unidades formativas de un módulo?",
         opts: [
-          "Crear sus propios módulos y criterios de evaluación",
-          "Adaptarse solo al estilo del formador",
-          "Respetar el referente formativo: módulos, duraciones, criterios de evaluación y prescripciones"
+          "Certificación académica.",
+          "Diploma universitario.",
+          "Certificado de módulo formativo."
         ],
         correct: 2,
-        exp: "El certificado es norma: la programación didáctica concreta y temporaliza su referente formativo, sin alterar módulos, duraciones ni criterios de evaluación."
-      }
+        exp: "Superar todas las unidades formativas de un módulo da derecho al certificado del módulo formativo, acreditación parcial acumulable para obtener después el certificado de profesionalidad completo."
+      },
+      {
+        q: "¿Cuál es el tiempo mínimo de experiencia laboral para solicitar la exención del módulo de prácticas?",
+        opts: [
+          "3 meses.",
+          "6 meses.",
+          "1 año."
+        ],
+        correct: 1,
+        exp: "El manual fija en seis meses la experiencia mínima para eximir del módulo de prácticas profesionales no laborales. Comprueba siempre la convocatoria: la exención la resuelve la administración competente."
+      },
+      {
+        q: "¿Qué se debe incluir en la programación didáctica de un certificado de profesionalidad?",
+        opts: [
+          "Presupuesto del curso.",
+          "Estrategias para alcanzar objetivos educativos.",
+          "Listado de recursos tecnológicos."
+        ],
+        correct: 1,
+        exp: "La programación concreta el referente formativo del certificado: objetivos, contenidos, actividades, metodología, recursos y evaluación. El presupuesto económico no forma parte de la programación didáctica."
+      },
+      {
+        q: "¿Quién puede impartir un certificado de profesionalidad?",
+        opts: [
+          "Cualquier persona con experiencia laboral.",
+          "Certificado de módulo formativo.",
+          "Profesionales con habilitación docente y experiencia en la materia."
+        ],
+        correct: 2,
+        exp: "Las prescripciones del certificado exigen titulación y experiencia (docente o profesional) según el módulo, además de la habilitación docente correspondiente. La experiencia sola no basta."
+      },
     ],
     ud3: [
       {
-        q: "¿Qué elementos debe contener toda programación didáctica?",
+        q: "¿Cuál es el objetivo principal de la programación didáctica?",
         opts: [
-          "Objetivos, contenidos, metodología, recursos, evaluación y temporalización",
-          "Solo objetivos y contenidos",
-          "Únicamente la temporalización y el listado de alumnado"
-        ],
-        correct: 0,
-        exp: "La programación es un documento integrado: objetivos, contenidos, actividades, metodología, recursos, evaluación y temporalización, además de la atención a la diversidad y las observaciones de mejora."
-      },
-      {
-        q: "¿Cuál de estos objetivos está mejor formulado?",
-        opts: [
-          "Conocer la normativa de certificados de profesionalidad",
-          "Identificar los bloques de un certificado de profesionalidad en un supuesto práctico dado",
-          "Valorar la importancia de la formación continua"
+          "Crear actividades innovadoras sin seguir un plan.",
+          "Proporcionar un mapa claro y detallado para organizar el proceso educativo.",
+          "Evaluar únicamente los resultados finales de los alumnos."
         ],
         correct: 1,
-        exp: "Un objetivo se redacta con verbo observable en infinitivo, contenido y condición de ejecución. Conocer y valorar no son observables directamente."
+        exp: "La programación es el mapa del proceso: objetivos, contenidos, actividades, metodología, recursos, evaluación y temporalización. No es un catálogo de actividades sueltas ni un examen final."
       },
       {
-        q: "Los contenidos conceptuales, procedimentales y actitudinales responden a…",
+        q: "¿Qué tipo de contenido está relacionado con el saber hacer?",
         opts: [
-          "Saber, saber hacer y saber ser y estar",
-          "Teoría, práctica y evaluación",
-          "Objetivos, criterios y estándares"
+          "Contenidos actitudinales.",
+          "Contenidos conceptuales.",
+          "Contenidos procedimentales."
+        ],
+        correct: 2,
+        exp: "Conceptuales = saber; procedimentales = saber hacer (procedimientos y destrezas); actitudinales = saber ser y estar."
+      },
+      {
+        q: "¿Cuál de las siguientes características no pertenece a la programación de acciones formativas?",
+        opts: [
+          "Cerrada y rígida.",
+          "Coherente.",
+          "Flexible."
         ],
         correct: 0,
-        exp: "Conceptuales = saber (hechos y conceptos); procedimentales = saber hacer (procedimientos y destrezas); actitudinales = saber ser y estar (valores y actitudes)."
+        exp: "La programación debe ser coherente, flexible y abierta al ajuste: se revisa con los resultados y el contexto. Una programación cerrada y rígida contradice su función."
       },
       {
-        q: "Un criterio de evaluación es…",
+        q: "¿Qué metodología combina elementos presenciales con teleformación?",
         opts: [
-          "El enunciado que describe una ejecución observable y evaluable",
-          "La nota final del módulo",
-          "El instrumento con el que se califica"
+          "Presencial.",
+          "Mixta o semipresencial.",
+          "Exclusivamente a distancia."
+        ],
+        correct: 1,
+        exp: "La modalidad mixta (semipresencial) suma sesiones presenciales y formación en línea, con una presencialidad superior al 20 % del total."
+      },
+      {
+        q: "¿Qué criterio es fundamental para seleccionar los recursos pedagógicos?",
+        opts: [
+          "La disponibilidad del formador para utilizarlos.",
+          "Su adaptación a los objetivos y contenidos del programa.",
+          "Su precio más económico."
+        ],
+        correct: 1,
+        exp: "Los recursos se eligen por coherencia con objetivos, contenidos, metodología y características del grupo. El precio o la comodidad del formador son criterios secundarios."
+      },
+      {
+        q: "¿Por qué es importante que la programación didáctica sea flexible?",
+        opts: [
+          "Para adaptarse a cambios en el contexto o necesidades del alumnado.",
+          "Para eliminar la necesidad de planificar con antelación.",
+          "Para reducir la cantidad de contenidos impartidos."
         ],
         correct: 0,
-        exp: "El criterio describe qué debe hacer el alumnado y con qué nivel de logro; el instrumento (rúbrica, lista de control, prueba) es el medio para recoger esa evidencia."
+        exp: "La flexibilidad permite reajustar tiempos, actividades y agrupamientos cuando cambian el contexto, el ritmo o las necesidades del grupo. No sustituye la planificación previa."
       },
       {
-        q: "La evaluación inicial, continua y final corresponde a…",
+        q: "¿Qué tipo de competencias se enfocan en el saber ser o saber estar?",
         opts: [
-          "Los tres momentos: diagnóstica, formativa y sumativa",
-          "Tres tipos de alumnado",
-          "Tres instrumentos distintos de calificación"
+          "Competencias básicas.",
+          "Competencias actitudinales.",
+          "Competencias digitales."
+        ],
+        correct: 1,
+        exp: "Las competencias actitudinales recogen valores, actitudes y normas de conducta (puntualidad, cooperación, seguridad). Las básicas y las digitales son de otro orden."
+      },
+      {
+        q: "¿Cuál es el principal objetivo de la evaluación formativa?",
+        opts: [
+          "Conocer el nivel inicial del alumnado antes de comenzar la formación.",
+          "Comprobar si los participantes han adquirido las competencias finales.",
+          "Valorar el progreso durante el proceso de enseñanza-aprendizaje."
+        ],
+        correct: 2,
+        exp: "La evaluación formativa (continua) acompaña el proceso y devuelve retroalimentación para mejorar; la inicial o diagnóstica es la opción a) y la sumativa o final, la b)."
+      },
+      {
+        q: "En la modalidad de teleformación, ¿qué característica es clave para el aprendizaje colaborativo?",
+        opts: [
+          "Presencialidad del formador.",
+          "Uso de herramientas TIC para fomentar la interacción.",
+          "Calendarios estrictos y rígidos."
+        ],
+        correct: 1,
+        exp: "El aprendizaje colaborativo en línea se sostiene con foros, wikis, videoclases y tareas grupales: herramientas TIC que provocan interacción. Un calendario rígido no genera colaboración."
+      },
+      {
+        q: "¿Cómo deben estar redactados los objetivos de aprendizaje?",
+        opts: [
+          "De manera clara, medible y utilizando verbos observables.",
+          "Con un lenguaje técnico y especializado para profesionales.",
+          "Con varios desempeños en un mismo objetivo para ahorrar tiempo."
         ],
         correct: 0,
-        exp: "Inicial o diagnóstica (punto de partida), continua o formativa (seguimiento y retroalimentación) y final o sumativa (acreditación del logro)."
+        exp: "Verbo observable en infinitivo, contenido y condición de ejecución: un solo desempeño por objetivo, comprensible y evaluable. El lenguaje críptico o acumular desempeños impide evaluar."
       },
-      {
-        q: "La rúbrica es…",
-        opts: [
-          "Una técnica de observación",
-          "Un instrumento de evaluación con niveles de desempeño",
-          "Un criterio de evaluación"
-        ],
-        correct: 1,
-        exp: "La rúbrica es un instrumento: describe niveles de desempeño para cada criterio. La observación es la técnica; el criterio, el referente de logro."
-      },
-      {
-        q: "¿Qué metodología es más coherente con la formación por competencias?",
-        opts: [
-          "La clase magistral exclusiva",
-          "El aprendizaje basado en proyectos o retos, con práctica y transferencia al puesto",
-          "La memorización del temario para el examen"
-        ],
-        correct: 1,
-        exp: "La competencia se demuestra haciendo: metodologías activas (proyectos, retos, simulación, role-playing) con actividades cercanas al desempeño real del puesto."
-      },
-      {
-        q: "Las modalidades de impartición de una acción formativa son…",
-        opts: [
-          "Presencial, teleformación y mixta",
-          "Individual y grupal",
-          "Teórica y práctica"
-        ],
-        correct: 0,
-        exp: "Presencial, teleformación (al menos el 80 % en línea) y mixta (presencialidad superior al 20 %). Individual/grupal y teórica/práctica no son modalidades de impartición."
-      },
-      {
-        q: "En la programación, los recursos didácticos incluyen…",
-        opts: [
-          "Solo los medios audiovisuales",
-          "Relación de medios, instalaciones, bibliografía y anexos",
-          "El presupuesto económico del centro"
-        ],
-        correct: 1,
-        exp: "El apartado de recursos recoge la relación de medios y materiales, las instalaciones necesarias, la bibliografía y webgrafía y los anexos (plantillas, fichas, rúbricas)."
-      },
-      {
-        q: "La revisión y mejora de la programación se apoya en…",
-        opts: [
-          "La opinión del formador exclusivamente",
-          "Los resultados de la evaluación, la retroalimentación del alumnado y los cambios normativos",
-          "El número de alumnos matriculados"
-        ],
-        correct: 1,
-        exp: "La programación es un documento vivo: se revisa con los resultados de aprendizaje, la satisfacción y las sugerencias del grupo y las actualizaciones normativas del certificado."
-      }
     ],
     ud4: [
       {
-        q: "La temporalización diaria consiste en…",
+        q: "¿Cuál es el propósito de la programación temporalizada en la formación profesional?",
         opts: [
-          "Distribuir hora a hora los contenidos y actividades de la jornada, con descansos y transiciones",
-          "Asignar horas a cada unidad a lo largo del curso",
-          "Fijar la fecha de los exámenes"
-        ],
-        correct: 0,
-        exp: "Es el nivel más fino de concreción: qué se hace en cada tramo horario del día, con qué actividad y con qué descansos. El reparto por unidades es la programación, no la temporalización diaria."
-      },
-      {
-        q: "Secuenciar contenidos y concretar actividades significa…",
-        opts: [
-          "Enumerar los contenidos del certificado sin orden",
-          "Ordenarlos de forma lógica y progresiva y decidir qué actividad acompaña a cada uno",
-          "Repetir el índice del manual"
+          "Garantizar improvisación en las sesiones.",
+          "Estructurar el aprendizaje de manera organizada y efectiva.",
+          "Reducir la carga de planificación de los formadores."
         ],
         correct: 1,
-        exp: "La secuenciación va de lo simple a lo complejo, asegura prerequisitos y asigna a cada contenido una actividad y un tiempo; el índice del manual es solo el punto de partida."
+        exp: "La temporalización ordena contenidos y actividades en el calendario real para que el aprendizaje sea organizado y efectivo; no improvisa ni ahorra planificación, la concreta."
       },
       {
-        q: "La guía del alumno de una acción formativa en línea debe incluir…",
+        q: "¿Qué nivel de concreción organiza las sesiones en bloques integrales con todos los elementos del proceso educativo?",
         opts: [
-          "Itinerario, calendario, sistema de tutoría y tiempos de respuesta, criterios de evaluación y soporte técnico",
-          "Solo el listado de contenidos",
-          "El currículum del formador"
-        ],
-        correct: 0,
-        exp: "La guía orienta al alumnado antes de empezar: qué se espera de él, cuándo, cómo se comunica, cuánto tarda el tutor en responder, cómo se evalúa y a quién acudir si falla la plataforma."
-      },
-      {
-        q: "El compromiso de respuesta del tutor debe figurar…",
-        opts: [
-          "No hace falta: se acuerda por mensaje privado",
-          "En el contrato con la empresa",
-          "En la guía del alumno, para que el alumnado lo conozca de antemano"
+          "Programación didáctica.",
+          "Marco general.",
+          "Unidades didácticas."
         ],
         correct: 2,
-        exp: "Los tiempos de respuesta forman parte del contrato didáctico de la modalidad en línea: se publican en la guía y se cumplen (por ejemplo, respuesta a consultas en 24-48 horas laborables)."
+        exp: "La unidad didáctica es el nivel de concreción que integra objetivos, contenidos, actividades, recursos y evaluación en bloques con sentido propio; la programación didáctica es el marco que las contiene."
       },
       {
-        q: "Una actividad síncrona se diferencia de una asíncrona en que…",
+        q: "¿Qué principio es clave para una secuenciación efectiva de contenidos?",
         opts: [
-          "Se realiza en tiempo real y con coincidencia de horario",
-          "No requiere conexión a internet",
-          "Solo se puede usar en formación presencial"
+          "Aumentar la dificultad de manera gradual.",
+          "Combinar todos los temas en una sola sesión.",
+          "Evitar actividades prácticas."
         ],
         correct: 0,
-        exp: "Síncrona = en tiempo real (videoclase, chat, tutoría en directo). Asíncrona = sin coincidencia horaria (foro, tarea, correo). Un curso en línea combina ambas."
+        exp: "Se secuencia de lo simple a lo complejo, asegurando prerrequisitos y con práctica creciente. Concentrar todo en una sesión o evitar la práctica rompe el aprendizaje."
       },
       {
-        q: "El plan B de una acción formativa sirve para…",
+        q: "¿Cuál de las siguientes no es una función de la guía didáctica en teleformación?",
         opts: [
-          "Sustituir al formador por el alumnado",
-          "Eliminar la evaluación cuando hay problemas",
-          "Prever alternativas ante fallos técnicos o imprevistos (material descargable, grabación, canal alternativo)"
-        ],
-        correct: 2,
-        exp: "Todo diseño en línea necesita un plan de contingencia: materiales descargables, grabación de sesiones, canal de comunicación alternativo y aviso al alumnado."
-      },
-      {
-        q: "El módulo MF1442_3 tiene una carga de…",
-        opts: [
-          "60 horas, repartidas en cuatro unidades; el reparto por horas es orientativo",
-          "120 horas, sin unidades didácticas",
-          "20 horas, todas presenciales"
-        ],
-        correct: 0,
-        exp: "El certificado fija 60 horas para el módulo. El reparto 12/14/20/14 entre las cuatro unidades es una propuesta de estudio, no una prescripción normativa."
-      },
-      {
-        q: "El cronograma de la acción formativa recoge…",
-        opts: [
-          "Solo el horario de clase",
-          "Hitos, entregas y fechas de evaluación",
-          "Los datos personales del alumnado"
+          "Activar el aprendizaje.",
+          "Sustituir completamente al formador.",
+          "Orientar y motivar al participante."
         ],
         correct: 1,
-        exp: "El cronograma sitúa en el calendario los hitos del curso: inicio y fin de unidades, entregas, pruebas y sesiones de evaluación."
+        exp: "La guía orienta, activa y motiva, pero no sustituye la tutoría: el acompañamiento y la evaluación siguen siendo del formador."
       },
       {
-        q: "Los foros de un curso en línea son…",
+        q: "¿Qué elemento debe incluirse en la justificación de una unidad didáctica?",
         opts: [
-          "Herramientas asíncronas de participación y tutoría que necesitan normas y moderación",
-          "Videoclases en directo",
-          "Un tipo de examen final"
+          "Relación con la programación y conocimientos previos.",
+          "Opiniones de los participantes sobre otros temas.",
+          "Actividades realizadas por otros docentes."
         ],
         correct: 0,
-        exp: "El foro es la herramienta asíncrona por excelencia: requiere hilos claros, normas de participación, moderación y un tiempo de respuesta comprometido por parte de la tutoría."
+        exp: "La justificación explica por qué esa unidad está ahí: su relación con la programación y el perfil, los conocimientos previos necesarios y su sentido para el desempeño."
       },
       {
-        q: "Para evaluar una actividad práctica en línea, el instrumento más completo es…",
+        q: "¿Qué actividad se utiliza para conocer el nivel inicial de los participantes?",
         opts: [
-          "Un test de 30 preguntas de memoria",
-          "La asistencia a las videoclases",
-          "Una rúbrica con niveles de desempeño y retroalimentación"
+          "Actividad de desarrollo.",
+          "Actividad de síntesis.",
+          "Actividad de evaluación inicial."
         ],
         correct: 2,
-        exp: "La rúbrica permite valorar el desempeño con criterios públicos y devolver retroalimentación útil. El test memorístico y la asistencia no evidencian competencia práctica."
-      }
-    ]
+        exp: "La actividad de evaluación inicial (diagnóstica) detecta conocimientos y necesidades de partida; las de desarrollo y síntesis trabajan el contenido con el curso ya en marcha."
+      },
+      {
+        q: "¿Qué tipo de recursos se deben detallar en una unidad didáctica?",
+        opts: [
+          "Recursos materiales y humanos necesarios.",
+          "Solo materiales teóricos.",
+          "Recursos utilizados en otros cursos similares."
+        ],
+        correct: 0,
+        exp: "Se detallan medios materiales y humanos, instalaciones, bibliografía y anexos: todo lo necesario para ejecutar la unidad tal y como se ha programado."
+      },
+      {
+        q: "¿Qué criterio es esencial para adaptar la secuenciación de actividades?",
+        opts: [
+          "Ignorar las diferencias individuales.",
+          "Atender la diversidad y necesidades de los alumnos.",
+          "Priorizar actividades de baja dificultad."
+        ],
+        correct: 1,
+        exp: "La atención a la diversidad ajusta tiempos, apoyos y niveles de exigencia; ignorar las diferencias o rebajar sistemáticamente la dificultad empobrece el aprendizaje."
+      },
+      {
+        q: "¿Cuál es una característica de las unidades didácticas?",
+        opts: [
+          "Tienen siempre una duración fija.",
+          "Facilitan la práctica diaria y se adaptan al ritmo de los participantes.",
+          "Se diseñan sin relación con los objetivos generales."
+        ],
+        correct: 1,
+        exp: "La unidad didáctica es flexible: su duración se ajusta al grupo y siempre deriva de los objetivos generales de la programación."
+      },
+      {
+        q: "En una guía de teleformación, ¿qué apartado detalla el uso de la plataforma virtual?",
+        opts: [
+          "Evaluación.",
+          "Descripción de la plataforma.",
+          "Tutorías."
+        ],
+        correct: 1,
+        exp: "La guía describe la plataforma (acceso, navegación, herramientas y soporte técnico); evaluación y tutorías son apartados distintos."
+      },
+    ],
   };
 
   // ============ ENTREGABLES ============
@@ -2418,6 +2688,72 @@
     `).join('');
   }
 
+  // ============ PERSISTENCIA EN EL NAVEGADOR ============
+  const CLAVES = {
+    auto: 'mf1442_autoeval_v1',
+    test: 'mf1442_test_v1',
+    informe: 'mf1442_informe_v1'
+  };
+
+  const almacen = {
+    disponible: (() => {
+      try {
+        localStorage.setItem('mf1442_sonda', '1');
+        localStorage.removeItem('mf1442_sonda');
+        return true;
+      } catch (e) {
+        return false;
+      }
+    })(),
+    leer(clave, porDefecto) {
+      try {
+        const bruto = localStorage.getItem(clave);
+        return bruto === null ? porDefecto : JSON.parse(bruto);
+      } catch (e) {
+        return porDefecto;
+      }
+    },
+    escribir(clave, valor) {
+      try {
+        localStorage.setItem(clave, JSON.stringify(valor));
+        return true;
+      } catch (e) {
+        return false;
+      }
+    },
+    borrar(clave) {
+      try {
+        localStorage.removeItem(clave);
+        return true;
+      } catch (e) {
+        return false;
+      }
+    }
+  };
+
+  const LETRAS = 'abcdefghijklmnopqrstuvwxyz';
+
+  function letra(indice) {
+    return LETRAS.charAt(indice) || '?';
+  }
+
+  function horaCorta() {
+    return new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+  }
+
+  function fechaLarga(fecha) {
+    return fecha.toLocaleString('es-ES', {
+      day: '2-digit', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit'
+    });
+  }
+
+  function slug(txt) {
+    return String(txt || '')
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^A-Za-z0-9]+/g, '_')
+      .replace(/^_+|_+$/g, '');
+  }
+
   // ============ TEST ============
   function renderTest() {
     const container = document.getElementById('test-container');
@@ -2436,8 +2772,9 @@
 
   let testScore = 0;
   let testAnswered = new Set();
+  let respuestasTest = almacen.leer(CLAVES.test, {});
 
-  function responderTest(qi, oi) {
+  function responderTest(qi, oi, silencioso) {
     if (testAnswered.has(qi)) return;
     testAnswered.add(qi);
     const q = testQuestions[qi];
@@ -2450,6 +2787,8 @@
     });
     document.getElementById(`exp-${qi}`).classList.add('visible');
     if (oi === q.correct) testScore++;
+    respuestasTest[qi] = oi;
+    if (!silencioso) guardarTest();
     if (testAnswered.size === testQuestions.length) {
       const score = document.getElementById('test-score');
       document.getElementById('test-score-num').textContent = `${testScore} / ${testQuestions.length}`;
@@ -2462,7 +2801,7 @@
 
   function pintarAuto(ud) {
     const preguntas = autoevaluaciones[ud];
-    autoEstado[ud] = { answered: new Set(), score: 0 };
+    autoEstado[ud] = { answered: new Set(), score: 0, respuestas: {} };
     document.getElementById(`auto-${ud}-body`).innerHTML = preguntas.map((q, i) => `
       <div class="auto-q" data-aud="${ud}" data-aqi="${i}">
         <div class="auto-q-text">${i + 1}. ${q.q}</div>
@@ -2479,7 +2818,7 @@
     Object.keys(autoevaluaciones).forEach(pintarAuto);
   }
 
-  function responderAuto(ud, qi, oi) {
+  function responderAuto(ud, qi, oi, silencioso) {
     const estado = autoEstado[ud];
     if (estado.answered.has(qi)) return;
     estado.answered.add(qi);
@@ -2492,6 +2831,8 @@
     });
     document.getElementById(`aexp-${ud}-${qi}`).classList.add('visible');
     if (oi === q.correct) estado.score++;
+    estado.respuestas[qi] = oi;
+    if (!silencioso) guardarAuto();
     actualizarProgresoAuto(ud);
   }
 
@@ -2499,7 +2840,7 @@
     const total = autoevaluaciones[ud].length;
     const estado = autoEstado[ud];
     document.getElementById(`auto-${ud}-progress`).textContent =
-      `${estado.answered.size} / ${total} respondidas · ${estado.score} correctas`;
+      `${estado.answered.size} / ${total} respondidas · ${estado.score} ${estado.score === 1 ? 'correcta' : 'correctas'}`;
     const footer = document.getElementById(`auto-${ud}-score`);
     if (estado.answered.size === total) {
       const pct = Math.round((estado.score / total) * 100);
@@ -2517,6 +2858,10 @@
 
   function reiniciarAuto(ud) {
     pintarAuto(ud);
+    const guardado = almacen.leer(CLAVES.auto, {});
+    delete guardado[ud];
+    almacen.escribir(CLAVES.auto, guardado);
+    actualizarPanel('UD ' + ud.replace('ud', '') + ' reiniciada: sus preguntas vuelven a estar sin responder.');
   }
 
   // ============ CONSTRUCTOR ============
@@ -2678,6 +3023,516 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
     });
   }
 
+  // ============ GUARDADO DEL PROGRESO ============
+  function respuestasAutoPorUnidad() {
+    const datos = {};
+    Object.keys(autoEstado).forEach(ud => {
+      const respuestas = autoEstado[ud].respuestas;
+      if (Object.keys(respuestas).length) datos[ud] = respuestas;
+    });
+    return datos;
+  }
+
+  function guardarAuto() {
+    const ok = almacen.escribir(CLAVES.auto, respuestasAutoPorUnidad());
+    actualizarPanel(ok ? null : 'No se ha podido guardar: el navegador bloquea el almacenamiento local.');
+  }
+
+  function guardarTest() {
+    const ok = almacen.escribir(CLAVES.test, respuestasTest);
+    actualizarPanel(ok ? null : 'No se ha podido guardar: el navegador bloquea el almacenamiento local.');
+  }
+
+  function restaurarProgreso() {
+    const guardadoAuto = almacen.leer(CLAVES.auto, {});
+    Object.keys(guardadoAuto).forEach(ud => {
+      if (!autoevaluaciones[ud]) return;
+      Object.keys(guardadoAuto[ud]).forEach(indice => {
+        const qi = parseInt(indice, 10);
+        const oi = parseInt(guardadoAuto[ud][indice], 10);
+        const pregunta = autoevaluaciones[ud][qi];
+        if (pregunta && oi >= 0 && oi < pregunta.opts.length) {
+          responderAuto(ud, qi, oi, true);
+        }
+      });
+    });
+
+    const guardadoTest = almacen.leer(CLAVES.test, {});
+    respuestasTest = guardadoTest;
+    Object.keys(guardadoTest).forEach(indice => {
+      const qi = parseInt(indice, 10);
+      const oi = parseInt(guardadoTest[indice], 10);
+      const pregunta = testQuestions[qi];
+      if (pregunta && oi >= 0 && oi < pregunta.opts.length) {
+        responderTest(qi, oi, true);
+      }
+    });
+  }
+
+  function guardarProgreso(manual) {
+    const okAuto = almacen.escribir(CLAVES.auto, respuestasAutoPorUnidad());
+    const okTest = almacen.escribir(CLAVES.test, respuestasTest);
+    if (manual) {
+      actualizarPanel(okAuto && okTest
+        ? 'Progreso guardado a las ' + horaCorta() + '.'
+        : 'No se ha podido guardar: el navegador bloquea el almacenamiento local.');
+    } else {
+      actualizarPanel(null);
+    }
+  }
+
+  function borrarProgreso() {
+    const seguro = confirm('Se borrarán tus respuestas de las 40 preguntas y del test de comprobación en este navegador. ¿Continuar?');
+    if (!seguro) return;
+
+    almacen.borrar(CLAVES.auto);
+    almacen.borrar(CLAVES.test);
+
+    respuestasTest = {};
+    testScore = 0;
+    testAnswered = new Set();
+    renderTest();
+    document.getElementById('test-score').classList.remove('visible');
+    document.getElementById('test-score-num').textContent = '0 / ' + testQuestions.length;
+
+    Object.keys(autoevaluaciones).forEach(ud => pintarAuto(ud));
+    actualizarPanel('Progreso borrado: todas las preguntas vuelven a estar sin responder.');
+  }
+
+  function actualizarPanel(mensaje) {
+    const claves = Object.keys(autoevaluaciones);
+    const total = claves.reduce((n, ud) => n + autoevaluaciones[ud].length, 0);
+    let respondidas = 0;
+    let correctas = 0;
+    let completas = 0;
+
+    const metricas = claves.map((ud, i) => {
+      const estado = autoEstado[ud] || { answered: new Set(), score: 0 };
+      const totalUd = autoevaluaciones[ud].length;
+      respondidas += estado.answered.size;
+      correctas += estado.score;
+      if (estado.answered.size === totalUd) completas++;
+      const pctUd = Math.round((estado.score / totalUd) * 100);
+      return `
+        <div class="panel-metric">
+          <div class="panel-metric-value">${estado.answered.size} / ${totalUd}</div>
+          <div class="panel-metric-label">UD ${i + 1} · ${estado.score} aciertos (${pctUd} %)</div>
+        </div>`;
+    }).join('');
+
+    const pct = total ? Math.round((correctas / total) * 100) : 0;
+    const nota = total ? (correctas / total) * 10 : 0;
+
+    const progreso = document.getElementById('progreso-total');
+    if (progreso) progreso.textContent = `${respondidas} / ${total}`;
+    const rejilla = document.getElementById('panel-metricas');
+    if (rejilla) {
+      rejilla.innerHTML = metricas + `
+        <div class="panel-metric">
+          <div class="panel-metric-value">${nota.toFixed(1).replace('.', ',')}</div>
+          <div class="panel-metric-label">Nota sobre 10 · ${pct} %</div>
+        </div>
+        <div class="panel-metric">
+          <div class="panel-metric-value">${completas} / ${claves.length}</div>
+          <div class="panel-metric-label">Unidades completas</div>
+        </div>`;
+    }
+
+    const estadoSpan = document.getElementById('storage-state');
+    if (!estadoSpan) return;
+    if (mensaje) {
+      estadoSpan.textContent = mensaje;
+      estadoSpan.classList.toggle('off', /no se ha podido|bloquea/i.test(mensaje));
+    } else if (!almacen.disponible) {
+      estadoSpan.textContent = 'Almacenamiento local no disponible: el progreso se perderá al cerrar la ficha.';
+      estadoSpan.classList.add('off');
+    } else {
+      estadoSpan.textContent = 'Guardado automático activo en este navegador · ' + horaCorta();
+      estadoSpan.classList.remove('off');
+    }
+  }
+
+  function cargarAjustesInforme() {
+    const ajustes = almacen.leer(CLAVES.informe, {});
+    document.getElementById('informe-nombre').value = ajustes.nombre || '';
+    document.getElementById('informe-clave').checked = !!ajustes.clave;
+  }
+
+  function guardarAjustesInforme() {
+    almacen.escribir(CLAVES.informe, {
+      nombre: document.getElementById('informe-nombre').value.trim(),
+      clave: document.getElementById('informe-clave').checked
+    });
+  }
+
+  // ============ INFORME: DATOS Y VISTA IMPRIMIBLE ============
+  const TITULOS_UD = {
+    ud1: 'UD 1 · Estructura de la Formación Profesional',
+    ud2: 'UD 2 · Certificados de Profesionalidad',
+    ud3: 'UD 3 · Elaboración de la programación didáctica',
+    ud4: 'UD 4 · Elaboración de la programación temporalizada'
+  };
+
+  function juicio(pct) {
+    if (pct >= 90) return 'Dominado';
+    if (pct >= 70) return 'Buen nivel';
+    return 'Repasar';
+  }
+
+  function datosInforme() {
+    const nombre = document.getElementById('informe-nombre').value.trim();
+    const incluirClave = document.getElementById('informe-clave').checked;
+    const unidades = [];
+    const detalle = [];
+    let total = 0;
+    let respondidas = 0;
+    let correctas = 0;
+
+    Object.keys(autoevaluaciones).forEach(ud => {
+      const estado = autoEstado[ud];
+      const preguntas = autoevaluaciones[ud];
+      let respUd = 0;
+      let aciertosUd = 0;
+
+      preguntas.forEach((q, i) => {
+        const elegida = estado.respuestas[i];
+        const contestada = typeof elegida === 'number';
+        const acierto = contestada && elegida === q.correct;
+        if (contestada) respUd++;
+        if (acierto) aciertosUd++;
+        detalle.push({
+          ud,
+          num: i + 1,
+          q: q.q,
+          contestada,
+          acierto,
+          elegida: contestada ? letra(elegida) + ') ' + q.opts[elegida] : '',
+          correcta: letra(q.correct) + ') ' + q.opts[q.correct],
+          exp: incluirClave ? q.exp : ''
+        });
+      });
+
+      unidades.push({
+        ud,
+        titulo: TITULOS_UD[ud],
+        total: preguntas.length,
+        respondidas: respUd,
+        correctas: aciertosUd
+      });
+      total += preguntas.length;
+      respondidas += respUd;
+      correctas += aciertosUd;
+    });
+
+    const nota = total ? (correctas / total) * 10 : 0;
+    const pct = total ? Math.round((correctas / total) * 100) : 0;
+
+    return {
+      nombre,
+      fecha: fechaLarga(new Date()),
+      incluirClave,
+      unidades,
+      detalle,
+      total,
+      respondidas,
+      correctas,
+      nota: nota.toFixed(1).replace('.', ','),
+      pct,
+      juicio: juicio(pct)
+    };
+  }
+
+  function construirInformeHTML(datos) {
+    const filasResumen = datos.unidades.map(u => `
+      <tr>
+        <td>${u.titulo}</td>
+        <td>${u.total}</td>
+        <td>${u.respondidas}</td>
+        <td>${u.correctas}</td>
+        <td>${Math.round((u.correctas / u.total) * 100)} %</td>
+      </tr>`).join('');
+
+    const tablas = datos.unidades.map(u => {
+      const filas = datos.detalle.filter(d => d.ud === u.ud).map(d => `
+        <tr>
+          <td class="num">${d.num}</td>
+          <td>${d.q}${d.exp ? `<div class="informe-clave">${d.exp}</div>` : ''}</td>
+          <td>${d.contestada ? d.elegida : '<em>Sin responder</em>'}</td>
+          <td>${d.correcta}</td>
+          <td class="${d.contestada ? (d.acierto ? 'ok' : 'ko') : 'na'}">${d.contestada ? (d.acierto ? '✓' : '✗') : '—'}</td>
+        </tr>`).join('');
+
+      return `
+        <div class="informe-ud-title">${u.titulo}</div>
+        <table class="informe-table">
+          <thead>
+            <tr><th>Nº</th><th>Pregunta</th><th>Tu respuesta</th><th>Respuesta correcta</th><th>Resultado</th></tr>
+          </thead>
+          <tbody>${filas}</tbody>
+        </table>`;
+    }).join('');
+
+    return `
+      <div class="informe-head">
+        <div class="informe-title">MF1442_3 · Programación didáctica de acciones formativas para el empleo</div>
+        <div class="informe-sub">
+          Informe de autoevaluación · SSCE0110 · CEFI Formación${datos.nombre ? ' · ' + datos.nombre : ''}<br>
+          Emitido el ${datos.fecha} · 40 preguntas (10 por unidad didáctica)
+        </div>
+      </div>
+
+      <div class="informe-resumen">
+        <div class="informe-box">
+          <div class="informe-box-value">${datos.correctas} / ${datos.total}</div>
+          <div class="informe-box-label">Aciertos</div>
+        </div>
+        <div class="informe-box">
+          <div class="informe-box-value">${datos.nota}</div>
+          <div class="informe-box-label">Nota sobre 10</div>
+        </div>
+        <div class="informe-box">
+          <div class="informe-box-value">${datos.pct} %</div>
+          <div class="informe-box-label">Porcentaje · ${datos.juicio}</div>
+        </div>
+        <div class="informe-box">
+          <div class="informe-box-value">${datos.respondidas} / ${datos.total}</div>
+          <div class="informe-box-label">Preguntas respondidas</div>
+        </div>
+      </div>
+
+      <table class="informe-table">
+        <thead>
+          <tr><th>Unidad didáctica</th><th>Preguntas</th><th>Respondidas</th><th>Aciertos</th><th>%</th></tr>
+        </thead>
+        <tbody>
+          ${filasResumen}
+          <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>${datos.total}</strong></td>
+            <td><strong>${datos.respondidas}</strong></td>
+            <td><strong>${datos.correctas}</strong></td>
+            <td><strong>${datos.pct} %</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      ${tablas}
+
+      <div class="informe-pie">
+        Calificación calculada sobre las 40 preguntas: las no respondidas cuentan como no acertadas.
+        Las claves proceden del <em>Solucionario de ejercicios de autoevaluación</em> del manual MF1442_3.
+        Documento de estudio: no sustituye la evaluación oficial del certificado de profesionalidad.
+      </div>`;
+  }
+
+  let tituloOriginal = document.title;
+
+  function nombreArchivo(datos) {
+    const limpio = slug(datos.nombre);
+    return 'informe_MF1442_3' + (limpio ? '_' + limpio : '') + '_' + new Date().toISOString().slice(0, 10);
+  }
+
+  function abrirInforme() {
+    const datos = datosInforme();
+    document.getElementById('informe').innerHTML = construirInformeHTML(datos);
+    tituloOriginal = document.title;
+    document.title = nombreArchivo(datos);
+    document.body.classList.add('informe-mode');
+    setTimeout(() => window.print(), 80);
+  }
+
+  function imprimirFicha() {
+    document.body.classList.remove('informe-mode');
+    document.getElementById('informe').innerHTML = '';
+    setTimeout(() => window.print(), 40);
+  }
+
+  function cerrarInforme() {
+    document.body.classList.remove('informe-mode');
+    document.title = tituloOriginal;
+  }
+
+  window.addEventListener('afterprint', cerrarInforme);
+
+  // ============ GENERADOR DE PDF SIN DEPENDENCIAS ============
+  // PDF 1.4 mínimo: A4, Helvetica/Helvetica-Bold con WinAnsiEncoding y texto a una columna.
+  const PDF_ANCHO = 595.28;
+  const PDF_ALTO = 841.89;
+  const PDF_MARGEN = 46;
+
+  function pdfNormalizar(txt) {
+    const mapa = {
+      '–': '-', '—': '-', '“': '"', '”': '"', '‘': "'", '’': "'",
+      '«': '"', '»': '"', '…': '...', '•': '-', '✓': 'OK', '✗': 'X',
+      '→': '->', '←': '<-', '≥': '>=', '≤': '<=', '★': '*'
+    };
+    let salida = '';
+    for (const caracter of String(txt)) {
+      const normalizado = Object.prototype.hasOwnProperty.call(mapa, caracter) ? mapa[caracter] : caracter;
+      for (const c of normalizado) {
+        const codigo = c.codePointAt(0);
+        if (c === '(' || c === ')' || c === '\\') salida += '\\' + c;
+        else if (codigo < 32) salida += ' ';
+        else if (codigo < 127) salida += c;
+        else if (codigo <= 255) salida += '\\' + codigo.toString(8).padStart(3, '0');
+        else salida += '?';
+      }
+    }
+    return salida;
+  }
+
+  function pdfPartir(txt, maximo) {
+    const palabras = String(txt).split(/\s+/).filter(Boolean);
+    const lineas = [];
+    let actual = '';
+    palabras.forEach(palabra => {
+      if (!actual) actual = palabra;
+      else if (actual.length + 1 + palabra.length <= maximo) actual += ' ' + palabra;
+      else { lineas.push(actual); actual = palabra; }
+    });
+    if (actual) lineas.push(actual);
+    return lineas.length ? lineas : [''];
+  }
+
+  function construirPdf(datos) {
+    const anchoUtil = PDF_ANCHO - PDF_MARGEN * 2;
+    const paginas = [];
+    let pagina = [];
+    let y = PDF_ALTO - PDF_MARGEN;
+
+    const nuevaPagina = () => {
+      pagina = [];
+      paginas.push(pagina);
+      y = PDF_ALTO - PDF_MARGEN;
+    };
+
+    const escribir = (txt, opciones) => {
+      const o = opciones || {};
+      const tam = o.tam || 10;
+      const interlineado = o.interlineado || tam * 1.38;
+      if (o.antes) y -= o.antes;
+      const maximo = Math.max(24, Math.floor(anchoUtil / (tam * 0.5)));
+      pdfPartir(txt, maximo).forEach(linea => {
+        if (y - interlineado < PDF_MARGEN + 26) nuevaPagina();
+        pagina.push({
+          texto: pdfNormalizar(linea),
+          fuente: o.negrita ? 'F2' : 'F1',
+          tam,
+          x: PDF_MARGEN + (o.sangria || 0),
+          y,
+          color: o.color || null
+        });
+        y -= interlineado;
+      });
+    };
+
+    nuevaPagina();
+
+    escribir('MF1442_3 · Programación didáctica de acciones formativas para el empleo', { tam: 14, negrita: true, interlineado: 18 });
+    escribir('Informe de autoevaluación · SSCE0110 · CEFI Formación', { tam: 9.5, interlineado: 13 });
+    escribir((datos.nombre ? datos.nombre + ' · ' : '') + 'Emitido el ' + datos.fecha, { tam: 9.5, interlineado: 13 });
+    escribir('40 preguntas (10 por unidad didáctica) · Claves del solucionario del manual', { tam: 9, interlineado: 15, color: [0.35, 0.4, 0.47] });
+
+    escribir('Calificación', { tam: 11.5, negrita: true, antes: 6, interlineado: 16 });
+    escribir('Aciertos: ' + datos.correctas + ' de ' + datos.total + ' · Nota: ' + datos.nota + ' / 10 · ' + datos.pct + ' % · ' + datos.juicio, { tam: 11, negrita: true, interlineado: 16 });
+    escribir('Respondidas: ' + datos.respondidas + ' de ' + datos.total + ' · Sin responder: ' + (datos.total - datos.respondidas), { tam: 9.5, interlineado: 14 });
+
+    datos.unidades.forEach(u => {
+      escribir(u.titulo + ': ' + u.correctas + '/' + u.total + ' aciertos (' + Math.round((u.correctas / u.total) * 100) + ' %) · ' + u.respondidas + ' respondidas', { tam: 9, interlineado: 12.5, sangria: 8 });
+    });
+
+    escribir('Detalle de las 40 respuestas', { tam: 11.5, negrita: true, antes: 10, interlineado: 17 });
+    let udActual = '';
+    datos.detalle.forEach(d => {
+      if (y - 72 < PDF_MARGEN + 26) nuevaPagina();
+      if (d.ud !== udActual) {
+        udActual = d.ud;
+        const unidad = datos.unidades.find(u => u.ud === d.ud);
+        escribir(unidad.titulo, { tam: 10, negrita: true, antes: 5, interlineado: 14, color: [0.14, 0.39, 0.92] });
+      }
+      const marca = d.contestada ? (d.acierto ? 'OK' : 'X') : '--';
+      escribir(d.num + '. ' + d.q, { tam: 9.5, interlineado: 12.5 });
+      escribir('Tu respuesta [' + marca + ']: ' + (d.contestada ? d.elegida : 'sin responder'), {
+        tam: 9,
+        interlineado: 12,
+        sangria: 10,
+        color: d.contestada ? (d.acierto ? [0.02, 0.5, 0.35] : [0.75, 0.16, 0.16]) : [0.55, 0.58, 0.63]
+      });
+      escribir('Correcta: ' + d.correcta, { tam: 9, interlineado: 12, sangria: 10 });
+      if (d.exp) escribir(d.exp, { tam: 8.2, interlineado: 11, sangria: 10, color: [0.35, 0.4, 0.47] });
+      y -= 5;
+    });
+
+      // Pie en todas las páginas
+    const totalPaginas = paginas.length;
+    paginas.forEach((ops, indice) => {
+      ops.push({
+        texto: pdfNormalizar('MF1442_3 · Informe de autoevaluación · Página ' + (indice + 1) + ' de ' + totalPaginas),
+        fuente: 'F1',
+        tam: 8,
+        x: PDF_MARGEN,
+        y: 26,
+        color: [0.45, 0.5, 0.55]
+      });
+    });
+
+    // Serialización: objetos, xref y trailer
+    const contenido = ops => ops.map(op => {
+      const color = op.color
+        ? op.color[0] + ' ' + op.color[1] + ' ' + op.color[2] + ' rg\n'
+        : '0 0 0 rg\n';
+      return color + 'BT /' + op.fuente + ' ' + op.tam.toFixed(2) + ' Tf 1 0 0 1 '
+        + op.x.toFixed(2) + ' ' + op.y.toFixed(2) + ' Tm (' + op.texto + ') Tj ET';
+    }).join('\n');
+
+    const objetos = [];
+    objetos.push('<< /Type /Catalog /Pages 2 0 R >>');
+    const hijos = paginas.map((_, i) => (5 + i * 2) + ' 0 R').join(' ');
+    objetos.push('<< /Type /Pages /Kids [' + hijos + '] /Count ' + paginas.length + ' >>');
+    objetos.push('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>');
+    objetos.push('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>');
+
+    paginas.forEach((ops, i) => {
+      const flujo = contenido(ops);
+      objetos.push('<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ' + PDF_ANCHO + ' ' + PDF_ALTO + '] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents ' + (6 + i * 2) + ' 0 R >>');
+      objetos.push('<< /Length ' + flujo.length + ' >>\nstream\n' + flujo + '\nendstream');
+    });
+
+    const bytes = [];
+    const empujar = txt => {
+      for (let i = 0; i < txt.length; i++) bytes.push(txt.charCodeAt(i) & 0xff);
+    };
+    empujar('%PDF-1.4\n%\u00e2\u00e3\u00cf\u00d3\n');
+
+    const desplazamientos = objetos.map((cuerpo, i) => {
+      const inicio = bytes.length;
+      empujar((i + 1) + ' 0 obj\n' + cuerpo + '\nendobj\n');
+      return inicio;
+    });
+
+    const inicioXref = bytes.length;
+    empujar('xref\n0 ' + (objetos.length + 1) + '\n0000000000 65535 f \n');
+    desplazamientos.forEach(d => empujar(String(d).padStart(10, '0') + ' 00000 n \n'));
+    empujar('trailer\n<< /Size ' + (objetos.length + 1) + ' /Root 1 0 R >>\nstartxref\n' + inicioXref + '\n%%EOF\n');
+
+    return new Uint8Array(bytes);
+  }
+
+  function descargarInformePDF() {
+    const datos = datosInforme();
+    const bytes = construirPdf(datos);
+    const blob = new Blob([bytes], { type: 'application/pdf' });
+    const url = URL.createObjectURL(blob);
+    const enlace = document.createElement('a');
+    enlace.href = url;
+    enlace.download = nombreArchivo(datos) + '.pdf';
+    document.body.appendChild(enlace);
+    enlace.click();
+    document.body.removeChild(enlace);
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+    actualizarPanel('PDF generado: ' + datos.correctas + ' aciertos de ' + datos.total + ' (' + datos.nota + '/10).');
+  }
+
   // ============ NAV ACTIVA ============
   function updateNav() {
     const sections = document.querySelectorAll('section[id]');
@@ -2699,8 +3554,15 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
   renderVocab();
   renderTest();
   renderAuto();
+  restaurarProgreso();
+  cargarAjustesInforme();
+  actualizarPanel();
+
+  document.getElementById('informe-nombre').addEventListener('input', guardarAjustesInforme);
+  document.getElementById('informe-clave').addEventListener('change', guardarAjustesInforme);
   window.addEventListener('scroll', updateNav);
   document.getElementById('vocab-search').addEventListener('input', e => renderVocab(e.target.value));
+  updateNav();
 </script>
 
 </body>

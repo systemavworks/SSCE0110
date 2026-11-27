@@ -980,10 +980,10 @@
             <text:p text:style-name="TableCellP">1</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Según la LO 3/2022, ¿cuál de estas funciones corresponde al sistema de Formación Profesional?<text:line-break/>a) Ordenar las enseñanzas universitarias y el acceso a la universidad<text:line-break/>b) Cualificar, acreditar y reconocer las competencias profesionales para el empleo<text:line-break/>c) Regular la formación permanente del profesorado no universitario</text:p>
+            <text:p text:style-name="TableCellP">Según la Ley Orgánica 3/2022, ¿cuál de estas funciones corresponde al Sistema de Formación Profesional?<text:line-break/>a) Garantizar exclusivamente la inserción laboral de jóvenes.<text:line-break/>b) Desarrollar itinerarios formativos individuales y colectivos.<text:line-break/>c) Ofrecer formación gratuita únicamente a empresas grandes.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) La LO 3/2022 configura la FP como un sistema integrado cuya función es cualificar a las personas, acreditar y reconocer sus competencias y orientarlas al empleo y a la promoción profesional. No ordena la universidad ni la formación del profesorado.</text:p>
+            <text:p text:style-name="TableCellP">b) El Sistema de FP cualifica, acredita y orienta a lo largo de la vida; los itinerarios formativos individuales y colectivos son su instrumento. No es un programa de inserción exclusivo de jóvenes ni un subsidio formativo para grandes empresas.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -991,10 +991,10 @@
             <text:p text:style-name="TableCellP">2</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">¿Qué nivel de cualificación corresponde a los Programas de Cualificación Profesional Inicial (PCPI)?<text:line-break/>a) Nivel 1<text:line-break/>b) Nivel 2<text:line-break/>c) Nivel 3</text:p>
+            <text:p text:style-name="TableCellP">¿Qué nivel de cualificación de la UE corresponde a los Programas de Cualificación Profesional Inicial (PCPI)?<text:line-break/>a) Nivel 1.<text:line-break/>b) Nivel 2.<text:line-break/>c) Nivel 3.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) El PCPI (LO 2/2006, hoy sustituido por la FP Básica) se vinculaba al nivel 1 del CNCP: tareas sencillas, competencia limitada y supervisión. El SSCE0110, en cambio, es de nivel 3.</text:p>
+            <text:p text:style-name="TableCellP">a) El PCPI se sitúa en el nivel 1 (tareas sencillas, con supervisión), igual que el certificado de nivel 1. El SSCE0110, en cambio, es de nivel 3 del CNCP.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1002,10 +1002,10 @@
             <text:p text:style-name="TableCellP">3</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">¿Qué característica distingue a la formación de demanda frente a la formación de oferta?<text:line-break/>a) En la de demanda la iniciativa y la financiación son de la empresa, con bonificación en cuotas; la de oferta la programan las administraciones para desempleados y colectivos prioritarios<text:line-break/>b) La de demanda la programan las comunidades autónomas para desempleados; la de oferta la empresa para sus trabajadores<text:line-break/>c) Son sinónimos: solo cambia el nombre según la comunidad autónoma</text:p>
+            <text:p text:style-name="TableCellP">¿Qué característica distingue a la formación de demanda frente a la formación de oferta?<text:line-break/>a) La formación de demanda está liderada por las administraciones públicas.<text:line-break/>b) La formación de demanda permite a las empresas gestionar créditos formativos a través de bonificaciones.<text:line-break/>c) La formación de demanda está dirigida exclusivamente a trabajadores desocupados.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) Demanda = la empresa decide y financia (bonificación + PIF). Oferta = la administración programa para desempleados y colectivos prioritarios, dentro de la política activa de empleo.</text:p>
+            <text:p text:style-name="TableCellP">b) En la formación de demanda la empresa decide y financia, y se bonifica en las cuotas de la Seguridad Social (con el PIF como permiso individual). La de oferta la programan las administraciones para desempleados y colectivos prioritarios.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1013,10 +1013,10 @@
             <text:p text:style-name="TableCellP">4</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">¿Qué son los proyectos formativos en el contexto de la formación en alternancia con el empleo?<text:line-break/>a) Acciones que combinan formación y actividad productiva real (escuelas taller, talleres de empleo, casas de oficios)<text:line-break/>b) Programas de FP reglada que sustituyen a los ciclos formativos<text:line-break/>c) Cursos de teleformación bonificados por las empresas para sus plantillas</text:p>
+            <text:p text:style-name="TableCellP">¿Qué son los proyectos formativos en el contexto de la formación en alternancia con el empleo?<text:line-break/>a) Contratos exclusivamente laborales sin formación.<text:line-break/>b) Actividades recreativas para fomentar la convivencia en el entorno laboral.<text:line-break/>c) Unidades de formación que componen un programa educativo.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) Los proyectos formativos de la formación en alternancia unen aprendizaje y trabajo productivo: se aprende haciendo en un entorno real, con tutoría y con beca o contrato para la formación.</text:p>
+            <text:p text:style-name="TableCellP">c) El proyecto formativo estructura la formación de los programas de alternancia (escuelas taller, talleres de empleo, casas de oficios): objetivos, contenidos, actividades y evaluación unidos a práctica productiva real.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1024,10 +1024,10 @@
             <text:p text:style-name="TableCellP">5</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">¿Cuál es el principal objetivo de la Formación Profesional para el Empleo (FPE)?<text:line-break/>a) Sustituir a la FP del sistema educativo en la formación inicial<text:line-break/>b) Favorecer la inserción, la reinserción y la promoción profesional de trabajadores ocupados y desempleados mejorando su cualificación<text:line-break/>c) Certificar la experiencia docente del profesorado de FP</text:p>
+            <text:p text:style-name="TableCellP">¿Cuál es el principal objetivo de la Formación Profesional para el Empleo (FPE)?<text:line-break/>a) Proveer formación exclusivamente teórica en centros educativos.<text:line-break/>b) Facilitar la adquisición de competencias profesionales mediante un enfoque mixto de formación y empleo.<text:line-break/>c) Ofrecer empleo permanente sin necesidad de formación adicional.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) La FPE es política activa de empleo: mejora la cualificación de quien trabaja o busca trabajo para aumentar su empleabilidad y su promoción profesional.</text:p>
+            <text:p text:style-name="TableCellP">b) La FPE es política activa de empleo: mejora la cualificación de ocupados y desempleados para aumentar su empleabilidad combinando formación y empleo. No garantiza un puesto de trabajo ni sustituye a la FP reglada.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1035,10 +1035,10 @@
             <text:p text:style-name="TableCellP">6</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">¿Qué grados de Formación Profesional tienen formación en empresa con carácter obligatorio?<text:line-break/>a) Todos los grados, de A a E, sin excepciones<text:line-break/>b) Los grados C y D; en el E es potestativo y en A y B lo determina la administración<text:line-break/>c) Solo el grado D (ciclos formativos)</text:p>
+            <text:p text:style-name="TableCellP">¿Qué grados de formación profesional tienen carácter dual de forma obligatoria?<text:line-break/>a) Grados A y B.<text:line-break/>b) Grados C y D.<text:line-break/>c) Todos los grados.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) Art. 151 RD 659/2023: la oferta de los grados C (certificado profesional) y D (ciclos) incorpora formación en empresa como parte del currículo; los cursos de especialización (E) podrán contemplarla y en A y B lo decide la administración.</text:p>
+            <text:p text:style-name="TableCellP">b) Art. 151 del RD 659/2023: la oferta de los grados C (certificado profesional) y D (ciclos formativos) incorpora formación en empresa como parte del currículo; en los grados E es potestativa y en A y B la decide la administración.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1046,10 +1046,10 @@
             <text:p text:style-name="TableCellP">7</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">¿Cuál es la duración mínima de la fase de formación en la empresa en las ofertas duales (excepto en el nivel 1)?<text:line-break/>a) El 15 % de la duración total<text:line-break/>b) El 25 % de la duración total<text:line-break/>c) El 50 % de la duración total</text:p>
+            <text:p text:style-name="TableCellP">¿Cuál es la duración mínima de la fase de formación en la empresa para las ofertas duales (excepto nivel 1)?<text:line-break/>a) 25 % de la duración total de la formación.<text:line-break/>b) 15 % de la duración total de la formación.<text:line-break/>c) 50 % de la duración total de la formación.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) Art. 159 RD 659/2023: en régimen general, entre el 25 % y el 35 % de la duración total. Las ofertas de nivel 1 (grado C de certificado de nivel 1 y grado D básico) pueden diseñarse desde el 20 %. El régimen intensivo va del 35 % al 50 %.</text:p>
+            <text:p text:style-name="TableCellP">a) En régimen general la estancia en empresa va del 25 % al 35 % de la duración total (art. 159 del RD 659/2023); las ofertas de nivel 1 pueden diseñarse desde el 20 % y el régimen intensivo llega al 35-50 %.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1057,10 +1057,10 @@
             <text:p text:style-name="TableCellP">8</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">¿Cuál es la principal diferencia entre formación y educación?<text:line-break/>a) La formación es práctica, a corto plazo y orientada a resolver problemas del puesto; la educación busca el desarrollo integral y los valores a largo plazo<text:line-break/>b) La formación se dirige solo a adultos y la educación solo a menores de edad<text:line-break/>c) No hay diferencia: son términos sinónimos en la normativa</text:p>
+            <text:p text:style-name="TableCellP">¿Cuál es la principal diferencia entre formación y educación?<text:line-break/>a) La formación se centra en la enseñanza teórica, mientras que la educación se enfoca en habilidades prácticas.<text:line-break/>b) La formación tiene un carácter práctico y de corto plazo, mientras que la educación implica valores y efectos a largo plazo.<text:line-break/>c) La educación está orientada al ámbito laboral y la formación al desarrollo personal.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) La formación responde a necesidades concretas del desempeño profesional; la educación persigue el desarrollo global de la persona. En el aula de FPE se trabaja con ambas, pero el contrato de aprendizaje es formativo y aplicado.</text:p>
+            <text:p text:style-name="TableCellP">b) La formación responde a necesidades concretas del desempeño profesional (práctica, corto plazo); la educación persigue el desarrollo integral de la persona (valores, largo plazo). En el aula de FPE se trabaja con ambas.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1068,10 +1068,10 @@
             <text:p text:style-name="TableCellP">9</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">¿Qué porcentaje mínimo de formación debe impartirse en línea para que un programa se considere teleformación?<text:line-break/>a) El 50 %<text:line-break/>b) El 80 %<text:line-break/>c) El 100 %</text:p>
+            <text:p text:style-name="TableCellP">¿Qué porcentaje mínimo de formación debe ser en línea para que un programa se considere de teleformación?<text:line-break/>a) 50%.<text:line-break/>b) 80%.<text:line-break/>c) 100%.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) La teleformación exige que la presencialidad quede por debajo del 20 %, es decir, al menos el 80 % en línea. Además hace falta plataforma virtual, seguimiento del alumnado y tutoría (como máximo un tutor por cada 80 participantes).</text:p>
+            <text:p text:style-name="TableCellP">b) La teleformación exige al menos el 80 % en línea (presencialidad por debajo del 20 %), con plataforma virtual, seguimiento del alumnado y tutoría: como máximo un tutor por cada 80 participantes.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1079,10 +1079,10 @@
             <text:p text:style-name="TableCellP">10</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">En modalidad mixta, ¿qué requisito es obligatorio?<text:line-break/>a) Que la formación presencial supere el 20 % del total, sin llegar a ser íntegramente presencial<text:line-break/>b) Que toda la formación se imparta de forma asíncrona<text:line-break/>c) Que el grupo tenga al menos 25 participantes</text:p>
+            <text:p text:style-name="TableCellP">En la modalidad mixta, ¿qué requisito es obligatorio?<text:line-break/>a) Toda la formación debe ser presencial.<text:line-break/>b) Debe haber tutorías presenciales obligatoriamente.<text:line-break/>c) Debe incluir una parte de formación presencial a lo largo de los módulos.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) Mixta = presencial + teleformación, con presencialidad superior al 20 % (si es inferior, la acción se considera teleformación). El tamaño del grupo no define la modalidad.</text:p>
+            <text:p text:style-name="TableCellP">c) La modalidad mixta combina presencial y teleformación con una presencialidad superior al 20 % (si baja de ese umbral, la acción se considera teleformación). No exige tutorías presenciales ni que todo sea presencial.</text:p>
           </table:table-cell>
         </table:table-row>
       </table:table>
@@ -1107,10 +1107,10 @@
             <text:p text:style-name="TableCellP">1</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">¿Qué acredita un certificado de profesionalidad?<text:line-break/>a) Una titulación académica de grado medio<text:line-break/>b) Una cualificación profesional del CNCP, con validez en todo el territorio nacional<text:line-break/>c) Un curso de especialización del grado E</text:p>
+            <text:p text:style-name="TableCellP">¿Qué organismo regula los certificados de profesionalidad en España?<text:line-break/>a) El Ministerio de Trabajo.<text:line-break/>b) El Servicio Público de Empleo Estatal (SEPE).<text:line-break/>c) La Unión Europea.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) Acredita la competencia para el desempeño de una actividad productiva. Tiene validez en todo el Estado y efectos en la negociación colectiva y en la función pública.</text:p>
+            <text:p text:style-name="TableCellP">b) El SEPE, junto con los servicios autonómicos de empleo, es el organismo que regula y expide los certificados de profesionalidad (RD 34/2008 y su desarrollo). La Unión Europea no los regula.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1118,10 +1118,10 @@
             <text:p text:style-name="TableCellP">2</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">¿Cuántos bloques componen la estructura de un certificado de profesionalidad?<text:line-break/>a) Dos: perfil profesional y formación<text:line-break/>b) Tres: perfil profesional, formación y prescripciones<text:line-break/>c) Cuatro: perfil, formación, evaluación y empleo</text:p>
+            <text:p text:style-name="TableCellP">¿Qué niveles de cualificación profesional tienen los certificados de profesionalidad?<text:line-break/>a) 1, 2 y 3.<text:line-break/>b) 2, 3 y 4.<text:line-break/>c) 1, 3 y 4.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) Tres bloques: perfil profesional (referente ocupacional), formación del certificado (referente formativo) y prescripciones de formadores y de espacios, instalaciones y equipamiento.</text:p>
+            <text:p text:style-name="TableCellP">a) Los certificados se corresponden con los niveles 1, 2 y 3 del CNCP (el SSCE0110 es de nivel 3). Los niveles 4 y 5 del catálogo se reservan a otras cualificaciones.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1129,10 +1129,10 @@
             <text:p text:style-name="TableCellP">3</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">El perfil profesional de un certificado incluye…<text:line-break/>a) La competencia general, las unidades de competencia, el entorno profesional y las ocupaciones<text:line-break/>b) Los módulos formativos y las unidades formativas<text:line-break/>c) Las titulaciones exigidas a los formadores</text:p>
+            <text:p text:style-name="TableCellP">¿Cuál de las siguientes no es una vía de obtención de un certificado de profesionalidad?<text:line-break/>a) Formación oficial.<text:line-break/>b) Examen nacional único.<text:line-break/>c) Acreditación de competencias.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) El perfil profesional es el referente ocupacional: competencia general, unidades de competencia con sus realizaciones profesionales y criterios de realización, entorno profesional y ocupaciones o puestos de trabajo.</text:p>
+            <text:p text:style-name="TableCellP">b) Las vías son la formación del certificado, la acreditación de competencias adquiridas por experiencia laboral o vías no formales y la vía mixta. No existe ningún examen nacional único.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1140,10 +1140,10 @@
             <text:p text:style-name="TableCellP">4</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">El referente formativo del certificado está formado por…<text:line-break/>a) Las unidades de competencia y sus realizaciones profesionales<text:line-break/>b) Los requisitos de espacios e instalaciones<text:line-break/>c) Los módulos formativos, sus unidades formativas y el módulo de prácticas no laborales</text:p>
+            <text:p text:style-name="TableCellP">¿Qué se incluye en la estructura de un certificado de profesionalidad?<text:line-break/>a) Relación de módulos formativos.<text:line-break/>b) Listado de empresas asociadas.<text:line-break/>c) Salario estimado del puesto relacionado.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">c) El referente formativo traduce el perfil profesional en formación: módulos formativos (MF), unidades formativas (UF) y el módulo de prácticas profesionales no laborales.</text:p>
+            <text:p text:style-name="TableCellP">a) La estructura tiene tres bloques: perfil profesional (referente ocupacional), formación del certificado con sus módulos y unidades formativas (referente formativo) y prescripciones de formadores, espacios e instalaciones. El salario y el listado de empresas no forman parte.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1151,10 +1151,10 @@
             <text:p text:style-name="TableCellP">5</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">¿Cuáles son las vías de adquisición de un certificado de profesionalidad?<text:line-break/>a) Solo la formación del certificado<text:line-break/>b) La formación, la experiencia laboral acreditada y las vías mixtas<text:line-break/>c) La formación y la titulación universitaria</text:p>
+            <text:p text:style-name="TableCellP">¿Qué se exige para acceder a la formación de certificados de nivel 1?<text:line-break/>a) Un título universitario.<text:line-break/>b) No se exigen requisitos académicos ni profesionales.<text:line-break/>c) Experiencia laboral mínima.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) Se obtiene por la vía formativa, por el procedimiento de acreditación de competencias adquiridas por experiencia laboral o vías no formales, y por la vía mixta que combina ambas.</text:p>
+            <text:p text:style-name="TableCellP">b) Los certificados de nivel 1 no tienen requisitos académicos ni profesionales de acceso; los de nivel 2 exigen ESO o equivalente y los de nivel 3, bachillerato o equivalente, además de los requisitos específicos de cada convocatoria.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1162,10 +1162,10 @@
             <text:p text:style-name="TableCellP">6</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">La relación entre unidades de competencia (UC) y módulos formativos (MF) es…<text:line-break/>a) Rígida: a cada UC le corresponde un único MF<text:line-break/>b) Inexistente: son catálogos independientes<text:line-break/>c) Flexible: una UC puede asociarse a varios MF y un MF puede cubrir varias UC</text:p>
+            <text:p text:style-name="TableCellP">¿Qué caracteriza a los módulos formativos de un certificado?<text:line-break/>a) Solo pueden impartirse en centros universitarios.<text:line-break/>b) Incluyen evaluación de capacidades y contenidos específicos.<text:line-break/>c) No tienen duración establecida.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">c) El catálogo modular asocia MF y UF a las UC; la relación no es biunívoca, y por eso un mismo módulo puede acreditar competencias de más de una unidad.</text:p>
+            <text:p text:style-name="TableCellP">b) Cada módulo tiene duración fijada, objetivos, contenidos y criterios de evaluación que verifican capacidades y contenidos del perfil. No son exclusivos de la universidad ni pueden tener duración libre.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1173,10 +1173,10 @@
             <text:p text:style-name="TableCellP">7</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">¿Quién expide y registra un certificado de profesionalidad?<text:line-break/>a) La administración laboral competente (SEPE o comunidad autónoma)<text:line-break/>b) El centro que imparte la formación<text:line-break/>c) La empresa que bonifica la formación</text:p>
+            <text:p text:style-name="TableCellP">¿Qué documento acredita la superación de todas las unidades formativas de un módulo?<text:line-break/>a) Certificación académica.<text:line-break/>b) Diploma universitario.<text:line-break/>c) Certificado de módulo formativo.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) El centro imparte y evalúa, pero el certificado lo expide la administración laboral competente y queda registrado; no lo emite la empresa ni el centro por sí mismos.</text:p>
+            <text:p text:style-name="TableCellP">c) Superar todas las unidades formativas de un módulo da derecho al certificado del módulo formativo, acreditación parcial acumulable para obtener después el certificado de profesionalidad completo.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1184,10 +1184,10 @@
             <text:p text:style-name="TableCellP">8</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Las prescripciones de un certificado de profesionalidad afectan a…<text:line-break/>a) Solo al alumnado destinatario<text:line-break/>b) Los formadores (titulación y experiencia) y los espacios, instalaciones y equipamiento<text:line-break/>c) Únicamente a la duración de la formación</text:p>
+            <text:p text:style-name="TableCellP">¿Cuál es el tiempo mínimo de experiencia laboral para solicitar la exención del módulo de prácticas?<text:line-break/>a) 3 meses.<text:line-break/>b) 6 meses.<text:line-break/>c) 1 año.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) Cada módulo fija las prescripciones de sus formadores (titulación y experiencia profesional o docente) y los requisitos mínimos de espacio, instalaciones y equipamiento.</text:p>
+            <text:p text:style-name="TableCellP">b) El manual fija en seis meses la experiencia mínima para eximir del módulo de prácticas profesionales no laborales. Comprueba siempre la convocatoria: la exención la resuelve la administración competente.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1195,10 +1195,10 @@
             <text:p text:style-name="TableCellP">9</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Las prácticas no laborales asociadas al certificado son…<text:line-break/>a) Un contrato de trabajo en prácticas<text:line-break/>b) Un módulo de formación en centro de trabajo, sin relación laboral y con tutor<text:line-break/>c) Una sustitución de puestos de trabajo en la empresa</text:p>
+            <text:p text:style-name="TableCellP">¿Qué se debe incluir en la programación didáctica de un certificado de profesionalidad?<text:line-break/>a) Presupuesto del curso.<text:line-break/>b) Estrategias para alcanzar objetivos educativos.<text:line-break/>c) Listado de recursos tecnológicos.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) El módulo de prácticas profesionales no laborales se desarrolla en un centro de trabajo, sin relación laboral, con un tutor designado y con evaluación; no sustituye a ningún trabajador.</text:p>
+            <text:p text:style-name="TableCellP">b) La programación concreta el referente formativo del certificado: objetivos, contenidos, actividades, metodología, recursos y evaluación. El presupuesto económico no forma parte de la programación didáctica.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1206,10 +1206,10 @@
             <text:p text:style-name="TableCellP">10</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Al programar una acción formativa vinculada a un certificado, la programación debe…<text:line-break/>a) Crear sus propios módulos y criterios de evaluación<text:line-break/>b) Adaptarse solo al estilo del formador<text:line-break/>c) Respetar el referente formativo: módulos, duraciones, criterios de evaluación y prescripciones</text:p>
+            <text:p text:style-name="TableCellP">¿Quién puede impartir un certificado de profesionalidad?<text:line-break/>a) Cualquier persona con experiencia laboral.<text:line-break/>b) Certificado de módulo formativo.<text:line-break/>c) Profesionales con habilitación docente y experiencia en la materia.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">c) El certificado es norma: la programación didáctica concreta y temporaliza su referente formativo, sin alterar módulos, duraciones ni criterios de evaluación.</text:p>
+            <text:p text:style-name="TableCellP">c) Las prescripciones del certificado exigen titulación y experiencia (docente o profesional) según el módulo, además de la habilitación docente correspondiente. La experiencia sola no basta.</text:p>
           </table:table-cell>
         </table:table-row>
       </table:table>
@@ -1234,10 +1234,10 @@
             <text:p text:style-name="TableCellP">1</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">¿Qué elementos debe contener toda programación didáctica?<text:line-break/>a) Objetivos, contenidos, metodología, recursos, evaluación y temporalización<text:line-break/>b) Solo objetivos y contenidos<text:line-break/>c) Únicamente la temporalización y el listado de alumnado</text:p>
+            <text:p text:style-name="TableCellP">¿Cuál es el objetivo principal de la programación didáctica?<text:line-break/>a) Crear actividades innovadoras sin seguir un plan.<text:line-break/>b) Proporcionar un mapa claro y detallado para organizar el proceso educativo.<text:line-break/>c) Evaluar únicamente los resultados finales de los alumnos.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) La programación es un documento integrado: objetivos, contenidos, actividades, metodología, recursos, evaluación y temporalización, además de la atención a la diversidad y las observaciones de mejora.</text:p>
+            <text:p text:style-name="TableCellP">b) La programación es el mapa del proceso: objetivos, contenidos, actividades, metodología, recursos, evaluación y temporalización. No es un catálogo de actividades sueltas ni un examen final.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1245,10 +1245,10 @@
             <text:p text:style-name="TableCellP">2</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">¿Cuál de estos objetivos está mejor formulado?<text:line-break/>a) Conocer la normativa de certificados de profesionalidad<text:line-break/>b) Identificar los bloques de un certificado de profesionalidad en un supuesto práctico dado<text:line-break/>c) Valorar la importancia de la formación continua</text:p>
+            <text:p text:style-name="TableCellP">¿Qué tipo de contenido está relacionado con el saber hacer?<text:line-break/>a) Contenidos actitudinales.<text:line-break/>b) Contenidos conceptuales.<text:line-break/>c) Contenidos procedimentales.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) Un objetivo se redacta con verbo observable en infinitivo, contenido y condición de ejecución. Conocer y valorar no son observables directamente.</text:p>
+            <text:p text:style-name="TableCellP">c) Conceptuales = saber; procedimentales = saber hacer (procedimientos y destrezas); actitudinales = saber ser y estar.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1256,10 +1256,10 @@
             <text:p text:style-name="TableCellP">3</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Los contenidos conceptuales, procedimentales y actitudinales responden a…<text:line-break/>a) Saber, saber hacer y saber ser y estar<text:line-break/>b) Teoría, práctica y evaluación<text:line-break/>c) Objetivos, criterios y estándares</text:p>
+            <text:p text:style-name="TableCellP">¿Cuál de las siguientes características no pertenece a la programación de acciones formativas?<text:line-break/>a) Cerrada y rígida.<text:line-break/>b) Coherente.<text:line-break/>c) Flexible.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) Conceptuales = saber (hechos y conceptos); procedimentales = saber hacer (procedimientos y destrezas); actitudinales = saber ser y estar (valores y actitudes).</text:p>
+            <text:p text:style-name="TableCellP">a) La programación debe ser coherente, flexible y abierta al ajuste: se revisa con los resultados y el contexto. Una programación cerrada y rígida contradice su función.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1267,10 +1267,10 @@
             <text:p text:style-name="TableCellP">4</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Un criterio de evaluación es…<text:line-break/>a) El enunciado que describe una ejecución observable y evaluable<text:line-break/>b) La nota final del módulo<text:line-break/>c) El instrumento con el que se califica</text:p>
+            <text:p text:style-name="TableCellP">¿Qué metodología combina elementos presenciales con teleformación?<text:line-break/>a) Presencial.<text:line-break/>b) Mixta o semipresencial.<text:line-break/>c) Exclusivamente a distancia.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) El criterio describe qué debe hacer el alumnado y con qué nivel de logro; el instrumento (rúbrica, lista de control, prueba) es el medio para recoger esa evidencia.</text:p>
+            <text:p text:style-name="TableCellP">b) La modalidad mixta (semipresencial) suma sesiones presenciales y formación en línea, con una presencialidad superior al 20 % del total.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1278,10 +1278,10 @@
             <text:p text:style-name="TableCellP">5</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">La evaluación inicial, continua y final corresponde a…<text:line-break/>a) Los tres momentos: diagnóstica, formativa y sumativa<text:line-break/>b) Tres tipos de alumnado<text:line-break/>c) Tres instrumentos distintos de calificación</text:p>
+            <text:p text:style-name="TableCellP">¿Qué criterio es fundamental para seleccionar los recursos pedagógicos?<text:line-break/>a) La disponibilidad del formador para utilizarlos.<text:line-break/>b) Su adaptación a los objetivos y contenidos del programa.<text:line-break/>c) Su precio más económico.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) Inicial o diagnóstica (punto de partida), continua o formativa (seguimiento y retroalimentación) y final o sumativa (acreditación del logro).</text:p>
+            <text:p text:style-name="TableCellP">b) Los recursos se eligen por coherencia con objetivos, contenidos, metodología y características del grupo. El precio o la comodidad del formador son criterios secundarios.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1289,10 +1289,10 @@
             <text:p text:style-name="TableCellP">6</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">La rúbrica es…<text:line-break/>a) Una técnica de observación<text:line-break/>b) Un instrumento de evaluación con niveles de desempeño<text:line-break/>c) Un criterio de evaluación</text:p>
+            <text:p text:style-name="TableCellP">¿Por qué es importante que la programación didáctica sea flexible?<text:line-break/>a) Para adaptarse a cambios en el contexto o necesidades del alumnado.<text:line-break/>b) Para eliminar la necesidad de planificar con antelación.<text:line-break/>c) Para reducir la cantidad de contenidos impartidos.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) La rúbrica es un instrumento: describe niveles de desempeño para cada criterio. La observación es la técnica; el criterio, el referente de logro.</text:p>
+            <text:p text:style-name="TableCellP">a) La flexibilidad permite reajustar tiempos, actividades y agrupamientos cuando cambian el contexto, el ritmo o las necesidades del grupo. No sustituye la planificación previa.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1300,10 +1300,10 @@
             <text:p text:style-name="TableCellP">7</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">¿Qué metodología es más coherente con la formación por competencias?<text:line-break/>a) La clase magistral exclusiva<text:line-break/>b) El aprendizaje basado en proyectos o retos, con práctica y transferencia al puesto<text:line-break/>c) La memorización del temario para el examen</text:p>
+            <text:p text:style-name="TableCellP">¿Qué tipo de competencias se enfocan en el saber ser o saber estar?<text:line-break/>a) Competencias básicas.<text:line-break/>b) Competencias actitudinales.<text:line-break/>c) Competencias digitales.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) La competencia se demuestra haciendo: metodologías activas (proyectos, retos, simulación, role-playing) con actividades cercanas al desempeño real del puesto.</text:p>
+            <text:p text:style-name="TableCellP">b) Las competencias actitudinales recogen valores, actitudes y normas de conducta (puntualidad, cooperación, seguridad). Las básicas y las digitales son de otro orden.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1311,10 +1311,10 @@
             <text:p text:style-name="TableCellP">8</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Las modalidades de impartición de una acción formativa son…<text:line-break/>a) Presencial, teleformación y mixta<text:line-break/>b) Individual y grupal<text:line-break/>c) Teórica y práctica</text:p>
+            <text:p text:style-name="TableCellP">¿Cuál es el principal objetivo de la evaluación formativa?<text:line-break/>a) Conocer el nivel inicial del alumnado antes de comenzar la formación.<text:line-break/>b) Comprobar si los participantes han adquirido las competencias finales.<text:line-break/>c) Valorar el progreso durante el proceso de enseñanza-aprendizaje.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) Presencial, teleformación (al menos el 80 % en línea) y mixta (presencialidad superior al 20 %). Individual/grupal y teórica/práctica no son modalidades de impartición.</text:p>
+            <text:p text:style-name="TableCellP">c) La evaluación formativa (continua) acompaña el proceso y devuelve retroalimentación para mejorar; la inicial o diagnóstica es la opción a) y la sumativa o final, la b).</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1322,10 +1322,10 @@
             <text:p text:style-name="TableCellP">9</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">En la programación, los recursos didácticos incluyen…<text:line-break/>a) Solo los medios audiovisuales<text:line-break/>b) Relación de medios, instalaciones, bibliografía y anexos<text:line-break/>c) El presupuesto económico del centro</text:p>
+            <text:p text:style-name="TableCellP">En la modalidad de teleformación, ¿qué característica es clave para el aprendizaje colaborativo?<text:line-break/>a) Presencialidad del formador.<text:line-break/>b) Uso de herramientas TIC para fomentar la interacción.<text:line-break/>c) Calendarios estrictos y rígidos.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) El apartado de recursos recoge la relación de medios y materiales, las instalaciones necesarias, la bibliografía y webgrafía y los anexos (plantillas, fichas, rúbricas).</text:p>
+            <text:p text:style-name="TableCellP">b) El aprendizaje colaborativo en línea se sostiene con foros, wikis, videoclases y tareas grupales: herramientas TIC que provocan interacción. Un calendario rígido no genera colaboración.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1333,10 +1333,10 @@
             <text:p text:style-name="TableCellP">10</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">La revisión y mejora de la programación se apoya en…<text:line-break/>a) La opinión del formador exclusivamente<text:line-break/>b) Los resultados de la evaluación, la retroalimentación del alumnado y los cambios normativos<text:line-break/>c) El número de alumnos matriculados</text:p>
+            <text:p text:style-name="TableCellP">¿Cómo deben estar redactados los objetivos de aprendizaje?<text:line-break/>a) De manera clara, medible y utilizando verbos observables.<text:line-break/>b) Con un lenguaje técnico y especializado para profesionales.<text:line-break/>c) Con varios desempeños en un mismo objetivo para ahorrar tiempo.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) La programación es un documento vivo: se revisa con los resultados de aprendizaje, la satisfacción y las sugerencias del grupo y las actualizaciones normativas del certificado.</text:p>
+            <text:p text:style-name="TableCellP">a) Verbo observable en infinitivo, contenido y condición de ejecución: un solo desempeño por objetivo, comprensible y evaluable. El lenguaje críptico o acumular desempeños impide evaluar.</text:p>
           </table:table-cell>
         </table:table-row>
       </table:table>
@@ -1361,10 +1361,10 @@
             <text:p text:style-name="TableCellP">1</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">La temporalización diaria consiste en…<text:line-break/>a) Distribuir hora a hora los contenidos y actividades de la jornada, con descansos y transiciones<text:line-break/>b) Asignar horas a cada unidad a lo largo del curso<text:line-break/>c) Fijar la fecha de los exámenes</text:p>
+            <text:p text:style-name="TableCellP">¿Cuál es el propósito de la programación temporalizada en la formación profesional?<text:line-break/>a) Garantizar improvisación en las sesiones.<text:line-break/>b) Estructurar el aprendizaje de manera organizada y efectiva.<text:line-break/>c) Reducir la carga de planificación de los formadores.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) Es el nivel más fino de concreción: qué se hace en cada tramo horario del día, con qué actividad y con qué descansos. El reparto por unidades es la programación, no la temporalización diaria.</text:p>
+            <text:p text:style-name="TableCellP">b) La temporalización ordena contenidos y actividades en el calendario real para que el aprendizaje sea organizado y efectivo; no improvisa ni ahorra planificación, la concreta.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1372,10 +1372,10 @@
             <text:p text:style-name="TableCellP">2</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Secuenciar contenidos y concretar actividades significa…<text:line-break/>a) Enumerar los contenidos del certificado sin orden<text:line-break/>b) Ordenarlos de forma lógica y progresiva y decidir qué actividad acompaña a cada uno<text:line-break/>c) Repetir el índice del manual</text:p>
+            <text:p text:style-name="TableCellP">¿Qué nivel de concreción organiza las sesiones en bloques integrales con todos los elementos del proceso educativo?<text:line-break/>a) Programación didáctica.<text:line-break/>b) Marco general.<text:line-break/>c) Unidades didácticas.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) La secuenciación va de lo simple a lo complejo, asegura prerequisitos y asigna a cada contenido una actividad y un tiempo; el índice del manual es solo el punto de partida.</text:p>
+            <text:p text:style-name="TableCellP">c) La unidad didáctica es el nivel de concreción que integra objetivos, contenidos, actividades, recursos y evaluación en bloques con sentido propio; la programación didáctica es el marco que las contiene.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1383,10 +1383,10 @@
             <text:p text:style-name="TableCellP">3</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">La guía del alumno de una acción formativa en línea debe incluir…<text:line-break/>a) Itinerario, calendario, sistema de tutoría y tiempos de respuesta, criterios de evaluación y soporte técnico<text:line-break/>b) Solo el listado de contenidos<text:line-break/>c) El currículum del formador</text:p>
+            <text:p text:style-name="TableCellP">¿Qué principio es clave para una secuenciación efectiva de contenidos?<text:line-break/>a) Aumentar la dificultad de manera gradual.<text:line-break/>b) Combinar todos los temas en una sola sesión.<text:line-break/>c) Evitar actividades prácticas.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) La guía orienta al alumnado antes de empezar: qué se espera de él, cuándo, cómo se comunica, cuánto tarda el tutor en responder, cómo se evalúa y a quién acudir si falla la plataforma.</text:p>
+            <text:p text:style-name="TableCellP">a) Se secuencia de lo simple a lo complejo, asegurando prerrequisitos y con práctica creciente. Concentrar todo en una sesión o evitar la práctica rompe el aprendizaje.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1394,10 +1394,10 @@
             <text:p text:style-name="TableCellP">4</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">El compromiso de respuesta del tutor debe figurar…<text:line-break/>a) No hace falta: se acuerda por mensaje privado<text:line-break/>b) En el contrato con la empresa<text:line-break/>c) En la guía del alumno, para que el alumnado lo conozca de antemano</text:p>
+            <text:p text:style-name="TableCellP">¿Cuál de las siguientes no es una función de la guía didáctica en teleformación?<text:line-break/>a) Activar el aprendizaje.<text:line-break/>b) Sustituir completamente al formador.<text:line-break/>c) Orientar y motivar al participante.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">c) Los tiempos de respuesta forman parte del contrato didáctico de la modalidad en línea: se publican en la guía y se cumplen (por ejemplo, respuesta a consultas en 24-48 horas laborables).</text:p>
+            <text:p text:style-name="TableCellP">b) La guía orienta, activa y motiva, pero no sustituye la tutoría: el acompañamiento y la evaluación siguen siendo del formador.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1405,10 +1405,10 @@
             <text:p text:style-name="TableCellP">5</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Una actividad síncrona se diferencia de una asíncrona en que…<text:line-break/>a) Se realiza en tiempo real y con coincidencia de horario<text:line-break/>b) No requiere conexión a internet<text:line-break/>c) Solo se puede usar en formación presencial</text:p>
+            <text:p text:style-name="TableCellP">¿Qué elemento debe incluirse en la justificación de una unidad didáctica?<text:line-break/>a) Relación con la programación y conocimientos previos.<text:line-break/>b) Opiniones de los participantes sobre otros temas.<text:line-break/>c) Actividades realizadas por otros docentes.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) Síncrona = en tiempo real (videoclase, chat, tutoría en directo). Asíncrona = sin coincidencia horaria (foro, tarea, correo). Un curso en línea combina ambas.</text:p>
+            <text:p text:style-name="TableCellP">a) La justificación explica por qué esa unidad está ahí: su relación con la programación y el perfil, los conocimientos previos necesarios y su sentido para el desempeño.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1416,10 +1416,10 @@
             <text:p text:style-name="TableCellP">6</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">El plan B de una acción formativa sirve para…<text:line-break/>a) Sustituir al formador por el alumnado<text:line-break/>b) Eliminar la evaluación cuando hay problemas<text:line-break/>c) Prever alternativas ante fallos técnicos o imprevistos (material descargable, grabación, canal alternativo)</text:p>
+            <text:p text:style-name="TableCellP">¿Qué actividad se utiliza para conocer el nivel inicial de los participantes?<text:line-break/>a) Actividad de desarrollo.<text:line-break/>b) Actividad de síntesis.<text:line-break/>c) Actividad de evaluación inicial.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">c) Todo diseño en línea necesita un plan de contingencia: materiales descargables, grabación de sesiones, canal de comunicación alternativo y aviso al alumnado.</text:p>
+            <text:p text:style-name="TableCellP">c) La actividad de evaluación inicial (diagnóstica) detecta conocimientos y necesidades de partida; las de desarrollo y síntesis trabajan el contenido con el curso ya en marcha.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1427,10 +1427,10 @@
             <text:p text:style-name="TableCellP">7</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">El módulo MF1442_3 tiene una carga de…<text:line-break/>a) 60 horas, repartidas en cuatro unidades; el reparto por horas es orientativo<text:line-break/>b) 120 horas, sin unidades didácticas<text:line-break/>c) 20 horas, todas presenciales</text:p>
+            <text:p text:style-name="TableCellP">¿Qué tipo de recursos se deben detallar en una unidad didáctica?<text:line-break/>a) Recursos materiales y humanos necesarios.<text:line-break/>b) Solo materiales teóricos.<text:line-break/>c) Recursos utilizados en otros cursos similares.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) El certificado fija 60 horas para el módulo. El reparto 12/14/20/14 entre las cuatro unidades es una propuesta de estudio, no una prescripción normativa.</text:p>
+            <text:p text:style-name="TableCellP">a) Se detallan medios materiales y humanos, instalaciones, bibliografía y anexos: todo lo necesario para ejecutar la unidad tal y como se ha programado.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1438,10 +1438,10 @@
             <text:p text:style-name="TableCellP">8</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">El cronograma de la acción formativa recoge…<text:line-break/>a) Solo el horario de clase<text:line-break/>b) Hitos, entregas y fechas de evaluación<text:line-break/>c) Los datos personales del alumnado</text:p>
+            <text:p text:style-name="TableCellP">¿Qué criterio es esencial para adaptar la secuenciación de actividades?<text:line-break/>a) Ignorar las diferencias individuales.<text:line-break/>b) Atender la diversidad y necesidades de los alumnos.<text:line-break/>c) Priorizar actividades de baja dificultad.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">b) El cronograma sitúa en el calendario los hitos del curso: inicio y fin de unidades, entregas, pruebas y sesiones de evaluación.</text:p>
+            <text:p text:style-name="TableCellP">b) La atención a la diversidad ajusta tiempos, apoyos y niveles de exigencia; ignorar las diferencias o rebajar sistemáticamente la dificultad empobrece el aprendizaje.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1449,10 +1449,10 @@
             <text:p text:style-name="TableCellP">9</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Los foros de un curso en línea son…<text:line-break/>a) Herramientas asíncronas de participación y tutoría que necesitan normas y moderación<text:line-break/>b) Videoclases en directo<text:line-break/>c) Un tipo de examen final</text:p>
+            <text:p text:style-name="TableCellP">¿Cuál es una característica de las unidades didácticas?<text:line-break/>a) Tienen siempre una duración fija.<text:line-break/>b) Facilitan la práctica diaria y se adaptan al ritmo de los participantes.<text:line-break/>c) Se diseñan sin relación con los objetivos generales.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">a) El foro es la herramienta asíncrona por excelencia: requiere hilos claros, normas de participación, moderación y un tiempo de respuesta comprometido por parte de la tutoría.</text:p>
+            <text:p text:style-name="TableCellP">b) La unidad didáctica es flexible: su duración se ajusta al grupo y siempre deriva de los objetivos generales de la programación.</text:p>
           </table:table-cell>
         </table:table-row>
         <table:table-row>
@@ -1460,10 +1460,10 @@
             <text:p text:style-name="TableCellP">10</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">Para evaluar una actividad práctica en línea, el instrumento más completo es…<text:line-break/>a) Un test de 30 preguntas de memoria<text:line-break/>b) La asistencia a las videoclases<text:line-break/>c) Una rúbrica con niveles de desempeño y retroalimentación</text:p>
+            <text:p text:style-name="TableCellP">En una guía de teleformación, ¿qué apartado detalla el uso de la plataforma virtual?<text:line-break/>a) Evaluación.<text:line-break/>b) Descripción de la plataforma.<text:line-break/>c) Tutorías.</text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Cell" office:value-type="string">
-            <text:p text:style-name="TableCellP">c) La rúbrica permite valorar el desempeño con criterios públicos y devolver retroalimentación útil. El test memorístico y la asistencia no evidencian competencia práctica.</text:p>
+            <text:p text:style-name="TableCellP">b) La guía describe la plataforma (acceso, navegación, herramientas y soporte técnico); evaluación y tutorías son apartados distintos.</text:p>
           </table:table-cell>
         </table:table-row>
       </table:table>
