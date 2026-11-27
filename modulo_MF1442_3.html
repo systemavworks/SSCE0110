@@ -2693,7 +2693,6 @@
   };
 
   const VERSION_FICHA = '2026-11-27';
-  const REPO_WEB = 'https://github.com/systemavworks/SSCE0110/blob/main/';
   const CLAVES_RESPALDO = [CLAVES.auto, CLAVES.examen, CLAVES.informe, 'mf1442_entregables', 'mf1442_bitacora'];
 
   const almacen = {
@@ -3769,17 +3768,19 @@ ${udNames.map((n, i) => `| UD${i+1}: [Tema] | ${horasPorUd} h | [Nº sesiones] |
   function construirCopia(conRespuestas) {
     let html = PLANTILLA_HTML;
 
-    // Los enlaces a otras fichas apuntan al repositorio: así funcionan fuera de la carpeta
+    // La copia no depende del repositorio: los enlaces a otras fichas siguen siendo
+    // relativos y se marcan, porque solo funcionan si viaja la carpeta completa.
     ['modulos_SSCE0110.html', 'modulo_MF1443_3.html', 'formador_RD659_2023.html'].forEach(archivo => {
       html = html.split('href="' + archivo + '"')
-        .join('href="' + REPO_WEB + archivo + '" target="_blank" rel="noopener"');
+        .join('href="' + archivo + '" title="Necesita el resto de la carpeta de la ficha"');
     });
 
     const aviso = '<div class="no-print" style="background:#eef2ff;border-bottom:1px solid #c7d2fe;'
       + 'padding:8px 14px;font:13px/1.45 system-ui,sans-serif;color:#1e293b;">'
       + '<strong>Copia autónoma de la ficha MF1442_3</strong> · versión ' + VERSION_FICHA
       + (conRespuestas ? ' · incluye una instantánea de respuestas' : ' · sin datos')
-      + ' · el progreso se guarda en el navegador de quien la abre.'
+      + ' · el progreso se guarda en el navegador de quien la abre'
+      + ' · los enlaces a otras fichas necesitan el resto de la carpeta.'
       + '<button type="button" onclick="this.parentNode.remove()" aria-label="Cerrar aviso" '
       + 'style="float:right;border:0;background:none;font-size:16px;line-height:1;cursor:pointer;color:#3730a3;">×</button>'
       + '</div>';
